@@ -1,7 +1,7 @@
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen bg-gradient-to-br from-navy-600 via-corporate-500 to-financial-600 flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen bg-gradient-to-br from-navy-600 via-navy-500 to-navy-400 flex items-center justify-center overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-20 left-20 w-32 h-32 border border-white/20 rounded-full"></div>
@@ -18,13 +18,6 @@ const Hero = () => {
               alt="Vilson Rauch" 
               className="w-48 h-48 rounded-full mx-auto object-cover border-4 border-white/20 shadow-2xl"
             />
-          </div>
-
-          {/* CVM Badge */}
-          <div className="mb-6 animate-fade-in">
-            <span className="inline-flex items-center px-4 py-2 bg-gold-500 text-navy-800 rounded-full text-sm font-semibold tracking-wide">
-              ✓ CONSULTOR CVM CREDENCIADO
-            </span>
           </div>
 
           {/* Main Title */}
@@ -46,7 +39,7 @@ const Hero = () => {
           <div className="mt-12 animate-fade-in">
             <a 
               href="#contato" 
-              className="inline-flex items-center px-8 py-4 bg-financial-500 hover:bg-financial-600 text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
+              className="inline-flex items-center px-8 py-4 bg-gold-500 hover:bg-gold-600 text-navy-800 font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
             >
               Consultoria Especializada
               <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
