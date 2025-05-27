@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,7 +62,77 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Financial Color Palette
+				navy: {
+					DEFAULT: '#1B365D',
+					50: '#E8F0F7',
+					100: '#C7D9E8',
+					200: '#9CB8D3',
+					300: '#7196BE',
+					400: '#4675A9',
+					500: '#1B365D',
+					600: '#162B4A',
+					700: '#112037',
+					800: '#0C1524',
+					900: '#070A11'
+				},
+				corporate: {
+					DEFAULT: '#2C5AA0',
+					50: '#E9F1FD',
+					100: '#CAD9F9',
+					200: '#9BB7F3',
+					300: '#6C95ED',
+					400: '#3D73E7',
+					500: '#2C5AA0',
+					600: '#234880',
+					700: '#1A3660',
+					800: '#112440',
+					900: '#081220'
+				},
+				financial: {
+					DEFAULT: '#228B22',
+					50: '#E8F8E8',
+					100: '#C8EFC8',
+					200: '#9AE39A',
+					300: '#6CD76C',
+					400: '#3ECB3E',
+					500: '#228B22',
+					600: '#1B6F1B',
+					700: '#145314',
+					800: '#0D370D',
+					900: '#061B06'
+				},
+				investment: {
+					DEFAULT: '#32CD32',
+					50: '#EAFBEA',
+					100: '#CDF4CD',
+					200: '#A3EBA3',
+					300: '#79E279',
+					400: '#4FD94F',
+					500: '#32CD32',
+					600: '#28A428',
+					700: '#1E7B1E',
+					800: '#145214',
+					900: '#0A290A'
+				},
+				gold: {
+					DEFAULT: '#D4AF37',
+					50: '#FDFBF4',
+					100: '#F9F3E2',
+					200: '#F2E4BB',
+					300: '#EBD594',
+					400: '#E4C66D',
+					500: '#D4AF37',
+					600: '#B8952B',
+					700: '#8C701F',
+					800: '#604B13',
+					900: '#342607'
 				}
+			},
+			fontFamily: {
+				'playfair': ['Playfair Display', 'serif'],
+				'inter': ['Inter', 'sans-serif'],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,11 +155,38 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'fade-in': {
+					'0%': {
+						opacity: '0',
+						transform: 'translateY(20px)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'translateY(0)'
+					}
+				},
+				'scale-in': {
+					'0%': {
+						transform: 'scale(0.95)',
+						opacity: '0'
+					},
+					'100%': {
+						transform: 'scale(1)',
+						opacity: '1'
+					}
+				},
+				'growth': {
+					'0%': { transform: 'scaleY(0)' },
+					'100%': { transform: 'scaleY(1)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fade-in 0.6s ease-out',
+				'scale-in': 'scale-in 0.3s ease-out',
+				'growth': 'growth 1s ease-out'
 			}
 		}
 	},
