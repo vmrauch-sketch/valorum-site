@@ -43,9 +43,9 @@ const About = () => {
             {/* Image */}
             <div className="animate-fade-in">
               <img 
-                src="/lovable-uploads/09984386-7d2e-4b8f-9640-a82c1c3b9c6d.png" 
+                src="/lovable-uploads/4c689919-5ada-4401-9bc5-618572d3f688.png" 
                 alt="Vilson Rauch - Consultor" 
-                className="w-full rounded-lg shadow-xl object-cover h-96"
+                className="w-full rounded-lg shadow-xl object-cover object-top h-96"
               />
             </div>
           </div>

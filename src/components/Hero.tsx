@@ -14,7 +14,7 @@ const Hero = () => {
           {/* Profile Image */}
           <div className="mb-8 animate-fade-in">
             <img 
-              src="/lovable-uploads/4c689919-5ada-4401-9bc5-618572d3f688.png" 
+              src="/lovable-uploads/09984386-7d2e-4b8f-9640-a82c1c3b9c6d.png" 
               alt="Vilson Rauch" 
               className="w-48 h-48 rounded-full mx-auto object-cover border-4 border-white/20 shadow-2xl"
             />
