@@ -44,14 +44,14 @@ const AdvancedStrategies = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-br from-navy-600 via-corporate-500 to-financial-600" id="estrategias">
+    <section className="py-20 bg-white" id="estrategias">
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-4xl md:text-5xl font-playfair font-bold text-white mb-4">
+            <h2 className="text-4xl md:text-5xl font-playfair font-bold text-navy-600 mb-4">
               Estratégias Avançadas
             </h2>
-            <p className="text-xl text-white/90 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
               Desenvolvemos soluções além do planejamento tradicional, integrando estratégias 
               personalizadas para cada perfil, objetivos e necessidades específicas.
             </p>
@@ -61,14 +61,14 @@ const AdvancedStrategies = () => {
             {strategies.map((strategy, index) => (
               <div 
                 key={index}
-                className="bg-white/10 backdrop-blur-sm p-6 rounded-xl hover:bg-white/20 transition-all duration-300 animate-fade-in group"
+                className="bg-navy-50 border border-navy-100 p-6 rounded-xl hover:bg-navy-100 transition-all duration-300 animate-fade-in group shadow-sm"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <div className="text-4xl mb-4">{strategy.icon}</div>
-                <h3 className="text-lg font-bold text-white mb-3 group-hover:text-gold-500 transition-colors">
+                <h3 className="text-lg font-bold text-navy-600 mb-3 group-hover:text-corporate-600 transition-colors">
                   {strategy.title}
                 </h3>
-                <p className="text-white/80 text-sm leading-relaxed">
+                <p className="text-gray-600 text-sm leading-relaxed">
                   {strategy.description}
                 </p>
               </div>
@@ -76,11 +76,11 @@ const AdvancedStrategies = () => {
           </div>
 
           <div className="mt-16 text-center animate-fade-in">
-            <div className="bg-white/10 backdrop-blur-sm p-8 rounded-xl">
-              <h3 className="text-2xl font-bold text-gold-500 mb-4">
+            <div className="bg-navy-50 border border-navy-100 p-8 rounded-xl shadow-sm">
+              <h3 className="text-2xl font-bold text-navy-600 mb-4">
                 Abordagem Personalizada
               </h3>
-              <p className="text-white/90 text-lg max-w-4xl mx-auto leading-relaxed">
+              <p className="text-gray-600 text-lg max-w-4xl mx-auto leading-relaxed">
                 Cada estratégia é personalizada, considerando perfil, objetivos e necessidades específicas do cliente, 
                 garantindo soluções eficientes e alinhadas aos resultados desejados.
               </p>
