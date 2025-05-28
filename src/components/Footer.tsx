@@ -9,13 +9,15 @@ const Footer = () => {
             <div className="md:col-span-2">
               <h3 className="text-2xl font-playfair font-bold mb-4">Vilson Rauch</h3>
               <p className="text-white/80 mb-4 max-w-md">
-                Consultor de Valores Mobiliários CVM credenciado, especialista em wealth planning e palestrante financeiro.
+                Consultor de Valores Mobiliários CVM credenciado, especialista em wealth planning e palestrante.
               </p>
               <div className="flex items-center space-x-2 text-sm text-white/60">
                 <span className="w-2 h-2 bg-financial-500 rounded-full"></span>
                 <span>Consultoria independente</span>
                 <span className="w-2 h-2 bg-financial-500 rounded-full"></span>
                 <span>Credenciado CVM</span>
+                <span className="w-2 h-2 bg-financial-500 rounded-full"></span>
+                <span>Gestor de patrimônio</span>
               </div>
             </div>
 

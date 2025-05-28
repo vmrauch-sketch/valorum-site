@@ -3,47 +3,47 @@ const HowWeWork = () => {
   const areas = [
     {
       title: "Consultoria Financeira Pessoal e Empresarial",
-      symbol: "◆"
+      symbol: "📊"
     },
     {
       title: "Gestão Patrimonial e Estruturação de Holdings",
-      symbol: "◇"
+      symbol: "🏛️"
     },
     {
       title: "Planejamento Sucessório e Proteção Patrimonial",
-      symbol: "◈"
+      symbol: "🛡️"
     },
     {
       title: "Consultoria de Investimentos Personalizada",
-      symbol: "◉"
+      symbol: "📈"
     },
     {
       title: "Estratégias de Alavancagem e Estruturação Societária",
-      symbol: "◎"
+      symbol: "⚡"
     },
     {
       title: "Soluções em FIDC e Planejamento Tributário",
-      symbol: "◐"
+      symbol: "💼"
     },
     {
       title: "Educação Financeira Corporativa",
-      symbol: "◑"
+      symbol: "🎯"
     },
     {
       title: "Leilão de Crédito para redução de custos financeiros",
-      symbol: "◒"
+      symbol: "🔨"
     },
     {
       title: "Gestão Profissional de Investimentos",
-      symbol: "◓"
+      symbol: "💎"
     },
     {
       title: "Análise e Adequação de Previdência Privada",
-      symbol: "◔"
+      symbol: "🔐"
     },
     {
       title: "Seguros e Proteções, incluindo Responsabilidade Civil Customizada",
-      symbol: "◕"
+      symbol: "🛡️"
     }
   ];
 
@@ -68,7 +68,7 @@ const HowWeWork = () => {
                 style={{ animationDelay: `${index * 0.05}s` }}
               >
                 <div className="flex items-center">
-                  <div className="text-2xl text-corporate-500 mr-4 flex-shrink-0 font-bold">{area.symbol}</div>
+                  <div className="text-2xl mr-4 flex-shrink-0">{area.symbol}</div>
                   <span className="text-gray-800 font-medium">{area.title}</span>
                 </div>
               </div>

@@ -27,12 +27,15 @@ const Services = () => {
                     <span className="text-2xl mr-3">📊</span>
                     Consultoria de Investimentos Personalizada
                   </h4>
-                  <ul className="space-y-2 text-gray-700">
+                  <ul className="space-y-2 text-gray-700 mb-4">
                     <li>• Análise de perfil de risco</li>
                     <li>• Alocação estratégica de ativos</li>
                     <li>• Monitoramento contínuo</li>
                     <li>• Gestão profissional de investimentos</li>
                   </ul>
+                  <button className="bg-navy-500 text-white px-4 py-2 rounded-lg hover:bg-navy-600 transition-colors text-sm">
+                    Baixe ebook sobre planejamento financeiro
+                  </button>
                 </div>
 
                 <div className="bg-white p-6 rounded-lg shadow-sm">
@@ -106,23 +109,29 @@ const Services = () => {
                   <h4 className="text-xl font-bold text-financial-600 mb-4">
                     Recuperação Tributária
                   </h4>
-                  <ul className="space-y-2 text-gray-700">
+                  <ul className="space-y-2 text-gray-700 mb-4">
                     <li>• Diagnóstico de créditos recuperáveis</li>
                     <li>• Assessoria em restituição e compensação</li>
                     <li>• Estruturação segura dos processos</li>
                     <li>• Otimização da carga tributária</li>
                   </ul>
+                  <button className="bg-financial-500 text-white px-4 py-2 rounded-lg hover:bg-financial-600 transition-colors text-sm">
+                    Baixe o ebook sobre recuperação tributária
+                  </button>
                 </div>
 
                 <div className="bg-white p-6 rounded-lg shadow-sm">
                   <h4 className="text-xl font-bold text-financial-600 mb-4">
                     FIDC e Estratégias Tributárias
                   </h4>
-                  <ul className="space-y-2 text-gray-700">
+                  <ul className="space-y-2 text-gray-700 mb-4">
                     <li>• Estruturação e participação em FIDCs</li>
                     <li>• Captação e gestão de fluxo de caixa</li>
                     <li>• Planejamento tributário eficiente</li>
                   </ul>
+                  <button className="bg-financial-500 text-white px-4 py-2 rounded-lg hover:bg-financial-600 transition-colors text-sm">
+                    Baixe o ebook sobre FIDC
+                  </button>
                 </div>
 
                 <div className="bg-white p-6 rounded-lg shadow-sm">

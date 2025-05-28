@@ -22,14 +22,18 @@ const About = () => {
               </div>
 
               <p className="text-lg text-gray-700 leading-relaxed">
-                Vilson Rauch é economista, contador, estrategista em investimentos e finanças e planejador financeiro, com sólida experiência 
+                Vilson Rauch é economista, contador e estrategista financeiro e de investimentos, com sólida experiência 
                 na consultoria independente de investimentos e gestão patrimonial para indivíduos, 
-                famílias e empresas.
+                famílias e empresas. Atua com foco na excelência técnica e no rigor ético, oferecendo soluções que integram 
+                finanças, patrimônio, renda e investimentos.
               </p>
 
               <p className="text-lg text-gray-700 leading-relaxed">
-                Atua com foco na excelência técnica e rigor ético, oferecendo soluções que integram 
-                finanças, patrimônio, geração de renda e estratégias avançadas de investimento.
+                Com mais de duas décadas de atuação na gestão industrial, Vilson Rauch desenvolveu uma visão estratégica e operacional única, que agora aplica à consultoria personalizada para indivíduos e empresas. Essa trajetória proporciona uma compreensão aprofundada dos desafios e oportunidades do ambiente corporativo, permitindo a entrega de soluções alinhadas às necessidades reais de cada cliente.
+              </p>
+
+              <p className="text-lg text-gray-700 leading-relaxed">
+                Coordenando, quando necessário, um time multidisciplinar de especialistas, assegura que cada projeto receba uma abordagem integrada, combinando competências em economia, contabilidade, investimentos, excelência operacional e gestão empresarial. Essa sinergia resulta em estratégias robustas, eficazes e adaptadas ao contexto específico, fundamentadas em experiência prática, conhecimento técnico e compromisso com resultados de excelência.
               </p>
 
               <div className="bg-white p-6 rounded-lg shadow-sm border-l-4 border-corporate-500">
@@ -62,7 +66,7 @@ const About = () => {
               </div>
             </div>
 
-            {/* Image */}
+            {/* Single Image */}
             <div className="animate-fade-in">
               <img 
                 src="/lovable-uploads/4c689919-5ada-4401-9bc5-618572d3f688.png" 

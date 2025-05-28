@@ -27,7 +27,7 @@ const Hero = () => {
 
           {/* Impact Phrase */}
           <blockquote className="text-xl md:text-2xl font-inter italic text-white/90 max-w-4xl mx-auto leading-relaxed mb-8 animate-fade-in">
-            "Planejamento financeiro e patrimonial com excelência, independência e rigor técnico."
+            "Cuidando do presente e futuro com estratégia, excelência e valor."
           </blockquote>
 
           {/* CTA Button */}
