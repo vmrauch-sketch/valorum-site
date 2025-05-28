@@ -1,17 +1,50 @@
 
 const HowWeWork = () => {
   const areas = [
-    "Consultoria Financeira Pessoal e Empresarial",
-    "Gestão Patrimonial e Estruturação de Holdings",
-    "Planejamento Sucessório e Proteção Patrimonial",
-    "Consultoria de Investimentos Personalizada",
-    "Estratégias de Alavancagem e Estruturação Societária",
-    "Soluções em FIDC e Planejamento Tributário",
-    "Educação Financeira Corporativa",
-    "Leilão de Crédito para redução de custos financeiros",
-    "Gestão Profissional de Investimentos",
-    "Análise e Adequação de Previdência Privada",
-    "Seguros e Proteções, incluindo Responsabilidade Civil Customizada"
+    {
+      title: "Consultoria Financeira Pessoal e Empresarial",
+      symbol: "◆"
+    },
+    {
+      title: "Gestão Patrimonial e Estruturação de Holdings",
+      symbol: "◇"
+    },
+    {
+      title: "Planejamento Sucessório e Proteção Patrimonial",
+      symbol: "◈"
+    },
+    {
+      title: "Consultoria de Investimentos Personalizada",
+      symbol: "◉"
+    },
+    {
+      title: "Estratégias de Alavancagem e Estruturação Societária",
+      symbol: "◎"
+    },
+    {
+      title: "Soluções em FIDC e Planejamento Tributário",
+      symbol: "◐"
+    },
+    {
+      title: "Educação Financeira Corporativa",
+      symbol: "◑"
+    },
+    {
+      title: "Leilão de Crédito para redução de custos financeiros",
+      symbol: "◒"
+    },
+    {
+      title: "Gestão Profissional de Investimentos",
+      symbol: "◓"
+    },
+    {
+      title: "Análise e Adequação de Previdência Privada",
+      symbol: "◔"
+    },
+    {
+      title: "Seguros e Proteções, incluindo Responsabilidade Civil Customizada",
+      symbol: "◕"
+    }
   ];
 
   return (
@@ -23,7 +56,7 @@ const HowWeWork = () => {
               Como Atuamos
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Vilson Rauch atua principalmente nas seguintes áreas especializadas
+              Áreas de especialização e atuação
             </p>
           </div>
 
@@ -35,8 +68,8 @@ const HowWeWork = () => {
                 style={{ animationDelay: `${index * 0.05}s` }}
               >
                 <div className="flex items-center">
-                  <div className="w-3 h-3 bg-financial-500 rounded-full mr-4 flex-shrink-0"></div>
-                  <span className="text-gray-800 font-medium">{area}</span>
+                  <div className="text-2xl text-corporate-500 mr-4 flex-shrink-0 font-bold">{area.symbol}</div>
+                  <span className="text-gray-800 font-medium">{area.title}</span>
                 </div>
               </div>
             ))}

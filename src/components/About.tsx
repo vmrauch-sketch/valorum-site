@@ -15,14 +15,14 @@ const About = () => {
               </div>
 
               <p className="text-lg text-gray-700 leading-relaxed">
-                Vilson Rauch é economista, contador e planejador financeiro, com sólida experiência 
+                Vilson Rauch é economista, contador, estrategista em investimentos e finanças e planejador financeiro, com sólida experiência 
                 na consultoria independente de investimentos e gestão patrimonial para indivíduos, 
                 famílias e empresas.
               </p>
 
               <p className="text-lg text-gray-700 leading-relaxed">
                 Atua com foco na excelência técnica e rigor ético, oferecendo soluções que integram 
-                planejamento financeiro, estruturação patrimonial e estratégias avançadas de investimento.
+                finanças, patrimônio, geração de renda e estratégias avançadas de investimento.
               </p>
 
               <div className="bg-white p-6 rounded-lg shadow-sm border-l-4 border-corporate-500">
@@ -30,22 +30,6 @@ const About = () => {
                 <p className="text-gray-700">
                   Personalizado, independente e orientado à construção e preservação do patrimônio.
                 </p>
-              </div>
-
-              {/* Professional Stats */}
-              <div className="grid grid-cols-3 gap-4 mt-8">
-                <div className="text-center p-4 bg-white rounded-lg shadow-sm">
-                  <div className="text-xl font-bold text-corporate-500">Economista</div>
-                  <div className="text-sm text-gray-600">Formação</div>
-                </div>
-                <div className="text-center p-4 bg-white rounded-lg shadow-sm">
-                  <div className="text-xl font-bold text-financial-500">Contador</div>
-                  <div className="text-sm text-gray-600">Especialização</div>
-                </div>
-                <div className="text-center p-4 bg-white rounded-lg shadow-sm">
-                  <div className="text-xl font-bold text-navy-600">Planejador</div>
-                  <div className="text-sm text-gray-600">Financeiro</div>
-                </div>
               </div>
             </div>
 
