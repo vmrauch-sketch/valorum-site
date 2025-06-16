@@ -1,7 +1,7 @@
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden" style={{ background: '#0C1C2E' }}>
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden" style={{ background: '#1E3A8A' }}>
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-20 left-20 w-32 h-32 border border-gold-500/20 rounded-full"></div>
