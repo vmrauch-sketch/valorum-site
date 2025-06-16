@@ -1,5 +1,3 @@
-
-
 const About = () => {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -66,7 +64,7 @@ const About = () => {
                   Pessoa Física
                 </button>
                 <button
-                  onClick={() => scrollToSection('profissionais-medicina')}
+                  onClick={() => scrollToSection('protocolo-especializado')}
                   className="bg-corporate-500 text-white px-6 py-3 rounded-lg hover:bg-corporate-600 transition-all duration-300 font-medium"
                 >
                   Profissionais da Medicina e Saúde
@@ -87,4 +85,3 @@ const About = () => {
 };
 
 export { About };
-
