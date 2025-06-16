@@ -13,10 +13,6 @@ const Contact = () => {
             <h2 className="text-4xl md:text-5xl font-playfair font-bold text-white mb-6">
               Entre em Contato
             </h2>
-            
-            <p className="text-xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed">
-              Agende uma consultoria personalizada. Atendimento exclusivo e direto via WhatsApp.
-            </p>
 
             <p className="text-lg text-white/80 mb-12 max-w-2xl mx-auto">
               Clique no botão abaixo e será direcionado imediatamente para nossa equipe.
