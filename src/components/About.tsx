@@ -1,3 +1,4 @@
+
 const About = () => {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -13,37 +14,28 @@ const About = () => {
           {/* Header */}
           <div className="mb-12">
             <h2 className="text-4xl md:text-5xl font-playfair font-bold text-navy-600 mb-4">
-              Sobre Vilson Rauch
+              Sobre a Valorum Capital
             </h2>
             <div className="w-16 h-1 bg-gold-500 mb-6"></div>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-12 items-start mb-12">
-            {/* Image */}
-            <div className="animate-fade-in">
-              <img 
-                src="/lovable-uploads/198f0dc1-b9de-4fcd-b390-8204dc19dbaa.png" 
-                alt="Vilson Rauch - Consultor" 
-                className="w-full rounded-lg shadow-xl object-contain"
-              />
-            </div>
-
-            {/* Content - Text alongside image */}
+          <div className="mb-12">
+            {/* Content */}
             <div className="space-y-6 animate-fade-in">
               <p className="text-lg text-gray-700 leading-relaxed">
-                Vilson Rauch é estrategista financeiro com ampla experiência em consultoria independente e gestão patrimonial. Atua com foco na excelência técnica e no rigor ético, oferecendo soluções integradas em finanças, renda e investimentos para indivíduos, famílias e empresas.
+                A Valorum Capital é uma consultoria especializada em gestão patrimonial e planejamento financeiro, com foco na excelência técnica e no rigor ético. Oferecemos soluções integradas em finanças, renda e investimentos para indivíduos, famílias e empresas.
               </p>
 
               <p className="text-lg text-gray-700 leading-relaxed">
-                Com mais de duas décadas de atuação na gestão industrial, Vilson Rauch desenvolveu uma visão estratégica e operacional única, que agora aplica à consultoria personalizada para indivíduos e empresas.
+                Nossa abordagem combina experiência estratégica e operacional única, desenvolvida ao longo de décadas de atuação no mercado, proporcionando uma compreensão aprofundada dos desafios e oportunidades do ambiente corporativo.
               </p>
 
               <p className="text-lg text-gray-700 leading-relaxed">
-                Essa trajetória proporciona uma compreensão aprofundada dos desafios e oportunidades do ambiente corporativo, permitindo a entrega de soluções alinhadas às necessidades reais de cada cliente.
+                Isso nos permite entregar soluções alinhadas às necessidades reais de cada cliente, sempre com foco na construção e preservação do patrimônio.
               </p>
 
               <p className="text-lg text-gray-700 leading-relaxed">
-                Coordenando um time multidisciplinar de especialistas, assegura que cada projeto receba uma abordagem integrada, combinando competências em economia, contabilidade, investimentos, excelência operacional e gestão empresarial. Essa sinergia resulta em estratégias robustas, eficazes e adaptadas ao contexto específico, fundamentadas em experiência prática, conhecimento técnico e compromisso com resultados de excelência.
+                Coordenamos um time multidisciplinar de especialistas, assegurando que cada projeto receba uma abordagem integrada, combinando competências em economia, contabilidade, investimentos, excelência operacional e gestão empresarial. Essa sinergia resulta em estratégias robustas, eficazes e adaptadas ao contexto específico, fundamentadas em experiência prática, conhecimento técnico e compromisso com resultados de excelência.
               </p>
             </div>
           </div>
