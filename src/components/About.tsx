@@ -1,5 +1,9 @@
 
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+
 const About = () => {
+  const { elementRef, isVisible } = useScrollAnimation();
+
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -10,9 +14,9 @@ const About = () => {
   return (
     <section className="py-20 bg-gray-50" id="sobre">
       <div className="container mx-auto px-6">
-        <div className="max-w-6xl mx-auto">
+        <div ref={elementRef} className="max-w-6xl mx-auto">
           {/* Header */}
-          <div className="mb-12">
+          <div className={`mb-12 transition-all duration-1000 ${isVisible ? 'animate-fade-in opacity-100' : 'opacity-0 translate-y-8'}`}>
             <h2 className="text-4xl md:text-5xl font-playfair font-bold text-navy-600 mb-4">
               Sobre a Valorum Capital
             </h2>
@@ -21,7 +25,7 @@ const About = () => {
 
           <div className="mb-12">
             {/* Content */}
-            <div className="space-y-6 animate-fade-in">
+            <div className={`space-y-6 transition-all duration-1000 delay-300 ${isVisible ? 'animate-fade-in opacity-100' : 'opacity-0 translate-y-8'}`}>
               <p className="text-lg text-gray-700 leading-relaxed">
                 A Valorum Capital é uma consultoria especializada em gestão patrimonial e planejamento financeiro, com foco na excelência técnica e no rigor ético. Oferecemos soluções integradas em finanças, renda e investimentos para indivíduos, famílias e empresas.
               </p>
@@ -41,7 +45,7 @@ const About = () => {
           </div>
 
           {/* CTA Section */}
-          <div className="animate-fade-in">
+          <div className={`transition-all duration-1000 delay-500 ${isVisible ? 'animate-fade-in opacity-100' : 'opacity-0 translate-y-8'}`}>
             <div className="bg-white p-6 rounded-lg shadow-sm border-l-4 border-corporate-500">
               <p className="text-gray-700 mb-6 text-center text-lg font-medium">
                 Personalizado, independente e orientado à construção e preservação do patrimônio.
@@ -51,19 +55,19 @@ const About = () => {
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                 <button
                   onClick={() => scrollToSection('pessoa-fisica')}
-                  className="bg-navy-600 text-white px-6 py-3 rounded-lg hover:bg-navy-700 transition-all duration-300 font-medium"
+                  className="bg-navy-600 text-white px-6 py-3 rounded-lg hover:bg-navy-700 transition-all duration-300 font-medium transform hover:scale-105"
                 >
                   Pessoa Física
                 </button>
                 <button
                   onClick={() => scrollToSection('protocolo-especializado')}
-                  className="bg-corporate-500 text-white px-6 py-3 rounded-lg hover:bg-corporate-600 transition-all duration-300 font-medium"
+                  className="bg-corporate-500 text-white px-6 py-3 rounded-lg hover:bg-corporate-600 transition-all duration-300 font-medium transform hover:scale-105"
                 >
                   Profissionais da Medicina e Saúde
                 </button>
                 <button
                   onClick={() => scrollToSection('pessoa-juridica')}
-                  className="bg-financial-500 text-white px-6 py-3 rounded-lg hover:bg-financial-600 transition-all duration-300 font-medium"
+                  className="bg-financial-500 text-white px-6 py-3 rounded-lg hover:bg-financial-600 transition-all duration-300 font-medium transform hover:scale-105"
                 >
                   Pessoa Jurídica
                 </button>

@@ -17,8 +17,13 @@ import {
   Users,
   Activity
 } from "lucide-react";
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const HowWeWork = () => {
+  const { elementRef: headerRef, isVisible: headerVisible } = useScrollAnimation();
+  const { elementRef: processRef, isVisible: processVisible } = useScrollAnimation();
+  const { elementRef: areasRef, isVisible: areasVisible } = useScrollAnimation();
+
   const processSteps = [
     {
       title: "Entender",
@@ -101,7 +106,8 @@ const HowWeWork = () => {
     <section className="py-20 bg-gray-50" id="como-atuamos">
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16 animate-fade-in">
+          {/* Header */}
+          <div ref={headerRef} className={`text-center mb-16 transition-all duration-1000 ${headerVisible ? 'animate-fade-in opacity-100' : 'opacity-0 translate-y-8'}`}>
             <div className="relative inline-block">
               <h2 className="text-4xl md:text-5xl font-playfair font-bold text-navy-600 mb-4">
                 Como Atuamos
@@ -114,8 +120,8 @@ const HowWeWork = () => {
           </div>
 
           {/* Processo Estruturado */}
-          <div className="mb-20">
-            <h3 className="text-2xl font-playfair font-semibold text-navy-600 text-center mb-4">
+          <div ref={processRef} className="mb-20">
+            <h3 className={`text-2xl font-playfair font-semibold text-navy-600 text-center mb-4 transition-all duration-1000 ${processVisible ? 'animate-fade-in opacity-100' : 'opacity-0 translate-y-8'}`}>
               Nosso processo é estruturado para garantir que cada decisão financeira faça sentido para você.
             </h3>
             
@@ -125,8 +131,11 @@ const HowWeWork = () => {
                 return (
                   <div 
                     key={index}
-                    className="bg-white rounded-lg p-6 shadow-lg hover:shadow-xl transition-all duration-300 animate-fade-in group"
-                    style={{ animationDelay: `${index * 0.1}s` }}
+                    className={`bg-white rounded-lg p-6 shadow-lg hover:shadow-xl transition-all duration-700 group ${processVisible ? 'animate-fade-in opacity-100' : 'opacity-0 translate-y-8'}`}
+                    style={{ 
+                      animationDelay: processVisible ? `${index * 0.2}s` : '0s',
+                      transitionDelay: processVisible ? `${index * 0.2}s` : '0s'
+                    }}
                   >
                     <div className="text-center">
                       {/* Ícone */}
@@ -156,8 +165,8 @@ const HowWeWork = () => {
           </div>
 
           {/* Áreas de Atuação */}
-          <div>
-            <h3 className="text-2xl font-playfair font-semibold text-navy-600 text-center mb-8">
+          <div ref={areasRef}>
+            <h3 className={`text-2xl font-playfair font-semibold text-navy-600 text-center mb-8 transition-all duration-1000 ${areasVisible ? 'animate-fade-in opacity-100' : 'opacity-0 translate-y-8'}`}>
               Áreas de Especialização
             </h3>
             
@@ -167,8 +176,11 @@ const HowWeWork = () => {
                 return (
                   <div 
                     key={index}
-                    className="bg-white p-6 rounded-lg shadow-sm border-l-4 border-corporate-500 hover:shadow-md transition-all duration-300 animate-fade-in"
-                    style={{ animationDelay: `${index * 0.05}s` }}
+                    className={`bg-white p-6 rounded-lg shadow-sm border-l-4 border-corporate-500 hover:shadow-md transition-all duration-700 ${areasVisible ? 'animate-fade-in opacity-100' : 'opacity-0 translate-x-8'}`}
+                    style={{ 
+                      animationDelay: areasVisible ? `${index * 0.1}s` : '0s',
+                      transitionDelay: areasVisible ? `${index * 0.1}s` : '0s'
+                    }}
                   >
                     <div className="flex items-center">
                       <div className="mr-4 flex-shrink-0">

@@ -1,7 +1,9 @@
 
-
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const Hero = () => {
+  const { elementRef, isVisible } = useScrollAnimation();
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-white">
       {/* Background Pattern */}
@@ -11,10 +13,10 @@ const Hero = () => {
         <div className="absolute top-1/2 left-1/4 w-24 h-24 border border-navy-600/20 rounded-full"></div>
       </div>
 
-      <div className="container mx-auto px-6 text-center relative z-10">
+      <div ref={elementRef} className="container mx-auto px-6 text-center relative z-10">
         <div className="max-w-4xl mx-auto">
           {/* Logo/Brand Image */}
-          <div className="mb-8 animate-fade-in">
+          <div className={`mb-8 transition-all duration-1000 ${isVisible ? 'animate-fade-in opacity-100' : 'opacity-0 translate-y-8'}`}>
             <div className="relative w-96 h-96 md:w-[500px] md:h-[500px] lg:w-[600px] lg:h-[600px] mx-auto">
               <img 
                 src="/lovable-uploads/c6d2d18e-fee4-4fd6-b992-c5eb8a005aba.png" 
@@ -25,12 +27,12 @@ const Hero = () => {
           </div>
 
           {/* Subtitle */}
-          <h2 className="text-2xl md:text-3xl font-inter font-light mb-8 animate-fade-in text-navy-600">
+          <h2 className={`text-2xl md:text-3xl font-inter font-light mb-8 text-navy-600 transition-all duration-1000 delay-300 ${isVisible ? 'animate-fade-in opacity-100' : 'opacity-0 translate-y-8'}`}>
             Gestão Patrimonial e Planejamento Financeiro
           </h2>
 
           {/* Impact Phrase */}
-          <blockquote className="text-xl md:text-2xl font-inter italic max-w-4xl mx-auto leading-relaxed mb-8 animate-fade-in px-6 py-4 rounded-lg text-navy-600">
+          <blockquote className={`text-xl md:text-2xl font-inter italic max-w-4xl mx-auto leading-relaxed mb-8 px-6 py-4 rounded-lg text-navy-600 transition-all duration-1000 delay-500 ${isVisible ? 'animate-fade-in opacity-100' : 'opacity-0 translate-y-8'}`}>
             "Transformando patrimônio em legado através de estratégias inteligentes."
           </blockquote>
         </div>
@@ -47,5 +49,3 @@ const Hero = () => {
 };
 
 export { Hero };
-
-
