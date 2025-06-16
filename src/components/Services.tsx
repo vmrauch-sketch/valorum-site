@@ -8,8 +8,11 @@ import {
   DollarSign, 
   GraduationCap 
 } from "lucide-react";
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const Services = () => {
+  const { elementRef, isVisible } = useScrollAnimation();
+
   const handleEbookFIDCClick = () => {
     const message = encodeURIComponent("Olá! Gostaria de baixar o ebook sobre FIDC e estratégias tributárias.");
     window.open(`https://wa.me/5511949566290?text=${message}`, '_blank');
@@ -29,28 +32,28 @@ const Services = () => {
     <section className="py-20 bg-white" id="servicos">
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16 animate-fade-in">
-            <div className="relative inline-block">
+          <div ref={elementRef} className="text-center mb-16">
+            <div className={`relative inline-block transform transition-all duration-1000 ease-out ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'}`}>
               <h2 className="text-4xl md:text-5xl font-playfair font-bold text-navy-600 mb-4">
                 Nossos Serviços
               </h2>
               <div className="absolute bottom-2 left-0 w-16 h-1 bg-gold-500"></div>
             </div>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto mt-8">
+            <p className={`text-xl text-gray-600 max-w-3xl mx-auto mt-8 transform transition-all duration-1000 ease-out delay-300 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
               Soluções completas em consultoria financeira e gestão patrimonial
             </p>
           </div>
 
           {/* Pessoa Física */}
-          <div id="pessoa-fisica" className="mb-16 animate-fade-in">
-            <div className="bg-navy-50 p-8 rounded-xl">
+          <div id="pessoa-fisica" className="mb-16">
+            <div className={`bg-navy-50 p-8 rounded-xl transform transition-all duration-1000 ease-out delay-500 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'}`}>
               <h3 className="text-3xl font-playfair font-bold text-navy-600 mb-6 flex items-center">
                 <User size={32} className="mr-4 text-navy-600" />
                 Pessoa Física
               </h3>
               
               <div className="grid md:grid-cols-2 gap-6">
-                <div className="bg-white p-6 rounded-lg shadow-sm">
+                <div className={`bg-white p-6 rounded-lg shadow-sm transform transition-all duration-1000 ease-out delay-700 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
                   <h4 className="text-xl font-bold text-navy-600 mb-4 flex items-center">
                     <BarChart3 size={24} className="mr-3 text-navy-600" />
                     Consultoria de Investimentos Personalizada
@@ -69,7 +72,7 @@ const Services = () => {
                   </button>
                 </div>
 
-                <div className="bg-white p-6 rounded-lg shadow-sm">
+                <div className={`bg-white p-6 rounded-lg shadow-sm transform transition-all duration-1000 ease-out delay-900 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
                   <h4 className="text-xl font-bold text-navy-600 mb-4 flex items-center">
                     <Gem size={24} className="mr-3 text-navy-600" />
                     Gestão Patrimonial e Wealth Planning
@@ -86,15 +89,15 @@ const Services = () => {
           </div>
 
           {/* Pessoa Jurídica */}
-          <div id="pessoa-juridica" className="mb-16 animate-fade-in">
-            <div className="bg-financial-50 p-8 rounded-xl">
+          <div id="pessoa-juridica" className="mb-16">
+            <div className={`bg-financial-50 p-8 rounded-xl transform transition-all duration-1000 ease-out delay-1100 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'}`}>
               <h3 className="text-3xl font-playfair font-bold text-financial-600 mb-6 flex items-center">
                 <Building size={32} className="mr-4 text-financial-600" />
                 Pessoa Jurídica
               </h3>
               
               <div className="grid md:grid-cols-2 gap-6">
-                <div className="bg-white p-6 rounded-lg shadow-sm">
+                <div className={`bg-white p-6 rounded-lg shadow-sm transform transition-all duration-1000 ease-out delay-1300 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
                   <h4 className="text-xl font-bold text-financial-600 mb-4">
                     Consultoria Financeira Empresarial
                   </h4>
@@ -106,7 +109,7 @@ const Services = () => {
                   </ul>
                 </div>
 
-                <div className="bg-white p-6 rounded-lg shadow-sm">
+                <div className={`bg-white p-6 rounded-lg shadow-sm transform transition-all duration-1000 ease-out delay-1500 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
                   <h4 className="text-xl font-bold text-financial-600 mb-4">
                     Recuperação Tributária
                   </h4>
@@ -124,7 +127,7 @@ const Services = () => {
                   </button>
                 </div>
 
-                <div className="bg-white p-6 rounded-lg shadow-sm">
+                <div className={`bg-white p-6 rounded-lg shadow-sm transform transition-all duration-1000 ease-out delay-1700 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
                   <h4 className="text-xl font-bold text-financial-600 mb-4 flex items-center">
                     <FileText size={20} className="mr-2 text-financial-600" />
                     FIDC e Estratégias Tributárias
@@ -142,7 +145,7 @@ const Services = () => {
                   </button>
                 </div>
 
-                <div className="bg-white p-6 rounded-lg shadow-sm">
+                <div className={`bg-white p-6 rounded-lg shadow-sm transform transition-all duration-1000 ease-out delay-1900 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
                   <h4 className="text-xl font-bold text-financial-600 mb-4 flex items-center">
                     <GraduationCap size={20} className="mr-2 text-financial-600" />
                     Educação Financeira Corporativa
