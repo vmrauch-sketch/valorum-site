@@ -1,4 +1,5 @@
 
+
 import { 
   BarChart3, 
   Building2, 
@@ -109,19 +110,19 @@ const HowWeWork = () => {
           {/* Header */}
           <div ref={headerRef} className={`text-center mb-16 transform transition-all duration-1000 ease-out ${headerVisible ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'}`}>
             <div className="relative inline-block">
-              <h2 className="text-4xl md:text-5xl font-playfair font-bold text-navy-600 mb-4">
+              <h2 className="text-5xl md:text-6xl font-playfair font-bold text-navy-600 mb-4">
                 Como Atuamos
               </h2>
               <div className="absolute bottom-2 left-0 w-16 h-1 bg-gold-500"></div>
             </div>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed mt-8">
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed mt-8 font-inter">
               Áreas de especialização e atuação
             </p>
           </div>
 
           {/* Processo Estruturado */}
           <div ref={processRef} className="mb-20">
-            <h3 className={`text-2xl font-playfair font-semibold text-navy-600 text-center mb-4 transform transition-all duration-1000 ease-out ${processVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
+            <h3 className={`text-3xl md:text-4xl font-playfair font-semibold text-navy-600 text-center mb-6 leading-tight transform transition-all duration-1000 ease-out ${processVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
               Nosso processo é estruturado para garantir que cada decisão financeira faça sentido para você.
             </h3>
             
@@ -143,17 +144,17 @@ const HowWeWork = () => {
                       </div>
                       
                       {/* Título */}
-                      <h4 className="text-xl font-playfair font-semibold text-navy-600 mb-2">
+                      <h4 className="text-2xl md:text-3xl font-playfair font-bold text-navy-600 mb-3 leading-tight">
                         {step.title}
                       </h4>
                       
                       {/* Subtítulo */}
-                      <p className="text-sm text-gray-600 font-medium mb-3">
+                      <p className="text-base font-inter font-medium mb-4 text-gray-700 leading-relaxed">
                         {step.subtitle}
                       </p>
                       
                       {/* Descrição */}
-                      <p className="text-xs text-gray-500 leading-relaxed">
+                      <p className="text-sm font-inter text-gray-600 leading-relaxed">
                         {step.description}
                       </p>
                     </div>
@@ -165,7 +166,7 @@ const HowWeWork = () => {
 
           {/* Áreas de Atuação */}
           <div ref={areasRef}>
-            <h3 className={`text-2xl font-playfair font-semibold text-navy-600 text-center mb-8 transform transition-all duration-1000 ease-out ${areasVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
+            <h3 className={`text-3xl md:text-4xl font-playfair font-semibold text-navy-600 text-center mb-8 leading-tight transform transition-all duration-1000 ease-out ${areasVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
               Áreas de Especialização
             </h3>
             
@@ -187,7 +188,7 @@ const HowWeWork = () => {
                           className="text-corporate-500" 
                         />
                       </div>
-                      <span className="text-gray-800 font-medium">{area.title}</span>
+                      <span className="text-gray-800 font-inter font-medium text-lg leading-relaxed">{area.title}</span>
                     </div>
                   </div>
                 );
@@ -201,3 +202,4 @@ const HowWeWork = () => {
 };
 
 export { HowWeWork };
+
