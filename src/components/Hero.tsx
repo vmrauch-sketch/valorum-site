@@ -11,13 +11,14 @@ const Hero = () => {
 
       <div className="container mx-auto px-6 text-center text-white relative z-10">
         <div className="max-w-4xl mx-auto">
-          {/* Logo/Brand Symbol */}
+          {/* Logo/Brand Image */}
           <div className="mb-8 animate-fade-in">
-            <div className="relative w-64 h-64 mx-auto">
-              {/* Brand circle with V logo */}
-              <div className="absolute inset-0 bg-gradient-to-br from-navy-500 to-corporate-600 rounded-full flex items-center justify-center">
-                <span className="text-6xl font-playfair font-bold text-white">V</span>
-              </div>
+            <div className="relative w-80 h-80 mx-auto">
+              <img 
+                src="/lovable-uploads/4cea6ec0-a75a-4577-8f73-838cd57fafc3.png" 
+                alt="Valorum Capital Logo" 
+                className="w-full h-full object-contain"
+              />
             </div>
           </div>
 
