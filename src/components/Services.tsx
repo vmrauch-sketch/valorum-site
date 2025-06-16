@@ -1,4 +1,3 @@
-
 import { 
   User, 
   Building, 
@@ -127,7 +126,7 @@ const Services = () => {
             <div className="bg-financial-50 p-8 rounded-xl">
               <h3 className="text-3xl font-playfair font-bold text-financial-600 mb-6 flex items-center">
                 <Building size={32} className="mr-4 text-financial-600" />
-                Pessoa Jurídica (Empresas)
+                Pessoa Jurídica
               </h3>
               
               <div className="grid md:grid-cols-2 gap-6">
