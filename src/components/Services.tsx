@@ -1,5 +1,21 @@
 
+
 const Services = () => {
+  const handleEbookFIDCClick = () => {
+    const message = encodeURIComponent("Olá! Gostaria de baixar o ebook sobre FIDC e estratégias tributárias.");
+    window.open(`https://wa.me/5511949566290?text=${message}`, '_blank');
+  };
+
+  const handleEbookRecuperacaoClick = () => {
+    const message = encodeURIComponent("Olá! Gostaria de baixar o ebook sobre recuperação tributária.");
+    window.open(`https://wa.me/5511949566290?text=${message}`, '_blank');
+  };
+
+  const handleEbookPlanejamentoClick = () => {
+    const message = encodeURIComponent("Olá! Gostaria de baixar o ebook sobre planejamento financeiro.");
+    window.open(`https://wa.me/5511949566290?text=${message}`, '_blank');
+  };
+
   return (
     <section className="py-20 bg-white" id="servicos">
       <div className="container mx-auto px-6">
@@ -33,7 +49,10 @@ const Services = () => {
                     <li>• Monitoramento contínuo</li>
                     <li>• Gestão profissional de investimentos</li>
                   </ul>
-                  <button className="bg-navy-500 text-white px-4 py-2 rounded-lg hover:bg-navy-600 transition-colors text-sm">
+                  <button 
+                    onClick={handleEbookPlanejamentoClick}
+                    className="bg-navy-500 text-white px-4 py-2 rounded-lg hover:bg-navy-600 transition-colors text-sm"
+                  >
                     Baixe ebook sobre planejamento financeiro
                   </button>
                 </div>
@@ -115,7 +134,10 @@ const Services = () => {
                     <li>• Estruturação segura dos processos</li>
                     <li>• Otimização da carga tributária</li>
                   </ul>
-                  <button className="bg-financial-500 text-white px-4 py-2 rounded-lg hover:bg-financial-600 transition-colors text-sm">
+                  <button 
+                    onClick={handleEbookRecuperacaoClick}
+                    className="bg-financial-500 text-white px-4 py-2 rounded-lg hover:bg-financial-600 transition-colors text-sm"
+                  >
                     Baixe o ebook sobre recuperação tributária
                   </button>
                 </div>
@@ -129,7 +151,10 @@ const Services = () => {
                     <li>• Captação e gestão de fluxo de caixa</li>
                     <li>• Planejamento tributário eficiente</li>
                   </ul>
-                  <button className="bg-financial-500 text-white px-4 py-2 rounded-lg hover:bg-financial-600 transition-colors text-sm">
+                  <button 
+                    onClick={handleEbookFIDCClick}
+                    className="bg-financial-500 text-white px-4 py-2 rounded-lg hover:bg-financial-600 transition-colors text-sm"
+                  >
                     Baixe o ebook sobre FIDC
                   </button>
                 </div>
@@ -155,3 +180,4 @@ const Services = () => {
 };
 
 export { Services };
+
