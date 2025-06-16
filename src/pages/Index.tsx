@@ -13,8 +13,8 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-white font-inter">
       <Hero />
-      <About />
       <HowWeWork />
+      <About />
       <Services />
       <SpecializedProtocol />
       <AdvancedStrategies />
