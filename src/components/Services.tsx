@@ -1,4 +1,3 @@
-
 import { 
   User, 
   Building, 
@@ -116,8 +115,10 @@ const Services = () => {
                     Protocolo Especializado
                   </h4>
                   <p className="text-gray-700 mb-4">
-                    Atendimento exclusivo para profissionais da medicina, considerando 
-                    peculiaridades de rotina, planejamento patrimonial e questões tributárias específicas.
+                    Esse Protocolo foi criado para atender profissionais da medicina e saúde, considerando 
+                    peculiaridades de rotina, planejamento patrimonial e questões tributárias específicas. 
+                    Desenvolvemos estratégias que maximizam sua renda e otimizam seu tempo, permitindo 
+                    maior qualidade de vida com segurança financeira.
                   </p>
                   <div className="bg-gold-50 p-4 rounded-lg">
                     <p className="text-sm text-gold-700 font-medium">
