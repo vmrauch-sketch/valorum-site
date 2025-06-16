@@ -25,12 +25,12 @@ const Hero = () => {
           </div>
 
           {/* Subtitle */}
-          <h2 className="text-2xl md:text-3xl font-inter font-light mb-8 animate-fade-in text-gold-400/90">
+          <h2 className="text-2xl md:text-3xl font-inter font-light mb-8 animate-fade-in" style={{ color: '#F4F4F4' }}>
             Consultoria em Gestão Patrimonial e Planejamento Financeiro
           </h2>
 
           {/* Impact Phrase */}
-          <blockquote className="text-xl md:text-2xl font-inter italic max-w-4xl mx-auto leading-relaxed mb-8 animate-fade-in px-6 py-4 rounded-lg bg-navy-900/50 text-gold-400 border border-gold-500/20">
+          <blockquote className="text-xl md:text-2xl font-inter italic max-w-4xl mx-auto leading-relaxed mb-8 animate-fade-in px-6 py-4 rounded-lg bg-navy-900/50 border border-gold-500/20" style={{ color: '#F4F4F4' }}>
             "Transformando patrimônio em legado através de estratégias inteligentes."
           </blockquote>
         </div>
