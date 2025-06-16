@@ -40,9 +40,11 @@ const Hero = () => {
           </div>
 
           {/* Impact Phrase - Single Line */}
-          <blockquote className={`text-xl md:text-2xl font-inter italic max-w-5xl mx-auto leading-relaxed mb-8 px-6 py-4 rounded-lg text-navy-600 transform transition-all duration-1000 ease-out delay-600 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
-            "Transformando patrimônio em legado através de estratégias inteligentes."
-          </blockquote>
+          <div className={`text-xl md:text-2xl font-inter italic mx-auto mb-8 text-navy-600 transform transition-all duration-1000 ease-out delay-600 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
+            <p className="whitespace-nowrap px-4 py-2">
+              "Transformando patrimônio em legado através de estratégias inteligentes."
+            </p>
+          </div>
         </div>
       </div>
 
