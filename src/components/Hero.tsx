@@ -39,11 +39,11 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Impact Phrase - Single Line */}
+          {/* Impact Phrase - Single Line - Simplified */}
           <div className={`text-xl md:text-2xl font-inter italic mx-auto mb-8 text-navy-600 transform transition-all duration-1000 ease-out delay-600 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
-            <p className="whitespace-nowrap px-4 py-2">
+            <span className="inline-block text-center">
               "Transformando patrimônio em legado através de estratégias inteligentes."
-            </p>
+            </span>
           </div>
         </div>
       </div>
