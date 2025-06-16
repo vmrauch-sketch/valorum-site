@@ -7,17 +7,17 @@ const Footer = () => {
           <div className="grid md:grid-cols-3 gap-8">
             {/* Logo and Description */}
             <div className="md:col-span-2">
-              <h3 className="text-2xl font-playfair font-bold mb-4">Vilson Rauch</h3>
+              <h3 className="text-2xl font-playfair font-bold mb-4">Valorum Capital</h3>
               <p className="text-white/80 mb-4 max-w-md">
-                Consultor de Valores Mobiliários CVM credenciado, especialista em wealth planning e palestrante.
+                Consultoria especializada em gestão patrimonial e planejamento financeiro, oferecendo soluções personalizadas para crescimento e proteção do seu patrimônio.
               </p>
               <div className="flex items-center space-x-2 text-sm text-white/60">
                 <span className="w-2 h-2 bg-financial-500 rounded-full"></span>
-                <span>Consultoria independente</span>
+                <span>Gestão Patrimonial</span>
                 <span className="w-2 h-2 bg-financial-500 rounded-full"></span>
-                <span>Credenciado CVM</span>
+                <span>Planejamento Financeiro</span>
                 <span className="w-2 h-2 bg-financial-500 rounded-full"></span>
-                <span>Gestor de patrimônio</span>
+                <span>Consultoria Especializada</span>
               </div>
             </div>
 
@@ -42,7 +42,7 @@ const Footer = () => {
           </div>
 
           <div className="border-t border-white/20 mt-8 pt-8 text-center text-white/60">
-            <p>&copy; 2024 Vilson Rauch. Todos os direitos reservados. | Consultor CVM Credenciado</p>
+            <p>&copy; 2024 Valorum Capital. Todos os direitos reservados. | Consultoria em Gestão Patrimonial</p>
           </div>
         </div>
       </div>
