@@ -24,6 +24,19 @@ const Hero = () => {
                 className="w-full h-full object-contain"
               />
             </div>
+            
+            {/* Text below logo */}
+            <div className="mt-6 space-y-2">
+              <p className="text-xl md:text-2xl font-inter font-medium text-navy-600">
+                Consultoria Financeira
+              </p>
+              <p className="text-xl md:text-2xl font-inter font-medium text-navy-600">
+                Gestão Patrimonial
+              </p>
+              <p className="text-xl md:text-2xl font-inter font-medium text-navy-600">
+                Planejamento Financeiro
+              </p>
+            </div>
           </div>
 
           {/* Subtitle */}
@@ -31,9 +44,19 @@ const Hero = () => {
             Gestão Patrimonial e Planejamento Financeiro
           </h2>
 
-          {/* Impact Phrase */}
-          <blockquote className={`text-xl md:text-2xl font-inter italic max-w-4xl mx-auto leading-relaxed mb-8 px-6 py-4 rounded-lg text-navy-600 transform transition-all duration-1000 ease-out delay-600 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
-            "Transformando patrimônio em legado através de estratégias inteligentes."
+          {/* Impact Phrase with animated symbol */}
+          <blockquote className={`relative text-xl md:text-2xl font-inter italic max-w-4xl mx-auto leading-relaxed mb-8 px-6 py-4 rounded-lg text-navy-600 transform transition-all duration-1000 ease-out delay-600 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
+            "Transformando patrimônio em legado através de estratégias{' '}
+            <span className="relative inline-block">
+              inteligentes
+              {/* Animated symbol */}
+              <div className="absolute -top-2 -right-6 w-6 h-6 text-financial-500 animate-bounce">
+                <svg viewBox="0 0 24 24" fill="currentColor" className="w-full h-full">
+                  <path d="M12 2L13.5 8.5L20 7L14.5 12L20 17L13.5 15.5L12 22L10.5 15.5L4 17L9.5 12L4 7L10.5 8.5L12 2Z"/>
+                </svg>
+              </div>
+            </span>
+            ."
           </blockquote>
         </div>
       </div>

@@ -1,4 +1,5 @@
 
+
 const Contact = () => {
   const handleWhatsAppClick = () => {
     const message = encodeURIComponent("Olá! Gostaria de agendar uma consultoria personalizada sobre planejamento financeiro e gestão patrimonial.");
