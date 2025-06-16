@@ -26,7 +26,7 @@ const About = () => {
               <img 
                 src="/lovable-uploads/198f0dc1-b9de-4fcd-b390-8204dc19dbaa.png" 
                 alt="Vilson Rauch - Consultor" 
-                className="w-full rounded-lg shadow-xl object-cover h-[500px]"
+                className="w-full rounded-lg shadow-xl object-contain"
               />
             </div>
 
