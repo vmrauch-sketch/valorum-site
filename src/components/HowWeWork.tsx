@@ -107,7 +107,7 @@ const HowWeWork = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           {/* Header */}
-          <div ref={headerRef} className={`text-center mb-16 transition-all duration-1000 ${headerVisible ? 'animate-fade-in opacity-100' : 'opacity-0 translate-y-8'}`}>
+          <div ref={headerRef} className={`text-center mb-16 transform transition-all duration-1000 ease-out ${headerVisible ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'}`}>
             <div className="relative inline-block">
               <h2 className="text-4xl md:text-5xl font-playfair font-bold text-navy-600 mb-4">
                 Como Atuamos
@@ -121,7 +121,7 @@ const HowWeWork = () => {
 
           {/* Processo Estruturado */}
           <div ref={processRef} className="mb-20">
-            <h3 className={`text-2xl font-playfair font-semibold text-navy-600 text-center mb-4 transition-all duration-1000 ${processVisible ? 'animate-fade-in opacity-100' : 'opacity-0 translate-y-8'}`}>
+            <h3 className={`text-2xl font-playfair font-semibold text-navy-600 text-center mb-4 transform transition-all duration-1000 ease-out ${processVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
               Nosso processo é estruturado para garantir que cada decisão financeira faça sentido para você.
             </h3>
             
@@ -131,10 +131,9 @@ const HowWeWork = () => {
                 return (
                   <div 
                     key={index}
-                    className={`bg-white rounded-lg p-6 shadow-lg hover:shadow-xl transition-all duration-700 group ${processVisible ? 'animate-fade-in opacity-100' : 'opacity-0 translate-y-8'}`}
+                    className={`bg-white rounded-lg p-6 shadow-lg hover:shadow-xl transition-all duration-1000 ease-out group transform ${processVisible ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'}`}
                     style={{ 
-                      animationDelay: processVisible ? `${index * 0.2}s` : '0s',
-                      transitionDelay: processVisible ? `${index * 0.2}s` : '0s'
+                      transitionDelay: processVisible ? `${index * 150}ms` : '0ms'
                     }}
                   >
                     <div className="text-center">
@@ -166,7 +165,7 @@ const HowWeWork = () => {
 
           {/* Áreas de Atuação */}
           <div ref={areasRef}>
-            <h3 className={`text-2xl font-playfair font-semibold text-navy-600 text-center mb-8 transition-all duration-1000 ${areasVisible ? 'animate-fade-in opacity-100' : 'opacity-0 translate-y-8'}`}>
+            <h3 className={`text-2xl font-playfair font-semibold text-navy-600 text-center mb-8 transform transition-all duration-1000 ease-out ${areasVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
               Áreas de Especialização
             </h3>
             
@@ -176,10 +175,9 @@ const HowWeWork = () => {
                 return (
                   <div 
                     key={index}
-                    className={`bg-white p-6 rounded-lg shadow-sm border-l-4 border-corporate-500 hover:shadow-md transition-all duration-700 ${areasVisible ? 'animate-fade-in opacity-100' : 'opacity-0 translate-x-8'}`}
+                    className={`bg-white p-6 rounded-lg shadow-sm border-l-4 border-corporate-500 hover:shadow-md transition-all duration-1000 ease-out transform ${areasVisible ? 'translate-x-0 opacity-100' : 'translate-x-8 opacity-0'}`}
                     style={{ 
-                      animationDelay: areasVisible ? `${index * 0.1}s` : '0s',
-                      transitionDelay: areasVisible ? `${index * 0.1}s` : '0s'
+                      transitionDelay: areasVisible ? `${index * 100}ms` : '0ms'
                     }}
                   >
                     <div className="flex items-center">

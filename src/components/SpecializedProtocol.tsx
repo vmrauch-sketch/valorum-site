@@ -13,13 +13,13 @@ const SpecializedProtocol = () => {
     <section className="py-20 bg-gold-50" id="protocolo-especializado">
       <div className="container mx-auto px-6">
         <div ref={elementRef} className="max-w-4xl mx-auto text-center">
-          <h2 className={`text-4xl md:text-5xl font-playfair font-bold mb-6 text-navy-600 transition-all duration-1000 ${isVisible ? 'animate-fade-in opacity-100' : 'opacity-0 translate-y-8'}`}>
+          <h2 className={`text-4xl md:text-5xl font-playfair font-bold mb-6 text-navy-600 transform transition-all duration-1000 ease-out ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'}`}>
             Protocolo Especializado
           </h2>
-          <h3 className={`text-2xl font-bold mb-6 text-gold-600 transition-all duration-1000 delay-200 ${isVisible ? 'animate-fade-in opacity-100' : 'opacity-0 translate-y-8'}`}>
+          <h3 className={`text-2xl font-bold mb-6 text-gold-600 transform transition-all duration-1000 ease-out delay-300 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
             "Mais Renda, Menos Plantão"
           </h3>
-          <div className={`bg-white p-8 rounded-xl shadow-lg mb-8 transition-all duration-1000 delay-400 ${isVisible ? 'animate-fade-in opacity-100' : 'opacity-0 translate-y-8'}`}>
+          <div className={`bg-white p-8 rounded-xl shadow-lg mb-8 transform transition-all duration-1000 ease-out delay-500 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
             <p className="text-lg leading-relaxed mb-6 text-gray-700">
               Atendimento para <strong>profissionais da medicina e saúde</strong>, considerando 
               peculiaridades de rotina, planejamento patrimonial e questões tributárias específicas. 

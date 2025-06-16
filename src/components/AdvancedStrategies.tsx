@@ -64,7 +64,7 @@ const AdvancedStrategies = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           {/* Header */}
-          <div ref={headerRef} className={`text-center mb-16 transition-all duration-1000 ${headerVisible ? 'animate-fade-in opacity-100' : 'opacity-0 translate-y-8'}`}>
+          <div ref={headerRef} className={`text-center mb-16 transform transition-all duration-1000 ease-out ${headerVisible ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'}`}>
             <div className="relative inline-block">
               <h2 className="text-4xl md:text-5xl font-playfair font-bold text-navy-600 mb-4">
                 Estratégias Avançadas
@@ -82,10 +82,9 @@ const AdvancedStrategies = () => {
             {strategies.map((strategy, index) => (
               <div 
                 key={index}
-                className={`bg-navy-50 border border-navy-100 p-6 rounded-xl hover:bg-navy-100 transition-all duration-700 group shadow-sm ${strategiesVisible ? 'animate-fade-in opacity-100' : 'opacity-0 translate-y-8'}`}
+                className={`bg-navy-50 border border-navy-100 p-6 rounded-xl hover:bg-navy-100 transition-all duration-1000 ease-out group shadow-sm transform ${strategiesVisible ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'}`}
                 style={{ 
-                  animationDelay: strategiesVisible ? `${index * 0.1}s` : '0s',
-                  transitionDelay: strategiesVisible ? `${index * 0.1}s` : '0s'
+                  transitionDelay: strategiesVisible ? `${index * 150}ms` : '0ms'
                 }}
               >
                 <div className="mb-4">{strategy.icon}</div>
@@ -100,7 +99,7 @@ const AdvancedStrategies = () => {
           </div>
 
           {/* Summary */}
-          <div ref={summaryRef} className={`mt-16 text-center transition-all duration-1000 ${summaryVisible ? 'animate-fade-in opacity-100' : 'opacity-0 translate-y-8'}`}>
+          <div ref={summaryRef} className={`mt-16 text-center transform transition-all duration-1000 ease-out ${summaryVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
             <div className="bg-navy-50 border border-navy-100 p-8 rounded-xl shadow-sm">
               <h3 className="text-2xl font-bold text-navy-600 mb-4">
                 Abordagem Personalizada
