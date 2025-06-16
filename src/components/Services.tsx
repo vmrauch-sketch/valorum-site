@@ -96,27 +96,44 @@ const Services = () => {
                 Profissionais da Medicina e Saúde
               </h3>
               
-              <div className="bg-white p-6 rounded-lg shadow-sm">
-                <h4 className="text-xl font-bold text-corporate-600 mb-4">
-                  Atendimento Especializado
-                </h4>
-                <p className="text-gray-700 mb-4">
-                  Atendimento exclusivo para profissionais da medicina, considerando 
-                  peculiaridades de rotina, planejamento patrimonial e questões tributárias específicas.
-                </p>
-                <ul className="space-y-2 text-gray-700 mb-4">
-                  <li>• Planejamento financeiro para alta renda</li>
-                  <li>• Estruturação patrimonial específica para médicos</li>
-                  <li>• Otimização tributária para profissionais liberais</li>
-                  <li>• Proteção patrimonial especializada</li>
-                  <li>• Previdência privada customizada</li>
-                </ul>
-                <button 
-                  onClick={handleMedicinaClick}
-                  className="bg-corporate-500 text-white px-6 py-2 rounded-lg hover:bg-corporate-600 transition-colors"
-                >
-                  Clique aqui para saber mais
-                </button>
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="bg-white p-6 rounded-lg shadow-sm">
+                  <h4 className="text-xl font-bold text-corporate-600 mb-4">
+                    Atendimento Especializado
+                  </h4>
+                  <p className="text-gray-700 mb-4">
+                    Atendimento exclusivo para profissionais da medicina, considerando 
+                    peculiaridades de rotina, planejamento patrimonial e questões tributárias específicas.
+                  </p>
+                  <ul className="space-y-2 text-gray-700 mb-4">
+                    <li>• Planejamento financeiro para alta renda</li>
+                    <li>• Estruturação patrimonial específica para médicos</li>
+                    <li>• Otimização tributária para profissionais liberais</li>
+                    <li>• Proteção patrimonial especializada</li>
+                    <li>• Previdência privada customizada</li>
+                  </ul>
+                  <button 
+                    onClick={handleMedicinaClick}
+                    className="bg-corporate-500 text-white px-6 py-2 rounded-lg hover:bg-corporate-600 transition-colors"
+                  >
+                    Clique aqui para saber mais
+                  </button>
+                </div>
+
+                <div className="bg-white p-6 rounded-lg shadow-sm border-l-4 border-gold-500">
+                  <h4 className="text-xl font-bold text-gold-600 mb-4">
+                    Protocolo Especializado
+                  </h4>
+                  <p className="text-gray-700 mb-4">
+                    Atendimento exclusivo para profissionais da medicina, considerando 
+                    peculiaridades de rotina, planejamento patrimonial e questões tributárias específicas.
+                  </p>
+                  <div className="bg-gold-50 p-4 rounded-lg">
+                    <p className="text-sm text-gold-700 font-medium">
+                      "Mais Renda, Menos Plantão"
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

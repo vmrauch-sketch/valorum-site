@@ -1,4 +1,5 @@
 
+
 import { 
   BarChart3, 
   Building2, 
@@ -96,17 +97,6 @@ const HowWeWork = () => {
               );
             })}
           </div>
-
-          {/* Protocolo Especializado */}
-          <div className="bg-gradient-to-r from-navy-600 to-corporate-500 p-8 rounded-xl text-white animate-fade-in">
-            <div className="text-center">
-              <h3 className="text-2xl font-bold mb-4 text-gold-500">Protocolo Especializado</h3>
-              <p className="text-lg leading-relaxed max-w-4xl mx-auto">
-                Atendimento exclusivo para <strong>profissionais da medicina</strong>, considerando 
-                peculiaridades de rotina, planejamento patrimonial e questões tributárias específicas.
-              </p>
-            </div>
-          </div>
         </div>
       </div>
     </section>
@@ -114,3 +104,4 @@ const HowWeWork = () => {
 };
 
 export { HowWeWork };
+
