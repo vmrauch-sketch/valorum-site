@@ -1,4 +1,3 @@
-
 const About = () => {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -32,10 +31,7 @@ const About = () => {
             {/* Content - First part alongside image */}
             <div className="space-y-6 animate-fade-in">
               <p className="text-lg text-gray-700 leading-relaxed">
-                Vilson Rauch é economista, contador e estrategista financeiro e de investimentos, com sólida experiência 
-                na consultoria independente de investimentos e gestão patrimonial para indivíduos, 
-                famílias e empresas. Atua com foco na excelência técnica e no rigor ético, oferecendo soluções que integram 
-                finanças, patrimônio, renda e investimentos.
+                Vilson Rauch é estrategista financeiro com ampla experiência em consultoria independente e gestão patrimonial. Atua com foco na excelência técnica e no rigor ético, oferecendo soluções integradas em finanças, renda e investimentos para indivíduos, famílias e empresas.
               </p>
 
               <p className="text-lg text-gray-700 leading-relaxed">
