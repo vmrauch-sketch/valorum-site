@@ -1,4 +1,5 @@
 
+
 const About = () => {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -23,9 +24,9 @@ const About = () => {
             {/* Image */}
             <div className="animate-fade-in">
               <img 
-                src="/lovable-uploads/156b19ed-ee75-400b-bcc6-9f9e030f485e.png" 
+                src="/lovable-uploads/198f0dc1-b9de-4fcd-b390-8204dc19dbaa.png" 
                 alt="Vilson Rauch - Consultor" 
-                className="w-full rounded-lg shadow-xl object-cover object-top h-[500px]"
+                className="w-full rounded-lg shadow-xl object-cover h-[500px]"
               />
             </div>
 
@@ -86,3 +87,4 @@ const About = () => {
 };
 
 export { About };
+
