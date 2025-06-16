@@ -1,4 +1,5 @@
 
+
 const Hero = () => {
   return (
     <section className="relative min-h-screen bg-gradient-to-br from-navy-600 via-navy-500 to-navy-400 flex items-center justify-center overflow-hidden">
@@ -22,12 +23,12 @@ const Hero = () => {
           </div>
 
           {/* Main Title */}
-          <h1 className="text-5xl md:text-7xl font-playfair font-bold mb-6 animate-fade-in">
+          <h1 className="text-5xl md:text-7xl font-playfair font-bold mb-6 animate-fade-in" style={{ color: '#F2F2F2' }}>
             Vilson Rauch
           </h1>
 
           {/* Impact Phrase */}
-          <blockquote className="text-xl md:text-2xl font-inter italic text-white/90 max-w-4xl mx-auto leading-relaxed mb-8 animate-fade-in">
+          <blockquote className="text-xl md:text-2xl font-inter italic max-w-4xl mx-auto leading-relaxed mb-8 animate-fade-in" style={{ color: '#C0C0C0', textShadow: '0 0 10px rgba(192, 192, 192, 0.3)' }}>
             "Cuidando do presente e futuro com estratégia, excelência e valor."
           </blockquote>
         </div>
@@ -44,3 +45,4 @@ const Hero = () => {
 };
 
 export { Hero };
+
