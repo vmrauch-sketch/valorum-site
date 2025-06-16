@@ -15,7 +15,7 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto">
           {/* Logo/Brand Image */}
           <div className="mb-8 animate-fade-in">
-            <div className="relative w-80 h-80 mx-auto">
+            <div className="relative w-96 h-96 md:w-[500px] md:h-[500px] lg:w-[600px] lg:h-[600px] mx-auto">
               <img 
                 src="/lovable-uploads/c6d2d18e-fee4-4fd6-b992-c5eb8a005aba.png" 
                 alt="Valorum Capital Logo" 
