@@ -30,7 +30,7 @@ const Hero = () => {
           </h2>
 
           {/* Impact Phrase */}
-          <blockquote className="text-xl md:text-2xl font-inter italic max-w-4xl mx-auto leading-relaxed mb-8 animate-fade-in px-6 py-4 rounded-lg bg-navy-900/50 border border-gold-500/20" style={{ color: '#F4F4F4' }}>
+          <blockquote className="text-xl md:text-2xl font-inter italic max-w-4xl mx-auto leading-relaxed mb-8 animate-fade-in px-6 py-4 rounded-lg" style={{ color: '#F4F4F4' }}>
             "Transformando patrimônio em legado através de estratégias inteligentes."
           </blockquote>
         </div>
@@ -47,5 +47,3 @@ const Hero = () => {
 };
 
 export { Hero };
-
-
