@@ -1,6 +1,4 @@
 
-
-
 const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden" style={{ background: '#0C1C2E' }}>
@@ -17,7 +15,7 @@ const Hero = () => {
           <div className="mb-8 animate-fade-in">
             <div className="relative w-80 h-80 mx-auto">
               <img 
-                src="/lovable-uploads/4cea6ec0-a75a-4577-8f73-838cd57fafc3.png" 
+                src="/lovable-uploads/c6d2d18e-fee4-4fd6-b992-c5eb8a005aba.png" 
                 alt="Valorum Capital Logo" 
                 className="w-full h-full object-contain"
               />
