@@ -1,5 +1,6 @@
 
 
+
 const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden" style={{ background: '#004aad' }}>
@@ -25,7 +26,7 @@ const Hero = () => {
 
           {/* Subtitle */}
           <h2 className="text-2xl md:text-3xl font-inter font-light mb-8 animate-fade-in" style={{ color: '#F4F4F4' }}>
-            Consultoria em Gestão Patrimonial e Planejamento Financeiro
+            Gestão Patrimonial e Planejamento Financeiro
           </h2>
 
           {/* Impact Phrase */}
@@ -46,4 +47,5 @@ const Hero = () => {
 };
 
 export { Hero };
+
 
