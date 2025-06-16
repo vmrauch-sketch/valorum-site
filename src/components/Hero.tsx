@@ -1,7 +1,7 @@
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen bg-gradient-to-br from-navy-800 via-navy-700 to-navy-600 flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden" style={{ background: 'linear-gradient(to bottom right, #1C2D50, #152642, #0F1E34)' }}>
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-20 left-20 w-32 h-32 border border-white/20 rounded-full"></div>
