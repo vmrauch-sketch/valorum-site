@@ -1,5 +1,4 @@
 
-
 const Services = () => {
   const handleEbookFIDCClick = () => {
     const message = encodeURIComponent("Olá! Gostaria de baixar o ebook sobre FIDC e estratégias tributárias.");
@@ -13,6 +12,11 @@ const Services = () => {
 
   const handleEbookPlanejamentoClick = () => {
     const message = encodeURIComponent("Olá! Gostaria de baixar o ebook sobre planejamento financeiro.");
+    window.open(`https://wa.me/5511949566290?text=${message}`, '_blank');
+  };
+
+  const handleMedicinaClick = () => {
+    const message = encodeURIComponent("Olá! Gostaria de saber mais sobre o atendimento especializado para profissionais da medicina e saúde.");
     window.open(`https://wa.me/5511949566290?text=${message}`, '_blank');
   };
 
@@ -96,7 +100,10 @@ const Services = () => {
                   <li>• Proteção patrimonial especializada</li>
                   <li>• Previdência privada customizada</li>
                 </ul>
-                <button className="bg-corporate-500 text-white px-6 py-2 rounded-lg hover:bg-corporate-600 transition-colors">
+                <button 
+                  onClick={handleMedicinaClick}
+                  className="bg-corporate-500 text-white px-6 py-2 rounded-lg hover:bg-corporate-600 transition-colors"
+                >
                   Clique aqui para saber mais
                 </button>
               </div>
@@ -180,4 +187,3 @@ const Services = () => {
 };
 
 export { Services };
-
