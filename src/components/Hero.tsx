@@ -1,15 +1,16 @@
 
+
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden" style={{ background: '#1C2B3A' }}>
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden" style={{ background: '#0A1628' }}>
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-20 left-20 w-32 h-32 border border-white/20 rounded-full"></div>
-        <div className="absolute bottom-20 right-20 w-40 h-40 border border-white/20 rounded-full"></div>
-        <div className="absolute top-1/2 left-1/4 w-24 h-24 border border-white/20 rounded-full"></div>
+        <div className="absolute top-20 left-20 w-32 h-32 border border-gold-500/20 rounded-full"></div>
+        <div className="absolute bottom-20 right-20 w-40 h-40 border border-gold-500/20 rounded-full"></div>
+        <div className="absolute top-1/2 left-1/4 w-24 h-24 border border-gold-500/20 rounded-full"></div>
       </div>
 
-      <div className="container mx-auto px-6 text-center relative z-10" style={{ color: '#DCC6A0' }}>
+      <div className="container mx-auto px-6 text-center relative z-10">
         <div className="max-w-4xl mx-auto">
           {/* Logo/Brand Image */}
           <div className="mb-8 animate-fade-in">
@@ -23,17 +24,17 @@ const Hero = () => {
           </div>
 
           {/* Main Title */}
-          <h1 className="text-5xl md:text-7xl font-playfair font-bold mb-6 animate-fade-in" style={{ color: '#DCC6A0' }}>
+          <h1 className="text-5xl md:text-7xl font-playfair font-bold mb-6 animate-fade-in text-gold-500">
             Valorum Capital
           </h1>
 
           {/* Subtitle */}
-          <h2 className="text-2xl md:text-3xl font-inter font-light mb-8 animate-fade-in" style={{ color: '#DCC6A0', opacity: '0.9' }}>
+          <h2 className="text-2xl md:text-3xl font-inter font-light mb-8 animate-fade-in text-gold-400/90">
             Consultoria em Gestão Patrimonial e Planejamento Financeiro
           </h2>
 
           {/* Impact Phrase */}
-          <blockquote className="text-xl md:text-2xl font-inter italic max-w-4xl mx-auto leading-relaxed mb-8 animate-fade-in px-6 py-4 rounded-lg" style={{ backgroundColor: '#1C2B3A', color: '#DCC6A0' }}>
+          <blockquote className="text-xl md:text-2xl font-inter italic max-w-4xl mx-auto leading-relaxed mb-8 animate-fade-in px-6 py-4 rounded-lg bg-navy-900/50 text-gold-400 border border-gold-500/20">
             "Transformando patrimônio em legado através de estratégias inteligentes."
           </blockquote>
         </div>
@@ -41,8 +42,8 @@ const Hero = () => {
 
       {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <div className="w-6 h-10 border-2 rounded-full flex justify-center" style={{ borderColor: '#B5B5B5' }}>
-          <div className="w-1 h-3 rounded-full mt-2" style={{ backgroundColor: '#B5B5B5' }}></div>
+        <div className="w-6 h-10 border-2 border-gold-500/60 rounded-full flex justify-center">
+          <div className="w-1 h-3 bg-gold-500/80 rounded-full mt-2"></div>
         </div>
       </div>
     </section>
@@ -50,3 +51,4 @@ const Hero = () => {
 };
 
 export { Hero };
+
