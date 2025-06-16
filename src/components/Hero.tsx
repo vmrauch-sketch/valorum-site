@@ -1,5 +1,4 @@
 
-
 const Hero = () => {
   return (
     <section className="relative min-h-screen bg-gradient-to-br from-navy-600 via-navy-500 to-navy-400 flex items-center justify-center overflow-hidden">
@@ -17,7 +16,8 @@ const Hero = () => {
             <img 
               src="/lovable-uploads/eb65e4ba-fa92-47af-b094-feb7757fa44f.png" 
               alt="Vilson Rauch" 
-              className="w-48 h-48 rounded-full mx-auto object-cover object-top border-4 border-white/20 shadow-2xl"
+              className="w-48 h-48 rounded-full mx-auto object-cover object-center border-4 border-white/20 shadow-2xl"
+              style={{ objectPosition: 'center 20%' }}
             />
           </div>
 
@@ -44,4 +44,3 @@ const Hero = () => {
 };
 
 export { Hero };
-
