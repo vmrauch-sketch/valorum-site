@@ -16,7 +16,7 @@ const Hero = () => {
             <img 
               src="/lovable-uploads/eb65e4ba-fa92-47af-b094-feb7757fa44f.png" 
               alt="Vilson Rauch" 
-              className="w-56 h-56 rounded-full mx-auto object-cover object-center border-4 border-white/20 shadow-2xl"
+              className="w-64 h-64 rounded-full mx-auto object-cover object-center border-4 border-white/20 shadow-2xl"
               style={{ objectPosition: 'center 20%' }}
             />
           </div>
