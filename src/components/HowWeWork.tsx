@@ -1,49 +1,63 @@
 
+import { 
+  BarChart3, 
+  Building2, 
+  Shield, 
+  TrendingUp, 
+  Zap, 
+  Briefcase, 
+  Target, 
+  Gavel, 
+  Gem, 
+  Lock, 
+  ShieldCheck 
+} from "lucide-react";
+
 const HowWeWork = () => {
   const areas = [
     {
       title: "Consultoria Financeira Pessoal e Empresarial",
-      symbol: "📊"
+      icon: BarChart3
     },
     {
       title: "Gestão Patrimonial e Estruturação de Holdings",
-      symbol: "🏛️"
+      icon: Building2
     },
     {
       title: "Planejamento Sucessório e Proteção Patrimonial",
-      symbol: "🛡️"
+      icon: Shield
     },
     {
       title: "Consultoria de Investimentos Personalizada",
-      symbol: "📈"
+      icon: TrendingUp
     },
     {
       title: "Estratégias de Alavancagem e Estruturação Societária",
-      symbol: "⚡"
+      icon: Zap
     },
     {
       title: "Soluções em FIDC e Planejamento Tributário",
-      symbol: "💼"
+      icon: Briefcase
     },
     {
       title: "Educação Financeira Corporativa",
-      symbol: "🎯"
+      icon: Target
     },
     {
       title: "Leilão de Crédito para redução de custos financeiros",
-      symbol: "🔨"
+      icon: Gavel
     },
     {
       title: "Gestão Profissional de Investimentos",
-      symbol: "💎"
+      icon: Gem
     },
     {
       title: "Análise e Adequação de Previdência Privada",
-      symbol: "🔐"
+      icon: Lock
     },
     {
       title: "Seguros e Proteções, incluindo Responsabilidade Civil Customizada",
-      symbol: "🛡️"
+      icon: ShieldCheck
     }
   ];
 
@@ -61,18 +75,26 @@ const HowWeWork = () => {
           </div>
 
           <div className="grid md:grid-cols-2 gap-6 mb-12">
-            {areas.map((area, index) => (
-              <div 
-                key={index}
-                className="bg-white p-6 rounded-lg shadow-sm border-l-4 border-corporate-500 hover:shadow-md transition-all duration-300 animate-fade-in"
-                style={{ animationDelay: `${index * 0.05}s` }}
-              >
-                <div className="flex items-center">
-                  <div className="text-2xl mr-4 flex-shrink-0">{area.symbol}</div>
-                  <span className="text-gray-800 font-medium">{area.title}</span>
+            {areas.map((area, index) => {
+              const IconComponent = area.icon;
+              return (
+                <div 
+                  key={index}
+                  className="bg-white p-6 rounded-lg shadow-sm border-l-4 border-corporate-500 hover:shadow-md transition-all duration-300 animate-fade-in"
+                  style={{ animationDelay: `${index * 0.05}s` }}
+                >
+                  <div className="flex items-center">
+                    <div className="mr-4 flex-shrink-0">
+                      <IconComponent 
+                        size={24} 
+                        className="text-corporate-500" 
+                      />
+                    </div>
+                    <span className="text-gray-800 font-medium">{area.title}</span>
+                  </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
 
           {/* Protocolo Especializado */}
