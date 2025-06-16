@@ -1,8 +1,9 @@
 
 
+
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden" style={{ background: '#0A1628' }}>
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden" style={{ background: '#0C1C2E' }}>
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-20 left-20 w-32 h-32 border border-gold-500/20 rounded-full"></div>
@@ -22,11 +23,6 @@ const Hero = () => {
               />
             </div>
           </div>
-
-          {/* Main Title */}
-          <h1 className="text-5xl md:text-7xl font-playfair font-bold mb-6 animate-fade-in text-gold-500">
-            Valorum Capital
-          </h1>
 
           {/* Subtitle */}
           <h2 className="text-2xl md:text-3xl font-inter font-light mb-8 animate-fade-in text-gold-400/90">
@@ -51,4 +47,5 @@ const Hero = () => {
 };
 
 export { Hero };
+
 
