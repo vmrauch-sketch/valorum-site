@@ -1,5 +1,4 @@
 
-
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const Hero = () => {
@@ -20,7 +19,7 @@ const Hero = () => {
           <div className={`mb-8 transform transition-all duration-1000 ease-out ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'}`}>
             <div className="relative w-96 h-96 md:w-[500px] md:h-[500px] lg:w-[600px] lg:h-[600px] mx-auto">
               <img 
-                src="/lovable-uploads/c6d2d18e-fee4-4fd6-b992-c5eb8a005aba.png" 
+                src="/lovable-uploads/aee87d30-fa30-44ea-bc48-89ef4d0f7e2c.png" 
                 alt="Valorum Capital Logo" 
                 className="w-full h-full object-contain"
               />
@@ -60,4 +59,3 @@ const Hero = () => {
 };
 
 export { Hero };
-
