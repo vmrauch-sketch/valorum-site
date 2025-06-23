@@ -18,11 +18,25 @@ const Hero = () => {
           {/* Logo/Brand Image */}
           <div className={`mb-8 transform transition-all duration-1000 ease-out ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'}`}>
             <div className="relative w-96 h-96 md:w-[500px] md:h-[500px] lg:w-[600px] lg:h-[600px] mx-auto">
-              <img 
-                src="/lovable-uploads/aee87d30-fa30-44ea-bc48-89ef4d0f7e2c.png" 
-                alt="Valorum Capital Logo" 
-                className="w-full h-full object-contain"
-              />
+              {/* Shadow backdrop for depth */}
+              <div className="absolute inset-0 bg-gradient-to-br from-navy-600/10 to-corporate-500/10 rounded-full blur-3xl transform scale-110"></div>
+              
+              {/* Main image container with enhanced depth effects */}
+              <div className="relative bg-gradient-to-br from-white via-gray-50 to-gray-100 rounded-full p-8 shadow-2xl">
+                <div className="relative overflow-hidden rounded-full">
+                  <img 
+                    src="/lovable-uploads/aee87d30-fa30-44ea-bc48-89ef4d0f7e2c.png" 
+                    alt="Valorum Capital Logo" 
+                    className="w-full h-full object-contain filter drop-shadow-lg"
+                  />
+                  
+                  {/* Subtle overlay for depth */}
+                  <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/5 to-white/20 rounded-full"></div>
+                </div>
+              </div>
+              
+              {/* Additional depth ring */}
+              <div className="absolute inset-0 border-2 border-navy-600/10 rounded-full transform scale-105"></div>
             </div>
             
             {/* Text below logo */}
