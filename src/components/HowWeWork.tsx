@@ -23,7 +23,6 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 const HowWeWork = () => {
   const { elementRef: headerRef, isVisible: headerVisible } = useScrollAnimation();
   const { elementRef: processRef, isVisible: processVisible } = useScrollAnimation();
-  const { elementRef: areasRef, isVisible: areasVisible } = useScrollAnimation();
 
   const processSteps = [
     {
@@ -52,56 +51,6 @@ const HowWeWork = () => {
     }
   ];
 
-  const areas = [
-    {
-      title: "Consultoria Financeira Pessoal e Empresarial",
-      icon: BarChart3
-    },
-    {
-      title: "Gestão Patrimonial e Estruturação de Holdings",
-      icon: Building2
-    },
-    {
-      title: "Planejamento Sucessório e Proteção Patrimonial",
-      icon: Shield
-    },
-    {
-      title: "Consultoria de Investimentos Personalizada",
-      icon: TrendingUp
-    },
-    {
-      title: "Estratégias de Alavancagem e Estruturação Societária",
-      icon: Zap
-    },
-    {
-      title: "Soluções em FIDC e Planejamento Tributário",
-      icon: Briefcase
-    },
-    {
-      title: "Educação Financeira Corporativa",
-      icon: Target
-    },
-    {
-      title: "Leilão de Crédito para redução de custos financeiros",
-      icon: Gavel
-    },
-    {
-      title: "Gestão Profissional de Investimentos",
-      icon: Gem
-    },
-    {
-      title: "Análise e Adequação de Previdência Privada",
-      icon: Lock
-    },
-    {
-      title: "Seguros e Proteções, incluindo Responsabilidade Civil Customizada",
-      icon: ShieldCheck
-    },
-    {
-      title: "Internacionalização de Patrimônio",
-      icon: Globe
-    }
-  ];
 
   return (
     <section className="py-20 bg-gray-50" id="como-atuamos">
@@ -164,37 +113,6 @@ const HowWeWork = () => {
             </div>
           </div>
 
-          {/* Áreas de Atuação */}
-          <div ref={areasRef}>
-            <h3 className={`text-3xl md:text-4xl font-playfair font-semibold text-navy-600 text-center mb-8 leading-tight transform transition-all duration-1000 ease-out ${areasVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
-              Áreas de Especialização
-            </h3>
-            
-            <div className="grid md:grid-cols-2 gap-6">
-              {areas.map((area, index) => {
-                const IconComponent = area.icon;
-                return (
-                  <div 
-                    key={index}
-                    className={`bg-white p-6 rounded-lg shadow-sm border-l-4 border-corporate-500 hover:shadow-md transition-all duration-1000 ease-out transform ${areasVisible ? 'translate-x-0 opacity-100' : 'translate-x-8 opacity-0'}`}
-                    style={{ 
-                      transitionDelay: areasVisible ? `${index * 100}ms` : '0ms'
-                    }}
-                  >
-                    <div className="flex items-center">
-                      <div className="mr-4 flex-shrink-0">
-                        <IconComponent 
-                          size={24} 
-                          className="text-corporate-500" 
-                        />
-                      </div>
-                      <span className="text-gray-800 font-inter font-medium text-lg leading-relaxed">{area.title}</span>
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
         </div>
       </div>
     </section>
