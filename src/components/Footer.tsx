@@ -13,9 +13,6 @@ const Footer = () => {
             {/* Logo and Description */}
             <div className="md:col-span-2">
               <h3 className="text-2xl font-playfair font-bold mb-4">Valorum Capital</h3>
-              <p className="text-white/80 mb-4 max-w-md">
-                Consultoria especializada em gestão patrimonial e planejamento financeiro, oferecendo soluções personalizadas para crescimento e proteção do seu patrimônio.
-              </p>
               <div className="flex items-center space-x-2 text-sm text-white/60">
                 <span className="w-2 h-2 bg-financial-500 rounded-full"></span>
                 <span>Gestão Patrimonial</span>
