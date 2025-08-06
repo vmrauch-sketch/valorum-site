@@ -77,15 +77,21 @@ const ProtocoloMaisRenda = () => {
             <div className="max-w-4xl mx-auto text-center">
               <div ref={headerRef} className={`transform transition-all duration-1000 ease-out ${headerVisible ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'}`}>
                 <h1 className="text-5xl md:text-6xl font-playfair font-bold text-white mb-6">
-                  Protocolo Mais Renda
+                  Protocolo Especializado
                 </h1>
-                <p className="text-xl text-white/90 leading-relaxed mb-8">
-                  Estratégias avançadas para maximizar a geração de renda do seu patrimônio
+                <h2 className="text-3xl md:text-4xl font-playfair text-gold-500 mb-8">
+                  "Mais Renda, Menos Plantão"
+                </h2>
+                <p className="text-xl text-white/90 leading-relaxed mb-8 max-w-4xl mx-auto">
+                  Atendimento para profissionais da medicina e saúde, considerando peculiaridades de rotina, planejamento patrimonial e questões tributárias específicas. Desenvolvemos estratégias que maximizam sua renda e otimizam seu tempo, permitindo maior qualidade de vida com segurança financeira.
                 </p>
-                <div className="inline-flex items-center bg-white/10 backdrop-blur-sm rounded-lg px-6 py-3 text-white">
-                  <DollarSign className="mr-2" size={20} />
-                  <span className="font-medium">Foco em Rentabilidade e Proteção</span>
-                </div>
+                <a 
+                  href="/contato"
+                  className="inline-flex items-center bg-gold-500 hover:bg-gold-600 text-navy-800 px-8 py-4 rounded-lg font-semibold transition-colors text-lg"
+                >
+                  Clique aqui para conhecer o protocolo
+                  <ArrowRight className="ml-2" size={20} />
+                </a>
               </div>
             </div>
           </div>
