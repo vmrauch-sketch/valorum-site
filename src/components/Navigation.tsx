@@ -11,6 +11,7 @@ export const Navigation = () => {
     { name: 'Manifesto', path: '/manifesto' },
     { name: 'Especializações', path: '/como-atuamos' },
     { name: 'Estratégias', path: '/areas-de-especializacao' },
+    { name: 'Protocolo Mais Renda', path: '/protocolo-mais-renda' },
     { name: 'Serviços', path: '/servicos' },
     { name: 'Contato', path: '/contato' },
   ];
