@@ -24,19 +24,6 @@ const Hero = () => {
                 className="w-full h-full object-contain drop-shadow-lg"
               />
             </div>
-            
-            {/* Text below logo */}
-            <div className="mt-6 space-y-2 mb-8">
-              <p className="text-xl md:text-2xl font-inter font-medium text-navy-600">
-                Consultoria Financeira
-              </p>
-              <p className="text-xl md:text-2xl font-inter font-medium text-navy-600">
-                Gestão Patrimonial
-              </p>
-              <p className="text-xl md:text-2xl font-inter font-medium text-navy-600">
-                Planejamento Financeiro
-              </p>
-            </div>
           </div>
 
           {/* Impact Phrase - Single Line */}
