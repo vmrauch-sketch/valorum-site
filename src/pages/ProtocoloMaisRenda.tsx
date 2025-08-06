@@ -83,7 +83,8 @@ const ProtocoloMaisRenda = () => {
                   "Mais Renda, Menos Plantão"
                 </h2>
                 <div className="text-xl text-white/90 leading-relaxed mb-8 max-w-4xl mx-auto">
-                  <p className="mb-4">Atendimento para profissionais da medicina e saúde, considerando peculiaridades de rotina, planejamento patrimonial e questões tributárias específicas.</p>
+                  <p className="mb-4">Atendimento para profissionais da medicina e saúde.</p>
+                  <p className="mb-4">Considerando peculiaridades de rotina, planejamento patrimonial e questões tributárias específicas.</p>
                   <p>Desenvolvemos estratégias que maximizam sua renda e otimizam seu tempo, permitindo maior qualidade de vida com segurança financeira.</p>
                 </div>
                 <a 
