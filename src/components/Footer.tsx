@@ -19,7 +19,7 @@ const Footer = () => {
                 <span className="w-2 h-2 bg-financial-500 rounded-full"></span>
                 <span>Planejamento Financeiro</span>
                 <span className="w-2 h-2 bg-financial-500 rounded-full"></span>
-                <span>Consultoria Especializada</span>
+                <span>Consultoria</span>
               </div>
             </div>
 
