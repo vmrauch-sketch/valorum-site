@@ -12,46 +12,47 @@ export const Manifesto = () => {
               Nosso Manifesto
             </h2>
             
-            <div className="prose prose-lg mx-auto text-left max-w-3xl">
-              <div className="text-xl md:text-2xl leading-relaxed text-muted-foreground space-y-6 font-light">
-                <p className="text-center italic">
+            <div className="max-w-3xl mx-auto space-y-8">
+              <div className="text-lg md:text-xl leading-relaxed text-center space-y-6">
+                
+                <p className="text-muted-foreground font-medium">
                   "Acreditamos que a liberdade começa na consciência<br />
                   e se constrói com escolhas alinhadas."
                 </p>
                 
-                <p>
+                <p className="text-foreground">
                   Somos um farol em meio à névoa da confusão financeira.<br />
                   Não vendemos promessas – entregamos clareza, estrutura e autonomia.
                 </p>
                 
-                <p className="font-medium text-primary">
+                <p className="text-primary font-semibold">
                   Não somos banco.<br />
                   Não somos corretora.
                 </p>
                 
-                <p className="text-center font-medium text-lg">
-                  <strong>Somos seu guia independente.</strong><br />
+                <p className="text-foreground text-xl font-semibold">
+                  Somos seu guia independente.<br />
                   Caminhamos ao lado, não à frente.
                 </p>
                 
-                <p>
+                <p className="text-muted-foreground">
                   Cada plano que traçamos respeita sua história,<br />
                   seus objetivos e seu tempo.
                 </p>
                 
-                <p>
+                <p className="text-foreground">
                   Nossa missão é libertar, não prender.<br />
                   Ensinar, não dominar.<br />
                   Inspirar, não iludir.
                 </p>
                 
-                <p className="text-center italic">
+                <p className="text-muted-foreground font-medium">
                   Porque liberdade financeira não é um destino,<br />
                   é uma jornada de conhecimento e decisão.
                 </p>
                 
-                <div className="text-center text-2xl pt-8 border-t border-border/20">
-                  <p className="font-medium text-primary">
+                <div className="pt-6 border-t border-border/30">
+                  <p className="text-primary text-xl font-semibold">
                     🔑 E toda jornada precisa de um guia de confiança…<br />
                     e da chave certa para abrir o cadeado do futuro.
                   </p>
