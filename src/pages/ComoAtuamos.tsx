@@ -1,4 +1,6 @@
 import { Navigation } from "@/components/Navigation";
+import { Footer } from "@/components/Footer";
+import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { 
   BarChart3, 
   Building2, 
@@ -117,6 +119,8 @@ const ComoAtuamos = () => {
           </div>
         </section>
       </div>
+      <Footer />
+      <WhatsAppButton />
     </div>
   );
 };

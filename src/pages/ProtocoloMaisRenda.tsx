@@ -1,4 +1,6 @@
 import { Navigation } from "@/components/Navigation";
+import { Footer } from "@/components/Footer";
+import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { 
   TrendingUp, 
   Target, 
@@ -213,6 +215,8 @@ const ProtocoloMaisRenda = () => {
           </div>
         </section>
       </div>
+      <Footer />
+      <WhatsAppButton />
     </div>
   );
 };

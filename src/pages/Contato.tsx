@@ -1,5 +1,7 @@
 import { Contact } from "@/components/Contact";
 import { Navigation } from "@/components/Navigation";
+import { Footer } from "@/components/Footer";
+import { WhatsAppButton } from "@/components/WhatsAppButton";
 
 const Contato = () => {
   return (
@@ -8,6 +10,8 @@ const Contato = () => {
       <div className="pt-16">
         <Contact />
       </div>
+      <Footer />
+      <WhatsAppButton />
     </div>
   );
 };

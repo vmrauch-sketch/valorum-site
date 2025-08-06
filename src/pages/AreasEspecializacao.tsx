@@ -1,5 +1,7 @@
 import { AdvancedStrategies } from "@/components/AdvancedStrategies";
 import { Navigation } from "@/components/Navigation";
+import { Footer } from "@/components/Footer";
+import { WhatsAppButton } from "@/components/WhatsAppButton";
 
 const AreasEspecializacao = () => {
   return (
@@ -8,6 +10,8 @@ const AreasEspecializacao = () => {
       <div className="pt-16">
         <AdvancedStrategies />
       </div>
+      <Footer />
+      <WhatsAppButton />
     </div>
   );
 };
