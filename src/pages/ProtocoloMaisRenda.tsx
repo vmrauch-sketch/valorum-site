@@ -82,9 +82,10 @@ const ProtocoloMaisRenda = () => {
                 <h2 className="text-3xl md:text-4xl font-playfair text-gold-500 mb-8">
                   "Mais Renda, Menos Plantão"
                 </h2>
-                <p className="text-xl text-white/90 leading-relaxed mb-8 max-w-4xl mx-auto">
-                  Atendimento para profissionais da medicina e saúde, considerando peculiaridades de rotina, planejamento patrimonial e questões tributárias específicas. Desenvolvemos estratégias que maximizam sua renda e otimizam seu tempo, permitindo maior qualidade de vida com segurança financeira.
-                </p>
+                <div className="text-xl text-white/90 leading-relaxed mb-8 max-w-4xl mx-auto">
+                  <p className="mb-4">Atendimento para profissionais da medicina e saúde, considerando peculiaridades de rotina, planejamento patrimonial e questões tributárias específicas.</p>
+                  <p>Desenvolvemos estratégias que maximizam sua renda e otimizam seu tempo, permitindo maior qualidade de vida com segurança financeira.</p>
+                </div>
                 <a 
                   href="/contato"
                   className="inline-flex items-center bg-gold-500 hover:bg-gold-600 text-navy-800 px-8 py-4 rounded-lg font-semibold transition-colors text-lg"
