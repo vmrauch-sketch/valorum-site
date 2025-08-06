@@ -82,7 +82,7 @@ const ComoAtuamos = () => {
               <div className="text-center mb-16">
                 <div className="relative inline-block">
                   <h1 className="text-5xl md:text-6xl font-playfair font-bold text-navy-600 mb-4">
-                    Áreas de Especialização
+                    Como Atuamos
                   </h1>
                   <div className="absolute bottom-2 left-0 w-16 h-1 bg-gold-500"></div>
                 </div>
