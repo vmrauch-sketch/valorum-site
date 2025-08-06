@@ -13,14 +13,14 @@ export const Manifesto = () => {
             </h2>
             
             <div className="max-w-3xl mx-auto space-y-8">
-              <div className="text-lg md:text-xl leading-relaxed text-center space-y-6">
+              <div className="text-lg md:text-xl leading-relaxed text-left space-y-6">
                 
-                <p className="text-muted-foreground font-medium">
+                <p className="text-primary font-semibold">
                   "Acreditamos que a liberdade começa na consciência<br />
                   e se constrói com escolhas alinhadas."
                 </p>
                 
-                <p className="text-foreground">
+                <p className="text-primary font-semibold">
                   Somos um farol em meio à névoa da confusão financeira.<br />
                   Não vendemos promessas – entregamos clareza, estrutura e autonomia.
                 </p>
@@ -30,23 +30,23 @@ export const Manifesto = () => {
                   Não somos corretora.
                 </p>
                 
-                <p className="text-foreground text-xl font-semibold">
+                <p className="text-primary font-semibold">
                   Somos seu guia independente.<br />
                   Caminhamos ao lado, não à frente.
                 </p>
                 
-                <p className="text-muted-foreground">
+                <p className="text-primary font-semibold">
                   Cada plano que traçamos respeita sua história,<br />
                   seus objetivos e seu tempo.
                 </p>
                 
-                <p className="text-foreground">
+                <p className="text-primary font-semibold">
                   Nossa missão é libertar, não prender.<br />
                   Ensinar, não dominar.<br />
                   Inspirar, não iludir.
                 </p>
                 
-                <p className="text-muted-foreground font-medium">
+                <p className="text-primary font-semibold">
                   Porque liberdade financeira não é um destino,<br />
                   é uma jornada de conhecimento e decisão.
                 </p>
