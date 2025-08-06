@@ -9,8 +9,8 @@ export const Navigation = () => {
   const navItems = [
     { name: 'Início', path: '/' },
     { name: 'Manifesto', path: '/manifesto' },
-    { name: 'Como Atuamos', path: '/como-atuamos' },
-    { name: 'Especializações', path: '/areas-de-especializacao' },
+    { name: 'Especializações', path: '/como-atuamos' },
+    { name: 'Estratégias', path: '/areas-de-especializacao' },
     { name: 'Serviços', path: '/servicos' },
     { name: 'Contato', path: '/contato' },
   ];
