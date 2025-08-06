@@ -40,7 +40,7 @@ const Hero = () => {
           </div>
 
           {/* Impact Phrase - Single Line */}
-          <div className={`text-xl md:text-2xl font-inter italic mx-auto mb-8 text-navy-600 transform transition-all duration-1000 ease-out delay-600 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
+          <div className={`text-xl md:text-2xl font-inter mx-auto mb-8 text-navy-600 transform transition-all duration-1000 ease-out delay-600 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
             <span className="block text-center">
               "Na Valorum, acreditamos que liberdade financeira não é apenas sobre dinheiro — é sobre reconhecer o que tem valor verdadeiro. Por isso, guiamos você com clareza, estrutura e independência para desbloquear seu potencial."
             </span>
