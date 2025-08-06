@@ -54,7 +54,7 @@ export const Manifesto = () => {
                 
                 <div className="pt-6 border-t border-border/30">
                   <p className="text-primary text-xl font-semibold">
-                    🔑 E toda jornada precisa de um guia de confiança<br />
+                    🔑 Toda jornada precisa de um guia de confiança<br />
                     e da chave certa para abrir o cadeado do futuro.
                   </p>
                 </div>
