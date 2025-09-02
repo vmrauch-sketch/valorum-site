@@ -159,7 +159,7 @@ const ProtocoloMaisRenda = () => {
                 </h2>
                 <div className="w-16 h-1 bg-gold-500 mx-auto mb-6"></div>
                 <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                  Resultados comprovados através de metodologia exclusiva
+                  Resultados comprovados através de metodologia exclusiva PR²
                 </p>
               </div>
 
