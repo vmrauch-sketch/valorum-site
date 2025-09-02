@@ -15,17 +15,17 @@ const Services = () => {
 
   const handleEbookFIDCClick = () => {
     const message = encodeURIComponent("Olá! Gostaria de baixar o ebook sobre FIDC e estratégias tributárias.");
-    window.open(`https://web.whatsapp.com/send?phone=5511949566290&text=${message}`, '_blank');
+    window.open(`https://wa.me/5511949566290?text=${message}`, '_blank');
   };
 
   const handleEbookRecuperacaoClick = () => {
     const message = encodeURIComponent("Olá! Gostaria de baixar o ebook sobre recuperação tributária.");
-    window.open(`https://web.whatsapp.com/send?phone=5511949566290&text=${message}`, '_blank');
+    window.open(`https://wa.me/5511949566290?text=${message}`, '_blank');
   };
 
   const handleEbookPlanejamentoClick = () => {
     const message = encodeURIComponent("Olá! Gostaria de baixar o ebook sobre planejamento financeiro.");
-    window.open(`https://web.whatsapp.com/send?phone=5511949566290&text=${message}`, '_blank');
+    window.open(`https://wa.me/5511949566290?text=${message}`, '_blank');
   };
 
   return (

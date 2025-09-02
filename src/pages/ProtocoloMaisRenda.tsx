@@ -21,12 +21,12 @@ const ProtocoloMaisRenda = () => {
 
   const handleProtocolClick = () => {
     const message = encodeURIComponent("Olá! Gostaria de mais informações sobre o protocolo especializado 'Mais Renda, Menos Plantão' para profissionais da medicina e saúde.");
-    window.open(`https://web.whatsapp.com/send?phone=5511949566290&text=${message}`, '_blank');
+    window.open(`https://wa.me/5511949566290?text=${message}`, '_blank');
   };
 
   const handleConsultationClick = () => {
     const message = encodeURIComponent("Olá! Gostaria de agendar uma consulta sobre o Protocolo Mais Renda.");
-    window.open(`https://web.whatsapp.com/send?phone=5511949566290&text=${message}`, '_blank');
+    window.open(`https://wa.me/5511949566290?text=${message}`, '_blank');
   };
 
   const benefits = [

@@ -18,7 +18,7 @@ const AdvancedStrategies = () => {
 
   const handleServiceClick = (serviceTitle: string) => {
     const message = encodeURIComponent(`Olá! Gostaria de mais informações sobre ${serviceTitle}.`);
-    window.open(`https://web.whatsapp.com/send?phone=5511949566290&text=${message}`, '_blank');
+    window.open(`https://wa.me/5511949566290?text=${message}`, '_blank');
   };
 
   const strategies = [
