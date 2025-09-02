@@ -5,13 +5,9 @@ export const useScrollAnimation = (threshold = 0.1) => {
   const [isVisible, setIsVisible] = useState(false);
   const elementRef = useRef<HTMLDivElement>(null);
 
-  console.log("useScrollAnimation hook called with threshold:", threshold);
-
   useEffect(() => {
-    console.log("useScrollAnimation useEffect running");
     const observer = new IntersectionObserver(
       ([entry]) => {
-        console.log("IntersectionObserver callback:", entry.isIntersecting);
         if (entry.isIntersecting) {
           setIsVisible(true);
         }
@@ -23,10 +19,7 @@ export const useScrollAnimation = (threshold = 0.1) => {
     );
 
     if (elementRef.current) {
-      console.log("Observing element:", elementRef.current);
       observer.observe(elementRef.current);
-    } else {
-      console.log("No element to observe");
     }
 
     return () => {
@@ -36,7 +29,6 @@ export const useScrollAnimation = (threshold = 0.1) => {
     };
   }, [threshold]);
 
-  console.log("useScrollAnimation returning:", { isVisible });
   return { elementRef, isVisible };
 };
 

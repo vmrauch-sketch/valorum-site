@@ -12,22 +12,13 @@ import {
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const AdvancedStrategies = () => {
-  console.log("AdvancedStrategies component mounting");
-  
   const { elementRef: headerRef, isVisible: headerVisible } = useScrollAnimation();
   const { elementRef: strategiesRef, isVisible: strategiesVisible } = useScrollAnimation();
   const { elementRef: summaryRef, isVisible: summaryVisible } = useScrollAnimation();
 
-  console.log("Animation states:", { headerVisible, strategiesVisible, summaryVisible });
-
   const handleServiceClick = (serviceTitle: string) => {
-    console.log("Service click handler called with:", serviceTitle);
-    try {
-      const message = encodeURIComponent(`Olá! Gostaria de mais informações sobre ${serviceTitle}.`);
-      window.open(`https://wa.me/5511949566290?text=${message}`, '_blank');
-    } catch (error) {
-      console.error("Error in handleServiceClick:", error);
-    }
+    const message = encodeURIComponent(`Olá! Gostaria de mais informações sobre ${serviceTitle}.`);
+    window.open(`https://wa.me/5511949566290?text=${message}`, '_blank');
   };
 
   const strategies = [
