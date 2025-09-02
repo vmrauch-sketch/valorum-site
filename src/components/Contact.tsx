@@ -1,8 +1,16 @@
 
 const Contact = () => {
   const handleWhatsAppClick = () => {
+    console.log("Contact: Botão clicado");
     const message = encodeURIComponent("Olá! Gostaria de agendar uma consultoria personalizada sobre planejamento financeiro e gestão patrimonial.");
-    window.open(`https://wa.me/5511949566290?text=${message}`, '_blank');
+    const url = `https://wa.me/5511949566290?text=${message}`;
+    console.log("Contact: URL gerada:", url);
+    try {
+      window.open(url, '_blank');
+      console.log("Contact: window.open executado com sucesso");
+    } catch (error) {
+      console.error("Contact: Erro ao abrir WhatsApp:", error);
+    }
   };
 
   return (
