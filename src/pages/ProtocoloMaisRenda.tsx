@@ -133,9 +133,9 @@ const ProtocoloMaisRenda = () => {
                   "Mais Renda, Menos Plantão"
                 </h2>
                 <div className="text-xl text-white/90 leading-relaxed mb-8 max-w-4xl mx-auto">
-                  <p className="mb-4">Atendimento para profissionais da medicina e saúde.</p>
-                  <p className="mb-4">Um protocolo que considera peculiaridades de rotina, planejamento patrimonial e questões tributárias específicas.</p>
-                  <p>Desenvolvemos estratégias que maximizam sua renda e otimizam seu tempo, permitindo maior qualidade de vida com segurança financeira.</p>
+                  <p className="mb-4">Você cuida de vidas. Nós cuidamos do seu patrimônio.</p>
+                  <p className="mb-4">Criamos estratégias personalizadas para médicos que desejam transformar patrimônio em liberdade.</p>
+                  <p>Mais tempo, mais segurança, mais futuro.</p>
                 </div>
                 <button 
                   onClick={handleProtocolClick}
