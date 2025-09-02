@@ -8,12 +8,24 @@ const SpecializedProtocol = () => {
     console.log("SpecializedProtocol: Botão clicado");
     const message = encodeURIComponent("Olá! Gostaria de mais informações sobre o protocolo especializado 'Mais Renda, Menos Plantão' para profissionais da medicina e saúde.");
     const url = `https://wa.me/5511949566290?text=${message}`;
-    console.log("SpecializedProtocol: URL gerada:", url);
-    try {
-      window.location.href = url;
-      console.log("SpecializedProtocol: redirecionamento executado com sucesso");
-    } catch (error) {
-      console.error("SpecializedProtocol: Erro ao abrir WhatsApp:", error);
+    
+    // Detecta se está em desenvolvimento
+    const isDevelopment = window.location.hostname === 'localhost' || window.location.hostname.includes('lovable');
+    
+    if (isDevelopment) {
+      // Em desenvolvimento, copia o link e mostra alerta
+      navigator.clipboard.writeText(url).then(() => {
+        alert(`Link do WhatsApp copiado!\n\nNúmero: +55 11 94956-6290\nMensagem: "Olá! Gostaria de mais informações sobre o protocolo especializado 'Mais Renda, Menos Plantão' para profissionais da medicina e saúde."\n\nLink copiado para área de transferência.`);
+      }).catch(() => {
+        alert(`WhatsApp: +55 11 94956-6290\n\nMensagem: "Olá! Gostaria de mais informações sobre o protocolo especializado 'Mais Renda, Menos Plantão' para profissionais da medicina e saúde."`);
+      });
+    } else {
+      // Em produção, abre normalmente
+      try {
+        window.open(url, '_blank');
+      } catch (error) {
+        console.error("SpecializedProtocol: Erro ao abrir WhatsApp:", error);
+      }
     }
   };
 

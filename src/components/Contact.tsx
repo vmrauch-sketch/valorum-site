@@ -4,12 +4,24 @@ const Contact = () => {
     console.log("Contact: Botão clicado");
     const message = encodeURIComponent("Olá! Gostaria de agendar uma consultoria personalizada sobre planejamento financeiro e gestão patrimonial.");
     const url = `https://wa.me/5511949566290?text=${message}`;
-    console.log("Contact: URL gerada:", url);
-    try {
-      window.location.href = url;
-      console.log("Contact: redirecionamento executado com sucesso");
-    } catch (error) {
-      console.error("Contact: Erro ao abrir WhatsApp:", error);
+    
+    // Detecta se está em desenvolvimento
+    const isDevelopment = window.location.hostname === 'localhost' || window.location.hostname.includes('lovable');
+    
+    if (isDevelopment) {
+      // Em desenvolvimento, copia o link e mostra alerta
+      navigator.clipboard.writeText(url).then(() => {
+        alert(`Link do WhatsApp copiado!\n\nNúmero: +55 11 94956-6290\nMensagem: "Olá! Gostaria de agendar uma consultoria personalizada sobre planejamento financeiro e gestão patrimonial."\n\nLink copiado para área de transferência.`);
+      }).catch(() => {
+        alert(`WhatsApp: +55 11 94956-6290\n\nMensagem: "Olá! Gostaria de agendar uma consultoria personalizada sobre planejamento financeiro e gestão patrimonial."`);
+      });
+    } else {
+      // Em produção, abre normalmente
+      try {
+        window.open(url, '_blank');
+      } catch (error) {
+        console.error("Contact: Erro ao abrir WhatsApp:", error);
+      }
     }
   };
 

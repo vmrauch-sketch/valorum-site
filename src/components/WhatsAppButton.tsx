@@ -5,12 +5,24 @@ const WhatsAppButton = () => {
     console.log("WhatsAppButton: Botão clicado");
     const message = encodeURIComponent("Olá! Gostaria de saber mais sobre consultoria de investimentos e wealth planning.");
     const url = `https://wa.me/5511949566290?text=${message}`;
-    console.log("WhatsAppButton: URL gerada:", url);
-    try {
-      window.location.href = url;
-      console.log("WhatsAppButton: redirecionamento executado com sucesso");
-    } catch (error) {
-      console.error("WhatsAppButton: Erro ao abrir WhatsApp:", error);
+    
+    // Detecta se está em desenvolvimento
+    const isDevelopment = window.location.hostname === 'localhost' || window.location.hostname.includes('lovable');
+    
+    if (isDevelopment) {
+      // Em desenvolvimento, copia o link e mostra alerta
+      navigator.clipboard.writeText(url).then(() => {
+        alert(`Link do WhatsApp copiado!\n\nNúmero: +55 11 94956-6290\nMensagem: "Olá! Gostaria de saber mais sobre consultoria de investimentos e wealth planning."\n\nLink copiado para área de transferência.`);
+      }).catch(() => {
+        alert(`WhatsApp: +55 11 94956-6290\n\nMensagem: "Olá! Gostaria de saber mais sobre consultoria de investimentos e wealth planning."`);
+      });
+    } else {
+      // Em produção, abre normalmente
+      try {
+        window.open(url, '_blank');
+      } catch (error) {
+        console.error("WhatsAppButton: Erro ao abrir WhatsApp:", error);
+      }
     }
   };
 

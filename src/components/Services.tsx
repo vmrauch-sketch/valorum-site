@@ -17,12 +17,24 @@ const Services = () => {
     console.log("Services: Ebook FIDC clicado");
     const message = encodeURIComponent("Olá! Gostaria de baixar o ebook sobre FIDC e estratégias tributárias.");
     const url = `https://wa.me/5511949566290?text=${message}`;
-    console.log("Services: URL gerada:", url);
-    try {
-      window.location.href = url;
-      console.log("Services: redirecionamento executado com sucesso");
-    } catch (error) {
-      console.error("Services: Erro ao abrir WhatsApp:", error);
+    
+    // Detecta se está em desenvolvimento
+    const isDevelopment = window.location.hostname === 'localhost' || window.location.hostname.includes('lovable');
+    
+    if (isDevelopment) {
+      // Em desenvolvimento, copia o link e mostra alerta
+      navigator.clipboard.writeText(url).then(() => {
+        alert(`Link do WhatsApp copiado!\n\nNúmero: +55 11 94956-6290\nMensagem: "Olá! Gostaria de baixar o ebook sobre FIDC e estratégias tributárias."\n\nLink copiado para área de transferência.`);
+      }).catch(() => {
+        alert(`WhatsApp: +55 11 94956-6290\n\nMensagem: "Olá! Gostaria de baixar o ebook sobre FIDC e estratégias tributárias."`);
+      });
+    } else {
+      // Em produção, abre normalmente
+      try {
+        window.open(url, '_blank');
+      } catch (error) {
+        console.error("Services: Erro ao abrir WhatsApp:", error);
+      }
     }
   };
 
@@ -30,12 +42,24 @@ const Services = () => {
     console.log("Services: Ebook Recuperação clicado");
     const message = encodeURIComponent("Olá! Gostaria de baixar o ebook sobre recuperação tributária.");
     const url = `https://wa.me/5511949566290?text=${message}`;
-    console.log("Services: URL gerada:", url);
-    try {
-      window.location.href = url;
-      console.log("Services: redirecionamento executado com sucesso");
-    } catch (error) {
-      console.error("Services: Erro ao abrir WhatsApp:", error);
+    
+    // Detecta se está em desenvolvimento
+    const isDevelopment = window.location.hostname === 'localhost' || window.location.hostname.includes('lovable');
+    
+    if (isDevelopment) {
+      // Em desenvolvimento, copia o link e mostra alerta
+      navigator.clipboard.writeText(url).then(() => {
+        alert(`Link do WhatsApp copiado!\n\nNúmero: +55 11 94956-6290\nMensagem: "Olá! Gostaria de baixar o ebook sobre recuperação tributária."\n\nLink copiado para área de transferência.`);
+      }).catch(() => {
+        alert(`WhatsApp: +55 11 94956-6290\n\nMensagem: "Olá! Gostaria de baixar o ebook sobre recuperação tributária."`);
+      });
+    } else {
+      // Em produção, abre normalmente
+      try {
+        window.open(url, '_blank');
+      } catch (error) {
+        console.error("Services: Erro ao abrir WhatsApp:", error);
+      }
     }
   };
 
@@ -43,12 +67,24 @@ const Services = () => {
     console.log("Services: Ebook Planejamento clicado");
     const message = encodeURIComponent("Olá! Gostaria de baixar o ebook sobre planejamento financeiro.");
     const url = `https://wa.me/5511949566290?text=${message}`;
-    console.log("Services: URL gerada:", url);
-    try {
-      window.location.href = url;
-      console.log("Services: redirecionamento executado com sucesso");
-    } catch (error) {
-      console.error("Services: Erro ao abrir WhatsApp:", error);
+    
+    // Detecta se está em desenvolvimento
+    const isDevelopment = window.location.hostname === 'localhost' || window.location.hostname.includes('lovable');
+    
+    if (isDevelopment) {
+      // Em desenvolvimento, copia o link e mostra alerta
+      navigator.clipboard.writeText(url).then(() => {
+        alert(`Link do WhatsApp copiado!\n\nNúmero: +55 11 94956-6290\nMensagem: "Olá! Gostaria de baixar o ebook sobre planejamento financeiro."\n\nLink copiado para área de transferência.`);
+      }).catch(() => {
+        alert(`WhatsApp: +55 11 94956-6290\n\nMensagem: "Olá! Gostaria de baixar o ebook sobre planejamento financeiro."`);
+      });
+    } else {
+      // Em produção, abre normalmente
+      try {
+        window.open(url, '_blank');
+      } catch (error) {
+        console.error("Services: Erro ao abrir WhatsApp:", error);
+      }
     }
   };
 
