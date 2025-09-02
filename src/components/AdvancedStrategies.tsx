@@ -139,7 +139,8 @@ const AdvancedStrategies = () => {
                 Seu patrimônio tem uma história.<br />
                 Por isso nossa gestão é feita com:<br />
                 <strong>Estratégia - Personalização - Foco em Renda Real.</strong><br />
-                Seja você um investidor iniciante ou alguém que já acumulou, mas não colhe como deveria.
+                Seja você um investidor iniciante ou alguém que já acumulou, mas não colhe como deveria.<br />
+                Vamos montar a estratégia certa para você.
               </p>
             </div>
           </div>
