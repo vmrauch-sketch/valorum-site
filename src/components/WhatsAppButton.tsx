@@ -3,7 +3,7 @@
 const WhatsAppButton = () => {
   const handleClick = () => {
     const message = encodeURIComponent("Olá! Gostaria de saber mais sobre consultoria de investimentos e wealth planning.");
-    window.open(`https://wa.me/5511949566290?text=${message}`, '_blank');
+    window.open(`https://web.whatsapp.com/send?phone=5511949566290&text=${message}`, '_blank');
   };
 
   return (
