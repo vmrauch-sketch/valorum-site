@@ -65,7 +65,7 @@ const HowWeWork = () => {
       title: "Investimentos Alternativos", 
       description: "Como participações em negócios e ativos privados — trazem diversificação inteligente e oportunidades fora do mercado tradicional.",
       icon: Gem,
-      gradient: "from-purple-600 to-purple-800"
+      gradient: "from-amber-500 to-orange-600"
     },
     {
       title: "Investimentos Financeiros",
@@ -168,12 +168,12 @@ const HowWeWork = () => {
                       </div>
                       
                       {/* Título */}
-                      <h4 className="text-2xl md:text-3xl font-playfair font-bold text-navy-600 mb-4 leading-tight">
+                      <h4 className="text-xl md:text-2xl font-playfair font-bold text-navy-600 mb-3 leading-tight">
                         {area.title}
                       </h4>
                       
                       {/* Descrição */}
-                      <p className="text-base font-inter text-gray-600 leading-relaxed">
+                      <p className="text-sm md:text-base font-inter text-gray-700 leading-relaxed">
                         {area.description}
                       </p>
                     </div>
