@@ -135,6 +135,7 @@ const ProtocoloMaisRenda = () => {
                 <div className="text-xl text-white/90 leading-relaxed mb-8 max-w-4xl mx-auto">
                   <p className="mb-4">Atendimento para profissionais da medicina e saúde.</p>
                   <p className="mb-4">Um protocolo que considera peculiaridades de rotina, planejamento patrimonial e questões tributárias específicas.</p>
+                  <p className="mb-4">PR² - Planejamento Patrimonial Real e Renda que vai acelerar a tua liberdade.</p>
                   <p>Desenvolvemos estratégias que maximizam sua renda e otimizam seu tempo, permitindo maior qualidade de vida com segurança financeira.</p>
                 </div>
                 <button 
