@@ -29,7 +29,8 @@ const Hero = () => {
           {/* Impact Phrase - Single Line */}
           <div className={`text-xl md:text-2xl font-inter mx-auto mb-8 text-navy-600 transform transition-all duration-1000 ease-out delay-600 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
             <span className="block text-center">
-              Na Valorum, acreditamos que liberdade financeira não é apenas sobre dinheiro — é sobre reconhecer o que tem valor verdadeiro. Por isso, guiamos você com clareza, estrutura e independência para desbloquear seu potencial.
+              Valorum é planejamento patrimonial com propósito.<br />
+              Guiamos nossos clientes com clareza, estratégia e autonomia para transformar patrimônio em uma fonte real de liberdade — financeira, emocional e familiar.
             </span>
           </div>
         </div>
