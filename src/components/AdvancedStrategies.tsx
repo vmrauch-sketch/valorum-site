@@ -136,8 +136,7 @@ const AdvancedStrategies = () => {
                 Abordagem Personalizada
               </h3>
               <p className="text-gray-600 text-lg max-w-4xl mx-auto leading-relaxed">
-                Cada estratégia é personalizada, considerando perfil, objetivos e necessidades específicas do cliente, 
-                garantindo soluções eficientes e alinhadas aos resultados desejados.
+                Seu patrimônio tem uma história. Por isso, nossa gestão é feita com estratégia, personalização e foco em gerar renda de verdade — seja você um investidor iniciante ou alguém que já acumulou, mas não colhe.
               </p>
             </div>
           </div>
