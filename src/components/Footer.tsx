@@ -2,7 +2,7 @@
 const Footer = () => {
   const handleWhatsAppClick = () => {
     console.log("Footer: Botão clicado");
-    const message = encodeURIComponent("Olá! Gostaria de agendar uma consultoria personalizada sobre planejamento financeiro e gestão patrimonial.");
+    const message = encodeURIComponent("Olá gostaria de mais informações");
     const url = `https://wa.me/5511949566290?text=${message}`;
     
     // Detecta se está em desenvolvimento
@@ -11,9 +11,9 @@ const Footer = () => {
     if (isDevelopment) {
       // Em desenvolvimento, copia o link e mostra alerta
       navigator.clipboard.writeText(url).then(() => {
-        alert(`Link do WhatsApp copiado!\n\nNúmero: +55 11 94956-6290\nMensagem: "Olá! Gostaria de agendar uma consultoria personalizada sobre planejamento financeiro e gestão patrimonial."\n\nLink copiado para área de transferência.`);
+        alert(`Link do WhatsApp copiado!\n\nNúmero: +55 11 94956-6290\nMensagem: "Olá gostaria de mais informações"\n\nLink copiado para área de transferência.`);
       }).catch(() => {
-        alert(`WhatsApp: +55 11 94956-6290\n\nMensagem: "Olá! Gostaria de agendar uma consultoria personalizada sobre planejamento financeiro e gestão patrimonial."`);
+        alert(`WhatsApp: +55 11 94956-6290\n\nMensagem: "Olá gostaria de mais informações"`);
       });
     } else {
       // Em produção, abre normalmente

@@ -18,7 +18,7 @@ const AdvancedStrategies = () => {
 
   const handleServiceClick = (serviceTitle: string) => {
     console.log("AdvancedStrategies: Botão clicado para", serviceTitle);
-    const message = encodeURIComponent(`Olá! Gostaria de mais informações sobre ${serviceTitle}.`);
+    const message = encodeURIComponent(`Olá gostaria de mais informações sobre ${serviceTitle}`);
     const url = `https://wa.me/5511949566290?text=${message}`;
     
     // Detecta se está em desenvolvimento
@@ -27,9 +27,9 @@ const AdvancedStrategies = () => {
     if (isDevelopment) {
       // Em desenvolvimento, copia o link e mostra alerta
       navigator.clipboard.writeText(url).then(() => {
-        alert(`Link do WhatsApp copiado!\n\nNúmero: +55 11 94956-6290\nMensagem: "Olá! Gostaria de mais informações sobre ${serviceTitle}."\n\nLink copiado para área de transferência.`);
+        alert(`Link do WhatsApp copiado!\n\nNúmero: +55 11 94956-6290\nMensagem: "Olá gostaria de mais informações sobre ${serviceTitle}"\n\nLink copiado para área de transferência.`);
       }).catch(() => {
-        alert(`WhatsApp: +55 11 94956-6290\n\nMensagem: "Olá! Gostaria de mais informações sobre ${serviceTitle}."`);
+        alert(`WhatsApp: +55 11 94956-6290\n\nMensagem: "Olá gostaria de mais informações sobre ${serviceTitle}"`);
       });
     } else {
       // Em produção, abre normalmente

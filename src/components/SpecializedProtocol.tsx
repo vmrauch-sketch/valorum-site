@@ -6,7 +6,7 @@ const SpecializedProtocol = () => {
 
   const handleProtocolClick = () => {
     console.log("SpecializedProtocol: Botão clicado");
-    const message = encodeURIComponent("Olá! Gostaria de mais informações sobre o protocolo especializado 'Mais Renda, Menos Plantão' para profissionais da medicina e saúde.");
+    const message = encodeURIComponent("Olá gostaria de mais informações");
     const url = `https://wa.me/5511949566290?text=${message}`;
     
     // Detecta se está em desenvolvimento
@@ -15,9 +15,9 @@ const SpecializedProtocol = () => {
     if (isDevelopment) {
       // Em desenvolvimento, copia o link e mostra alerta
       navigator.clipboard.writeText(url).then(() => {
-        alert(`Link do WhatsApp copiado!\n\nNúmero: +55 11 94956-6290\nMensagem: "Olá! Gostaria de mais informações sobre o protocolo especializado 'Mais Renda, Menos Plantão' para profissionais da medicina e saúde."\n\nLink copiado para área de transferência.`);
+        alert(`Link do WhatsApp copiado!\n\nNúmero: +55 11 94956-6290\nMensagem: "Olá gostaria de mais informações"\n\nLink copiado para área de transferência.`);
       }).catch(() => {
-        alert(`WhatsApp: +55 11 94956-6290\n\nMensagem: "Olá! Gostaria de mais informações sobre o protocolo especializado 'Mais Renda, Menos Plantão' para profissionais da medicina e saúde."`);
+        alert(`WhatsApp: +55 11 94956-6290\n\nMensagem: "Olá gostaria de mais informações"`);
       });
     } else {
       // Em produção, abre normalmente

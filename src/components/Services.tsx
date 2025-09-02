@@ -15,7 +15,7 @@ const Services = () => {
 
   const handleEbookFIDCClick = () => {
     console.log("Services: Ebook FIDC clicado");
-    const message = encodeURIComponent("Olá! Gostaria de baixar o ebook sobre FIDC e estratégias tributárias.");
+    const message = encodeURIComponent("Olá gostaria de mais informações");
     const url = `https://wa.me/5511949566290?text=${message}`;
     
     // Detecta se está em desenvolvimento
@@ -24,9 +24,9 @@ const Services = () => {
     if (isDevelopment) {
       // Em desenvolvimento, copia o link e mostra alerta
       navigator.clipboard.writeText(url).then(() => {
-        alert(`Link do WhatsApp copiado!\n\nNúmero: +55 11 94956-6290\nMensagem: "Olá! Gostaria de baixar o ebook sobre FIDC e estratégias tributárias."\n\nLink copiado para área de transferência.`);
+        alert(`Link do WhatsApp copiado!\n\nNúmero: +55 11 94956-6290\nMensagem: "Olá gostaria de mais informações"\n\nLink copiado para área de transferência.`);
       }).catch(() => {
-        alert(`WhatsApp: +55 11 94956-6290\n\nMensagem: "Olá! Gostaria de baixar o ebook sobre FIDC e estratégias tributárias."`);
+        alert(`WhatsApp: +55 11 94956-6290\n\nMensagem: "Olá gostaria de mais informações"`);
       });
     } else {
       // Em produção, abre normalmente
@@ -40,7 +40,7 @@ const Services = () => {
 
   const handleEbookRecuperacaoClick = () => {
     console.log("Services: Ebook Recuperação clicado");
-    const message = encodeURIComponent("Olá! Gostaria de baixar o ebook sobre recuperação tributária.");
+    const message = encodeURIComponent("Olá gostaria de mais informações");
     const url = `https://wa.me/5511949566290?text=${message}`;
     
     // Detecta se está em desenvolvimento
@@ -49,9 +49,9 @@ const Services = () => {
     if (isDevelopment) {
       // Em desenvolvimento, copia o link e mostra alerta
       navigator.clipboard.writeText(url).then(() => {
-        alert(`Link do WhatsApp copiado!\n\nNúmero: +55 11 94956-6290\nMensagem: "Olá! Gostaria de baixar o ebook sobre recuperação tributária."\n\nLink copiado para área de transferência.`);
+        alert(`Link do WhatsApp copiado!\n\nNúmero: +55 11 94956-6290\nMensagem: "Olá gostaria de mais informações"\n\nLink copiado para área de transferência.`);
       }).catch(() => {
-        alert(`WhatsApp: +55 11 94956-6290\n\nMensagem: "Olá! Gostaria de baixar o ebook sobre recuperação tributária."`);
+        alert(`WhatsApp: +55 11 94956-6290\n\nMensagem: "Olá gostaria de mais informações"`);
       });
     } else {
       // Em produção, abre normalmente
@@ -65,7 +65,7 @@ const Services = () => {
 
   const handleEbookPlanejamentoClick = () => {
     console.log("Services: Ebook Planejamento clicado");
-    const message = encodeURIComponent("Olá! Gostaria de baixar o ebook sobre planejamento financeiro.");
+    const message = encodeURIComponent("Olá gostaria de mais informações");
     const url = `https://wa.me/5511949566290?text=${message}`;
     
     // Detecta se está em desenvolvimento
@@ -74,9 +74,9 @@ const Services = () => {
     if (isDevelopment) {
       // Em desenvolvimento, copia o link e mostra alerta
       navigator.clipboard.writeText(url).then(() => {
-        alert(`Link do WhatsApp copiado!\n\nNúmero: +55 11 94956-6290\nMensagem: "Olá! Gostaria de baixar o ebook sobre planejamento financeiro."\n\nLink copiado para área de transferência.`);
+        alert(`Link do WhatsApp copiado!\n\nNúmero: +55 11 94956-6290\nMensagem: "Olá gostaria de mais informações"\n\nLink copiado para área de transferência.`);
       }).catch(() => {
-        alert(`WhatsApp: +55 11 94956-6290\n\nMensagem: "Olá! Gostaria de baixar o ebook sobre planejamento financeiro."`);
+        alert(`WhatsApp: +55 11 94956-6290\n\nMensagem: "Olá gostaria de mais informações"`);
       });
     } else {
       // Em produção, abre normalmente
