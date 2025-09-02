@@ -74,7 +74,7 @@ const HowWeWork = () => {
               </h3>
             </div>
             <h3 className={`text-3xl md:text-4xl font-playfair font-semibold text-navy-600 text-center mb-6 leading-tight transform transition-all duration-1000 ease-out ${processVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
-              Nosso processo é estruturado para garantir que cada decisão financeira faça sentido para você.
+              Nosso processo é estruturado para garantir que cada decisão patrimonial e financeira faça sentido para você.
             </h3>
             
             <div className="grid md:grid-cols-4 gap-6 mt-12">
