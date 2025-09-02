@@ -248,7 +248,7 @@ const ProtocoloMaisRenda = () => {
                     Pronto para Aumentar sua Renda?
                   </h3>
                   <p className="text-xl mb-6 opacity-90">
-                    Agende uma consulta e descubra como o Protocolo Mais Renda pode transformar seus investimentos
+                    Agende uma consulta e descubra como o Protocolo Mais Renda pode transformar a sua vida
                   </p>
                   <button 
                     onClick={handleConsultationClick}
