@@ -137,7 +137,7 @@ const AdvancedStrategies = () => {
               </h3>
               <p className="text-gray-600 text-lg max-w-4xl mx-auto leading-relaxed">
                 Seu patrimônio tem uma história.<br />
-                Por isso nossa gestão é feita com<br />
+                Por isso nossa gestão é feita com:<br />
                 <strong>Estratégia - Personalização - Foco em Renda Real.</strong><br />
                 Seja você um investidor iniciante ou alguém que já acumulou, mas não colhe como deveria.
               </p>
