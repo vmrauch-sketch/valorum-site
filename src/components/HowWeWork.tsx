@@ -68,6 +68,11 @@ const HowWeWork = () => {
 
           {/* Processo Estruturado */}
           <div ref={processRef} className="mb-20">
+            <div className={`text-center mb-8 transform transition-all duration-1000 ease-out delay-200 ${processVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
+              <h3 className="text-4xl md:text-5xl font-playfair font-bold text-navy-600 mb-4">
+                PR² = Patrimônio Real & Renda
+              </h3>
+            </div>
             <h3 className={`text-3xl md:text-4xl font-playfair font-semibold text-navy-600 text-center mb-6 leading-tight transform transition-all duration-1000 ease-out ${processVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
               Nosso processo é estruturado para garantir que cada decisão financeira faça sentido para você.
             </h3>
