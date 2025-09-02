@@ -16,6 +16,11 @@ const AdvancedStrategies = () => {
   const { elementRef: strategiesRef, isVisible: strategiesVisible } = useScrollAnimation();
   const { elementRef: summaryRef, isVisible: summaryVisible } = useScrollAnimation();
 
+  const handleServiceClick = (serviceTitle: string) => {
+    const message = encodeURIComponent(`Olá! Gostaria de mais informações sobre ${serviceTitle}.`);
+    window.open(`https://wa.me/5511949566290?text=${message}`, '_blank');
+  };
+
   const strategies = [
     {
       title: "Estruturação de Holdings",
@@ -91,9 +96,15 @@ const AdvancedStrategies = () => {
                 <h3 className="text-lg font-bold text-navy-600 mb-3 group-hover:text-corporate-600 transition-colors">
                   {strategy.title}
                 </h3>
-                <p className="text-gray-600 text-sm leading-relaxed">
+                <p className="text-gray-600 text-sm leading-relaxed mb-4">
                   {strategy.description}
                 </p>
+                <button
+                  onClick={() => handleServiceClick(strategy.title)}
+                  className="text-navy-600 hover:text-corporate-600 text-xs font-medium underline underline-offset-2 hover:underline-offset-4 transition-all duration-300"
+                >
+                  clique aqui
+                </button>
               </div>
             ))}
           </div>
