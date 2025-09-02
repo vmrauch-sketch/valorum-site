@@ -97,7 +97,8 @@ const AdvancedStrategies = () => {
               <div className="absolute bottom-2 left-0 w-16 h-1 bg-gold-500"></div>
             </div>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed mt-8">
-              PR² - Planejamento Patrimonial Real e Renda
+              PR² - Planejamento Patrimonial Real e Renda<br />
+              Soluções além do planejamento financeiro.
             </p>
           </div>
 
