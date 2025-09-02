@@ -134,7 +134,7 @@ const ProtocoloMaisRenda = () => {
                 </h2>
                 <div className="text-xl text-white/90 leading-relaxed mb-8 max-w-4xl mx-auto">
                   <p className="mb-4">Você cuida de vidas. Nós cuidamos do seu patrimônio.</p>
-                  <p className="mb-4">Criamos estratégias personalizadas para médicos que desejam transformar patrimônio em liberdade.</p>
+                  <p className="mb-4">Criamos estratégias personalizadas para médicos que desejam criar e transformar patrimônio em liberdade.</p>
                   <p>Mais tempo, mais segurança, mais futuro.</p>
                 </div>
                 <button 
