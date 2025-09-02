@@ -16,13 +16,16 @@ import {
   Lightbulb,
   Settings,
   Users,
-  Activity
+  Activity,
+  Home,
+  LineChart
 } from "lucide-react";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const HowWeWork = () => {
   const { elementRef: headerRef, isVisible: headerVisible } = useScrollAnimation();
   const { elementRef: processRef, isVisible: processVisible } = useScrollAnimation();
+  const { elementRef: investmentAreasRef, isVisible: investmentAreasVisible } = useScrollAnimation();
 
   const processSteps = [
     {
@@ -48,6 +51,27 @@ const HowWeWork = () => {
       subtitle: "Ajustes constantes, sempre alinhados aos seus objetivos.",
       icon: Users,
       description: "Monitoramos resultados e realizamos ajustes para manter o plano sempre otimizado."
+    }
+  ];
+
+  const investmentAreas = [
+    {
+      title: "Investimentos Físicos",
+      description: "Como imóveis e propriedades — oferecem segurança e preservação de patrimônio.",
+      icon: Home,
+      gradient: "from-blue-600 to-blue-800"
+    },
+    {
+      title: "Investimentos Alternativos", 
+      description: "Como participações em negócios e ativos privados — trazem diversificação inteligente e oportunidades fora do mercado tradicional.",
+      icon: Gem,
+      gradient: "from-purple-600 to-purple-800"
+    },
+    {
+      title: "Investimentos Financeiros",
+      description: "Ações, fundos, renda fixa e globais — garantem liquidez, dinamismo e crescimento contínuo.",
+      icon: LineChart,
+      gradient: "from-green-600 to-green-800"
     }
   ];
 
@@ -107,6 +131,50 @@ const HowWeWork = () => {
                       {/* Descrição */}
                       <p className="text-sm font-inter text-gray-600 leading-relaxed">
                         {step.description}
+                      </p>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+
+          {/* Áreas de Atuação */}
+          <div ref={investmentAreasRef} className="mb-12">
+            <div className={`text-center mb-12 transform transition-all duration-1000 ease-out ${investmentAreasVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
+              <h3 className="text-4xl md:text-5xl font-playfair font-bold text-navy-600 mb-6">
+                Nossas Áreas de Atuação
+              </h3>
+              <p className="text-xl font-inter text-gray-700 max-w-3xl mx-auto leading-relaxed">
+                Três pilares fundamentais que sustentam nossa estratégia de gestão patrimonial
+              </p>
+            </div>
+            
+            <div className="grid md:grid-cols-3 gap-8">
+              {investmentAreas.map((area, index) => {
+                const IconComponent = area.icon;
+                return (
+                  <div 
+                    key={index}
+                    className={`bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-1000 ease-out group transform ${investmentAreasVisible ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'}`}
+                    style={{ 
+                      transitionDelay: investmentAreasVisible ? `${index * 200}ms` : '0ms'
+                    }}
+                  >
+                    <div className="text-center">
+                      {/* Ícone com gradiente */}
+                      <div className={`w-20 h-20 bg-gradient-to-br ${area.gradient} rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg`}>
+                        <IconComponent size={32} className="text-white" />
+                      </div>
+                      
+                      {/* Título */}
+                      <h4 className="text-2xl md:text-3xl font-playfair font-bold text-navy-600 mb-4 leading-tight">
+                        {area.title}
+                      </h4>
+                      
+                      {/* Descrição */}
+                      <p className="text-base font-inter text-gray-600 leading-relaxed">
+                        {area.description}
                       </p>
                     </div>
                   </div>
