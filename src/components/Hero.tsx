@@ -30,7 +30,8 @@ const Hero = () => {
           <div className={`text-xl md:text-2xl font-inter mx-auto mb-8 text-navy-600 transform transition-all duration-1000 ease-out delay-600 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
             <span className="block text-center">
               Valorum é planejamento patrimonial com propósito.<br />
-              Guiamos nossos clientes com clareza, estratégia e autonomia para transformar patrimônio em uma fonte real de liberdade — financeira, emocional e familiar.
+              Guiamos nossos clientes com clareza, estratégia e autonomia.<br />
+              Transformar patrimônio em uma fonte real de liberdade.
             </span>
           </div>
         </div>
