@@ -14,18 +14,42 @@ const Services = () => {
   const { elementRef, isVisible } = useScrollAnimation();
 
   const handleEbookFIDCClick = () => {
+    console.log("Services: Ebook FIDC clicado");
     const message = encodeURIComponent("Olá! Gostaria de baixar o ebook sobre FIDC e estratégias tributárias.");
-    window.open(`https://wa.me/5511949566290?text=${message}`, '_blank');
+    const url = `https://wa.me/5511949566290?text=${message}`;
+    console.log("Services: URL gerada:", url);
+    try {
+      window.location.href = url;
+      console.log("Services: redirecionamento executado com sucesso");
+    } catch (error) {
+      console.error("Services: Erro ao abrir WhatsApp:", error);
+    }
   };
 
   const handleEbookRecuperacaoClick = () => {
+    console.log("Services: Ebook Recuperação clicado");
     const message = encodeURIComponent("Olá! Gostaria de baixar o ebook sobre recuperação tributária.");
-    window.open(`https://wa.me/5511949566290?text=${message}`, '_blank');
+    const url = `https://wa.me/5511949566290?text=${message}`;
+    console.log("Services: URL gerada:", url);
+    try {
+      window.location.href = url;
+      console.log("Services: redirecionamento executado com sucesso");
+    } catch (error) {
+      console.error("Services: Erro ao abrir WhatsApp:", error);
+    }
   };
 
   const handleEbookPlanejamentoClick = () => {
+    console.log("Services: Ebook Planejamento clicado");
     const message = encodeURIComponent("Olá! Gostaria de baixar o ebook sobre planejamento financeiro.");
-    window.open(`https://wa.me/5511949566290?text=${message}`, '_blank');
+    const url = `https://wa.me/5511949566290?text=${message}`;
+    console.log("Services: URL gerada:", url);
+    try {
+      window.location.href = url;
+      console.log("Services: redirecionamento executado com sucesso");
+    } catch (error) {
+      console.error("Services: Erro ao abrir WhatsApp:", error);
+    }
   };
 
   return (

@@ -1,8 +1,16 @@
 
 const Footer = () => {
   const handleWhatsAppClick = () => {
+    console.log("Footer: Botão clicado");
     const message = encodeURIComponent("Olá! Gostaria de agendar uma consultoria personalizada sobre planejamento financeiro e gestão patrimonial.");
-    window.open(`https://wa.me/5511949566290?text=${message}`, '_blank');
+    const url = `https://wa.me/5511949566290?text=${message}`;
+    console.log("Footer: URL gerada:", url);
+    try {
+      window.location.href = url;
+      console.log("Footer: redirecionamento executado com sucesso");
+    } catch (error) {
+      console.error("Footer: Erro ao abrir WhatsApp:", error);
+    }
   };
 
   return (

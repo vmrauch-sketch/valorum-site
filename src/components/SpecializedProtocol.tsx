@@ -5,8 +5,16 @@ const SpecializedProtocol = () => {
   const { elementRef, isVisible } = useScrollAnimation();
 
   const handleProtocolClick = () => {
+    console.log("SpecializedProtocol: Botão clicado");
     const message = encodeURIComponent("Olá! Gostaria de mais informações sobre o protocolo especializado 'Mais Renda, Menos Plantão' para profissionais da medicina e saúde.");
-    window.open(`https://wa.me/5511949566290?text=${message}`, '_blank');
+    const url = `https://wa.me/5511949566290?text=${message}`;
+    console.log("SpecializedProtocol: URL gerada:", url);
+    try {
+      window.location.href = url;
+      console.log("SpecializedProtocol: redirecionamento executado com sucesso");
+    } catch (error) {
+      console.error("SpecializedProtocol: Erro ao abrir WhatsApp:", error);
+    }
   };
 
   return (

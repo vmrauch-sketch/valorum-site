@@ -17,8 +17,16 @@ const AdvancedStrategies = () => {
   const { elementRef: summaryRef, isVisible: summaryVisible } = useScrollAnimation();
 
   const handleServiceClick = (serviceTitle: string) => {
+    console.log("AdvancedStrategies: Botão clicado para", serviceTitle);
     const message = encodeURIComponent(`Olá! Gostaria de mais informações sobre ${serviceTitle}.`);
-    window.open(`https://wa.me/5511949566290?text=${message}`, '_blank');
+    const url = `https://wa.me/5511949566290?text=${message}`;
+    console.log("AdvancedStrategies: URL gerada:", url);
+    try {
+      window.location.href = url;
+      console.log("AdvancedStrategies: redirecionamento executado com sucesso");
+    } catch (error) {
+      console.error("AdvancedStrategies: Erro ao abrir WhatsApp:", error);
+    }
   };
 
   const strategies = [

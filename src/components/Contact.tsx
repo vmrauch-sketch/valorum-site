@@ -6,8 +6,8 @@ const Contact = () => {
     const url = `https://wa.me/5511949566290?text=${message}`;
     console.log("Contact: URL gerada:", url);
     try {
-      window.open(url, '_blank');
-      console.log("Contact: window.open executado com sucesso");
+      window.location.href = url;
+      console.log("Contact: redirecionamento executado com sucesso");
     } catch (error) {
       console.error("Contact: Erro ao abrir WhatsApp:", error);
     }

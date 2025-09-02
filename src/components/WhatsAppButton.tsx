@@ -7,8 +7,8 @@ const WhatsAppButton = () => {
     const url = `https://wa.me/5511949566290?text=${message}`;
     console.log("WhatsAppButton: URL gerada:", url);
     try {
-      window.open(url, '_blank');
-      console.log("WhatsAppButton: window.open executado com sucesso");
+      window.location.href = url;
+      console.log("WhatsAppButton: redirecionamento executado com sucesso");
     } catch (error) {
       console.error("WhatsAppButton: Erro ao abrir WhatsApp:", error);
     }
