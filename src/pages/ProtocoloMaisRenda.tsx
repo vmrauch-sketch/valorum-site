@@ -19,6 +19,16 @@ const ProtocoloMaisRenda = () => {
   const { elementRef: benefitsRef, isVisible: benefitsVisible } = useScrollAnimation();
   const { elementRef: processRef, isVisible: processVisible } = useScrollAnimation();
 
+  const handleProtocolClick = () => {
+    const message = encodeURIComponent("Olá! Gostaria de mais informações sobre o protocolo especializado 'Mais Renda, Menos Plantão' para profissionais da medicina e saúde.");
+    window.open(`https://web.whatsapp.com/send?phone=5511949566290&text=${message}`, '_blank');
+  };
+
+  const handleConsultationClick = () => {
+    const message = encodeURIComponent("Olá! Gostaria de agendar uma consulta sobre o Protocolo Mais Renda.");
+    window.open(`https://web.whatsapp.com/send?phone=5511949566290&text=${message}`, '_blank');
+  };
+
   const benefits = [
     {
       title: "Maior Rentabilidade",
@@ -89,13 +99,13 @@ const ProtocoloMaisRenda = () => {
                   <p className="mb-4">Um protocolo que considera peculiaridades de rotina, planejamento patrimonial e questões tributárias específicas.</p>
                   <p>Desenvolvemos estratégias que maximizam sua renda e otimizam seu tempo, permitindo maior qualidade de vida com segurança financeira.</p>
                 </div>
-                <a 
-                  href="/contato"
+                <button 
+                  onClick={handleProtocolClick}
                   className="inline-flex items-center bg-gold-500 hover:bg-gold-600 text-navy-800 px-8 py-4 rounded-lg font-semibold transition-colors text-lg"
                 >
                   Clique aqui para conhecer o protocolo
                   <ArrowRight className="ml-2" size={20} />
-                </a>
+                </button>
               </div>
             </div>
           </div>
@@ -202,13 +212,13 @@ const ProtocoloMaisRenda = () => {
                   <p className="text-xl mb-6 opacity-90">
                     Agende uma consulta e descubra como o Protocolo Mais Renda pode transformar seus investimentos
                   </p>
-                  <a 
-                    href="/contato"
+                  <button 
+                    onClick={handleConsultationClick}
                     className="inline-flex items-center bg-white text-corporate-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
                   >
                     Agendar Consulta
                     <ArrowRight className="ml-2" size={20} />
-                  </a>
+                  </button>
                 </div>
               </div>
             </div>
