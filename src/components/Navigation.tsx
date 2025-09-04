@@ -13,7 +13,7 @@ export const Navigation = () => {
     { name: 'Estratégias', path: '/estrategias' },
     { name: 'Protocolo Mais Renda', path: '/protocolo-mais-renda' },
     { name: 'Serviços', path: '/servicos' },
-    { name: 'Sobre Vilson', path: '/vilson-rauch' },
+    { name: 'Sobre Vilson', path: 'https://vilsonrauch.com.br', external: true },
     { name: 'Contato', path: '/contato' },
   ];
 
@@ -31,15 +31,27 @@ export const Navigation = () => {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
-              <Link
-                key={item.path}
-                to={item.path}
-                className={`font-medium transition-colors hover:text-primary ${
-                  isActive(item.path) ? 'text-primary' : 'text-muted-foreground'
-                }`}
-              >
-                {item.name}
-              </Link>
+              item.external ? (
+                <a
+                  key={item.path}
+                  href={item.path}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-medium transition-colors hover:text-primary text-muted-foreground"
+                >
+                  {item.name}
+                </a>
+              ) : (
+                <Link
+                  key={item.path}
+                  to={item.path}
+                  className={`font-medium transition-colors hover:text-primary ${
+                    isActive(item.path) ? 'text-primary' : 'text-muted-foreground'
+                  }`}
+                >
+                  {item.name}
+                </Link>
+              )
             ))}
           </div>
 
@@ -57,16 +69,29 @@ export const Navigation = () => {
           <div className="md:hidden border-t border-border/20">
             <div className="py-4 space-y-2">
               {navItems.map((item) => (
-                <Link
-                  key={item.path}
-                  to={item.path}
-                  onClick={() => setIsOpen(false)}
-                  className={`block py-2 font-medium transition-colors hover:text-primary ${
-                    isActive(item.path) ? 'text-primary' : 'text-muted-foreground'
-                  }`}
-                >
-                  {item.name}
-                </Link>
+                item.external ? (
+                  <a
+                    key={item.path}
+                    href={item.path}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => setIsOpen(false)}
+                    className="block py-2 font-medium transition-colors hover:text-primary text-muted-foreground"
+                  >
+                    {item.name}
+                  </a>
+                ) : (
+                  <Link
+                    key={item.path}
+                    to={item.path}
+                    onClick={() => setIsOpen(false)}
+                    className={`block py-2 font-medium transition-colors hover:text-primary ${
+                      isActive(item.path) ? 'text-primary' : 'text-muted-foreground'
+                    }`}
+                  >
+                    {item.name}
+                  </Link>
+                )
               ))}
             </div>
           </div>
