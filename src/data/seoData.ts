@@ -8,15 +8,15 @@ export const SEOData = {
   },
   
   vilsonRauch: {
-    title: "Vilson Rauch - Consultor Financeiro e Especialista em Planejamento Patrimonial",
-    description: "Vilson Rauch: consultor financeiro especializado em planejamento patrimonial para médicos e profissionais liberais. Protocolo 'Mais Renda, Menos Plantão'.",
-    keywords: "Vilson Rauch, consultor financeiro, planejamento patrimonial médicos, mais renda menos plantão, consultoria financeira médicos, investimentos para médicos",
+    title: "Vilson Marcelo Rauch - Consultor Financeiro e Especialista em Planejamento Patrimonial",
+    description: "Vilson Marcelo Rauch: consultor financeiro especializado em planejamento patrimonial para médicos e profissionais liberais. Protocolo 'Mais Renda, Menos Plantão'.",
+    keywords: "Vilson Marcelo Rauch, Vilson Rauch, consultor financeiro, planejamento patrimonial médicos, mais renda menos plantão, consultoria financeira médicos, investimentos para médicos",
   },
 
   protocoloMaisRenda: {
     title: "Protocolo Mais Renda Menos Plantão - Planejamento Financeiro para Médicos",
     description: "Protocolo especializado para médicos: maximize sua renda, otimize seu tempo. Estratégias financeiras exclusivas para profissionais da saúde.",
-    keywords: "protocolo mais renda menos plantão, planejamento financeiro médicos, investimentos médicos, consultoria médicos, Vilson Rauch, renda passiva médicos",
+    keywords: "protocolo mais renda menos plantão, planejamento financeiro médicos, investimentos médicos, consultoria médicos, Vilson Marcelo Rauch, Vilson Rauch, renda passiva médicos",
   },
 
   services: {
@@ -54,7 +54,8 @@ export const StructuredData = {
   person: {
     "@context": "https://schema.org",
     "@type": "Person",
-    "name": "Vilson Rauch",
+    "name": "Vilson Marcelo Rauch",
+    "alternateName": ["Vilson Rauch"],
     "jobTitle": "Consultor Financeiro e Especialista em Planejamento Patrimonial",
     "description": "Especialista em planejamento financeiro para médicos e profissionais da saúde",
     "url": "https://vilsonrauch.com.br",
