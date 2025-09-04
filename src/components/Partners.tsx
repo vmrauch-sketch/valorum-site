@@ -43,7 +43,7 @@ const Partners = () => {
             Nossos Principais Parceiros
           </h3>
           <p className="text-gray-600">
-            Trabalhamos com as principais instituições do mercado financeiro
+            Trabalhamos com as principais instituições do mercado
           </p>
         </div>
         
