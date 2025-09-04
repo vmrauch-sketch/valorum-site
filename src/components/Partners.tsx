@@ -23,6 +23,7 @@ const Partners = () => {
     { name: "Genial Investimentos", logo: "/lovable-uploads/454af672-d94b-429c-a9a2-c41e99b69d49.png" },
     { name: "Ágora Investimentos", logo: "/lovable-uploads/b22c433b-2098-4670-bb17-c90d25f92e44.png" },
     { name: "Avenue" },
+    { name: "InvestorPro", logo: "/lovable-uploads/5c86c754-e6cd-4a54-b01b-3510b22b0fe9.png" },
     { name: "BTG Pactual", logo: "/lovable-uploads/66f81bae-7915-466c-9c67-2c39fd5e665d.png" },
     { name: "Safra", logo: "/lovable-uploads/622a5286-66f0-49bb-b29b-7762c43d1a9a.png" },
     { name: "XP Wealth Services", logo: "/lovable-uploads/ce4ec111-6d8a-417b-8bf8-1b0a7e8becf8.png" },
