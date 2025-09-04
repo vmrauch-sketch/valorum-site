@@ -4,25 +4,25 @@ export const SEOData = {
   valorum: {
     title: "Valorum Capital - Planejamento Patrimonial e Gestão de Investimentos",
     description: "Valorum Capital: consultoria especializada em planejamento patrimonial, gestão de investimentos e estratégias financeiras. Transforme seu patrimônio em liberdade financeira.",
-    keywords: "planejamento patrimonial, gestão de investimentos, consultoria financeira, Valorum Capital, wealth planning, investimentos, proteção patrimonial, FIDC, recuperação tributária",
+    keywords: "planejamento patrimonial, gestão de investimentos, consultoria financeira, Valorum Capital, wealth planning, investimentos, proteção patrimonial, FIDC, recuperação tributária, crescimento patrimonial, renda, economista, renda passiva",
   },
   
   vilsonRauch: {
     title: "Vilson Marcelo Rauch - Consultor Financeiro e Especialista em Planejamento Patrimonial",
     description: "Vilson Marcelo Rauch: consultor financeiro especializado em planejamento patrimonial para médicos e profissionais liberais. Protocolo 'Mais Renda, Menos Plantão'.",
-    keywords: "Vilson Marcelo Rauch, Vilson Rauch, consultor financeiro, planejamento patrimonial médicos, mais renda menos plantão, consultoria financeira médicos, investimentos para médicos",
+    keywords: "Vilson Marcelo Rauch, Vilson Rauch, consultor financeiro, planejamento patrimonial médicos, mais renda menos plantão, consultoria financeira médicos, investimentos para médicos, crescimento patrimonial, renda passiva, economista",
   },
 
   protocoloMaisRenda: {
     title: "Protocolo Mais Renda Menos Plantão - Planejamento Financeiro para Médicos",
     description: "Protocolo especializado para médicos: maximize sua renda, otimize seu tempo. Estratégias financeiras exclusivas para profissionais da saúde.",
-    keywords: "protocolo mais renda menos plantão, planejamento financeiro médicos, investimentos médicos, consultoria médicos, Vilson Marcelo Rauch, Vilson Rauch, renda passiva médicos",
+    keywords: "protocolo mais renda menos plantão, planejamento financeiro médicos, investimentos médicos, consultoria médicos, Vilson Marcelo Rauch, Vilson Rauch, renda passiva médicos, crescimento patrimonial, renda, investimentos",
   },
 
   services: {
     title: "Serviços de Consultoria Financeira - Valorum Capital",
     description: "Serviços completos: consultoria de investimentos, gestão patrimonial, FIDC, recuperação tributária e educação financeira. Soluções personalizadas.",
-    keywords: "consultoria investimentos, gestão patrimonial, FIDC, recuperação tributária, educação financeira, planejamento sucessório, proteção patrimonial",
+    keywords: "consultoria investimentos, gestão patrimonial, FIDC, recuperação tributária, educação financeira, planejamento sucessório, proteção patrimonial, crescimento patrimonial, renda passiva, investimentos, economista",
   }
 };
 
