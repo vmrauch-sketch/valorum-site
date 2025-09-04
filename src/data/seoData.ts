@@ -4,7 +4,7 @@ export const SEOData = {
   valorum: {
     title: "Valorum Capital - Planejamento Patrimonial e Gestão de Investimentos",
     description: "Valorum Capital: consultoria especializada em planejamento patrimonial, gestão de investimentos e estratégias financeiras. Transforme seu patrimônio em liberdade financeira.",
-    keywords: "planejamento patrimonial, gestão de investimentos, consultoria financeira, Valorum Capital, wealth planning, investimentos, proteção patrimonial, FIDC, recuperação tributária, crescimento patrimonial, renda, economista, renda passiva, imóveis em santa catarina, economia santa catarina",
+    keywords: "planejamento patrimonial, gestão de investimentos, consultoria financeira, Valorum Capital, wealth planning, investimentos, proteção patrimonial, FIDC, recuperação tributária, crescimento patrimonial, renda, economista, renda passiva, imóveis em santa catarina, economia santa catarina, consultoria financeira médicos, investimentos para médicos, mentoria para médicos",
   },
   
   vilsonRauch: {
