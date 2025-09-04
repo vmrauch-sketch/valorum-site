@@ -28,7 +28,8 @@ const Partners = () => {
     { name: "Avenue" },
     { name: "BTG Pactual" },
     { name: "Safra" },
-    { name: "XP Wealth Services" }
+    { name: "XP Wealth Services" },
+    { name: "Fictor", logo: "/lovable-uploads/aac0f20e-f664-4b17-ad3a-a2b73b11d5fa.png" }
   ];
 
   // Duplicamos a lista para criar um loop infinito
@@ -56,9 +57,17 @@ const Partners = () => {
                 key={`${partner.name}-${index}`}
                 className="flex-shrink-0 flex items-center justify-center bg-white rounded-lg shadow-lg p-8 h-24 min-w-[280px] hover:shadow-xl transition-all duration-300 border border-gray-100"
               >
-                <span className="text-lg font-semibold text-gray-700 text-center">
-                  {partner.name}
-                </span>
+                {partner.logo ? (
+                  <img
+                    src={partner.logo}
+                    alt={`Logo ${partner.name}`}
+                    className="max-h-full max-w-full object-contain"
+                  />
+                ) : (
+                  <span className="text-lg font-semibold text-gray-700 text-center">
+                    {partner.name}
+                  </span>
+                )}
               </div>
             ))}
           </div>
