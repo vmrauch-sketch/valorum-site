@@ -29,7 +29,8 @@ const Partners = () => {
     { name: "XP Wealth Services", logo: "/lovable-uploads/ce4ec111-6d8a-417b-8bf8-1b0a7e8becf8.png" },
     { name: "Mont Asset", logo: "/lovable-uploads/2eca84d8-7746-40bc-bcbe-185df5deae03.png" },
     { name: "Valorum DashPlan", logo: "/lovable-uploads/064ec607-f2b6-4a49-984a-cd3c3530931d.png" },
-    { name: "Fictor", logo: "/lovable-uploads/aac0f20e-f664-4b17-ad3a-a2b73b11d5fa.png" }
+    { name: "Fictor", logo: "/lovable-uploads/aac0f20e-f664-4b17-ad3a-a2b73b11d5fa.png" },
+    { name: "TechFinance", logo: "/lovable-uploads/8d371ace-4f3e-4482-bbbd-7811c3e3d682.png" }
   ];
 
   // Duplicamos a lista para criar um loop infinito
