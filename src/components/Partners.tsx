@@ -20,8 +20,6 @@ const Partners = () => {
   }, []);
 
   const partners = [
-    { name: "Julius Baer Swiss Private Banking" },
-    { name: "RB Investimentos" },
     { name: "Genial Investimentos" },
     { name: "Ágora Investimentos" },
     { name: "ICATU" },
