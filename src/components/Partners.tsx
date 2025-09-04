@@ -1,5 +1,20 @@
 import { useEffect, useRef } from 'react';
 
+// Import logos
+import valorumLogo from '@/assets/logos/valorum.png';
+import juliusBarLogo from '@/assets/logos/julius-baer.png';
+import rbInvestimentosLogo from '@/assets/logos/rb-investimentos.png';
+import genialLogo from '@/assets/logos/genial.png';
+import agoraLogo from '@/assets/logos/agora.png';
+import icatuLogo from '@/assets/logos/icatu.png';
+import avenueLogo from '@/assets/logos/avenue.png';
+import btgPactualLogo from '@/assets/logos/btg-pactual.png';
+import safraLogo from '@/assets/logos/safra.png';
+import xpLogo from '@/assets/logos/xp.png';
+import qitechLogo from '@/assets/logos/qitech.png';
+import montAssetLogo from '@/assets/logos/mont-asset.png';
+import fictorLogo from '@/assets/logos/fictor.png';
+
 const Partners = () => {
   const scrollRef = useRef<HTMLDivElement>(null);
 
@@ -20,18 +35,19 @@ const Partners = () => {
   }, []);
 
   const partners = [
-    { name: "Julius Bär", logo: "https://via.placeholder.com/120x40/E5E7EB/6B7280?text=Julius+Bär" },
-    { name: "RB Investimentos", logo: "https://via.placeholder.com/120x40/E5E7EB/6B7280?text=RB" },
-    { name: "Genial", logo: "https://via.placeholder.com/120x40/E5E7EB/6B7280?text=Genial" },
-    { name: "Ágora", logo: "https://via.placeholder.com/120x40/E5E7EB/6B7280?text=Ágora" },
-    { name: "ICATU", logo: "https://via.placeholder.com/120x40/E5E7EB/6B7280?text=ICATU" },
-    { name: "Avenue", logo: "https://via.placeholder.com/120x40/E5E7EB/6B7280?text=Avenue" },
-    { name: "BTG Pactual", logo: "https://via.placeholder.com/120x40/E5E7EB/6B7280?text=BTG" },
-    { name: "Safra", logo: "https://via.placeholder.com/120x40/E5E7EB/6B7280?text=Safra" },
-    { name: "XP", logo: "https://via.placeholder.com/120x40/E5E7EB/6B7280?text=XP" },
-    { name: "QITECH", logo: "https://via.placeholder.com/120x40/E5E7EB/6B7280?text=QITECH" },
-    { name: "Mont Asset", logo: "https://via.placeholder.com/120x40/E5E7EB/6B7280?text=Mont" },
-    { name: "Fictor", logo: "https://via.placeholder.com/120x40/E5E7EB/6B7280?text=Fictor" }
+    { name: "Valorum", logo: valorumLogo },
+    { name: "Julius Bär", logo: juliusBarLogo },
+    { name: "RB Investimentos", logo: rbInvestimentosLogo },
+    { name: "Genial", logo: genialLogo },
+    { name: "Ágora", logo: agoraLogo },
+    { name: "ICATU", logo: icatuLogo },
+    { name: "Avenue", logo: avenueLogo },
+    { name: "BTG Pactual", logo: btgPactualLogo },
+    { name: "Safra", logo: safraLogo },
+    { name: "XP", logo: xpLogo },
+    { name: "QITECH", logo: qitechLogo },
+    { name: "Mont Asset", logo: montAssetLogo },
+    { name: "Fictor", logo: fictorLogo }
   ];
 
   // Duplicamos a lista para criar um loop infinito
