@@ -99,3 +99,22 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Partners carousel animation */
+@keyframes partners-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.partners-scroll {
+  width: fit-content;
+  animation: partners-scroll 30s linear infinite;
+}
+
+.partners-scroll:hover {
+  animation-play-state: paused;
+}

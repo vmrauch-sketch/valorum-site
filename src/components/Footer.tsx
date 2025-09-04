@@ -1,4 +1,6 @@
 
+import { Partners } from './Partners';
+
 const Footer = () => {
   const handleWhatsAppClick = () => {
     console.log("Footer: Botão clicado");
@@ -26,7 +28,9 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-navy-800 text-white py-12">
+    <>
+      <Partners />
+      <footer className="bg-navy-800 text-white py-12">
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-3 gap-8">
@@ -66,6 +70,7 @@ const Footer = () => {
         </div>
       </div>
     </footer>
+    </>
   );
 };
 
