@@ -20,15 +20,15 @@ const Partners = () => {
   }, []);
 
   const partners = [
-    { name: "XP Investimentos" },
+    { name: "Julius Baer Swiss Private Banking" },
+    { name: "RB Investimentos" },
+    { name: "Genial Investimentos" },
+    { name: "Ágora Investimentos" },
+    { name: "ICATU" },
+    { name: "Avenue" },
     { name: "BTG Pactual" },
-    { name: "Banco Safra" },
-    { name: "Bradesco" },
-    { name: "Santander" },
-    { name: "Itaú Unibanco" },
-    { name: "Julius Baer" },
-    { name: "Mont Capital" },
-    { name: "Ágora Investimentos" }
+    { name: "Safra" },
+    { name: "XP Wealth Services" }
   ];
 
   // Duplicamos a lista para criar um loop infinito
