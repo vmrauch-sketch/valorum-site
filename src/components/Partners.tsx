@@ -20,7 +20,7 @@ const Partners = () => {
   }, []);
 
   const partners = [
-    { name: "Genial Investimentos" },
+    { name: "Genial Investimentos", logo: "/lovable-uploads/454af672-d94b-429c-a9a2-c41e99b69d49.png" },
     { name: "Ágora Investimentos" },
     { name: "Avenue" },
     { name: "BTG Pactual", logo: "/lovable-uploads/66f81bae-7915-466c-9c67-2c39fd5e665d.png" },
