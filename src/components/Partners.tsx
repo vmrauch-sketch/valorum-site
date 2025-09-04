@@ -20,12 +20,15 @@ const Partners = () => {
   }, []);
 
   const partners = [
-    { name: "XP", logo: "https://logoeps.com/wp-content/uploads/2020/10/xp-investimentos-vector-logo.png" },
-    { name: "BTG Pactual", logo: "https://logoeps.com/wp-content/uploads/2013/03/btg-pactual-vector-logo.png" },
-    { name: "Safra", logo: "https://logoeps.com/wp-content/uploads/2013/03/banco-safra-vector-logo.png" },
-    { name: "Bradesco", logo: "https://logoeps.com/wp-content/uploads/2013/03/bradesco-vector-logo.png" },
-    { name: "Santander", logo: "https://logoeps.com/wp-content/uploads/2013/03/santander-vector-logo.png" },
-    { name: "Itaú", logo: "https://logoeps.com/wp-content/uploads/2013/03/itau-vector-logo.png" }
+    { name: "XP Investimentos" },
+    { name: "BTG Pactual" },
+    { name: "Banco Safra" },
+    { name: "Bradesco" },
+    { name: "Santander" },
+    { name: "Itaú Unibanco" },
+    { name: "Julius Baer" },
+    { name: "Mont Capital" },
+    { name: "Ágora Investimentos" }
   ];
 
   // Duplicamos a lista para criar um loop infinito
@@ -51,13 +54,11 @@ const Partners = () => {
             {duplicatedPartners.map((partner, index) => (
               <div
                 key={`${partner.name}-${index}`}
-                className="flex-shrink-0 flex items-center justify-center bg-white rounded-lg shadow-lg p-12 h-40 min-w-[360px] hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+                className="flex-shrink-0 flex items-center justify-center bg-white rounded-lg shadow-lg p-8 h-24 min-w-[280px] hover:shadow-xl transition-all duration-300 border border-gray-100"
               >
-                <img
-                  src={partner.logo}
-                  alt={`Logo ${partner.name}`}
-                  className="max-h-full max-w-full object-contain opacity-90 hover:opacity-100 transition-opacity duration-300"
-                />
+                <span className="text-lg font-semibold text-gray-700 text-center">
+                  {partner.name}
+                </span>
               </div>
             ))}
           </div>
