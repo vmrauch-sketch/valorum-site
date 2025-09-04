@@ -1,17 +1,13 @@
 import { useEffect, useRef } from 'react';
 
 // Import logos
-import valorumLogo from '@/assets/logos/valorum.png';
 import juliusBarLogo from '@/assets/logos/julius-baer.png';
 import rbInvestimentosLogo from '@/assets/logos/rb-investimentos.png';
-import genialLogo from '@/assets/logos/genial.png';
 import agoraLogo from '@/assets/logos/agora.png';
 import icatuLogo from '@/assets/logos/icatu.png';
 import avenueLogo from '@/assets/logos/avenue.png';
-import btgPactualLogo from '@/assets/logos/btg-pactual.png';
 import safraLogo from '@/assets/logos/safra.png';
 import xpLogo from '@/assets/logos/xp.png';
-import qitechLogo from '@/assets/logos/qitech.png';
 import montAssetLogo from '@/assets/logos/mont-asset.png';
 import fictorLogo from '@/assets/logos/fictor.png';
 
@@ -35,17 +31,13 @@ const Partners = () => {
   }, []);
 
   const partners = [
-    { name: "Valorum", logo: valorumLogo },
     { name: "Julius Bär", logo: juliusBarLogo },
     { name: "RB Investimentos", logo: rbInvestimentosLogo },
-    { name: "Genial", logo: genialLogo },
     { name: "Ágora", logo: agoraLogo },
     { name: "ICATU", logo: icatuLogo },
     { name: "Avenue", logo: avenueLogo },
-    { name: "BTG Pactual", logo: btgPactualLogo },
     { name: "Safra", logo: safraLogo },
     { name: "XP", logo: xpLogo },
-    { name: "QITECH", logo: qitechLogo },
     { name: "Mont Asset", logo: montAssetLogo },
     { name: "Fictor", logo: fictorLogo }
   ];
@@ -68,17 +60,17 @@ const Partners = () => {
         <div className="overflow-hidden">
           <div 
             ref={scrollRef}
-            className="flex space-x-12 partners-scroll"
+            className="flex space-x-16 partners-scroll"
           >
             {duplicatedPartners.map((partner, index) => (
               <div
                 key={`${partner.name}-${index}`}
-                className="flex-shrink-0 flex items-center justify-center bg-white rounded-lg shadow-sm p-6 h-24 min-w-[200px] hover:shadow-md transition-shadow duration-300"
+                className="flex-shrink-0 flex items-center justify-center bg-white rounded-lg shadow-sm p-8 h-32 min-w-[280px] hover:shadow-md transition-shadow duration-300"
               >
                 <img
                   src={partner.logo}
                   alt={`Logo ${partner.name}`}
-                  className="max-h-full max-w-full object-contain opacity-70 hover:opacity-100 transition-opacity duration-300"
+                  className="max-h-full max-w-full object-contain opacity-80 hover:opacity-100 transition-opacity duration-300"
                 />
               </div>
             ))}
