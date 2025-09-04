@@ -61,7 +61,7 @@ const Partners = () => {
                   <img
                     src={partner.logo}
                     alt={`Logo ${partner.name}`}
-                    className="h-20 w-auto object-contain"
+                    className={`${partner.name === "Valorum DashPlan" ? "h-28" : "h-20"} w-auto object-contain`}
                   />
                 ) : (
                   <span className="text-lg font-semibold text-gray-700 text-center">
