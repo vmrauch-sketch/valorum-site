@@ -22,7 +22,6 @@ const Partners = () => {
   const partners = [
     { name: "Genial Investimentos" },
     { name: "Ágora Investimentos" },
-    { name: "ICATU" },
     { name: "Avenue" },
     { name: "BTG Pactual", logo: "/lovable-uploads/66f81bae-7915-466c-9c67-2c39fd5e665d.png" },
     { name: "Safra", logo: "/lovable-uploads/622a5286-66f0-49bb-b29b-7762c43d1a9a.png" },
