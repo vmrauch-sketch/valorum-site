@@ -39,7 +39,7 @@ const Partners = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-8">
           <h3 className="text-2xl font-playfair font-bold text-navy-600 mb-2">
-            Nossos Parceiros
+            Nossos Principais Parceiros
           </h3>
           <p className="text-gray-600">
             Trabalhamos com as principais instituições do mercado financeiro
