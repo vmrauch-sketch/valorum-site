@@ -29,6 +29,7 @@ const Partners = () => {
     { name: "BTG Pactual" },
     { name: "Safra" },
     { name: "XP Wealth Services" },
+    { name: "Mont Asset", logo: "/lovable-uploads/2eca84d8-7746-40bc-bcbe-185df5deae03.png" },
     { name: "Fictor", logo: "/lovable-uploads/aac0f20e-f664-4b17-ad3a-a2b73b11d5fa.png" }
   ];
 
