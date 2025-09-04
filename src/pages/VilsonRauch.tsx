@@ -91,7 +91,7 @@ const VilsonRauch = () => {
         title={SEOData.vilsonRauch.title}
         description={SEOData.vilsonRauch.description}
         keywords={SEOData.vilsonRauch.keywords}
-        canonical="https://valorumcapital.com.br/vilson-rauch"
+        canonical="https://valorum.vilsonrauch.com.br/vilson-rauch"
         structuredData={StructuredData.person}
       />
       

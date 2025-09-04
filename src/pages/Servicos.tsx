@@ -12,7 +12,7 @@ const Servicos = () => {
         title={SEOData.services.title}
         description={SEOData.services.description}
         keywords={SEOData.services.keywords}
-        canonical="https://valorumcapital.com.br/servicos"
+        canonical="https://valorum.vilsonrauch.com.br/servicos"
       />
       
       <div className="min-h-screen bg-white font-inter">

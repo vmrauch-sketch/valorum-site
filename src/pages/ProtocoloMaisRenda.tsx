@@ -125,7 +125,7 @@ const ProtocoloMaisRenda = () => {
         title={SEOData.protocoloMaisRenda.title}
         description={SEOData.protocoloMaisRenda.description}
         keywords={SEOData.protocoloMaisRenda.keywords}
-        canonical="https://valorumcapital.com.br/protocolo-mais-renda"
+        canonical="https://valorum.vilsonrauch.com.br/protocolo-mais-renda"
         structuredData={StructuredData.service}
       />
       

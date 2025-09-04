@@ -33,8 +33,8 @@ export const StructuredData = {
     "@type": "FinancialService",
     "name": "Valorum",
     "description": "Consultoria especializada em gestão patrimonial e planejamento financeiro",
-    "url": "https://valorumcapital.com.br",
-    "logo": "https://valorumcapital.com.br/logo.png",
+    "url": "https://valorum.vilsonrauch.com.br",
+    "logo": "https://valorum.vilsonrauch.com.br/logo.png",
     "contactPoint": {
       "@type": "ContactPoint",
       "telephone": "+55-11-94956-6290",
