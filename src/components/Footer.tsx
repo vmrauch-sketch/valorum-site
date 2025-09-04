@@ -36,7 +36,7 @@ const Footer = () => {
           <div className="grid md:grid-cols-3 gap-8">
             {/* Logo and Description */}
             <div className="md:col-span-2">
-              <h3 className="text-2xl font-playfair font-bold mb-4">Valorum Capital</h3>
+              <h3 className="text-2xl font-playfair font-bold mb-4">Valorum</h3>
               <div className="flex items-center space-x-2 text-sm text-white/60">
                 <span className="w-2 h-2 bg-financial-500 rounded-full"></span>
                 <span>Gestão Patrimonial</span>
@@ -65,7 +65,7 @@ const Footer = () => {
           </div>
 
           <div className="border-t border-white/20 mt-8 pt-8 text-center text-white/60">
-            <p>&copy; 2024 Valorum Capital. Todos os direitos reservados. | Consultoria</p>
+            <p>&copy; 2024 Valorum. Todos os direitos reservados. | Consultoria</p>
           </div>
         </div>
       </div>

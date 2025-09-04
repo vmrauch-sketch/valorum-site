@@ -18,7 +18,7 @@ const About = () => {
           {/* Header */}
           <div className={`mb-12 transform transition-all duration-1000 ease-out ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'}`}>
             <h2 className="text-4xl md:text-5xl font-playfair font-bold text-navy-600 mb-4">
-              Sobre a Valorum Capital
+              Sobre a Valorum
             </h2>
             <div className="w-16 h-1 bg-gold-500 mb-6"></div>
           </div>
@@ -27,7 +27,7 @@ const About = () => {
             {/* Content */}
             <div className="space-y-6">
               <p className={`text-lg text-gray-700 leading-relaxed transform transition-all duration-1000 ease-out delay-300 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
-                A Valorum Capital é uma consultoria especializada em gestão patrimonial e planejamento financeiro, com foco na excelência técnica e no rigor ético. Oferecemos soluções integradas em finanças, renda e investimentos para indivíduos, famílias e empresas.
+                A Valorum é uma consultoria especializada em gestão patrimonial e planejamento financeiro, com foco na excelência técnica e no rigor ético. Oferecemos soluções integradas em finanças, renda e investimentos para indivíduos, famílias e empresas.
               </p>
 
               <p className={`text-lg text-gray-700 leading-relaxed transform transition-all duration-1000 ease-out delay-500 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>

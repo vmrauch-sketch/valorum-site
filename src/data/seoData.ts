@@ -2,9 +2,9 @@
 
 export const SEOData = {
   valorum: {
-    title: "Valorum Capital - Planejamento Patrimonial e Gestão de Investimentos",
-    description: "Valorum Capital: consultoria especializada em planejamento patrimonial, gestão de investimentos e estratégias financeiras. Transforme seu patrimônio em liberdade financeira.",
-    keywords: "planejamento patrimonial, gestão de investimentos, consultoria financeira, Valorum Capital, wealth planning, investimentos, proteção patrimonial, FIDC, recuperação tributária, crescimento patrimonial, renda, economista, renda passiva, imóveis em santa catarina, economia santa catarina, consultoria financeira médicos, investimentos para médicos, mentoria para médicos, consultoria financeira para empresas, consultoria empresarial, planejamento financeiro empresarial, gestão financeira empresarial, consultoria corporativa",
+    title: "Valorum - Planejamento Patrimonial e Gestão de Investimentos",
+    description: "Valorum: consultoria especializada em planejamento patrimonial, gestão de investimentos e estratégias financeiras. Transforme seu patrimônio em liberdade financeira.",
+    keywords: "planejamento patrimonial, gestão de investimentos, consultoria financeira, Valorum, wealth planning, investimentos, proteção patrimonial, FIDC, recuperação tributária, crescimento patrimonial, renda, economista, renda passiva, imóveis em santa catarina, economia santa catarina, consultoria financeira médicos, investimentos para médicos, mentoria para médicos, consultoria financeira para empresas, consultoria empresarial, planejamento financeiro empresarial, gestão financeira empresarial, consultoria corporativa",
   },
   
   vilsonRauch: {
@@ -20,7 +20,7 @@ export const SEOData = {
   },
 
   services: {
-    title: "Serviços de Consultoria Financeira - Valorum Capital",
+    title: "Serviços de Consultoria Financeira - Valorum",
     description: "Serviços completos: consultoria de investimentos, gestão patrimonial, FIDC, recuperação tributária e educação financeira. Soluções personalizadas.",
     keywords: "consultoria investimentos, gestão patrimonial, FIDC, recuperação tributária, educação financeira, planejamento sucessório, proteção patrimonial, crescimento patrimonial, renda passiva, investimentos, economista, imóveis em santa catarina, economia santa catarina, mentoria para médicos, consultoria financeira plantonista, investimentos para médicos, renda médica, aposentadoria médica, consultoria financeira para empresas, consultoria empresarial, planejamento financeiro empresarial, gestão financeira empresarial, consultoria corporativa",
   }
@@ -31,7 +31,7 @@ export const StructuredData = {
   organization: {
     "@context": "https://schema.org",
     "@type": "FinancialService",
-    "name": "Valorum Capital",
+    "name": "Valorum",
     "description": "Consultoria especializada em gestão patrimonial e planejamento financeiro",
     "url": "https://valorumcapital.com.br",
     "logo": "https://valorumcapital.com.br/logo.png",
@@ -61,7 +61,7 @@ export const StructuredData = {
     "url": "https://vilsonrauch.com.br",
     "worksFor": {
       "@type": "Organization",
-      "name": "Valorum Capital"
+      "name": "Valorum"
     },
     "expertise": [
       "Planejamento Patrimonial",
@@ -78,7 +78,7 @@ export const StructuredData = {
     "description": "Protocolo especializado para profissionais da medicina maximizarem renda e otimizarem tempo",
     "provider": {
       "@type": "Organization",
-      "name": "Valorum Capital"
+      "name": "Valorum"
     },
     "serviceType": "Consultoria Financeira",
     "areaServed": "BR"
