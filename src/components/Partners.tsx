@@ -55,13 +55,13 @@ const Partners = () => {
             {duplicatedPartners.map((partner, index) => (
               <div
                 key={`${partner.name}-${index}`}
-                className="flex-shrink-0 flex items-center justify-center bg-white rounded-lg shadow-lg p-8 h-24 min-w-[280px] hover:shadow-xl transition-all duration-300 border border-gray-100"
+                className="flex-shrink-0 flex items-center justify-center bg-white rounded-lg shadow-lg p-8 h-32 min-w-[280px] hover:shadow-xl transition-all duration-300 border border-gray-100"
               >
                 {partner.logo ? (
                   <img
                     src={partner.logo}
                     alt={`Logo ${partner.name}`}
-                    className="max-h-full max-w-full object-contain"
+                    className="h-20 w-auto object-contain"
                   />
                 ) : (
                   <span className="text-lg font-semibold text-gray-700 text-center">
