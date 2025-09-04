@@ -143,10 +143,10 @@ const HowWeWork = () => {
           <div ref={investmentAreasRef} className="mb-12">
             <div className={`text-center mb-12 transform transition-all duration-1000 ease-out ${investmentAreasVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
               <h3 className="text-4xl md:text-5xl font-playfair font-bold text-navy-600 mb-6">
-                Nossas Áreas de Atuação
+                Três Pilares Fundamentais
               </h3>
               <p className="text-xl font-inter text-gray-700 max-w-3xl mx-auto leading-relaxed">
-                Três pilares fundamentais que sustentam nossa estratégia de gestão patrimonial
+                Nossa estratégia de gestão patrimonial
               </p>
             </div>
             
