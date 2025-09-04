@@ -10,19 +10,19 @@ export const SEOData = {
   vilsonRauch: {
     title: "Vilson Marcelo Rauch - Consultor Financeiro e Especialista em Planejamento Patrimonial",
     description: "Vilson Marcelo Rauch: consultor financeiro especializado em planejamento patrimonial para médicos e profissionais liberais. Protocolo 'Mais Renda, Menos Plantão'.",
-    keywords: "Vilson Marcelo Rauch, Vilson Rauch, consultor financeiro, planejamento patrimonial médicos, mais renda menos plantão, consultoria financeira médicos, investimentos para médicos, crescimento patrimonial, renda passiva, economista, imóveis em santa catarina, economia santa catarina",
+    keywords: "Vilson Marcelo Rauch, Vilson Rauch, consultor financeiro, planejamento patrimonial médicos, mais renda menos plantão, consultoria financeira médicos, investimentos para médicos, crescimento patrimonial, renda passiva, economista, imóveis em santa catarina, economia santa catarina, mentoria consultoria para médicos, remuneração de plantões, plantonista investimentos, renda médica, aposentadoria médica, médico investidor, carreira médica finanças",
   },
 
   protocoloMaisRenda: {
     title: "Protocolo Mais Renda Menos Plantão - Planejamento Financeiro para Médicos",
     description: "Protocolo especializado para médicos: maximize sua renda, otimize seu tempo. Estratégias financeiras exclusivas para profissionais da saúde.",
-    keywords: "protocolo mais renda menos plantão, planejamento financeiro médicos, investimentos médicos, consultoria médicos, Vilson Marcelo Rauch, Vilson Rauch, renda passiva médicos, crescimento patrimonial, renda, investimentos, economia santa catarina",
+    keywords: "protocolo mais renda menos plantão, planejamento financeiro médicos, investimentos médicos, consultoria médicos, Vilson Marcelo Rauch, Vilson Rauch, renda passiva médicos, crescimento patrimonial, renda, investimentos, economia santa catarina, mentoria para médicos, remuneração plantões, plantonista renda, investimentos para plantonistas, como investir sendo médico, residência médica investimentos, especialização médica planejamento, consultoria financeira plantonista",
   },
 
   services: {
     title: "Serviços de Consultoria Financeira - Valorum Capital",
     description: "Serviços completos: consultoria de investimentos, gestão patrimonial, FIDC, recuperação tributária e educação financeira. Soluções personalizadas.",
-    keywords: "consultoria investimentos, gestão patrimonial, FIDC, recuperação tributária, educação financeira, planejamento sucessório, proteção patrimonial, crescimento patrimonial, renda passiva, investimentos, economista, imóveis em santa catarina, economia santa catarina",
+    keywords: "consultoria investimentos, gestão patrimonial, FIDC, recuperação tributária, educação financeira, planejamento sucessório, proteção patrimonial, crescimento patrimonial, renda passiva, investimentos, economista, imóveis em santa catarina, economia santa catarina, mentoria para médicos, consultoria financeira plantonista, investimentos para médicos, renda médica, aposentadoria médica",
   }
 };
 
