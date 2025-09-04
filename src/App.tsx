@@ -9,6 +9,7 @@ import Manifesto from "./pages/Manifesto";
 import ComoAtuamos from "./pages/ComoAtuamos";
 import AreasEspecializacao from "./pages/AreasEspecializacao";
 import ProtocoloMaisRenda from "./pages/ProtocoloMaisRenda";
+import VilsonRauch from "./pages/VilsonRauch";
 import Servicos from "./pages/Servicos";
 import Contato from "./pages/Contato";
 
@@ -26,6 +27,7 @@ const App = () => (
           <Route path="/especializacoes" element={<ComoAtuamos />} />
           <Route path="/estrategias" element={<AreasEspecializacao />} />
           <Route path="/protocolo-mais-renda" element={<ProtocoloMaisRenda />} />
+          <Route path="/vilson-rauch" element={<VilsonRauch />} />
           <Route path="/servicos" element={<Servicos />} />
           <Route path="/contato" element={<Contato />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}

@@ -1,6 +1,8 @@
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
+import { SEOHead } from "@/components/SEOHead";
+import { SEOData, StructuredData } from "@/data/seoData";
 import { 
   TrendingUp, 
   Target, 
@@ -118,9 +120,18 @@ const ProtocoloMaisRenda = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-white font-inter">
-      <Navigation />
-      <div className="pt-16">
+    <>
+      <SEOHead
+        title={SEOData.protocoloMaisRenda.title}
+        description={SEOData.protocoloMaisRenda.description}
+        keywords={SEOData.protocoloMaisRenda.keywords}
+        canonical="https://valorumcapital.com.br/protocolo-mais-renda"
+        structuredData={StructuredData.service}
+      />
+      
+      <div className="min-h-screen bg-white font-inter">
+        <Navigation />
+        <div className="pt-16">
         {/* Header */}
         <section className="py-20 bg-gradient-to-br from-navy-600 to-navy-800">
           <div className="container mx-auto px-6">
@@ -262,10 +273,11 @@ const ProtocoloMaisRenda = () => {
             </div>
           </div>
         </section>
+        </div>
+        <Footer />
+        <WhatsAppButton />
       </div>
-      <Footer />
-      <WhatsAppButton />
-    </div>
+    </>
   );
 };
 

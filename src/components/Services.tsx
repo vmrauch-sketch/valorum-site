@@ -9,6 +9,8 @@ import {
   GraduationCap 
 } from "lucide-react";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import { SEOHead } from "@/components/SEOHead";
+import { SEOData } from "@/data/seoData";
 
 const Services = () => {
   const { elementRef, isVisible } = useScrollAnimation();

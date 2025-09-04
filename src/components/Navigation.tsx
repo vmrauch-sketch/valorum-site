@@ -13,6 +13,7 @@ export const Navigation = () => {
     { name: 'Estratégias', path: '/estrategias' },
     { name: 'Protocolo Mais Renda', path: '/protocolo-mais-renda' },
     { name: 'Serviços', path: '/servicos' },
+    { name: 'Sobre Vilson', path: '/vilson-rauch' },
     { name: 'Contato', path: '/contato' },
   ];
 
@@ -40,14 +41,6 @@ export const Navigation = () => {
                 {item.name}
               </Link>
             ))}
-            <a
-              href="https://vilsonrauch.com.br"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-medium text-muted-foreground hover:text-primary transition-colors"
-            >
-              Sobre Vilson
-            </a>
           </div>
 
           {/* Mobile menu button */}
@@ -75,15 +68,6 @@ export const Navigation = () => {
                   {item.name}
                 </Link>
               ))}
-              <a
-                href="https://vilsonrauch.com.br"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block py-2 font-medium text-muted-foreground hover:text-primary transition-colors"
-                onClick={() => setIsOpen(false)}
-              >
-                Sobre Vilson
-              </a>
             </div>
           </div>
         )}

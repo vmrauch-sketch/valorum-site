@@ -12,3 +12,18 @@ Allow: /
 
 User-agent: *
 Allow: /
+
+# Important pages for SEO
+Allow: /vilson-rauch
+Allow: /protocolo-mais-renda
+Allow: /servicos
+Allow: /manifesto
+Allow: /especializacoes
+Allow: /estrategias
+Allow: /contato
+
+# Sitemap location
+Sitemap: https://valorumcapital.com.br/sitemap.xml
+
+# Crawl-delay (helps with server load)
+Crawl-delay: 1
