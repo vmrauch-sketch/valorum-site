@@ -26,7 +26,7 @@ const Partners = () => {
     { name: "Ágora Investimentos" },
     { name: "ICATU" },
     { name: "Avenue" },
-    { name: "BTG Pactual", logo: "/lovable-uploads/158d86f7-c8d9-4278-adba-346ee4c32d4a.png" },
+    { name: "BTG Pactual", logo: "/lovable-uploads/66f81bae-7915-466c-9c67-2c39fd5e665d.png" },
     { name: "Safra" },
     { name: "XP Wealth Services", logo: "/lovable-uploads/ce4ec111-6d8a-417b-8bf8-1b0a7e8becf8.png" },
     { name: "Mont Asset", logo: "/lovable-uploads/2eca84d8-7746-40bc-bcbe-185df5deae03.png" },
