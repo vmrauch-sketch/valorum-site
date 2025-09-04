@@ -68,12 +68,12 @@ const Partners = () => {
         <div className="overflow-hidden">
           <div 
             ref={scrollRef}
-            className="flex space-x-8 partners-scroll"
+            className="flex space-x-12 partners-scroll"
           >
             {duplicatedPartners.map((partner, index) => (
               <div
                 key={`${partner.name}-${index}`}
-                className="flex-shrink-0 flex items-center justify-center bg-white rounded-lg shadow-sm p-4 h-16 min-w-[140px] hover:shadow-md transition-shadow duration-300"
+                className="flex-shrink-0 flex items-center justify-center bg-white rounded-lg shadow-sm p-6 h-24 min-w-[200px] hover:shadow-md transition-shadow duration-300"
               >
                 <img
                   src={partner.logo}
