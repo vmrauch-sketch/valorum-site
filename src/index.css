@@ -118,3 +118,17 @@
 .partners-scroll:hover {
   animation-play-state: paused;
 }
+
+/* WhatsApp bounce animation - more gentle */
+@keyframes whatsapp-bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.whatsapp-bounce {
+  animation: whatsapp-bounce 3s ease-in-out infinite;
+}
