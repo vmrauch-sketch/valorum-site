@@ -111,7 +111,7 @@ const Services = () => {
             <div className={`bg-navy-50 p-8 rounded-xl transform transition-all duration-1000 ease-out delay-500 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'}`}>
               <h3 className="text-3xl font-playfair font-bold text-navy-600 mb-6 flex items-center">
                 <User size={32} className="mr-4 text-navy-600" />
-                Pessoa Física
+                Para Você
               </h3>
               
               <div className="grid md:grid-cols-2 gap-6">
@@ -155,7 +155,7 @@ const Services = () => {
             <div className={`bg-financial-50 p-8 rounded-xl transform transition-all duration-1000 ease-out delay-1100 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'}`}>
               <h3 className="text-3xl font-playfair font-bold text-financial-600 mb-6 flex items-center">
                 <Building size={32} className="mr-4 text-financial-600" />
-                Pessoa Jurídica
+                Para Seu Negócio
               </h3>
               
               <div className="grid md:grid-cols-2 gap-6">
