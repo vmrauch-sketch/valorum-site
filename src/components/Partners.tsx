@@ -28,7 +28,7 @@ const Partners = () => {
     { name: "Safra", logo: "/lovable-uploads/622a5286-66f0-49bb-b29b-7762c43d1a9a.png" },
     { name: "XP Wealth Services", logo: "/lovable-uploads/ce4ec111-6d8a-417b-8bf8-1b0a7e8becf8.png" },
     { name: "Mont Asset", logo: "/lovable-uploads/2eca84d8-7746-40bc-bcbe-185df5deae03.png" },
-    { name: "Valorum DashPlan", logo: "/lovable-uploads/6224ca6a-d6dd-4836-a119-b6f992cbedc9.png" },
+    { name: "Valorum DashPlan", logo: "/lovable-uploads/6db10f4a-2720-4845-87a2-39480f871adc.png" },
     { name: "Fictor", logo: "/lovable-uploads/aac0f20e-f664-4b17-ad3a-a2b73b11d5fa.png" },
     { name: "TechFinance", logo: "/lovable-uploads/8d371ace-4f3e-4482-bbbd-7811c3e3d682.png" }
   ];
