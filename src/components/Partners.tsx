@@ -33,6 +33,9 @@ const Partners = () => {
     { name: "TechFinance", logo: "/lovable-uploads/8d371ace-4f3e-4482-bbbd-7811c3e3d682.png" }
   ];
 
+  console.log("Partners array length:", partners.length);
+  console.log("TechFinance partner:", partners.find(p => p.name === "TechFinance"));
+
   // Duplicamos a lista para criar um loop infinito
   const duplicatedPartners = [...partners, ...partners];
 
