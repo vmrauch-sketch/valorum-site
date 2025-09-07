@@ -47,7 +47,7 @@ const Partners = () => {
             Nossos Principais Parceiros
           </h3>
           <p className="text-gray-600">
-            Na Valorum as principais instituições trabalham para você
+            Na Valorum o melhor de cada instituição trabalha para você. Acesse o melhor!
           </p>
         </div>
         
