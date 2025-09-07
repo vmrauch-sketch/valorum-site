@@ -30,7 +30,8 @@ const Partners = () => {
     { name: "Mont Asset", logo: "/lovable-uploads/2eca84d8-7746-40bc-bcbe-185df5deae03.png" },
     { name: "Valorum DashPlan", logo: "/lovable-uploads/6db10f4a-2720-4845-87a2-39480f871adc.png" },
     { name: "Fictor", logo: "/lovable-uploads/aac0f20e-f664-4b17-ad3a-a2b73b11d5fa.png" },
-    { name: "TechFinance", logo: "/lovable-uploads/8d371ace-4f3e-4482-bbbd-7811c3e3d682.png" }
+    { name: "TechFinance", logo: "/lovable-uploads/8d371ace-4f3e-4482-bbbd-7811c3e3d682.png" },
+    { name: "ED Seguros", logo: "/lovable-uploads/08f0f80a-c3c1-48b1-a587-2fb379a507b7.png" }
   ];
 
   console.log("Partners array length:", partners.length);
