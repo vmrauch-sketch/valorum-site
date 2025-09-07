@@ -154,10 +154,10 @@ const HowWeWork = () => {
             <div className="relative">
               {/* Indicador de Proteção - Elemento elegante que cobre os 3 cards */}
               <div className={`absolute -top-6 left-1/2 transform -translate-x-1/2 z-50 transition-all duration-1000 ease-out ${investmentAreasVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
-                <div className="bg-gradient-to-r from-navy-600 to-corporate-500 text-white px-6 py-3 rounded-full shadow-xl flex items-center gap-3 backdrop-blur-sm border border-white/20">
-                  <Shield size={20} className="text-gold-400" />
-                  <span className="font-inter font-semibold text-sm tracking-wide">Proteções e Seguros</span>
-                  <ShieldCheck size={20} className="text-gold-400" />
+                <div className="bg-gradient-to-r from-navy-600 to-corporate-500 text-white px-12 py-4 rounded-full shadow-xl flex items-center gap-4 backdrop-blur-sm border border-white/20 min-w-[400px] md:min-w-[500px]">
+                  <Shield size={22} className="text-gold-400" />
+                  <span className="font-inter font-semibold text-base tracking-wide flex-1 text-center">Proteções e Seguros</span>
+                  <ShieldCheck size={22} className="text-gold-400" />
                 </div>
               </div>
 
