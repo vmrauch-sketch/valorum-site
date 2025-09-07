@@ -161,8 +161,22 @@ const HowWeWork = () => {
                 </div>
               </div>
 
-              {/* Borda sutil de proteção ao redor dos cards */}
-              <div className={`absolute top-[-12px] left-0 right-0 h-0 border-t-2 border-dashed border-navy-300/50 transition-all duration-1000 ease-out ${investmentAreasVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`} style={{ transitionDelay: '800ms' }}></div>
+              {/* Chave dourada que abraça os 3 pilares */}
+              <div className={`absolute top-[-12px] left-0 right-0 transition-all duration-1000 ease-out ${investmentAreasVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`} style={{ transitionDelay: '800ms' }}>
+                {/* Linha horizontal principal da chave */}
+                <div className="absolute top-0 left-[10%] right-[10%] h-1 bg-gradient-to-r from-transparent via-gold-400 to-transparent"></div>
+                
+                {/* Braços da chave nas extremidades */}
+                <div className="absolute top-0 left-[10%] w-1 h-8 bg-gold-400 rounded-full"></div>
+                <div className="absolute top-0 right-[10%] w-1 h-8 bg-gold-400 rounded-full"></div>
+                
+                {/* Detalhes decorativos da chave */}
+                <div className="absolute top-[-2px] left-[10%] w-2 h-2 bg-gold-400 rounded-full transform -translate-x-1/2"></div>
+                <div className="absolute top-[-2px] right-[10%] w-2 h-2 bg-gold-400 rounded-full transform translate-x-1/2"></div>
+                
+                {/* Linha horizontal inferior completando o abraço */}
+                <div className="absolute top-8 left-[10%] right-[10%] h-1 bg-gradient-to-r from-transparent via-gold-400 to-transparent"></div>
+              </div>
               
               <div className="grid md:grid-cols-3 gap-8 relative pt-8">
                 {investmentAreas.map((area, index) => {
