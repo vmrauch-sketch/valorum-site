@@ -150,36 +150,51 @@ const HowWeWork = () => {
               </p>
             </div>
             
-            <div className="grid md:grid-cols-3 gap-8">
-              {investmentAreas.map((area, index) => {
-                const IconComponent = area.icon;
-                return (
-                  <div 
-                    key={index}
-                    className={`bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-1000 ease-out group transform ${investmentAreasVisible ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'}`}
-                    style={{ 
-                      transitionDelay: investmentAreasVisible ? `${index * 200}ms` : '0ms'
-                    }}
-                  >
-                    <div className="text-center">
-                      {/* Ícone com gradiente */}
-                      <div className={`w-20 h-20 bg-gradient-to-br ${area.gradient} rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg`}>
-                        <IconComponent size={32} className="text-white" />
+            {/* Container com proteção visual */}
+            <div className="relative">
+              {/* Indicador de Proteção - Elemento elegante que cobre os 3 cards */}
+              <div className={`absolute -top-4 left-1/2 transform -translate-x-1/2 z-10 transition-all duration-1000 ease-out ${investmentAreasVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
+                <div className="bg-gradient-to-r from-navy-600 to-corporate-500 text-white px-6 py-3 rounded-full shadow-lg flex items-center gap-3 backdrop-blur-sm border border-white/20">
+                  <Shield size={20} className="text-gold-400" />
+                  <span className="font-inter font-semibold text-sm tracking-wide">Proteções e Seguros</span>
+                  <ShieldCheck size={20} className="text-gold-400" />
+                </div>
+              </div>
+
+              {/* Borda sutil de proteção ao redor dos cards */}
+              <div className={`absolute inset-0 rounded-3xl border-2 border-dashed border-navy-300/30 -m-4 transition-all duration-1000 ease-out ${investmentAreasVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`} style={{ transitionDelay: '800ms' }}></div>
+              
+              <div className="grid md:grid-cols-3 gap-8 relative z-5">
+                {investmentAreas.map((area, index) => {
+                  const IconComponent = area.icon;
+                  return (
+                    <div 
+                      key={index}
+                      className={`bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-1000 ease-out group transform ${investmentAreasVisible ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'}`}
+                      style={{ 
+                        transitionDelay: investmentAreasVisible ? `${index * 200}ms` : '0ms'
+                      }}
+                    >
+                      <div className="text-center">
+                        {/* Ícone com gradiente */}
+                        <div className={`w-20 h-20 bg-gradient-to-br ${area.gradient} rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg`}>
+                          <IconComponent size={32} className="text-white" />
+                        </div>
+                        
+                        {/* Título */}
+                        <h4 className="text-xl md:text-2xl font-playfair font-bold text-navy-600 mb-3 leading-tight">
+                          {area.title}
+                        </h4>
+                        
+                        {/* Descrição */}
+                        <p className="text-sm md:text-base font-inter text-gray-700 leading-relaxed whitespace-pre-line">
+                          {area.description}
+                        </p>
                       </div>
-                      
-                      {/* Título */}
-                      <h4 className="text-xl md:text-2xl font-playfair font-bold text-navy-600 mb-3 leading-tight">
-                        {area.title}
-                      </h4>
-                      
-                      {/* Descrição */}
-                      <p className="text-sm md:text-base font-inter text-gray-700 leading-relaxed whitespace-pre-line">
-                        {area.description}
-                      </p>
                     </div>
-                  </div>
-                );
-              })}
+                  );
+                })}
+              </div>
             </div>
           </div>
 
