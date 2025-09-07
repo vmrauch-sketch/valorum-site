@@ -162,20 +162,20 @@ const HowWeWork = () => {
               </div>
 
               {/* Chave dourada que abraça os 3 pilares */}
-              <div className={`absolute top-[-12px] left-0 right-0 transition-all duration-1000 ease-out ${investmentAreasVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`} style={{ transitionDelay: '800ms' }}>
-                {/* Linha horizontal principal da chave */}
-                <div className="absolute top-0 left-[10%] right-[10%] h-1 bg-gradient-to-r from-transparent via-gold-400 to-transparent"></div>
+              <div className={`absolute top-[-20px] left-0 right-0 transition-all duration-1000 ease-out ${investmentAreasVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`} style={{ transitionDelay: '800ms' }}>
+                {/* Linha horizontal superior da chave */}
+                <div className="absolute top-0 left-[8%] right-[8%] h-2 bg-gradient-to-r from-gold-500 via-gold-400 to-gold-500 rounded-full shadow-lg"></div>
                 
-                {/* Braços da chave nas extremidades */}
-                <div className="absolute top-0 left-[10%] w-1 h-8 bg-gold-400 rounded-full"></div>
-                <div className="absolute top-0 right-[10%] w-1 h-8 bg-gold-400 rounded-full"></div>
+                {/* Braços verticais da chave nas extremidades */}
+                <div className="absolute top-0 left-[8%] w-2 h-12 bg-gold-400 rounded-full shadow-md"></div>
+                <div className="absolute top-0 right-[8%] w-2 h-12 bg-gold-400 rounded-full shadow-md"></div>
                 
-                {/* Detalhes decorativos da chave */}
-                <div className="absolute top-[-2px] left-[10%] w-2 h-2 bg-gold-400 rounded-full transform -translate-x-1/2"></div>
-                <div className="absolute top-[-2px] right-[10%] w-2 h-2 bg-gold-400 rounded-full transform translate-x-1/2"></div>
+                {/* Detalhes decorativos nas extremidades */}
+                <div className="absolute top-[-3px] left-[8%] w-3 h-3 bg-gold-500 rounded-full transform -translate-x-1/2 shadow-lg"></div>
+                <div className="absolute top-[-3px] right-[8%] w-3 h-3 bg-gold-500 rounded-full transform translate-x-1/2 shadow-lg"></div>
                 
                 {/* Linha horizontal inferior completando o abraço */}
-                <div className="absolute top-8 left-[10%] right-[10%] h-1 bg-gradient-to-r from-transparent via-gold-400 to-transparent"></div>
+                <div className="absolute top-12 left-[8%] right-[8%] h-2 bg-gradient-to-r from-gold-500 via-gold-400 to-gold-500 rounded-full shadow-lg"></div>
               </div>
               
               <div className="grid md:grid-cols-3 gap-8 relative pt-8">
