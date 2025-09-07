@@ -154,18 +154,30 @@ const HowWeWork = () => {
               {investmentAreas.map((area, index) => {
                 const IconComponent = area.icon;
                 return (
-                  <div 
-                    key={index}
-                    className={`bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-1000 ease-out group transform ${investmentAreasVisible ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'}`}
-                    style={{ 
-                      transitionDelay: investmentAreasVisible ? `${index * 200}ms` : '0ms'
-                    }}
-                  >
-                    <div className="text-center">
-                      {/* Ícone com gradiente */}
-                      <div className={`w-20 h-20 bg-gradient-to-br ${area.gradient} rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg`}>
-                        <IconComponent size={32} className="text-white" />
-                      </div>
+                   <div 
+                     key={index}
+                     className={`relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-1000 ease-out group transform ${investmentAreasVisible ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'} overflow-hidden`}
+                     style={{ 
+                       transitionDelay: investmentAreasVisible ? `${index * 200}ms` : '0ms'
+                     }}
+                   >
+                     {/* Badge de Proteções e Seguros */}
+                     <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-all duration-500 transform group-hover:scale-100 scale-90">
+                       <div className="bg-gradient-to-r from-emerald-500 to-teal-600 text-white px-3 py-1.5 rounded-full text-xs font-medium flex items-center gap-1.5 shadow-lg">
+                         <ShieldCheck size={14} className="animate-pulse" />
+                         <span>Proteções & Seguros</span>
+                       </div>
+                     </div>
+
+                     <div className="text-center">
+                       {/* Ícone com gradiente */}
+                       <div className={`relative w-20 h-20 bg-gradient-to-br ${area.gradient} rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg`}>
+                         <IconComponent size={32} className="text-white" />
+                         {/* Pequeno ícone de escudo no canto */}
+                         <div className="absolute -top-1 -right-1 w-6 h-6 bg-emerald-500 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 transform scale-0 group-hover:scale-100">
+                           <Shield size={12} className="text-white" />
+                         </div>
+                       </div>
                       
                       {/* Título */}
                       <h4 className="text-xl md:text-2xl font-playfair font-bold text-navy-600 mb-3 leading-tight">
