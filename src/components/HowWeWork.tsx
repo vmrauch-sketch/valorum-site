@@ -146,7 +146,7 @@ const HowWeWork = () => {
                 Três Pilares Fundamentais
               </h3>
               <p className="text-xl font-inter text-gray-700 max-w-3xl mx-auto leading-relaxed">
-                Nossa estratégia de gestão patrimonial
+                A estratégia de construção e gestão patrimonial que se adapta ao seu jeito.
               </p>
             </div>
             
