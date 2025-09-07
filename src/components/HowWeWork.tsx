@@ -161,20 +161,13 @@ const HowWeWork = () => {
                 </div>
               </div>
 
-              {/* Linha dourada que abraça os 3 pilares */}
-              <div className={`absolute top-[-15px] left-0 right-0 transition-all duration-1000 ease-out ${investmentAreasVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`} style={{ transitionDelay: '800ms' }}>
-                {/* Linha horizontal principal que se estende pelos cards */}
-                <div className="absolute top-6 left-[2%] right-[2%] h-2 bg-gradient-to-r from-gold-500 via-gold-400 to-gold-500 rounded-full shadow-lg"></div>
+              {/* Container de proteção elegante que abraça os 3 pilares */}
+              <div className={`absolute inset-0 -m-6 rounded-3xl border-2 border-gold-400/30 bg-gradient-to-br from-gold-50/20 to-transparent transition-all duration-1000 ease-out ${investmentAreasVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`} style={{ transitionDelay: '800ms' }}>
+                {/* Sombra dourada sutil para dar profundidade */}
+                <div className="absolute inset-0 rounded-3xl shadow-lg shadow-gold-400/10"></div>
                 
-                {/* Ponta esquerda curvada para baixo */}
-                <div className="absolute top-6 left-[2%] w-8 h-8 border-l-2 border-b-2 border-gold-400 rounded-bl-full transform -translate-x-1 shadow-md"></div>
-                
-                {/* Ponta direita curvada para baixo */}
-                <div className="absolute top-6 right-[2%] w-8 h-8 border-r-2 border-b-2 border-gold-400 rounded-br-full transform translate-x-1 shadow-md"></div>
-                
-                {/* Detalhes decorativos centrais */}
-                <div className="absolute top-5 left-[2%] w-3 h-3 bg-gold-500 rounded-full shadow-lg transform -translate-x-1"></div>
-                <div className="absolute top-5 right-[2%] w-3 h-3 bg-gold-500 rounded-full shadow-lg transform translate-x-1"></div>
+                {/* Conectores visuais que ligam o badge aos cards */}
+                <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 w-1 h-6 bg-gradient-to-b from-gold-400 to-transparent rounded-full"></div>
               </div>
               
               <div className="grid md:grid-cols-3 gap-8 relative pt-8">
