@@ -161,22 +161,20 @@ const HowWeWork = () => {
                 </div>
               </div>
 
-              {/* Chave dourada horizontal que abraça os 3 pilares */}
-              <div className={`absolute top-[-20px] left-0 right-0 transition-all duration-1000 ease-out ${investmentAreasVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`} style={{ transitionDelay: '800ms' }}>
-                {/* Linha horizontal principal da chave */}
-                <div className="absolute top-6 left-[5%] right-[5%] h-2 bg-gradient-to-r from-gold-500 via-gold-400 to-gold-500 rounded-full shadow-lg"></div>
+              {/* Linha dourada que abraça os 3 pilares */}
+              <div className={`absolute top-[-15px] left-0 right-0 transition-all duration-1000 ease-out ${investmentAreasVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`} style={{ transitionDelay: '800ms' }}>
+                {/* Linha horizontal principal que se estende pelos cards */}
+                <div className="absolute top-6 left-[2%] right-[2%] h-2 bg-gradient-to-r from-gold-500 via-gold-400 to-gold-500 rounded-full shadow-lg"></div>
                 
-                {/* Pontas horizontais que abraçam - esquerda */}
-                <div className="absolute top-2 left-[5%] w-12 h-2 bg-gold-400 rounded-full shadow-md transform -rotate-45 origin-right"></div>
-                <div className="absolute top-10 left-[5%] w-12 h-2 bg-gold-400 rounded-full shadow-md transform rotate-45 origin-right"></div>
+                {/* Ponta esquerda curvada para baixo */}
+                <div className="absolute top-6 left-[2%] w-8 h-8 border-l-2 border-b-2 border-gold-400 rounded-bl-full transform -translate-x-1 shadow-md"></div>
                 
-                {/* Pontas horizontais que abraçam - direita */}
-                <div className="absolute top-2 right-[5%] w-12 h-2 bg-gold-400 rounded-full shadow-md transform rotate-45 origin-left"></div>
-                <div className="absolute top-10 right-[5%] w-12 h-2 bg-gold-400 rounded-full shadow-md transform -rotate-45 origin-left"></div>
+                {/* Ponta direita curvada para baixo */}
+                <div className="absolute top-6 right-[2%] w-8 h-8 border-r-2 border-b-2 border-gold-400 rounded-br-full transform translate-x-1 shadow-md"></div>
                 
-                {/* Detalhes decorativos nas extremidades */}
-                <div className="absolute top-5 left-[5%] w-3 h-3 bg-gold-500 rounded-full shadow-lg"></div>
-                <div className="absolute top-5 right-[5%] w-3 h-3 bg-gold-500 rounded-full shadow-lg"></div>
+                {/* Detalhes decorativos centrais */}
+                <div className="absolute top-5 left-[2%] w-3 h-3 bg-gold-500 rounded-full shadow-lg transform -translate-x-1"></div>
+                <div className="absolute top-5 right-[2%] w-3 h-3 bg-gold-500 rounded-full shadow-lg transform translate-x-1"></div>
               </div>
               
               <div className="grid md:grid-cols-3 gap-8 relative pt-8">
