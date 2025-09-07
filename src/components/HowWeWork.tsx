@@ -162,7 +162,7 @@ const HowWeWork = () => {
               </div>
 
               {/* Borda sutil de proteção ao redor dos cards */}
-              <div className={`absolute inset-0 rounded-3xl border-2 border-dashed border-navy-300/30 -m-4 mt-2 transition-all duration-1000 ease-out ${investmentAreasVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`} style={{ transitionDelay: '800ms' }}></div>
+              <div className={`absolute top-[-12px] left-0 right-0 h-0 border-t-2 border-dashed border-navy-300/50 transition-all duration-1000 ease-out ${investmentAreasVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`} style={{ transitionDelay: '800ms' }}></div>
               
               <div className="grid md:grid-cols-3 gap-8 relative pt-8">
                 {investmentAreas.map((area, index) => {
