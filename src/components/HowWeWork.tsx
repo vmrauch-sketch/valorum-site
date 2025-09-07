@@ -62,7 +62,7 @@ const HowWeWork = () => {
       gradient: "from-blue-600 to-blue-800"
     },
     {
-      title: "Investimentos Alternativos", 
+      title: "Investimentos Dinâmicos", 
       description: "Participações em negócios e ativos privados\ntrazem diversificação inteligente e oportunidades fora do mercado tradicional.",
       icon: Gem,
       gradient: "from-amber-500 to-orange-600"
