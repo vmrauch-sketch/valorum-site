@@ -153,8 +153,8 @@ const HowWeWork = () => {
             {/* Container com proteção visual */}
             <div className="relative">
               {/* Indicador de Proteção - Elemento elegante que cobre os 3 cards */}
-              <div className={`absolute -top-4 left-1/2 transform -translate-x-1/2 z-10 transition-all duration-1000 ease-out ${investmentAreasVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
-                <div className="bg-gradient-to-r from-navy-600 to-corporate-500 text-white px-6 py-3 rounded-full shadow-lg flex items-center gap-3 backdrop-blur-sm border border-white/20">
+              <div className={`absolute -top-6 left-1/2 transform -translate-x-1/2 z-50 transition-all duration-1000 ease-out ${investmentAreasVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
+                <div className="bg-gradient-to-r from-navy-600 to-corporate-500 text-white px-6 py-3 rounded-full shadow-xl flex items-center gap-3 backdrop-blur-sm border border-white/20">
                   <Shield size={20} className="text-gold-400" />
                   <span className="font-inter font-semibold text-sm tracking-wide">Proteções e Seguros</span>
                   <ShieldCheck size={20} className="text-gold-400" />
@@ -164,7 +164,7 @@ const HowWeWork = () => {
               {/* Borda sutil de proteção ao redor dos cards */}
               <div className={`absolute inset-0 rounded-3xl border-2 border-dashed border-navy-300/30 -m-4 transition-all duration-1000 ease-out ${investmentAreasVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`} style={{ transitionDelay: '800ms' }}></div>
               
-              <div className="grid md:grid-cols-3 gap-8 relative z-5">
+              <div className="grid md:grid-cols-3 gap-8 relative pt-6">
                 {investmentAreas.map((area, index) => {
                   const IconComponent = area.icon;
                   return (
