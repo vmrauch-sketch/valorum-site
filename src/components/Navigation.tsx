@@ -9,11 +9,11 @@ export const Navigation = () => {
   const navItems = [
     { name: 'Início', path: '/' },
     { name: 'Para Você', path: '/para-voce' },
+    { name: 'Para Médicos', path: '/protocolo-mais-renda' },
     { name: 'Para Seu Negócio', path: '/para-seu-negocio' },
     { name: 'Manifesto', path: '/manifesto' },
     { name: 'Especializações', path: '/especializacoes' },
     { name: 'Estratégias', path: '/estrategias' },
-    { name: 'Para Médicos', path: '/protocolo-mais-renda' },
     { name: 'Sobre Vilson', path: 'https://vilsonrauch.com.br', external: true },
     { name: 'Contato', path: '/contato' },
   ];
