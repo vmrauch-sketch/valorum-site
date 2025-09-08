@@ -63,7 +63,7 @@ const HowWeWork = () => {
     },
     {
       title: "Investimentos Dinâmicos", 
-      description: "Participações em negócios e ativos privados que trazem diversificação inteligente e oportunidades fora do mercado tradicional.",
+      description: "Participações em negócios e ativos privados que trazem diversificação inteligente e oportunidades fora do mercado tradicional. Guiamos você na escolha e na gestão de ativos que aceleram o crescimento patrimonial com segurança e propósito.",
       icon: Gem,
       gradient: "from-amber-500 to-orange-600"
     },
