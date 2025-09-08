@@ -82,7 +82,7 @@ const ParaSeuNegocio = () => {
               <div className="max-w-6xl mx-auto">
                 <div ref={elementRef} className="text-center mb-16">
                   <div className={`relative inline-block transform transition-all duration-1000 ease-out ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'}`}>
-                    <h1 className="text-4xl md:text-5xl font-playfair font-bold text-financial-600 mb-4">
+                    <h1 className="text-4xl md:text-5xl font-playfair font-bold text-gold-600 mb-4">
                       Para Seu Negócio
                     </h1>
                     <div className="absolute bottom-2 left-0 w-16 h-1 bg-gold-500"></div>
@@ -92,16 +92,16 @@ const ParaSeuNegocio = () => {
                   </p>
                 </div>
 
-                <div className={`bg-financial-50 p-8 rounded-xl transform transition-all duration-1000 ease-out delay-500 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'}`}>
-                  <h2 className="text-3xl font-playfair font-bold text-financial-600 mb-6 flex items-center">
-                    <Building size={32} className="mr-4 text-financial-600" />
+                <div className={`bg-gold-50 p-8 rounded-xl transform transition-all duration-1000 ease-out delay-500 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'}`}>
+                  <h2 className="text-3xl font-playfair font-bold text-gold-600 mb-6 flex items-center">
+                    <Building size={32} className="mr-4 text-gold-600" />
                     Seu negócio competitivo com :
                   </h2>
                   
                   <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                     <div className={`bg-white p-6 rounded-lg shadow-sm transform transition-all duration-1000 ease-out delay-700 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
-                      <h3 className="text-xl font-bold text-financial-600 mb-4 flex items-center">
-                        <DollarSign size={20} className="mr-2 text-financial-600" />
+                      <h3 className="text-xl font-bold text-gold-600 mb-4 flex items-center">
+                        <DollarSign size={20} className="mr-2 text-gold-600" />
                         Conta Digital PJ
                       </h3>
                       <p className="text-gray-700 mb-3 font-medium">Com possibilidade de:</p>
@@ -115,8 +115,8 @@ const ParaSeuNegocio = () => {
                     </div>
 
                     <div className={`bg-white p-6 rounded-lg shadow-sm transform transition-all duration-1000 ease-out delay-800 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
-                      <h3 className="text-xl font-bold text-financial-600 mb-4 flex items-center">
-                        <CreditCard size={20} className="mr-2 text-financial-600" />
+                      <h3 className="text-xl font-bold text-gold-600 mb-4 flex items-center">
+                        <CreditCard size={20} className="mr-2 text-gold-600" />
                         Cartões de Crédito PJ
                       </h3>
                       <p className="text-gray-700 mb-3 font-medium">Com possibilidade de:</p>
@@ -130,8 +130,8 @@ const ParaSeuNegocio = () => {
                     </div>
 
                     <div className={`bg-white p-6 rounded-lg shadow-sm transform transition-all duration-1000 ease-out delay-900 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
-                      <h3 className="text-xl font-bold text-financial-600 mb-4 flex items-center">
-                        <TrendingUp size={20} className="mr-2 text-financial-600" />
+                      <h3 className="text-xl font-bold text-gold-600 mb-4 flex items-center">
+                        <TrendingUp size={20} className="mr-2 text-gold-600" />
                         Investimentos Empresariais
                       </h3>
                       <p className="text-gray-700 mb-3 font-medium">Com possibilidade de:</p>
@@ -145,7 +145,7 @@ const ParaSeuNegocio = () => {
                     </div>
 
                     <div className={`bg-white p-6 rounded-lg shadow-sm transform transition-all duration-1000 ease-out delay-1000 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
-                      <h3 className="text-xl font-bold text-financial-600 mb-4">
+                      <h3 className="text-xl font-bold text-gold-600 mb-4">
                         Recuperação Tributária
                       </h3>
                       <ul className="space-y-2 text-gray-700 mb-4">
@@ -156,15 +156,15 @@ const ParaSeuNegocio = () => {
                       </ul>
                       <button 
                         onClick={handleEbookRecuperacaoClick}
-                        className="bg-financial-500 text-white px-4 py-2 rounded-lg hover:bg-financial-600 transition-colors text-sm"
+                        className="bg-gold-500 text-white px-4 py-2 rounded-lg hover:bg-gold-600 transition-colors text-sm"
                       >
                         Baixe o ebook sobre recuperação tributária
                       </button>
                     </div>
 
                     <div className={`bg-white p-6 rounded-lg shadow-sm transform transition-all duration-1000 ease-out delay-1100 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
-                      <h3 className="text-xl font-bold text-financial-600 mb-4 flex items-center">
-                        <FileText size={20} className="mr-2 text-financial-600" />
+                      <h3 className="text-xl font-bold text-gold-600 mb-4 flex items-center">
+                        <FileText size={20} className="mr-2 text-gold-600" />
                         FIDC e Estratégias Tributárias
                       </h3>
                       <ul className="space-y-2 text-gray-700 mb-4">
@@ -174,15 +174,15 @@ const ParaSeuNegocio = () => {
                       </ul>
                       <button 
                         onClick={handleEbookFIDCClick}
-                        className="bg-financial-500 text-white px-4 py-2 rounded-lg hover:bg-financial-600 transition-colors text-sm"
+                        className="bg-gold-500 text-white px-4 py-2 rounded-lg hover:bg-gold-600 transition-colors text-sm"
                       >
                         Baixe o ebook sobre FIDC
                       </button>
                     </div>
 
                     <div className={`bg-white p-6 rounded-lg shadow-sm transform transition-all duration-1000 ease-out delay-1200 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
-                      <h3 className="text-xl font-bold text-financial-600 mb-4 flex items-center">
-                        <GraduationCap size={20} className="mr-2 text-financial-600" />
+                      <h3 className="text-xl font-bold text-gold-600 mb-4 flex items-center">
+                        <GraduationCap size={20} className="mr-2 text-gold-600" />
                         Educação Financeira Corporativa
                       </h3>
                       <ul className="space-y-2 text-gray-700">
