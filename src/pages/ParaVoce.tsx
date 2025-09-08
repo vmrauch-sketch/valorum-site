@@ -136,7 +136,7 @@ const ParaVoce = () => {
                         </div>
                         <div>
                           <h3 className="text-xl font-bold text-navy-600 mb-2">VISÃO 360°</h3>
-                          <p className="text-gray-700">O processo de assessoria financeira precisa ser holístico;</p>
+                          <p className="text-gray-700">O processo de assessoria financeira precisa ser holístico e hiperpersonalizado;</p>
                         </div>
                       </div>
 
@@ -146,7 +146,7 @@ const ParaVoce = () => {
                         </div>
                         <div>
                           <h3 className="text-xl font-bold text-navy-600 mb-2">COERÊNCIA COMPORTAMENTAL</h3>
-                          <p className="text-gray-700">Se não funcionar na vida real, não nos importa a matemática;</p>
+                          <p className="text-gray-700">Precisa funcionar na vida real.</p>
                         </div>
                       </div>
 
