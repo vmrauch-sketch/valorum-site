@@ -57,7 +57,7 @@ const HowWeWork = () => {
   const investmentAreas = [
     {
       title: "Investimentos Físicos",
-      description: "Imóveis e propriedades\noferecem segurança e preservação de patrimônio.",
+      description: "Imóveis e propriedades\noferecem segurança e preservação de patrimônio. Avaliamos seu perfil patrimonial para indicar decisões imobiliárias que realmente façam sentido para seus objetivos.",
       icon: Home,
       gradient: "from-blue-600 to-blue-800"
     },
