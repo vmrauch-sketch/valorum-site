@@ -8,7 +8,22 @@ import {
   GraduationCap,
   CreditCard,
   DollarSign,
-  TrendingUp
+  TrendingUp,
+  Shield,
+  Clock,
+  Globe,
+  BarChart3,
+  Users,
+  CheckCircle,
+  Zap,
+  Target,
+  Calculator,
+  BookOpen,
+  HandHeart,
+  PieChart,
+  ArrowUpRight,
+  RefreshCw,
+  Lightbulb
 } from "lucide-react";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
@@ -105,13 +120,28 @@ const ParaSeuNegocio = () => {
                         Conta Digital PJ
                       </h3>
                       <p className="text-gray-700 mb-3 font-medium">Com possibilidade de:</p>
-                      <ul className="space-y-2 text-gray-700">
-                        <li>• Tarifa zero de manutenção</li>
-                        <li>• Pix ilimitadas e sem custo</li>
-                        <li>• Folha de pagamento 100% digital</li>
-                        <li>• Câmbio rápido e 100% online</li>
-                        <li>• Pix Automático para recorrência</li>
-                      </ul>
+                       <ul className="space-y-3 text-gray-700">
+                         <li className="flex items-center">
+                           <Shield size={16} className="mr-3 text-financial-500 flex-shrink-0" />
+                           <span>Tarifa zero de manutenção</span>
+                         </li>
+                         <li className="flex items-center">
+                           <Zap size={16} className="mr-3 text-financial-500 flex-shrink-0" />
+                           <span>Pix ilimitadas e sem custo</span>
+                         </li>
+                         <li className="flex items-center">
+                           <Users size={16} className="mr-3 text-financial-500 flex-shrink-0" />
+                           <span>Folha de pagamento 100% digital</span>
+                         </li>
+                         <li className="flex items-center">
+                           <Globe size={16} className="mr-3 text-financial-500 flex-shrink-0" />
+                           <span>Câmbio rápido e 100% online</span>
+                         </li>
+                         <li className="flex items-center">
+                           <RefreshCw size={16} className="mr-3 text-financial-500 flex-shrink-0" />
+                           <span>Pix Automático para recorrência</span>
+                         </li>
+                       </ul>
                     </div>
 
                     <div className={`bg-white p-6 rounded-lg shadow-sm transform transition-all duration-1000 ease-out delay-800 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
@@ -120,13 +150,28 @@ const ParaSeuNegocio = () => {
                         Cartões de Crédito PJ
                       </h3>
                       <p className="text-gray-700 mb-3 font-medium">Com possibilidade de:</p>
-                      <ul className="space-y-2 text-gray-700">
-                        <li>• IOF zero em compras internacionais</li>
-                        <li>• Pix Parcelado no cartão</li>
-                        <li>• Gestão de liquidez otimizada</li>
-                        <li>• Controle total de gastos</li>
-                        <li>• Soluções de pagamento flexíveis</li>
-                      </ul>
+                       <ul className="space-y-3 text-gray-700">
+                         <li className="flex items-center">
+                           <Globe size={16} className="mr-3 text-financial-500 flex-shrink-0" />
+                           <span>IOF zero em compras internacionais</span>
+                         </li>
+                         <li className="flex items-center">
+                           <CreditCard size={16} className="mr-3 text-financial-500 flex-shrink-0" />
+                           <span>Pix Parcelado no cartão</span>
+                         </li>
+                         <li className="flex items-center">
+                           <BarChart3 size={16} className="mr-3 text-financial-500 flex-shrink-0" />
+                           <span>Gestão de liquidez otimizada</span>
+                         </li>
+                         <li className="flex items-center">
+                           <Target size={16} className="mr-3 text-financial-500 flex-shrink-0" />
+                           <span>Controle total de gastos</span>
+                         </li>
+                         <li className="flex items-center">
+                           <HandHeart size={16} className="mr-3 text-financial-500 flex-shrink-0" />
+                           <span>Soluções de pagamento flexíveis</span>
+                         </li>
+                       </ul>
                     </div>
 
                     <div className={`bg-white p-6 rounded-lg shadow-sm transform transition-all duration-1000 ease-out delay-900 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
@@ -135,25 +180,52 @@ const ParaSeuNegocio = () => {
                         Investimentos Empresariais
                       </h3>
                       <p className="text-gray-700 mb-3 font-medium">Com possibilidade de:</p>
-                      <ul className="space-y-2 text-gray-700">
-                        <li>• Gestão de caixa corporativo</li>
-                        <li>• Estruturação de investimentos</li>
-                        <li>• Planejamento financeiro estratégico</li>
-                        <li>• Leilão de Crédito para otimização</li>
-                        <li>• Diversificação de ativos</li>
-                      </ul>
+                       <ul className="space-y-3 text-gray-700">
+                         <li className="flex items-center">
+                           <PieChart size={16} className="mr-3 text-financial-500 flex-shrink-0" />
+                           <span>Gestão de caixa corporativo</span>
+                         </li>
+                         <li className="flex items-center">
+                           <TrendingUp size={16} className="mr-3 text-financial-500 flex-shrink-0" />
+                           <span>Estruturação de investimentos</span>
+                         </li>
+                         <li className="flex items-center">
+                           <Target size={16} className="mr-3 text-financial-500 flex-shrink-0" />
+                           <span>Planejamento financeiro estratégico</span>
+                         </li>
+                         <li className="flex items-center">
+                           <ArrowUpRight size={16} className="mr-3 text-financial-500 flex-shrink-0" />
+                           <span>Leilão de Crédito para otimização</span>
+                         </li>
+                         <li className="flex items-center">
+                           <BarChart3 size={16} className="mr-3 text-financial-500 flex-shrink-0" />
+                           <span>Diversificação de ativos</span>
+                         </li>
+                       </ul>
                     </div>
 
                     <div className={`bg-white p-6 rounded-lg shadow-sm transform transition-all duration-1000 ease-out delay-1000 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
                       <h3 className="text-xl font-bold text-financial-600 mb-4">
                         Recuperação Tributária
                       </h3>
-                      <ul className="space-y-2 text-gray-700 mb-4">
-                        <li>• Diagnóstico de créditos recuperáveis</li>
-                        <li>• Assessoria em restituição e compensação</li>
-                        <li>• Estruturação segura dos processos</li>
-                        <li>• Otimização da carga tributária</li>
-                      </ul>
+                       <ul className="space-y-3 text-gray-700 mb-4">
+                         <li className="flex items-center">
+                           <Calculator size={16} className="mr-3 text-financial-500 flex-shrink-0" />
+                           <span>Diagnóstico de créditos recuperáveis</span>
+                         </li>
+                         <li className="flex items-center">
+                           <CheckCircle size={16} className="mr-3 text-financial-500 flex-shrink-0" />
+                           <span>Assessoria em restituição e compensação</span>
+                         </li>
+                         <li className="flex items-center">
+                           <Shield size={16} className="mr-3 text-financial-500 flex-shrink-0" />
+                           <span>Estruturação segura dos processos</span>
+                         </li>
+                         <li className="flex items-center">
+                           <ArrowUpRight size={16} className="mr-3 text-financial-500 flex-shrink-0" />
+                           <span>Otimização da carga tributária</span>
+                         </li>
+                       </ul>
                       <button 
                         onClick={handleEbookRecuperacaoClick}
                         className="bg-financial-500 text-white px-4 py-2 rounded-lg hover:bg-financial-600 transition-colors text-sm"
@@ -167,11 +239,20 @@ const ParaSeuNegocio = () => {
                         <FileText size={20} className="mr-2 text-financial-600" />
                         FIDC e Estratégias Tributárias
                       </h3>
-                      <ul className="space-y-2 text-gray-700 mb-4">
-                        <li>• Estruturação e participação em FIDCs</li>
-                        <li>• Captação e gestão de fluxo de caixa</li>
-                        <li>• Planejamento tributário eficiente</li>
-                      </ul>
+                       <ul className="space-y-3 text-gray-700 mb-4">
+                         <li className="flex items-center">
+                           <FileText size={16} className="mr-3 text-financial-500 flex-shrink-0" />
+                           <span>Estruturação e participação em FIDCs</span>
+                         </li>
+                         <li className="flex items-center">
+                           <TrendingUp size={16} className="mr-3 text-financial-500 flex-shrink-0" />
+                           <span>Captação e gestão de fluxo de caixa</span>
+                         </li>
+                         <li className="flex items-center">
+                           <BarChart3 size={16} className="mr-3 text-financial-500 flex-shrink-0" />
+                           <span>Planejamento tributário eficiente</span>
+                         </li>
+                       </ul>
                       <button 
                         onClick={handleEbookFIDCClick}
                         className="bg-financial-500 text-white px-4 py-2 rounded-lg hover:bg-financial-600 transition-colors text-sm"
@@ -185,12 +266,24 @@ const ParaSeuNegocio = () => {
                         <GraduationCap size={20} className="mr-2 text-financial-600" />
                         Educação Financeira Corporativa
                       </h3>
-                      <ul className="space-y-2 text-gray-700">
-                        <li>• Workshops para equipes e gestores</li>
-                        <li>• Mentoria financeira estratégica</li>
-                        <li>• Palestras sobre Finanças Pessoais</li>
-                        <li>• Palestras de empreendedorismo e liderança</li>
-                      </ul>
+                       <ul className="space-y-3 text-gray-700">
+                         <li className="flex items-center">
+                           <Users size={16} className="mr-3 text-financial-500 flex-shrink-0" />
+                           <span>Workshops para equipes e gestores</span>
+                         </li>
+                         <li className="flex items-center">
+                           <Lightbulb size={16} className="mr-3 text-financial-500 flex-shrink-0" />
+                           <span>Mentoria financeira estratégica</span>
+                         </li>
+                         <li className="flex items-center">
+                           <BookOpen size={16} className="mr-3 text-financial-500 flex-shrink-0" />
+                           <span>Palestras sobre Finanças Pessoais</span>
+                         </li>
+                         <li className="flex items-center">
+                           <GraduationCap size={16} className="mr-3 text-financial-500 flex-shrink-0" />
+                           <span>Palestras de empreendedorismo e liderança</span>
+                         </li>
+                       </ul>
                     </div>
                   </div>
                 </div>
