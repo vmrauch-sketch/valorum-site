@@ -5,7 +5,10 @@ import { SEOHead } from "@/components/SEOHead";
 import { 
   Building, 
   FileText, 
-  GraduationCap 
+  GraduationCap,
+  CreditCard,
+  DollarSign,
+  TrendingUp
 } from "lucide-react";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
@@ -95,20 +98,50 @@ const ParaSeuNegocio = () => {
                     Serviços Empresariais
                   </h2>
                   
-                  <div className="grid md:grid-cols-2 gap-6">
+                  <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                     <div className={`bg-white p-6 rounded-lg shadow-sm transform transition-all duration-1000 ease-out delay-700 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
-                      <h3 className="text-xl font-bold text-financial-600 mb-4">
-                        Consultoria Financeira Empresarial
+                      <h3 className="text-xl font-bold text-financial-600 mb-4 flex items-center">
+                        <DollarSign size={20} className="mr-2 text-financial-600" />
+                        Conta Digital PJ
                       </h3>
                       <ul className="space-y-2 text-gray-700">
-                        <li>• Gestão de caixa corporativo</li>
-                        <li>• Estruturação de investimentos empresariais</li>
-                        <li>• Planejamento financeiro estratégico</li>
-                        <li>• Leilão de Crédito para otimização</li>
+                        <li>• Tarifa zero de manutenção</li>
+                        <li>• Pix ilimitadas e sem custo</li>
+                        <li>• Folha de pagamento 100% digital</li>
+                        <li>• Câmbio rápido e 100% online</li>
+                        <li>• Pix Automático para recorrência</li>
+                      </ul>
+                    </div>
+
+                    <div className={`bg-white p-6 rounded-lg shadow-sm transform transition-all duration-1000 ease-out delay-800 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
+                      <h3 className="text-xl font-bold text-financial-600 mb-4 flex items-center">
+                        <CreditCard size={20} className="mr-2 text-financial-600" />
+                        Cartões de Crédito PJ
+                      </h3>
+                      <ul className="space-y-2 text-gray-700">
+                        <li>• IOF zero em compras internacionais</li>
+                        <li>• Pix Parcelado no cartão</li>
+                        <li>• Gestão de liquidez otimizada</li>
+                        <li>• Controle total de gastos</li>
+                        <li>• Soluções de pagamento flexíveis</li>
                       </ul>
                     </div>
 
                     <div className={`bg-white p-6 rounded-lg shadow-sm transform transition-all duration-1000 ease-out delay-900 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
+                      <h3 className="text-xl font-bold text-financial-600 mb-4 flex items-center">
+                        <TrendingUp size={20} className="mr-2 text-financial-600" />
+                        Investimentos Empresariais
+                      </h3>
+                      <ul className="space-y-2 text-gray-700">
+                        <li>• Gestão de caixa corporativo</li>
+                        <li>• Estruturação de investimentos</li>
+                        <li>• Planejamento financeiro estratégico</li>
+                        <li>• Leilão de Crédito para otimização</li>
+                        <li>• Diversificação de ativos</li>
+                      </ul>
+                    </div>
+
+                    <div className={`bg-white p-6 rounded-lg shadow-sm transform transition-all duration-1000 ease-out delay-1000 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
                       <h3 className="text-xl font-bold text-financial-600 mb-4">
                         Recuperação Tributária
                       </h3>
@@ -144,7 +177,7 @@ const ParaSeuNegocio = () => {
                       </button>
                     </div>
 
-                    <div className={`bg-white p-6 rounded-lg shadow-sm transform transition-all duration-1000 ease-out delay-1300 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
+                    <div className={`bg-white p-6 rounded-lg shadow-sm transform transition-all duration-1000 ease-out delay-1200 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
                       <h3 className="text-xl font-bold text-financial-600 mb-4 flex items-center">
                         <GraduationCap size={20} className="mr-2 text-financial-600" />
                         Educação Financeira Corporativa
