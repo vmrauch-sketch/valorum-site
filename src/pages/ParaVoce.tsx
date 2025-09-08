@@ -65,11 +65,6 @@ const ParaVoce = () => {
                 </div>
 
                 <div className={`bg-navy-50 p-8 rounded-xl transform transition-all duration-1000 ease-out delay-500 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'}`}>
-                  <h2 className="text-3xl font-playfair font-bold text-navy-600 mb-6 flex items-center">
-                    <User size={32} className="mr-4 text-navy-600" />
-                    Serviços Personalizados
-                  </h2>
-                  
                   <div className="grid md:grid-cols-2 gap-6">
                     <div className={`bg-white p-6 rounded-lg shadow-sm transform transition-all duration-1000 ease-out delay-700 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
                       <h3 className="text-xl font-bold text-navy-600 mb-4 flex items-center">
