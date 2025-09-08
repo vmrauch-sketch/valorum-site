@@ -104,6 +104,7 @@ const ParaSeuNegocio = () => {
                         <DollarSign size={20} className="mr-2 text-financial-600" />
                         Conta Digital PJ
                       </h3>
+                      <p className="text-gray-700 mb-3 font-medium">Com possibilidade de:</p>
                       <ul className="space-y-2 text-gray-700">
                         <li>• Tarifa zero de manutenção</li>
                         <li>• Pix ilimitadas e sem custo</li>
@@ -118,6 +119,7 @@ const ParaSeuNegocio = () => {
                         <CreditCard size={20} className="mr-2 text-financial-600" />
                         Cartões de Crédito PJ
                       </h3>
+                      <p className="text-gray-700 mb-3 font-medium">Com possibilidade de:</p>
                       <ul className="space-y-2 text-gray-700">
                         <li>• IOF zero em compras internacionais</li>
                         <li>• Pix Parcelado no cartão</li>
@@ -132,6 +134,7 @@ const ParaSeuNegocio = () => {
                         <TrendingUp size={20} className="mr-2 text-financial-600" />
                         Investimentos Empresariais
                       </h3>
+                      <p className="text-gray-700 mb-3 font-medium">Com possibilidade de:</p>
                       <ul className="space-y-2 text-gray-700">
                         <li>• Gestão de caixa corporativo</li>
                         <li>• Estruturação de investimentos</li>
