@@ -151,7 +151,7 @@ const ParaVoce = () => {
                         </div>
                         <div>
                           <h3 className="text-xl font-bold text-navy-600 mb-2">INDEPENDÊNCIA</h3>
-                          <p className="text-gray-700">Representa uma única instituição, significa ser incapaz de oferecer o melhor para o cliente.</p>
+                          <p className="text-gray-700">Representar uma única instituição, significa ser incapaz de oferecer o melhor para o cliente.</p>
                         </div>
                       </div>
                     </div>
