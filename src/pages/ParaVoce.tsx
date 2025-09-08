@@ -93,7 +93,7 @@ const ParaVoce = () => {
                     <div className={`bg-white p-6 rounded-lg shadow-sm transform transition-all duration-1000 ease-out delay-900 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
                       <h3 className="text-xl font-bold text-navy-600 mb-4 flex items-center">
                         <Gem size={24} className="mr-3 text-navy-600" />
-                        Gestão Patrimonial e Wealth Planning
+                        Construção Patrimonial e Wealth Planning
                       </h3>
                       <ul className="space-y-2 text-gray-700">
                         <li>• Estruturação patrimonial familiar</li>
