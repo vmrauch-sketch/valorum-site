@@ -10,7 +10,8 @@ import ComoAtuamos from "./pages/ComoAtuamos";
 import AreasEspecializacao from "./pages/AreasEspecializacao";
 import ProtocoloMaisRenda from "./pages/ProtocoloMaisRenda";
 import VilsonRauch from "./pages/VilsonRauch";
-import Servicos from "./pages/Servicos";
+import ParaVoce from "./pages/ParaVoce";
+import ParaSeuNegocio from "./pages/ParaSeuNegocio";
 import Contato from "./pages/Contato";
 
 const queryClient = new QueryClient();
@@ -28,7 +29,8 @@ const App = () => (
           <Route path="/estrategias" element={<AreasEspecializacao />} />
           <Route path="/protocolo-mais-renda" element={<ProtocoloMaisRenda />} />
           <Route path="/vilson-rauch" element={<VilsonRauch />} />
-          <Route path="/servicos" element={<Servicos />} />
+          <Route path="/para-voce" element={<ParaVoce />} />
+          <Route path="/para-seu-negocio" element={<ParaSeuNegocio />} />
           <Route path="/contato" element={<Contato />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
