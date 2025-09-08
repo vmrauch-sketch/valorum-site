@@ -60,7 +60,7 @@ const ParaVoce = () => {
                     <div className="absolute bottom-2 left-0 w-16 h-1 bg-gold-500"></div>
                   </div>
                   <p className={`text-xl text-gray-600 max-w-3xl mx-auto mt-8 transform transition-all duration-1000 ease-out delay-300 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
-                    Consultoria financeira personalizada e gestão patrimonial para pessoas físicas
+                    Consultoria financeira e gestão patrimonial para pessoas físicas
                   </p>
                 </div>
 
