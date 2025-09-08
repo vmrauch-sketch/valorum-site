@@ -15,10 +15,8 @@ import {
   ShieldCheck,
   Globe
 } from "lucide-react";
-import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const ComoAtuamos = () => {
-  const { elementRef: areasRef, isVisible: areasVisible } = useScrollAnimation();
 
   const areas = [
     {
@@ -89,31 +87,26 @@ const ComoAtuamos = () => {
               </div>
 
               {/* Áreas de Especialização */}
-              <div ref={areasRef}>
-                <div className="grid md:grid-cols-2 gap-6">
-                  {areas.map((area, index) => {
-                    const IconComponent = area.icon;
-                    return (
-                      <div 
-                        key={index}
-                        className={`bg-white p-6 rounded-lg shadow-sm border-l-4 border-corporate-500 hover:shadow-md transition-all duration-1000 ease-out transform ${areasVisible ? 'translate-x-0 opacity-100' : 'translate-x-8 opacity-0'}`}
-                        style={{ 
-                          transitionDelay: areasVisible ? `${index * 100}ms` : '0ms'
-                        }}
-                      >
-                        <div className="flex items-center">
-                          <div className="mr-4 flex-shrink-0">
-                            <IconComponent 
-                              size={24} 
-                              className="text-corporate-500" 
-                            />
-                          </div>
-                          <span className="text-gray-800 font-inter font-medium text-lg leading-relaxed">{area.title}</span>
+              <div className="grid md:grid-cols-2 gap-6">
+                {areas.map((area, index) => {
+                  const IconComponent = area.icon;
+                  return (
+                    <div 
+                      key={index}
+                      className="bg-white p-6 rounded-lg shadow-sm border-l-4 border-corporate-500 hover:shadow-md transition-all duration-300 ease-out"
+                    >
+                      <div className="flex items-center">
+                        <div className="mr-4 flex-shrink-0">
+                          <IconComponent 
+                            size={24} 
+                            className="text-corporate-500" 
+                          />
                         </div>
+                        <span className="text-gray-800 font-inter font-medium text-lg leading-relaxed">{area.title}</span>
                       </div>
-                    );
-                  })}
-                </div>
+                    </div>
+                  );
+                })}
               </div>
             </div>
           </div>
