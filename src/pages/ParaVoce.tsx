@@ -104,6 +104,93 @@ const ParaVoce = () => {
                     </div>
                   </div>
                 </div>
+
+                {/* Filosofia Wealth Planning */}
+                <div className={`mt-16 bg-gradient-to-r from-gray-50 to-gray-100 p-8 rounded-xl transform transition-all duration-1000 ease-out delay-1100 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'}`}>
+                  <div className="grid md:grid-cols-2 gap-12 items-center">
+                    {/* Left Side - Main Text */}
+                    <div>
+                      <h2 className="text-3xl md:text-4xl font-playfair font-bold text-navy-600 leading-tight">
+                        O Wealth Planning é indiscutivelmente o melhor modelo de assessoria financeira para o cliente final.
+                      </h2>
+                      <p className="text-lg text-gray-700 mt-6 font-medium">
+                        Pilares da nossa filosofia de atuação:
+                      </p>
+                    </div>
+
+                    {/* Right Side - Numbered Points */}
+                    <div className="space-y-6">
+                      <div className="flex items-start">
+                        <div className="flex-shrink-0 w-12 h-12 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold text-xl mr-4">
+                          01
+                        </div>
+                        <div>
+                          <h3 className="text-xl font-bold text-navy-600 mb-2">TRANSPARÊNCIA</h3>
+                          <p className="text-gray-700">Se o cliente não sabe quanto paga, não há relação de confiança plena;</p>
+                        </div>
+                      </div>
+
+                      <div className="flex items-start">
+                        <div className="flex-shrink-0 w-12 h-12 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold text-xl mr-4">
+                          02
+                        </div>
+                        <div>
+                          <h3 className="text-xl font-bold text-navy-600 mb-2">VISÃO 360°</h3>
+                          <p className="text-gray-700">O processo de assessoria financeira precisa ser holístico;</p>
+                        </div>
+                      </div>
+
+                      <div className="flex items-start">
+                        <div className="flex-shrink-0 w-12 h-12 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold text-xl mr-4">
+                          03
+                        </div>
+                        <div>
+                          <h3 className="text-xl font-bold text-navy-600 mb-2">COERÊNCIA COMPORTAMENTAL</h3>
+                          <p className="text-gray-700">Se não funcionar na vida real, não nos importa a matemática;</p>
+                        </div>
+                      </div>
+
+                      <div className="flex items-start">
+                        <div className="flex-shrink-0 w-12 h-12 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold text-xl mr-4">
+                          04
+                        </div>
+                        <div>
+                          <h3 className="text-xl font-bold text-navy-600 mb-2">INDEPENDÊNCIA</h3>
+                          <p className="text-gray-700">Representa uma única instituição, significa ser incapaz de oferecer o melhor para o cliente.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* WhatsApp Button */}
+                  <div className="text-center mt-12">
+                    <button 
+                      onClick={() => {
+                        const message = encodeURIComponent("Olá, tenho interesse em me tornar um Wealth Planner da Valorum");
+                        const url = `https://wa.me/5511949566290?text=${message}`;
+                        
+                        const isDevelopment = window.location.hostname === 'localhost' || window.location.hostname.includes('lovable');
+                        
+                        if (isDevelopment) {
+                          navigator.clipboard.writeText(url).then(() => {
+                            alert(`Link do WhatsApp copiado!\n\nNúmero: +55 11 94956-6290\nMensagem: "Olá, tenho interesse em me tornar um Wealth Planner da Valorum"\n\nLink copiado para área de transferência.`);
+                          }).catch(() => {
+                            alert(`WhatsApp: +55 11 94956-6290\n\nMensagem: "Olá, tenho interesse em me tornar um Wealth Planner da Valorum"`);
+                          });
+                        } else {
+                          try {
+                            window.open(url, '_blank');
+                          } catch (error) {
+                            console.error("Erro ao abrir WhatsApp:", error);
+                          }
+                        }
+                      }}
+                      className="bg-blue-500 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-600 transition-colors shadow-lg transform hover:scale-105 transition-transform duration-200"
+                    >
+                      QUERO ME TORNAR UM WEALTH PLANNER DA VALORUM
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
           </section>
