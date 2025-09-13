@@ -31,7 +31,7 @@ const Partners = () => {
     { name: "Valorum DashPlan", logo: "/lovable-uploads/6db10f4a-2720-4845-87a2-39480f871adc.png" },
     { name: "Fictor", logo: "/lovable-uploads/aac0f20e-f664-4b17-ad3a-a2b73b11d5fa.png" },
     { name: "TechFinance", logo: "/lovable-uploads/8d371ace-4f3e-4482-bbbd-7811c3e3d682.png" },
-    { name: "ED Seguros", logo: "/src/assets/logos/ed-seguros-clean.png" }
+    { name: "ED Seguros", logo: "/lovable-uploads/4cea6ec0-a75a-4577-8f73-838cd57fafc3.png" }
   ];
 
   console.log("Partners array length:", partners.length);
