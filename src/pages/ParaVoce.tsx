@@ -63,8 +63,11 @@ const ParaVoce = () => {
                     <p className="text-2xl font-semibold text-navy-600 mb-2">
                       Gestão financeira completa, do jeito certo.
                     </p>
-                    <p className="text-xl text-gray-600">
+                    <p className="text-xl text-gray-600 mb-3">
                       Revolucionamos o conceito de atendimento no mercado financeiro.
+                    </p>
+                    <p className="text-xl font-semibold text-navy-600">
+                      O resultado de nossos clientes vem em 1º lugar.
                     </p>
                   </div>
                 </div>
