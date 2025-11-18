@@ -37,6 +37,31 @@ const ParaVoce = () => {
     }
   };
 
+  const handleAgendarReuniaoClick = () => {
+    console.log("ParaVoce: Agendar reunião clicado");
+    const message = encodeURIComponent("Agendar uma reunião com um consultor");
+    const url = `https://wa.me/5511949566290?text=${message}`;
+    
+    // Detecta se está em desenvolvimento
+    const isDevelopment = window.location.hostname === 'localhost' || window.location.hostname.includes('lovable');
+    
+    if (isDevelopment) {
+      // Em desenvolvimento, copia o link e mostra alerta
+      navigator.clipboard.writeText(url).then(() => {
+        alert(`Link do WhatsApp copiado!\n\nNúmero: +55 11 94956-6290\nMensagem: "Agendar uma reunião com um consultor"\n\nLink copiado para área de transferência.`);
+      }).catch(() => {
+        alert(`WhatsApp: +55 11 94956-6290\n\nMensagem: "Agendar uma reunião com um consultor"`);
+      });
+    } else {
+      // Em produção, abre normalmente
+      try {
+        window.open(url, '_blank');
+      } catch (error) {
+        console.error("ParaVoce: Erro ao abrir WhatsApp:", error);
+      }
+    }
+  };
+
   return (
     <>
       <SEOHead
@@ -72,7 +97,16 @@ const ParaVoce = () => {
                   </div>
                 </div>
 
-                <div className={`bg-navy-50 p-8 rounded-xl transform transition-all duration-1000 ease-out delay-500 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'}`}>
+                <div className={`text-center my-12 transform transition-all duration-1000 ease-out delay-500 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'}`}>
+                  <button
+                    onClick={handleAgendarReuniaoClick}
+                    className="w-full max-w-2xl mx-auto px-8 py-4 bg-navy-600 text-white font-semibold text-lg rounded-lg hover:bg-navy-700 transition-colors duration-300 shadow-lg hover:shadow-xl"
+                  >
+                    Agendar uma reunião com um consultor
+                  </button>
+                </div>
+
+                <div className={`bg-navy-50 p-8 rounded-xl transform transition-all duration-1000 ease-out delay-700 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'}`}>
                   <div className="grid md:grid-cols-2 gap-6">
                     <div className={`bg-white p-6 rounded-lg shadow-sm transform transition-all duration-1000 ease-out delay-700 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
                       <h3 className="text-xl font-bold text-navy-600 mb-4 flex items-center">
