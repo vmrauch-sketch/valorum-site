@@ -100,10 +100,75 @@ const ParaVoce = () => {
                 <div className={`text-center my-12 transform transition-all duration-1000 ease-out delay-500 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'}`}>
                   <button
                     onClick={handleAgendarReuniaoClick}
-                    className="w-full max-w-2xl mx-auto px-8 py-4 bg-navy-600 text-white font-semibold text-lg rounded-lg hover:bg-navy-700 transition-colors duration-300 shadow-lg hover:shadow-xl"
+                    className="w-full max-w-2xl mx-auto px-8 py-4 bg-gold-500 text-white font-semibold text-lg rounded-lg hover:bg-gold-600 transition-colors duration-300 shadow-lg hover:shadow-xl"
                   >
                     Agendar uma reunião com um consultor
                   </button>
+                </div>
+
+                {/* Seção de Benefícios */}
+                <div className={`bg-white py-16 transform transition-all duration-1000 ease-out delay-600 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'}`}>
+                  <h2 className="text-3xl md:text-4xl font-playfair font-bold text-navy-600 text-center mb-12">
+                    Benefícios de Investir com a Valorum:
+                  </h2>
+                  
+                  <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                    <div className="flex gap-6">
+                      <div className="flex-shrink-0">
+                        <span className="text-6xl font-bold text-gray-400">01</span>
+                      </div>
+                      <div>
+                        <h3 className="text-xl font-bold text-navy-600 mb-3">
+                          Cashback de investimentos em Renda Fixa e Aluguel de Ativos
+                        </h3>
+                        <p className="text-gray-600">
+                          Devolvemos a comissão da indicação do investimento direto na sua conta. Seu dinheiro rende mais, e você paga menos. Simples.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className="flex gap-6">
+                      <div className="flex-shrink-0">
+                        <span className="text-6xl font-bold text-gray-400">02</span>
+                      </div>
+                      <div>
+                        <h3 className="text-xl font-bold text-navy-600 mb-3">
+                          Os custos mais transparentes do mercado
+                        </h3>
+                        <p className="text-gray-600">
+                          Operações sem conflito de interesse. Você nunca vai tomar susto com seus rendimentos.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className="flex gap-6">
+                      <div className="flex-shrink-0">
+                        <span className="text-6xl font-bold text-gray-400">03</span>
+                      </div>
+                      <div>
+                        <h3 className="text-xl font-bold text-navy-600 mb-3">
+                          Conta Internacional & Crypto
+                        </h3>
+                        <p className="text-gray-600">
+                          Investimentos dolarizados no mercado americano e em criptoativos. Nosso acesso vai além do mercado brasileiro.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className="flex gap-6">
+                      <div className="flex-shrink-0">
+                        <span className="text-6xl font-bold text-gray-400">04</span>
+                      </div>
+                      <div>
+                        <h3 className="text-xl font-bold text-navy-600 mb-3">
+                          Assessoria Especializada
+                        </h3>
+                        <p className="text-gray-600">
+                          Acompanhamento personalizado e estratégias sob medida para o seu perfil e objetivos financeiros.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
 
                 <div className={`bg-navy-50 p-8 rounded-xl transform transition-all duration-1000 ease-out delay-700 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'}`}>
