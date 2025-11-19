@@ -150,7 +150,7 @@ const ParaVoce = () => {
                           Conta Internacional & Crypto
                         </h3>
                         <p className="text-gray-600">
-                          Investimentos dolarizados no mercado americano e em criptoativos. Nosso acesso vai além do mercado brasileiro.
+                          Investimentos dolarizados no mercado internacional e em criptoativos. Nosso acesso vai além do mercado brasileiro.
                         </p>
                       </div>
                     </div>
