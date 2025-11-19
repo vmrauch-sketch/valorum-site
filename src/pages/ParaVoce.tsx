@@ -178,18 +178,12 @@ const ParaVoce = () => {
                         <BarChart3 size={24} className="mr-3 text-navy-600" />
                         Consultoria de Investimentos
                       </h3>
-                      <ul className="space-y-2 text-gray-700 mb-4">
+                      <ul className="space-y-2 text-gray-700">
                         <li>• Análise de perfil de risco</li>
                         <li>• Alocação estratégica de ativos</li>
                         <li>• Monitoramento contínuo</li>
                         <li>• Gestão profissional de investimentos</li>
                       </ul>
-                      <button 
-                        onClick={handleEbookPlanejamentoClick}
-                        className="bg-navy-500 text-white px-4 py-2 rounded-lg hover:bg-navy-600 transition-colors text-sm"
-                      >
-                        Baixe ebook sobre planejamento financeiro
-                      </button>
                     </div>
 
                     <div className={`bg-white p-6 rounded-lg shadow-sm transform transition-all duration-1000 ease-out delay-900 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
