@@ -13,6 +13,7 @@ import VilsonRauch from "./pages/VilsonRauch";
 import ParaVoce from "./pages/ParaVoce";
 import ParaSeuNegocio from "./pages/ParaSeuNegocio";
 import Contato from "./pages/Contato";
+import TrabalheConosco from "./pages/TrabalheConosco";
 
 const queryClient = new QueryClient();
 
@@ -32,6 +33,7 @@ const App = () => (
           <Route path="/para-voce" element={<ParaVoce />} />
           <Route path="/para-seu-negocio" element={<ParaSeuNegocio />} />
           <Route path="/contato" element={<Contato />} />
+          <Route path="/trabalhe-conosco" element={<TrabalheConosco />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
