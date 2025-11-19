@@ -1,6 +1,5 @@
-
 import { Partners } from './Partners';
-
+import { Link } from 'react-router-dom';
 const Footer = () => {
   const handleWhatsAppClick = () => {
     console.log("Footer: Botão clicado");
@@ -35,15 +34,40 @@ const Footer = () => {
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-3 gap-8">
             {/* Logo and Description */}
-            <div className="md:col-span-2">
+            <div>
               <h3 className="text-2xl font-playfair font-bold mb-4">Valorum</h3>
-              <div className="flex items-center space-x-2 text-sm text-white/60">
-                <span className="w-2 h-2 bg-financial-500 rounded-full"></span>
-                <span>Construção e Gestão Patrimonial</span>
-                <span className="w-2 h-2 bg-financial-500 rounded-full"></span>
-                <span>Planejamento Financeiro</span>
-                <span className="w-2 h-2 bg-financial-500 rounded-full"></span>
-                <span>Consultoria</span>
+              <div className="flex flex-col space-y-2 text-sm text-white/60">
+                <span className="flex items-center">
+                  <span className="w-2 h-2 bg-financial-500 rounded-full mr-2"></span>
+                  Construção e Gestão Patrimonial
+                </span>
+                <span className="flex items-center">
+                  <span className="w-2 h-2 bg-financial-500 rounded-full mr-2"></span>
+                  Planejamento Financeiro
+                </span>
+                <span className="flex items-center">
+                  <span className="w-2 h-2 bg-financial-500 rounded-full mr-2"></span>
+                  Consultoria
+                </span>
+              </div>
+            </div>
+
+            {/* Links */}
+            <div>
+              <h4 className="text-lg font-semibold mb-4">Links</h4>
+              <div className="space-y-3 text-white/80">
+                <Link 
+                  to="/trabalhe-conosco"
+                  className="block hover:text-white transition-colors"
+                >
+                  Trabalhe Conosco
+                </Link>
+                <Link 
+                  to="/contato"
+                  className="block hover:text-white transition-colors"
+                >
+                  Contato
+                </Link>
               </div>
             </div>
 
