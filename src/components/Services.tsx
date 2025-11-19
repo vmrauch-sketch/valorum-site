@@ -127,18 +127,12 @@ const Services = () => {
                       <BarChart3 size={24} className="mr-3 text-navy-600" />
                       Consultoria de Investimentos Personalizada
                     </h4>
-                    <ul className="space-y-2 text-gray-700 mb-4">
+                    <ul className="space-y-2 text-gray-700">
                       <li>• Análise de perfil de risco</li>
                       <li>• Alocação estratégica de ativos</li>
                       <li>• Monitoramento contínuo</li>
                       <li>• Gestão profissional de investimentos</li>
                     </ul>
-                    <button 
-                      onClick={handleEbookPlanejamentoClick}
-                      className="bg-navy-500 text-white px-4 py-2 rounded-lg hover:bg-navy-600 transition-colors text-sm"
-                    >
-                      Baixe ebook sobre planejamento financeiro
-                    </button>
                   </div>
 
                   <div className={`bg-white p-6 rounded-lg shadow-sm transform transition-all duration-1000 ease-out delay-900 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
@@ -181,18 +175,12 @@ const Services = () => {
                     <h4 className="text-xl font-bold text-financial-600 mb-4">
                       Recuperação Tributária
                     </h4>
-                    <ul className="space-y-2 text-gray-700 mb-4">
+                    <ul className="space-y-2 text-gray-700">
                       <li>• Diagnóstico de créditos recuperáveis</li>
                       <li>• Assessoria em restituição e compensação</li>
                       <li>• Estruturação segura dos processos</li>
                       <li>• Otimização da carga tributária</li>
                     </ul>
-                    <button 
-                      onClick={handleEbookRecuperacaoClick}
-                      className="bg-financial-500 text-white px-4 py-2 rounded-lg hover:bg-financial-600 transition-colors text-sm"
-                    >
-                      Baixe o ebook sobre recuperação tributária
-                    </button>
                   </div>
 
                   <div className={`bg-white p-6 rounded-lg shadow-sm transform transition-all duration-1000 ease-out delay-1700 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
@@ -200,17 +188,11 @@ const Services = () => {
                       <FileText size={20} className="mr-2 text-financial-600" />
                       FIDC e Estratégias Tributárias
                     </h4>
-                    <ul className="space-y-2 text-gray-700 mb-4">
+                    <ul className="space-y-2 text-gray-700">
                       <li>• Estruturação e participação em FIDCs</li>
                       <li>• Captação e gestão de fluxo de caixa</li>
                       <li>• Planejamento tributário eficiente</li>
                     </ul>
-                    <button 
-                      onClick={handleEbookFIDCClick}
-                      className="bg-financial-500 text-white px-4 py-2 rounded-lg hover:bg-financial-600 transition-colors text-sm"
-                    >
-                      Baixe o ebook sobre FIDC
-                    </button>
                   </div>
 
                   <div className={`bg-white p-6 rounded-lg shadow-sm transform transition-all duration-1000 ease-out delay-1900 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
