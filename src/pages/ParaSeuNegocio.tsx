@@ -225,13 +225,7 @@ const ParaSeuNegocio = () => {
                            <ArrowUpRight size={16} className="mr-3 text-financial-500 flex-shrink-0" />
                            <span>Otimização da carga tributária</span>
                          </li>
-                       </ul>
-                      <button 
-                        onClick={handleEbookRecuperacaoClick}
-                        className="bg-financial-500 text-white px-4 py-2 rounded-lg hover:bg-financial-600 transition-colors text-sm"
-                      >
-                        Baixe o ebook sobre recuperação tributária
-                      </button>
+                        </ul>
                     </div>
 
                     <div className={`bg-white p-6 rounded-lg shadow-sm transform transition-all duration-1000 ease-out delay-1100 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
@@ -252,13 +246,7 @@ const ParaSeuNegocio = () => {
                            <BarChart3 size={16} className="mr-3 text-financial-500 flex-shrink-0" />
                            <span>Planejamento tributário eficiente</span>
                          </li>
-                       </ul>
-                      <button 
-                        onClick={handleEbookFIDCClick}
-                        className="bg-financial-500 text-white px-4 py-2 rounded-lg hover:bg-financial-600 transition-colors text-sm"
-                      >
-                        Baixe o ebook sobre FIDC
-                      </button>
+                        </ul>
                     </div>
 
                     <div className={`bg-white p-6 rounded-lg shadow-sm transform transition-all duration-1000 ease-out delay-1200 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
