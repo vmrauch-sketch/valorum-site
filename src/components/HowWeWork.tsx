@@ -144,8 +144,8 @@ const HowWeWork = () => {
             <div className={`text-center mt-12 transform transition-all duration-1000 ease-out delay-700 ${processVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
               <Button 
                 onClick={() => {
-                  const message = encodeURIComponent("Olá! Gostaria de falar com um consultor Valorum.");
-                  window.open(`https://wa.me/5551981545553?text=${message}`, '_blank');
+                  const message = encodeURIComponent("Olá gostaria de mais informações");
+                  window.open(`https://wa.me/5511949566290?text=${message}`, '_blank');
                 }}
                 className="bg-gold-500 hover:bg-gold-600 text-white px-8 py-6 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
               >
@@ -223,8 +223,8 @@ const HowWeWork = () => {
             <div className={`text-center mt-12 transform transition-all duration-1000 ease-out delay-700 ${investmentAreasVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
               <Button 
                 onClick={() => {
-                  const message = encodeURIComponent("Olá! Gostaria de falar com um consultor Valorum.");
-                  window.open(`https://wa.me/5551981545553?text=${message}`, '_blank');
+                  const message = encodeURIComponent("Olá gostaria de mais informações");
+                  window.open(`https://wa.me/5511949566290?text=${message}`, '_blank');
                 }}
                 className="bg-gold-500 hover:bg-gold-600 text-white px-8 py-6 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
               >

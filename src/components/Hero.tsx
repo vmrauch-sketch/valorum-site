@@ -7,8 +7,8 @@ const Hero = () => {
   const { elementRef, isVisible } = useScrollAnimation();
 
   const handleFaleConsultorClick = () => {
-    const message = encodeURIComponent("Olá! Gostaria de falar com um consultor Valorum.");
-    const whatsappUrl = `https://wa.me/5551981545553?text=${message}`;
+    const message = encodeURIComponent("Olá gostaria de mais informações");
+    const whatsappUrl = `https://wa.me/5511949566290?text=${message}`;
     window.open(whatsappUrl, '_blank');
   };
 
