@@ -38,7 +38,7 @@ const Hero = () => {
               <span className="text-xl md:text-2xl text-navy-600 font-inter block">
                 Valorum é planejamento patrimonial com propósito.<br />
                 Guiamos nossos clientes com clareza, estratégia e autonomia.<br />
-                Transformar patrimônio em uma fonte real de liberdade.
+                Transformando patrimônio em uma fonte real de liberdade.
               </span>
             </span>
           </div>
