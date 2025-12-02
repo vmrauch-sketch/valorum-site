@@ -32,9 +32,9 @@ const Hero = () => {
               <span className="text-xl md:text-2xl text-navy-600 font-inter mb-4 block">
                 Soluções Patrimoniais e Financeiras Completas para Você e Seu Negócio
               </span>
-              Valorum é planejamento patrimonial com propósito.<br />
-              Guiamos nossos clientes com clareza, estratégia e autonomia.<br />
-              Transformar patrimônio em uma fonte real de liberdade.
+              <span className="text-lg md:text-xl text-navy-500 font-inter mb-6 block leading-relaxed">
+                Somos a evolução do multi-family office (MFO), conhecimento e tecnologia capazes de antecipar cenários, reduzir riscos e potencializar oportunidades em todas as fases da sua vida.
+              </span>
             </span>
           </div>
         </div>
