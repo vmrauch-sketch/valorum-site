@@ -162,7 +162,7 @@ const HowWeWork = () => {
                 Mecanismos Patrimoniais que atuam em
               </p>
               <h3 className="text-4xl md:text-5xl font-playfair font-bold text-navy-600 mb-6">
-                Três Pilares Fundamentais
+                Tríade Patrimonial
               </h3>
               <p className="text-xl font-inter text-gray-700 max-w-3xl mx-auto leading-relaxed">
                 A estratégia de construção e gestão patrimonial que se adapta ao seu jeito.
