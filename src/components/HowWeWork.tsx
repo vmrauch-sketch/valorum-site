@@ -158,6 +158,9 @@ const HowWeWork = () => {
           {/* Áreas de Atuação */}
           <div ref={investmentAreasRef} className="mb-12">
             <div className={`text-center mb-12 transform transition-all duration-1000 ease-out ${investmentAreasVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
+              <p className="text-2xl md:text-3xl font-playfair font-semibold text-navy-600 mb-2">
+                Nossos Mecanismos Patrimoniais atuam em
+              </p>
               <h3 className="text-4xl md:text-5xl font-playfair font-bold text-navy-600 mb-6">
                 Três Pilares Fundamentais
               </h3>
