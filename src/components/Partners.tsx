@@ -41,10 +41,10 @@ const Partners = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-8">
           <h3 className="text-2xl font-playfair font-bold text-navy-600 mb-2">
-            Nossos Principais Parceiros
+            Na Valorum o melhor de cada instituição trabalha para você. Acesse o melhor!
           </h3>
           <p className="text-gray-600">
-            Na Valorum o melhor de cada instituição trabalha para você. Acesse o melhor!
+            Nossos Principais Parceiros
           </p>
         </div>
         
