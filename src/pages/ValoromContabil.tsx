@@ -35,7 +35,7 @@ const ValoromContabil = () => {
               </h1>
               
               <p className="text-xl text-gray-300 max-w-2xl mx-auto mb-8">
-                Em breve, uma nova forma de cuidar da contabilidade do seu negócio.
+                Uma forma diferente de cuidar de você, do seu negócio e do seu patrimônio.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -57,10 +57,10 @@ const ValoromContabil = () => {
           <div className="container mx-auto px-6">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-playfair font-bold text-primary mb-4">
-                O que está por vir
+                Nossos Serviços
               </h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                Estamos preparando serviços contábeis diferenciados para você
+                Serviços contábeis diferenciados para você e sua empresa
               </p>
             </div>
             
