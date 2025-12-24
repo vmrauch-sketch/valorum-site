@@ -4,6 +4,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ScrollToTop } from "./components/ScrollToTop";
+import { BusinessSelector } from "./components/BusinessSelector";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import Manifesto from "./pages/Manifesto";
@@ -15,6 +16,8 @@ import ParaVoce from "./pages/ParaVoce";
 import ParaSeuNegocio from "./pages/ParaSeuNegocio";
 import Contato from "./pages/Contato";
 import TrabalheConosco from "./pages/TrabalheConosco";
+import ValoromCapital from "./pages/ValoromCapital";
+import ValoromContabil from "./pages/ValoromContabil";
 
 const queryClient = new QueryClient();
 
@@ -25,6 +28,7 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <ScrollToTop />
+        <BusinessSelector />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/manifesto" element={<Manifesto />} />
@@ -36,6 +40,8 @@ const App = () => (
           <Route path="/para-seu-negocio" element={<ParaSeuNegocio />} />
           <Route path="/contato" element={<Contato />} />
           <Route path="/trabalhe-conosco" element={<TrabalheConosco />} />
+          <Route path="/capital" element={<ValoromCapital />} />
+          <Route path="/contabil" element={<ValoromContabil />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

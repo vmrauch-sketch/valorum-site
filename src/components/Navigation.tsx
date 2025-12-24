@@ -1,10 +1,13 @@
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
+import { Button } from './ui/button';
 
 export const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
+  
+  const isCapitalOrContabil = location.pathname === "/capital" || location.pathname === "/contabil";
 
   const navItems = [
     { name: 'Início', path: '/' },
@@ -19,15 +22,28 @@ export const Navigation = () => {
   ];
 
   const isActive = (path: string) => location.pathname === path;
+  
+  // Add extra top margin when BusinessSelector is visible
+  const navTopClass = isCapitalOrContabil ? "top-10" : "top-0";
 
   return (
-    <nav className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm border-b border-border/20 z-50">
+    <nav className={`fixed ${navTopClass} left-0 right-0 bg-white/95 backdrop-blur-sm border-b border-border/20 z-50 transition-all`}>
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link to="/" className="text-2xl font-playfair font-bold text-primary">
-            Valorum
-          </Link>
+          <div className="flex items-center gap-4">
+            <Link to="/" className="text-2xl font-playfair font-bold text-primary">
+              Valorum
+            </Link>
+            <Link to="/capital">
+              <Button 
+                size="sm" 
+                className="hidden sm:inline-flex bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white text-xs px-3 py-1 h-7"
+              >
+                Capital
+              </Button>
+            </Link>
+          </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8 ml-12">
