@@ -118,6 +118,12 @@ const ValoromCapital = () => {
         {/* Stats Section */}
         <section className="py-20 bg-white border-b border-border">
           <div className="container mx-auto px-6">
+            <div className="text-center mb-12">
+              <div className="w-12 h-1 bg-gradient-to-r from-amber-400 to-amber-600 mx-auto mb-6" />
+              <h2 className="text-3xl md:text-4xl font-playfair font-bold text-primary">
+                Nosso ecossistema conta com:
+              </h2>
+            </div>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               {stats.map((stat, index) => (
                 <div key={index} className="text-center">
