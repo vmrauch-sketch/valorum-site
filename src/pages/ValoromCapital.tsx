@@ -35,11 +35,6 @@ const ValoromCapital = () => {
       description: "Soluções financeiras para empresas, desde estruturação de capital até fusões e aquisições."
     },
     {
-      icon: Building2,
-      title: "Investimentos Alternativos",
-      description: "Acesso a oportunidades exclusivas em private equity, venture capital e ativos reais."
-    },
-    {
       icon: Award,
       title: "Family Office",
       description: "Gestão completa do patrimônio familiar com governança e planejamento sucessório."
