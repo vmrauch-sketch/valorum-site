@@ -8,10 +8,9 @@ import { Button } from "@/components/ui/button";
 
 const ValoromCapital = () => {
   const stats = [
-    { number: "+500", label: "famílias atendidas", sublabel: "em todo o Brasil" },
-    { number: "+R$2B", label: "sob consultoria", sublabel: "em patrimônio" },
-    { number: "15", label: "anos de experiência", sublabel: "no mercado financeiro" },
-    { number: "100%", label: "independente", sublabel: "sem conflito de interesses" },
+    { number: "+1 Bilhão", label: "Ativos sob Gestão", sublabel: "" },
+    { number: "+1.000", label: "Famílias aos cuidados das", sublabel: "nossas Carteiras Administradas" },
+    { number: "+150 Mil", label: "Famílias atendidas em nossos", sublabel: "serviços de Consultoria Express" },
   ];
 
   const services = [
