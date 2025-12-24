@@ -52,7 +52,7 @@ const ValoromContabil = () => {
           </div>
         </section>
 
-        {/* Preview Section */}
+        {/* Services Section */}
         <section className="py-24 bg-white">
           <div className="container mx-auto px-6">
             <div className="text-center mb-16">
