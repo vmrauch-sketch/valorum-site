@@ -62,18 +62,22 @@ const ValoromContabil = () => {
             <div className="max-w-4xl mx-auto text-center">
               <div className="w-16 h-1 bg-gradient-to-r from-emerald-400 to-emerald-600 mx-auto mb-8" />
               
+              <p className="text-lg text-emerald-400 font-medium mb-4">
+                Fazendo sempre mais do que os clientes esperam
+              </p>
+              
               <h1 className="text-4xl md:text-6xl font-playfair font-bold text-white leading-tight mb-6">
                 Valorum <span className="text-emerald-400">Contábil</span>
               </h1>
               
               <p className="text-xl text-gray-300 max-w-2xl mx-auto mb-8">
-                Contabilidade especializada para cada segmento do seu negócio
+                Conheça nossas soluções e como a Valorum pode melhorar o seu negócio
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link to="/contato">
                   <Button 
-                    size="lg" 
+                    size="lg"
                     className="bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white font-semibold px-8 py-6 text-lg"
                   >
                     Quero Saber Mais
