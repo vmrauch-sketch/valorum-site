@@ -85,6 +85,34 @@ export const Navigation = () => {
         {isOpen && (
           <div className="md:hidden border-t border-border/20">
             <div className="py-4 space-y-2">
+              {/* Capital and Contabil buttons for mobile */}
+              <div className="flex gap-2 pb-4 mb-2 border-b border-border/20">
+                <Link 
+                  to="/capital" 
+                  onClick={() => setIsOpen(false)}
+                  className="flex-1"
+                >
+                  <Button 
+                    size="sm" 
+                    className="w-full bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white"
+                  >
+                    Valorum Capital
+                  </Button>
+                </Link>
+                <Link 
+                  to="/contabil" 
+                  onClick={() => setIsOpen(false)}
+                  className="flex-1"
+                >
+                  <Button 
+                    size="sm" 
+                    className="w-full bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white"
+                  >
+                    Valorum Contábil
+                  </Button>
+                </Link>
+              </div>
+              
               {navItems.map((item) => (
                 item.external ? (
                   <a
