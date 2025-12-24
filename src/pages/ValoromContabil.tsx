@@ -25,18 +25,18 @@ import { Button } from "@/components/ui/button";
 
 const ValoromContabil = () => {
   const especialidades = [
-    { icon: Home, title: "Holding Patrimonial e Familiar", description: "Sabemos que proteger seu patrimônio e planejar a sucessão familiar são prioridades. Oferecemos estruturação completa e otimização tributária." },
-    { icon: Heart, title: "Profissionais da Saúde", description: "Sabemos como funciona o seu dia a dia e como melhorar o crescimento do seu consultório." },
-    { icon: Store, title: "Lojas de Shopping", description: "Sabemos como funciona o seu dia a dia e como melhorar o crescimento do seu negócio." },
-    { icon: Utensils, title: "Restaurantes e Bares", description: "Sabemos como funciona o seu dia a dia e como melhorar o crescimento do seu restaurante." },
-    { icon: GraduationCap, title: "Escolas e Instituições", description: "Sabemos como funciona o seu dia a dia e como melhorar o crescimento da sua escola." },
-    { icon: Pill, title: "Farmácias e Drogarias", description: "Sabemos como funciona o seu dia a dia e como melhorar o crescimento da sua farmácia." },
-    { icon: PawPrint, title: "Pet Shops e Clínicas Veterinárias", description: "Sabemos como funciona o seu dia a dia e como melhorar o crescimento do seu pet shop." },
-    { icon: Factory, title: "Indústria", description: "Sabemos como funciona o seu dia a dia e como melhorar o crescimento da sua indústria." },
-    { icon: Fuel, title: "Postos de Combustíveis", description: "Sabemos como funciona o seu dia a dia e como melhorar o crescimento do seu posto de combustível." },
-    { icon: ShoppingBag, title: "Comércios", description: "Sabemos como funciona o seu dia a dia e como melhorar o crescimento da sua empresa." },
-    { icon: Briefcase, title: "Prestadores de Serviços", description: "Sabemos como funciona o seu dia a dia e como melhorar o crescimento do seu negócio." },
-    { icon: Network, title: "Franqueadoras", description: "Sabemos como funciona o seu dia a dia e como melhorar o crescimento da sua rede de franquias." },
+    { icon: Home, title: "Holding Patrimonial e Familiar", description: "Sabemos que proteger seu patrimônio e garantir a tranquilidade da sua família é prioridade." },
+    { icon: Heart, title: "Profissionais da Saúde", description: "Sabemos que seu foco é cuidar de vidas. Cuidamos da sua contabilidade." },
+    { icon: Store, title: "Lojas de Shopping", description: "Sabemos que manter a lucratividade em shopping é um desafio constante." },
+    { icon: Utensils, title: "Restaurantes e Bares", description: "Sabemos que margem apertada e alta rotatividade exigem controle preciso." },
+    { icon: GraduationCap, title: "Escolas e Instituições", description: "Sabemos que educar já é complexo. A contabilidade não precisa ser." },
+    { icon: Pill, title: "Farmácias e Drogarias", description: "Sabemos que estoque, tributos e margens precisam de atenção especial." },
+    { icon: PawPrint, title: "Pet Shops e Clínicas Veterinárias", description: "Sabemos que o mercado pet cresce, mas a gestão precisa acompanhar." },
+    { icon: Factory, title: "Indústria", description: "Sabemos que custos de produção e tributação industrial são complexos." },
+    { icon: Fuel, title: "Postos de Combustíveis", description: "Sabemos que fiscalização intensa e margens pequenas exigem precisão." },
+    { icon: ShoppingBag, title: "Comércios", description: "Sabemos que concorrência e custos tributários impactam seu resultado." },
+    { icon: Briefcase, title: "Prestadores de Serviços", description: "Sabemos que você quer focar no cliente, não na burocracia." },
+    { icon: Network, title: "Franqueadoras", description: "Sabemos que padronizar e crescer a rede exige gestão financeira sólida." },
   ];
 
   return (
