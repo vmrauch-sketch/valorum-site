@@ -16,7 +16,7 @@ const ValoromCapital = () => {
   const services = [
     {
       icon: ChartLine,
-      title: "Consultoria de Investimentos",
+      title: "Gestão de Investimentos",
       description: "Análise completa do seu perfil e objetivos para construir uma estratégia personalizada de investimentos."
     },
     {
