@@ -80,25 +80,14 @@ const ValoromCapital = () => {
                 em <strong className="text-[#d4b978] font-medium">construir e preservar patrimônio</strong> com estratégia e transparência.
               </p>
               
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Link to="/contato">
-                  <Button 
-                    size="lg" 
-                    className="bg-[#c9a962] hover:bg-[#b8994f] text-[#0a1628] font-semibold px-8 py-6 text-lg transition-all duration-300"
-                  >
-                    Agende uma Conversa
-                  </Button>
-                </Link>
-                <Link to="/manifesto">
-                  <Button 
-                    variant="outline" 
-                    size="lg"
-                    className="border border-slate-500 text-slate-200 hover:bg-slate-800/50 hover:border-slate-400 px-8 py-6 text-lg transition-all duration-300"
-                  >
-                    Conheça Nossa Filosofia
-                  </Button>
-                </Link>
-              </div>
+              <Link to="/contato">
+                <Button 
+                  size="lg" 
+                  className="bg-[#c9a962] hover:bg-[#b8994f] text-[#0a1628] font-semibold px-8 py-6 text-lg transition-all duration-300"
+                >
+                  Agende uma Conversa
+                </Button>
+              </Link>
             </div>
           </div>
           
