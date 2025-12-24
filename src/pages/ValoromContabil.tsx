@@ -25,18 +25,18 @@ import { Button } from "@/components/ui/button";
 
 const ValoromContabil = () => {
   const especialidades = [
-    { icon: Home, title: "Holding Patrimonial e Familiar", description: "Proteção, planejamento sucessório e otimização tributária" },
-    { icon: Heart, title: "Profissionais da Saúde", description: "Médicos, dentistas, clínicas e hospitais" },
-    { icon: Store, title: "Lojas de Shopping", description: "Contabilidade especializada para lojistas" },
-    { icon: Utensils, title: "Restaurantes e Bares", description: "Gestão contábil para food service" },
-    { icon: GraduationCap, title: "Escolas e Instituições", description: "Contabilidade para educação" },
-    { icon: Pill, title: "Farmácias e Drogarias", description: "Especialistas no setor farmacêutico" },
-    { icon: PawPrint, title: "Pet Shops e Clínicas Veterinárias", description: "Contabilidade para o mercado pet" },
-    { icon: Factory, title: "Indústria", description: "Gestão contábil industrial" },
-    { icon: Fuel, title: "Postos de Combustíveis", description: "Contabilidade especializada em combustíveis" },
-    { icon: ShoppingBag, title: "Comércios", description: "Soluções para varejo e atacado" },
-    { icon: Briefcase, title: "Prestadores de Serviços", description: "Contabilidade para serviços especializados" },
-    { icon: Network, title: "Franqueadoras", description: "Gestão contábil para redes de franquias" },
+    { icon: Home, title: "Holding Patrimonial e Familiar", description: "Sabemos que proteger seu patrimônio e planejar a sucessão familiar são prioridades. Oferecemos estruturação completa e otimização tributária." },
+    { icon: Heart, title: "Profissionais da Saúde", description: "Sabemos como funciona o seu dia a dia e como melhorar o crescimento do seu consultório." },
+    { icon: Store, title: "Lojas de Shopping", description: "Sabemos como funciona o seu dia a dia e como melhorar o crescimento do seu negócio." },
+    { icon: Utensils, title: "Restaurantes e Bares", description: "Sabemos como funciona o seu dia a dia e como melhorar o crescimento do seu restaurante." },
+    { icon: GraduationCap, title: "Escolas e Instituições", description: "Sabemos como funciona o seu dia a dia e como melhorar o crescimento da sua escola." },
+    { icon: Pill, title: "Farmácias e Drogarias", description: "Sabemos como funciona o seu dia a dia e como melhorar o crescimento da sua farmácia." },
+    { icon: PawPrint, title: "Pet Shops e Clínicas Veterinárias", description: "Sabemos como funciona o seu dia a dia e como melhorar o crescimento do seu pet shop." },
+    { icon: Factory, title: "Indústria", description: "Sabemos como funciona o seu dia a dia e como melhorar o crescimento da sua indústria." },
+    { icon: Fuel, title: "Postos de Combustíveis", description: "Sabemos como funciona o seu dia a dia e como melhorar o crescimento do seu posto de combustível." },
+    { icon: ShoppingBag, title: "Comércios", description: "Sabemos como funciona o seu dia a dia e como melhorar o crescimento da sua empresa." },
+    { icon: Briefcase, title: "Prestadores de Serviços", description: "Sabemos como funciona o seu dia a dia e como melhorar o crescimento do seu negócio." },
+    { icon: Network, title: "Franqueadoras", description: "Sabemos como funciona o seu dia a dia e como melhorar o crescimento da sua rede de franquias." },
   ];
 
   return (
