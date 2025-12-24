@@ -79,9 +79,9 @@ const ValoromCapital = () => {
               </h1>
               
               <p className="text-lg md:text-xl text-gray-300 max-w-2xl mb-8 leading-relaxed">
-                Nós somos a <strong className="text-white">Valorum Capital</strong>, uma consultoria de investimentos independente 
-                que vai além de números e resultados. Nós <strong className="text-amber-400">cultivamos relações</strong> e 
-                iluminamos o <strong className="text-amber-400">futuro das pessoas</strong>.
+                Nós somos a <strong className="text-white">Valorum Capital</strong>, uma casa de investimentos independente 
+                que vai além de números e resultados. Somos uma <strong className="text-amber-400">consultoria de investimentos independente</strong> que 
+                <strong className="text-amber-400"> cultiva relações</strong> e ilumina o <strong className="text-amber-400">futuro das pessoas</strong>.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4">
