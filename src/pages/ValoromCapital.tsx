@@ -68,22 +68,25 @@ const ValoromCapital = () => {
               {/* Refined gold accent bar */}
               <div className="w-20 h-0.5 bg-gradient-to-r from-[#c9a962] to-[#d4b978] mb-10" />
               
-              <h1 className="text-4xl md:text-6xl lg:text-7xl font-playfair font-bold text-white leading-tight mb-8 tracking-tight">
-                Investir é cuidar<br />
-                <span className="text-[#c9a962]">de você</span>, da sua família<br />
-                e do seu <span className="text-[#c9a962]">patrimônio</span>
+              <p className="text-[#c9a962] text-lg md:text-xl font-medium tracking-widest uppercase mb-6 animate-fade-in">
+                Valorum Capital
+              </p>
+              
+              <h1 className="text-5xl md:text-7xl lg:text-8xl font-playfair font-bold text-white leading-none mb-8 tracking-tight">
+                Dê <span className="text-[#c9a962]">Valor</span><br />
+                aos seus<br />
+                <span className="text-[#c9a962]">investimentos</span>
               </h1>
               
-              <p className="text-lg md:text-xl text-slate-300 max-w-2xl mb-10 leading-relaxed font-light">
-                Nós somos a <strong className="text-white font-medium">Valorum Capital</strong>, uma casa de investimentos independente 
-                que vai além de números e resultados. <strong className="text-[#d4b978] font-medium">Especialistas em gestão patrimonial</strong>, focados 
-                em <strong className="text-[#d4b978] font-medium">construir e preservar patrimônio</strong> com estratégia e transparência.
+              <p className="text-lg md:text-xl text-slate-300 max-w-xl mb-12 leading-relaxed font-light">
+                Uma casa de investimentos independente que constrói e preserva patrimônio 
+                com estratégia, transparência e zero conflito de interesses.
               </p>
               
               <Link to="/contato">
                 <Button 
                   size="lg" 
-                  className="bg-[#c9a962] hover:bg-[#b8994f] text-[#0a1628] font-semibold px-8 py-6 text-lg transition-all duration-300"
+                  className="bg-[#c9a962] hover:bg-[#b8994f] text-[#0a1628] font-semibold px-10 py-7 text-lg transition-all duration-300 hover:scale-105"
                 >
                   Agende uma Conversa
                 </Button>
