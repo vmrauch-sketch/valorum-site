@@ -10,7 +10,7 @@ const ValoromCapital = () => {
   const stats = [
     { number: "+1 Bilhão", label: "Ativos sob Gestão", sublabel: "" },
     { number: "+1.000", label: "Famílias aos cuidados das", sublabel: "nossas Carteiras Administradas" },
-    { number: "+150 Mil", label: "Famílias atendidas em nossos", sublabel: "serviços de Consultoria Express" },
+    { number: "+150 Mil", label: "Famílias atendidas em nossos", sublabel: "serviços de Atendimento Express" },
   ];
 
   const services = [
@@ -31,7 +31,7 @@ const ValoromCapital = () => {
     },
     {
       icon: Briefcase,
-      title: "Consultoria Empresarial",
+      title: "Assessoria Empresarial",
       description: "Soluções financeiras para empresas, desde estruturação de capital até fusões e aquisições."
     },
     {
@@ -49,9 +49,9 @@ const ValoromCapital = () => {
   return (
     <>
       <SEOHead
-        title="Valorum Capital | Consultoria de Investimentos Independente"
-        description="Consultoria de investimentos independente. Construímos e preservamos patrimônio com estratégias personalizadas e sem conflito de interesses."
-        keywords="consultoria de investimentos, planejamento patrimonial, gestão de patrimônio, investimentos, family office"
+        title="Valorum Capital | Gestão de Investimentos Independente"
+        description="Gestão de investimentos independente. Construímos e preservamos patrimônio com estratégias personalizadas e sem conflito de interesses."
+        keywords="gestão de investimentos, planejamento patrimonial, gestão de patrimônio, investimentos, family office"
         canonical="https://valorum.vilsonrauch.com.br/capital"
       />
       
@@ -81,7 +81,7 @@ const ValoromCapital = () => {
               
               <p className="text-lg md:text-xl text-slate-300 max-w-2xl mb-10 leading-relaxed font-light">
                 Nós somos a <strong className="text-white font-medium">Valorum Capital</strong>, uma casa de investimentos independente 
-                que vai além de números e resultados. Uma <strong className="text-[#d4b978] font-medium">consultoria de investimentos independente</strong> focada 
+                que vai além de números e resultados. <strong className="text-[#d4b978] font-medium">Especialistas em gestão patrimonial</strong>, focados 
                 em <strong className="text-[#d4b978] font-medium">construir e preservar patrimônio</strong> com estratégia e transparência.
               </p>
               
@@ -158,7 +158,7 @@ const ValoromCapital = () => {
                   que vão além de números e investimentos.
                 </p>
                 <p className="text-lg text-slate-600 leading-relaxed">
-                  Como <strong className="text-[#0a1628]">consultores de investimentos</strong>, não somos remunerados por 
+                  Como <strong className="text-[#0a1628]">especialistas em investimentos</strong>, não somos remunerados por 
                   produtos — trabalhamos exclusivamente para você, com total independência e transparência.
                 </p>
               </div>
@@ -218,7 +218,7 @@ const ValoromCapital = () => {
                 Por que a Valorum Capital?
               </h2>
               <p className="text-lg text-slate-400 max-w-2xl mx-auto">
-                Consultoria vs Assessoria: entenda a diferença
+                Independência vs Assessoria tradicional: entenda a diferença
               </p>
             </div>
             
@@ -226,7 +226,7 @@ const ValoromCapital = () => {
               <div className="p-10 bg-white/5 rounded-2xl border border-white/10 backdrop-blur-sm">
                 <h3 className="text-xl font-semibold text-[#c9a962] mb-6 flex items-center gap-3">
                   <Shield className="w-6 h-6" />
-                  Consultoria (Valorum)
+                  Modelo Independente (Valorum)
                 </h3>
                 <ul className="space-y-4 text-slate-300">
                   <li className="flex items-start gap-3">
