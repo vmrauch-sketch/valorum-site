@@ -7,7 +7,10 @@ export const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
   
-  const isCapitalOrContabil = location.pathname === "/capital" || location.pathname === "/contabil";
+  const isBusinessPage =
+    location.pathname === "/capital" ||
+    location.pathname === "/contabil" ||
+    location.pathname === "/patrimonio";
 
   const navItems = [
     { name: 'Início', path: '/' },
@@ -22,9 +25,9 @@ export const Navigation = () => {
   ];
 
   const isActive = (path: string) => location.pathname === path;
-  
+
   // Add extra top margin when BusinessSelector is visible
-  const navTopClass = isCapitalOrContabil ? "top-10" : "top-0";
+  const navTopClass = isBusinessPage ? "top-10" : "top-0";
 
   return (
     <nav className={`fixed ${navTopClass} left-0 right-0 bg-white/95 backdrop-blur-sm border-b border-border/20 z-50 transition-all`}>
@@ -85,12 +88,12 @@ export const Navigation = () => {
         {isOpen && (
           <div className="md:hidden border-t border-border/20">
             <div className="py-4 space-y-2">
-              {/* Capital and Contabil buttons for mobile */}
-              <div className="flex gap-2 pb-4 mb-2 border-b border-border/20">
+              {/* Capital, Contábil e Patrimônio buttons for mobile */}
+              <div className="flex flex-wrap gap-2 pb-4 mb-2 border-b border-border/20">
                 <Link 
                   to="/capital" 
                   onClick={() => setIsOpen(false)}
-                  className="flex-1"
+                  className="flex-1 min-w-[10rem]"
                 >
                   <Button 
                     size="sm" 
@@ -102,13 +105,25 @@ export const Navigation = () => {
                 <Link 
                   to="/contabil" 
                   onClick={() => setIsOpen(false)}
-                  className="flex-1"
+                  className="flex-1 min-w-[10rem]"
                 >
                   <Button 
                     size="sm" 
                     className="w-full bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white"
                   >
                     Valorum Contábil
+                  </Button>
+                </Link>
+                <Link 
+                  to="/patrimonio" 
+                  onClick={() => setIsOpen(false)}
+                  className="flex-1 min-w-[10rem]"
+                >
+                  <Button 
+                    size="sm" 
+                    className="w-full bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-600 hover:to-purple-700 text-white"
+                  >
+                    Valorum Patrimônio
                   </Button>
                 </Link>
               </div>
