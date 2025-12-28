@@ -47,20 +47,20 @@ export const Navigation = () => {
                   Capital
                 </Button>
               </Link>
-              <Link to="/contabil">
-                <Button 
-                  size="sm" 
-                  className={`bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white text-xs px-2.5 py-1 h-7 ${isActive('/contabil') ? 'ring-2 ring-emerald-300' : ''}`}
-                >
-                  Contábil
-                </Button>
-              </Link>
               <Link to="/patrimonio">
                 <Button 
                   size="sm" 
                   className={`bg-gradient-to-r from-gold-500 to-gold-600 hover:from-gold-600 hover:to-gold-700 text-white text-xs px-2.5 py-1 h-7 ${isActive('/patrimonio') ? 'ring-2 ring-gold-300' : ''}`}
                 >
                   Patrimônio
+                </Button>
+              </Link>
+              <Link to="/contabil">
+                <Button 
+                  size="sm" 
+                  className={`bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white text-xs px-2.5 py-1 h-7 ${isActive('/contabil') ? 'ring-2 ring-emerald-300' : ''}`}
+                >
+                  Contábil
                 </Button>
               </Link>
             </div>
