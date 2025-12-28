@@ -25,7 +25,7 @@ const ValoromPatrimonio = () => {
   const investmentAreas = [
     {
       title: "Investimentos Físicos",
-      description: "Imóveis e propriedades oferecem segurança e preservação de patrimônio. Avaliamos seu perfil patrimonial para guiar decisões imobiliárias que realmente expandam valor e renda.",
+      description: "Imóveis e propriedades\noferecem segurança e preservação de patrimônio. Avaliamos seu perfil patrimonial para guiar decisões imobiliárias que realmente expandam valor e renda.",
       icon: Home,
       gradient: "from-blue-600 to-blue-800"
     },
@@ -37,7 +37,7 @@ const ValoromPatrimonio = () => {
     },
     {
       title: "Investimentos Financeiros",
-      description: "Ações, fundos, renda fixa e globais garantem liquidez, dinamismo e crescimento contínuo.",
+      description: "Ações, fundos, renda fixa e globais\ngarantem liquidez, dinamismo e crescimento contínuo.",
       icon: LineChart,
       gradient: "from-green-600 to-green-800"
     }
@@ -80,7 +80,7 @@ const ValoromPatrimonio = () => {
         
         {/* Hero Section */}
         <section className="relative bg-gradient-to-br from-navy-600 via-navy-700 to-navy-800 py-20 md:py-32 overflow-hidden">
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-purple-900/20 via-transparent to-transparent"></div>
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-gold-500/20 via-transparent to-transparent"></div>
           <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-navy-800/50 to-transparent"></div>
           
           <div className="container mx-auto px-6 relative z-10">
@@ -88,13 +88,13 @@ const ValoromPatrimonio = () => {
               ref={heroRef}
               className={`max-w-4xl mx-auto text-center transform transition-all duration-1000 ease-out ${heroVisible ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'}`}
             >
-              <div className="inline-flex items-center gap-2 bg-purple-500/20 border border-purple-400/30 rounded-full px-4 py-2 mb-6">
-                <Shield className="w-4 h-4 text-purple-300" />
-                <span className="text-purple-200 text-sm font-medium">Valorum Patrimônio</span>
+              <div className="inline-flex items-center gap-2 bg-gold-500/20 border border-gold-400/30 rounded-full px-4 py-2 mb-6">
+                <Shield className="w-4 h-4 text-gold-400" />
+                <span className="text-gold-300 text-sm font-medium">Valorum Patrimônio</span>
               </div>
               
               <h1 className="text-4xl md:text-6xl font-playfair font-bold text-white mb-6 leading-tight">
-                Seu patrimônio merece uma <span className="text-purple-400">estratégia completa</span>
+                Seu patrimônio merece uma <span className="text-gold-400">estratégia completa</span>
               </h1>
               
               <p className="text-xl md:text-2xl text-gray-300 mb-8 leading-relaxed">
@@ -106,7 +106,7 @@ const ValoromPatrimonio = () => {
                   const message = encodeURIComponent("Olá, gostaria de saber mais sobre gestão patrimonial");
                   window.open(`https://wa.me/5511949566290?text=${message}`, '_blank');
                 }}
-                className="bg-purple-500 hover:bg-purple-600 text-white px-8 py-6 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+                className="bg-gold-500 hover:bg-gold-600 text-white px-8 py-6 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
               >
                 <MessageCircle className="w-5 h-5 mr-2" />
                 Fale com um Consultor
@@ -138,17 +138,17 @@ const ValoromPatrimonio = () => {
               <div className="relative">
                 {/* Indicador de Proteção */}
                 <div className={`absolute -top-12 left-1/2 transform -translate-x-1/2 z-50 transition-all duration-1000 ease-out ${triadeVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
-                  <div className="bg-gradient-to-r from-navy-600 to-purple-600 text-white px-12 py-4 rounded-full shadow-xl flex items-center gap-4 backdrop-blur-sm min-w-[400px] md:min-w-[500px]">
-                    <Shield size={22} className="text-purple-300" />
+                  <div className="bg-gradient-to-r from-navy-600 to-corporate-500 text-white px-12 py-4 rounded-full shadow-xl flex items-center gap-4 backdrop-blur-sm min-w-[400px] md:min-w-[500px]">
+                    <Shield size={22} className="text-gold-400" />
                     <span className="font-inter font-semibold text-base tracking-wide flex-1 text-center">Proteção e Segurança</span>
-                    <ShieldCheck size={22} className="text-purple-300" />
+                    <ShieldCheck size={22} className="text-gold-400" />
                   </div>
                 </div>
 
                 {/* Container de proteção */}
-                <div className={`absolute inset-0 -m-6 rounded-3xl border-2 border-purple-400/30 bg-gradient-to-br from-purple-50/20 to-transparent transition-all duration-1000 ease-out ${triadeVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`} style={{ transitionDelay: '800ms' }}>
-                  <div className="absolute inset-0 rounded-3xl shadow-lg shadow-purple-400/10"></div>
-                  <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 w-1 h-6 bg-gradient-to-b from-purple-400 to-transparent rounded-full"></div>
+                <div className={`absolute inset-0 -m-6 rounded-3xl border-2 border-gold-400/30 bg-gradient-to-br from-gold-50/20 to-transparent transition-all duration-1000 ease-out ${triadeVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`} style={{ transitionDelay: '800ms' }}>
+                  <div className="absolute inset-0 rounded-3xl shadow-lg shadow-gold-400/10"></div>
+                  <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 w-1 h-6 bg-gradient-to-b from-gold-400 to-transparent rounded-full"></div>
                 </div>
                 
                 <div className="grid md:grid-cols-3 gap-8 relative pt-8">
@@ -171,7 +171,7 @@ const ValoromPatrimonio = () => {
                             {area.title}
                           </h3>
                           
-                          <p className="text-sm md:text-base font-inter text-gray-700 leading-relaxed">
+                          <p className="text-sm md:text-base font-inter text-gray-700 leading-relaxed whitespace-pre-line">
                             {area.description}
                           </p>
                         </div>
@@ -211,8 +211,8 @@ const ValoromPatrimonio = () => {
                         transitionDelay: servicesVisible ? `${index * 100}ms` : '0ms'
                       }}
                     >
-                      <div className="w-14 h-14 bg-purple-100 rounded-xl flex items-center justify-center mb-4 group-hover:bg-purple-500 transition-colors duration-300">
-                        <IconComponent size={24} className="text-purple-600 group-hover:text-white transition-colors duration-300" />
+                      <div className="w-14 h-14 bg-gold-100 rounded-xl flex items-center justify-center mb-4 group-hover:bg-gold-500 transition-colors duration-300">
+                        <IconComponent size={24} className="text-gold-600 group-hover:text-white transition-colors duration-300" />
                       </div>
                       
                       <h3 className="text-lg font-playfair font-bold text-navy-600 mb-2">
@@ -234,7 +234,7 @@ const ValoromPatrimonio = () => {
                     const message = encodeURIComponent("Olá, gostaria de saber mais sobre gestão patrimonial");
                     window.open(`https://wa.me/5511949566290?text=${message}`, '_blank');
                   }}
-                  className="bg-purple-500 hover:bg-purple-600 text-white px-8 py-6 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+                  className="bg-gold-500 hover:bg-gold-600 text-white px-8 py-6 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
                 >
                   <MessageCircle className="w-5 h-5 mr-2" />
                   Fale com um Consultor
