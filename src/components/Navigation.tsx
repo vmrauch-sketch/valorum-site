@@ -102,6 +102,36 @@ export const Navigation = () => {
           </button>
         </div>
 
+        {/* Mobile quick-access business buttons (always visible on mobile) */}
+        <div className="sm:hidden pb-3">
+          <div className="flex flex-wrap items-center gap-2">
+            <Link to="/capital">
+              <Button
+                size="sm"
+                className={`bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white text-xs px-2.5 py-1 h-7 ${isActive('/capital') ? 'ring-2 ring-amber-300' : ''}`}
+              >
+                Capital
+              </Button>
+            </Link>
+            <Link to="/patrimonio">
+              <Button
+                size="sm"
+                className={`bg-gradient-to-r from-gold-500 to-gold-600 hover:from-gold-600 hover:to-gold-700 text-white text-xs px-2.5 py-1 h-7 ${isActive('/patrimonio') ? 'ring-2 ring-gold-300' : ''}`}
+              >
+                Patrimônio
+              </Button>
+            </Link>
+            <Link to="/contabil">
+              <Button
+                size="sm"
+                className={`bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white text-xs px-2.5 py-1 h-7 ${isActive('/contabil') ? 'ring-2 ring-emerald-300' : ''}`}
+              >
+                Contábil
+              </Button>
+            </Link>
+          </div>
+        </div>
+
         {/* Mobile Navigation */}
         {isOpen && (
           <div className="md:hidden border-t border-border/20">
