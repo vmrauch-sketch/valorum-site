@@ -33,19 +33,37 @@ export const Navigation = () => {
     <nav className={`fixed ${navTopClass} left-0 right-0 bg-white/95 backdrop-blur-sm border-b border-border/20 z-50 transition-all`}>
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-16">
-          {/* Logo */}
-          <div className="flex items-center gap-4">
+          {/* Logo + Business Buttons */}
+          <div className="flex items-center gap-2 md:gap-3">
             <Link to="/" className="text-2xl font-playfair font-bold text-primary">
               Valorum
             </Link>
-            <Link to="/capital">
-              <Button 
-                size="sm" 
-                className="hidden sm:inline-flex bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white text-xs px-3 py-1 h-7"
-              >
-                Capital
-              </Button>
-            </Link>
+            <div className="hidden sm:flex items-center gap-1.5">
+              <Link to="/capital">
+                <Button 
+                  size="sm" 
+                  className={`bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white text-xs px-2.5 py-1 h-7 ${isActive('/capital') ? 'ring-2 ring-amber-300' : ''}`}
+                >
+                  Capital
+                </Button>
+              </Link>
+              <Link to="/contabil">
+                <Button 
+                  size="sm" 
+                  className={`bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white text-xs px-2.5 py-1 h-7 ${isActive('/contabil') ? 'ring-2 ring-emerald-300' : ''}`}
+                >
+                  Contábil
+                </Button>
+              </Link>
+              <Link to="/patrimonio">
+                <Button 
+                  size="sm" 
+                  className={`bg-gradient-to-r from-gold-500 to-gold-600 hover:from-gold-600 hover:to-gold-700 text-white text-xs px-2.5 py-1 h-7 ${isActive('/patrimonio') ? 'ring-2 ring-gold-300' : ''}`}
+                >
+                  Patrimônio
+                </Button>
+              </Link>
+            </div>
           </div>
 
           {/* Desktop Navigation */}
