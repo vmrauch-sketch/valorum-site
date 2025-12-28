@@ -44,7 +44,7 @@ const Hero = () => {
                 Aqui você encontra todas as soluções para seu patrimônio!
               </span>
               <span className="text-xl md:text-2xl text-navy-600 font-inter mb-6 block leading-relaxed">
-                Somos a evolução do wealth e do multi-family office (MFO), conhecimento e tecnologia capazes de antecipar cenários, reduzir riscos e potencializar oportunidades em todas as fases da sua vida.
+                Somos a evolução do Wealth e do Multi Family Office (MFO), conhecimento e tecnologia capazes de antecipar cenários, reduzir riscos e potencializar oportunidades em todas as fases da sua vida.
               </span>
               <span className="text-xl md:text-2xl text-navy-600 font-inter block">
                 Valorum é construção e gestão patrimonial com propósito.<br />
