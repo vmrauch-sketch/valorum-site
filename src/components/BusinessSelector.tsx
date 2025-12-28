@@ -44,7 +44,7 @@ export const BusinessSelector = () => {
             className={cn(
               "px-3 py-1.5 rounded-full text-sm font-medium transition-all",
               isPatrimonio 
-                ? "bg-purple-500 text-white" 
+                ? "bg-gold-500 text-white" 
                 : "text-white/70 hover:text-white hover:bg-white/10"
             )}
           >
