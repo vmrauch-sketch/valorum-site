@@ -41,7 +41,7 @@ const Hero = () => {
                 Soluções Patrimoniais e Financeiras Completas para Você e Seu Negócio!
               </span>
               <span className="text-xl md:text-2xl text-navy-600 font-inter mb-4 block">
-                Temos certeza de que aqui você encontra todas as soluções para seu patrimônio!
+                Aqui você encontra todas as soluções para seu patrimônio!
               </span>
               <span className="text-xl md:text-2xl text-navy-600 font-inter mb-6 block leading-relaxed">
                 Somos a evolução do wealth e do multi-family office (MFO), conhecimento e tecnologia capazes de antecipar cenários, reduzir riscos e potencializar oportunidades em todas as fases da sua vida.
