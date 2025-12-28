@@ -47,7 +47,7 @@ const Hero = () => {
                 Somos a evolução do wealth e do multi-family office (MFO), conhecimento e tecnologia capazes de antecipar cenários, reduzir riscos e potencializar oportunidades em todas as fases da sua vida.
               </span>
               <span className="text-xl md:text-2xl text-navy-600 font-inter block">
-                Valorum é planejamento patrimonial com propósito.<br />
+                Valorum é planejamento, construção e gestão patrimonial com propósito.<br />
                 Guiamos nossos clientes com clareza, estratégia e autonomia.<br />
                 Transformando patrimônio em uma fonte real de liberdade.
               </span>
