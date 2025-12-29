@@ -37,7 +37,7 @@ const ValoromCapital = () => {
     {
       icon: Award,
       title: "Family Office",
-      description: "Gestão completa do patrimônio familiar com governança e planejamento sucessório."
+      description: "Construção e gestão completa do patrimônio familiar."
     }
   ];
 
