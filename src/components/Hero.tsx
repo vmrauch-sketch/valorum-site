@@ -34,6 +34,13 @@ const Hero = () => {
             </div>
           </div>
 
+          {/* Slogan */}
+          <div className={`mb-6 transform transition-all duration-1000 ease-out delay-400 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
+            <p className="text-2xl md:text-3xl font-playfair font-semibold italic text-gold-600">
+              "Patrimônio não se improvisa"
+            </p>
+          </div>
+
           {/* Impact Phrase - Single Line */}
           <div className={`text-xl md:text-2xl font-inter mx-auto mb-8 text-navy-600 transform transition-all duration-1000 ease-out delay-600 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
             <span className="block text-center">
