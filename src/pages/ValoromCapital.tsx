@@ -32,7 +32,7 @@ const ValoromCapital = () => {
     {
       icon: Briefcase,
       title: "Assessoria Empresarial",
-      description: "Soluções completas para empresas: Conta Digital PJ, Folha de Pagamento, financiamento solar, câmbio comercial e estruturação financeira."
+      description: "Soluções completas para empresas: Conta Digital PJ, Folha de Pagamento, financiamento solar, câmbio comercial, estruturação financeira e carteira de investimentos."
     },
     {
       icon: Award,
