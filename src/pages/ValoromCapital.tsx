@@ -54,7 +54,7 @@ const ValoromCapital = () => {
         <Navigation />
         
         {/* Hero Section - Elegant dark navy */}
-        <section className="relative min-h-screen flex items-center bg-gradient-to-br from-[#0a1628] via-[#0d1f3c] to-[#0a1628] pt-16">
+        <section className="relative min-h-screen flex items-center bg-gradient-to-br from-[#0a1628] via-[#0d1f3c] to-[#0a1628] pt-28 sm:pt-16">
           {/* Subtle decorative elements */}
           <div className="absolute inset-0 overflow-hidden">
             <div className="absolute top-20 left-10 w-96 h-96 bg-[#1a3a5c]/20 rounded-full blur-3xl" />

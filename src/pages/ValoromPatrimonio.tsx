@@ -75,11 +75,11 @@ const ValoromPatrimonio = () => {
         canonical="https://valorum.vilsonrauch.com.br/patrimonio"
       />
       
-      <div className="min-h-screen bg-white font-inter pt-10">
+      <div className="min-h-screen bg-white font-inter">
         <Navigation />
         
         {/* Hero Section */}
-        <section className="relative bg-gradient-to-br from-navy-600 via-navy-700 to-navy-800 py-20 md:py-32 overflow-hidden">
+        <section className="relative bg-gradient-to-br from-navy-600 via-navy-700 to-navy-800 pt-28 pb-20 md:py-32 overflow-hidden">
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-gold-500/20 via-transparent to-transparent"></div>
           <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-navy-800/50 to-transparent"></div>
           

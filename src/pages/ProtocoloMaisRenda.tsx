@@ -131,7 +131,7 @@ const ProtocoloMaisRenda = () => {
       
       <div className="min-h-screen bg-white font-inter">
         <Navigation />
-        <div className="pt-16">
+        <div className="pt-28 sm:pt-16">
         {/* Header */}
         <section className="py-20 bg-gradient-to-br from-navy-600 to-navy-800">
           <div className="container mx-auto px-6">
