@@ -73,6 +73,10 @@ const ValoromCapital = () => {
                 <span className="text-[#c9a962]">investimentos</span>
               </h1>
               
+              <p className="text-2xl md:text-3xl font-playfair font-semibold italic text-[#c9a962] mb-8">
+                "Menos ruído. Mais estratégia."
+              </p>
+              
               <p className="text-lg md:text-xl text-slate-300 max-w-xl mb-12 leading-relaxed font-light">
                 Uma casa de investimentos independente que constrói e preserva patrimônio 
                 com estratégia, transparência e zero conflito de interesses.
