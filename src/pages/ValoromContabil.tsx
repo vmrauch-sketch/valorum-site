@@ -18,7 +18,8 @@ import {
   Fuel,
   ShoppingBag,
   Briefcase,
-  Network
+  Network,
+  TrendingUp
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -139,6 +140,7 @@ const ValoromContabil = () => {
                 { icon: FileText, title: "Planejamento Tributário" },
                 { icon: Building2, title: "Abertura de Empresas" },
                 { icon: Users, title: "BPO Financeiro" },
+                { icon: TrendingUp, title: "Consultoria Financeira" },
               ].map((item, index) => (
                 <div 
                   key={index}
