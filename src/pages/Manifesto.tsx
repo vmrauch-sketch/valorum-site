@@ -7,7 +7,7 @@ const Manifesto = () => {
   return (
     <div className="min-h-screen bg-white font-inter">
       <Navigation />
-      <div className="pt-16">
+      <div className="pt-28 sm:pt-16">
         <ManifestoComponent />
       </div>
       <Footer />

@@ -42,7 +42,7 @@ const TrabalheConosco = () => {
       <div className="min-h-screen bg-white">
         <Navigation />
         
-        <main className="pt-24">
+        <main className="pt-32 sm:pt-24">
           <section className="py-12 md:py-20" ref={sectionRef}>
             <div className="container mx-auto px-4 max-w-7xl">
               <div className="max-w-6xl mx-auto">

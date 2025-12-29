@@ -6,11 +6,6 @@ import { Button } from './ui/button';
 export const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
-  
-  const isBusinessPage =
-    location.pathname === "/capital" ||
-    location.pathname === "/contabil" ||
-    location.pathname === "/patrimonio";
 
   const navItems = [
     { name: 'Início', path: '/' },
@@ -26,11 +21,8 @@ export const Navigation = () => {
 
   const isActive = (path: string) => location.pathname === path;
 
-  // Add extra top margin when BusinessSelector is visible
-  const navTopClass = isBusinessPage ? "top-10" : "top-0";
-
   return (
-    <nav className={`fixed ${navTopClass} left-0 right-0 bg-white/95 backdrop-blur-sm border-b border-border/20 z-50 transition-all`}>
+    <nav className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm border-b border-border/20 z-50 transition-all">
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-16">
           {/* Logo + Business Buttons */}

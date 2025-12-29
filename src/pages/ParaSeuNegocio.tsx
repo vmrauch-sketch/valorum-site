@@ -91,7 +91,7 @@ const ParaSeuNegocio = () => {
       
       <div className="min-h-screen bg-white font-inter">
         <Navigation />
-        <div className="pt-16">
+        <div className="pt-28 sm:pt-16">
           <section className="py-20 bg-white">
             <div className="container mx-auto px-6">
               <div className="max-w-6xl mx-auto">

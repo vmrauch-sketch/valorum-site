@@ -13,7 +13,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-white">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-white pt-28 sm:pt-16">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-20 left-20 w-32 h-32 border border-navy-600/20 rounded-full"></div>
