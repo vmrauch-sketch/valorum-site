@@ -173,7 +173,7 @@ const ValoromCapital = () => {
                 Nossas Soluções
               </h2>
               <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-                Oferecemos um ecossistema completo de soluções financeiras para você e sua família
+                Oferecemos um ecossistema completo de soluções financeiras para você.
               </p>
             </div>
             
