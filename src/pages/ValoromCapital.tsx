@@ -220,7 +220,7 @@ const ValoromCapital = () => {
                 <ul className="space-y-4 text-slate-300">
                   <li className="flex items-start gap-3">
                     <span className="text-[#c9a962] mt-0.5">✓</span>
-                    <span>Remuneração fixa, sem comissões</span>
+                    <span>Remuneração transparente</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-[#c9a962] mt-0.5">✓</span>
