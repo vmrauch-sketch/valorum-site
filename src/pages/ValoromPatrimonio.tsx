@@ -60,6 +60,11 @@ const ValoromPatrimonio = () => {
       description: "Estratégias jurídicas e financeiras para blindar seu patrimônio contra riscos e imprevistos."
     },
     {
+      icon: Shield,
+      title: "Planejamento Patrimonial",
+      description: "Estruturação e proteção do seu patrimônio para as próximas gerações com estratégias fiscais eficientes."
+    },
+    {
       icon: Users,
       title: "Planejamento Sucessório",
       description: "Prepare a transferência do seu patrimônio para as próximas gerações de forma eficiente e harmoniosa."
