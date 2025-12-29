@@ -273,7 +273,7 @@ const ValoromCapital = () => {
                 Pronto para cuidar melhor do seu patrimônio?
               </h2>
               <p className="text-lg text-slate-600 mb-10">
-                Agende uma conversa sem compromisso e descubra como podemos ajudar você e sua família.
+                Agende uma conversa e descubra como podemos ajudar você e sua família.
               </p>
               <Link to="/contato">
                 <Button 
