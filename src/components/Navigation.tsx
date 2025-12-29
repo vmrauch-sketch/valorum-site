@@ -67,7 +67,7 @@ export const Navigation = () => {
                   href={item.path}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-medium transition-colors hover:text-primary text-muted-foreground"
+                  className="font-medium transition-all text-muted-foreground hover:text-primary px-3 py-1.5 rounded-md hover:bg-primary/10 active:bg-primary/20 active:scale-95"
                 >
                   {item.name}
                 </a>
@@ -75,8 +75,8 @@ export const Navigation = () => {
                 <Link
                   key={item.path}
                   to={item.path}
-                  className={`font-medium transition-colors hover:text-primary ${
-                    isActive(item.path) ? 'text-primary' : 'text-muted-foreground'
+                  className={`font-medium transition-all px-3 py-1.5 rounded-md hover:bg-primary/10 active:bg-primary/20 active:scale-95 ${
+                    isActive(item.path) ? 'text-primary bg-primary/5' : 'text-muted-foreground hover:text-primary'
                   }`}
                 >
                   {item.name}
@@ -176,7 +176,7 @@ export const Navigation = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setIsOpen(false)}
-                    className="block py-2 font-medium transition-colors hover:text-primary text-muted-foreground"
+                    className="block py-2 px-3 font-medium transition-all text-muted-foreground hover:text-primary hover:bg-primary/10 active:bg-primary/20 rounded-md"
                   >
                     {item.name}
                   </a>
@@ -185,8 +185,8 @@ export const Navigation = () => {
                     key={item.path}
                     to={item.path}
                     onClick={() => setIsOpen(false)}
-                    className={`block py-2 font-medium transition-colors hover:text-primary ${
-                      isActive(item.path) ? 'text-primary' : 'text-muted-foreground'
+                    className={`block py-2 px-3 font-medium transition-all hover:bg-primary/10 active:bg-primary/20 rounded-md ${
+                      isActive(item.path) ? 'text-primary bg-primary/5' : 'text-muted-foreground hover:text-primary'
                     }`}
                   >
                     {item.name}
