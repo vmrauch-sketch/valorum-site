@@ -32,7 +32,7 @@ const ValoromCapital = () => {
     {
       icon: Briefcase,
       title: "Assessoria Empresarial",
-      description: "Soluções financeiras para empresas, desde estruturação de capital até fusões e aquisições."
+      description: "Soluções completas para empresas: Conta Digital PJ, Folha de Pagamento, financiamento solar, câmbio comercial e estruturação financeira."
     },
     {
       icon: Award,
@@ -150,8 +150,15 @@ const ValoromCapital = () => {
                 </p>
               </div>
               <div className="relative">
-                <div className="aspect-square bg-gradient-to-br from-slate-100 to-slate-200 rounded-3xl flex items-center justify-center shadow-sm">
-                  <TrendingUp className="w-32 h-32 text-[#0a1628]/30" />
+                <div className="aspect-square bg-gradient-to-br from-slate-100 to-slate-200 rounded-3xl flex items-center justify-center shadow-sm overflow-hidden">
+                  {/* Chart bars visualization */}
+                  <div className="flex items-end gap-3 h-32">
+                    <div className="w-6 bg-[#0a1628]/20 rounded-t-md h-12 animate-pulse" style={{ animationDelay: '0ms' }} />
+                    <div className="w-6 bg-[#0a1628]/30 rounded-t-md h-20 animate-pulse" style={{ animationDelay: '100ms' }} />
+                    <div className="w-6 bg-[#0a1628]/40 rounded-t-md h-16 animate-pulse" style={{ animationDelay: '200ms' }} />
+                    <div className="w-6 bg-[#c9a962]/60 rounded-t-md h-24 animate-pulse" style={{ animationDelay: '300ms' }} />
+                    <div className="w-6 bg-[#c9a962] rounded-t-md h-32 animate-pulse" style={{ animationDelay: '400ms' }} />
+                  </div>
                 </div>
                 <div className="absolute -bottom-6 -right-6 bg-[#0a1628] text-white p-8 rounded-2xl shadow-2xl">
                   <p className="text-4xl font-playfair font-bold">100%</p>
