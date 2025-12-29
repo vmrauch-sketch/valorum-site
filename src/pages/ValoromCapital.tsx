@@ -20,11 +20,6 @@ const ValoromCapital = () => {
       description: "Análise completa do seu perfil e objetivos para construir uma estratégia personalizada de investimentos."
     },
     {
-      icon: Shield,
-      title: "Planejamento Patrimonial",
-      description: "Estruturação e proteção do seu patrimônio para as próximas gerações com estratégias fiscais eficientes."
-    },
-    {
       icon: Target,
       title: "Gestão de Riscos",
       description: "Identificação e mitigação de riscos financeiros para garantir a preservação do seu capital."
