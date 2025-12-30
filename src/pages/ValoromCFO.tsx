@@ -250,25 +250,49 @@ const ValoromCFO = () => {
               </p>
             </div>
             
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
-              {[
-                { icon: Building2, title: "PMEs em crescimento" },
-                { icon: TrendingUp, title: "Startups em expansão" },
-                { icon: Users, title: "Empresas familiares" },
-                { icon: Wallet, title: "Negócios em reestruturação" },
-              ].map((item, index) => (
-                <div 
-                  key={index}
-                  className="p-6 bg-white rounded-2xl text-center border border-border/50 hover:shadow-lg hover:border-lime-200 transition-all duration-300"
-                >
-                  <div className="w-14 h-14 bg-gradient-to-br from-lime-400 to-lime-500 rounded-xl flex items-center justify-center mx-auto mb-4">
-                    <item.icon className="w-7 h-7 text-white" />
+            <div className="space-y-6 max-w-5xl mx-auto">
+              {/* Primeira linha - prioridade */}
+              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                {[
+                  { icon: Building2, title: "Indústrias" },
+                  { icon: Users, title: "Clínicas Médicas" },
+                  { icon: Users, title: "Clínicas Odontológicas" },
+                  { icon: Users, title: "Empresas Familiares" },
+                ].map((item, index) => (
+                  <div 
+                    key={index}
+                    className="p-6 bg-white rounded-2xl text-center border border-border/50 hover:shadow-lg hover:border-lime-200 transition-all duration-300"
+                  >
+                    <div className="w-14 h-14 bg-gradient-to-br from-lime-400 to-lime-500 rounded-xl flex items-center justify-center mx-auto mb-4">
+                      <item.icon className="w-7 h-7 text-white" />
+                    </div>
+                    <h3 className="font-semibold text-primary">
+                      {item.title}
+                    </h3>
                   </div>
-                  <h3 className="font-semibold text-primary">
-                    {item.title}
-                  </h3>
-                </div>
-              ))}
+                ))}
+              </div>
+              
+              {/* Segunda linha */}
+              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                {[
+                  { icon: Building2, title: "PMEs em crescimento" },
+                  { icon: TrendingUp, title: "Startups em expansão" },
+                  { icon: Wallet, title: "Negócios em reestruturação" },
+                ].map((item, index) => (
+                  <div 
+                    key={index}
+                    className="p-6 bg-white rounded-2xl text-center border border-border/50 hover:shadow-lg hover:border-lime-200 transition-all duration-300"
+                  >
+                    <div className="w-14 h-14 bg-gradient-to-br from-lime-400 to-lime-500 rounded-xl flex items-center justify-center mx-auto mb-4">
+                      <item.icon className="w-7 h-7 text-white" />
+                    </div>
+                    <h3 className="font-semibold text-primary">
+                      {item.title}
+                    </h3>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </section>
