@@ -55,6 +55,14 @@ export const Navigation = () => {
                   Contábil
                 </Button>
               </Link>
+              <Link to="/cfo">
+                <Button 
+                  size="sm" 
+                  className={`bg-gradient-to-r from-lime-400 to-lime-500 hover:from-lime-500 hover:to-lime-600 text-primary text-xs px-2.5 py-1 h-7 font-semibold ${isActive('/cfo') ? 'ring-2 ring-lime-300' : ''}`}
+                >
+                  CFO
+                </Button>
+              </Link>
             </div>
           </div>
 
@@ -121,6 +129,14 @@ export const Navigation = () => {
                 Contábil
               </Button>
             </Link>
+            <Link to="/cfo">
+              <Button
+                size="sm"
+                className={`bg-gradient-to-r from-lime-400 to-lime-500 hover:from-lime-500 hover:to-lime-600 text-primary text-xs px-2.5 py-1 h-7 font-semibold ${isActive('/cfo') ? 'ring-2 ring-lime-300' : ''}`}
+              >
+                CFO
+              </Button>
+            </Link>
           </div>
         </div>
 
@@ -164,6 +180,18 @@ export const Navigation = () => {
                     className="w-full bg-gradient-to-r from-gold-500 to-gold-600 hover:from-gold-600 hover:to-gold-700 text-white"
                   >
                     Valorum Patrimônio
+                  </Button>
+                </Link>
+                <Link 
+                  to="/cfo" 
+                  onClick={() => setIsOpen(false)}
+                  className="flex-1 min-w-[10rem]"
+                >
+                  <Button 
+                    size="sm" 
+                    className="w-full bg-gradient-to-r from-lime-400 to-lime-500 hover:from-lime-500 hover:to-lime-600 text-primary font-semibold"
+                  >
+                    Valorum CFO
                   </Button>
                 </Link>
               </div>
