@@ -122,7 +122,7 @@ const ValoromCFO = () => {
               </p>
               
               <p className="text-lg text-gray-400 max-w-3xl mx-auto mb-8">
-                Com nosso serviço de CFO Terceirizado, você conta com um Diretor Financeiro especializado que aplica nossa metodologia na sua empresa, trazendo a visão estratégica que você precisa para impulsionar seus resultados.
+                Com nosso serviço de CFO Terceirizado, você conta com um "Diretor Financeiro" especializado que aplica nossa metodologia na sua empresa, trazendo a visão estratégica que você precisa para impulsionar seus resultados.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
