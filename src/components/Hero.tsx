@@ -2,6 +2,7 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { Button } from "@/components/ui/button";
 import { MessageCircle } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   const { elementRef, isVisible } = useScrollAnimation();
@@ -47,6 +48,31 @@ const Hero = () => {
               <span className="text-xl md:text-2xl text-navy-600 font-inter mb-4 block">
                 Soluções Patrimoniais e Financeiras Completas!
               </span>
+              
+              {/* Sub-brand buttons */}
+              <div className="flex flex-wrap justify-center gap-3 mb-6">
+                <Link to="/capital">
+                  <Button variant="outline" className="bg-gradient-to-r from-corporate-500 to-corporate-600 hover:from-corporate-600 hover:to-corporate-700 text-white border-none font-medium px-4 py-2 text-sm">
+                    Capital
+                  </Button>
+                </Link>
+                <Link to="/patrimonio">
+                  <Button variant="outline" className="bg-gradient-to-r from-gold-500 to-gold-600 hover:from-gold-600 hover:to-gold-700 text-white border-none font-medium px-4 py-2 text-sm">
+                    Patrimônio
+                  </Button>
+                </Link>
+                <Link to="/contabil">
+                  <Button variant="outline" className="bg-gradient-to-r from-navy-500 to-navy-600 hover:from-navy-600 hover:to-navy-700 text-white border-none font-medium px-4 py-2 text-sm">
+                    Contábil
+                  </Button>
+                </Link>
+                <Link to="/cfo">
+                  <Button variant="outline" className="bg-gradient-to-r from-lime-400 to-lime-500 hover:from-lime-500 hover:to-lime-600 text-primary border-none font-medium px-4 py-2 text-sm">
+                    CFO
+                  </Button>
+                </Link>
+              </div>
+              
               <span className="text-xl md:text-2xl text-navy-600 font-inter mb-4 block">
                 Aqui você encontra todas as soluções para seu patrimônio!
               </span>
