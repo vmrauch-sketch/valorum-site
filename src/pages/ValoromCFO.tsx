@@ -59,7 +59,7 @@ const ValoromCFO = () => {
     { 
       icon: Lightbulb, 
       title: "Visão Estratégica", 
-      description: "Um CFO dedicado que traz a visão estratégica que você precisa para impulsionar seus resultados." 
+      description: "Um CFO dedicado que traz a visão estratégica que você precisa para impulsionar seus resultados. Do operacional ao estratégico, nenhuma ponta fica solta." 
     },
     { 
       icon: Users, 
