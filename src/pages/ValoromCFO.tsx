@@ -113,9 +113,13 @@ const ValoromCFO = () => {
                 Terceirização Estratégica de CFO
               </p>
               
-              <h1 className="text-4xl md:text-6xl font-playfair font-bold text-white leading-tight mb-6">
+              <h1 className="text-4xl md:text-6xl font-playfair font-bold text-white leading-tight mb-4">
                 Valorum <span className="text-lime-400">CFO</span>
               </h1>
+              
+              <p className="text-xl md:text-2xl font-playfair italic text-lime-400 mb-6">
+                "Compreender pessoas. Expandir negócios."
+              </p>
               
               <p className="text-xl text-gray-300 max-w-2xl mx-auto mb-4">
                 Mais tempo para o CEO focar na estratégia e sair do operacional
