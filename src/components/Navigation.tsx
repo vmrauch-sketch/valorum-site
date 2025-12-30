@@ -32,9 +32,9 @@ export const Navigation = () => {
             </Link>
             <div className="hidden sm:flex items-center gap-1.5">
               <Link to="/capital">
-                <Button 
+              <Button 
                   size="sm" 
-                  className={`bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white text-xs px-2.5 py-1 h-7 ${isActive('/capital') ? 'ring-2 ring-amber-300' : ''}`}
+                  className={`bg-gradient-to-r from-corporate-500 to-corporate-600 hover:from-corporate-600 hover:to-corporate-700 text-white text-xs px-2.5 py-1 h-7 ${isActive('/capital') ? 'ring-2 ring-corporate-300' : ''}`}
                 >
                   Capital
                 </Button>
@@ -108,7 +108,7 @@ export const Navigation = () => {
             <Link to="/capital">
               <Button
                 size="sm"
-                className={`bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white text-xs px-2.5 py-1 h-7 ${isActive('/capital') ? 'ring-2 ring-amber-300' : ''}`}
+                className={`bg-gradient-to-r from-corporate-500 to-corporate-600 hover:from-corporate-600 hover:to-corporate-700 text-white text-xs px-2.5 py-1 h-7 ${isActive('/capital') ? 'ring-2 ring-corporate-300' : ''}`}
               >
                 Capital
               </Button>
@@ -153,7 +153,7 @@ export const Navigation = () => {
                 >
                   <Button 
                     size="sm" 
-                    className="w-full bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white"
+                    className="w-full bg-gradient-to-r from-corporate-500 to-corporate-600 hover:from-corporate-600 hover:to-corporate-700 text-white"
                   >
                     Valorum Capital
                   </Button>
