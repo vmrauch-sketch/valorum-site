@@ -67,30 +67,43 @@ export const Navigation = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center space-x-1 xl:space-x-3 ml-6">
-            {navItems.map((item) => (
-              item.external ? (
-                <a
-                  key={item.path}
-                  href={item.path}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="font-medium transition-all text-muted-foreground hover:text-primary px-2 xl:px-3 py-1.5 rounded-md hover:bg-primary/10 active:bg-primary/20 active:scale-95 text-sm whitespace-nowrap"
-                >
-                  {item.name}
-                </a>
-              ) : (
-                <Link
-                  key={item.path}
-                  to={item.path}
-                  className={`font-medium transition-all px-2 xl:px-3 py-1.5 rounded-md hover:bg-primary/10 active:bg-primary/20 active:scale-95 text-sm whitespace-nowrap ${
-                    isActive(item.path) ? 'text-primary bg-primary/5' : 'text-muted-foreground hover:text-primary'
-                  }`}
-                >
-                  {item.name}
-                </Link>
-              )
-            ))}
+          <div className="hidden lg:flex items-center ml-6 flex-1 min-w-0 gap-2">
+            <div className="flex-1 min-w-0">
+              <div className="flex items-center gap-1 xl:gap-3 overflow-x-auto">
+                {navItems.filter((item) => item.name !== 'Contato').map((item) => (
+                  item.external ? (
+                    <a
+                      key={item.path}
+                      href={item.path}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="font-medium transition-all text-muted-foreground hover:text-primary px-2 xl:px-3 py-1.5 rounded-md hover:bg-primary/10 active:bg-primary/20 active:scale-95 text-sm whitespace-nowrap"
+                    >
+                      {item.name}
+                    </a>
+                  ) : (
+                    <Link
+                      key={item.path}
+                      to={item.path}
+                      className={`font-medium transition-all px-2 xl:px-3 py-1.5 rounded-md hover:bg-primary/10 active:bg-primary/20 active:scale-95 text-sm whitespace-nowrap ${
+                        isActive(item.path) ? 'text-primary bg-primary/5' : 'text-muted-foreground hover:text-primary'
+                      }`}
+                    >
+                      {item.name}
+                    </Link>
+                  )
+                ))}
+              </div>
+            </div>
+
+            <Link
+              to="/contato"
+              className={`shrink-0 font-medium transition-all px-2 xl:px-3 py-1.5 rounded-md hover:bg-primary/10 active:bg-primary/20 active:scale-95 text-sm whitespace-nowrap ${
+                isActive('/contato') ? 'text-primary bg-primary/5' : 'text-muted-foreground hover:text-primary'
+              }`}
+            >
+              Contato
+            </Link>
           </div>
 
           {/* Mobile menu button */}
