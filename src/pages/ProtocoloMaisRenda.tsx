@@ -95,7 +95,7 @@ const ProtocoloMaisRenda = () => {
   const processSteps = [
     {
       step: "01",
-      title: "Análise Patrimonial",
+      title: "Análise Patrimonial e Empresarial",
       description: "Diagnóstico completo da sua situação financeira atual",
       icon: Target
     },
