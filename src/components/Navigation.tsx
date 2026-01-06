@@ -67,7 +67,7 @@ export const Navigation = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8 ml-12">
+          <div className="hidden lg:flex items-center space-x-1 xl:space-x-3 ml-6">
             {navItems.map((item) => (
               item.external ? (
                 <a
@@ -75,7 +75,7 @@ export const Navigation = () => {
                   href={item.path}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-medium transition-all text-muted-foreground hover:text-primary px-3 py-1.5 rounded-md hover:bg-primary/10 active:bg-primary/20 active:scale-95"
+                  className="font-medium transition-all text-muted-foreground hover:text-primary px-2 xl:px-3 py-1.5 rounded-md hover:bg-primary/10 active:bg-primary/20 active:scale-95 text-sm whitespace-nowrap"
                 >
                   {item.name}
                 </a>
@@ -83,7 +83,7 @@ export const Navigation = () => {
                 <Link
                   key={item.path}
                   to={item.path}
-                  className={`font-medium transition-all px-3 py-1.5 rounded-md hover:bg-primary/10 active:bg-primary/20 active:scale-95 ${
+                  className={`font-medium transition-all px-2 xl:px-3 py-1.5 rounded-md hover:bg-primary/10 active:bg-primary/20 active:scale-95 text-sm whitespace-nowrap ${
                     isActive(item.path) ? 'text-primary bg-primary/5' : 'text-muted-foreground hover:text-primary'
                   }`}
                 >
@@ -96,7 +96,7 @@ export const Navigation = () => {
           {/* Mobile menu button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden p-2 text-muted-foreground hover:text-primary"
+            className="lg:hidden p-2 text-muted-foreground hover:text-primary"
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -142,7 +142,7 @@ export const Navigation = () => {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden border-t border-border/20">
+          <div className="lg:hidden border-t border-border/20">
             <div className="py-4 space-y-2">
               {/* Capital, Contábil e Patrimônio buttons for mobile */}
               <div className="flex flex-wrap gap-2 pb-4 mb-2 border-b border-border/20">
