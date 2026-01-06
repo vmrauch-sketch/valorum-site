@@ -87,7 +87,7 @@ const ProtocoloMaisRenda = () => {
     },
     {
       title: "Otimização Tributária",
-      description: "Estruturas eficientes para redução de impostos",
+      description: "Estruturas eficientes para redução de impostos e contabilidade especializada",
       icon: DollarSign
     }
   ];
