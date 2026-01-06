@@ -2,6 +2,7 @@ import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { SEOHead } from "@/components/SEOHead";
+import { SEOData, StructuredData } from "@/data/seoData";
 import { 
   TrendingUp,
   Target,
@@ -89,10 +90,11 @@ const ValoromCFO = () => {
   return (
     <>
       <SEOHead
-        title="Valorum CFO | Terceirização Estratégica de CFO"
-        description="CFO terceirizado para sua empresa. Expertise financeira, decisões estratégicas, controladoria e gestão de fluxo de caixa para impulsionar seus resultados."
-        keywords="CFO terceirizado, diretor financeiro, controladoria, gestão financeira, planejamento orçamentário, fluxo de caixa, análise financeira"
+        title={SEOData.valorumCFO.title}
+        description={SEOData.valorumCFO.description}
+        keywords={SEOData.valorumCFO.keywords}
         canonical="https://valorum.vilsonrauch.com.br/cfo"
+        structuredData={StructuredData.cfoService}
       />
       
       <div className="min-h-screen bg-background font-inter">
