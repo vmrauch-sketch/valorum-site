@@ -16,14 +16,18 @@ Allow: /
 # Important pages for SEO
 Allow: /vilson-rauch
 Allow: /protocolo-mais-renda
-Allow: /servicos
+Allow: /capital
+Allow: /patrimonio
+Allow: /contabil
+Allow: /cfo
+Allow: /para-voce
+Allow: /para-seu-negocio
 Allow: /manifesto
-Allow: /especializacoes
-Allow: /estrategias
 Allow: /contato
+Allow: /trabalhe-conosco
 
 # Sitemap location
-Sitemap: https://valorumcapital.com.br/sitemap.xml
+Sitemap: https://valorum.vilsonrauch.com.br/sitemap.xml
 
 # Crawl-delay (helps with server load)
 Crawl-delay: 1

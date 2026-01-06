@@ -2,6 +2,7 @@ import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { SEOHead } from "@/components/SEOHead";
+import { SEOData, StructuredData } from "@/data/seoData";
 import { Button } from "@/components/ui/button";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { 
@@ -74,10 +75,11 @@ const ValoromPatrimonio = () => {
   return (
     <>
       <SEOHead
-        title="Valorum Patrimônio | Gestão e Proteção Patrimonial"
-        description="Gestão patrimonial completa com foco em proteção, crescimento e sucessão. Conheça a Tríade Patrimonial da Valorum."
-        keywords="gestão patrimonial, proteção de patrimônio, investimentos, planejamento sucessório, holding familiar"
+        title={SEOData.valorumPatrimonio.title}
+        description={SEOData.valorumPatrimonio.description}
+        keywords={SEOData.valorumPatrimonio.keywords}
         canonical="https://valorum.vilsonrauch.com.br/patrimonio"
+        structuredData={StructuredData.patrimonioService}
       />
       
       <div className="min-h-screen bg-white font-inter">

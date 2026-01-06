@@ -2,6 +2,7 @@ import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { SEOHead } from "@/components/SEOHead";
+import { SEOData, StructuredData } from "@/data/seoData";
 import { TrendingUp, Users, Shield, Target, ChartLine, Briefcase, Building2, Award } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -39,10 +40,11 @@ const ValoromCapital = () => {
   return (
     <>
       <SEOHead
-        title="Valorum Capital | Gestão de Investimentos Independente"
-        description="Gestão de investimentos independente. Construímos e preservamos patrimônio com estratégias personalizadas e sem conflito de interesses."
-        keywords="gestão de investimentos, planejamento patrimonial, gestão de patrimônio, investimentos, family office"
+        title={SEOData.valorumCapital.title}
+        description={SEOData.valorumCapital.description}
+        keywords={SEOData.valorumCapital.keywords}
         canonical="https://valorum.vilsonrauch.com.br/capital"
+        structuredData={StructuredData.capitalService}
       />
       
       <div className="min-h-screen bg-background font-inter">

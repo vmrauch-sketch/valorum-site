@@ -2,6 +2,7 @@ import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { SEOHead } from "@/components/SEOHead";
+import { SEOData, StructuredData } from "@/data/seoData";
 import { 
   Calculator, 
   FileText, 
@@ -43,10 +44,11 @@ const ValoromContabil = () => {
   return (
     <>
       <SEOHead
-        title="Valorum Contábil | Contabilidade Especializada por Segmento"
-        description="Contabilidade especializada em holding patrimonial, profissionais da saúde, comércios, indústria, restaurantes, farmácias e muito mais."
-        keywords="contabilidade, holding patrimonial, holding familiar, contabilidade médicos, contabilidade saúde, contabilidade restaurantes, contabilidade farmácias, contabilidade indústria"
+        title={SEOData.valorumContabil.title}
+        description={SEOData.valorumContabil.description}
+        keywords={SEOData.valorumContabil.keywords}
         canonical="https://valorum.vilsonrauch.com.br/contabil"
+        structuredData={StructuredData.contabilService}
       />
       
       <div className="min-h-screen bg-background font-inter">
