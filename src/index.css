@@ -132,3 +132,13 @@
 .whatsapp-bounce {
   animation: whatsapp-bounce 2s ease-in-out infinite;
 }
+
+/* Hide horizontal scrollbar for scrollable nav */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
