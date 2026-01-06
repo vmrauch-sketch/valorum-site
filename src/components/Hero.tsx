@@ -50,7 +50,7 @@ const Hero = () => {
               </span>
               
               {/* Sub-brand buttons */}
-              <div className="flex flex-wrap justify-center gap-3 mb-6">
+              <div className="flex flex-wrap justify-center gap-3 mb-8">
                 <Link to="/capital">
                   <Button variant="outline" className="bg-gradient-to-r from-corporate-500 to-corporate-600 hover:from-corporate-600 hover:to-corporate-700 text-white border-none font-medium px-4 py-2 text-sm">
                     Capital
@@ -71,6 +71,26 @@ const Hero = () => {
                     CFO
                   </Button>
                 </Link>
+              </div>
+              
+              {/* Sub-brand descriptions */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8 text-left max-w-3xl mx-auto">
+                <div className="p-4 rounded-lg bg-corporate-50 border-l-4 border-corporate-500">
+                  <h3 className="font-semibold text-corporate-600 mb-1">Valorum Capital</h3>
+                  <p className="text-sm text-gray-600">Uma casa de investimentos independente que constrói e preserva patrimônio com estratégia, transparência e zero conflito de interesses.</p>
+                </div>
+                <div className="p-4 rounded-lg bg-gold-50 border-l-4 border-gold-500">
+                  <h3 className="font-semibold text-gold-600 mb-1">Valorum Patrimônio</h3>
+                  <p className="text-sm text-gray-600">Planejamento patrimonial e sucessório completo. A Tríade Patrimonial que transforma seu patrimônio em fonte de liberdade.</p>
+                </div>
+                <div className="p-4 rounded-lg bg-navy-50 border-l-4 border-navy-500">
+                  <h3 className="font-semibold text-navy-600 mb-1">Valorum Contábil</h3>
+                  <p className="text-sm text-gray-600">Contabilidade total e consultiva. Um time de especialistas para cada especialidade de negócios.</p>
+                </div>
+                <div className="p-4 rounded-lg bg-lime-50 border-l-4 border-lime-500">
+                  <h3 className="font-semibold text-lime-600 mb-1">Valorum CFO</h3>
+                  <p className="text-sm text-gray-600">Diretor financeiro terceirizado para sua empresa. Visão estratégica do operacional ao crescimento.</p>
+                </div>
               </div>
               
               <span className="text-xl md:text-2xl text-navy-600 font-inter mb-4 block">
