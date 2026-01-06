@@ -102,7 +102,7 @@ const ProtocoloMaisRenda = () => {
     {
       step: "02", 
       title: "Estruturação Estratégica",
-      description: "Desenvolvimento de estratégias personalizadas para maximizar renda",
+      description: "Desenvolvimento de estratégias personalizadas para maximizar seu patrimônio e seu retorno",
       icon: Zap
     },
     {
