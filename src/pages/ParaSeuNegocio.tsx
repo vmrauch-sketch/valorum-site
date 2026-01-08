@@ -2,6 +2,7 @@ import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { SEOHead } from "@/components/SEOHead";
+import { Link } from "react-router-dom";
 import { 
   Building, 
   FileText, 
@@ -110,8 +111,8 @@ const ParaSeuNegocio = () => {
                 {/* Cards destacados - Valorum Contábil e CFO */}
                 <div className={`grid md:grid-cols-2 gap-6 mb-8 transform transition-all duration-1000 ease-out delay-400 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'}`}>
                   {/* Valorum Contábil */}
-                  <a 
-                    href="/valorum-contabil"
+                  <Link 
+                    to="/valorum-contabil"
                     className="group bg-gradient-to-br from-financial-50 to-financial-100 p-6 rounded-xl border-2 border-financial-200 hover:border-financial-400 transition-all duration-300 hover:shadow-lg"
                   >
                     <div className="flex items-center gap-3 mb-4">
@@ -145,11 +146,11 @@ const ParaSeuNegocio = () => {
                       Conhecer serviços
                       <ArrowUpRight size={16} className="ml-1 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
                     </div>
-                  </a>
+                  </Link>
 
                   {/* Valorum CFO */}
-                  <a 
-                    href="/valorum-cfo"
+                  <Link 
+                    to="/valorum-cfo"
                     className="group bg-gradient-to-br from-lime-50 to-lime-100 p-6 rounded-xl border-2 border-lime-200 hover:border-lime-400 transition-all duration-300 hover:shadow-lg"
                   >
                     <div className="flex items-center gap-3 mb-4">
@@ -183,7 +184,7 @@ const ParaSeuNegocio = () => {
                       Conhecer serviços
                       <ArrowUpRight size={16} className="ml-1 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
                     </div>
-                  </a>
+                  </Link>
                 </div>
 
                 <div className={`bg-financial-50 p-8 rounded-xl transform transition-all duration-1000 ease-out delay-500 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'}`}>
