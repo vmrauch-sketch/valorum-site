@@ -68,8 +68,8 @@ export const Navigation = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center ml-6 flex-1 min-w-0 gap-2">
-            <div className="flex-1 min-w-0">
-              <div className="flex items-center gap-1 xl:gap-3 overflow-x-auto no-scrollbar">
+            <div className="flex-1 min-w-0 overflow-hidden">
+              <div className="flex items-center gap-1 xl:gap-2">
                 {navItems.filter((item) => item.name !== 'Contato').map((item) => (
                   item.external ? (
                     <a
