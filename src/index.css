@@ -134,11 +134,23 @@
 }
 
 /* Hide horizontal scrollbar for scrollable nav */
-.no-scrollbar::-webkit-scrollbar {
-  display: none;
+.no-scrollbar::-webkit-scrollbar,
+nav .no-scrollbar::-webkit-scrollbar {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
 }
 
-.no-scrollbar {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+.no-scrollbar::-webkit-scrollbar-track,
+.no-scrollbar::-webkit-scrollbar-thumb,
+nav .no-scrollbar::-webkit-scrollbar-track,
+nav .no-scrollbar::-webkit-scrollbar-thumb {
+  background: transparent !important;
+}
+
+.no-scrollbar,
+nav .no-scrollbar {
+  -ms-overflow-style: none !important; /* IE and Edge */
+  scrollbar-width: none !important; /* Firefox */
+  scrollbar-color: transparent transparent !important; /* Firefox (fallback) */
 }
