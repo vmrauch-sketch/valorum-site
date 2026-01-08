@@ -72,7 +72,7 @@ export const Navigation = () => {
             <div className="flex items-center gap-2">
               <Link
                 to="/para-voce"
-                className={`flex flex-col items-center justify-center font-medium transition-all px-4 py-2 rounded-md hover:bg-primary/10 active:bg-primary/20 active:scale-95 text-sm leading-tight ${
+                className={`flex flex-col items-center justify-center text-center font-medium transition-all px-4 py-2 rounded-md hover:bg-primary/10 active:bg-primary/20 active:scale-95 text-sm leading-tight min-w-[70px] ${
                   isActive('/para-voce') ? 'text-primary bg-primary/5' : 'text-muted-foreground hover:text-primary'
                 }`}
               >
@@ -81,7 +81,7 @@ export const Navigation = () => {
               </Link>
               <Link
                 to="/para-seu-negocio"
-                className={`flex flex-col items-center justify-center font-medium transition-all px-4 py-2 rounded-md hover:bg-primary/10 active:bg-primary/20 active:scale-95 text-sm leading-tight ${
+                className={`flex flex-col items-center justify-center text-center font-medium transition-all px-4 py-2 rounded-md hover:bg-primary/10 active:bg-primary/20 active:scale-95 text-sm leading-tight min-w-[90px] ${
                   isActive('/para-seu-negocio') ? 'text-primary bg-primary/5' : 'text-muted-foreground hover:text-primary'
                 }`}
               >
@@ -90,7 +90,7 @@ export const Navigation = () => {
               </Link>
               <Link
                 to="/protocolo-mais-renda"
-                className={`flex flex-col items-center justify-center font-medium transition-all px-4 py-2 rounded-md hover:bg-primary/10 active:bg-primary/20 active:scale-95 text-sm leading-tight ${
+                className={`flex flex-col items-center justify-center text-center font-medium transition-all px-4 py-2 rounded-md hover:bg-primary/10 active:bg-primary/20 active:scale-95 text-sm leading-tight min-w-[70px] ${
                   isActive('/protocolo-mais-renda') ? 'text-primary bg-primary/5' : 'text-muted-foreground hover:text-primary'
                 }`}
               >
