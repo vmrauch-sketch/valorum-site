@@ -67,24 +67,43 @@ export const Navigation = () => {
           </div>
 
           {/* Desktop Navigation - Two Rows */}
-          <div className="hidden lg:flex flex-col items-end gap-1 ml-6">
-            {/* Row 1: Audience-focused items */}
+          <div className="hidden lg:flex items-center gap-3 ml-6">
+            {/* Stacked "Para" buttons */}
             <div className="flex items-center gap-2">
-              {navItems.filter((item) => ['Para Você', 'Para Seu Negócio', 'Para Médicos'].includes(item.name)).map((item) => (
-                <Link
-                  key={item.path}
-                  to={item.path}
-                  className={`font-medium transition-all px-2 xl:px-3 py-1 rounded-md hover:bg-primary/10 active:bg-primary/20 active:scale-95 text-sm whitespace-nowrap ${
-                    isActive(item.path) ? 'text-primary bg-primary/5' : 'text-muted-foreground hover:text-primary'
-                  }`}
-                >
-                  {item.name}
-                </Link>
-              ))}
+              <Link
+                to="/para-voce"
+                className={`flex flex-col items-center justify-center font-medium transition-all px-4 py-2 rounded-md hover:bg-primary/10 active:bg-primary/20 active:scale-95 text-sm leading-tight ${
+                  isActive('/para-voce') ? 'text-primary bg-primary/5' : 'text-muted-foreground hover:text-primary'
+                }`}
+              >
+                <span className="text-xs opacity-70">Para</span>
+                <span className="font-semibold">Você</span>
+              </Link>
+              <Link
+                to="/para-seu-negocio"
+                className={`flex flex-col items-center justify-center font-medium transition-all px-4 py-2 rounded-md hover:bg-primary/10 active:bg-primary/20 active:scale-95 text-sm leading-tight ${
+                  isActive('/para-seu-negocio') ? 'text-primary bg-primary/5' : 'text-muted-foreground hover:text-primary'
+                }`}
+              >
+                <span className="text-xs opacity-70">Para</span>
+                <span className="font-semibold">Seu Negócio</span>
+              </Link>
+              <Link
+                to="/protocolo-mais-renda"
+                className={`flex flex-col items-center justify-center font-medium transition-all px-4 py-2 rounded-md hover:bg-primary/10 active:bg-primary/20 active:scale-95 text-sm leading-tight ${
+                  isActive('/protocolo-mais-renda') ? 'text-primary bg-primary/5' : 'text-muted-foreground hover:text-primary'
+                }`}
+              >
+                <span className="text-xs opacity-70">Para</span>
+                <span className="font-semibold">Médicos</span>
+              </Link>
             </div>
             
-            {/* Row 2: Other items */}
-            <div className="flex items-center gap-2">
+            {/* Divider */}
+            <div className="h-8 w-px bg-border/40"></div>
+            
+            {/* Other nav items */}
+            <div className="flex items-center gap-1">
               {navItems.filter((item) => !['Para Você', 'Para Seu Negócio', 'Para Médicos'].includes(item.name)).map((item) => (
                 item.external ? (
                   <a
