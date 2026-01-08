@@ -50,7 +50,7 @@ const Hero = () => {
               </span>
               
               {/* Sub-brand buttons */}
-              <div className="flex flex-wrap justify-center gap-3 mb-8">
+              <div className="flex flex-wrap justify-center gap-3 mb-8 overflow-hidden">
                 <Link to="/capital">
                   <Button variant="outline" className="bg-gradient-to-r from-corporate-500 to-corporate-600 hover:from-corporate-600 hover:to-corporate-700 text-white border-none font-medium px-4 py-2 text-sm">
                     Capital
