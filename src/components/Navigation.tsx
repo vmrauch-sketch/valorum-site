@@ -24,7 +24,7 @@ export const Navigation = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm border-b border-border/20 z-50 transition-all">
       <div className="container mx-auto px-6">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-16 lg:h-auto lg:py-2">
           {/* Logo + Business Buttons */}
           <div className="flex items-center gap-2 md:gap-3">
             <Link to="/" className="text-2xl font-playfair font-bold text-primary">
@@ -66,44 +66,49 @@ export const Navigation = () => {
             </div>
           </div>
 
-          {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center ml-6 flex-1 min-w-0 gap-2">
-            <div className="flex-1 min-w-0 overflow-hidden">
-              <div className="flex items-center gap-1 xl:gap-2">
-                {navItems.filter((item) => item.name !== 'Contato').map((item) => (
-                  item.external ? (
-                    <a
-                      key={item.path}
-                      href={item.path}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="font-medium transition-all text-muted-foreground hover:text-primary px-2 xl:px-3 py-1.5 rounded-md hover:bg-primary/10 active:bg-primary/20 active:scale-95 text-sm whitespace-nowrap"
-                    >
-                      {item.name}
-                    </a>
-                  ) : (
-                    <Link
-                      key={item.path}
-                      to={item.path}
-                      className={`font-medium transition-all px-2 xl:px-3 py-1.5 rounded-md hover:bg-primary/10 active:bg-primary/20 active:scale-95 text-sm whitespace-nowrap ${
-                        isActive(item.path) ? 'text-primary bg-primary/5' : 'text-muted-foreground hover:text-primary'
-                      }`}
-                    >
-                      {item.name}
-                    </Link>
-                  )
-                ))}
-              </div>
+          {/* Desktop Navigation - Two Rows */}
+          <div className="hidden lg:flex flex-col items-end gap-1 ml-6">
+            {/* Row 1: Audience-focused items */}
+            <div className="flex items-center gap-2">
+              {navItems.filter((item) => ['Para Você', 'Para Seu Negócio', 'Para Médicos'].includes(item.name)).map((item) => (
+                <Link
+                  key={item.path}
+                  to={item.path}
+                  className={`font-medium transition-all px-2 xl:px-3 py-1 rounded-md hover:bg-primary/10 active:bg-primary/20 active:scale-95 text-sm whitespace-nowrap ${
+                    isActive(item.path) ? 'text-primary bg-primary/5' : 'text-muted-foreground hover:text-primary'
+                  }`}
+                >
+                  {item.name}
+                </Link>
+              ))}
             </div>
-
-            <Link
-              to="/contato"
-              className={`shrink-0 font-medium transition-all px-2 xl:px-3 py-1.5 rounded-md hover:bg-primary/10 active:bg-primary/20 active:scale-95 text-sm whitespace-nowrap ${
-                isActive('/contato') ? 'text-primary bg-primary/5' : 'text-muted-foreground hover:text-primary'
-              }`}
-            >
-              Contato
-            </Link>
+            
+            {/* Row 2: Other items */}
+            <div className="flex items-center gap-2">
+              {navItems.filter((item) => !['Para Você', 'Para Seu Negócio', 'Para Médicos'].includes(item.name)).map((item) => (
+                item.external ? (
+                  <a
+                    key={item.path}
+                    href={item.path}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-medium transition-all text-muted-foreground hover:text-primary px-2 xl:px-3 py-1 rounded-md hover:bg-primary/10 active:bg-primary/20 active:scale-95 text-sm whitespace-nowrap"
+                  >
+                    {item.name}
+                  </a>
+                ) : (
+                  <Link
+                    key={item.path}
+                    to={item.path}
+                    className={`font-medium transition-all px-2 xl:px-3 py-1 rounded-md hover:bg-primary/10 active:bg-primary/20 active:scale-95 text-sm whitespace-nowrap ${
+                      isActive(item.path) ? 'text-primary bg-primary/5' : 'text-muted-foreground hover:text-primary'
+                    }`}
+                  >
+                    {item.name}
+                  </Link>
+                )
+              ))}
+            </div>
           </div>
 
           {/* Mobile menu button */}
