@@ -107,6 +107,85 @@ const ParaSeuNegocio = () => {
                   </p>
                 </div>
 
+                {/* Cards destacados - Valorum Contábil e CFO */}
+                <div className={`grid md:grid-cols-2 gap-6 mb-8 transform transition-all duration-1000 ease-out delay-400 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'}`}>
+                  {/* Valorum Contábil */}
+                  <a 
+                    href="/valorum-contabil"
+                    className="group bg-gradient-to-br from-financial-50 to-financial-100 p-6 rounded-xl border-2 border-financial-200 hover:border-financial-400 transition-all duration-300 hover:shadow-lg"
+                  >
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className="p-3 bg-financial-500 rounded-lg">
+                        <Calculator size={24} className="text-white" />
+                      </div>
+                      <div>
+                        <h3 className="text-xl font-bold text-financial-600 group-hover:text-financial-700 transition-colors">
+                          Valorum Contábil
+                        </h3>
+                        <p className="text-sm text-financial-500 font-medium">
+                          Fazendo sempre mais do que os clientes esperam
+                        </p>
+                      </div>
+                    </div>
+                    <ul className="space-y-2 text-gray-700 text-sm">
+                      <li className="flex items-center">
+                        <CheckCircle size={14} className="mr-2 text-financial-500 flex-shrink-0" />
+                        <span>Contabilidade Consultiva por especialidade</span>
+                      </li>
+                      <li className="flex items-center">
+                        <CheckCircle size={14} className="mr-2 text-financial-500 flex-shrink-0" />
+                        <span>Holding Patrimonial e Familiar</span>
+                      </li>
+                      <li className="flex items-center">
+                        <CheckCircle size={14} className="mr-2 text-financial-500 flex-shrink-0" />
+                        <span>Consultoria Financeira integrada</span>
+                      </li>
+                    </ul>
+                    <div className="mt-4 flex items-center text-financial-600 font-medium text-sm group-hover:text-financial-700">
+                      Conhecer serviços
+                      <ArrowUpRight size={16} className="ml-1 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+                    </div>
+                  </a>
+
+                  {/* Valorum CFO */}
+                  <a 
+                    href="/valorum-cfo"
+                    className="group bg-gradient-to-br from-lime-50 to-lime-100 p-6 rounded-xl border-2 border-lime-200 hover:border-lime-400 transition-all duration-300 hover:shadow-lg"
+                  >
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className="p-3 bg-lime-500 rounded-lg">
+                        <Target size={24} className="text-white" />
+                      </div>
+                      <div>
+                        <h3 className="text-xl font-bold text-lime-700 group-hover:text-lime-800 transition-colors">
+                          Valorum CFO
+                        </h3>
+                        <p className="text-sm text-lime-600 font-medium">
+                          Compreender pessoas. Expandir negócios.
+                        </p>
+                      </div>
+                    </div>
+                    <ul className="space-y-2 text-gray-700 text-sm">
+                      <li className="flex items-center">
+                        <CheckCircle size={14} className="mr-2 text-lime-500 flex-shrink-0" />
+                        <span>Diretor Financeiro terceirizado</span>
+                      </li>
+                      <li className="flex items-center">
+                        <CheckCircle size={14} className="mr-2 text-lime-500 flex-shrink-0" />
+                        <span>Do operacional ao estratégico</span>
+                      </li>
+                      <li className="flex items-center">
+                        <CheckCircle size={14} className="mr-2 text-lime-500 flex-shrink-0" />
+                        <span>Indústrias, Clínicas e Empresas Familiares</span>
+                      </li>
+                    </ul>
+                    <div className="mt-4 flex items-center text-lime-700 font-medium text-sm group-hover:text-lime-800">
+                      Conhecer serviços
+                      <ArrowUpRight size={16} className="ml-1 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+                    </div>
+                  </a>
+                </div>
+
                 <div className={`bg-financial-50 p-8 rounded-xl transform transition-all duration-1000 ease-out delay-500 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'}`}>
                   <h2 className="text-3xl font-playfair font-bold text-financial-600 mb-6 flex items-center">
                     <Building size={32} className="mr-4 text-financial-600" />
