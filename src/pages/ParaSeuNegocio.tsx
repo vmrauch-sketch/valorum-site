@@ -112,7 +112,7 @@ const ParaSeuNegocio = () => {
                 <div className={`grid md:grid-cols-2 gap-6 mb-8 transform transition-all duration-1000 ease-out delay-400 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'}`}>
                   {/* Valorum Contábil */}
                   <Link 
-                    to="/valorum-contabil"
+                    to="/contabil"
                     className="group bg-gradient-to-br from-financial-50 to-financial-100 p-6 rounded-xl border-2 border-financial-200 hover:border-financial-400 transition-all duration-300 hover:shadow-lg"
                   >
                     <div className="flex items-center gap-3 mb-4">
@@ -150,7 +150,7 @@ const ParaSeuNegocio = () => {
 
                   {/* Valorum CFO */}
                   <Link 
-                    to="/valorum-cfo"
+                    to="/cfo"
                     className="group bg-gradient-to-br from-lime-50 to-lime-100 p-6 rounded-xl border-2 border-lime-200 hover:border-lime-400 transition-all duration-300 hover:shadow-lg"
                   >
                     <div className="flex items-center gap-3 mb-4">
