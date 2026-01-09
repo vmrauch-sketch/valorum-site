@@ -142,8 +142,11 @@ const ParaSeuNegocio = () => {
                         <span>Consultoria Financeira integrada</span>
                       </li>
                     </ul>
-                    <div className="mt-4 flex items-center text-financial-600 font-medium text-sm group-hover:text-financial-700">
-                      Conhecer serviços
+                    <p className="mt-4 text-sm text-gray-600">
+                      Serviços contábeis, fiscais e societários para melhorar o seu negócio.
+                    </p>
+                    <div className="mt-3 flex items-center text-financial-600 font-medium text-sm group-hover:text-financial-700">
+                      Quero saber mais
                       <ArrowUpRight size={16} className="ml-1 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
                     </div>
                   </Link>
