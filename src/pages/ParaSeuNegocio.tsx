@@ -143,7 +143,7 @@ const ParaSeuNegocio = () => {
                       </li>
                     </ul>
                     <p className="mt-4 text-sm text-gray-600">
-                      Serviços contábeis, fiscais e societários para melhorar o seu negócio.
+                      Serviços contábeis, fiscais e societários para estruturar ou melhorar o seu negócio.
                     </p>
                     <div className="mt-3 flex items-center text-financial-600 font-medium text-sm group-hover:text-financial-700">
                       Quero saber mais
