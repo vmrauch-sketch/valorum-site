@@ -74,7 +74,7 @@ const ValoromContabil = () => {
               </h1>
               
               <p className="text-xl text-gray-300 max-w-2xl mx-auto mb-8">
-                Conheça nossas soluções e como a Valorum pode melhorar o seu negócio
+                Conheça nossas soluções e como a Valorum pode melhorar o seu negócio com serviços contábeis, fiscais e societários
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
