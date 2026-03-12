@@ -95,7 +95,7 @@ const TroqueDeContador = () => {
                   <div className="text-4xl font-playfair font-bold text-emerald-500 mb-3">
                     {step.number}
                   </div>
-                  <p className="text-sm text-muted-foreground font-medium leading-relaxed">
+                  <p className="text-base text-muted-foreground font-medium leading-relaxed">
                     {step.title}
                   </p>
                 </div>
