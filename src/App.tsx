@@ -19,6 +19,7 @@ import ValoromCapital from "./pages/ValoromCapital";
 import ValoromContabil from "./pages/ValoromContabil";
 import ValoromPatrimonio from "./pages/ValoromPatrimonio";
 import ValoromCFO from "./pages/ValoromCFO";
+import AberturaEmpresa from "./pages/AberturaEmpresa";
 
 const queryClient = new QueryClient();
 
@@ -44,6 +45,7 @@ const App = () => (
           <Route path="/contabil" element={<ValoromContabil />} />
           <Route path="/patrimonio" element={<ValoromPatrimonio />} />
           <Route path="/cfo" element={<ValoromCFO />} />
+          <Route path="/abra-sua-empresa" element={<AberturaEmpresa />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
