@@ -186,7 +186,7 @@ const ValoromContabil = () => {
                   "Consultoria estratégica para apoiar sua gestão financeira e tributária.",
                   "Valorização e organização do patrimônio empresarial.",
                 ].map((item, index) => (
-                  <div key={index} className="flex items-start gap-3 text-gray-200 text-lg">
+                  <div key={index} className="flex items-start gap-3 text-gray-200 text-xl">
                     <span className="text-emerald-400 mt-0.5 flex-shrink-0">✔</span>
                     <span>{item}</span>
                   </div>
