@@ -125,7 +125,7 @@ const ValoromContabil = () => {
                       <h3 className="text-2xl font-playfair font-bold text-emerald-600 mb-4">
                         Área da Saúde
                       </h3>
-                      <p className="text-muted-foreground leading-relaxed">
+                      <p className="text-base text-muted-foreground leading-relaxed">
                         Oferecemos uma análise tributária estratégica para profissionais da saúde. Nosso método identifica o regime mais adequado para sua realidade. Assim, você reduz custos, mantém sua regularidade fiscal e ganha mais segurança na gestão do seu consultório ou clínica.
                       </p>
                     </div>
