@@ -144,7 +144,7 @@ const ValoromContabil = () => {
                       <h3 className="text-2xl font-playfair font-bold text-emerald-600 mb-4">
                         Investidores
                       </h3>
-                      <p className="text-muted-foreground leading-relaxed">
+                      <p className="text-base text-muted-foreground leading-relaxed">
                         Tenha ao seu lado um parceiro que compreende as particularidades tributárias de quem investe e empreende. Estruturamos sua contabilidade para garantir conformidade fiscal, organização patrimonial e tranquilidade perante o fisco.
                       </p>
                     </div>
