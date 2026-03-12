@@ -68,7 +68,7 @@ const ValoromContabil = () => {
             <div className="max-w-4xl mx-auto text-center">
               <div className="w-16 h-1 bg-gradient-to-r from-emerald-400 to-emerald-600 mx-auto mb-8" />
               
-              <p className="text-lg text-emerald-400 font-medium mb-4">
+              <p className="text-xl text-emerald-400 font-medium mb-4">
                 Resultados que surpreendem
               </p>
               
