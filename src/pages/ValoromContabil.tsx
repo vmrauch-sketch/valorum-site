@@ -20,7 +20,10 @@ import {
   ShoppingBag,
   Briefcase,
   Network,
-  TrendingUp
+  TrendingUp,
+  RefreshCw,
+  Shield,
+  KeyRound
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -222,18 +225,18 @@ const ValoromContabil = () => {
               <h2 className="text-3xl md:text-4xl font-playfair font-bold text-primary mb-4">
                 Nossos Serviços
               </h2>
-              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                Serviços contábeis diferenciados para você e sua empresa
-              </p>
             </div>
             
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-5xl mx-auto">
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
               {[
-                { icon: Calculator, title: "Contabilidade Consultiva" },
-                { icon: FileText, title: "Planejamento Tributário" },
-                { icon: Building2, title: "Abertura de Empresas" },
-                { icon: Users, title: "BPO Financeiro" },
-                { icon: TrendingUp, title: "Consultoria Financeira" },
+                { icon: Calculator, title: "Contabilidade Consultiva", description: "Acompanhamento contábil estratégico para apoiar decisões e fortalecer a gestão da empresa." },
+                { icon: FileText, title: "Planejamento Tributário", description: "Estruturação fiscal para reduzir custos tributários dentro da legalidade." },
+                { icon: Building2, title: "Abertura de Empresas", description: "Formalização rápida e segura para iniciar seu negócio sem burocracia." },
+                { icon: RefreshCw, title: "Migração de Contabilidade", description: "Transfira sua empresa para uma contabilidade mais eficiente e organizada." },
+                { icon: Users, title: "BPO Financeiro", description: "Terceirização da gestão financeira para maior controle e eficiência." },
+                { icon: TrendingUp, title: "Consultoria Financeira", description: "Análise e orientação para melhorar resultados e organização financeira." },
+                { icon: KeyRound, title: "Certificado Digital", description: "Emissão de certificado para garantir segurança e agilidade em processos digitais." },
+                { icon: Shield, title: "Recuperação Tributária", description: "Identificação e recuperação de créditos tributários pagos indevidamente." },
               ].map((item, index) => (
                 <div 
                   key={index}
@@ -242,9 +245,12 @@ const ValoromContabil = () => {
                   <div className="w-14 h-14 bg-gradient-to-br from-emerald-400 to-emerald-600 rounded-xl flex items-center justify-center mx-auto mb-4">
                     <item.icon className="w-7 h-7 text-white" />
                   </div>
-                  <h3 className="font-semibold text-primary">
+                  <h3 className="font-semibold text-primary mb-2">
                     {item.title}
                   </h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    {item.description}
+                  </p>
                 </div>
               ))}
             </div>
