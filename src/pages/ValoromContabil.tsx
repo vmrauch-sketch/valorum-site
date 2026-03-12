@@ -89,8 +89,7 @@ const ValoromContabil = () => {
                 <Link to="/troque-de-contador">
                   <Button 
                     size="lg"
-                    variant="outline"
-                    className="border-2 border-emerald-400 text-emerald-400 hover:bg-emerald-500 hover:text-white font-semibold px-8 py-6 text-lg"
+                    className="border-2 border-emerald-400 bg-emerald-500/10 text-white hover:bg-emerald-500 hover:text-white font-semibold px-8 py-6 text-lg"
                   >
                     Troque de Contador
                   </Button>
