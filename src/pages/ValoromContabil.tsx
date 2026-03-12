@@ -66,7 +66,7 @@ const ValoromContabil = () => {
               <div className="w-16 h-1 bg-gradient-to-r from-emerald-400 to-emerald-600 mx-auto mb-8" />
               
               <p className="text-lg text-emerald-400 font-medium mb-4">
-                Fazendo sempre mais do que os clientes esperam
+                Resultados que surpreendem
               </p>
               
               <h1 className="text-4xl md:text-6xl font-playfair font-bold text-white leading-tight mb-6">
