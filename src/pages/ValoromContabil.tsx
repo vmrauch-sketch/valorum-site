@@ -78,12 +78,21 @@ const ValoromContabil = () => {
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link to="/contato">
+                <Link to="/abra-sua-empresa">
                   <Button 
                     size="lg"
                     className="bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white font-semibold px-8 py-6 text-lg"
                   >
-                    Quero Saber Mais
+                    Abra Sua Empresa
+                  </Button>
+                </Link>
+                <Link to="/troque-de-contador">
+                  <Button 
+                    size="lg"
+                    variant="outline"
+                    className="border-2 border-emerald-400 text-emerald-400 hover:bg-emerald-500 hover:text-white font-semibold px-8 py-6 text-lg"
+                  >
+                    Troque de Contador
                   </Button>
                 </Link>
               </div>
