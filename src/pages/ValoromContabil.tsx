@@ -164,7 +164,7 @@ const ValoromContabil = () => {
             <div className="absolute bottom-10 left-10 w-64 h-64 bg-emerald-500/10 rounded-full blur-3xl" />
           </div>
           <div className="container mx-auto px-6 relative z-10">
-            <div className="max-w-3xl mx-auto">
+            <div className="max-w-5xl mx-auto">
               <h2 className="text-3xl md:text-4xl font-playfair font-bold text-white mb-2">
                 Vantagens em contratar a
               </h2>
@@ -172,7 +172,7 @@ const ValoromContabil = () => {
                 Valorum Contábil
               </h2>
               
-              <ul className="space-y-5">
+              <div className="grid md:grid-cols-2 gap-x-12 gap-y-5">
                 {[
                   "Contabilidade moderna e alinhada às melhores práticas de gestão.",
                   "Serviços especializados para apoiar o crescimento do seu negócio.",
@@ -184,12 +184,12 @@ const ValoromContabil = () => {
                   "Valorização e organização do patrimônio empresarial.",
                   "Mais eficiência para que você economize tempo e recursos.",
                 ].map((item, index) => (
-                  <li key={index} className="flex items-start gap-3 text-gray-200 text-lg">
+                  <div key={index} className="flex items-start gap-3 text-gray-200 text-lg">
                     <span className="text-emerald-400 mt-0.5 flex-shrink-0">✔</span>
                     <span>{item}</span>
-                  </li>
+                  </div>
                 ))}
-              </ul>
+              </div>
 
               <div className="mt-10">
                 <a
