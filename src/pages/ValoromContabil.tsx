@@ -76,7 +76,7 @@ const ValoromContabil = () => {
                 Valorum <span className="text-emerald-400">Contábil</span>
               </h1>
               
-              <p className="text-xl text-gray-300 max-w-2xl mx-auto mb-8">
+              <p className="text-2xl text-gray-300 max-w-2xl mx-auto mb-8">
                 Serviços contábeis, fiscais e societários para estruturar ou melhorar o seu negócio.
               </p>
               
