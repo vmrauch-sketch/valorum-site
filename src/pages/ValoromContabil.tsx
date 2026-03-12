@@ -122,7 +122,7 @@ const ValoromContabil = () => {
                       <div className="w-16 h-16 bg-gradient-to-br from-emerald-400 to-emerald-600 rounded-xl flex items-center justify-center mx-auto mb-5">
                         <Heart className="w-8 h-8 text-white" />
                       </div>
-                      <h3 className="text-xl font-playfair font-bold text-emerald-600 mb-4">
+                      <h3 className="text-2xl font-playfair font-bold text-emerald-600 mb-4">
                         Área da Saúde
                       </h3>
                       <p className="text-muted-foreground leading-relaxed">
