@@ -25,19 +25,19 @@ const ValoromPatrimonio = () => {
 
   const investmentAreas = [
     {
-      title: "Investimentos Físicos",
+      title: "Físicos",
       description: "Imóveis e propriedades\noferecem segurança e preservação de patrimônio. Avaliamos seu perfil patrimonial para guiar decisões imobiliárias que realmente expandam valor e renda.",
       icon: Home,
       gradient: "from-blue-600 to-blue-800"
     },
     {
-      title: "Investimentos Dinâmicos", 
+      title: "Dinâmicos", 
       description: "Participações em negócios e ativos privados que trazem diversificação inteligente e oportunidades fora do mercado tradicional. Guiamos você na escolha e na gestão de ativos que aceleram o crescimento patrimonial com segurança e propósito.",
       icon: Gem,
       gradient: "from-amber-500 to-orange-600"
     },
     {
-      title: "Investimentos Financeiros",
+      title: "Financeiros",
       description: "Ações, fundos, renda fixa e globais\ngarantem liquidez, dinamismo e crescimento contínuo.",
       icon: LineChart,
       gradient: "from-green-600 to-green-800"
