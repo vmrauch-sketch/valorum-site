@@ -157,7 +157,57 @@ const ValoromContabil = () => {
           </div>
         </section>
 
+        {/* Vantagens Section */}
+        <section className="py-24 bg-gradient-to-br from-primary via-primary/95 to-primary relative overflow-hidden">
+          <div className="absolute inset-0 overflow-hidden">
+            <div className="absolute top-10 right-10 w-72 h-72 bg-emerald-500/10 rounded-full blur-3xl" />
+            <div className="absolute bottom-10 left-10 w-64 h-64 bg-emerald-500/10 rounded-full blur-3xl" />
+          </div>
+          <div className="container mx-auto px-6 relative z-10">
+            <div className="max-w-3xl mx-auto">
+              <h2 className="text-3xl md:text-4xl font-playfair font-bold text-white mb-2">
+                Vantagens em contratar a
+              </h2>
+              <h2 className="text-3xl md:text-4xl font-playfair font-bold text-emerald-400 mb-10">
+                Valorum Contábil
+              </h2>
+              
+              <ul className="space-y-5">
+                {[
+                  "Contabilidade moderna e alinhada às melhores práticas de gestão.",
+                  "Serviços especializados para apoiar o crescimento do seu negócio.",
+                  "Experiência e conhecimento para orientar decisões com segurança.",
+                  "Atendimento próximo, personalizado e focado nas necessidades do cliente.",
+                  "Equipe preparada para estruturar e fortalecer sua empresa.",
+                  "Integração da contabilidade com a realidade do seu negócio.",
+                  "Consultoria estratégica para apoiar sua gestão financeira e tributária.",
+                  "Valorização e organização do patrimônio empresarial.",
+                  "Mais eficiência para que você economize tempo e recursos.",
+                ].map((item, index) => (
+                  <li key={index} className="flex items-start gap-3 text-gray-200 text-lg">
+                    <span className="text-emerald-400 mt-0.5 flex-shrink-0">✔</span>
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
 
+              <div className="mt-10">
+                <a
+                  href="https://wa.me/5511949566290?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20um%20contador%20da%20Valorum"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button 
+                    size="lg"
+                    className="bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white font-semibold px-8 py-6 text-lg"
+                  >
+                    Falar com um Contador
+                  </Button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
 
         {/* Serviços Section */}
         <section className="py-24 bg-muted/30">
