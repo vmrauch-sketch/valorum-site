@@ -243,7 +243,7 @@ const ValoromContabil = () => {
                     <div className="w-14 h-14 bg-gradient-to-br from-emerald-400 to-emerald-600 rounded-xl flex items-center justify-center mx-auto mb-4">
                       <item.icon className="w-7 h-7 text-white" />
                     </div>
-                    <h3 className="font-semibold text-primary mb-2">
+                    <h3 className="font-semibold text-primary text-lg mb-2">
                       {item.title}
                     </h3>
                     <p className="text-sm text-muted-foreground leading-relaxed">
