@@ -20,7 +20,10 @@ import {
   ShoppingBag,
   Briefcase,
   Network,
-  TrendingUp
+  TrendingUp,
+  RefreshCw,
+  Shield,
+  KeyRound
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
