@@ -229,30 +229,41 @@ const ValoromContabil = () => {
             
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
               {[
-                { icon: Calculator, title: "Contabilidade Consultiva", description: "Acompanhamento contábil estratégico para apoiar decisões e fortalecer a gestão da empresa." },
-                { icon: FileText, title: "Planejamento Tributário", description: "Estruturação fiscal para reduzir custos tributários dentro da legalidade." },
-                { icon: Building2, title: "Abertura de Empresas", description: "Formalização rápida e segura para iniciar seu negócio sem burocracia." },
-                { icon: RefreshCw, title: "Migração de Contabilidade", description: "Transfira sua empresa para uma contabilidade mais eficiente e organizada." },
-                { icon: Users, title: "BPO Financeiro", description: "Terceirização da gestão financeira para maior controle e eficiência." },
-                { icon: TrendingUp, title: "Consultoria Financeira", description: "Análise e orientação para melhorar resultados e organização financeira." },
-                { icon: KeyRound, title: "Certificado Digital", description: "Emissão de certificado para garantir segurança e agilidade em processos digitais." },
-                { icon: Shield, title: "Recuperação Tributária", description: "Identificação e recuperação de créditos tributários pagos indevidamente." },
-              ].map((item, index) => (
-                <div 
-                  key={index}
-                  className="p-6 bg-white rounded-2xl text-center border border-border/50 hover:shadow-lg transition-all duration-300"
-                >
-                  <div className="w-14 h-14 bg-gradient-to-br from-emerald-400 to-emerald-600 rounded-xl flex items-center justify-center mx-auto mb-4">
-                    <item.icon className="w-7 h-7 text-white" />
+                { icon: Calculator, title: "Contabilidade Consultiva", description: "Acompanhamento contábil estratégico para apoiar decisões e fortalecer a gestão da empresa.", link: "" },
+                { icon: FileText, title: "Planejamento Tributário", description: "Estruturação fiscal para reduzir custos tributários dentro da legalidade.", link: "" },
+                { icon: Building2, title: "Abertura de Empresas", description: "Formalização rápida e segura para iniciar seu negócio sem burocracia.", link: "/abra-sua-empresa" },
+                { icon: RefreshCw, title: "Migração de Contabilidade", description: "Transfira sua empresa para uma contabilidade mais eficiente e organizada.", link: "/troque-de-contador" },
+                { icon: Users, title: "BPO Financeiro", description: "Terceirização da gestão financeira para maior controle e eficiência.", link: "" },
+                { icon: TrendingUp, title: "Consultoria Financeira", description: "Análise e orientação para melhorar resultados e organização financeira.", link: "" },
+                { icon: KeyRound, title: "Certificado Digital", description: "Emissão de certificado para garantir segurança e agilidade em processos digitais.", link: "" },
+                { icon: Shield, title: "Recuperação Tributária", description: "Identificação e recuperação de créditos tributários pagos indevidamente.", link: "" },
+              ].map((item, index) => {
+                const CardContent = (
+                  <>
+                    <div className="w-14 h-14 bg-gradient-to-br from-emerald-400 to-emerald-600 rounded-xl flex items-center justify-center mx-auto mb-4">
+                      <item.icon className="w-7 h-7 text-white" />
+                    </div>
+                    <h3 className="font-semibold text-primary mb-2">
+                      {item.title}
+                    </h3>
+                    <p className="text-sm text-muted-foreground leading-relaxed">
+                      {item.description}
+                    </p>
+                  </>
+                );
+                
+                const className = "p-6 bg-white rounded-2xl text-center border border-border/50 hover:shadow-lg transition-all duration-300";
+                
+                return item.link ? (
+                  <Link key={index} to={item.link} className={className}>
+                    {CardContent}
+                  </Link>
+                ) : (
+                  <div key={index} className={className}>
+                    {CardContent}
                   </div>
-                  <h3 className="font-semibold text-primary mb-2">
-                    {item.title}
-                  </h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
-                    {item.description}
-                  </p>
-                </div>
-              ))}
+                );
+              })}
             </div>
           </div>
         </section>
