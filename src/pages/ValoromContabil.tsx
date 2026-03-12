@@ -126,7 +126,7 @@ const ValoromContabil = () => {
                         Área da Saúde
                       </h3>
                       <p className="text-muted-foreground leading-relaxed">
-                        Oferecemos uma análise tributária estratégica para profissionais da saúde, identificando o regime mais adequado para sua realidade. Assim, você reduz custos, mantém sua regularidade fiscal e ganha mais segurança na gestão do seu consultório ou clínica.
+                        Oferecemos uma análise tributária estratégica para profissionais da saúde. Nosso método identifica o regime mais adequado para sua realidade. Assim, você reduz custos, mantém sua regularidade fiscal e ganha mais segurança na gestão do seu consultório ou clínica.
                       </p>
                     </div>
                     <Link to="/contato">
