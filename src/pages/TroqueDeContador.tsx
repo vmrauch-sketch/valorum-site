@@ -65,7 +65,7 @@ const TroqueDeContador = () => {
                 Migre de Contabilidade{" "}
                 <span className="text-emerald-400">agora mesmo!</span>
               </h1>
-              <p className="text-xl text-gray-300 max-w-2xl mb-8">
+              <p className="text-2xl text-gray-300 max-w-2xl mb-8">
                 Venha para uma contabilidade especializada no seu negócio! Nossa equipe de especialistas está pronta para migrar a sua empresa de uma forma descomplicada e segura.
               </p>
               <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
