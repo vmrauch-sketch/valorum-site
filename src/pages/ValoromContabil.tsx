@@ -92,31 +92,89 @@ const ValoromContabil = () => {
           </div>
         </section>
 
-        {/* Especialidades Section */}
+        {/* Destaques Principais */}
         <section className="py-24 bg-white">
+          <div className="container mx-auto px-6">
+            <div className="max-w-6xl mx-auto">
+              <div className="grid md:grid-cols-[1fr_1.2fr] gap-12 items-center">
+                {/* Título à esquerda */}
+                <div>
+                  <h2 className="text-3xl md:text-5xl font-playfair font-bold text-primary leading-tight">
+                    Somos um escritório de contabilidade{" "}
+                    <span className="text-emerald-500">especializado em:</span>
+                  </h2>
+                </div>
+
+                {/* Cards das duas principais especializações */}
+                <div className="grid sm:grid-cols-2 gap-6">
+                  <div className="group p-8 bg-white rounded-2xl border border-emerald-100 shadow-md hover:shadow-xl transition-all duration-300 text-center flex flex-col justify-between">
+                    <div>
+                      <div className="w-16 h-16 bg-gradient-to-br from-emerald-400 to-emerald-600 rounded-xl flex items-center justify-center mx-auto mb-5">
+                        <Home className="w-8 h-8 text-white" />
+                      </div>
+                      <h3 className="text-xl font-playfair font-bold text-emerald-600 mb-4">
+                        Holding Patrimonial e Familiar
+                      </h3>
+                      <p className="text-muted-foreground leading-relaxed">
+                        Sabemos que proteger seu patrimônio e garantir a tranquilidade da sua família é prioridade. Estruturamos a melhor solução contábil e societária.
+                      </p>
+                    </div>
+                    <Link to="/contato">
+                      <Button className="mt-6 bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white font-semibold px-6">
+                        Saiba Mais
+                      </Button>
+                    </Link>
+                  </div>
+
+                  <div className="group p-8 bg-white rounded-2xl border border-emerald-100 shadow-md hover:shadow-xl transition-all duration-300 text-center flex flex-col justify-between">
+                    <div>
+                      <div className="w-16 h-16 bg-gradient-to-br from-emerald-400 to-emerald-600 rounded-xl flex items-center justify-center mx-auto mb-5">
+                        <Heart className="w-8 h-8 text-white" />
+                      </div>
+                      <h3 className="text-xl font-playfair font-bold text-emerald-600 mb-4">
+                        Profissionais da Saúde
+                      </h3>
+                      <p className="text-muted-foreground leading-relaxed">
+                        Sabemos que seu foco é cuidar de vidas. Cuidamos da sua contabilidade com um fluxo de análise para o melhor regime tributário.
+                      </p>
+                    </div>
+                    <Link to="/contato">
+                      <Button className="mt-6 bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white font-semibold px-6">
+                        Saiba Mais
+                      </Button>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Demais Especialidades */}
+        <section className="py-24 bg-muted/20">
           <div className="container mx-auto px-6">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-playfair font-bold text-primary mb-4">
-                Contabilidade Especializada
+                E também somos especializados em:
               </h2>
               <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                Cada segmento tem suas particularidades. Por isso, oferecemos soluções contábeis específicas para atender às necessidades do seu negócio.
+                Cada segmento tem suas particularidades. Oferecemos soluções contábeis específicas para o seu negócio.
               </p>
             </div>
             
-            <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-              {especialidades.map((item, index) => (
+            <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 max-w-6xl mx-auto">
+              {especialidades.slice(2).map((item, index) => (
                 <div 
                   key={index}
-                  className="group p-6 bg-gradient-to-br from-emerald-50 to-white rounded-2xl border border-emerald-100 hover:shadow-xl hover:scale-105 transition-all duration-300 cursor-pointer"
+                  className="group p-6 bg-white rounded-2xl border border-emerald-100 hover:shadow-xl hover:scale-105 transition-all duration-300 cursor-pointer text-center"
                 >
-                  <div className="w-14 h-14 bg-gradient-to-br from-emerald-400 to-emerald-600 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <div className="w-14 h-14 bg-gradient-to-br from-emerald-400 to-emerald-600 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                     <item.icon className="w-7 h-7 text-white" />
                   </div>
-                  <h3 className="text-lg font-playfair font-bold text-primary mb-2">
+                  <h3 className="text-base font-playfair font-bold text-primary mb-2">
                     {item.title}
                   </h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
+                  <p className="text-xs text-muted-foreground leading-relaxed">
                     {item.description}
                   </p>
                 </div>
