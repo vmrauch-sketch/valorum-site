@@ -194,7 +194,7 @@ const ValoromContabil = () => {
               </div>
 
               <div className="flex justify-center mt-5">
-                <div className="flex items-start gap-3 text-gray-200 text-lg">
+                <div className="flex items-start gap-3 text-gray-200 text-xl">
                   <span className="text-emerald-400 mt-0.5 flex-shrink-0">✔</span>
                   <span>Mais eficiência para que você economize tempo e recursos.</span>
                 </div>
