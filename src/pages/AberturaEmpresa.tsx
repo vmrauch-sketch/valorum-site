@@ -74,7 +74,7 @@ const AberturaEmpresa = () => {
                 Abra sua empresa{" "}
                 <span className="text-emerald-400">sem burocracia</span>
               </h1>
-              <p className="text-xl text-gray-300 max-w-2xl mb-8">
+              <p className="text-2xl text-gray-300 max-w-2xl mb-8">
                 Nunca foi tão simples abrir a sua empresa. A Valorum cuida de todo o procedimento de forma simples e segura, pois nosso principal objetivo é ajudar seu negócio.
               </p>
               <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
