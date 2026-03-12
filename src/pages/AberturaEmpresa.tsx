@@ -74,7 +74,7 @@ const AberturaEmpresa = () => {
                 Abra sua empresa{" "}
                 <span className="text-emerald-400">sem burocracia</span>
               </h1>
-              <p className="text-xl text-gray-300 max-w-2xl mb-8">
+              <p className="text-2xl text-gray-300 max-w-2xl mb-8">
                 Nunca foi tão simples abrir a sua empresa. A Valorum cuida de todo o procedimento de forma simples e segura, pois nosso principal objetivo é ajudar seu negócio.
               </p>
               <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
@@ -110,7 +110,7 @@ const AberturaEmpresa = () => {
                   <div className="text-4xl font-playfair font-bold text-emerald-500 mb-3">
                     {step.number}
                   </div>
-                  <p className="text-sm text-muted-foreground font-medium leading-relaxed">
+                  <p className="text-base text-muted-foreground font-medium leading-relaxed">
                     {step.title}
                   </p>
                 </div>
@@ -157,7 +157,7 @@ const AberturaEmpresa = () => {
                   "Consultoria estratégica para apoiar sua gestão financeira e tributária.",
                   "Valorização e organização do patrimônio empresarial.",
                 ].map((item, index) => (
-                  <div key={index} className="flex items-start gap-3 text-gray-200 text-lg">
+                  <div key={index} className="flex items-start gap-3 text-gray-200 text-xl">
                     <span className="text-emerald-400 mt-0.5 flex-shrink-0">✔</span>
                     <span>{item}</span>
                   </div>
@@ -165,7 +165,7 @@ const AberturaEmpresa = () => {
               </div>
 
               <div className="flex justify-center mt-5">
-                <div className="flex items-start gap-3 text-gray-200 text-lg">
+                <div className="flex items-start gap-3 text-gray-200 text-xl">
                   <span className="text-emerald-400 mt-0.5 flex-shrink-0">✔</span>
                   <span>Mais eficiência para que você economize tempo e recursos.</span>
                 </div>

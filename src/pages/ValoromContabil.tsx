@@ -68,7 +68,7 @@ const ValoromContabil = () => {
             <div className="max-w-4xl mx-auto text-center">
               <div className="w-16 h-1 bg-gradient-to-r from-emerald-400 to-emerald-600 mx-auto mb-8" />
               
-              <p className="text-lg text-emerald-400 font-medium mb-4">
+              <p className="text-xl text-emerald-400 font-medium mb-4">
                 Resultados que surpreendem
               </p>
               
@@ -76,7 +76,7 @@ const ValoromContabil = () => {
                 Valorum <span className="text-emerald-400">Contábil</span>
               </h1>
               
-              <p className="text-xl text-gray-300 max-w-2xl mx-auto mb-8">
+              <p className="text-2xl text-gray-300 max-w-2xl mx-auto mb-8">
                 Serviços contábeis, fiscais e societários para estruturar ou melhorar o seu negócio.
               </p>
               
@@ -122,10 +122,10 @@ const ValoromContabil = () => {
                       <div className="w-16 h-16 bg-gradient-to-br from-emerald-400 to-emerald-600 rounded-xl flex items-center justify-center mx-auto mb-5">
                         <Heart className="w-8 h-8 text-white" />
                       </div>
-                      <h3 className="text-xl font-playfair font-bold text-emerald-600 mb-4">
+                      <h3 className="text-2xl font-playfair font-bold text-emerald-600 mb-4">
                         Área da Saúde
                       </h3>
-                      <p className="text-muted-foreground leading-relaxed">
+                      <p className="text-base text-muted-foreground leading-relaxed">
                         Oferecemos uma análise tributária estratégica para profissionais da saúde. Nosso método identifica o regime mais adequado para sua realidade. Assim, você reduz custos, mantém sua regularidade fiscal e ganha mais segurança na gestão do seu consultório ou clínica.
                       </p>
                     </div>
@@ -141,10 +141,10 @@ const ValoromContabil = () => {
                       <div className="w-16 h-16 bg-gradient-to-br from-emerald-400 to-emerald-600 rounded-xl flex items-center justify-center mx-auto mb-5">
                         <TrendingUp className="w-8 h-8 text-white" />
                       </div>
-                      <h3 className="text-xl font-playfair font-bold text-emerald-600 mb-4">
+                      <h3 className="text-2xl font-playfair font-bold text-emerald-600 mb-4">
                         Investidores
                       </h3>
-                      <p className="text-muted-foreground leading-relaxed">
+                      <p className="text-base text-muted-foreground leading-relaxed">
                         Tenha ao seu lado um parceiro que compreende as particularidades tributárias de quem investe e empreende. Estruturamos sua contabilidade para garantir conformidade fiscal, organização patrimonial e tranquilidade perante o fisco.
                       </p>
                     </div>
@@ -186,7 +186,7 @@ const ValoromContabil = () => {
                   "Consultoria estratégica para apoiar sua gestão financeira e tributária.",
                   "Valorização e organização do patrimônio empresarial.",
                 ].map((item, index) => (
-                  <div key={index} className="flex items-start gap-3 text-gray-200 text-lg">
+                  <div key={index} className="flex items-start gap-3 text-gray-200 text-xl">
                     <span className="text-emerald-400 mt-0.5 flex-shrink-0">✔</span>
                     <span>{item}</span>
                   </div>
@@ -194,7 +194,7 @@ const ValoromContabil = () => {
               </div>
 
               <div className="flex justify-center mt-5">
-                <div className="flex items-start gap-3 text-gray-200 text-lg">
+                <div className="flex items-start gap-3 text-gray-200 text-xl">
                   <span className="text-emerald-400 mt-0.5 flex-shrink-0">✔</span>
                   <span>Mais eficiência para que você economize tempo e recursos.</span>
                 </div>
@@ -243,10 +243,10 @@ const ValoromContabil = () => {
                     <div className="w-14 h-14 bg-gradient-to-br from-emerald-400 to-emerald-600 rounded-xl flex items-center justify-center mx-auto mb-4">
                       <item.icon className="w-7 h-7 text-white" />
                     </div>
-                    <h3 className="font-semibold text-primary mb-2">
+                    <h3 className="font-semibold text-primary text-lg mb-2">
                       {item.title}
                     </h3>
-                    <p className="text-sm text-muted-foreground leading-relaxed">
+                    <p className="text-base text-muted-foreground leading-relaxed">
                       {item.description}
                     </p>
                   </>
@@ -274,7 +274,7 @@ const ValoromContabil = () => {
             <h2 className="text-3xl md:text-4xl font-playfair font-bold text-white mb-6">
               Não encontrou seu segmento?
             </h2>
-            <p className="text-lg text-gray-300 max-w-2xl mx-auto mb-8">
+            <p className="text-xl text-gray-300 max-w-2xl mx-auto mb-8">
               Entre em contato e descubra como podemos ajudar o seu negócio com soluções contábeis personalizadas.
             </p>
             <Link to="/contato">

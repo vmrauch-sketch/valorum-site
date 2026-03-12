@@ -65,7 +65,7 @@ const TroqueDeContador = () => {
                 Migre de Contabilidade{" "}
                 <span className="text-emerald-400">agora mesmo!</span>
               </h1>
-              <p className="text-xl text-gray-300 max-w-2xl mb-8">
+              <p className="text-2xl text-gray-300 max-w-2xl mb-8">
                 Venha para uma contabilidade especializada no seu negócio! Nossa equipe de especialistas está pronta para migrar a sua empresa de uma forma descomplicada e segura.
               </p>
               <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
@@ -95,7 +95,7 @@ const TroqueDeContador = () => {
                   <div className="text-4xl font-playfair font-bold text-emerald-500 mb-3">
                     {step.number}
                   </div>
-                  <p className="text-sm text-muted-foreground font-medium leading-relaxed">
+                  <p className="text-base text-muted-foreground font-medium leading-relaxed">
                     {step.title}
                   </p>
                 </div>
@@ -139,7 +139,7 @@ const TroqueDeContador = () => {
                   "Consultoria estratégica para apoiar sua gestão financeira e tributária.",
                   "Valorização e organização do patrimônio empresarial.",
                 ].map((item, index) => (
-                  <div key={index} className="flex items-start gap-3 text-gray-200 text-lg">
+                  <div key={index} className="flex items-start gap-3 text-gray-200 text-xl">
                     <span className="text-emerald-400 mt-0.5 flex-shrink-0">✔</span>
                     <span>{item}</span>
                   </div>
@@ -147,7 +147,7 @@ const TroqueDeContador = () => {
               </div>
 
               <div className="flex justify-center mt-5">
-                <div className="flex items-start gap-3 text-gray-200 text-lg">
+                <div className="flex items-start gap-3 text-gray-200 text-xl">
                   <span className="text-emerald-400 mt-0.5 flex-shrink-0">✔</span>
                   <span>Mais eficiência para que você economize tempo e recursos.</span>
                 </div>
