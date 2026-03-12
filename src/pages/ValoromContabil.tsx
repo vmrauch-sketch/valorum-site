@@ -246,7 +246,7 @@ const ValoromContabil = () => {
                     <h3 className="font-semibold text-primary text-lg mb-2">
                       {item.title}
                     </h3>
-                    <p className="text-sm text-muted-foreground leading-relaxed">
+                    <p className="text-base text-muted-foreground leading-relaxed">
                       {item.description}
                     </p>
                   </>
