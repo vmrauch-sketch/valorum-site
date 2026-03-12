@@ -182,13 +182,19 @@ const ValoromContabil = () => {
                   "Integração da contabilidade com a realidade do seu negócio.",
                   "Consultoria estratégica para apoiar sua gestão financeira e tributária.",
                   "Valorização e organização do patrimônio empresarial.",
-                  "Mais eficiência para que você economize tempo e recursos.",
                 ].map((item, index) => (
                   <div key={index} className="flex items-start gap-3 text-gray-200 text-lg">
                     <span className="text-emerald-400 mt-0.5 flex-shrink-0">✔</span>
                     <span>{item}</span>
                   </div>
                 ))}
+              </div>
+
+              <div className="flex justify-center mt-5">
+                <div className="flex items-start gap-3 text-gray-200 text-lg">
+                  <span className="text-emerald-400 mt-0.5 flex-shrink-0">✔</span>
+                  <span>Mais eficiência para que você economize tempo e recursos.</span>
+                </div>
               </div>
 
               <div className="mt-10">
