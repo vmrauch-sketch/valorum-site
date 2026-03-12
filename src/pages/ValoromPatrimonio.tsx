@@ -25,7 +25,7 @@ const ValoromPatrimonio = () => {
 
   const investmentAreas = [
     {
-      title: "Investimentos Físicos",
+      title: "Físicos",
       description: "Imóveis e propriedades\noferecem segurança e preservação de patrimônio. Avaliamos seu perfil patrimonial para guiar decisões imobiliárias que realmente expandam valor e renda.",
       icon: Home,
       gradient: "from-blue-600 to-blue-800"
