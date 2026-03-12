@@ -37,7 +37,7 @@ const ValoromPatrimonio = () => {
       gradient: "from-amber-500 to-orange-600"
     },
     {
-      title: "Investimentos Financeiros",
+      title: "Financeiros",
       description: "Ações, fundos, renda fixa e globais\ngarantem liquidez, dinamismo e crescimento contínuo.",
       icon: LineChart,
       gradient: "from-green-600 to-green-800"
