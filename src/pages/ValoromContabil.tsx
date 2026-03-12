@@ -117,13 +117,13 @@ const ValoromContabil = () => {
                   <div className="group p-8 bg-white rounded-2xl border border-emerald-100 shadow-md hover:shadow-xl transition-all duration-300 text-center flex flex-col justify-between">
                     <div>
                       <div className="w-16 h-16 bg-gradient-to-br from-emerald-400 to-emerald-600 rounded-xl flex items-center justify-center mx-auto mb-5">
-                        <Home className="w-8 h-8 text-white" />
+                        <Heart className="w-8 h-8 text-white" />
                       </div>
                       <h3 className="text-xl font-playfair font-bold text-emerald-600 mb-4">
-                        Holding Patrimonial e Familiar
+                        Área da Saúde
                       </h3>
                       <p className="text-muted-foreground leading-relaxed">
-                        Sabemos que proteger seu patrimônio e garantir a tranquilidade da sua família é prioridade. Estruturamos a melhor solução contábil e societária.
+                        Oferecemos uma análise tributária estratégica para profissionais da saúde, identificando o regime mais adequado para sua realidade. Assim, você reduz custos, mantém sua regularidade fiscal e ganha mais segurança na gestão do seu consultório ou clínica.
                       </p>
                     </div>
                     <Link to="/contato">
@@ -136,13 +136,13 @@ const ValoromContabil = () => {
                   <div className="group p-8 bg-white rounded-2xl border border-emerald-100 shadow-md hover:shadow-xl transition-all duration-300 text-center flex flex-col justify-between">
                     <div>
                       <div className="w-16 h-16 bg-gradient-to-br from-emerald-400 to-emerald-600 rounded-xl flex items-center justify-center mx-auto mb-5">
-                        <Heart className="w-8 h-8 text-white" />
+                        <TrendingUp className="w-8 h-8 text-white" />
                       </div>
                       <h3 className="text-xl font-playfair font-bold text-emerald-600 mb-4">
-                        Profissionais da Saúde
+                        Investidores
                       </h3>
                       <p className="text-muted-foreground leading-relaxed">
-                        Sabemos que seu foco é cuidar de vidas. Cuidamos da sua contabilidade com um fluxo de análise para o melhor regime tributário.
+                        Tenha ao seu lado um parceiro que compreende as particularidades tributárias de quem investe e empreende. Estruturamos sua contabilidade para garantir conformidade fiscal, organização patrimonial e tranquilidade perante o fisco.
                       </p>
                     </div>
                     <Link to="/contato">
