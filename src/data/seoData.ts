@@ -65,8 +65,8 @@ export const SEOData = {
 
   manifesto: {
     title: "Manifesto | Valorum - Nossa Filosofia",
-    description: "Conheça a filosofia e valores da Valorum. Patrimônio não se improvisa - entenda nossa abordagem única para gestão patrimonial.",
-    keywords: "manifesto valorum, filosofia financeira, valores consultoria, patrimônio não se improvisa",
+    description: "Conheça a filosofia e valores da Valorum. Financeiro não se improvisa - entenda nossa abordagem única para gestão patrimonial.",
+    keywords: "manifesto valorum, filosofia financeira, valores consultoria, financeiro não se improvisa",
   },
 
   services: {
