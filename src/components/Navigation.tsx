@@ -7,6 +7,10 @@ export const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
 
+  // Páginas específicas de serviço — esconde botões de outras sub-marcas
+  const servicePages = ['/capital', '/bpo', '/patrimonio', '/cfo', '/contabil'];
+  const isServicePage = servicePages.includes(location.pathname);
+
   const navItems = [
     { name: 'Início', path: '/' },
     { name: 'Para Você', path: '/para-voce' },
