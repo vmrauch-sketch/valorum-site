@@ -132,12 +132,14 @@ export const Navigation = () => {
           )}
 
           {/* Mobile menu button */}
-          <button
-            onClick={() => setIsOpen(!isOpen)}
-            className="lg:hidden p-2 text-muted-foreground hover:text-primary"
-          >
-            {isOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
+          {!isServicePage && (
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              className="lg:hidden p-2 text-muted-foreground hover:text-primary"
+            >
+              {isOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
+          )}
         </div>
 
         {!isServicePage && (
