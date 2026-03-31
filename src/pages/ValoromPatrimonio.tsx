@@ -105,7 +105,7 @@ const ValoromPatrimonio = () => {
               </h1>
               
               <p className="text-2xl md:text-3xl font-playfair font-semibold italic text-gold-400 mb-4">
-                "Patrimônio não se improvisa"
+                "Financeiro não se improvisa"
               </p>
               
               <p className="text-xl md:text-2xl text-white font-semibold mb-2">
