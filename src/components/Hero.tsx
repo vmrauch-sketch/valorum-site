@@ -89,7 +89,7 @@ const Hero = () => {
                 </div>
                 <div className="p-4 rounded-lg bg-lime-50 border-l-4 border-lime-500">
                   <h3 className="font-semibold text-lime-600 mb-1">Valorum CFO</h3>
-                  <p className="text-sm text-gray-600">Direcionamento financeiro terceirizado para sua empresa. Apoio para as decisões financeiras e estratégicas da empresa.</p>
+                  <p className="text-sm text-gray-600">Direcionamento financeiro terceirizado para sua empresa. Apoio para as decisões financeiras e estratégicas.</p>
                 </div>
                 <div className="p-4 rounded-lg bg-blue-50 border-l-4 border-blue-500">
                   <h3 className="font-semibold text-blue-600 mb-1">Valorum BPO</h3>
