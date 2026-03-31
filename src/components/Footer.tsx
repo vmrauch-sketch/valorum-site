@@ -1,6 +1,6 @@
 import { Partners } from './Partners';
 import { Link } from 'react-router-dom';
-const Footer = () => {
+const Footer = ({ hidePartners = false }: { hidePartners?: boolean }) => {
   const handleWhatsAppClick = () => {
     console.log("Footer: Botão clicado");
     const message = encodeURIComponent("Olá gostaria de mais informações");
@@ -28,7 +28,7 @@ const Footer = () => {
 
   return (
     <>
-      <Partners />
+      {!hidePartners && <Partners />}
       <footer className="bg-navy-800 text-white py-12">
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
