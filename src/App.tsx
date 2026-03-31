@@ -21,6 +21,7 @@ import ValoromPatrimonio from "./pages/ValoromPatrimonio";
 import ValoromCFO from "./pages/ValoromCFO";
 import AberturaEmpresa from "./pages/AberturaEmpresa";
 import TroqueDeContador from "./pages/TroqueDeContador";
+import ValoromBPO from "./pages/ValoromBPO";
 
 const queryClient = new QueryClient();
 
