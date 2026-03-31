@@ -335,14 +335,14 @@ const ValoromBPO = () => {
               <span className="text-blue-400">que trabalha para você.</span>
             </h2>
             <p className="text-lg text-gray-300 max-w-2xl mx-auto mb-10">
-              Agende uma sessão gratuita de 30 minutos. Sem compromisso, sem enrolação — só clareza sobre onde seu dinheiro está indo e como fazer ele trabalhar por você.
+              Agende seu diagnóstico gratuito. Sem compromisso, sem enrolação — só clareza sobre onde seu dinheiro está indo e como fazer ele trabalhar por você.
             </p>
             <Link to="/contato">
               <Button 
                 size="lg" 
                 className="bg-gradient-to-r from-blue-400 to-blue-500 hover:from-blue-500 hover:to-blue-600 text-white font-semibold px-10 py-6 text-lg uppercase tracking-wider"
               >
-                Agendar Minha Sessão Gratuita
+                Agendar Meu Diagnóstico
               </Button>
             </Link>
             <p className="text-sm text-gray-500 mt-4">
