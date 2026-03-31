@@ -430,40 +430,6 @@ const ValoromBPO = () => {
           </div>
         </section>
 
-        {/* Para quem é Section */}
-        <section className="py-24 bg-muted/30">
-          <div className="container mx-auto px-6">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-playfair font-bold text-primary mb-4">
-                Para quem é
-              </h2>
-              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                Ideal para empresas que precisam de controle financeiro profissional
-              </p>
-            </div>
-            
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
-              {[
-                { icon: Building2, title: "Empresas em crescimento" },
-                { icon: Users, title: "Clínicas e Consultórios" },
-                { icon: TrendingUp, title: "E-commerces" },
-                { icon: Wallet, title: "Prestadores de serviço" },
-              ].map((item, index) => (
-                <div 
-                  key={index}
-                  className="p-6 bg-white rounded-2xl text-center border border-border/50 hover:shadow-lg hover:border-blue-200 transition-all duration-300"
-                >
-                  <div className="w-14 h-14 bg-gradient-to-br from-blue-400 to-blue-500 rounded-xl flex items-center justify-center mx-auto mb-4">
-                    <item.icon className="w-7 h-7 text-white" />
-                  </div>
-                  <h3 className="font-semibold text-primary">
-                    {item.title}
-                  </h3>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
 
         {/* FAQ Section */}
         <section className="py-24 bg-white">
