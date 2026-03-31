@@ -106,15 +106,10 @@ const Hero = () => {
               </div>
               
               <span className="text-xl md:text-2xl text-navy-600 font-inter mb-4 block">
-                Aqui você encontra todas as soluções para os investimentos e financeiro seu e da sua empresa!
+                Estratégia financeira, investimentos e gestão patrimonial para você e sua empresa.
               </span>
               <span className="text-xl md:text-2xl text-navy-600 font-inter mb-6 block leading-relaxed">
-                Somos a evolução do Wealth e do Multi Family Office (MFO), conhecimento e tecnologia capazes de antecipar cenários, reduzir riscos e potencializar oportunidades.
-              </span>
-              <span className="text-xl md:text-2xl text-navy-600 font-inter block">
-                Valorum é construção e gestão patrimonial com propósito.<br />
-                Guiamos nossos clientes com clareza, estratégia e autonomia.<br />
-                Transformando patrimônio em uma fonte real de liberdade.
+                Clareza para decidir. Segurança para crescer.
               </span>
             </span>
           </div>
@@ -126,7 +121,7 @@ const Hero = () => {
               className="bg-gold-500 hover:bg-gold-600 text-white px-8 py-6 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
             >
               <MessageCircle className="w-5 h-5 mr-2" />
-              Fale com um Consultor
+              Agendar diagnóstico
             </Button>
           </div>
         </div>
