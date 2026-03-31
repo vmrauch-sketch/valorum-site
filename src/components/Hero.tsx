@@ -69,14 +69,14 @@ const Hero = () => {
                     Patrimônio
                   </Button>
                 </Link>
-                <Link to="/contabil">
-                  <Button variant="outline" className="bg-gradient-to-r from-navy-500 to-navy-600 hover:from-navy-600 hover:to-navy-700 text-white border-none font-medium px-4 py-2 text-sm">
-                    Contábil
-                  </Button>
-                </Link>
                 <Link to="/cfo">
                   <Button variant="outline" className="bg-gradient-to-r from-lime-400 to-lime-500 hover:from-lime-500 hover:to-lime-600 text-primary border-none font-medium px-4 py-2 text-sm">
                     CFO
+                  </Button>
+                </Link>
+                <Link to="/contabil">
+                  <Button variant="outline" className="bg-gradient-to-r from-navy-500 to-navy-600 hover:from-navy-600 hover:to-navy-700 text-white border-none font-medium px-4 py-2 text-sm">
+                    Contábil
                   </Button>
                 </Link>
               </div>
