@@ -110,24 +110,24 @@ const ValoromBPO = () => {
             <div className="max-w-4xl mx-auto text-center">
               <div className="w-16 h-1 bg-gradient-to-r from-blue-400 to-blue-500 mx-auto mb-8" />
               
-              <p className="text-lg text-blue-400 font-medium mb-4">
-                Terceirização Financeira
+              <p className="text-sm uppercase tracking-widest text-blue-400 font-semibold mb-6">
+                BPO Financeiro
               </p>
               
-              <h1 className="text-4xl md:text-6xl font-playfair font-bold text-white leading-tight mb-4">
-                Valorum <span className="text-blue-400">BPO</span>
+              <h1 className="text-4xl md:text-6xl font-playfair font-bold text-white leading-tight mb-6">
+                Sua empresa cresce,{" "}
+                <br className="hidden md:block" />
+                mas o financeiro não acompanha.
+                <br />
+                <span className="text-blue-400">A gente resolve.</span>
               </h1>
               
-              <p className="text-xl md:text-2xl font-playfair italic text-blue-400 mb-6">
-                "Para sua empresa crescer com controle e clareza"
-              </p>
-              
-              <p className="text-lg text-gray-400 max-w-3xl mx-auto mb-4">
-                A rotina financeira exige atenção diária, organização e precisão. Quando essa área não recebe o cuidado necessário, surgem atrasos, falta de informações, decisões baseadas em estimativas e perda de rentabilidade.
+              <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-4">
+                Contas a pagar, receber, conciliação bancária, fluxo de caixa e relatórios — tudo organizado, com processos definidos e acompanhamento contínuo.
               </p>
 
-              <p className="text-lg text-gray-300 max-w-3xl mx-auto mb-8">
-                O BPO Financeiro assume partes ou a operação do financeiro da empresa de forma estruturada, com processos definidos, acompanhamento contínuo e relatórios claros. Em vez de gastar tempo com tarefas operacionais, a gestão passa a focar no crescimento, enquanto o financeiro funciona com disciplina e previsibilidade.
+              <p className="text-base text-gray-400 max-w-2xl mx-auto mb-8">
+                Em vez de gastar tempo com tarefas operacionais, a gestão foca no crescimento. O financeiro funciona com disciplina e previsibilidade.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -136,7 +136,7 @@ const ValoromBPO = () => {
                     size="lg"
                     className="bg-gradient-to-r from-blue-400 to-blue-500 hover:from-blue-500 hover:to-blue-600 text-white font-semibold px-8 py-6 text-lg"
                   >
-                    Falar com um Especialista
+                    Quero um Diagnóstico Gratuito
                   </Button>
                 </Link>
               </div>
