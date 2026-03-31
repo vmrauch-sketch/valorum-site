@@ -324,42 +324,6 @@ const ValoromBPO = () => {
           </div>
         </section>
 
-        {/* Fases do BPO Section */}
-        <section className="py-24 bg-white">
-          <div className="container mx-auto px-6">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-playfair font-bold text-primary mb-4">
-                Como funciona
-              </h2>
-              <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                As principais fases da nossa terceirização financeira
-              </p>
-            </div>
-            
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-              {fases.map((item, index) => (
-                <div 
-                  key={index}
-                  className="group p-8 bg-primary rounded-2xl hover:shadow-xl hover:scale-105 transition-all duration-300 cursor-pointer relative"
-                >
-                  <div className="absolute top-4 right-4 text-blue-400/30 text-4xl font-bold font-playfair">
-                    {String(index + 1).padStart(2, '0')}
-                  </div>
-                  <div className="w-12 h-12 bg-blue-400/20 rounded-xl flex items-center justify-center mb-6 group-hover:bg-blue-400/30 transition-colors duration-300">
-                    <item.icon className="w-6 h-6 text-blue-400" />
-                  </div>
-                  <h3 className="text-lg font-playfair font-bold text-blue-400 mb-3">
-                    {item.title}
-                  </h3>
-                  <p className="text-gray-300 leading-relaxed">
-                    {item.description}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
         {/* Serviços Section */}
         <section className="py-24 bg-gradient-to-b from-blue-50 to-white">
           <div className="container mx-auto px-6">
