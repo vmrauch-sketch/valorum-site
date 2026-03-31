@@ -75,7 +75,7 @@ const Footer = () => {
             <div>
               <h4 className="text-lg font-semibold mb-4">Newsletter</h4>
               <p className="text-sm text-white/60 mb-4">
-                Receba insights sobre planejamento financeiro e gestão patrimonial.
+                Receba insights sobre negócios e investimentos.
               </p>
               <form
                 action="https://vilsonmarcelo.substack.com/api/v1/free?nojs=true"
