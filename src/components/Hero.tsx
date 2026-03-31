@@ -101,17 +101,17 @@ const Hero = () => {
                   <p className="text-sm text-gray-600 mb-3">Planejamento patrimonial e sucessório completo. Transformando patrimônio em fonte de liberdade.</p>
                   <span className="text-xs font-bold text-gold-600 group-hover:underline">Conhecer solução →</span>
                 </Link>
-                <Link to="/contabil" className="p-4 rounded-lg bg-navy-50 border-l-4 border-navy-500 hover:shadow-md transition-all duration-300 group">
-                  <h3 className="font-bold text-navy-600 mb-0.5 text-base">Contabilidade Consultiva</h3>
-                  <span className="text-xs font-semibold text-navy-400 uppercase tracking-wide block mb-2">Valorum Contábil</span>
-                  <p className="text-sm text-gray-600 mb-3">Contabilidade total e consultiva. Especialistas para cada especialidade de negócios.</p>
-                  <span className="text-xs font-bold text-navy-600 group-hover:underline">Conhecer solução →</span>
-                </Link>
                 <Link to="/cfo" className="p-4 rounded-lg bg-lime-50 border-l-4 border-lime-500 hover:shadow-md transition-all duration-300 group">
                   <h3 className="font-bold text-lime-600 mb-0.5 text-base">Direção Financeira</h3>
                   <span className="text-xs font-semibold text-lime-500 uppercase tracking-wide block mb-2">Valorum CFO</span>
                   <p className="text-sm text-gray-600 mb-3">Direcionamento financeiro terceirizado. Apoio para as decisões financeiras e estratégicas.</p>
                   <span className="text-xs font-bold text-lime-600 group-hover:underline">Conhecer solução →</span>
+                </Link>
+                <Link to="/contabil" className="p-4 rounded-lg bg-navy-50 border-l-4 border-navy-500 hover:shadow-md transition-all duration-300 group">
+                  <h3 className="font-bold text-navy-600 mb-0.5 text-base">Contabilidade Consultiva</h3>
+                  <span className="text-xs font-semibold text-navy-400 uppercase tracking-wide block mb-2">Valorum Contábil</span>
+                  <p className="text-sm text-gray-600 mb-3">Contabilidade total e consultiva. Especialistas para cada especialidade de negócios.</p>
+                  <span className="text-xs font-bold text-navy-600 group-hover:underline">Conhecer solução →</span>
                 </Link>
               </div>
               
