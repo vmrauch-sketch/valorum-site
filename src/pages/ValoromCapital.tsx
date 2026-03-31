@@ -271,53 +271,6 @@ const ValoromCapital = () => {
           </div>
         </section>
 
-        {/* Comece em 3 passos simples */}
-        <section className="py-28 bg-[#0a1628]">
-          <div className="container mx-auto px-6">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-5xl font-playfair font-bold text-white leading-tight">
-                Comece em <span className="italic text-[#c9a962]">3 passos simples</span>
-              </h2>
-              <p className="text-lg text-slate-400 mt-4 max-w-2xl mx-auto">
-                Da primeira conversa à sua carteira estruturada: sem burocracia, sem complicação.
-              </p>
-            </div>
-
-            <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-14">
-              {[
-                { icon: Search, num: "01", title: "Diagnóstico gratuito", desc: "Em uma reunião rápida, mapeamos seu perfil, seus objetivos e identificamos as melhores oportunidades." },
-                { icon: FileText, num: "02", title: "Estratégia personalizada", desc: "Montamos uma carteira sob medida, com total transparência sobre custos, riscos e expectativas." },
-                { icon: BarChart3, num: "03", title: "Acompanhamento contínuo", desc: "Você acompanha seus resultados com relatórios claros. Nós cuidamos de todo o resto, com independência total." },
-              ].map((step, index) => (
-                <div
-                  key={index}
-                  className="relative p-8 rounded-2xl border border-[#c9a962]/20 hover:border-[#c9a962]/40 transition-all duration-300"
-                >
-                  <span className="absolute top-6 right-6 text-5xl font-playfair font-bold text-[#c9a962]/15">
-                    {step.num}
-                  </span>
-                  <div className="w-12 h-12 bg-[#c9a962]/15 rounded-xl flex items-center justify-center mb-6">
-                    <step.icon className="w-6 h-6 text-[#c9a962]" />
-                  </div>
-                  <h3 className="text-lg font-bold text-white mb-3">{step.title}</h3>
-                  <p className="text-slate-400 text-sm leading-relaxed">{step.desc}</p>
-                </div>
-              ))}
-            </div>
-
-            <div className="text-center">
-              <Link to="/contato">
-                <Button 
-                  size="lg" 
-                  className="bg-[#c9a962] hover:bg-[#b8994f] text-[#0a1628] font-bold px-10 py-6 text-lg uppercase tracking-wider transition-all duration-300 hover:scale-105"
-                >
-                  Quero começar agora
-                </Button>
-              </Link>
-            </div>
-          </div>
-        </section>
-
         {/* CTA Section */}
         <section className="py-28 bg-white">
           <div className="container mx-auto px-6">
