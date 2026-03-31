@@ -22,6 +22,7 @@ import {
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import BPOContactForm from "@/components/BPOContactForm";
 
 const faqItems = [
   {
@@ -464,28 +465,21 @@ const ValoromBPO = () => {
           </div>
         </section>
 
-        {/* CTA Final Section */}
-        <section className="py-24 bg-gradient-to-br from-primary via-primary/95 to-primary">
-          <div className="container mx-auto px-6 text-center">
-            <h2 className="text-3xl md:text-5xl font-playfair font-bold text-white leading-tight mb-6">
-              Sua empresa merece um financeiro
-              <br />
-              <span className="text-blue-400">que trabalha para você.</span>
-            </h2>
-            <p className="text-lg text-gray-300 max-w-2xl mx-auto mb-10">
-              Agende seu diagnóstico gratuito. Sem compromisso, sem enrolação — só clareza sobre onde seu dinheiro está indo e como fazer ele trabalhar por você.
-            </p>
-            <Link to="/contato">
-              <Button 
-                size="lg" 
-                className="bg-gradient-to-r from-blue-400 to-blue-500 hover:from-blue-500 hover:to-blue-600 text-white font-semibold px-10 py-6 text-lg"
-              >
-                Agendar Meu Diagnóstico
-              </Button>
-            </Link>
-            <p className="text-sm text-gray-500 mt-4">
-              Resposta em até 2 horas em dias úteis · Sem compromisso
-            </p>
+        {/* Formulário de Contato */}
+        <section id="contato-bpo" className="py-24 bg-gradient-to-br from-primary via-primary/95 to-primary">
+          <div className="container mx-auto px-6">
+            <div className="max-w-2xl mx-auto">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl md:text-5xl font-playfair font-bold text-white leading-tight mb-4">
+                  Solicite seu{" "}
+                  <span className="text-blue-400">diagnóstico gratuito</span>
+                </h2>
+                <p className="text-lg text-gray-300">
+                  Preencha o formulário e nossa equipe entrará em contato para entender sua empresa e apresentar uma proposta sob medida.
+                </p>
+              </div>
+              <BPOContactForm />
+            </div>
           </div>
         </section>
 
