@@ -103,7 +103,7 @@ const Hero = () => {
               </div>
               
               <span className="text-xl md:text-2xl text-navy-600 font-inter mb-4 block">
-                Aqui você encontra todas as soluções para seu patrimônio!
+                Aqui você encontra todas as soluções para os investimentos e financeiro seu e da sua empresa!
               </span>
               <span className="text-xl md:text-2xl text-navy-600 font-inter mb-6 block leading-relaxed">
                 Somos a evolução do Wealth e do Multi Family Office (MFO), conhecimento e tecnologia capazes de antecipar cenários, reduzir riscos e potencializar oportunidades.
