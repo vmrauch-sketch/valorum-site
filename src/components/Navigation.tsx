@@ -14,7 +14,7 @@ export const Navigation = () => {
     { name: 'Para Médicos', path: '/protocolo-mais-renda' },
     { name: 'Manifesto', path: '/manifesto' },
     { name: 'Especializações', path: '/especializacoes' },
-    { name: 'Estratégias', path: '/estrategias' },
+    
     { name: 'Sobre Vilson', path: 'https://vilsonrauch.com.br', external: true },
     { name: 'Contato', path: '/contato' },
   ];

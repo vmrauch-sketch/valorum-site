@@ -8,7 +8,7 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import Manifesto from "./pages/Manifesto";
 import ComoAtuamos from "./pages/ComoAtuamos";
-import AreasEspecializacao from "./pages/AreasEspecializacao";
+
 import ProtocoloMaisRenda from "./pages/ProtocoloMaisRenda";
 import VilsonRauch from "./pages/VilsonRauch";
 import ParaVoce from "./pages/ParaVoce";
