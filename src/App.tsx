@@ -8,7 +8,7 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import Manifesto from "./pages/Manifesto";
 import ComoAtuamos from "./pages/ComoAtuamos";
-import AreasEspecializacao from "./pages/AreasEspecializacao";
+
 import ProtocoloMaisRenda from "./pages/ProtocoloMaisRenda";
 import VilsonRauch from "./pages/VilsonRauch";
 import ParaVoce from "./pages/ParaVoce";
@@ -36,7 +36,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/manifesto" element={<Manifesto />} />
           <Route path="/especializacoes" element={<ComoAtuamos />} />
-          <Route path="/estrategias" element={<AreasEspecializacao />} />
+          
           <Route path="/protocolo-mais-renda" element={<ProtocoloMaisRenda />} />
           <Route path="/vilson-rauch" element={<VilsonRauch />} />
           <Route path="/para-voce" element={<ParaVoce />} />
