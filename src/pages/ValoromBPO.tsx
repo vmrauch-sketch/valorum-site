@@ -175,6 +175,52 @@ const ValoromBPO = () => {
           </div>
         </section>
 
+        {/* Departamento Financeiro Section */}
+        <section className="py-24 bg-primary">
+          <div className="container mx-auto px-6">
+            <div className="text-center mb-6">
+              <h2 className="text-4xl md:text-5xl font-playfair font-bold text-white leading-tight">
+                Seu departamento financeiro.{" "}
+                <span className="italic text-blue-400">Finance as a Service.</span>
+              </h2>
+            </div>
+            
+            <p className="text-center text-gray-400 max-w-3xl mx-auto mb-16">
+              Cuidamos de toda a rotina financeira da sua empresa do operacional ao estratégico, com tecnologia de ponta e um custo até <strong className="text-white">5x menor</strong> que um time interno.
+            </p>
+            
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+              {[
+                { icon: BarChart3, title: "Contas a Pagar e Receber", description: "Gestão completa do seu fluxo de caixa" },
+                { icon: TrendingUp, title: "Dashboards em Tempo Real", description: "Visão 360° das suas finanças" },
+                { icon: FileText, title: "Relatórios Estratégicos", description: "Dados que viram decisões de negócio" },
+                { icon: Users, title: "Time Dedicado", description: "Especialistas exclusivos para sua empresa" },
+                { icon: Clock, title: "Planejamento Financeiro", description: "Projeções e metas com ciência" },
+                { icon: Shield, title: "Precificação Inteligente", description: "Margem certa para lucrar mais" },
+              ].map((item, index) => (
+                <div 
+                  key={index}
+                  className="p-6 bg-primary/60 rounded-2xl border border-blue-400/20 hover:border-blue-400/40 transition-all duration-300"
+                >
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 bg-blue-400/20 rounded-xl flex items-center justify-center flex-shrink-0">
+                      <item.icon className="w-6 h-6 text-blue-400" />
+                    </div>
+                    <div>
+                      <h3 className="text-sm font-bold text-white uppercase tracking-wide mb-1">
+                        {item.title}
+                      </h3>
+                      <p className="text-gray-400 text-sm">
+                        {item.description}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* Fases do BPO Section */}
         <section className="py-24 bg-white">
           <div className="container mx-auto px-6">
