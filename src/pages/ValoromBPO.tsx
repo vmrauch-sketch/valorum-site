@@ -277,19 +277,19 @@ const ValoromBPO = () => {
           </div>
         </section>
 
-        {/* Por que a Valorum Section */}
+        {/* Propostas sob medida Section */}
         <section className="py-24 bg-primary">
           <div className="container mx-auto px-6">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-playfair font-bold text-white mb-4">
-                Por que a Valorum?
+              <h2 className="text-3xl md:text-5xl font-playfair font-bold text-white mb-4">
+                Propostas <span className="italic text-blue-400">sob medida</span>
               </h2>
               <p className="text-lg text-gray-400 max-w-3xl mx-auto">
-                Nosso modelo foi pensado para se adaptar às necessidades, o momento e os objetivos do seu negócio.
+                Cada empresa tem uma realidade única. Por isso, não trabalhamos com pacotes prontos, criamos uma proposta personalizada de acordo com as necessidades, o momento e os objetivos do seu negócio.
               </p>
             </div>
             
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto mb-12">
               {[
                 { icon: Search, title: "Diagnóstico personalizado", description: "Analisamos a fundo a operação financeira da sua empresa antes de propor qualquer solução." },
                 { icon: Users, title: "Time dedicado", description: "Montamos uma equipe sob medida, com profissionais especializados no seu segmento." },
@@ -311,6 +311,18 @@ const ValoromBPO = () => {
                   </p>
                 </div>
               ))}
+            </div>
+
+            <div className="text-center">
+              <Link to="/contato">
+                <Button 
+                  size="lg"
+                  variant="outline"
+                  className="border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-white font-semibold px-10 py-6 text-lg uppercase tracking-wider"
+                >
+                  Solicitar Proposta Personalizada
+                </Button>
+              </Link>
             </div>
           </div>
         </section>
