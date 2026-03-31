@@ -21,6 +21,38 @@ import {
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+
+const faqItems = [
+  {
+    question: "O que exatamente é BPO Financeiro?",
+    answer: "BPO Financeiro é a terceirização da operação financeira da empresa. Inclui organização das contas a pagar e receber, conciliação bancária, controle do fluxo de caixa, relatórios gerenciais e padronização das rotinas. A empresa mantém as decisões, com o financeiro estruturado e acompanhado."
+  },
+  {
+    question: "Minha empresa já tem alguém no financeiro. O BPO ainda faz sentido?",
+    answer: "O BPO pode atuar em conjunto com a equipe interna, organizando processos, trazendo método e acompanhando indicadores. Em muitos casos, a equipe existente continua executando tarefas operacionais, enquanto o BPO assume controle, padronização, relatórios e visão estratégica. O resultado é mais eficiência sem necessidade de aumentar estrutura."
+  },
+  {
+    question: "Vale a pena terceirizar se minha empresa é pequena?",
+    answer: "Sim. Empresas pequenas também se beneficiam da terceirização financeira. Com o BPO, as rotinas passam a ter organização, controle e previsibilidade, sem necessidade de montar uma estrutura interna. Isso reduz erros, evita atrasos e permite que a empresa foque no crescimento com o financeiro estruturado desde o início."
+  },
+  {
+    question: "Meus dados financeiros estarão seguros?",
+    answer: "Sim. Os dados são tratados com confidencialidade, acessos controlados e processos definidos. Todas as movimentações ficam registradas, garantindo rastreabilidade e transparência. A empresa mantém autonomia e visibilidade sobre as informações financeiras."
+  },
+  {
+    question: "Vocês fazem os pagamentos das minhas contas?",
+    answer: "Organizamos, agendamos e controlamos todas as contas a pagar e receber, com alertas e aprovações quando necessário. A liberação dos pagamentos pode ser feita pela própria empresa, mantendo total controle, ou o fluxo pode ser configurado conforme a preferência e política definida."
+  },
+  {
+    question: "Quanto tempo leva para começar?",
+    answer: "Após o diagnóstico inicial, iniciamos a organização das rotinas financeiras e a estruturação dos processos. O prazo varia conforme a complexidade da empresa, mas em pouco tempo o financeiro já passa a operar com controle, conciliação e fluxo de caixa atualizado."
+  },
+  {
+    question: "Como começo?",
+    answer: "O primeiro passo é um diagnóstico financeiro para entender a estrutura atual, identificar necessidades e definir o escopo de atuação. A partir disso, organizamos os processos, implantamos as rotinas e iniciamos o acompanhamento contínuo do financeiro."
+  },
+];
 
 const ValoromBPO = () => {
   const fases = [
