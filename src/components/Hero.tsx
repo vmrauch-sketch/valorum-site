@@ -74,7 +74,7 @@ const Hero = () => {
               </div>
               
               {/* Sub-brand descriptions */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8 text-left max-w-3xl mx-auto">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8 text-left max-w-4xl mx-auto">
                 <div className="p-4 rounded-lg bg-corporate-50 border-l-4 border-corporate-500">
                   <h3 className="font-semibold text-corporate-600 mb-1">Valorum Capital</h3>
                   <p className="text-sm text-gray-600">Uma casa de investimentos independente que constrói e preserva patrimônio com estratégia, transparência e zero conflito de interesses.</p>
@@ -89,7 +89,11 @@ const Hero = () => {
                 </div>
                 <div className="p-4 rounded-lg bg-lime-50 border-l-4 border-lime-500">
                   <h3 className="font-semibold text-lime-600 mb-1">Valorum CFO</h3>
-                  <p className="text-sm text-gray-600">Diretor financeiro terceirizado para sua empresa. Visão estratégica do operacional ao crescimento.</p>
+                  <p className="text-sm text-gray-600">Diretor financeiro terceirizado para sua empresa. Apoio para as decisões financeiras e estratégicas da empresa.</p>
+                </div>
+                <div className="p-4 rounded-lg bg-blue-50 border-l-4 border-blue-500">
+                  <h3 className="font-semibold text-blue-600 mb-1">Valorum BPO</h3>
+                  <p className="text-sm text-gray-600">Terceirização financeira. Gestão financeira completa para sua empresa com eficiência e controle.</p>
                 </div>
               </div>
               
