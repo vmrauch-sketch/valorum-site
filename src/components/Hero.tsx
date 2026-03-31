@@ -84,6 +84,10 @@ const Hero = () => {
                   <h3 className="font-semibold text-corporate-600 mb-1">Valorum Capital</h3>
                   <p className="text-sm text-gray-600">Uma casa de investimentos independente que constrói e preserva patrimônio com estratégia, transparência e zero conflito de interesses.</p>
                 </div>
+                <div className="p-4 rounded-lg bg-blue-50 border-l-4 border-blue-500">
+                  <h3 className="font-semibold text-blue-600 mb-1">Valorum BPO</h3>
+                  <p className="text-sm text-gray-600">Terceirização financeira. Gestão financeira completa para sua empresa com eficiência e controle.</p>
+                </div>
                 <div className="p-4 rounded-lg bg-gold-50 border-l-4 border-gold-500">
                   <h3 className="font-semibold text-gold-600 mb-1">Valorum Patrimônio</h3>
                   <p className="text-sm text-gray-600">Planejamento patrimonial e sucessório completo. A Tríade Patrimonial que transforma seu patrimônio em fonte de liberdade.</p>
@@ -95,10 +99,6 @@ const Hero = () => {
                 <div className="p-4 rounded-lg bg-lime-50 border-l-4 border-lime-500">
                   <h3 className="font-semibold text-lime-600 mb-1">Valorum CFO</h3>
                   <p className="text-sm text-gray-600">Direcionamento financeiro terceirizado para sua empresa. Apoio para as decisões financeiras e estratégicas.</p>
-                </div>
-                <div className="p-4 rounded-lg bg-blue-50 border-l-4 border-blue-500">
-                  <h3 className="font-semibold text-blue-600 mb-1">Valorum BPO</h3>
-                  <p className="text-sm text-gray-600">Terceirização financeira. Gestão financeira completa para sua empresa com eficiência e controle.</p>
                 </div>
               </div>
               
