@@ -122,15 +122,11 @@ const ValoromBPO = () => {
                 <span className="text-blue-400">A gente resolve.</span>
               </h1>
               
-              <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-4">
-                Contas a pagar, receber, conciliação bancária, fluxo de caixa e relatórios — tudo organizado, com processos definidos e acompanhamento contínuo.
-              </p>
-
-              <p className="text-base text-gray-400 max-w-2xl mx-auto mb-8">
-                Em vez de gastar tempo com tarefas operacionais, a gestão foca no crescimento. O financeiro funciona com disciplina e previsibilidade.
+              <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-8">
+                Contas a pagar, receber, conciliação bancária, fluxo de caixa e relatórios — tudo organizado, com processos definidos e acompanhamento contínuo. Em vez de gastar tempo com tarefas operacionais, a gestão foca no crescimento enquanto o financeiro funciona com disciplina e previsibilidade.
               </p>
               
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center mb-4">
                 <Link to="/contato">
                   <Button 
                     size="lg"
@@ -140,6 +136,9 @@ const ValoromBPO = () => {
                   </Button>
                 </Link>
               </div>
+              <p className="text-sm text-gray-500">
+                Resposta em até 2 horas em dias úteis · Sem compromisso
+              </p>
             </div>
           </div>
         </section>
@@ -319,23 +318,28 @@ const ValoromBPO = () => {
           </div>
         </section>
 
-        {/* CTA Section */}
-        <section className="py-20 bg-gradient-to-br from-primary via-primary/95 to-primary">
+        {/* CTA Final Section */}
+        <section className="py-24 bg-gradient-to-br from-primary via-primary/95 to-primary">
           <div className="container mx-auto px-6 text-center">
-            <h2 className="text-3xl md:text-4xl font-playfair font-bold text-white mb-6">
-              Quer ter controle real do financeiro da sua empresa?
+            <h2 className="text-3xl md:text-5xl font-playfair font-bold text-white leading-tight mb-6">
+              Sua empresa merece um financeiro
+              <br />
+              <span className="text-blue-400">que trabalha para você.</span>
             </h2>
-            <p className="text-lg text-gray-300 max-w-2xl mx-auto mb-8">
-              Terceirize o financeiro e ganhe tempo, clareza e previsibilidade para crescer com segurança.
+            <p className="text-lg text-gray-300 max-w-2xl mx-auto mb-10">
+              Agende uma sessão gratuita de 30 minutos. Sem compromisso, sem enrolação — só clareza sobre onde seu dinheiro está indo e como fazer ele trabalhar por você.
             </p>
             <Link to="/contato">
               <Button 
                 size="lg" 
-                className="bg-gradient-to-r from-blue-400 to-blue-500 hover:from-blue-500 hover:to-blue-600 text-white font-semibold px-8 py-6 text-lg"
+                className="bg-gradient-to-r from-blue-400 to-blue-500 hover:from-blue-500 hover:to-blue-600 text-white font-semibold px-10 py-6 text-lg"
               >
-                Conheça as Soluções
+                Agendar Minha Sessão Gratuita
               </Button>
             </Link>
+            <p className="text-sm text-gray-500 mt-4">
+              Resposta em até 2 horas em dias úteis · Sem compromisso
+            </p>
           </div>
         </section>
 
