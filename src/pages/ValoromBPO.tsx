@@ -287,7 +287,7 @@ const ValoromBPO = () => {
               {[
                 { icon: Search, num: "01", title: "Diagnóstico gratuito", description: "Em uma reunião rápida, mapeamos a situação financeira da sua empresa e identificamos os maiores gargalos." },
                 { icon: FileText, num: "02", title: "Migração assistida", description: "Nossa equipe guia você em todo o processo de transição — sem burocracia, sem estresse e sem parar sua operação." },
-                { icon: Clock, num: "03", title: "Gestão no piloto automático", description: "A partir daí, você só acompanha os dashboards e relatórios. Nós cuidamos de todo o resto, com total transparência." },
+                { icon: Clock, num: "03", title: "Foque na gestão", description: "A partir daí, você só acompanha os dashboards e relatórios. Nós cuidamos de todo o resto, com total transparência." },
               ].map((item, index) => (
                 <div 
                   key={index}
