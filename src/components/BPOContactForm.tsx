@@ -200,18 +200,7 @@ const BPOContactForm = () => {
         </div>
       </div>
 
-      <div className="space-y-2">
-        <Label htmlFor="message" className="text-white text-sm font-semibold">
-          Conte-nos sobre sua necessidade
-        </Label>
-        <Textarea
-          id="message"
-          placeholder="Descreva brevemente o que sua empresa precisa..."
-          value={formData.message}
-          onChange={(e) => handleChange("message", e.target.value)}
-          className="bg-white/10 border-white/20 text-white placeholder:text-gray-500 focus:border-blue-400 min-h-[100px] resize-none"
-        />
-      </div>
+
 
       <Button
         type="submit"
