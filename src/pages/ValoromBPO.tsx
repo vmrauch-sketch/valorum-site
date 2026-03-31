@@ -147,10 +147,13 @@ const ValoromBPO = () => {
                 Seu departamento financeiro.{" "}
                 <span className="italic text-blue-400">Finance as a Service.</span>
               </h2>
+              <p className="text-xl text-blue-300 mt-4 font-medium">
+                Na Controladoria ou na Tesouraria
+              </p>
             </div>
             
             <p className="text-center text-gray-400 max-w-3xl mx-auto mb-16">
-              Cuidamos de toda a rotina financeira da sua empresa do operacional ao estratégico, com tecnologia de ponta e um custo até <strong className="text-white">5x menor</strong> que um time interno.
+              Cuidamos de toda a rotina financeira da sua empresa, do operacional ao estratégico, com tecnologia de ponta e um custo até <strong className="text-white">5x menor</strong> que um time interno.
             </p>
             
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
