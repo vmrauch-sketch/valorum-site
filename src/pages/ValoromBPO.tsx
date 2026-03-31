@@ -55,8 +55,71 @@ const faqItems = [
 ];
 
 const ValoromBPO = () => {
+  const servicos = [
+    { 
+      icon: BarChart3, 
+      title: "Contas a Pagar e Receber", 
+      description: "Controle completo de obrigações e recebimentos com organização e pontualidade." 
+    },
+    { 
+      icon: FileText, 
+      title: "Conciliação Bancária", 
+      description: "Conferência diária das movimentações para manter os registros sempre atualizados." 
+    },
+    { 
+      icon: TrendingUp, 
+      title: "Fluxo de Caixa", 
+      description: "Acompanhamento em tempo real da saúde financeira para decisões mais seguras." 
+    },
+    { 
+      icon: Shield, 
+      title: "Relatórios Gerenciais", 
+      description: "Informações claras e organizadas para apoiar a tomada de decisão da gestão." 
+    },
+  ];
 
+  const diferenciais = [
+    "Mais tempo para focar no crescimento do negócio",
+    "Redução de erros e retrabalho financeiro",
+    "Processos padronizados e previsíveis",
+    "Relatórios claros para decisões informadas",
+    "Controle financeiro com disciplina e eficiência"
+  ];
 
+  return (
+    <>
+      <SEOHead
+        title="Valorum BPO | Terceirização Financeira"
+        description="Terceirização financeira para sua empresa crescer com controle e clareza. Gestão financeira completa com processos definidos e acompanhamento contínuo."
+        keywords="BPO financeiro, terceirização financeira, gestão financeira, contas a pagar, fluxo de caixa, conciliação bancária"
+        canonical="https://valorum.vilsonrauch.com.br/bpo"
+      />
+      
+      <div className="min-h-screen bg-background font-inter">
+        <Navigation />
+        
+        {/* Hero Section */}
+        <section className="relative min-h-[70vh] flex items-center bg-gradient-to-br from-primary via-primary/95 to-primary pt-28 sm:pt-16">
+          <div className="absolute inset-0 overflow-hidden">
+            <div className="absolute top-20 left-10 w-64 h-64 bg-blue-400/10 rounded-full blur-3xl" />
+            <div className="absolute bottom-20 right-10 w-96 h-96 bg-blue-400/10 rounded-full blur-3xl" />
+          </div>
+          
+          <div className="container mx-auto px-6 relative z-10">
+            <div className="max-w-4xl mx-auto text-center">
+              <div className="w-16 h-1 bg-gradient-to-r from-blue-400 to-blue-500 mx-auto mb-8" />
+              
+              <p className="text-sm uppercase tracking-widest text-blue-400 font-semibold mb-6">
+                BPO Financeiro
+              </p>
+              
+              <h1 className="text-4xl md:text-6xl font-playfair font-bold text-white leading-tight mb-6">
+                Sua empresa cresce,{" "}
+                <br className="hidden md:block" />
+                mas o financeiro não acompanha.
+                <br />
+                <span className="text-blue-400">A gente resolve.</span>
+              </h1>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center mb-4">
                 <Link to="/contato">
