@@ -1,6 +1,7 @@
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
+import { Link } from "react-router-dom";
 import { 
   BarChart3, 
   Building2, 
@@ -13,7 +14,9 @@ import {
   Gem, 
   Lock, 
   ShieldCheck,
-  Globe
+  Globe,
+  Stethoscope,
+  ArrowRight
 } from "lucide-react";
 
 const ComoAtuamos = () => {
