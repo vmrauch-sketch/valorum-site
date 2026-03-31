@@ -10,8 +10,7 @@ import { Send, CheckCircle, Loader2 } from "lucide-react";
 const revenueRanges = [
   "Até R$ 8 mil/mês",
   "R$ 8 mil – R$ 50 mil/mês",
-  "R$ 50 mil – R$ 200 mil/mês",
-  "R$ 200 mil – R$ 500 mil/mês",
+  "R$ 50 mil – R$ 500 mil/mês",
   "R$ 500 mil – R$ 1 milhão/mês",
   "Acima de R$ 1 milhão/mês",
 ];
