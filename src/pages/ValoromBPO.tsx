@@ -270,6 +270,60 @@ const ValoromBPO = () => {
           </div>
         </section>
 
+        {/* Comece em 3 passos Section */}
+        <section className="py-24 bg-primary">
+          <div className="container mx-auto px-6">
+            <div className="text-center mb-6">
+              <h2 className="text-4xl md:text-6xl font-playfair font-bold text-white leading-tight">
+                Comece em <span className="italic text-blue-400">3 passos simples</span>
+              </h2>
+            </div>
+            
+            <p className="text-center text-gray-400 max-w-2xl mx-auto mb-16">
+              Da primeira conversa ao financeiro funcionando: menos de 7 dias. Sem complicação.
+            </p>
+            
+            <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto mb-12">
+              {[
+                { icon: Search, num: "01", title: "Diagnóstico gratuito", description: "Em uma reunião rápida, mapeamos a situação financeira da sua empresa e identificamos os maiores gargalos." },
+                { icon: FileText, num: "02", title: "Migração assistida", description: "Nossa equipe guia você em todo o processo de transição — sem burocracia, sem estresse e sem parar sua operação." },
+                { icon: Clock, num: "03", title: "Gestão no piloto automático", description: "A partir daí, você só acompanha os dashboards e relatórios. Nós cuidamos de todo o resto, com total transparência." },
+              ].map((item, index) => (
+                <div 
+                  key={index}
+                  className="p-8 rounded-2xl border border-blue-400/20 hover:border-blue-400/40 transition-all duration-300 relative"
+                >
+                  <div className="flex items-center justify-between mb-6">
+                    <div className="w-12 h-12 bg-blue-400/20 rounded-xl flex items-center justify-center">
+                      <item.icon className="w-6 h-6 text-blue-400" />
+                    </div>
+                    <span className="text-5xl font-bold text-white/10 font-playfair">
+                      {item.num}
+                    </span>
+                  </div>
+                  <h3 className="text-lg font-bold text-white mb-3">
+                    {item.title}
+                  </h3>
+                  <p className="text-gray-400 text-sm leading-relaxed">
+                    {item.description}
+                  </p>
+                </div>
+              ))}
+            </div>
+
+            <div className="text-center">
+              <Link to="/contato">
+                <Button 
+                  size="lg"
+                  className="bg-gradient-to-r from-blue-400 to-blue-500 hover:from-blue-500 hover:to-blue-600 text-white font-semibold px-10 py-6 text-lg uppercase tracking-wider"
+                >
+                  Quero Começar Agora
+                </Button>
+              </Link>
+            </div>
+          </div>
+        </section>
+
         {/* Fases do BPO Section */}
         <section className="py-24 bg-white">
           <div className="container mx-auto px-6">
