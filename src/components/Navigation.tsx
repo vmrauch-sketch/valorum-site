@@ -174,7 +174,7 @@ export const Navigation = () => {
         {isOpen && (
           <div className="lg:hidden border-t border-border/20">
             <div className="py-4 space-y-2">
-              {/* Capital, Contábil e Patrimônio buttons for mobile */}
+              {!isServicePage && (
                 <div className="flex flex-wrap gap-2 pb-4 mb-2 border-b border-border/20">
                 <Link to="/capital" onClick={() => setIsOpen(false)} className="flex-1 min-w-[10rem]">
                   <Button size="sm" className="w-full bg-gradient-to-r from-corporate-500 to-corporate-600 hover:from-corporate-600 hover:to-corporate-700 text-white">
@@ -202,6 +202,7 @@ export const Navigation = () => {
                   </Button>
                 </Link>
                 </div>
+              )}
               
               {navItems.map((item) => (
                 item.external ? (
