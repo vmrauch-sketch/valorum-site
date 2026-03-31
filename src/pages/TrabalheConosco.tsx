@@ -233,9 +233,6 @@ const TrabalheConosco = () => {
                   >
                     Quero ser Especialista BPO
                   </button>
-                  <p className="text-sm text-gray-500 mt-4">
-                    Resposta em até 2 horas em dias úteis · Sem compromisso
-                  </p>
                 </div>
               </div>
             </div>
