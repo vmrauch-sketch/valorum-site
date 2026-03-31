@@ -56,6 +56,11 @@ const Hero = () => {
                     Capital
                   </Button>
                 </Link>
+                <Link to="/bpo">
+                  <Button variant="outline" className="bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white border-none font-medium px-4 py-2 text-sm">
+                    BPO
+                  </Button>
+                </Link>
                 <Link to="/patrimonio">
                   <Button variant="outline" className="bg-gradient-to-r from-gold-500 to-gold-600 hover:from-gold-600 hover:to-gold-700 text-white border-none font-medium px-4 py-2 text-sm">
                     Patrimônio
