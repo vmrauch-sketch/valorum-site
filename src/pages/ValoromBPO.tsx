@@ -219,6 +219,57 @@ const ValoromBPO = () => {
           </div>
         </section>
 
+        {/* Resultados Section */}
+        <section className="py-24 bg-primary/95">
+          <div className="container mx-auto px-6">
+            <div className="text-center mb-6">
+              <p className="text-sm uppercase tracking-widest text-gray-500 mb-4">
+                Por que resultados falam mais alto
+              </p>
+              <p className="text-lg text-gray-400 max-w-2xl mx-auto">
+                Veja o que muda quando você entrega seu financeiro para quem realmente entende.
+              </p>
+            </div>
+            
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto mt-16 mb-12">
+              {[
+                { title: "Seu tempo de volta", description: "Cada hora que você gasta em planilha é uma hora que deixou de vender. Cuide do negócio — a gente cuida do dinheiro.", color: "from-blue-400/60 to-blue-500/20" },
+                { title: "Segurança blindada", description: "Contratos com cláusula de sigilo, sistemas criptografados e processos auditáveis. Suas informações estão protegidas.", color: "from-red-400/60 to-red-500/20" },
+                { title: "Crescimento previsível", description: "Chega de decidir no feeling. Com dados reais e projeções concretas, você sabe exatamente para onde seu negócio vai.", color: "from-purple-400/60 to-purple-500/20" },
+                { title: "Zero dor de cabeça com RH", description: "Sem processo seletivo, sem treinamento, sem encargo. O time já está pronto e começa a trabalhar pela sua empresa agora.", color: "from-yellow-400/60 to-yellow-500/20" },
+                { title: "Conformidade garantida", description: "Esqueça multas por atraso e obrigações perdidas. A gente acompanha tudo e você nunca mais paga por descuido.", color: "from-green-400/60 to-green-500/20" },
+                { title: "Visão estratégica do negócio", description: "Todo mês você recebe um relatório que mostra onde está perdendo dinheiro — e como lucrar mais com o que já tem.", color: "from-cyan-400/60 to-cyan-500/20" },
+              ].map((item, index) => (
+                <div 
+                  key={index}
+                  className="rounded-2xl border border-white/10 overflow-hidden hover:border-white/20 transition-all duration-300"
+                >
+                  <div className={`h-1.5 bg-gradient-to-r ${item.color}`} />
+                  <div className="p-6">
+                    <h3 className="text-lg font-bold text-white mb-3">
+                      {item.title}
+                    </h3>
+                    <p className="text-gray-400 text-sm leading-relaxed">
+                      {item.description}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <div className="text-center">
+              <Link to="/contato">
+                <Button 
+                  size="lg"
+                  className="bg-gradient-to-r from-blue-400 to-blue-500 hover:from-blue-500 hover:to-blue-600 text-white font-semibold px-10 py-6 text-lg uppercase tracking-wider"
+                >
+                  Quero Esses Resultados Agora
+                </Button>
+              </Link>
+            </div>
+          </div>
+        </section>
+
         {/* Fases do BPO Section */}
         <section className="py-24 bg-white">
           <div className="container mx-auto px-6">
