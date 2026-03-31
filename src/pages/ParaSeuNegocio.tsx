@@ -108,8 +108,46 @@ const ParaSeuNegocio = () => {
                   </p>
                 </div>
 
-                {/* Cards destacados - Valorum Contábil e CFO */}
-                <div className={`grid md:grid-cols-2 gap-6 mb-8 transform transition-all duration-1000 ease-out delay-400 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'}`}>
+                {/* Cards destacados - BPO, Contábil e CFO */}
+                <div className={`grid md:grid-cols-3 gap-6 mb-8 transform transition-all duration-1000 ease-out delay-400 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'}`}>
+                  {/* Valorum BPO */}
+                  <Link 
+                    to="/bpo"
+                    className="group bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-xl border-2 border-blue-200 hover:border-blue-400 transition-all duration-300 hover:shadow-lg"
+                  >
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className="p-3 bg-blue-500 rounded-lg">
+                        <BarChart3 size={24} className="text-white" />
+                      </div>
+                      <div>
+                        <h3 className="text-xl font-bold text-blue-700 group-hover:text-blue-800 transition-colors">
+                          Valorum BPO
+                        </h3>
+                        <p className="text-sm text-blue-600 font-medium">
+                          Terceirização Financeira
+                        </p>
+                      </div>
+                    </div>
+                    <ul className="space-y-2 text-gray-700 text-sm">
+                      <li className="flex items-center">
+                        <CheckCircle size={14} className="mr-2 text-blue-500 flex-shrink-0" />
+                        <span>Gestão financeira completa</span>
+                      </li>
+                      <li className="flex items-center">
+                        <CheckCircle size={14} className="mr-2 text-blue-500 flex-shrink-0" />
+                        <span>Processos definidos e acompanhamento</span>
+                      </li>
+                      <li className="flex items-center">
+                        <CheckCircle size={14} className="mr-2 text-blue-500 flex-shrink-0" />
+                        <span>Controle e eficiência operacional</span>
+                      </li>
+                    </ul>
+                    <div className="mt-4 flex items-center text-blue-700 font-medium text-sm group-hover:text-blue-800">
+                      Conhecer serviços
+                      <ArrowUpRight size={16} className="ml-1 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+                    </div>
+                  </Link>
+
                   {/* Valorum Contábil */}
                   <Link 
                     to="/contabil"
@@ -172,7 +210,7 @@ const ParaSeuNegocio = () => {
                     <ul className="space-y-2 text-gray-700 text-sm">
                       <li className="flex items-center">
                         <CheckCircle size={14} className="mr-2 text-lime-500 flex-shrink-0" />
-                        <span>Diretor Financeiro terceirizado</span>
+                        <span>Direcionamento financeiro terceirizado</span>
                       </li>
                       <li className="flex items-center">
                         <CheckCircle size={14} className="mr-2 text-lime-500 flex-shrink-0" />
