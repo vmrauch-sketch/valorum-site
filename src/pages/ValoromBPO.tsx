@@ -238,7 +238,7 @@ const ValoromBPO = () => {
                 { title: "Crescimento previsível", description: "Chega de decidir no feeling. Com dados reais e projeções concretas, você sabe exatamente para onde seu negócio vai.", color: "from-purple-400/60 to-purple-500/20" },
                 { title: "Zero dor de cabeça com RH", description: "Sem processo seletivo, sem treinamento, sem encargo. O time já está pronto e começa a trabalhar pela sua empresa agora.", color: "from-yellow-400/60 to-yellow-500/20" },
                 { title: "Conformidade garantida", description: "Esqueça multas por atraso e obrigações perdidas. A gente acompanha tudo e você nunca mais paga por descuido.", color: "from-green-400/60 to-green-500/20" },
-                { title: "Visão estratégica do negócio", description: "Todo mês você recebe um relatório que mostra onde está perdendo dinheiro — e como lucrar mais com o que já tem.", color: "from-cyan-400/60 to-cyan-500/20" },
+                { title: "Visão estratégica do negócio", description: "Todo mês você recebe um relatório que mostra onde está indo seu dinheiro — e como lucrar mais com o que já tem.", color: "from-cyan-400/60 to-cyan-500/20" },
               ].map((item, index) => (
                 <div 
                   key={index}
