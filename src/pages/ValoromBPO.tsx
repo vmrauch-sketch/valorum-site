@@ -122,15 +122,11 @@ const ValoromBPO = () => {
                 <span className="text-blue-400">A gente resolve.</span>
               </h1>
               
-              <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-4">
-                Contas a pagar, receber, conciliação bancária, fluxo de caixa e relatórios — tudo organizado, com processos definidos e acompanhamento contínuo.
-              </p>
-
-              <p className="text-base text-gray-400 max-w-2xl mx-auto mb-8">
-                Em vez de gastar tempo com tarefas operacionais, a gestão foca no crescimento. O financeiro funciona com disciplina e previsibilidade.
+              <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-8">
+                Contas a pagar, receber, conciliação bancária, fluxo de caixa e relatórios — tudo organizado, com processos definidos e acompanhamento contínuo. Em vez de gastar tempo com tarefas operacionais, a gestão foca no crescimento enquanto o financeiro funciona com disciplina e previsibilidade.
               </p>
               
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center mb-4">
                 <Link to="/contato">
                   <Button 
                     size="lg"
@@ -140,6 +136,9 @@ const ValoromBPO = () => {
                   </Button>
                 </Link>
               </div>
+              <p className="text-sm text-gray-500">
+                Resposta em até 2 horas em dias úteis · Sem compromisso
+              </p>
             </div>
           </div>
         </section>
