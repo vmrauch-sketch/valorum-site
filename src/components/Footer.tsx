@@ -39,15 +39,11 @@ const Footer = () => {
               <div className="flex flex-col space-y-2 text-sm text-white/60">
                 <span className="flex items-center">
                   <span className="w-2 h-2 bg-financial-500 rounded-full mr-2"></span>
-                  Construção e Gestão Patrimonial
+                  Financeiro
                 </span>
                 <span className="flex items-center">
                   <span className="w-2 h-2 bg-financial-500 rounded-full mr-2"></span>
-                  Planejamento Financeiro
-                </span>
-                <span className="flex items-center">
-                  <span className="w-2 h-2 bg-financial-500 rounded-full mr-2"></span>
-                  Consultoria
+                  Investimentos
                 </span>
               </div>
             </div>
