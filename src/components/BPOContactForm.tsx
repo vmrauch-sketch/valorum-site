@@ -57,7 +57,9 @@ const BPOContactForm = () => {
     setIsSubmitting(true);
 
     try {
+      const id = crypto.randomUUID();
       const { error } = await supabase.from("contact_submissions").insert({
+        id,
         name: formData.name.trim(),
         email: formData.email.trim(),
         phone: formData.phone.trim() || null,
@@ -67,6 +69,23 @@ const BPOContactForm = () => {
       });
 
       if (error) throw error;
+
+      // Send email notification to atendimento@cfvalorum.com.br
+      await supabase.functions.invoke("send-transactional-email", {
+        body: {
+          templateName: "bpo-contact-notification",
+          recipientEmail: "atendimento@cfvalorum.com.br",
+          idempotencyKey: `bpo-contact-${id}`,
+          templateData: {
+            name: formData.name.trim(),
+            email: formData.email.trim(),
+            phone: formData.phone.trim() || undefined,
+            company: formData.company.trim() || undefined,
+            revenue_range: formData.revenue_range || undefined,
+            message: formData.message.trim() || undefined,
+          },
+        },
+      });
 
       setIsSubmitted(true);
       toast({

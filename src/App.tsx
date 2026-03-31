@@ -22,6 +22,7 @@ import ValoromCFO from "./pages/ValoromCFO";
 import AberturaEmpresa from "./pages/AberturaEmpresa";
 import TroqueDeContador from "./pages/TroqueDeContador";
 import ValoromBPO from "./pages/ValoromBPO";
+import Unsubscribe from "./pages/Unsubscribe";
 
 const queryClient = new QueryClient();
 
@@ -50,6 +51,7 @@ const App = () => (
           <Route path="/bpo" element={<ValoromBPO />} />
           <Route path="/abra-sua-empresa" element={<AberturaEmpresa />} />
           <Route path="/troque-de-contador" element={<TroqueDeContador />} />
+          <Route path="/unsubscribe" element={<Unsubscribe />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
