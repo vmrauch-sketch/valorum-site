@@ -123,14 +123,14 @@ const ValoromBPO = () => {
               </h1>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center mb-4">
-                <Link to="/contato">
+                <a href="#contato-bpo">
                   <Button 
                     size="lg"
                     className="bg-gradient-to-r from-blue-400 to-blue-500 hover:from-blue-500 hover:to-blue-600 text-white font-semibold px-8 py-6 text-lg"
                   >
                     Quero um Diagnóstico Gratuito
                   </Button>
-                </Link>
+                </a>
               </div>
               <p className="text-sm text-gray-500">
                 Resposta em até 2 horas em dias úteis · Sem compromisso
@@ -224,14 +224,14 @@ const ValoromBPO = () => {
             </div>
 
             <div className="text-center">
-              <Link to="/contato">
+              <a href="#contato-bpo">
                 <Button 
                   size="lg"
                   className="bg-gradient-to-r from-blue-400 to-blue-500 hover:from-blue-500 hover:to-blue-600 text-white font-semibold px-10 py-6 text-lg uppercase tracking-wider"
                 >
                   Quero Esses Resultados Agora
                 </Button>
-              </Link>
+              </a>
             </div>
           </div>
         </section>
@@ -278,14 +278,14 @@ const ValoromBPO = () => {
             </div>
 
             <div className="text-center">
-              <Link to="/contato">
+              <a href="#contato-bpo">
                 <Button 
                   size="lg"
                   className="bg-gradient-to-r from-blue-400 to-blue-500 hover:from-blue-500 hover:to-blue-600 text-white font-semibold px-10 py-6 text-lg uppercase tracking-wider"
                 >
                   Quero Começar Agora
                 </Button>
-              </Link>
+              </a>
             </div>
           </div>
         </section>
@@ -338,14 +338,14 @@ const ValoromBPO = () => {
             <p className="text-lg text-gray-300 max-w-2xl mx-auto mb-10">
               Agende seu diagnóstico gratuito. Sem compromisso, sem enrolação — só clareza sobre onde seu dinheiro está indo e como fazer ele trabalhar por você.
             </p>
-            <Link to="/contato">
+            <a href="#contato-bpo">
               <Button 
                 size="lg" 
                 className="bg-gradient-to-r from-blue-400 to-blue-500 hover:from-blue-500 hover:to-blue-600 text-white font-semibold px-10 py-6 text-lg uppercase tracking-wider"
               >
                 Agendar Meu Diagnóstico
               </Button>
-            </Link>
+            </a>
             <p className="text-sm text-gray-500 mt-4">
               Resposta em até 2 horas em dias úteis · Sem compromisso
             </p>
@@ -418,7 +418,7 @@ const ValoromBPO = () => {
             </div>
 
             <div className="text-center">
-              <Link to="/contato">
+              <a href="#contato-bpo">
                 <Button 
                   size="lg"
                   variant="outline"
@@ -426,7 +426,7 @@ const ValoromBPO = () => {
                 >
                   Solicitar Proposta Personalizada
                 </Button>
-              </Link>
+              </a>
             </div>
           </div>
         </section>
