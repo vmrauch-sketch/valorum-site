@@ -32,35 +32,28 @@ export const Navigation = () => {
             </Link>
             <div className="hidden sm:flex items-center gap-1.5">
               <Link to="/capital">
-              <Button 
-                  size="sm" 
-                  className={`bg-gradient-to-r from-corporate-500 to-corporate-600 hover:from-corporate-600 hover:to-corporate-700 text-white text-xs px-2.5 py-1 h-7 ${isActive('/capital') ? 'ring-2 ring-corporate-300' : ''}`}
-                >
+                <Button size="sm" className={`bg-gradient-to-r from-corporate-500 to-corporate-600 hover:from-corporate-600 hover:to-corporate-700 text-white text-xs px-2.5 py-1 h-7 ${isActive('/capital') ? 'ring-2 ring-corporate-300' : ''}`}>
                   Capital
                 </Button>
               </Link>
+              <Link to="/bpo">
+                <Button size="sm" className={`bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white text-xs px-2.5 py-1 h-7 ${isActive('/bpo') ? 'ring-2 ring-blue-300' : ''}`}>
+                  BPO
+                </Button>
+              </Link>
               <Link to="/patrimonio">
-                <Button 
-                  size="sm" 
-                  className={`bg-gradient-to-r from-gold-500 to-gold-600 hover:from-gold-600 hover:to-gold-700 text-white text-xs px-2.5 py-1 h-7 ${isActive('/patrimonio') ? 'ring-2 ring-gold-300' : ''}`}
-                >
+                <Button size="sm" className={`bg-gradient-to-r from-gold-500 to-gold-600 hover:from-gold-600 hover:to-gold-700 text-white text-xs px-2.5 py-1 h-7 ${isActive('/patrimonio') ? 'ring-2 ring-gold-300' : ''}`}>
                   Patrimônio
                 </Button>
               </Link>
-              <Link to="/contabil">
-                <Button 
-                  size="sm" 
-                  className={`bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white text-xs px-2.5 py-1 h-7 ${isActive('/contabil') ? 'ring-2 ring-emerald-300' : ''}`}
-                >
-                  Contábil
+              <Link to="/cfo">
+                <Button size="sm" className={`bg-gradient-to-r from-lime-400 to-lime-500 hover:from-lime-500 hover:to-lime-600 text-primary text-xs px-2.5 py-1 h-7 font-semibold ${isActive('/cfo') ? 'ring-2 ring-lime-300' : ''}`}>
+                  CFO
                 </Button>
               </Link>
-              <Link to="/cfo">
-                <Button 
-                  size="sm" 
-                  className={`bg-gradient-to-r from-lime-400 to-lime-500 hover:from-lime-500 hover:to-lime-600 text-primary text-xs px-2.5 py-1 h-7 font-semibold ${isActive('/cfo') ? 'ring-2 ring-lime-300' : ''}`}
-                >
-                  CFO
+              <Link to="/contabil">
+                <Button size="sm" className={`bg-gradient-to-r from-navy-500 to-navy-600 hover:from-navy-600 hover:to-navy-700 text-white text-xs px-2.5 py-1 h-7 ${isActive('/contabil') ? 'ring-2 ring-navy-300' : ''}`}>
+                  Contábil
                 </Button>
               </Link>
             </div>
@@ -143,35 +136,28 @@ export const Navigation = () => {
         <div className="sm:hidden pb-3">
           <div className="flex flex-wrap items-center gap-2">
             <Link to="/capital">
-              <Button
-                size="sm"
-                className={`bg-gradient-to-r from-corporate-500 to-corporate-600 hover:from-corporate-600 hover:to-corporate-700 text-white text-xs px-2.5 py-1 h-7 ${isActive('/capital') ? 'ring-2 ring-corporate-300' : ''}`}
-              >
+              <Button size="sm" className={`bg-gradient-to-r from-corporate-500 to-corporate-600 hover:from-corporate-600 hover:to-corporate-700 text-white text-xs px-2.5 py-1 h-7 ${isActive('/capital') ? 'ring-2 ring-corporate-300' : ''}`}>
                 Capital
               </Button>
             </Link>
+            <Link to="/bpo">
+              <Button size="sm" className={`bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white text-xs px-2.5 py-1 h-7 ${isActive('/bpo') ? 'ring-2 ring-blue-300' : ''}`}>
+                BPO
+              </Button>
+            </Link>
             <Link to="/patrimonio">
-              <Button
-                size="sm"
-                className={`bg-gradient-to-r from-gold-500 to-gold-600 hover:from-gold-600 hover:to-gold-700 text-white text-xs px-2.5 py-1 h-7 ${isActive('/patrimonio') ? 'ring-2 ring-gold-300' : ''}`}
-              >
+              <Button size="sm" className={`bg-gradient-to-r from-gold-500 to-gold-600 hover:from-gold-600 hover:to-gold-700 text-white text-xs px-2.5 py-1 h-7 ${isActive('/patrimonio') ? 'ring-2 ring-gold-300' : ''}`}>
                 Patrimônio
               </Button>
             </Link>
-            <Link to="/contabil">
-              <Button
-                size="sm"
-                className={`bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white text-xs px-2.5 py-1 h-7 ${isActive('/contabil') ? 'ring-2 ring-emerald-300' : ''}`}
-              >
-                Contábil
+            <Link to="/cfo">
+              <Button size="sm" className={`bg-gradient-to-r from-lime-400 to-lime-500 hover:from-lime-500 hover:to-lime-600 text-primary text-xs px-2.5 py-1 h-7 font-semibold ${isActive('/cfo') ? 'ring-2 ring-lime-300' : ''}`}>
+                CFO
               </Button>
             </Link>
-            <Link to="/cfo">
-              <Button
-                size="sm"
-                className={`bg-gradient-to-r from-lime-400 to-lime-500 hover:from-lime-500 hover:to-lime-600 text-primary text-xs px-2.5 py-1 h-7 font-semibold ${isActive('/cfo') ? 'ring-2 ring-lime-300' : ''}`}
-              >
-                CFO
+            <Link to="/contabil">
+              <Button size="sm" className={`bg-gradient-to-r from-navy-500 to-navy-600 hover:from-navy-600 hover:to-navy-700 text-white text-xs px-2.5 py-1 h-7 ${isActive('/contabil') ? 'ring-2 ring-navy-300' : ''}`}>
+                Contábil
               </Button>
             </Link>
           </div>
@@ -182,56 +168,33 @@ export const Navigation = () => {
           <div className="lg:hidden border-t border-border/20">
             <div className="py-4 space-y-2">
               {/* Capital, Contábil e Patrimônio buttons for mobile */}
-              <div className="flex flex-wrap gap-2 pb-4 mb-2 border-b border-border/20">
-                <Link 
-                  to="/capital" 
-                  onClick={() => setIsOpen(false)}
-                  className="flex-1 min-w-[10rem]"
-                >
-                  <Button 
-                    size="sm" 
-                    className="w-full bg-gradient-to-r from-corporate-500 to-corporate-600 hover:from-corporate-600 hover:to-corporate-700 text-white"
-                  >
+                <div className="flex flex-wrap gap-2 pb-4 mb-2 border-b border-border/20">
+                <Link to="/capital" onClick={() => setIsOpen(false)} className="flex-1 min-w-[10rem]">
+                  <Button size="sm" className="w-full bg-gradient-to-r from-corporate-500 to-corporate-600 hover:from-corporate-600 hover:to-corporate-700 text-white">
                     Valorum Capital
                   </Button>
                 </Link>
-                <Link 
-                  to="/contabil" 
-                  onClick={() => setIsOpen(false)}
-                  className="flex-1 min-w-[10rem]"
-                >
-                  <Button 
-                    size="sm" 
-                    className="w-full bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white"
-                  >
-                    Valorum Contábil
+                <Link to="/bpo" onClick={() => setIsOpen(false)} className="flex-1 min-w-[10rem]">
+                  <Button size="sm" className="w-full bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white">
+                    Valorum BPO
                   </Button>
                 </Link>
-                <Link 
-                  to="/patrimonio" 
-                  onClick={() => setIsOpen(false)}
-                  className="flex-1 min-w-[10rem]"
-                >
-                  <Button 
-                    size="sm" 
-                    className="w-full bg-gradient-to-r from-gold-500 to-gold-600 hover:from-gold-600 hover:to-gold-700 text-white"
-                  >
+                <Link to="/patrimonio" onClick={() => setIsOpen(false)} className="flex-1 min-w-[10rem]">
+                  <Button size="sm" className="w-full bg-gradient-to-r from-gold-500 to-gold-600 hover:from-gold-600 hover:to-gold-700 text-white">
                     Valorum Patrimônio
                   </Button>
                 </Link>
-                <Link 
-                  to="/cfo" 
-                  onClick={() => setIsOpen(false)}
-                  className="flex-1 min-w-[10rem]"
-                >
-                  <Button 
-                    size="sm" 
-                    className="w-full bg-gradient-to-r from-lime-400 to-lime-500 hover:from-lime-500 hover:to-lime-600 text-primary font-semibold"
-                  >
+                <Link to="/cfo" onClick={() => setIsOpen(false)} className="flex-1 min-w-[10rem]">
+                  <Button size="sm" className="w-full bg-gradient-to-r from-lime-400 to-lime-500 hover:from-lime-500 hover:to-lime-600 text-primary font-semibold">
                     Valorum CFO
                   </Button>
                 </Link>
-              </div>
+                <Link to="/contabil" onClick={() => setIsOpen(false)} className="flex-1 min-w-[10rem]">
+                  <Button size="sm" className="w-full bg-gradient-to-r from-navy-500 to-navy-600 hover:from-navy-600 hover:to-navy-700 text-white">
+                    Valorum Contábil
+                  </Button>
+                </Link>
+                </div>
               
               {navItems.map((item) => (
                 item.external ? (
