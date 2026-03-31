@@ -17,10 +17,44 @@ import {
   ClipboardCheck,
   Lightbulb,
   Shield,
-  ArrowUpRight
+  ArrowUpRight,
+  Search,
+  Settings
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+
+const faqItems = [
+  {
+    question: "O que faz um CFO terceirizado?",
+    answer: "O CFO terceirizado assume a direção financeira da empresa, cuidando de planejamento, análise de resultados, fluxo de caixa, controladoria e estratégia. A diferença é que você conta com essa expertise sem precisar contratar um executivo em tempo integral."
+  },
+  {
+    question: "Minha empresa já tem um financeiro. Ainda preciso de um CFO?",
+    answer: "Sim. O financeiro operacional cuida das rotinas do dia a dia. O CFO traz visão estratégica: analisa indicadores, identifica oportunidades, estrutura o crescimento e orienta decisões. São papéis complementares."
+  },
+  {
+    question: "Qual o tamanho mínimo de empresa para ter um CFO terceirizado?",
+    answer: "Não existe um tamanho mínimo. Empresas a partir de R$ 1 milhão de faturamento anual já se beneficiam de uma direção financeira estruturada. O escopo é adaptado à realidade e ao momento de cada negócio."
+  },
+  {
+    question: "Como funciona na prática?",
+    answer: "Começamos com um diagnóstico financeiro completo. A partir dele, definimos o plano de ação, as entregas e a frequência de acompanhamento. O CFO participa de reuniões, analisa resultados, orienta decisões e acompanha a execução da estratégia."
+  },
+  {
+    question: "Quanto tempo leva para ver resultados?",
+    answer: "Nos primeiros 30 dias já entregamos o diagnóstico e as primeiras análises. Em 60 a 90 dias, os processos financeiros estão estruturados e os indicadores começam a mostrar evolução. O impacto estratégico cresce conforme o trabalho avança."
+  },
+  {
+    question: "O CFO terceirizado substitui meu contador?",
+    answer: "Não. O contador cuida das obrigações fiscais e contábeis. O CFO cuida da estratégia financeira, análise de resultados, planejamento e tomada de decisão. Os dois trabalham juntos, cada um no seu papel."
+  },
+  {
+    question: "Como começo?",
+    answer: "O primeiro passo é agendar uma conversa para entendermos o momento da sua empresa. A partir disso, fazemos o diagnóstico e apresentamos uma proposta sob medida."
+  },
+];
 
 const ValoromCFO = () => {
   const servicos = [
@@ -111,36 +145,35 @@ const ValoromCFO = () => {
             <div className="max-w-4xl mx-auto text-center">
               <div className="w-16 h-1 bg-gradient-to-r from-lime-400 to-lime-500 mx-auto mb-8" />
               
-              <p className="text-lg text-lime-400 font-medium mb-4">
-                Terceirização Estratégica de CFO
+              <p className="text-sm uppercase tracking-widest text-lime-400 font-semibold mb-6">
+                Valorum CFO
               </p>
               
-              <h1 className="text-4xl md:text-6xl font-playfair font-bold text-white leading-tight mb-4">
-                Valorum <span className="text-lime-400">CFO</span>
+              <h1 className="text-4xl md:text-6xl font-playfair font-bold text-white leading-tight mb-6">
+                Sua empresa cresce,{" "}
+                <br className="hidden md:block" />
+                mas falta direção financeira.
+                <br />
+                <span className="text-lime-400">A gente resolve.</span>
               </h1>
               
-              <p className="text-xl md:text-2xl font-playfair italic text-lime-400 mb-6">
-                "Compreender pessoas. Expandir negócios."
+              <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-8">
+                Planejamento estratégico, controladoria, fluxo de caixa e análise de resultados — com um CFO dedicado que traz a visão que falta para o seu negócio tomar decisões com segurança e crescer com controle.
               </p>
               
-              <p className="text-xl text-gray-300 max-w-2xl mx-auto mb-4">
-                Mais tempo para o CEO focar na estratégia e sair do operacional
-              </p>
-              
-              <p className="text-lg text-gray-400 max-w-3xl mx-auto mb-8">
-                Com nosso serviço de CFO Terceirizado, você conta com um direcionamento financeiro especializado, trazendo a visão estratégica que você precisa para impulsionar seus resultados.
-              </p>
-              
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center mb-4">
                 <Link to="/contato">
                   <Button 
                     size="lg"
                     className="bg-gradient-to-r from-lime-400 to-lime-500 hover:from-lime-500 hover:to-lime-600 text-primary font-semibold px-8 py-6 text-lg"
                   >
-                    Falar com um Especialista
+                    Quero um Diagnóstico Gratuito
                   </Button>
                 </Link>
               </div>
+              <p className="text-sm text-gray-500">
+                Resposta em até 2 horas em dias úteis · Sem compromisso
+              </p>
             </div>
           </div>
         </section>
@@ -244,6 +277,56 @@ const ValoromCFO = () => {
           </div>
         </section>
 
+        {/* Propostas sob medida Section */}
+        <section className="py-24 bg-primary">
+          <div className="container mx-auto px-6">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-5xl font-playfair font-bold text-white mb-4">
+                Propostas <span className="italic text-lime-400">sob medida</span>
+              </h2>
+              <p className="text-lg text-gray-400 max-w-3xl mx-auto">
+                Cada empresa tem uma realidade única. Por isso, não trabalhamos com pacotes prontos — criamos uma proposta personalizada de acordo com as necessidades, o momento e os objetivos do seu negócio.
+              </p>
+            </div>
+            
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto mb-12">
+              {[
+                { icon: Search, title: "Diagnóstico personalizado", description: "Analisamos a fundo a gestão financeira da sua empresa antes de propor qualquer solução." },
+                { icon: Users, title: "CFO dedicado", description: "Um profissional sênior focado no seu negócio, com experiência no seu segmento." },
+                { icon: Settings, title: "Escopo flexível", description: "Você contrata apenas o que precisa — e escala conforme a empresa cresce." },
+                { icon: Shield, title: "Sem surpresas", description: "Preço justo, transparente e alinhado ao tamanho e complexidade da sua operação." },
+              ].map((item, index) => (
+                <div 
+                  key={index}
+                  className="p-8 bg-primary/80 rounded-2xl text-center border border-lime-400/20 hover:border-lime-400/40 transition-all duration-300"
+                >
+                  <div className="w-14 h-14 bg-gradient-to-br from-lime-400 to-lime-500 rounded-xl flex items-center justify-center mx-auto mb-5">
+                    <item.icon className="w-7 h-7 text-white" />
+                  </div>
+                  <h3 className="text-lg font-playfair font-bold text-white mb-3">
+                    {item.title}
+                  </h3>
+                  <p className="text-gray-400 text-sm leading-relaxed">
+                    {item.description}
+                  </p>
+                </div>
+              ))}
+            </div>
+
+            <div className="text-center">
+              <Link to="/contato">
+                <Button 
+                  size="lg"
+                  variant="outline"
+                  className="border-lime-400 text-lime-400 hover:bg-lime-400 hover:text-primary font-semibold px-10 py-6 text-lg uppercase tracking-wider"
+                >
+                  Solicitar Proposta Personalizada
+                </Button>
+              </Link>
+            </div>
+          </div>
+        </section>
+
         {/* Para quem é Section */}
         <section className="py-24 bg-muted/30">
           <div className="container mx-auto px-6">
@@ -257,7 +340,6 @@ const ValoromCFO = () => {
             </div>
             
             <div className="space-y-6 max-w-5xl mx-auto">
-              {/* Primeira linha - prioridade */}
               <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                 {[
                   { icon: Building2, title: "Indústrias" },
@@ -279,7 +361,6 @@ const ValoromCFO = () => {
                 ))}
               </div>
               
-              {/* Segunda linha */}
               <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                 {[
                   { icon: Building2, title: "PMEs em crescimento" },
@@ -303,23 +384,59 @@ const ValoromCFO = () => {
           </div>
         </section>
 
+        {/* FAQ Section */}
+        <section className="py-24 bg-white">
+          <div className="container mx-auto px-6">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-playfair font-bold text-primary mb-4">
+                Perguntas frequentes
+              </h2>
+              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                Tire suas dúvidas sobre o CFO Terceirizado
+              </p>
+            </div>
+            
+            <div className="max-w-3xl mx-auto">
+              <Accordion type="single" collapsible className="space-y-4">
+                {faqItems.map((item, index) => (
+                  <AccordionItem 
+                    key={index} 
+                    value={`item-${index}`}
+                    className="border border-lime-200 rounded-xl px-6 data-[state=open]:border-lime-400 transition-colors duration-300"
+                  >
+                    <AccordionTrigger className="text-left text-primary font-semibold hover:text-lime-600 hover:no-underline py-5">
+                      {item.question}
+                    </AccordionTrigger>
+                    <AccordionContent className="text-muted-foreground leading-relaxed pb-5">
+                      {item.answer}
+                    </AccordionContent>
+                  </AccordionItem>
+                ))}
+              </Accordion>
+            </div>
+          </div>
+        </section>
+
         {/* CTA Section */}
         <section className="py-20 bg-gradient-to-br from-primary via-primary/95 to-primary">
           <div className="container mx-auto px-6 text-center">
             <h2 className="text-3xl md:text-4xl font-playfair font-bold text-white mb-6">
-              Quer melhorar a performance financeira da sua empresa?
+              Sua empresa merece uma direção financeira estratégica.
             </h2>
             <p className="text-lg text-gray-300 max-w-2xl mx-auto mb-8">
-              Contar com expertise de CFO permite decisões informadas e um processo de crescimento mais seguro.
+              Agende uma sessão gratuita de 30 minutos. Sem compromisso, sem enrolação — só clareza sobre como estruturar o financeiro para o seu negócio crescer com segurança.
             </p>
             <Link to="/contato">
               <Button 
                 size="lg" 
                 className="bg-gradient-to-r from-lime-400 to-lime-500 hover:from-lime-500 hover:to-lime-600 text-primary font-semibold px-8 py-6 text-lg"
               >
-                Conheça as Soluções
+                Agendar Minha Sessão Gratuita
               </Button>
             </Link>
+            <p className="text-sm text-gray-500 mt-4">
+              Resposta em até 2 horas em dias úteis · Sem compromisso
+            </p>
           </div>
         </section>
 
