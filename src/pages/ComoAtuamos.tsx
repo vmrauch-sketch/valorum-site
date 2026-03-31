@@ -111,6 +111,44 @@ const ComoAtuamos = () => {
                   );
                 })}
               </div>
+
+              {/* Seção Médicos — Protocolo Mais Renda */}
+              <div className="mt-20">
+                <div className="flex items-center gap-3 mb-6">
+                  <Stethoscope size={32} className="text-corporate-500" />
+                  <h2 className="text-3xl md:text-4xl font-playfair font-bold text-navy-600">
+                    Para Médicos e Profissionais da Saúde
+                  </h2>
+                </div>
+                <p className="text-lg text-gray-600 leading-relaxed mb-8 max-w-3xl">
+                  Médicos enfrentam desafios únicos: múltiplos CNPJs, tributação complexa, plantões que consomem tempo e pouca clareza sobre como organizar o patrimônio. Desenvolvemos uma solução específica para essa realidade.
+                </p>
+
+                <Link 
+                  to="/protocolo-mais-renda"
+                  className="block bg-navy-600 rounded-xl p-8 md:p-10 hover:shadow-xl transition-all duration-300 group border border-navy-500/20"
+                >
+                  <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+                    <div className="flex-1">
+                      <span className="inline-block bg-gold-500 text-white text-sm font-bold px-3 py-1 rounded-full mb-4 uppercase tracking-wide">
+                        Solução Exclusiva
+                      </span>
+                      <h3 className="text-2xl md:text-3xl font-playfair font-bold text-white mb-3">
+                        Protocolo Mais Renda
+                      </h3>
+                      <p className="text-lg text-gray-300 leading-relaxed">
+                        Estrutura financeira para médicos que querem pagar menos imposto, organizar fluxo de caixa e investir com estratégia.
+                      </p>
+                    </div>
+                    <div className="flex-shrink-0">
+                      <span className="inline-flex items-center gap-2 bg-gold-500 text-white font-bold px-6 py-3 rounded-lg text-lg group-hover:bg-gold-600 transition-colors">
+                        Conhecer Protocolo
+                        <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
+                      </span>
+                    </div>
+                  </div>
+                </Link>
+              </div>
             </div>
           </div>
         </section>
