@@ -246,6 +246,44 @@ const ValoromBPO = () => {
           </div>
         </section>
 
+        {/* Por que a Valorum Section */}
+        <section className="py-24 bg-primary">
+          <div className="container mx-auto px-6">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-playfair font-bold text-white mb-4">
+                Por que a Valorum?
+              </h2>
+              <p className="text-lg text-gray-400 max-w-3xl mx-auto">
+                Nosso modelo foi pensado para se adaptar às necessidades, o momento e os objetivos do seu negócio.
+              </p>
+            </div>
+            
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+              {[
+                { icon: Search, title: "Diagnóstico personalizado", description: "Analisamos a fundo a operação financeira da sua empresa antes de propor qualquer solução." },
+                { icon: Users, title: "Time dedicado", description: "Montamos uma equipe sob medida, com profissionais especializados no seu segmento." },
+                { icon: Settings, title: "Escopo flexível", description: "Você contrata apenas o que precisa — e escala conforme a empresa cresce." },
+                { icon: Shield, title: "Sem surpresas", description: "Preço justo, transparente e alinhado ao tamanho e complexidade da sua operação." },
+              ].map((item, index) => (
+                <div 
+                  key={index}
+                  className="p-8 bg-primary/80 rounded-2xl text-center border border-blue-400/20 hover:border-blue-400/40 transition-all duration-300"
+                >
+                  <div className="w-14 h-14 bg-gradient-to-br from-blue-400 to-blue-500 rounded-xl flex items-center justify-center mx-auto mb-5">
+                    <item.icon className="w-7 h-7 text-white" />
+                  </div>
+                  <h3 className="text-lg font-playfair font-bold text-white mb-3">
+                    {item.title}
+                  </h3>
+                  <p className="text-gray-400 text-sm leading-relaxed">
+                    {item.description}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* Para quem é Section */}
         <section className="py-24 bg-muted/30">
           <div className="container mx-auto px-6">
