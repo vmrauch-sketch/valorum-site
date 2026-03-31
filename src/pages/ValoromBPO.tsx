@@ -153,10 +153,8 @@ const ValoromBPO = () => {
                 <br />
                 <span className="text-blue-400">A gente resolve.</span>
               </h1>
-              
-              <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-8">
-                Contas a pagar, receber, conciliação bancária, fluxo de caixa e relatórios — tudo organizado, com processos definidos e acompanhamento contínuo. Em vez de gastar tempo com tarefas operacionais, a gestão foca no crescimento enquanto o financeiro funciona com disciplina e previsibilidade.
-              </p>
+
+
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center mb-4">
                 <Link to="/contato">
