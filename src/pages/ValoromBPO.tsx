@@ -318,6 +318,39 @@ const ValoromBPO = () => {
           </div>
         </section>
 
+        {/* FAQ Section */}
+        <section className="py-24 bg-white">
+          <div className="container mx-auto px-6">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-playfair font-bold text-primary mb-4">
+                Perguntas frequentes
+              </h2>
+              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                Tire suas dúvidas sobre o BPO Financeiro
+              </p>
+            </div>
+            
+            <div className="max-w-3xl mx-auto">
+              <Accordion type="single" collapsible className="space-y-3">
+                {faqItems.map((item, index) => (
+                  <AccordionItem 
+                    key={index} 
+                    value={`faq-${index}`}
+                    className="border border-border/50 rounded-xl px-6 data-[state=open]:border-blue-300 data-[state=open]:shadow-md transition-all duration-300"
+                  >
+                    <AccordionTrigger className="text-left font-semibold text-primary hover:no-underline py-5">
+                      {item.question}
+                    </AccordionTrigger>
+                    <AccordionContent className="text-muted-foreground leading-relaxed">
+                      {item.answer}
+                    </AccordionContent>
+                  </AccordionItem>
+                ))}
+              </Accordion>
+            </div>
+          </div>
+        </section>
+
         {/* CTA Final Section */}
         <section className="py-24 bg-gradient-to-br from-primary via-primary/95 to-primary">
           <div className="container mx-auto px-6 text-center">
