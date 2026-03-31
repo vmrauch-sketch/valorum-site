@@ -280,7 +280,7 @@ const ValoromBPO = () => {
             </div>
             
             <p className="text-center text-gray-400 max-w-2xl mx-auto mb-16">
-              Da primeira conversa ao financeiro funcionando: menos de 7 dias. Sem complicação.
+              Da primeira conversa ao financeiro funcionando: muitas vezes em menos de 7 dias. Sem complicação.
             </p>
             
             <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto mb-12">
