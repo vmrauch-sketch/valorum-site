@@ -28,7 +28,7 @@ const Footer = ({ hidePartners = false }: { hidePartners?: boolean }) => {
 
   return (
     <>
-      <Partners />
+      {!hidePartners && <Partners />}
       <footer className="bg-navy-800 text-white py-12">
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">

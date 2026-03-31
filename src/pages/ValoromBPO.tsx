@@ -483,7 +483,7 @@ const ValoromBPO = () => {
           </div>
         </section>
 
-        <Footer />
+        <Footer hidePartners />
         <WhatsAppButton />
       </div>
     </>
