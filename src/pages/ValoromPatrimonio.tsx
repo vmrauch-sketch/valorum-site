@@ -5,6 +5,7 @@ import { SEOHead } from "@/components/SEOHead";
 import { SEOData, StructuredData } from "@/data/seoData";
 import { Button } from "@/components/ui/button";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import { ServiceSubNav } from "@/components/ServiceSubNav";
 import { 
   Home, 
   LineChart, 
@@ -17,6 +18,11 @@ import {
   Lock,
   Users
 } from "lucide-react";
+
+const patrimonioNavItems = [
+  { label: "Tríade", target: "pat-triade" },
+  { label: "Serviços", target: "pat-servicos" },
+];
 
 const ValoromPatrimonio = () => {
   const { elementRef: heroRef, isVisible: heroVisible } = useScrollAnimation();
