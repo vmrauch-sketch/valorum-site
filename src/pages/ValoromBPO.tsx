@@ -65,6 +65,20 @@ const faqItems = [
 ];
 
 const ValoromBPO = () => {
+  const [showSubNav, setShowSubNav] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowSubNav(window.scrollY > 400);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const scrollToSection = (id: string) => {
+    document.getElementById(id)?.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+
   const servicos = [
     { 
       icon: BarChart3, 
