@@ -188,7 +188,7 @@ const ValoromCapital = () => {
                 >
                   Quero começar agora
                 </Button>
-              </Link>
+              </a>
             </div>
           </div>
         </section>
