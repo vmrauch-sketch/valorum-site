@@ -58,7 +58,12 @@ const ValoromCapital = () => {
       
       <div className="min-h-screen bg-background font-inter">
         <Navigation />
-        
+        <ServiceSubNav 
+          items={capitalNavItems} 
+          ctaLabel="Fale Conosco" 
+          ctaTarget="capital-cta"
+          ctaClassName="bg-[#c9a962] hover:bg-[#b8994f] text-[#0a1628]"
+        />
         {/* Hero Section - Elegant dark navy */}
         <section className="relative min-h-screen flex items-center bg-gradient-to-br from-[#0a1628] via-[#0d1f3c] to-[#0a1628] pt-28 sm:pt-16">
           {/* Subtle decorative elements */}
