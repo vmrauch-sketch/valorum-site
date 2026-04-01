@@ -12,13 +12,6 @@ export const Navigation = () => {
   const isServicePage = servicePages.includes(location.pathname);
 
   const navItems = [
-    { name: 'Início', path: '/' },
-    { name: 'Para Você', path: '/para-voce' },
-    { name: 'Para Seu Negócio', path: '/para-seu-negocio' },
-    { name: 'Para Médicos', path: '/protocolo-mais-renda' },
-    { name: 'Manifesto', path: '/manifesto' },
-    { name: 'Especializações', path: '/especializacoes' },
-    
     { name: 'Sobre Vilson', path: 'https://vilsonrauch.com.br', external: true },
     { name: 'Contato', path: '/contato' },
   ];
