@@ -272,7 +272,7 @@ const ValoromPatrimonio = () => {
         </section>
 
         <Footer />
-        <WhatsAppButton />
+        <WhatsAppButton message="Olá! Gostaria de saber como funciona sobre crescer e proteger meu patrimônio" />
       </div>
     </>
   );

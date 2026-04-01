@@ -501,7 +501,7 @@ const ValoromBPO = () => {
         </section>
 
         <Footer hidePartners />
-        <WhatsAppButton />
+        <WhatsAppButton message="Olá! Gostaria de saber como funciona sobre terceirizar o financeiro" />
       </div>
     </>
   );

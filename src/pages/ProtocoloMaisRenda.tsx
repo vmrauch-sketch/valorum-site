@@ -275,7 +275,7 @@ const ProtocoloMaisRenda = () => {
         </section>
         </div>
         <Footer />
-        <WhatsAppButton />
+        <WhatsAppButton message="Olá! Gostaria de saber mais sobre o Protocolo Mais Renda" />
       </div>
     </>
   );
