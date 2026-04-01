@@ -449,7 +449,7 @@ const ValoromCFO = () => {
               >
                 Agendar Minha Sessão Gratuita
               </Button>
-            </Link>
+            </a>
             <p className="text-sm text-gray-500 mt-4">
               Resposta em até 2 horas em dias úteis · Sem compromisso
             </p>

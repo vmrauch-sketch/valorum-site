@@ -349,7 +349,7 @@ const ValoromCapital = () => {
                 >
                   Fale com um Consultor
                 </Button>
-              </Link>
+              </a>
             </div>
           </div>
         </section>
