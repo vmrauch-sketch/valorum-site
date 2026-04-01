@@ -13,21 +13,25 @@ Allow: /
 User-agent: *
 Allow: /
 
-# Important pages for SEO
-Allow: /vilson-rauch
-Allow: /protocolo-mais-renda
+# Important pages
 Allow: /capital
 Allow: /patrimonio
-Allow: /contabil
-Allow: /cfo
-Allow: /para-voce
-Allow: /para-seu-negocio
-Allow: /manifesto
 Allow: /contato
-Allow: /trabalhe-conosco
+
+# Disallow hidden/unused pages
+Disallow: /contabil
+Disallow: /cfo
+Disallow: /bpo
+Disallow: /para-voce
+Disallow: /para-seu-negocio
+Disallow: /protocolo-mais-renda
+Disallow: /manifesto
+Disallow: /especializacoes
+Disallow: /vilson-rauch
+Disallow: /trabalhe-conosco
 
 # Sitemap location
 Sitemap: https://valorum.vilsonrauch.com.br/sitemap.xml
 
-# Crawl-delay (helps with server load)
+# Crawl-delay
 Crawl-delay: 1
