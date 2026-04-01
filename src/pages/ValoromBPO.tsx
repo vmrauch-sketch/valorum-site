@@ -401,7 +401,7 @@ const ValoromBPO = () => {
         </section>
 
         {/* Diferenciais Section */}
-        <section className="py-24 bg-white">
+        <section id="bpo-diferenciais" className="py-24 bg-white scroll-mt-28">
           <div className="container mx-auto px-6">
             <div className="max-w-4xl mx-auto">
               <div className="text-center mb-12">
