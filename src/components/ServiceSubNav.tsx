@@ -9,7 +9,8 @@ interface NavItem {
 interface ServiceSubNavProps {
   items: NavItem[];
   ctaLabel: string;
-  ctaTarget: string;
+  ctaTarget?: string;
+  ctaHref?: string;
   ctaClassName?: string;
 }
 
