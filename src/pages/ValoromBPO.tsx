@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
@@ -23,6 +24,14 @@ import {
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import BPOContactForm from "@/components/BPOContactForm";
+
+const bpoNavItems = [
+  { label: "Serviços", target: "bpo-servicos" },
+  { label: "Benefícios", target: "bpo-resultados" },
+  { label: "Como Funciona", target: "bpo-passos" },
+  { label: "Diferenciais", target: "bpo-diferenciais" },
+  { label: "FAQ", target: "bpo-faq" },
+];
 
 const faqItems = [
   {
@@ -56,6 +65,20 @@ const faqItems = [
 ];
 
 const ValoromBPO = () => {
+  const [showSubNav, setShowSubNav] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowSubNav(window.scrollY > 400);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const scrollToSection = (id: string) => {
+    document.getElementById(id)?.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+
   const servicos = [
     { 
       icon: BarChart3, 
@@ -99,7 +122,29 @@ const ValoromBPO = () => {
       <div className="min-h-screen bg-background font-inter">
         <Navigation />
         
-        {/* Hero Section */}
+        {/* Sub-navigation bar */}
+        <div className={`fixed top-16 left-0 right-0 z-40 bg-primary/95 backdrop-blur-sm border-b border-white/10 transition-all duration-300 ${showSubNav ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0 pointer-events-none'}`}>
+          <div className="container mx-auto px-6">
+            <div className="flex items-center justify-between h-12">
+              <div className="flex items-center gap-1 md:gap-4 overflow-x-auto">
+                {bpoNavItems.map((item) => (
+                  <button
+                    key={item.target}
+                    onClick={() => scrollToSection(item.target)}
+                    className="text-sm text-gray-300 hover:text-white font-medium whitespace-nowrap px-2 md:px-3 py-1 rounded-md hover:bg-white/10 transition-all"
+                  >
+                    {item.label}
+                  </button>
+                ))}
+              </div>
+              <a href="#contato-bpo">
+                <Button size="sm" className="bg-gradient-to-r from-blue-400 to-blue-500 hover:from-blue-500 hover:to-blue-600 text-white font-semibold text-xs px-4 h-8 uppercase tracking-wider">
+                  Agendar Diagnóstico
+                </Button>
+              </a>
+            </div>
+          </div>
+        </div>
         <section className="relative min-h-[70vh] flex items-center bg-gradient-to-br from-primary via-primary/95 to-primary pt-28 sm:pt-16">
           <div className="absolute inset-0 overflow-hidden">
             <div className="absolute top-20 left-10 w-64 h-64 bg-blue-400/10 rounded-full blur-3xl" />
@@ -140,7 +185,7 @@ const ValoromBPO = () => {
         </section>
 
         {/* Departamento Financeiro Section */}
-        <section className="py-24 bg-primary">
+        <section id="bpo-servicos" className="py-24 bg-primary scroll-mt-28">
           <div className="container mx-auto px-6">
             <div className="text-center mb-6">
               <h2 className="text-4xl md:text-5xl font-playfair font-bold text-white leading-tight">
@@ -189,7 +234,7 @@ const ValoromBPO = () => {
         </section>
 
         {/* Resultados Section */}
-        <section className="py-24 bg-primary/95">
+        <section id="bpo-resultados" className="py-24 bg-primary/95 scroll-mt-28">
           <div className="container mx-auto px-6">
             <div className="text-center mb-6">
               <p className="text-sm uppercase tracking-widest text-gray-500 mb-4">
@@ -240,7 +285,7 @@ const ValoromBPO = () => {
         </section>
 
         {/* Comece em 3 passos Section */}
-        <section className="py-24 bg-primary">
+        <section id="bpo-passos" className="py-24 bg-primary scroll-mt-28">
           <div className="container mx-auto px-6">
             <div className="text-center mb-6">
               <h2 className="text-4xl md:text-6xl font-playfair font-bold text-white leading-tight">
@@ -356,7 +401,7 @@ const ValoromBPO = () => {
         </section>
 
         {/* Diferenciais Section */}
-        <section className="py-24 bg-white">
+        <section id="bpo-diferenciais" className="py-24 bg-white scroll-mt-28">
           <div className="container mx-auto px-6">
             <div className="max-w-4xl mx-auto">
               <div className="text-center mb-12">
@@ -436,7 +481,7 @@ const ValoromBPO = () => {
 
 
         {/* FAQ Section */}
-        <section className="py-24 bg-white">
+        <section id="bpo-faq" className="py-24 bg-white scroll-mt-28">
           <div className="container mx-auto px-6">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-playfair font-bold text-primary mb-4">
