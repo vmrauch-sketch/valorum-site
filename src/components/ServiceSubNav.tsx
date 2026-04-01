@@ -42,11 +42,19 @@ export const ServiceSubNav = ({ items, ctaLabel, ctaTarget, ctaHref, ctaClassNam
               </button>
             ))}
           </div>
-          <button onClick={() => scrollTo(ctaTarget)}>
-            <Button size="sm" className={`font-semibold text-xs px-4 h-8 uppercase tracking-wider ${ctaClassName}`}>
-              {ctaLabel}
-            </Button>
-          </button>
+          {ctaHref ? (
+            <a href={ctaHref} target="_blank" rel="noopener noreferrer">
+              <Button size="sm" className={`font-semibold text-xs px-4 h-8 uppercase tracking-wider ${ctaClassName}`}>
+                {ctaLabel}
+              </Button>
+            </a>
+          ) : (
+            <button onClick={() => ctaTarget && scrollTo(ctaTarget)}>
+              <Button size="sm" className={`font-semibold text-xs px-4 h-8 uppercase tracking-wider ${ctaClassName}`}>
+                {ctaLabel}
+              </Button>
+            </button>
+          )}
         </div>
       </div>
     </div>
