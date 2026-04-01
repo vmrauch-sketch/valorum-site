@@ -330,7 +330,7 @@ const ValoromCFO = () => {
             </div>
 
             <div className="text-center">
-              <Link to="/contato">
+              <a href="https://wa.me/5511949566290?text=Ol%C3%A1!%20Gostaria%20de%20saber%20como%20funciona%20sobre%20gest%C3%A3o%20financeira" target="_blank" rel="noopener noreferrer">
                 <Button 
                   size="lg"
                   variant="outline"
