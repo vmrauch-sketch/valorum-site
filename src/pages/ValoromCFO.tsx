@@ -228,7 +228,7 @@ const ValoromCFO = () => {
         </section>
 
         {/* Benefícios Section */}
-        <section className="py-24 bg-gradient-to-b from-lime-50 to-white">
+        <section id="cfo-metodologia" className="py-24 bg-gradient-to-b from-lime-50 to-white scroll-mt-28">
           <div className="container mx-auto px-6">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-playfair font-bold text-primary mb-4">
