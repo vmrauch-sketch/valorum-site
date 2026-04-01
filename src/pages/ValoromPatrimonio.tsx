@@ -90,6 +90,12 @@ const ValoromPatrimonio = () => {
       
       <div className="min-h-screen bg-white font-inter">
         <Navigation />
+        <ServiceSubNav 
+          items={patrimonioNavItems} 
+          ctaLabel="Fale com Consultor" 
+          ctaTarget="pat-servicos"
+          ctaClassName="bg-gold-500 hover:bg-gold-600 text-white"
+        />
         
         {/* Hero Section */}
         <section className="relative bg-gradient-to-br from-navy-600 via-navy-700 to-navy-800 pt-28 pb-20 md:py-32 overflow-hidden">
