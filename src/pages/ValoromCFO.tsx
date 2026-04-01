@@ -3,6 +3,7 @@ import { Footer } from "@/components/Footer";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { SEOHead } from "@/components/SEOHead";
 import { SEOData, StructuredData } from "@/data/seoData";
+import { ServiceSubNav } from "@/components/ServiceSubNav";
 import { 
   TrendingUp,
   Target,
@@ -24,6 +25,15 @@ import {
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+
+const cfoNavItems = [
+  { label: "Serviços", target: "cfo-servicos" },
+  { label: "Metodologia", target: "cfo-metodologia" },
+  { label: "Diferenciais", target: "cfo-diferenciais" },
+  { label: "Propostas", target: "cfo-propostas" },
+  { label: "Para Quem", target: "cfo-publico" },
+  { label: "FAQ", target: "cfo-faq" },
+];
 
 const faqItems = [
   {
