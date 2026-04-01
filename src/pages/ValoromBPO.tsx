@@ -111,7 +111,7 @@ const ValoromBPO = () => {
         <ServiceSubNav 
           items={bpoNavItems} 
           ctaLabel="Agendar Diagnóstico" 
-          ctaTarget="contato-bpo"
+          ctaHref="https://wa.me/5511949566290?text=Ol%C3%A1!%20Gostaria%20de%20saber%20como%20funciona%20sobre%20terceirizar%20o%20financeiro"
           ctaClassName="bg-gradient-to-r from-blue-400 to-blue-500 hover:from-blue-500 hover:to-blue-600 text-white"
         />
         <section className="relative min-h-[70vh] flex items-center bg-gradient-to-br from-primary via-primary/95 to-primary pt-28 sm:pt-16">

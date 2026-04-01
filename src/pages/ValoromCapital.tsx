@@ -61,7 +61,7 @@ const ValoromCapital = () => {
         <ServiceSubNav 
           items={capitalNavItems} 
           ctaLabel="Fale Conosco" 
-          ctaTarget="capital-cta"
+          ctaHref="https://wa.me/5511949566290?text=Ol%C3%A1!%20Gostaria%20de%20saber%20como%20funciona%20sobre%20investimentos"
           ctaClassName="bg-[#c9a962] hover:bg-[#b8994f] text-[#0a1628]"
         />
         {/* Hero Section - Elegant dark navy */}

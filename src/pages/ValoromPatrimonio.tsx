@@ -93,7 +93,7 @@ const ValoromPatrimonio = () => {
         <ServiceSubNav 
           items={patrimonioNavItems} 
           ctaLabel="Fale com Consultor" 
-          ctaTarget="pat-servicos"
+          ctaHref="https://wa.me/5511949566290?text=Ol%C3%A1!%20Gostaria%20de%20saber%20como%20funciona%20sobre%20crescer%20e%20proteger%20meu%20patrim%C3%B4nio"
           ctaClassName="bg-gold-500 hover:bg-gold-600 text-white"
         />
         

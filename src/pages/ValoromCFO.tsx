@@ -146,7 +146,7 @@ const ValoromCFO = () => {
         <ServiceSubNav 
           items={cfoNavItems} 
           ctaLabel="Diagnóstico Gratuito" 
-          ctaTarget="cfo-cta"
+          ctaHref="https://wa.me/5511949566290?text=Ol%C3%A1!%20Gostaria%20de%20saber%20como%20funciona%20sobre%20gest%C3%A3o%20financeira"
           ctaClassName="bg-gradient-to-r from-lime-400 to-lime-500 hover:from-lime-500 hover:to-lime-600 text-primary"
         />
         

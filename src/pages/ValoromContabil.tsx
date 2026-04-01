@@ -67,7 +67,7 @@ const ValoromContabil = () => {
         <ServiceSubNav 
           items={contabilNavItems} 
           ctaLabel="Fale Conosco" 
-          ctaTarget="contabil-cta"
+          ctaHref="https://wa.me/5511949566290?text=Ol%C3%A1!%20Gostaria%20de%20saber%20como%20funciona%20sobre%20contabilidade"
           ctaClassName="bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white"
         />
         
