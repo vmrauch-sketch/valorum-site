@@ -88,6 +88,10 @@ const BPOContactForm = () => {
       });
 
       setIsSubmitted(true);
+      setTimeout(() => {
+        setIsSubmitted(false);
+        setFormData({ name: "", email: "", phone: "", company: "", revenue_range: "", message: "" });
+      }, 8000);
       toast({
         title: "Enviado com sucesso!",
         description: "Entraremos em contato em breve.",
