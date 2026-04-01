@@ -285,7 +285,7 @@ const ValoromBPO = () => {
         </section>
 
         {/* Comece em 3 passos Section */}
-        <section className="py-24 bg-primary">
+        <section id="bpo-passos" className="py-24 bg-primary scroll-mt-28">
           <div className="container mx-auto px-6">
             <div className="text-center mb-6">
               <h2 className="text-4xl md:text-6xl font-playfair font-bold text-white leading-tight">
