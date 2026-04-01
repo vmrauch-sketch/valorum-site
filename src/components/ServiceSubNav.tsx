@@ -14,7 +14,7 @@ interface ServiceSubNavProps {
   ctaClassName?: string;
 }
 
-export const ServiceSubNav = ({ items, ctaLabel, ctaTarget, ctaClassName = "" }: ServiceSubNavProps) => {
+export const ServiceSubNav = ({ items, ctaLabel, ctaTarget, ctaHref, ctaClassName = "" }: ServiceSubNavProps) => {
   const [show, setShow] = useState(false);
 
   useEffect(() => {
