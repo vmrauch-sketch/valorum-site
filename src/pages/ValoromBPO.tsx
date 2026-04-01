@@ -122,7 +122,29 @@ const ValoromBPO = () => {
       <div className="min-h-screen bg-background font-inter">
         <Navigation />
         
-        {/* Hero Section */}
+        {/* Sub-navigation bar */}
+        <div className={`fixed top-16 left-0 right-0 z-40 bg-primary/95 backdrop-blur-sm border-b border-white/10 transition-all duration-300 ${showSubNav ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0 pointer-events-none'}`}>
+          <div className="container mx-auto px-6">
+            <div className="flex items-center justify-between h-12">
+              <div className="flex items-center gap-1 md:gap-4 overflow-x-auto">
+                {bpoNavItems.map((item) => (
+                  <button
+                    key={item.target}
+                    onClick={() => scrollToSection(item.target)}
+                    className="text-sm text-gray-300 hover:text-white font-medium whitespace-nowrap px-2 md:px-3 py-1 rounded-md hover:bg-white/10 transition-all"
+                  >
+                    {item.label}
+                  </button>
+                ))}
+              </div>
+              <a href="#contato-bpo">
+                <Button size="sm" className="bg-gradient-to-r from-blue-400 to-blue-500 hover:from-blue-500 hover:to-blue-600 text-white font-semibold text-xs px-4 h-8 uppercase tracking-wider">
+                  Agendar Diagnóstico
+                </Button>
+              </a>
+            </div>
+          </div>
+        </div>
         <section className="relative min-h-[70vh] flex items-center bg-gradient-to-br from-primary via-primary/95 to-primary pt-28 sm:pt-16">
           <div className="absolute inset-0 overflow-hidden">
             <div className="absolute top-20 left-10 w-64 h-64 bg-blue-400/10 rounded-full blur-3xl" />
