@@ -457,7 +457,7 @@ const ValoromCFO = () => {
         </section>
 
         <Footer />
-        <WhatsAppButton />
+        <WhatsAppButton message="Olá! Gostaria de saber como funciona sobre gestão financeira" />
       </div>
     </>
   );

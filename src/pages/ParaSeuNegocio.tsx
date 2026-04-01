@@ -401,7 +401,7 @@ const ParaSeuNegocio = () => {
           </section>
         </div>
         <Footer />
-        <WhatsAppButton />
+        <WhatsAppButton message="Olá! Gostaria de saber mais sobre os serviços para minha empresa" />
       </div>
     </>
   );

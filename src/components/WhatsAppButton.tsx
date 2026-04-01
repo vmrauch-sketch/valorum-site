@@ -1,28 +1,20 @@
+interface WhatsAppButtonProps {
+  message?: string;
+}
 
-
-const WhatsAppButton = () => {
+const WhatsAppButton = ({ message = "Olá gostaria de mais informações" }: WhatsAppButtonProps) => {
   const handleClick = () => {
-    console.log("WhatsAppButton: Botão clicado");
-    const message = encodeURIComponent("Olá gostaria de mais informações");
-    const url = `https://wa.me/5511949566290?text=${message}`;
-    
-    // Detecta se está em desenvolvimento
+    const url = `https://wa.me/5511949566290?text=${encodeURIComponent(message)}`;
     const isDevelopment = window.location.hostname === 'localhost' || window.location.hostname.includes('lovable');
     
     if (isDevelopment) {
-      // Em desenvolvimento, copia o link e mostra alerta
       navigator.clipboard.writeText(url).then(() => {
-        alert(`Link do WhatsApp copiado!\n\nNúmero: +55 11 94956-6290\nMensagem: "Olá gostaria de mais informações"\n\nLink copiado para área de transferência.`);
+        alert(`Link do WhatsApp copiado!\n\n${url}`);
       }).catch(() => {
-        alert(`WhatsApp: +55 11 94956-6290\n\nMensagem: "Olá gostaria de mais informações"`);
+        alert(`WhatsApp: +55 11 94956-6290`);
       });
     } else {
-      // Em produção, abre normalmente
-      try {
-        window.open(url, '_blank');
-      } catch (error) {
-        console.error("WhatsAppButton: Erro ao abrir WhatsApp:", error);
-      }
+      window.open(url, '_blank');
     }
   };
 

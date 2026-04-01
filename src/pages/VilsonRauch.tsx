@@ -284,7 +284,7 @@ const VilsonRauch = () => {
           </section>
         </div>
         <Footer />
-        <WhatsAppButton />
+        <WhatsAppButton message="Olá! Gostaria de agendar uma consulta com o Vilson Rauch" />
       </div>
     </>
   );

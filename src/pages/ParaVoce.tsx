@@ -206,7 +206,7 @@ const ParaVoce = () => {
           </section>
         </div>
         <Footer />
-        <WhatsAppButton />
+        <WhatsAppButton message="Olá! Gostaria de saber mais sobre os serviços para pessoa física" />
       </div>
     </>
   );
