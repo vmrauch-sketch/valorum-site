@@ -53,15 +53,10 @@ const Hero = () => {
               </span>
               
               {/* Sub-brand buttons */}
-              <div className="flex flex-wrap justify-center gap-3 mb-8 overflow-hidden">
+               <div className="flex flex-wrap justify-center gap-3 mb-8 overflow-hidden">
                 <Link to="/capital">
                   <Button variant="outline" className="bg-gradient-to-r from-corporate-500 to-corporate-600 hover:from-corporate-600 hover:to-corporate-700 text-white border-none font-medium px-4 py-2 text-sm">
                     Capital
-                  </Button>
-                </Link>
-                <Link to="/bpo">
-                  <Button variant="outline" className="bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white border-none font-medium px-4 py-2 text-sm">
-                    BPO
                   </Button>
                 </Link>
                 <Link to="/patrimonio">
@@ -69,49 +64,21 @@ const Hero = () => {
                     Patrimônio
                   </Button>
                 </Link>
-                <Link to="/cfo">
-                  <Button variant="outline" className="bg-gradient-to-r from-lime-400 to-lime-500 hover:from-lime-500 hover:to-lime-600 text-primary border-none font-medium px-4 py-2 text-sm">
-                    CFO
-                  </Button>
-                </Link>
-                <Link to="/contabil">
-                  <Button variant="outline" className="bg-gradient-to-r from-navy-500 to-navy-600 hover:from-navy-600 hover:to-navy-700 text-white border-none font-medium px-4 py-2 text-sm">
-                    Contábil
-                  </Button>
-                </Link>
               </div>
               
               {/* Sub-brand descriptions */}
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8 text-left max-w-4xl mx-auto">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8 text-left max-w-3xl mx-auto">
                 <Link to="/capital" className="p-4 rounded-lg bg-corporate-50 border-l-4 border-corporate-500 hover:shadow-md transition-all duration-300 group">
                   <h3 className="font-bold text-corporate-600 mb-0.5 text-base">Gestão de Investimentos</h3>
                   <span className="text-xs font-semibold text-corporate-400 uppercase tracking-wide block mb-2">Valorum Capital</span>
                   <p className="text-sm text-gray-600 mb-3">Casa de investimentos independente com estratégia, transparência e foco na construção patrimonial.</p>
                   <span className="text-xs font-bold text-corporate-600 group-hover:underline">Conhecer solução →</span>
                 </Link>
-                <Link to="/bpo" className="p-4 rounded-lg bg-blue-50 border-l-4 border-blue-500 hover:shadow-md transition-all duration-300 group">
-                  <h3 className="font-bold text-blue-600 mb-0.5 text-base">Terceirização Financeira</h3>
-                  <span className="text-xs font-semibold text-blue-400 uppercase tracking-wide block mb-2">Valorum BPO</span>
-                  <p className="text-sm text-gray-600 mb-3">Gestão financeira completa para sua empresa com controle, organização e previsibilidade.</p>
-                  <span className="text-xs font-bold text-blue-600 group-hover:underline">Conhecer solução →</span>
-                </Link>
                 <Link to="/patrimonio" className="p-4 rounded-lg bg-gold-50 border-l-4 border-gold-500 hover:shadow-md transition-all duration-300 group">
                   <h3 className="font-bold text-gold-600 mb-0.5 text-base">Planejamento Patrimonial</h3>
                   <span className="text-xs font-semibold text-gold-400 uppercase tracking-wide block mb-2">Valorum Patrimônio</span>
                   <p className="text-sm text-gray-600 mb-3">Planejamento patrimonial e sucessório completo. Transformando patrimônio em fonte de liberdade.</p>
                   <span className="text-xs font-bold text-gold-600 group-hover:underline">Conhecer solução →</span>
-                </Link>
-                <Link to="/cfo" className="p-4 rounded-lg bg-lime-50 border-l-4 border-lime-500 hover:shadow-md transition-all duration-300 group">
-                  <h3 className="font-bold text-lime-600 mb-0.5 text-base">Direção Financeira</h3>
-                  <span className="text-xs font-semibold text-lime-500 uppercase tracking-wide block mb-2">Valorum CFO</span>
-                  <p className="text-sm text-gray-600 mb-3">Direcionamento financeiro terceirizado. Apoio para as decisões financeiras e estratégicas.</p>
-                  <span className="text-xs font-bold text-lime-600 group-hover:underline">Conhecer solução →</span>
-                </Link>
-                <Link to="/contabil" className="p-4 rounded-lg bg-navy-50 border-l-4 border-navy-500 hover:shadow-md transition-all duration-300 group">
-                  <h3 className="font-bold text-navy-600 mb-0.5 text-base">Contabilidade Consultiva</h3>
-                  <span className="text-xs font-semibold text-navy-400 uppercase tracking-wide block mb-2">Valorum Contábil</span>
-                  <p className="text-sm text-gray-600 mb-3">Contabilidade consultiva. Especialistas para cada especialidade de negócios.</p>
-                  <span className="text-xs font-bold text-navy-600 group-hover:underline">Conhecer solução →</span>
                 </Link>
               </div>
               
