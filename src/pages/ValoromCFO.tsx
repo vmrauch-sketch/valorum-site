@@ -338,7 +338,7 @@ const ValoromCFO = () => {
                 >
                   Solicitar Proposta Personalizada
                 </Button>
-              </Link>
+              </a>
             </div>
           </div>
         </section>
