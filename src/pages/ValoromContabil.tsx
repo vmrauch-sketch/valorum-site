@@ -283,7 +283,7 @@ const ValoromContabil = () => {
         </section>
 
         {/* CTA Section */}
-        <section className="py-20 bg-gradient-to-br from-primary via-primary/95 to-primary">
+        <section id="contabil-cta" className="py-20 bg-gradient-to-br from-primary via-primary/95 to-primary scroll-mt-28">
           <div className="container mx-auto px-6 text-center">
             <h2 className="text-3xl md:text-4xl font-playfair font-bold text-white mb-6">
               Não encontrou seu segmento?
