@@ -233,7 +233,7 @@ const ValoromContabil = () => {
         </section>
 
         {/* Serviços Section */}
-        <section className="py-24 bg-muted/30">
+        <section id="contabil-servicos" className="py-24 bg-muted/30 scroll-mt-28">
           <div className="container mx-auto px-6">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-playfair font-bold text-primary mb-4">
