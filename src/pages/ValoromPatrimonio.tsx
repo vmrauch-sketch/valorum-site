@@ -212,7 +212,7 @@ const ValoromPatrimonio = () => {
         </section>
 
         {/* Serviços */}
-        <section className="py-20 bg-white">
+        <section id="pat-servicos" className="py-20 bg-white scroll-mt-28">
           <div className="container mx-auto px-6">
             <div className="max-w-6xl mx-auto">
               <div 
