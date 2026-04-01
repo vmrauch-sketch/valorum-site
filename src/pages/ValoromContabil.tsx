@@ -64,6 +64,12 @@ const ValoromContabil = () => {
       
       <div className="min-h-screen bg-background font-inter">
         <Navigation />
+        <ServiceSubNav 
+          items={contabilNavItems} 
+          ctaLabel="Fale Conosco" 
+          ctaTarget="contabil-cta"
+          ctaClassName="bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white"
+        />
         
         {/* Hero Section */}
         <section className="relative min-h-[70vh] flex items-center bg-gradient-to-br from-primary via-primary/95 to-primary pt-28 sm:pt-16">
