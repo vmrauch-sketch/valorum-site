@@ -12,13 +12,6 @@ export const Navigation = () => {
   const isServicePage = servicePages.includes(location.pathname);
 
   const navItems = [
-    { name: 'Início', path: '/' },
-    { name: 'Para Você', path: '/para-voce' },
-    { name: 'Para Seu Negócio', path: '/para-seu-negocio' },
-    { name: 'Para Médicos', path: '/protocolo-mais-renda' },
-    { name: 'Manifesto', path: '/manifesto' },
-    { name: 'Especializações', path: '/especializacoes' },
-    
     { name: 'Sobre Vilson', path: 'https://vilsonrauch.com.br', external: true },
     { name: 'Contato', path: '/contato' },
   ];
@@ -53,43 +46,8 @@ export const Navigation = () => {
           {/* Desktop Navigation */}
           {!isServicePage && (
             <div className="hidden lg:flex items-center gap-3 ml-6">
-              {/* Stacked "Para" buttons */}
-              <div className="flex items-center gap-2">
-                <Link
-                  to="/para-voce"
-                  className={`flex flex-col items-center justify-center text-center font-medium transition-all px-4 py-2 rounded-md hover:bg-primary/10 active:bg-primary/20 active:scale-95 text-sm leading-tight min-w-[70px] ${
-                    isActive('/para-voce') ? 'text-primary bg-primary/5' : 'text-muted-foreground hover:text-primary'
-                  }`}
-                >
-                  <span className="text-xs opacity-70">Para</span>
-                  <span className="font-semibold">Você</span>
-                </Link>
-                <Link
-                  to="/para-seu-negocio"
-                  className={`flex flex-col items-center justify-center text-center font-medium transition-all px-4 py-2 rounded-md hover:bg-primary/10 active:bg-primary/20 active:scale-95 text-sm leading-tight min-w-[90px] ${
-                    isActive('/para-seu-negocio') ? 'text-primary bg-primary/5' : 'text-muted-foreground hover:text-primary'
-                  }`}
-                >
-                  <span className="text-xs opacity-70">Para</span>
-                  <span className="font-semibold">Seu Negócio</span>
-                </Link>
-                <Link
-                  to="/protocolo-mais-renda"
-                  className={`flex flex-col items-center justify-center text-center font-medium transition-all px-4 py-2 rounded-md hover:bg-primary/10 active:bg-primary/20 active:scale-95 text-sm leading-tight min-w-[70px] ${
-                    isActive('/protocolo-mais-renda') ? 'text-primary bg-primary/5' : 'text-muted-foreground hover:text-primary'
-                  }`}
-                >
-                  <span className="text-xs opacity-70">Para</span>
-                  <span className="font-semibold">Médicos</span>
-                </Link>
-              </div>
-              
-              {/* Divider */}
-              <div className="h-8 w-px bg-border/40"></div>
-              
-              {/* Other nav items */}
               <div className="flex items-center gap-1">
-                {navItems.filter((item) => !['Para Você', 'Para Seu Negócio', 'Para Médicos'].includes(item.name)).map((item) => (
+                {navItems.map((item) => (
                   item.external ? (
                     <a
                       key={item.path}
