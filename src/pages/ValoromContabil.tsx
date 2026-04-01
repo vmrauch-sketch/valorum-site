@@ -3,6 +3,7 @@ import { Footer } from "@/components/Footer";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { SEOHead } from "@/components/SEOHead";
 import { SEOData, StructuredData } from "@/data/seoData";
+import { ServiceSubNav } from "@/components/ServiceSubNav";
 import { 
   Calculator, 
   FileText, 
@@ -27,6 +28,13 @@ import {
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+
+const contabilNavItems = [
+  { label: "Especialidades", target: "contabil-destaques" },
+  { label: "Vantagens", target: "contabil-vantagens" },
+  { label: "Serviços", target: "contabil-servicos" },
+  { label: "Contato", target: "contabil-cta" },
+];
 
 const ValoromContabil = () => {
   const especialidades = [
