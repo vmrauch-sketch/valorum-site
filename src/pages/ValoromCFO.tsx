@@ -143,6 +143,12 @@ const ValoromCFO = () => {
       
       <div className="min-h-screen bg-background font-inter">
         <Navigation />
+        <ServiceSubNav 
+          items={cfoNavItems} 
+          ctaLabel="Diagnóstico Gratuito" 
+          ctaTarget="cfo-cta"
+          ctaClassName="bg-gradient-to-r from-lime-400 to-lime-500 hover:from-lime-500 hover:to-lime-600 text-primary"
+        />
         
         {/* Hero Section */}
         <section className="relative min-h-[70vh] flex items-center bg-gradient-to-br from-primary via-primary/95 to-primary pt-28 sm:pt-16">
