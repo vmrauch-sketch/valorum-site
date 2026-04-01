@@ -98,7 +98,7 @@ const ValoromCapital = () => {
                 com estratégia, transparência e zero conflito de interesses.
               </p>
               
-              <Link to="/contato">
+              <a href="https://wa.me/5511949566290?text=Ol%C3%A1!%20Gostaria%20de%20saber%20como%20funciona%20sobre%20investimentos" target="_blank" rel="noopener noreferrer">
                 <Button 
                   size="lg" 
                   className="bg-[#c9a962] hover:bg-[#b8994f] text-[#0a1628] font-semibold px-10 py-7 text-lg transition-all duration-300 hover:scale-105"
