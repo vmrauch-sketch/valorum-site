@@ -3,9 +3,18 @@ import { Footer } from "@/components/Footer";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { SEOHead } from "@/components/SEOHead";
 import { SEOData, StructuredData } from "@/data/seoData";
+import { ServiceSubNav } from "@/components/ServiceSubNav";
 import { TrendingUp, Users, Shield, Target, ChartLine, Briefcase, Building2, Award, Search, FileText, BarChart3 } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+
+const capitalNavItems = [
+  { label: "Ecossistema", target: "capital-stats" },
+  { label: "Como Funciona", target: "capital-passos" },
+  { label: "Sobre", target: "capital-sobre" },
+  { label: "Soluções", target: "capital-solucoes" },
+  { label: "Diferenciais", target: "capital-diferenciais" },
+];
 
 const ValoromCapital = () => {
   const stats = [
