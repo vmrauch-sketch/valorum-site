@@ -175,7 +175,7 @@ const ValoromContabil = () => {
         </section>
 
         {/* Vantagens Section */}
-        <section className="py-24 bg-gradient-to-br from-primary via-primary/95 to-primary relative overflow-hidden">
+        <section id="contabil-vantagens" className="py-24 bg-gradient-to-br from-primary via-primary/95 to-primary relative overflow-hidden scroll-mt-28">
           <div className="absolute inset-0 overflow-hidden">
             <div className="absolute top-10 right-10 w-72 h-72 bg-emerald-500/10 rounded-full blur-3xl" />
             <div className="absolute bottom-10 left-10 w-64 h-64 bg-emerald-500/10 rounded-full blur-3xl" />
