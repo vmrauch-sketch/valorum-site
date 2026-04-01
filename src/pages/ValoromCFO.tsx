@@ -134,11 +134,11 @@ const ValoromCFO = () => {
   return (
     <>
       <SEOHead
-        title={SEOData.valorumCFO.title}
-        description={SEOData.valorumCFO.description}
-        keywords={SEOData.valorumCFO.keywords}
+        title={SEOData.valorum.title}
+        description={SEOData.valorum.description}
+        keywords={SEOData.valorum.keywords}
         canonical="https://valorum.vilsonrauch.com.br/cfo"
-        structuredData={StructuredData.cfoService}
+        structuredData={StructuredData.organization}
       />
       
       <div className="min-h-screen bg-background font-inter">

@@ -55,11 +55,11 @@ const ValoromContabil = () => {
   return (
     <>
       <SEOHead
-        title={SEOData.valorumContabil.title}
-        description={SEOData.valorumContabil.description}
-        keywords={SEOData.valorumContabil.keywords}
+        title={SEOData.valorum.title}
+        description={SEOData.valorum.description}
+        keywords={SEOData.valorum.keywords}
         canonical="https://valorum.vilsonrauch.com.br/contabil"
-        structuredData={StructuredData.contabilService}
+        structuredData={StructuredData.organization}
       />
       
       <div className="min-h-screen bg-background font-inter">
