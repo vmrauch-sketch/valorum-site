@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
@@ -23,6 +24,14 @@ import {
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import BPOContactForm from "@/components/BPOContactForm";
+
+const bpoNavItems = [
+  { label: "Serviços", target: "bpo-servicos" },
+  { label: "Benefícios", target: "bpo-resultados" },
+  { label: "Como Funciona", target: "bpo-passos" },
+  { label: "Diferenciais", target: "bpo-diferenciais" },
+  { label: "FAQ", target: "bpo-faq" },
+];
 
 const faqItems = [
   {
