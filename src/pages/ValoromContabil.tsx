@@ -117,7 +117,7 @@ const ValoromContabil = () => {
         </section>
 
         {/* Destaques Principais */}
-        <section className="py-24 bg-white">
+        <section id="contabil-destaques" className="py-24 bg-white scroll-mt-28">
           <div className="container mx-auto px-6">
             <div className="max-w-6xl mx-auto">
               <div className="grid md:grid-cols-[1fr_1.2fr] gap-12 items-center">
