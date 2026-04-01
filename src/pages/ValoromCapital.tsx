@@ -61,7 +61,7 @@ const ValoromCapital = () => {
         <ServiceSubNav 
           items={capitalNavItems} 
           ctaLabel="Fale Conosco" 
-          ctaTarget="capital-cta"
+          ctaHref="https://wa.me/5511949566290?text=Ol%C3%A1!%20Gostaria%20de%20saber%20como%20funciona%20sobre%20investimentos"
           ctaClassName="bg-[#c9a962] hover:bg-[#b8994f] text-[#0a1628]"
         />
         {/* Hero Section - Elegant dark navy */}
@@ -98,14 +98,14 @@ const ValoromCapital = () => {
                 com estratégia, transparência e zero conflito de interesses.
               </p>
               
-              <Link to="/contato">
+              <a href="https://wa.me/5511949566290?text=Ol%C3%A1!%20Gostaria%20de%20saber%20como%20funciona%20sobre%20investimentos" target="_blank" rel="noopener noreferrer">
                 <Button 
                   size="lg" 
                   className="bg-[#c9a962] hover:bg-[#b8994f] text-[#0a1628] font-semibold px-10 py-7 text-lg transition-all duration-300 hover:scale-105"
                 >
                   Agende uma Conversa
                 </Button>
-              </Link>
+              </a>
             </div>
           </div>
           
@@ -181,14 +181,14 @@ const ValoromCapital = () => {
             </div>
 
             <div className="text-center">
-              <Link to="/contato">
+              <a href="https://wa.me/5511949566290?text=Ol%C3%A1!%20Gostaria%20de%20saber%20como%20funciona%20sobre%20investimentos" target="_blank" rel="noopener noreferrer">
                 <Button 
                   size="lg" 
                   className="bg-[#c9a962] hover:bg-[#b8994f] text-[#0a1628] font-bold px-10 py-6 text-lg uppercase tracking-wider transition-all duration-300 hover:scale-105"
                 >
                   Quero começar agora
                 </Button>
-              </Link>
+              </a>
             </div>
           </div>
         </section>
@@ -342,14 +342,14 @@ const ValoromCapital = () => {
               <p className="text-lg text-slate-600 mb-10">
                 Agende uma conversa e descubra como podemos ajudar você e sua família.
               </p>
-              <Link to="/contato">
+              <a href="https://wa.me/5511949566290?text=Ol%C3%A1!%20Gostaria%20de%20saber%20como%20funciona%20sobre%20investimentos" target="_blank" rel="noopener noreferrer">
                 <Button 
                   size="lg" 
                   className="bg-[#c9a962] hover:bg-[#b8994f] text-[#0a1628] font-semibold px-12 py-6 text-lg transition-all duration-300"
                 >
                   Fale com um Consultor
                 </Button>
-              </Link>
+              </a>
             </div>
           </div>
         </section>

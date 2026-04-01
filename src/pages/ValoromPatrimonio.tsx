@@ -93,7 +93,7 @@ const ValoromPatrimonio = () => {
         <ServiceSubNav 
           items={patrimonioNavItems} 
           ctaLabel="Fale com Consultor" 
-          ctaTarget="pat-servicos"
+          ctaHref="https://wa.me/5511949566290?text=Ol%C3%A1!%20Gostaria%20de%20saber%20como%20funciona%20sobre%20crescer%20e%20proteger%20meu%20patrim%C3%B4nio"
           ctaClassName="bg-gold-500 hover:bg-gold-600 text-white"
         />
         
@@ -130,7 +130,7 @@ const ValoromPatrimonio = () => {
               
               <Button 
                 onClick={() => {
-                  const message = encodeURIComponent("Olá, gostaria de saber mais sobre gestão patrimonial");
+                  const message = encodeURIComponent("Olá! Gostaria de saber como funciona sobre crescer e proteger meu patrimônio");
                   window.open(`https://wa.me/5511949566290?text=${message}`, '_blank');
                 }}
                 className="bg-gold-500 hover:bg-gold-600 text-white px-8 py-6 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
@@ -258,7 +258,7 @@ const ValoromPatrimonio = () => {
               <div className={`text-center mt-16 transform transition-all duration-1000 ease-out delay-500 ${servicesVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
                 <Button 
                   onClick={() => {
-                    const message = encodeURIComponent("Olá, gostaria de saber mais sobre gestão patrimonial");
+                    const message = encodeURIComponent("Olá! Gostaria de saber como funciona sobre crescer e proteger meu patrimônio");
                     window.open(`https://wa.me/5511949566290?text=${message}`, '_blank');
                   }}
                   className="bg-gold-500 hover:bg-gold-600 text-white px-8 py-6 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"

@@ -146,7 +146,7 @@ const ValoromCFO = () => {
         <ServiceSubNav 
           items={cfoNavItems} 
           ctaLabel="Diagnóstico Gratuito" 
-          ctaTarget="cfo-cta"
+          ctaHref="https://wa.me/5511949566290?text=Ol%C3%A1!%20Gostaria%20de%20saber%20como%20funciona%20sobre%20gest%C3%A3o%20financeira"
           ctaClassName="bg-gradient-to-r from-lime-400 to-lime-500 hover:from-lime-500 hover:to-lime-600 text-primary"
         />
         
@@ -178,14 +178,14 @@ const ValoromCFO = () => {
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center mb-4">
-                <Link to="/contato">
+                <a href="https://wa.me/5511949566290?text=Ol%C3%A1!%20Gostaria%20de%20saber%20como%20funciona%20sobre%20gest%C3%A3o%20financeira" target="_blank" rel="noopener noreferrer">
                   <Button 
                     size="lg"
                     className="bg-gradient-to-r from-lime-400 to-lime-500 hover:from-lime-500 hover:to-lime-600 text-primary font-semibold px-8 py-6 text-lg"
                   >
                     Quero um Diagnóstico Gratuito
                   </Button>
-                </Link>
+                </a>
               </div>
               <p className="text-sm text-gray-500">
                 Resposta em até 2 horas em dias úteis · Sem compromisso
@@ -330,7 +330,7 @@ const ValoromCFO = () => {
             </div>
 
             <div className="text-center">
-              <Link to="/contato">
+              <a href="https://wa.me/5511949566290?text=Ol%C3%A1!%20Gostaria%20de%20saber%20como%20funciona%20sobre%20gest%C3%A3o%20financeira" target="_blank" rel="noopener noreferrer">
                 <Button 
                   size="lg"
                   variant="outline"
@@ -338,7 +338,7 @@ const ValoromCFO = () => {
                 >
                   Solicitar Proposta Personalizada
                 </Button>
-              </Link>
+              </a>
             </div>
           </div>
         </section>
@@ -442,14 +442,14 @@ const ValoromCFO = () => {
             <p className="text-lg text-gray-300 max-w-2xl mx-auto mb-8">
               Agende uma sessão gratuita de 30 minutos. Sem compromisso, sem enrolação — só clareza sobre como estruturar o financeiro para o seu negócio crescer com segurança.
             </p>
-            <Link to="/contato">
+            <a href="https://wa.me/5511949566290?text=Ol%C3%A1!%20Gostaria%20de%20saber%20como%20funciona%20sobre%20gest%C3%A3o%20financeira" target="_blank" rel="noopener noreferrer">
               <Button 
                 size="lg" 
                 className="bg-gradient-to-r from-lime-400 to-lime-500 hover:from-lime-500 hover:to-lime-600 text-primary font-semibold px-8 py-6 text-lg"
               >
                 Agendar Minha Sessão Gratuita
               </Button>
-            </Link>
+            </a>
             <p className="text-sm text-gray-500 mt-4">
               Resposta em até 2 horas em dias úteis · Sem compromisso
             </p>

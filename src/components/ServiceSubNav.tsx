@@ -9,11 +9,12 @@ interface NavItem {
 interface ServiceSubNavProps {
   items: NavItem[];
   ctaLabel: string;
-  ctaTarget: string;
+  ctaTarget?: string;
+  ctaHref?: string;
   ctaClassName?: string;
 }
 
-export const ServiceSubNav = ({ items, ctaLabel, ctaTarget, ctaClassName = "" }: ServiceSubNavProps) => {
+export const ServiceSubNav = ({ items, ctaLabel, ctaTarget, ctaHref, ctaClassName = "" }: ServiceSubNavProps) => {
   const [show, setShow] = useState(false);
 
   useEffect(() => {
@@ -41,11 +42,19 @@ export const ServiceSubNav = ({ items, ctaLabel, ctaTarget, ctaClassName = "" }:
               </button>
             ))}
           </div>
-          <button onClick={() => scrollTo(ctaTarget)}>
-            <Button size="sm" className={`font-semibold text-xs px-4 h-8 uppercase tracking-wider ${ctaClassName}`}>
-              {ctaLabel}
-            </Button>
-          </button>
+          {ctaHref ? (
+            <a href={ctaHref} target="_blank" rel="noopener noreferrer">
+              <Button size="sm" className={`font-semibold text-xs px-4 h-8 uppercase tracking-wider ${ctaClassName}`}>
+                {ctaLabel}
+              </Button>
+            </a>
+          ) : (
+            <button onClick={() => ctaTarget && scrollTo(ctaTarget)}>
+              <Button size="sm" className={`font-semibold text-xs px-4 h-8 uppercase tracking-wider ${ctaClassName}`}>
+                {ctaLabel}
+              </Button>
+            </button>
+          )}
         </div>
       </div>
     </div>
