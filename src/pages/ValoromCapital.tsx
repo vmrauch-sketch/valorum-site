@@ -333,7 +333,7 @@ const ValoromCapital = () => {
         </section>
 
         {/* CTA Section */}
-        <section className="py-28 bg-white">
+        <section id="capital-cta" className="py-28 bg-white scroll-mt-28">
           <div className="container mx-auto px-6">
             <div className="max-w-3xl mx-auto text-center">
               <h2 className="text-3xl md:text-4xl font-playfair font-bold text-[#0a1628] mb-8">
