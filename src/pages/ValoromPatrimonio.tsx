@@ -143,7 +143,7 @@ const ValoromPatrimonio = () => {
         </section>
 
         {/* Tríade Patrimonial */}
-        <section className="py-20 bg-gray-50">
+        <section id="pat-triade" className="py-20 bg-gray-50 scroll-mt-28">
           <div className="container mx-auto px-6">
             <div className="max-w-6xl mx-auto">
               <div 
