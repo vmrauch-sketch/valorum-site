@@ -147,7 +147,7 @@ const ValoromCapital = () => {
         </section>
 
         {/* Comece em 3 passos simples */}
-        <section className="py-28 bg-[#0a1628]">
+        <section id="capital-passos" className="py-28 bg-[#0a1628] scroll-mt-28">
           <div className="container mx-auto px-6">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-5xl font-playfair font-bold text-white leading-tight">
