@@ -232,7 +232,7 @@ const ValoromCapital = () => {
         </section>
 
         {/* Services Section */}
-        <section className="py-28 bg-slate-50">
+        <section id="capital-solucoes" className="py-28 bg-slate-50 scroll-mt-28">
           <div className="container mx-auto px-6">
             <div className="text-center mb-20">
               <div className="w-16 h-0.5 bg-gradient-to-r from-[#c9a962] to-[#d4b978] mx-auto mb-8" />
