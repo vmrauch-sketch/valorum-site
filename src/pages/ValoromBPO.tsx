@@ -234,7 +234,7 @@ const ValoromBPO = () => {
         </section>
 
         {/* Resultados Section */}
-        <section className="py-24 bg-primary/95">
+        <section id="bpo-resultados" className="py-24 bg-primary/95 scroll-mt-28">
           <div className="container mx-auto px-6">
             <div className="text-center mb-6">
               <p className="text-sm uppercase tracking-widest text-gray-500 mb-4">
