@@ -266,7 +266,7 @@ const ValoromCapital = () => {
         </section>
 
         {/* Differentials Section */}
-        <section className="py-28 bg-[#0a1628] text-white">
+        <section id="capital-diferenciais" className="py-28 bg-[#0a1628] text-white scroll-mt-28">
           <div className="container mx-auto px-6">
             <div className="text-center mb-20">
               <div className="w-16 h-0.5 bg-gradient-to-r from-[#c9a962] to-[#d4b978] mx-auto mb-8" />
