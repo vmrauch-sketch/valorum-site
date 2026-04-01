@@ -105,7 +105,7 @@ const ValoromCapital = () => {
                 >
                   Agende uma Conversa
                 </Button>
-              </Link>
+              </a>
             </div>
           </div>
           
