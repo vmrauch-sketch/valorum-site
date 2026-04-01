@@ -38,7 +38,7 @@ const Hero = () => {
           {/* Slogan */}
           <div className={`mb-6 transform transition-all duration-1000 ease-out delay-400 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
             <p className="text-2xl md:text-3xl font-playfair font-semibold italic text-gold-600">
-              "Financeiro não se improvisa"
+              "Investimento não se improvisa"
             </p>
           </div>
 
