@@ -3,6 +3,7 @@ import { Footer } from "@/components/Footer";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { SEOHead } from "@/components/SEOHead";
 import { SEOData, StructuredData } from "@/data/seoData";
+import { ServiceSubNav } from "@/components/ServiceSubNav";
 import { 
   Calculator, 
   FileText, 
@@ -27,6 +28,13 @@ import {
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+
+const contabilNavItems = [
+  { label: "Especialidades", target: "contabil-destaques" },
+  { label: "Vantagens", target: "contabil-vantagens" },
+  { label: "Serviços", target: "contabil-servicos" },
+  { label: "Contato", target: "contabil-cta" },
+];
 
 const ValoromContabil = () => {
   const especialidades = [
@@ -56,6 +64,12 @@ const ValoromContabil = () => {
       
       <div className="min-h-screen bg-background font-inter">
         <Navigation />
+        <ServiceSubNav 
+          items={contabilNavItems} 
+          ctaLabel="Fale Conosco" 
+          ctaTarget="contabil-cta"
+          ctaClassName="bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white"
+        />
         
         {/* Hero Section */}
         <section className="relative min-h-[70vh] flex items-center bg-gradient-to-br from-primary via-primary/95 to-primary pt-28 sm:pt-16">
@@ -103,7 +117,7 @@ const ValoromContabil = () => {
         </section>
 
         {/* Destaques Principais */}
-        <section className="py-24 bg-white">
+        <section id="contabil-destaques" className="py-24 bg-white scroll-mt-28">
           <div className="container mx-auto px-6">
             <div className="max-w-6xl mx-auto">
               <div className="grid md:grid-cols-[1fr_1.2fr] gap-12 items-center">
@@ -161,7 +175,7 @@ const ValoromContabil = () => {
         </section>
 
         {/* Vantagens Section */}
-        <section className="py-24 bg-gradient-to-br from-primary via-primary/95 to-primary relative overflow-hidden">
+        <section id="contabil-vantagens" className="py-24 bg-gradient-to-br from-primary via-primary/95 to-primary relative overflow-hidden scroll-mt-28">
           <div className="absolute inset-0 overflow-hidden">
             <div className="absolute top-10 right-10 w-72 h-72 bg-emerald-500/10 rounded-full blur-3xl" />
             <div className="absolute bottom-10 left-10 w-64 h-64 bg-emerald-500/10 rounded-full blur-3xl" />
@@ -219,7 +233,7 @@ const ValoromContabil = () => {
         </section>
 
         {/* Serviços Section */}
-        <section className="py-24 bg-muted/30">
+        <section id="contabil-servicos" className="py-24 bg-muted/30 scroll-mt-28">
           <div className="container mx-auto px-6">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-playfair font-bold text-primary mb-4">
@@ -269,7 +283,7 @@ const ValoromContabil = () => {
         </section>
 
         {/* CTA Section */}
-        <section className="py-20 bg-gradient-to-br from-primary via-primary/95 to-primary">
+        <section id="contabil-cta" className="py-20 bg-gradient-to-br from-primary via-primary/95 to-primary scroll-mt-28">
           <div className="container mx-auto px-6 text-center">
             <h2 className="text-3xl md:text-4xl font-playfair font-bold text-white mb-6">
               Não encontrou seu segmento?

@@ -5,6 +5,7 @@ import { SEOHead } from "@/components/SEOHead";
 import { SEOData, StructuredData } from "@/data/seoData";
 import { Button } from "@/components/ui/button";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import { ServiceSubNav } from "@/components/ServiceSubNav";
 import { 
   Home, 
   LineChart, 
@@ -17,6 +18,11 @@ import {
   Lock,
   Users
 } from "lucide-react";
+
+const patrimonioNavItems = [
+  { label: "Tríade", target: "pat-triade" },
+  { label: "Serviços", target: "pat-servicos" },
+];
 
 const ValoromPatrimonio = () => {
   const { elementRef: heroRef, isVisible: heroVisible } = useScrollAnimation();
@@ -84,6 +90,12 @@ const ValoromPatrimonio = () => {
       
       <div className="min-h-screen bg-white font-inter">
         <Navigation />
+        <ServiceSubNav 
+          items={patrimonioNavItems} 
+          ctaLabel="Fale com Consultor" 
+          ctaTarget="pat-servicos"
+          ctaClassName="bg-gold-500 hover:bg-gold-600 text-white"
+        />
         
         {/* Hero Section */}
         <section className="relative bg-gradient-to-br from-navy-600 via-navy-700 to-navy-800 pt-28 pb-20 md:py-32 overflow-hidden">
@@ -131,7 +143,7 @@ const ValoromPatrimonio = () => {
         </section>
 
         {/* Tríade Patrimonial */}
-        <section className="py-20 bg-gray-50">
+        <section id="pat-triade" className="py-20 bg-gray-50 scroll-mt-28">
           <div className="container mx-auto px-6">
             <div className="max-w-6xl mx-auto">
               <div 
@@ -200,7 +212,7 @@ const ValoromPatrimonio = () => {
         </section>
 
         {/* Serviços */}
-        <section className="py-20 bg-white">
+        <section id="pat-servicos" className="py-20 bg-white scroll-mt-28">
           <div className="container mx-auto px-6">
             <div className="max-w-6xl mx-auto">
               <div 

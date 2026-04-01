@@ -3,6 +3,7 @@ import { Footer } from "@/components/Footer";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { SEOHead } from "@/components/SEOHead";
 import { SEOData, StructuredData } from "@/data/seoData";
+import { ServiceSubNav } from "@/components/ServiceSubNav";
 import { 
   TrendingUp,
   Target,
@@ -24,6 +25,15 @@ import {
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+
+const cfoNavItems = [
+  { label: "Serviços", target: "cfo-servicos" },
+  { label: "Metodologia", target: "cfo-metodologia" },
+  { label: "Diferenciais", target: "cfo-diferenciais" },
+  { label: "Propostas", target: "cfo-propostas" },
+  { label: "Para Quem", target: "cfo-publico" },
+  { label: "FAQ", target: "cfo-faq" },
+];
 
 const faqItems = [
   {
@@ -133,6 +143,12 @@ const ValoromCFO = () => {
       
       <div className="min-h-screen bg-background font-inter">
         <Navigation />
+        <ServiceSubNav 
+          items={cfoNavItems} 
+          ctaLabel="Diagnóstico Gratuito" 
+          ctaTarget="cfo-cta"
+          ctaClassName="bg-gradient-to-r from-lime-400 to-lime-500 hover:from-lime-500 hover:to-lime-600 text-primary"
+        />
         
         {/* Hero Section */}
         <section className="relative min-h-[70vh] flex items-center bg-gradient-to-br from-primary via-primary/95 to-primary pt-28 sm:pt-16">
@@ -179,7 +195,7 @@ const ValoromCFO = () => {
         </section>
 
         {/* O que você recebe Section */}
-        <section className="py-24 bg-white">
+        <section id="cfo-servicos" className="py-24 bg-white scroll-mt-28">
           <div className="container mx-auto px-6">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-playfair font-bold text-primary mb-4">
@@ -212,7 +228,7 @@ const ValoromCFO = () => {
         </section>
 
         {/* Benefícios Section */}
-        <section className="py-24 bg-gradient-to-b from-lime-50 to-white">
+        <section id="cfo-metodologia" className="py-24 bg-gradient-to-b from-lime-50 to-white scroll-mt-28">
           <div className="container mx-auto px-6">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-playfair font-bold text-primary mb-4">
@@ -249,7 +265,7 @@ const ValoromCFO = () => {
         </section>
 
         {/* Diferenciais Section */}
-        <section className="py-24 bg-white">
+        <section id="cfo-diferenciais" className="py-24 bg-white scroll-mt-28">
           <div className="container mx-auto px-6">
             <div className="max-w-4xl mx-auto">
               <div className="text-center mb-12">
@@ -278,7 +294,7 @@ const ValoromCFO = () => {
         </section>
 
         {/* Propostas sob medida Section */}
-        <section className="py-24 bg-primary">
+        <section id="cfo-propostas" className="py-24 bg-primary scroll-mt-28">
           <div className="container mx-auto px-6">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-5xl font-playfair font-bold text-white mb-4">
@@ -328,7 +344,7 @@ const ValoromCFO = () => {
         </section>
 
         {/* Para quem é Section */}
-        <section className="py-24 bg-muted/30">
+        <section id="cfo-publico" className="py-24 bg-muted/30 scroll-mt-28">
           <div className="container mx-auto px-6">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-playfair font-bold text-primary mb-4">
@@ -385,7 +401,7 @@ const ValoromCFO = () => {
         </section>
 
         {/* FAQ Section */}
-        <section className="py-24 bg-white">
+        <section id="cfo-faq" className="py-24 bg-white scroll-mt-28">
           <div className="container mx-auto px-6">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-playfair font-bold text-primary mb-4">
@@ -418,7 +434,7 @@ const ValoromCFO = () => {
         </section>
 
         {/* CTA Section */}
-        <section className="py-20 bg-gradient-to-br from-primary via-primary/95 to-primary">
+        <section id="cfo-cta" className="py-20 bg-gradient-to-br from-primary via-primary/95 to-primary scroll-mt-28">
           <div className="container mx-auto px-6 text-center">
             <h2 className="text-3xl md:text-4xl font-playfair font-bold text-white mb-6">
               Sua empresa merece uma direção financeira estratégica.

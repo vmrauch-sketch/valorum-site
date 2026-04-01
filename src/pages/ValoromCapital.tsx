@@ -3,9 +3,18 @@ import { Footer } from "@/components/Footer";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { SEOHead } from "@/components/SEOHead";
 import { SEOData, StructuredData } from "@/data/seoData";
+import { ServiceSubNav } from "@/components/ServiceSubNav";
 import { TrendingUp, Users, Shield, Target, ChartLine, Briefcase, Building2, Award, Search, FileText, BarChart3 } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+
+const capitalNavItems = [
+  { label: "Ecossistema", target: "capital-stats" },
+  { label: "Como Funciona", target: "capital-passos" },
+  { label: "Sobre", target: "capital-sobre" },
+  { label: "Soluções", target: "capital-solucoes" },
+  { label: "Diferenciais", target: "capital-diferenciais" },
+];
 
 const ValoromCapital = () => {
   const stats = [
@@ -49,7 +58,12 @@ const ValoromCapital = () => {
       
       <div className="min-h-screen bg-background font-inter">
         <Navigation />
-        
+        <ServiceSubNav 
+          items={capitalNavItems} 
+          ctaLabel="Fale Conosco" 
+          ctaTarget="capital-cta"
+          ctaClassName="bg-[#c9a962] hover:bg-[#b8994f] text-[#0a1628]"
+        />
         {/* Hero Section - Elegant dark navy */}
         <section className="relative min-h-screen flex items-center bg-gradient-to-br from-[#0a1628] via-[#0d1f3c] to-[#0a1628] pt-28 sm:pt-16">
           {/* Subtle decorative elements */}
@@ -104,7 +118,7 @@ const ValoromCapital = () => {
         </section>
 
         {/* Stats Section */}
-        <section className="py-24 bg-slate-50 border-b border-slate-200">
+        <section id="capital-stats" className="py-24 bg-slate-50 border-b border-slate-200 scroll-mt-28">
           <div className="container mx-auto px-6">
             <div className="text-center mb-14">
               <div className="w-16 h-0.5 bg-gradient-to-r from-[#c9a962] to-[#d4b978] mx-auto mb-8" />
@@ -133,7 +147,7 @@ const ValoromCapital = () => {
         </section>
 
         {/* Comece em 3 passos simples */}
-        <section className="py-28 bg-[#0a1628]">
+        <section id="capital-passos" className="py-28 bg-[#0a1628] scroll-mt-28">
           <div className="container mx-auto px-6">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-5xl font-playfair font-bold text-white leading-tight">
@@ -180,7 +194,7 @@ const ValoromCapital = () => {
         </section>
 
 
-        <section className="py-28 bg-white">
+        <section id="capital-sobre" className="py-28 bg-white scroll-mt-28">
           <div className="container mx-auto px-6">
             <div className="grid md:grid-cols-2 gap-16 items-center max-w-6xl mx-auto">
               <div>
@@ -218,7 +232,7 @@ const ValoromCapital = () => {
         </section>
 
         {/* Services Section */}
-        <section className="py-28 bg-slate-50">
+        <section id="capital-solucoes" className="py-28 bg-slate-50 scroll-mt-28">
           <div className="container mx-auto px-6">
             <div className="text-center mb-20">
               <div className="w-16 h-0.5 bg-gradient-to-r from-[#c9a962] to-[#d4b978] mx-auto mb-8" />
@@ -252,7 +266,7 @@ const ValoromCapital = () => {
         </section>
 
         {/* Differentials Section */}
-        <section className="py-28 bg-[#0a1628] text-white">
+        <section id="capital-diferenciais" className="py-28 bg-[#0a1628] text-white scroll-mt-28">
           <div className="container mx-auto px-6">
             <div className="text-center mb-20">
               <div className="w-16 h-0.5 bg-gradient-to-r from-[#c9a962] to-[#d4b978] mx-auto mb-8" />
@@ -319,7 +333,7 @@ const ValoromCapital = () => {
         </section>
 
         {/* CTA Section */}
-        <section className="py-28 bg-white">
+        <section id="capital-cta" className="py-28 bg-white scroll-mt-28">
           <div className="container mx-auto px-6">
             <div className="max-w-3xl mx-auto text-center">
               <h2 className="text-3xl md:text-4xl font-playfair font-bold text-[#0a1628] mb-8">
