@@ -79,8 +79,8 @@ export const StructuredData = {
     "@type": "Person",
     "name": "Vilson Marcelo Rauch",
     "alternateName": ["Vilson Rauch"],
-    "jobTitle": "Consultor Financeiro e Especialista em Gestão de Investimentos",
-    "description": "Especialista em gestão de investimentos e planejamento patrimonial. Fundador da Valorum.",
+    "jobTitle": "Economista, Contador e Gestor de Investimentos",
+    "description": "Economista, contador e gestor de investimentos. Especialista em BPO financeiro, CFO terceirizado, planejamento patrimonial e consultoria independente. Fundador da Valorum.",
     "url": "https://vilsonrauch.com.br",
     "image": `${SITE_URL}/logo-valorum-social.png`,
     "worksFor": {
@@ -92,6 +92,10 @@ export const StructuredData = {
       "Gestão de Investimentos",
       "Planejamento Patrimonial",
       "Consultoria Financeira Independente",
+      "BPO Financeiro",
+      "CFO Terceirizado",
+      "Contabilidade",
+      "Economia",
       "Wealth Planning",
       "Proteção e Sucessão Patrimonial"
     ]
