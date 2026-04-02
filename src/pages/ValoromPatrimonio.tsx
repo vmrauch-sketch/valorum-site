@@ -261,7 +261,7 @@ const ValoromPatrimonio = () => {
           <div className="container mx-auto px-6 max-w-2xl">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-playfair font-bold text-white mb-4">
-                Solicite sua <span className="text-[#c9a962]">consultoria gratuita</span>
+                Solicite sua <span className="text-[#c9a962]">análise gratuita</span>
               </h2>
               <p className="text-gray-400 text-lg">
                 Preencha o formulário e nossa equipe entrará em contato para entender seus objetivos e apresentar uma proposta sob medida.
