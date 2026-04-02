@@ -100,7 +100,7 @@ export const StructuredData = {
   capitalService: {
     "@context": "https://schema.org",
     "@type": "FinancialService",
-    "name": "Valorum Capital",
+    "name": "Valorum Capital & Wealth",
     "description": "Casa de investimentos independente com estratégia, transparência e foco na construção patrimonial. Sem conflito de interesses.",
     "url": `${SITE_URL}/capital`,
     "provider": {
