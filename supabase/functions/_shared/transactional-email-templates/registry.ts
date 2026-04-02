@@ -10,7 +10,9 @@ export interface TemplateEntry {
 }
 
 import { template as bpoContactNotification } from './bpo-contact-notification.tsx'
+import { template as leadContactNotification } from './lead-contact-notification.tsx'
 
 export const TEMPLATES: Record<string, TemplateEntry> = {
   'bpo-contact-notification': bpoContactNotification,
+  'lead-contact-notification': leadContactNotification,
 }
