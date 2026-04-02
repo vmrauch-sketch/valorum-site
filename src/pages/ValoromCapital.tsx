@@ -341,14 +341,14 @@ const ValoromCapital = () => {
                 Pronto para cuidar melhor do seu patrimônio?
               </h2>
               <p className="text-lg text-slate-600 mb-10">
-                Agende uma conversa e descubra como podemos ajudar você e sua família.
+                Preencha o formulário abaixo e descubra como podemos ajudar você e sua família.
               </p>
-              <a href="https://wa.me/5511949566290?text=Ol%C3%A1!%20Gostaria%20de%20saber%20como%20funciona%20sobre%20investimentos" target="_blank" rel="noopener noreferrer">
+              <a href="#capital-contato">
                 <Button 
                   size="lg" 
                   className="bg-[#c9a962] hover:bg-[#b8994f] text-[#0a1628] font-semibold px-12 py-6 text-lg transition-all duration-300"
                 >
-                  Fale com um Consultor
+                  Solicitar Análise Gratuita
                 </Button>
               </a>
             </div>

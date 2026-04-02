@@ -138,31 +138,17 @@ const LeadContactForm = () => {
         </div>
       </div>
 
-      <div className="grid md:grid-cols-2 gap-5">
-        <div className="space-y-2">
-          <Label htmlFor="lead-phone" className="text-white text-sm font-semibold">
-            Telefone / WhatsApp
-          </Label>
-          <Input
-            id="lead-phone"
-            placeholder="(00) 00000-0000"
-            value={formData.phone}
-            onChange={(e) => handleChange("phone", e.target.value)}
-            className="bg-white/10 border-white/20 text-white placeholder:text-gray-500 focus:border-[#c9a962] h-12"
-          />
-        </div>
-        <div className="space-y-2">
-          <Label htmlFor="lead-company" className="text-white text-sm font-semibold">
-            Empresa
-          </Label>
-          <Input
-            id="lead-company"
-            placeholder="Nome da empresa"
-            value={formData.company}
-            onChange={(e) => handleChange("company", e.target.value)}
-            className="bg-white/10 border-white/20 text-white placeholder:text-gray-500 focus:border-[#c9a962] h-12"
-          />
-        </div>
+      <div className="space-y-2">
+        <Label htmlFor="lead-phone" className="text-white text-sm font-semibold">
+          Telefone / WhatsApp
+        </Label>
+        <Input
+          id="lead-phone"
+          placeholder="(00) 00000-0000"
+          value={formData.phone}
+          onChange={(e) => handleChange("phone", e.target.value)}
+          className="bg-white/10 border-white/20 text-white placeholder:text-gray-500 focus:border-[#c9a962] h-12"
+        />
       </div>
 
       <Button
