@@ -31,7 +31,7 @@ export const Navigation = () => {
               <div className="hidden sm:flex items-center gap-1.5">
                 <Link to="/capital">
                   <Button size="sm" className={`bg-gradient-to-r from-corporate-500 to-corporate-600 hover:from-corporate-600 hover:to-corporate-700 text-white text-xs px-2.5 py-1 h-7 ${isActive('/capital') ? 'ring-2 ring-corporate-300' : ''}`}>
-                    Capital
+                    Capital & Wealth
                   </Button>
                 </Link>
                 <Link to="/patrimonio">
