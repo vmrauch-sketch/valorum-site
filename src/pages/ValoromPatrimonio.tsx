@@ -252,16 +252,6 @@ const ValoromPatrimonio = () => {
                 })}
               </div>
 
-              {/* CTA */}
-              <div className={`text-center mt-16 transform transition-all duration-1000 ease-out delay-500 ${servicesVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
-                <a href="#patrimonio-contato">
-                  <Button 
-                    className="bg-gold-500 hover:bg-gold-600 text-white px-8 py-6 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
-                  >
-                    Solicitar Análise Gratuita
-                  </Button>
-                </a>
-              </div>
             </div>
           </div>
         </section>
