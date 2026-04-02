@@ -40,7 +40,7 @@ export const StructuredData = {
     "@context": "https://schema.org",
     "@type": "FinancialService",
     "name": "Valorum",
-    "alternateName": ["Valorum Capital", "Valorum Patrimônio"],
+    "alternateName": ["Valorum Capital & Wealth", "Valorum Patrimônio"],
     "description": "Investimento não se improvisa. Gestão de investimentos independente e planejamento patrimonial completo para pessoas e empresas.",
     "url": SITE_URL,
     "logo": `${SITE_URL}/logo-valorum-social.png`,
