@@ -160,10 +160,10 @@ export const StructuredData = {
       },
       {
         "@type": "Question",
-        "name": "Qual a diferença entre a Valorum Capital e a Valorum Patrimônio?",
+        "name": "Qual a diferença entre a Valorum Capital & Wealth e a Valorum Patrimônio?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "A Valorum Capital foca na gestão ativa de investimentos com estratégias personalizadas. A Valorum Patrimônio cuida do planejamento patrimonial completo: proteção, crescimento e sucessão do seu legado."
+          "text": "A Valorum Capital & Wealth foca na gestão ativa de investimentos com estratégias personalizadas. A Valorum Patrimônio cuida do planejamento patrimonial completo: proteção, crescimento e sucessão do seu legado."
         }
       }
     ]
