@@ -272,7 +272,7 @@ const ValoromCapital = () => {
             <div className="text-center mb-20">
               <div className="w-16 h-0.5 bg-gradient-to-r from-[#c9a962] to-[#d4b978] mx-auto mb-8" />
               <h2 className="text-3xl md:text-4xl font-playfair font-bold mb-5">
-                Por que a Valorum Capital?
+                Por que a Valorum Capital & Wealth?
               </h2>
               <p className="text-lg text-slate-400 max-w-2xl mx-auto">
                 Independência vs Assessoria tradicional: entenda a diferença
