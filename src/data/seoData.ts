@@ -6,7 +6,7 @@ export const SEOData = {
   valorum: {
     title: "Valorum | Gestão de Investimentos e Planejamento Patrimonial",
     description: "Investimento não se improvisa. Valorum: gestão de investimentos independente e planejamento patrimonial completo. Estratégia, clareza e segurança para crescer.",
-    keywords: "gestão de investimentos, planejamento patrimonial, consultoria financeira independente, Valorum, Valorum Capital, Valorum Patrimônio, investimentos, proteção patrimonial, crescimento patrimonial, family office, assessoria financeira independente, carteira administrada, holding familiar, planejamento sucessório, wealth planning, Santa Catarina",
+    keywords: "gestão de investimentos, planejamento patrimonial, consultoria financeira independente, Valorum, Valorum Capital & Wealth, Valorum Patrimônio, investimentos, proteção patrimonial, crescimento patrimonial, family office, assessoria financeira independente, carteira administrada, holding familiar, planejamento sucessório, wealth planning, Santa Catarina",
   },
 
   vilsonRauch: {
