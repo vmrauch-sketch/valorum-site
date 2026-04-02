@@ -182,7 +182,7 @@ const ValoromCapital = () => {
             </div>
 
             <div className="text-center">
-              <a href="https://wa.me/5511949566290?text=Ol%C3%A1!%20Gostaria%20de%20saber%20como%20funciona%20sobre%20investimentos" target="_blank" rel="noopener noreferrer">
+              <a href="#capital-contato">
                 <Button 
                   size="lg" 
                   className="bg-[#c9a962] hover:bg-[#b8994f] text-[#0a1628] font-bold px-10 py-6 text-lg uppercase tracking-wider transition-all duration-300 hover:scale-105"
