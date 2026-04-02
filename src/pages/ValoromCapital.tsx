@@ -81,7 +81,7 @@ const ValoromCapital = () => {
               <div className="w-20 h-0.5 bg-gradient-to-r from-[#c9a962] to-[#d4b978] mb-10" />
               
               <p className="text-[#c9a962] text-lg md:text-xl font-medium tracking-widest uppercase mb-6 animate-fade-in">
-                Valorum Capital
+                Valorum Capital & Wealth
               </p>
               
               <h1 className="text-5xl md:text-7xl lg:text-8xl font-playfair font-bold text-white leading-none mb-8 tracking-tight">

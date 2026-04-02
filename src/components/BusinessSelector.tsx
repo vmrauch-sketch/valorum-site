@@ -24,7 +24,7 @@ export const BusinessSelector = () => {
                 : "text-white/70 hover:text-white hover:bg-white/10"
             )}
           >
-            Capital
+            Capital & Wealth
           </Link>
           <span className="text-white/30">|</span>
           <Link
