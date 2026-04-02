@@ -1,17 +1,8 @@
 
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { Button } from "@/components/ui/button";
-import { MessageCircle } from "lucide-react";
+import { Send } from "lucide-react";
 import { Link } from "react-router-dom";
-
-const Hero = () => {
-  const { elementRef, isVisible } = useScrollAnimation();
-
-  const handleFaleConsultorClick = () => {
-    const message = encodeURIComponent("Olá gostaria de mais informações");
-    const whatsappUrl = `https://wa.me/5511949566290?text=${message}`;
-    window.open(whatsappUrl, '_blank');
-  };
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-white pt-28 sm:pt-16">
