@@ -1,6 +1,6 @@
 
 
-import { Lightbulb, MessageCircle, Settings, Target, Users } from "lucide-react";
+import { Lightbulb, Send, Settings, Target, Users } from "lucide-react";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { Button } from "@/components/ui/button";
 
@@ -122,19 +122,14 @@ const HowWeWork = () => {
                   : "translate-y-8 opacity-0"
               }`}
             >
-              <Button
-                onClick={() => {
-                  const message = encodeURIComponent("Olá gostaria de mais informações");
-                  window.open(
-                    `https://wa.me/5511949566290?text=${message}`,
-                    "_blank"
-                  );
-                }}
-                className="bg-gold-500 hover:bg-gold-600 text-white px-8 py-6 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
-              >
-                <MessageCircle className="w-5 h-5 mr-2" />
-                Fale com um Consultor
-              </Button>
+              <a href="#contato">
+                <Button
+                  className="bg-gold-500 hover:bg-gold-600 text-white px-8 py-6 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+                >
+                  <Send className="w-5 h-5 mr-2" />
+                  Solicitar Análise
+                </Button>
+              </a>
             </div>
           </div>
         </div>

@@ -1,17 +1,11 @@
 
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { Button } from "@/components/ui/button";
-import { MessageCircle } from "lucide-react";
+import { Send } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Hero = () => {
   const { elementRef, isVisible } = useScrollAnimation();
-
-  const handleFaleConsultorClick = () => {
-    const message = encodeURIComponent("Olá gostaria de mais informações");
-    const whatsappUrl = `https://wa.me/5511949566290?text=${message}`;
-    window.open(whatsappUrl, '_blank');
-  };
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-white pt-28 sm:pt-16">
@@ -93,13 +87,14 @@ const Hero = () => {
 
           {/* CTA Button */}
           <div className={`transform transition-all duration-1000 ease-out delay-700 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
-            <Button 
-              onClick={handleFaleConsultorClick}
-              className="bg-gold-500 hover:bg-gold-600 text-white px-8 py-6 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
-            >
-              <MessageCircle className="w-5 h-5 mr-2" />
-              Agendar diagnóstico
-            </Button>
+            <a href="#contato">
+              <Button 
+                className="bg-gold-500 hover:bg-gold-600 text-white px-8 py-6 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+              >
+                <Send className="w-5 h-5 mr-2" />
+                Solicitar Análise
+              </Button>
+            </a>
           </div>
         </div>
       </div>
