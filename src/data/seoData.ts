@@ -16,9 +16,9 @@ export const SEOData = {
   },
 
   valorumCapital: {
-    title: "Valorum Capital | Gestão de Investimentos Independente",
+    title: "Valorum Capital & Wealth | Gestão de Investimentos Independente",
     description: "Casa de investimentos independente com estratégia, transparência e foco na construção patrimonial. Sem conflito de interesses, sem amarras.",
-    keywords: "gestão de investimentos, investimentos independente, Valorum Capital, carteira administrada, family office, assessoria financeira independente, gestão de patrimônio, investimentos Santa Catarina, consultoria independente, renda fixa, renda variável, fundos de investimento",
+    keywords: "gestão de investimentos, investimentos independente, Valorum Capital & Wealth, carteira administrada, family office, assessoria financeira independente, gestão de patrimônio, investimentos Santa Catarina, consultoria independente, renda fixa, renda variável, fundos de investimento",
   },
 
   valorumPatrimonio: {
