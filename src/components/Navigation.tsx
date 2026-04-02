@@ -110,7 +110,7 @@ export const Navigation = () => {
                 <div className="flex flex-wrap gap-2 pb-4 mb-2 border-b border-border/20">
                 <Link to="/capital" onClick={() => setIsOpen(false)} className="flex-1 min-w-[10rem]">
                   <Button size="sm" className="w-full bg-gradient-to-r from-corporate-500 to-corporate-600 hover:from-corporate-600 hover:to-corporate-700 text-white">
-                    Valorum Capital
+                    Valorum Capital & Wealth
                   </Button>
                 </Link>
                 <Link to="/patrimonio" onClick={() => setIsOpen(false)} className="flex-1 min-w-[10rem]">
