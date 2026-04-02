@@ -133,7 +133,7 @@ const ValoromPatrimonio = () => {
                 <Button 
                   className="bg-gold-500 hover:bg-gold-600 text-white px-8 py-6 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
                 >
-                  Solicitar Análise Gratuita
+                  Quero Conhecer
                 </Button>
               </a>
             </div>
