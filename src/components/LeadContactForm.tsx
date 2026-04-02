@@ -14,7 +14,6 @@ const LeadContactForm = () => {
     name: "",
     email: "",
     phone: "",
-    company: "",
   });
 
   const handleChange = (field: string, value: string) => {
