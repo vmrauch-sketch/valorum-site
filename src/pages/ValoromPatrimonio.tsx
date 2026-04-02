@@ -93,8 +93,8 @@ const ValoromPatrimonio = () => {
         <Navigation />
         <ServiceSubNav 
           items={patrimonioNavItems} 
-          ctaLabel="Fale com Consultor" 
-          ctaHref="https://wa.me/5511949566290?text=Ol%C3%A1!%20Gostaria%20de%20saber%20como%20funciona%20sobre%20crescer%20e%20proteger%20meu%20patrim%C3%B4nio"
+          ctaLabel="Solicitar Análise" 
+          ctaHref="#patrimonio-contato"
           ctaClassName="bg-gold-500 hover:bg-gold-600 text-white"
         />
         
@@ -129,16 +129,13 @@ const ValoromPatrimonio = () => {
                 Nosso processo é estruturado para garantir que cada decisão patrimonial e financeira faça sentido para você.
               </p>
               
-              <Button 
-                onClick={() => {
-                  const message = encodeURIComponent("Olá! Gostaria de saber como funciona sobre crescer e proteger meu patrimônio");
-                  window.open(`https://wa.me/5511949566290?text=${message}`, '_blank');
-                }}
-                className="bg-gold-500 hover:bg-gold-600 text-white px-8 py-6 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
-              >
-                <MessageCircle className="w-5 h-5 mr-2" />
-                Fale com um Consultor
-              </Button>
+              <a href="#patrimonio-contato">
+                <Button 
+                  className="bg-gold-500 hover:bg-gold-600 text-white px-8 py-6 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+                >
+                  Solicitar Análise Gratuita
+                </Button>
+              </a>
             </div>
           </div>
         </section>
@@ -257,23 +254,20 @@ const ValoromPatrimonio = () => {
 
               {/* CTA */}
               <div className={`text-center mt-16 transform transition-all duration-1000 ease-out delay-500 ${servicesVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
-                <Button 
-                  onClick={() => {
-                    const message = encodeURIComponent("Olá! Gostaria de saber como funciona sobre crescer e proteger meu patrimônio");
-                    window.open(`https://wa.me/5511949566290?text=${message}`, '_blank');
-                  }}
-                  className="bg-gold-500 hover:bg-gold-600 text-white px-8 py-6 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
-                >
-                  <MessageCircle className="w-5 h-5 mr-2" />
-                  Fale com um Consultor
-                </Button>
+                <a href="#patrimonio-contato">
+                  <Button 
+                    className="bg-gold-500 hover:bg-gold-600 text-white px-8 py-6 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+                  >
+                    Solicitar Análise Gratuita
+                  </Button>
+                </a>
               </div>
             </div>
           </div>
         </section>
 
         {/* Formulário de Contato */}
-        <section id="patrimonio-contato" className="py-24 bg-[#0a1628]">
+        <section id="patrimonio-contato" className="py-24 bg-[#0a1628] scroll-mt-28">
           <div className="container mx-auto px-6 max-w-2xl">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-playfair font-bold text-white mb-4">

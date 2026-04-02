@@ -14,7 +14,6 @@ const LeadContactForm = () => {
     name: "",
     email: "",
     phone: "",
-    company: "",
   });
 
   const handleChange = (field: string, value: string) => {
@@ -52,7 +51,6 @@ const LeadContactForm = () => {
         name: formData.name.trim(),
         email: formData.email.trim(),
         phone: formData.phone.trim() || null,
-        company: formData.company.trim() || null,
       });
 
       if (error) throw error;
@@ -66,7 +64,6 @@ const LeadContactForm = () => {
             name: formData.name.trim(),
             email: formData.email.trim(),
             phone: formData.phone.trim() || undefined,
-            company: formData.company.trim() || undefined,
           },
         },
       });
@@ -74,7 +71,7 @@ const LeadContactForm = () => {
       setIsSubmitted(true);
       setTimeout(() => {
         setIsSubmitted(false);
-        setFormData({ name: "", email: "", phone: "", company: "" });
+        setFormData({ name: "", email: "", phone: "" });
       }, 8000);
       toast({
         title: "Enviado com sucesso!",
@@ -138,31 +135,17 @@ const LeadContactForm = () => {
         </div>
       </div>
 
-      <div className="grid md:grid-cols-2 gap-5">
-        <div className="space-y-2">
-          <Label htmlFor="lead-phone" className="text-white text-sm font-semibold">
-            Telefone / WhatsApp
-          </Label>
-          <Input
-            id="lead-phone"
-            placeholder="(00) 00000-0000"
-            value={formData.phone}
-            onChange={(e) => handleChange("phone", e.target.value)}
-            className="bg-white/10 border-white/20 text-white placeholder:text-gray-500 focus:border-[#c9a962] h-12"
-          />
-        </div>
-        <div className="space-y-2">
-          <Label htmlFor="lead-company" className="text-white text-sm font-semibold">
-            Empresa
-          </Label>
-          <Input
-            id="lead-company"
-            placeholder="Nome da empresa"
-            value={formData.company}
-            onChange={(e) => handleChange("company", e.target.value)}
-            className="bg-white/10 border-white/20 text-white placeholder:text-gray-500 focus:border-[#c9a962] h-12"
-          />
-        </div>
+      <div className="space-y-2">
+        <Label htmlFor="lead-phone" className="text-white text-sm font-semibold">
+          Telefone / WhatsApp
+        </Label>
+        <Input
+          id="lead-phone"
+          placeholder="(00) 00000-0000"
+          value={formData.phone}
+          onChange={(e) => handleChange("phone", e.target.value)}
+          className="bg-white/10 border-white/20 text-white placeholder:text-gray-500 focus:border-[#c9a962] h-12"
+        />
       </div>
 
       <Button

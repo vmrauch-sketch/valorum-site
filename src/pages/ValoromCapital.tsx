@@ -61,8 +61,8 @@ const ValoromCapital = () => {
         <Navigation />
         <ServiceSubNav 
           items={capitalNavItems} 
-          ctaLabel="Fale Conosco" 
-          ctaHref="https://wa.me/5511949566290?text=Ol%C3%A1!%20Gostaria%20de%20saber%20como%20funciona%20sobre%20investimentos"
+          ctaLabel="Solicitar Análise" 
+          ctaHref="#capital-contato"
           ctaClassName="bg-[#c9a962] hover:bg-[#b8994f] text-[#0a1628]"
         />
         {/* Hero Section - Elegant dark navy */}
@@ -99,12 +99,12 @@ const ValoromCapital = () => {
                 com estratégia, transparência e zero conflito de interesses.
               </p>
               
-              <a href="https://wa.me/5511949566290?text=Ol%C3%A1!%20Gostaria%20de%20saber%20como%20funciona%20sobre%20investimentos" target="_blank" rel="noopener noreferrer">
+              <a href="#capital-contato">
                 <Button 
                   size="lg" 
                   className="bg-[#c9a962] hover:bg-[#b8994f] text-[#0a1628] font-semibold px-10 py-7 text-lg transition-all duration-300 hover:scale-105"
                 >
-                  Agende uma Conversa
+                  Solicitar Análise Gratuita
                 </Button>
               </a>
             </div>
@@ -182,7 +182,7 @@ const ValoromCapital = () => {
             </div>
 
             <div className="text-center">
-              <a href="https://wa.me/5511949566290?text=Ol%C3%A1!%20Gostaria%20de%20saber%20como%20funciona%20sobre%20investimentos" target="_blank" rel="noopener noreferrer">
+              <a href="#capital-contato">
                 <Button 
                   size="lg" 
                   className="bg-[#c9a962] hover:bg-[#b8994f] text-[#0a1628] font-bold px-10 py-6 text-lg uppercase tracking-wider transition-all duration-300 hover:scale-105"
@@ -341,14 +341,14 @@ const ValoromCapital = () => {
                 Pronto para cuidar melhor do seu patrimônio?
               </h2>
               <p className="text-lg text-slate-600 mb-10">
-                Agende uma conversa e descubra como podemos ajudar você e sua família.
+                Preencha o formulário abaixo e descubra como podemos ajudar você e sua família.
               </p>
-              <a href="https://wa.me/5511949566290?text=Ol%C3%A1!%20Gostaria%20de%20saber%20como%20funciona%20sobre%20investimentos" target="_blank" rel="noopener noreferrer">
+              <a href="#capital-contato">
                 <Button 
                   size="lg" 
                   className="bg-[#c9a962] hover:bg-[#b8994f] text-[#0a1628] font-semibold px-12 py-6 text-lg transition-all duration-300"
                 >
-                  Fale com um Consultor
+                  Solicitar Análise Gratuita
                 </Button>
               </a>
             </div>
@@ -356,7 +356,7 @@ const ValoromCapital = () => {
         </section>
 
         {/* Formulário de Contato */}
-        <section id="capital-contato" className="py-24 bg-[#0a1628]">
+        <section id="capital-contato" className="py-24 bg-[#0a1628] scroll-mt-28">
           <div className="container mx-auto px-6 max-w-2xl">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-playfair font-bold text-white mb-4">
