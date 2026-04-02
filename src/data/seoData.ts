@@ -147,7 +147,7 @@ export const StructuredData = {
         "name": "O que é gestão de investimentos independente?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Na gestão independente, como a Valorum Capital, trabalhamos exclusivamente para o cliente, sem vínculo com instituições financeiras e sem conflito de interesses. Construímos carteiras personalizadas com foco em resultado real."
+          "text": "Na gestão independente, como a Valorum Capital & Wealth, trabalhamos exclusivamente para o cliente, sem vínculo com instituições financeiras e sem conflito de interesses. Construímos carteiras personalizadas com foco em resultado real."
         }
       },
       {
