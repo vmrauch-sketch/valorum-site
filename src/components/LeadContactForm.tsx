@@ -51,7 +51,6 @@ const LeadContactForm = () => {
         name: formData.name.trim(),
         email: formData.email.trim(),
         phone: formData.phone.trim() || null,
-        company: formData.company.trim() || null,
       });
 
       if (error) throw error;
