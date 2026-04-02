@@ -10,9 +10,9 @@ export const SEOData = {
   },
 
   vilsonRauch: {
-    title: "Vilson Marcelo Rauch | Consultor Financeiro e Especialista em Investimentos",
-    description: "Vilson Marcelo Rauch: consultor financeiro especializado em gestão de investimentos e planejamento patrimonial. Investimento não se improvisa.",
-    keywords: "Vilson Marcelo Rauch, Vilson Rauch, consultor financeiro, gestão de investimentos, planejamento patrimonial, assessoria financeira independente, economista, Santa Catarina",
+    title: "Vilson Rauch | Economista, Contador, Gestor de Investimentos e CFO",
+    description: "Vilson Marcelo Rauch: economista, contador e gestor de investimentos. Especialista em BPO financeiro, CFO terceirizado, planejamento patrimonial e consultoria independente. Investimento não se improvisa.",
+    keywords: "Vilson Marcelo Rauch, Vilson Rauch, economista, contador, gestor de investimentos, CFO, BPO financeiro, consultor financeiro, gestão de investimentos, planejamento patrimonial, assessoria financeira independente, investimentos, contabilidade, diretor financeiro terceirizado, Santa Catarina, Valorum",
   },
 
   valorumCapital: {

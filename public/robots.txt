@@ -16,6 +16,7 @@ Allow: /
 # Important pages
 Allow: /capital
 Allow: /patrimonio
+Allow: /vilson-rauch
 Allow: /contato
 
 # Disallow hidden/unused pages
@@ -27,7 +28,6 @@ Disallow: /para-seu-negocio
 Disallow: /protocolo-mais-renda
 Disallow: /manifesto
 Disallow: /especializacoes
-Disallow: /vilson-rauch
 Disallow: /trabalhe-conosco
 
 # Sitemap location
