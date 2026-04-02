@@ -6,7 +6,7 @@ export const SEOData = {
   valorum: {
     title: "Valorum | Gestão de Investimentos e Planejamento Patrimonial",
     description: "Investimento não se improvisa. Valorum: gestão de investimentos independente e planejamento patrimonial completo. Estratégia, clareza e segurança para crescer.",
-    keywords: "gestão de investimentos, planejamento patrimonial, consultoria financeira independente, Valorum, Valorum Capital, Valorum Patrimônio, investimentos, proteção patrimonial, crescimento patrimonial, family office, assessoria financeira independente, carteira administrada, holding familiar, planejamento sucessório, wealth planning, Santa Catarina",
+    keywords: "gestão de investimentos, planejamento patrimonial, consultoria financeira independente, Valorum, Valorum Capital & Wealth, Valorum Patrimônio, investimentos, proteção patrimonial, crescimento patrimonial, family office, assessoria financeira independente, carteira administrada, holding familiar, planejamento sucessório, wealth planning, Santa Catarina",
   },
 
   vilsonRauch: {
@@ -16,9 +16,9 @@ export const SEOData = {
   },
 
   valorumCapital: {
-    title: "Valorum Capital | Gestão de Investimentos Independente",
+    title: "Valorum Capital & Wealth | Gestão de Investimentos Independente",
     description: "Casa de investimentos independente com estratégia, transparência e foco na construção patrimonial. Sem conflito de interesses, sem amarras.",
-    keywords: "gestão de investimentos, investimentos independente, Valorum Capital, carteira administrada, family office, assessoria financeira independente, gestão de patrimônio, investimentos Santa Catarina, consultoria independente, renda fixa, renda variável, fundos de investimento",
+    keywords: "gestão de investimentos, investimentos independente, Valorum Capital & Wealth, carteira administrada, family office, assessoria financeira independente, gestão de patrimônio, investimentos Santa Catarina, consultoria independente, renda fixa, renda variável, fundos de investimento",
   },
 
   valorumPatrimonio: {
@@ -40,7 +40,7 @@ export const StructuredData = {
     "@context": "https://schema.org",
     "@type": "FinancialService",
     "name": "Valorum",
-    "alternateName": ["Valorum Capital", "Valorum Patrimônio"],
+    "alternateName": ["Valorum Capital & Wealth", "Valorum Patrimônio"],
     "description": "Investimento não se improvisa. Gestão de investimentos independente e planejamento patrimonial completo para pessoas e empresas.",
     "url": SITE_URL,
     "logo": `${SITE_URL}/logo-valorum-social.png`,
@@ -100,7 +100,7 @@ export const StructuredData = {
   capitalService: {
     "@context": "https://schema.org",
     "@type": "FinancialService",
-    "name": "Valorum Capital",
+    "name": "Valorum Capital & Wealth",
     "description": "Casa de investimentos independente com estratégia, transparência e foco na construção patrimonial. Sem conflito de interesses.",
     "url": `${SITE_URL}/capital`,
     "provider": {
@@ -147,7 +147,7 @@ export const StructuredData = {
         "name": "O que é gestão de investimentos independente?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Na gestão independente, como a Valorum Capital, trabalhamos exclusivamente para o cliente, sem vínculo com instituições financeiras e sem conflito de interesses. Construímos carteiras personalizadas com foco em resultado real."
+          "text": "Na gestão independente, como a Valorum Capital & Wealth, trabalhamos exclusivamente para o cliente, sem vínculo com instituições financeiras e sem conflito de interesses. Construímos carteiras personalizadas com foco em resultado real."
         }
       },
       {
@@ -160,10 +160,10 @@ export const StructuredData = {
       },
       {
         "@type": "Question",
-        "name": "Qual a diferença entre a Valorum Capital e a Valorum Patrimônio?",
+        "name": "Qual a diferença entre a Valorum Capital & Wealth e a Valorum Patrimônio?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "A Valorum Capital foca na gestão ativa de investimentos com estratégias personalizadas. A Valorum Patrimônio cuida do planejamento patrimonial completo: proteção, crescimento e sucessão do seu legado."
+          "text": "A Valorum Capital & Wealth foca na gestão ativa de investimentos com estratégias personalizadas. A Valorum Patrimônio cuida do planejamento patrimonial completo: proteção, crescimento e sucessão do seu legado."
         }
       }
     ]

@@ -50,7 +50,7 @@ const Hero = () => {
                <div className="flex flex-wrap justify-center gap-3 mb-8 overflow-hidden">
                 <Link to="/capital">
                   <Button variant="outline" className="bg-gradient-to-r from-corporate-500 to-corporate-600 hover:from-corporate-600 hover:to-corporate-700 text-white border-none font-medium px-4 py-2 text-sm">
-                    Capital
+                    Capital & Wealth
                   </Button>
                 </Link>
                 <Link to="/patrimonio">
@@ -64,7 +64,7 @@ const Hero = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8 text-left max-w-3xl mx-auto">
                 <Link to="/capital" className="p-4 rounded-lg bg-corporate-50 border-l-4 border-corporate-500 hover:shadow-md transition-all duration-300 group">
                   <h3 className="font-bold text-corporate-600 mb-0.5 text-base">Gestão de Investimentos</h3>
-                  <span className="text-xs font-semibold text-corporate-400 uppercase tracking-wide block mb-2">Valorum Capital</span>
+                  <span className="text-xs font-semibold text-corporate-400 uppercase tracking-wide block mb-2">Valorum Capital & Wealth</span>
                   <p className="text-sm text-gray-600 mb-3">Casa de investimentos independente com estratégia, transparência e foco na construção patrimonial.</p>
                   <span className="text-xs font-bold text-corporate-600 group-hover:underline">Conhecer solução →</span>
                 </Link>
