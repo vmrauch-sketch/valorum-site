@@ -5,15 +5,15 @@
   <!-- Página Principal -->
   <url>
     <loc>https://valorum.vilsonrauch.com.br/</loc>
-    <lastmod>2026-04-01</lastmod>
+    <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   
-  <!-- Valorum Capital -->
+  <!-- Valorum Capital & Wealth -->
   <url>
     <loc>https://valorum.vilsonrauch.com.br/capital</loc>
-    <lastmod>2026-04-01</lastmod>
+    <lastmod>2026-04-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -21,15 +21,23 @@
   <!-- Valorum Patrimônio -->
   <url>
     <loc>https://valorum.vilsonrauch.com.br/patrimonio</loc>
-    <lastmod>2026-04-01</lastmod>
+    <lastmod>2026-04-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+  </url>
+  
+  <!-- Vilson Rauch -->
+  <url>
+    <loc>https://valorum.vilsonrauch.com.br/vilson-rauch</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   
   <!-- Contato -->
   <url>
     <loc>https://valorum.vilsonrauch.com.br/contato</loc>
-    <lastmod>2026-04-01</lastmod>
+    <lastmod>2026-04-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
