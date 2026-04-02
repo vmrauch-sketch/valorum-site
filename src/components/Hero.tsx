@@ -4,6 +4,9 @@ import { Button } from "@/components/ui/button";
 import { Send } from "lucide-react";
 import { Link } from "react-router-dom";
 
+const Hero = () => {
+  const { elementRef, isVisible } = useScrollAnimation();
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-white pt-28 sm:pt-16">
       {/* Background Pattern */}
