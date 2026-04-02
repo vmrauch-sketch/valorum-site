@@ -129,16 +129,13 @@ const ValoromPatrimonio = () => {
                 Nosso processo é estruturado para garantir que cada decisão patrimonial e financeira faça sentido para você.
               </p>
               
-              <Button 
-                onClick={() => {
-                  const message = encodeURIComponent("Olá! Gostaria de saber como funciona sobre crescer e proteger meu patrimônio");
-                  window.open(`https://wa.me/5511949566290?text=${message}`, '_blank');
-                }}
-                className="bg-gold-500 hover:bg-gold-600 text-white px-8 py-6 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
-              >
-                <MessageCircle className="w-5 h-5 mr-2" />
-                Fale com um Consultor
-              </Button>
+              <a href="#patrimonio-contato">
+                <Button 
+                  className="bg-gold-500 hover:bg-gold-600 text-white px-8 py-6 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+                >
+                  Solicitar Análise Gratuita
+                </Button>
+              </a>
             </div>
           </div>
         </section>
