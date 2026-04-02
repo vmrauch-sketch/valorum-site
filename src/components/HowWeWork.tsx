@@ -1,6 +1,6 @@
 
 
-import { Lightbulb, MessageCircle, Settings, Target, Users } from "lucide-react";
+import { Lightbulb, Send, Settings, Target, Users } from "lucide-react";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { Button } from "@/components/ui/button";
 
