@@ -363,7 +363,7 @@ const ValoromCapital = () => {
                 Solicite sua <span className="text-[#c9a962]">análise gratuita</span>
               </h2>
               <p className="text-gray-400 text-lg">
-                Preencha o formulário e nossa equipe entrará em contato para entender seus objetivos e apresentar uma proposta sob medida.
+                Preencha o formulário e nossa equipe entrará em contato para entender seus objetivos e apresentar solução personalizada.
               </p>
             </div>
             <LeadContactForm />
