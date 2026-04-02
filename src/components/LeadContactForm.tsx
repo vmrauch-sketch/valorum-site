@@ -71,7 +71,7 @@ const LeadContactForm = () => {
       setIsSubmitted(true);
       setTimeout(() => {
         setIsSubmitted(false);
-        setFormData({ name: "", email: "", phone: "", company: "" });
+        setFormData({ name: "", email: "", phone: "" });
       }, 8000);
       toast({
         title: "Enviado com sucesso!",

@@ -356,7 +356,7 @@ const ValoromCapital = () => {
         </section>
 
         {/* Formulário de Contato */}
-        <section id="capital-contato" className="py-24 bg-[#0a1628]">
+        <section id="capital-contato" className="py-24 bg-[#0a1628] scroll-mt-28">
           <div className="container mx-auto px-6 max-w-2xl">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-playfair font-bold text-white mb-4">
