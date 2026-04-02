@@ -64,7 +64,6 @@ const LeadContactForm = () => {
             name: formData.name.trim(),
             email: formData.email.trim(),
             phone: formData.phone.trim() || undefined,
-            company: formData.company.trim() || undefined,
           },
         },
       });
