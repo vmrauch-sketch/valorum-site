@@ -20,7 +20,7 @@ const capitalNavItems = [
 const ValoromCapital = () => {
   const stats = [
     { number: "+1 Bilhão", label: "Ativos sob Gestão", sublabel: "" },
-    { number: "+1.000", label: "Famílias aos cuidados das", sublabel: "nossas Carteiras Administradas" },
+    { number: "+1.000", label: "Famílias aos cuidados das", sublabel: "nossas Carteiras" },
     { number: "+150 Mil", label: "Famílias atendidas em nossos", sublabel: "serviços de Atendimento Express" },
   ];
 
