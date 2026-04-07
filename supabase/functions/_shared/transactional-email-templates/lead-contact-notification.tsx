@@ -59,7 +59,7 @@ export const template = {
   subject: (data: Record<string, any>) =>
     `Nova solicitação de consultoria – ${data?.name || 'Novo lead'}`,
   displayName: 'Notificação de lead - Consultoria',
-  to: 'vilson@cfvalorum.com.br',
+  to: 'contato@cfvalorum.com.br',
   previewData: {
     name: 'João Silva',
     email: 'joao@exemplo.com',
