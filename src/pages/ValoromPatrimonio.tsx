@@ -117,14 +117,8 @@ const ValoromPatrimonio = () => {
                 Seu patrimônio merece uma <span className="text-gold-400">estratégia completa</span>
               </h1>
               
-              
-              <p className="text-xl md:text-2xl text-white font-semibold mb-2">
-                PR² = Patrimônio Real & Renda
-              </p>
-              
-              <p className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed max-w-2xl mx-auto">
-                Nosso processo é estruturado para garantir que cada decisão patrimonial e financeira faça sentido para você.
-              </p>
+
+
               
               <a href="#patrimonio-contato">
                 <Button 
