@@ -239,7 +239,7 @@ const ValoromPatrimonio = () => {
                 <div className="relative flex items-center justify-center">
                   <div className="w-64 h-64 md:w-80 md:h-80 rounded-full bg-gradient-to-br from-gold-400 to-gold-600 flex items-center justify-center shadow-2xl shadow-gold-500/20 relative">
                     <div className="w-48 h-48 md:w-60 md:h-60 rounded-full bg-navy-800 flex items-center justify-center border-2 border-gold-400/30">
-                      <span className="text-5xl md:text-6xl font-playfair font-bold text-gold-400">V</span>
+                      <span className="text-2xl md:text-3xl font-playfair font-bold text-gold-400 tracking-wider">Valorum</span>
                     </div>
                     
                     {/* Floating icons */}
