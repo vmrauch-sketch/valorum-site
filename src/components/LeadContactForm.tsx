@@ -58,7 +58,7 @@ const LeadContactForm = () => {
       await supabase.functions.invoke("send-transactional-email", {
         body: {
           templateName: "lead-contact-notification",
-          recipientEmail: "vilson@cfvalorum.com.br",
+          recipientEmail: "contato@cfvalorum.com.br",
           idempotencyKey: `lead-contact-${id}`,
           templateData: {
             name: formData.name.trim(),
