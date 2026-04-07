@@ -227,48 +227,100 @@ const ValoromPatrimonio = () => {
         </section>
 
         {/* Serviços */}
-        <section id="pat-servicos" className="py-20 bg-white scroll-mt-28">
+        <section id="pat-servicos" className="py-20 bg-gray-50 scroll-mt-28">
           <div className="container mx-auto px-6">
             <div className="max-w-6xl mx-auto">
               <div 
                 ref={servicesRef}
-                className={`text-center mb-16 transform transition-all duration-1000 ease-out ${servicesVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}
+                className={`grid md:grid-cols-2 gap-12 items-center transform transition-all duration-1000 ease-out ${servicesVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}
               >
-                <h2 className="text-4xl md:text-5xl font-playfair font-bold text-navy-600 mb-6">
-                  O que oferecemos
-                </h2>
-                <p className="text-xl font-inter text-gray-700 max-w-3xl mx-auto">
-                  Soluções completas para cada etapa da sua jornada patrimonial.
-                </p>
-              </div>
-              
-              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                {services.map((service, index) => {
-                  const IconComponent = service.icon;
-                  return (
-                    <div 
-                      key={index}
-                      className={`bg-gray-50 rounded-xl p-6 hover:shadow-lg transition-all duration-500 group transform ${servicesVisible ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'}`}
-                      style={{ 
-                        transitionDelay: servicesVisible ? `${index * 100}ms` : '0ms'
-                      }}
-                    >
-                      <div className="w-14 h-14 bg-gold-100 rounded-xl flex items-center justify-center mb-4 group-hover:bg-gold-500 transition-colors duration-300">
-                        <IconComponent size={24} className="text-gold-600 group-hover:text-white transition-colors duration-300" />
-                      </div>
-                      
-                      <h3 className="text-lg font-playfair font-bold text-navy-600 mb-2">
-                        {service.title}
-                      </h3>
-                      
-                      <p className="text-sm font-inter text-gray-600 leading-relaxed">
-                        {service.description}
-                      </p>
+                {/* Left - Visual with icons */}
+                <div className="relative flex items-center justify-center">
+                  <div className="w-64 h-64 md:w-80 md:h-80 rounded-full bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center shadow-2xl relative">
+                    <div className="w-48 h-48 md:w-60 md:h-60 rounded-full bg-white flex items-center justify-center">
+                      <span className="text-5xl md:text-6xl font-playfair font-bold text-navy-600">V</span>
                     </div>
-                  );
-                })}
-              </div>
+                    
+                    {/* Floating icons */}
+                    <div className="absolute -top-4 right-8 w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center">
+                      <ClipboardList size={20} className="text-navy-600" />
+                    </div>
+                    <div className="absolute top-16 -right-6 w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center">
+                      <CheckCircle2 size={20} className="text-navy-600" />
+                    </div>
+                    <div className="absolute bottom-16 -right-4 w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center">
+                      <Handshake size={20} className="text-navy-600" />
+                    </div>
+                    <div className="absolute -bottom-2 right-12 w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center">
+                      <HelpCircle size={20} className="text-navy-600" />
+                    </div>
+                  </div>
+                </div>
 
+                {/* Right - Accordion */}
+                <div>
+                  <h2 className="text-3xl md:text-5xl font-playfair font-bold text-navy-600 mb-4 leading-tight">
+                    Wealth Planning &<br />Building Solutions.
+                  </h2>
+                  <p className="text-base md:text-lg font-inter text-gray-600 mb-8">
+                    Planejamento sem execução não gera resultados.<br />
+                    Nossa abordagem holística envolve:
+                  </p>
+
+                  <Accordion type="single" collapsible className="w-full space-y-2">
+                    <AccordionItem value="planejamento" className="border-b border-gray-200">
+                      <AccordionTrigger className="text-lg font-inter font-bold text-navy-600 py-4 hover:no-underline">
+                        Planejamento Patrimonial
+                      </AccordionTrigger>
+                      <AccordionContent className="text-base font-inter text-gray-600 pb-4">
+                        Organizamos seu patrimônio de forma estratégica para maximizar proteção, eficiência tributária e crescimento sustentável ao longo das gerações.
+                      </AccordionContent>
+                    </AccordionItem>
+
+                    <AccordionItem value="investimentos" className="border-b border-gray-200">
+                      <AccordionTrigger className="text-lg font-inter font-bold text-navy-600 py-4 hover:no-underline">
+                        Investimentos no Mercado Financeiro
+                      </AccordionTrigger>
+                      <AccordionContent className="text-base font-inter text-gray-600 pb-4">
+                        Acompanhamento ativo e personalizado dos seus investimentos com foco em resultados de longo prazo, diversificação inteligente e gestão de risco.
+                      </AccordionContent>
+                    </AccordionItem>
+
+                    <AccordionItem value="protecoes" className="border-b border-gray-200">
+                      <AccordionTrigger className="text-lg font-inter font-bold text-navy-600 py-4 hover:no-underline">
+                        Proteções Inteligentes
+                      </AccordionTrigger>
+                      <AccordionContent className="text-base font-inter text-gray-600 pb-4">
+                        Estratégias jurídicas e financeiras para blindar seu patrimônio contra riscos e imprevistos, garantindo segurança para você e sua família.
+                      </AccordionContent>
+                    </AccordionItem>
+
+                    <AccordionItem value="alavancagem" className="border-b border-gray-200">
+                      <AccordionTrigger className="text-lg font-inter font-bold text-navy-600 py-4 hover:no-underline">
+                        Alavancagem Patrimonial com Investimentos diretos em Ativos Reais
+                      </AccordionTrigger>
+                      <AccordionContent className="text-base font-inter text-gray-600 pb-4">
+                        Participações em negócios e ativos privados que trazem diversificação inteligente e oportunidades fora do mercado tradicional, acelerando o crescimento patrimonial.
+                      </AccordionContent>
+                    </AccordionItem>
+
+                    <AccordionItem value="acompanhamento" className="border-b border-gray-200">
+                      <AccordionTrigger className="text-lg font-inter font-bold text-navy-600 py-4 hover:no-underline">
+                        Acompanhamento Especializado
+                      </AccordionTrigger>
+                      <AccordionContent className="text-base font-inter text-gray-600 pb-4">
+                        Prepare a transferência do seu patrimônio para as próximas gerações de forma eficiente, harmoniosa e com planejamento sucessório completo.
+                      </AccordionContent>
+                    </AccordionItem>
+                  </Accordion>
+
+                  <div className="mt-8 border-l-4 border-blue-600 pl-4">
+                    <p className="text-base md:text-lg font-inter text-gray-700 italic">
+                      Tudo sob uma única estratégia, que reduz riscos e traz previsibilidade.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
