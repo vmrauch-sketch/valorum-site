@@ -117,9 +117,6 @@ const ValoromPatrimonio = () => {
                 Seu patrimônio merece uma <span className="text-gold-400">estratégia completa</span>
               </h1>
               
-              <p className="text-2xl md:text-3xl font-playfair font-semibold italic text-gold-400 mb-4">
-                "Financeiro não se improvisa"
-              </p>
               
               <p className="text-xl md:text-2xl text-white font-semibold mb-2">
                 PR² = Patrimônio Real & Renda
