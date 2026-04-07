@@ -7,6 +7,7 @@ import { SEOData, StructuredData } from "@/data/seoData";
 import { Button } from "@/components/ui/button";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { ServiceSubNav } from "@/components/ServiceSubNav";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { 
   Home, 
   LineChart, 
@@ -17,7 +18,11 @@ import {
   Building2,
   TrendingUp,
   Lock,
-  Users
+  Users,
+  ClipboardList,
+  CheckCircle2,
+  Handshake,
+  HelpCircle
 } from "lucide-react";
 
 const patrimonioNavItems = [
