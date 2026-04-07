@@ -140,6 +140,27 @@ const ValoromPatrimonio = () => {
           </div>
         </section>
 
+        {/* Seção Construção Patrimonial */}
+        <section className="py-20 bg-navy-700 relative overflow-hidden">
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-navy-600/50 via-transparent to-transparent"></div>
+          <div className="container mx-auto px-6 relative z-10">
+            <div className="max-w-4xl">
+              <h2 className="text-4xl md:text-6xl font-playfair font-bold text-white mb-6 leading-tight">
+                Consultoria financeira especializada em{' '}
+                <span className="text-gold-400">construção patrimonial</span>
+              </h2>
+              <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl leading-relaxed">
+                Além da Gestão dos seus investimentos, definimos e implementamos juntos o seu Plano de Construção de Patrimônio.
+              </p>
+              <a href="#pat-triade">
+                <Button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 uppercase tracking-wide">
+                  Conheça o Modelo
+                </Button>
+              </a>
+            </div>
+          </div>
+        </section>
+
         {/* Tríade Patrimonial */}
         <section id="pat-triade" className="py-20 bg-gray-50 scroll-mt-28">
           <div className="container mx-auto px-6">
