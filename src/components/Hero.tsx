@@ -42,9 +42,6 @@ const Hero = () => {
               <span className="text-xl md:text-2xl text-navy-600 font-inter mb-2 block">
                 Soluções Financeiras e de Investimentos!
               </span>
-              <span className="text-xl md:text-2xl text-navy-600 font-inter mb-4 block">
-                Seu financeiro e da sua empresa rodando do jeito certo.
-              </span>
               
               {/* Sub-brand buttons */}
                <div className="flex flex-wrap justify-center gap-3 mb-8 overflow-hidden">
