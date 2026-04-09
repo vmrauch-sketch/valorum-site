@@ -27,9 +27,9 @@ const Hero = () => {
                 className="w-full h-full object-contain drop-shadow-lg"
               />
               {/* Slogan sobreposto à imagem */}
-              <div className="absolute bottom-16 md:bottom-24 left-0 right-0 text-center">
-                <p className="text-2xl md:text-3xl font-playfair font-semibold italic text-gold-600 drop-shadow-md">
-                  "Seu patrimônio, nossa obsessão!"
+              <div className="absolute bottom-8 md:bottom-16 left-0 right-0 text-center">
+                <p className="text-2xl md:text-3xl font-semibold italic text-gold-600 drop-shadow-md" style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}>
+                  Seu patrimônio, nossa obsessão!
                 </p>
               </div>
             </div>
