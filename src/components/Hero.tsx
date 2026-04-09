@@ -26,14 +26,13 @@ const Hero = () => {
                 alt="Valorum Logo" 
                 className="w-full h-full object-contain drop-shadow-lg"
               />
+              {/* Slogan sobreposto à imagem */}
+              <div className="absolute bottom-16 md:bottom-24 left-0 right-0 text-center">
+                <p className="text-2xl md:text-3xl font-playfair font-semibold italic text-gold-600 drop-shadow-md">
+                  "Seu patrimônio, nossa obsessão!"
+                </p>
+              </div>
             </div>
-          </div>
-
-          {/* Slogan */}
-          <div className={`mb-6 transform transition-all duration-1000 ease-out delay-400 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
-            <p className="text-2xl md:text-3xl font-playfair font-semibold italic text-gold-600">
-              "Investimento não se improvisa"
-            </p>
           </div>
 
           {/* Impact Phrase - Single Line */}
