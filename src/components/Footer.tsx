@@ -35,7 +35,10 @@ const Footer = ({ hidePartners = false }: { hidePartners?: boolean }) => {
           <div className="grid md:grid-cols-3 gap-8">
             {/* Logo and Description */}
             <div>
-              <h3 className="text-2xl font-playfair font-bold mb-4">Valorum</h3>
+              <h3 className="text-2xl font-playfair font-bold mb-1">Valorum</h3>
+              <p className="text-sm italic text-gold-400 mb-4" style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}>
+                Seu patrimônio, nossa obsessão!
+              </p>
               <div className="flex flex-col space-y-2 text-sm text-white/60">
                 <span className="flex items-center">
                   <span className="w-2 h-2 bg-financial-500 rounded-full mr-2"></span>
