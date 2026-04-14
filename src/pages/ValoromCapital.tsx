@@ -208,7 +208,7 @@ const ValoromCapital = () => {
                 </p>
                 <p className="text-lg text-slate-600 leading-relaxed">
                   Como <strong className="text-[#0a1628]">especialistas em investimentos</strong>, não somos remunerados por 
-                  produtos — trabalhamos com total independência.
+                  produtos — nossa independência garante foco total nos seus melhores resultados.
                 </p>
               </div>
               <div className="relative">
