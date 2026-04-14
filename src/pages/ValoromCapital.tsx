@@ -317,10 +317,6 @@ const ValoromCapital = () => {
                     <span className="text-slate-600 mt-0.5">✗</span>
                     <span>Pode ter viés comercial</span>
                   </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-slate-600 mt-0.5">✗</span>
-                    <span>Possível conflito de interesses</span>
-                  </li>
                 </ul>
               </div>
             </div>
