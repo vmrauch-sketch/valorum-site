@@ -315,7 +315,7 @@ const ValoromCapital = () => {
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-slate-600 mt-0.5">✗</span>
-                    <span>Viés comercial</span>
+                    <span>Foco comercial</span>
                   </li>
                 </ul>
               </div>
