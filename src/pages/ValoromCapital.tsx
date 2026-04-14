@@ -207,8 +207,7 @@ const ValoromCapital = () => {
                   Nosso time guia você na construção e preservação do seu patrimônio.
                 </p>
                 <p className="text-lg text-slate-600 leading-relaxed">
-                  Como <strong className="text-[#0a1628]">especialistas em investimentos</strong>, não somos remunerados por 
-                  produtos — nossa independência garante foco total nos seus melhores resultados.
+                  Como <strong className="text-[#0a1628]">especialistas em investimentos</strong>, nossa independência garante foco total nos seus melhores resultados.
                 </p>
               </div>
               <div className="relative">
