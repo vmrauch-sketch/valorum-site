@@ -201,7 +201,7 @@ const ValoromCapital = () => {
               <div>
                 <div className="w-16 h-0.5 bg-gradient-to-r from-[#c9a962] to-[#d4b978] mb-8" />
                 <h2 className="text-3xl md:text-4xl font-playfair font-bold text-[#0a1628] mb-8 leading-tight">
-                  Proximidade de quem cuida, solidez de quem é especialista
+                  Proximidade de quem se importa, solidez de quem é especialista
                 </h2>
                 <p className="text-lg text-slate-600 mb-6 leading-relaxed">
                   Nosso time guia você na construção e preservação do seu patrimônio.
