@@ -44,17 +44,17 @@ const Hero = () => {
               </span>
               
               {/* Sub-brand buttons */}
-               <div className="flex flex-wrap justify-center gap-4 mb-8 overflow-hidden">
-                <Link to="/capital" className="group">
-                  <div className="bg-gradient-to-r from-corporate-500 to-corporate-600 hover:from-corporate-600 hover:to-corporate-700 text-white rounded-xl px-6 py-4 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 cursor-pointer border-2 border-corporate-400/30 hover:border-corporate-300/50 w-[220px] text-center">
-                    <span className="block text-base font-bold tracking-wide">Investimentos</span>
-                    <span className="block text-xs font-medium opacity-80 mt-0.5">Capital & Wealth</span>
+               <div className="flex flex-wrap justify-center items-stretch gap-4 mb-8 overflow-hidden">
+                <Link to="/capital" className="group block">
+                  <div className="flex h-[96px] w-[240px] flex-col items-center justify-center rounded-xl border-2 border-corporate-400/30 bg-gradient-to-r from-corporate-500 to-corporate-600 px-5 text-center text-white shadow-lg transition-all duration-300 hover:-translate-y-1 hover:border-corporate-300/50 hover:from-corporate-600 hover:to-corporate-700 hover:shadow-xl cursor-pointer">
+                    <span className="block text-base font-bold leading-tight">Investimentos</span>
+                    <span className="mt-1 block text-xs font-medium opacity-80">Capital & Wealth</span>
                   </div>
                 </Link>
-                <Link to="/patrimonio" className="group">
-                  <div className="bg-gradient-to-r from-gold-500 to-gold-600 hover:from-gold-600 hover:to-gold-700 text-white rounded-xl px-6 py-4 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 cursor-pointer border-2 border-gold-400/30 hover:border-gold-300/50 w-[220px] text-center">
-                    <span className="block text-base font-bold tracking-wide">Consultoria Financeira</span>
-                    <span className="block text-xs font-medium opacity-80 mt-0.5">Patrimonial</span>
+                <Link to="/patrimonio" className="group block">
+                  <div className="flex h-[96px] w-[240px] flex-col items-center justify-center rounded-xl border-2 border-gold-400/30 bg-gradient-to-r from-gold-500 to-gold-600 px-5 text-center text-white shadow-lg transition-all duration-300 hover:-translate-y-1 hover:border-gold-300/50 hover:from-gold-600 hover:to-gold-700 hover:shadow-xl cursor-pointer">
+                    <span className="block whitespace-nowrap text-sm font-bold leading-tight">Consultoria Financeira</span>
+                    <span className="mt-1 block text-xs font-medium opacity-80">Patrimonial</span>
                   </div>
                 </Link>
               </div>
