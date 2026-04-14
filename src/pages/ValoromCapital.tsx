@@ -204,12 +204,11 @@ const ValoromCapital = () => {
                   Proximidade de quem cuida, solidez de quem é especialista
                 </h2>
                 <p className="text-lg text-slate-600 mb-6 leading-relaxed">
-                  Nosso time guia você na construção e preservação do seu patrimônio, oferecendo soluções 
-                  que vão além de números e investimentos.
+                  Nosso time guia você na construção e preservação do seu patrimônio.
                 </p>
                 <p className="text-lg text-slate-600 leading-relaxed">
                   Como <strong className="text-[#0a1628]">especialistas em investimentos</strong>, não somos remunerados por 
-                  produtos — trabalhamos exclusivamente para você, com total independência e transparência.
+                  produtos — trabalhamos com total independência.
                 </p>
               </div>
               <div className="relative">
