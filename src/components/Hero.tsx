@@ -53,7 +53,8 @@ const Hero = () => {
                 </Link>
                 <Link to="/patrimonio" className="group">
                   <div className="bg-gradient-to-r from-gold-500 to-gold-600 hover:from-gold-600 hover:to-gold-700 text-white rounded-xl px-6 py-4 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 cursor-pointer border-2 border-gold-400/30 hover:border-gold-300/50 w-[220px] text-center">
-                    <span className="block text-base font-bold tracking-wide">Consultoria Financeira Patrimonial</span>
+                    <span className="block text-base font-bold tracking-wide">Consultoria Financeira</span>
+                    <span className="block text-xs font-medium opacity-80 mt-0.5">Patrimonial</span>
                   </div>
                 </Link>
               </div>
