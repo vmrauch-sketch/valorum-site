@@ -44,16 +44,18 @@ const Hero = () => {
               </span>
               
               {/* Sub-brand buttons */}
-               <div className="flex flex-wrap justify-center gap-3 mb-8 overflow-hidden">
-                <Link to="/capital">
-                  <Button variant="outline" className="bg-gradient-to-r from-corporate-500 to-corporate-600 hover:from-corporate-600 hover:to-corporate-700 text-white border-none font-medium px-4 py-2 text-sm">
-                    Capital & Wealth
-                  </Button>
+               <div className="flex flex-wrap justify-center gap-4 mb-8 overflow-hidden">
+                <Link to="/capital" className="group">
+                  <div className="bg-gradient-to-r from-corporate-500 to-corporate-600 hover:from-corporate-600 hover:to-corporate-700 text-white rounded-xl px-6 py-4 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 cursor-pointer border-2 border-corporate-400/30 hover:border-corporate-300/50 min-w-[200px]">
+                    <span className="block text-base font-bold tracking-wide">Investimentos</span>
+                    <span className="block text-xs font-medium opacity-80 mt-0.5">Capital & Wealth</span>
+                  </div>
                 </Link>
-                <Link to="/patrimonio">
-                  <Button variant="outline" className="bg-gradient-to-r from-gold-500 to-gold-600 hover:from-gold-600 hover:to-gold-700 text-white border-none font-medium px-4 py-2 text-sm">
-                    Patrimônio
-                  </Button>
+                <Link to="/patrimonio" className="group">
+                  <div className="bg-gradient-to-r from-gold-500 to-gold-600 hover:from-gold-600 hover:to-gold-700 text-white rounded-xl px-6 py-4 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 cursor-pointer border-2 border-gold-400/30 hover:border-gold-300/50 min-w-[200px]">
+                    <span className="block text-base font-bold tracking-wide">Consultoria Patrimonial</span>
+                    <span className="block text-xs font-medium opacity-80 mt-0.5">Patrimônio</span>
+                  </div>
                 </Link>
               </div>
               
