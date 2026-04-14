@@ -54,7 +54,6 @@ const Hero = () => {
                 <Link to="/patrimonio" className="group">
                   <div className="bg-gradient-to-r from-gold-500 to-gold-600 hover:from-gold-600 hover:to-gold-700 text-white rounded-xl px-6 py-4 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 cursor-pointer border-2 border-gold-400/30 hover:border-gold-300/50 min-w-[200px]">
                     <span className="block text-base font-bold tracking-wide">Consultoria Patrimonial</span>
-                    <span className="block text-xs font-medium opacity-80 mt-0.5">Patrimônio</span>
                   </div>
                 </Link>
               </div>
@@ -68,7 +67,7 @@ const Hero = () => {
                   <span className="text-xs font-bold text-corporate-600 group-hover:underline">Conhecer solução →</span>
                 </Link>
                 <Link to="/patrimonio" className="p-4 rounded-lg bg-gold-50 border-l-4 border-gold-500 hover:shadow-md transition-all duration-300 group">
-                  <h3 className="font-bold text-gold-600 mb-0.5 text-base">Planejamento Patrimonial</h3>
+                   <h3 className="font-bold text-gold-600 mb-0.5 text-base">Consultoria Financeira Patrimonial</h3>
                   <span className="text-xs font-semibold text-gold-400 uppercase tracking-wide block mb-2">Valorum Patrimônio</span>
                   <p className="text-sm text-gray-600 mb-3">Planejamento patrimonial e sucessório completo. Transformando patrimônio em fonte de liberdade.</p>
                   <span className="text-xs font-bold text-gold-600 group-hover:underline">Conhecer solução →</span>
