@@ -311,7 +311,7 @@ const ValoromCapital = () => {
                 <ul className="space-y-4 text-slate-500">
                   <li className="flex items-start gap-3">
                     <span className="text-slate-600 mt-0.5">✗</span>
-                    <span>Remunerada por produtos vendidos</span>
+                    <span>Você não sabe quanto paga e o preço pode ser você</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-slate-600 mt-0.5">✗</span>
