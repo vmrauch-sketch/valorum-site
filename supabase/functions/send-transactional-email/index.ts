@@ -125,6 +125,62 @@ Deno.serve(async (req) => {
   // Create Supabase client with service role (bypasses RLS)
   const supabase = createClient(supabaseUrl, supabaseServiceKey)
 
+  // SECURITY: For contact-notification templates, do not trust client-supplied
+  // templateData. The idempotencyKey must be `{prefix}-{contact_submissions.id}`,
+  // and templateData is rebuilt from the actual DB row. This prevents any anon
+  // caller (who has the public anon key) from sending arbitrary-content
+  // notification emails to the site owners' inbox without a real form submission.
+  const NOTIFICATION_TEMPLATES: Record<string, string> = {
+    'bpo-contact-notification': 'bpo-contact-',
+    'lead-contact-notification': 'lead-contact-',
+  }
+  const expectedPrefix = NOTIFICATION_TEMPLATES[templateName]
+  if (expectedPrefix) {
+    if (!idempotencyKey || !idempotencyKey.startsWith(expectedPrefix)) {
+      return new Response(
+        JSON.stringify({ error: 'Invalid request' }),
+        { status: 400, headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
+      )
+    }
+    const submissionId = idempotencyKey.slice(expectedPrefix.length)
+    const uuidRe = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i
+    if (!uuidRe.test(submissionId)) {
+      return new Response(
+        JSON.stringify({ error: 'Invalid request' }),
+        { status: 400, headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
+      )
+    }
+    const { data: submission, error: submissionError } = await supabase
+      .from('contact_submissions')
+      .select('name, email, phone, company, revenue_range, message, created_at')
+      .eq('id', submissionId)
+      .maybeSingle()
+    if (submissionError || !submission) {
+      console.warn('Notification email rejected: no matching submission', { submissionId })
+      return new Response(
+        JSON.stringify({ error: 'Invalid request' }),
+        { status: 403, headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
+      )
+    }
+    // Reject stale requests (>10 min after submission)
+    const ageMs = Date.now() - new Date(submission.created_at).getTime()
+    if (ageMs > 10 * 60 * 1000) {
+      return new Response(
+        JSON.stringify({ error: 'Invalid request' }),
+        { status: 403, headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
+      )
+    }
+    // Rebuild templateData from the verified DB row — ignore client input.
+    templateData = {
+      name: submission.name,
+      email: submission.email,
+      phone: submission.phone ?? undefined,
+      company: submission.company ?? undefined,
+      revenue_range: submission.revenue_range ?? undefined,
+      message: submission.message ?? undefined,
+    }
+  }
+
   // 2. Check suppression list (fail-closed: if we can't verify, don't send)
   const { data: suppressed, error: suppressionError } = await supabase
     .from('suppressed_emails')
