@@ -78,6 +78,9 @@ export const Navigation = () => {
           {!isServicePage && (
             <button
               onClick={() => setIsOpen(!isOpen)}
+              aria-label={isOpen ? 'Fechar menu' : 'Abrir menu'}
+              aria-expanded={isOpen}
+              aria-controls="mobile-menu"
               className="lg:hidden p-2 text-muted-foreground hover:text-primary"
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -104,7 +107,7 @@ export const Navigation = () => {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="lg:hidden border-t border-border/20">
+          <div id="mobile-menu" className="lg:hidden border-t border-border/20">
             <div className="py-4 space-y-2">
               {!isServicePage && (
                 <div className="flex flex-wrap gap-2 pb-4 mb-2 border-b border-border/20">

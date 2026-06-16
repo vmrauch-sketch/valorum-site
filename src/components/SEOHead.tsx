@@ -16,7 +16,7 @@ const SEOHead = ({
   description, 
   keywords,
   canonical,
-  ogImage = "https://lovable.dev/opengraph-image-p98pqg.png",
+  ogImage = "https://valorum.vilsonrauch.com.br/favicon.png",
   ogType = "website",
   author = "Valorum",
   structuredData

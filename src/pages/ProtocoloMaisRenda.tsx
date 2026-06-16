@@ -122,11 +122,11 @@ const ProtocoloMaisRenda = () => {
   return (
     <>
       <SEOHead
-        title={SEOData.valorum.title}
-        description={SEOData.valorum.description}
-        keywords={SEOData.valorum.keywords}
+        title={SEOData.protocoloMaisRenda.title}
+        description={SEOData.protocoloMaisRenda.description}
+        keywords={SEOData.protocoloMaisRenda.keywords}
         canonical="https://valorum.vilsonrauch.com.br/protocolo-mais-renda"
-        structuredData={StructuredData.organization}
+        structuredData={StructuredData.protocoloMaisRendaService}
       />
       
       <div className="min-h-screen bg-white font-inter">
