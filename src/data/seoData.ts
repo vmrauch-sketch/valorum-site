@@ -170,6 +170,25 @@ export const StructuredData = {
         "acceptedAnswer": {
           "@type": "Answer",
           "text": "Na gestão independente, como a Valorum Capital & Wealth, trabalhamos exclusivamente para o cliente, sem vínculo com instituições financeiras e sem conflito de interesses. Construímos carteiras personalizadas com foco em resultado real."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "O que é planejamento patrimonial?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Planejamento patrimonial é o conjunto de estratégias para proteger, fazer crescer e transmitir seu patrimônio de forma eficiente. Inclui investimentos, holding familiar, planejamento sucessório e proteção de ativos."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Qual a diferença entre a Valorum Capital & Wealth e a Valorum Patrimônio?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A Valorum Capital & Wealth foca na gestão ativa de investimentos com estratégias personalizadas. A Valorum Patrimônio cuida do planejamento patrimonial completo: proteção, crescimento e sucessão do seu legado."
+        }
+      }
+    ]
   },
 
   protocoloMaisRendaService: {
@@ -211,24 +230,6 @@ export const StructuredData = {
       "name": "Valorum",
       "url": SITE_URL
     }
-  },
-      },
-      {
-        "@type": "Question",
-        "name": "O que é planejamento patrimonial?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Planejamento patrimonial é o conjunto de estratégias para proteger, fazer crescer e transmitir seu patrimônio de forma eficiente. Inclui investimentos, holding familiar, planejamento sucessório e proteção de ativos."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Qual a diferença entre a Valorum Capital & Wealth e a Valorum Patrimônio?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "A Valorum Capital & Wealth foca na gestão ativa de investimentos com estratégias personalizadas. A Valorum Patrimônio cuida do planejamento patrimonial completo: proteção, crescimento e sucessão do seu legado."
-        }
-      }
-    ]
   }
 };
+
