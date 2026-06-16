@@ -111,7 +111,6 @@ const Footer = ({ hidePartners = false }: { hidePartners?: boolean }) => {
         </div>
       </div>
     </footer>
-    </>
   );
 };
 
