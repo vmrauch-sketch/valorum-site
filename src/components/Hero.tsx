@@ -18,6 +18,7 @@ const Hero = () => {
 
       <div ref={elementRef} className="container mx-auto px-6 text-center relative z-10">
         <div className="max-w-4xl mx-auto">
+          <h1 className="sr-only">Valorum — Gestão de Investimentos e Consultoria Financeira Patrimonial</h1>
           {/* Logo/Brand Image */}
           <div className={`mb-8 transform transition-all duration-1000 ease-out ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'}`}>
             <div className="relative w-96 h-96 md:w-[500px] md:h-[500px] lg:w-[600px] lg:h-[600px] mx-auto">

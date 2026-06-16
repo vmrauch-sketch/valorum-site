@@ -78,6 +78,9 @@ export const Navigation = () => {
           {!isServicePage && (
             <button
               onClick={() => setIsOpen(!isOpen)}
+              aria-label={isOpen ? 'Fechar menu' : 'Abrir menu'}
+              aria-expanded={isOpen}
+              aria-controls="mobile-menu"
               className="lg:hidden p-2 text-muted-foreground hover:text-primary"
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}

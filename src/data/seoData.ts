@@ -10,9 +10,27 @@ export const SEOData = {
   },
 
   vilsonRauch: {
-    title: "Vilson Rauch | Economista, Contador, Gestor de Investimentos e CFO",
-    description: "Vilson Marcelo Rauch: economista, contador e gestor de investimentos. Especialista em BPO financeiro, CFO terceirizado, planejamento patrimonial e consultoria independente. Investimento não se improvisa.",
+    title: "Vilson Rauch | Economista e Gestor de Investimentos",
+    description: "Vilson Marcelo Rauch: economista, contador e gestor de investimentos. Especialista em planejamento patrimonial e consultoria financeira independente.",
     keywords: "Vilson Marcelo Rauch, Vilson Rauch, economista, contador, gestor de investimentos, CFO, BPO financeiro, consultor financeiro, gestão de investimentos, planejamento patrimonial, assessoria financeira independente, investimentos, contabilidade, diretor financeiro terceirizado, Santa Catarina, Valorum",
+  },
+
+  protocoloMaisRenda: {
+    title: "Protocolo Mais Renda, Menos Plantão | Valorum para Médicos",
+    description: "Protocolo especializado para médicos: estratégias de patrimônio, investimentos e contabilidade para transformar renda em liberdade. Mais tempo, mais segurança.",
+    keywords: "protocolo mais renda menos plantão, planejamento financeiro para médicos, investimentos para médicos, gestão patrimonial médica, holding médica, contabilidade para médicos, Valorum",
+  },
+
+  manifesto: {
+    title: "Manifesto Valorum | Por uma Gestão Financeira Independente",
+    description: "Nosso manifesto pela liberdade financeira: investimento não se improvisa. Conheça os princípios que guiam a Valorum e a forma como cuidamos do seu patrimônio.",
+    keywords: "manifesto Valorum, gestão financeira independente, liberdade financeira, propósito Valorum, valores Valorum",
+  },
+
+  especializacoes: {
+    title: "Áreas de Especialização | Valorum",
+    description: "Conheça as áreas de especialização da Valorum: gestão de investimentos, planejamento patrimonial, estratégias avançadas e consultoria financeira independente.",
+    keywords: "áreas de especialização Valorum, gestão de investimentos, planejamento patrimonial, estratégias avançadas, consultoria financeira independente",
   },
 
   valorumCapital: {
