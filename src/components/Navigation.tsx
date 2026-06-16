@@ -107,7 +107,7 @@ export const Navigation = () => {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="lg:hidden border-t border-border/20">
+          <div id="mobile-menu" className="lg:hidden border-t border-border/20">
             <div className="py-4 space-y-2">
               {!isServicePage && (
                 <div className="flex flex-wrap gap-2 pb-4 mb-2 border-b border-border/20">

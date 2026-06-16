@@ -170,7 +170,48 @@ export const StructuredData = {
         "acceptedAnswer": {
           "@type": "Answer",
           "text": "Na gestão independente, como a Valorum Capital & Wealth, trabalhamos exclusivamente para o cliente, sem vínculo com instituições financeiras e sem conflito de interesses. Construímos carteiras personalizadas com foco em resultado real."
-        }
+  },
+
+  protocoloMaisRendaService: {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Protocolo Mais Renda, Menos Plantão",
+    "description": "Protocolo especializado para médicos que combina gestão patrimonial, investimentos e contabilidade para transformar renda em liberdade financeira.",
+    "url": `${SITE_URL}/protocolo-mais-renda`,
+    "provider": {
+      "@type": "Organization",
+      "name": "Valorum",
+      "url": SITE_URL
+    },
+    "serviceType": ["Planejamento Financeiro para Médicos", "Gestão Patrimonial", "Holding Médica", "Contabilidade Especializada"],
+    "areaServed": "BR"
+  },
+
+  manifestoPage: {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Manifesto Valorum",
+    "description": "Manifesto da Valorum sobre liberdade financeira, independência e gestão patrimonial com propósito.",
+    "url": `${SITE_URL}/manifesto`,
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Valorum",
+      "url": SITE_URL
+    }
+  },
+
+  especializacoesPage: {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Áreas de Especialização Valorum",
+    "description": "Áreas de especialização da Valorum em gestão de investimentos, planejamento patrimonial e consultoria financeira independente.",
+    "url": `${SITE_URL}/especializacoes`,
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Valorum",
+      "url": SITE_URL
+    }
+  },
       },
       {
         "@type": "Question",
