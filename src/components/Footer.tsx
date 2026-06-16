@@ -1,4 +1,3 @@
-import { Partners } from './Partners';
 import { Link } from 'react-router-dom';
 const Footer = ({ hidePartners = false }: { hidePartners?: boolean }) => {
   const handleWhatsAppClick = () => {
