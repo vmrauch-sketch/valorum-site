@@ -25,6 +25,10 @@ const Hero = () => {
               <img 
                 src="/lovable-uploads/aee87d30-fa30-44ea-bc48-89ef4d0f7e2c.png" 
                 alt="Valorum Logo" 
+                width={600}
+                height={600}
+                fetchPriority="high"
+                decoding="async"
                 className="w-full h-full object-contain drop-shadow-lg"
               />
               {/* Slogan sobreposto à imagem */}
