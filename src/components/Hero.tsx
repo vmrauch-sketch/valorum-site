@@ -25,6 +25,10 @@ const Hero = () => {
               <img 
                 src="/lovable-uploads/aee87d30-fa30-44ea-bc48-89ef4d0f7e2c.png" 
                 alt="Valorum Logo" 
+                width={600}
+                height={600}
+                fetchPriority="high"
+                decoding="async"
                 className="w-full h-full object-contain drop-shadow-lg"
               />
               {/* Slogan sobreposto à imagem */}
@@ -49,13 +53,13 @@ const Hero = () => {
                 <Link to="/capital" className="group block">
                   <div className="flex h-[96px] w-[240px] flex-col items-center justify-center rounded-xl border-2 border-corporate-400/30 bg-gradient-to-r from-corporate-500 to-corporate-600 px-5 text-center text-white shadow-lg transition-all duration-300 hover:-translate-y-1 hover:border-corporate-300/50 hover:from-corporate-600 hover:to-corporate-700 hover:shadow-xl cursor-pointer">
                     <span className="block text-base font-bold leading-tight">Investimentos</span>
-                    <span className="mt-1 block text-xs font-medium opacity-80">Capital & Wealth</span>
+                    <span className="mt-1 block text-xs font-medium opacity-95">Capital & Wealth</span>
                   </div>
                 </Link>
                 <Link to="/patrimonio" className="group block">
                   <div className="flex h-[96px] w-[240px] flex-col items-center justify-center rounded-xl border-2 border-gold-400/30 bg-gradient-to-r from-gold-500 to-gold-600 px-5 text-center text-white shadow-lg transition-all duration-300 hover:-translate-y-1 hover:border-gold-300/50 hover:from-gold-600 hover:to-gold-700 hover:shadow-xl cursor-pointer">
                     <span className="block whitespace-nowrap text-sm font-bold leading-tight">Consultoria Financeira</span>
-                    <span className="mt-1 block text-xs font-medium opacity-80">Patrimonial</span>
+                    <span className="mt-1 block text-xs font-medium opacity-95">Patrimonial</span>
                   </div>
                 </Link>
               </div>
@@ -65,13 +69,13 @@ const Hero = () => {
                 <Link to="/capital" className="p-4 rounded-lg bg-corporate-50 border-l-4 border-corporate-500 hover:shadow-md transition-all duration-300 group">
                   <h3 className="font-bold text-corporate-600 mb-0.5 text-base">Gestão de Investimentos</h3>
                   <span className="text-xs font-semibold text-corporate-400 uppercase tracking-wide block mb-2">Valorum Capital & Wealth</span>
-                  <p className="text-sm text-gray-600 mb-3">Casa de investimentos independente com estratégia, transparência e foco na construção patrimonial.</p>
+                  <p className="text-sm text-gray-700 mb-3">Casa de investimentos independente com estratégia, transparência e foco na construção patrimonial.</p>
                   <span className="text-xs font-bold text-corporate-600 group-hover:underline">Conhecer solução →</span>
                 </Link>
                 <Link to="/patrimonio" className="p-4 rounded-lg bg-gold-50 border-l-4 border-gold-500 hover:shadow-md transition-all duration-300 group">
                    <h3 className="font-bold text-gold-600 mb-0.5 text-base">Consultoria Financeira Patrimonial</h3>
                   <span className="text-xs font-semibold text-gold-400 uppercase tracking-wide block mb-2">Valorum Patrimônio</span>
-                  <p className="text-sm text-gray-600 mb-3">Planejamento patrimonial e sucessório completo. Transformando patrimônio em fonte de liberdade.</p>
+                  <p className="text-sm text-gray-700 mb-3">Planejamento patrimonial e sucessório completo. Transformando patrimônio em fonte de liberdade.</p>
                   <span className="text-xs font-bold text-gold-600 group-hover:underline">Conhecer solução →</span>
                 </Link>
               </div>
