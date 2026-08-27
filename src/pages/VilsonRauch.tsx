@@ -195,20 +195,20 @@ const VilsonRauch = () => {
                       </h3>
                       <div className="space-y-4">
                         <div className="flex items-center">
-                          <Award className="text-gold-500 mr-3" size={24} />
-                          <span>Certificação CFP® (Certified Financial Planner)</span>
-                        </div>
-                        <div className="flex items-center">
                           <GraduationCap className="text-gold-500 mr-3" size={24} />
-                          <span>MBA em Finanças - FGV</span>
+                          <span>Economista</span>
                         </div>
                         <div className="flex items-center">
                           <BookOpen className="text-gold-500 mr-3" size={24} />
-                          <span>Especialização em Wealth Planning</span>
+                          <span>Contador</span>
+                        </div>
+                        <div className="flex items-center">
+                          <Award className="text-gold-500 mr-3" size={24} />
+                          <span>Gestor de Investimentos credenciado na CVM</span>
                         </div>
                         <div className="flex items-center">
                           <Users className="text-gold-500 mr-3" size={24} />
-                          <span>Membro da PLANEJAR (Associação Brasileira de Planejadores Financeiros)</span>
+                          <span>Especialista em planejamento patrimonial e sucessório</span>
                         </div>
                       </div>
                     </div>
