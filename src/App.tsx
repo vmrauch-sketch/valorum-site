@@ -10,7 +10,6 @@ import Manifesto from "./pages/Manifesto";
 import ComoAtuamos from "./pages/ComoAtuamos";
 
 import ProtocoloMaisRenda from "./pages/ProtocoloMaisRenda";
-import VilsonRauch from "./pages/VilsonRauch";
 import ParaVoce from "./pages/ParaVoce";
 import ParaSeuNegocio from "./pages/ParaSeuNegocio";
 import Contato from "./pages/Contato";
@@ -39,7 +38,6 @@ const App = () => (
           <Route path="/especializacoes" element={<ComoAtuamos />} />
           
           <Route path="/protocolo-mais-renda" element={<ProtocoloMaisRenda />} />
-          <Route path="/vilson-rauch" element={<VilsonRauch />} />
           <Route path="/para-voce" element={<ParaVoce />} />
           <Route path="/para-seu-negocio" element={<ParaSeuNegocio />} />
           <Route path="/contato" element={<Contato />} />
