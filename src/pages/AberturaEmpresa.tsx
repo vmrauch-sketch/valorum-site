@@ -47,7 +47,7 @@ const steps = [
 const AberturaEmpresa = () => {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
-  const whatsappUrl = "https://wa.me/5511949566290?text=Ol%C3%A1%2C%20gostaria%20de%20abrir%20minha%20empresa%20com%20a%20Valorum";
+  const whatsappUrl = "https://wa.me/5511959586722?text=Ol%C3%A1%2C%20gostaria%20de%20abrir%20minha%20empresa%20com%20a%20Valorum";
 
   return (
     <>

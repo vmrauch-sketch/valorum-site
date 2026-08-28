@@ -4,14 +4,14 @@ interface WhatsAppButtonProps {
 
 const WhatsAppButton = ({ message = "Olá gostaria de mais informações" }: WhatsAppButtonProps) => {
   const handleClick = () => {
-    const url = `https://wa.me/5511949566290?text=${encodeURIComponent(message)}`;
+    const url = `https://wa.me/5511959586722?text=${encodeURIComponent(message)}`;
     const isDevelopment = window.location.hostname === 'localhost' || window.location.hostname.includes('lovable');
     
     if (isDevelopment) {
       navigator.clipboard.writeText(url).then(() => {
         alert(`Link do WhatsApp copiado!\n\n${url}`);
       }).catch(() => {
-        alert(`WhatsApp: +55 11 94956-6290`);
+        alert(`WhatsApp: +55 (11) 95958-6722`);
       });
     } else {
       window.open(url, '_blank');
