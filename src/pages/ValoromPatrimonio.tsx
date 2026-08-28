@@ -50,7 +50,7 @@ const ValoromPatrimonio = () => {
     },
     {
       title: "Financeiros",
-      description: "Renda fixa, ações, FII, globais e comodities\ntrazem liquidez, dinamismo e crescimento.",
+      description: "Renda fixa, ações, FII, globais e commodities\ntrazem liquidez, dinamismo e crescimento.",
       icon: LineChart,
       gradient: "from-green-600 to-green-800"
     }
