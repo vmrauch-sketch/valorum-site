@@ -34,7 +34,7 @@ const ParaSeuNegocio = () => {
   const handleEbookFIDCClick = () => {
     console.log("ParaSeuNegocio: Ebook FIDC clicado");
     const message = encodeURIComponent("Olá, tenho interesse em receber informações sobre o ebook de FIDC");
-    const url = `https://wa.me/5511949566290?text=${message}`;
+    const url = `https://wa.me/5511959586722?text=${message}`;
     
     // Detecta se está em desenvolvimento
     const isDevelopment = window.location.hostname === 'localhost' || window.location.hostname.includes('lovable');
@@ -42,9 +42,9 @@ const ParaSeuNegocio = () => {
     if (isDevelopment) {
       // Em desenvolvimento, copia o link e mostra alerta
       navigator.clipboard.writeText(url).then(() => {
-        alert(`Link do WhatsApp copiado!\n\nNúmero: +55 11 94956-6290\nMensagem: "Olá, tenho interesse em receber informações sobre o ebook de FIDC"\n\nLink copiado para área de transferência.`);
+        alert(`Link do WhatsApp copiado!\n\nNúmero: +55 (11) 95958-6722\nMensagem: "Olá, tenho interesse em receber informações sobre o ebook de FIDC"\n\nLink copiado para área de transferência.`);
       }).catch(() => {
-        alert(`WhatsApp: +55 11 94956-6290\n\nMensagem: "Olá, tenho interesse em receber informações sobre o ebook de FIDC"`);
+        alert(`WhatsApp: +55 (11) 95958-6722\n\nMensagem: "Olá, tenho interesse em receber informações sobre o ebook de FIDC"`);
       });
     } else {
       // Em produção, abre normalmente
@@ -59,7 +59,7 @@ const ParaSeuNegocio = () => {
   const handleEbookRecuperacaoClick = () => {
     console.log("ParaSeuNegocio: Ebook Recuperação clicado");
     const message = encodeURIComponent("Olá, tenho interesse em receber informações sobre o ebook de recuperação tributária");
-    const url = `https://wa.me/5511949566290?text=${message}`;
+    const url = `https://wa.me/5511959586722?text=${message}`;
     
     // Detecta se está em desenvolvimento
     const isDevelopment = window.location.hostname === 'localhost' || window.location.hostname.includes('lovable');
@@ -67,9 +67,9 @@ const ParaSeuNegocio = () => {
     if (isDevelopment) {
       // Em desenvolvimento, copia o link e mostra alerta
       navigator.clipboard.writeText(url).then(() => {
-        alert(`Link do WhatsApp copiado!\n\nNúmero: +55 11 94956-6290\nMensagem: "Olá, tenho interesse em receber informações sobre o ebook de recuperação tributária"\n\nLink copiado para área de transferência.`);
+        alert(`Link do WhatsApp copiado!\n\nNúmero: +55 (11) 95958-6722\nMensagem: "Olá, tenho interesse em receber informações sobre o ebook de recuperação tributária"\n\nLink copiado para área de transferência.`);
       }).catch(() => {
-        alert(`WhatsApp: +55 11 94956-6290\n\nMensagem: "Olá, tenho interesse em receber informações sobre o ebook de recuperação tributária"`);
+        alert(`WhatsApp: +55 (11) 95958-6722\n\nMensagem: "Olá, tenho interesse em receber informações sobre o ebook de recuperação tributária"`);
       });
     } else {
       // Em produção, abre normalmente

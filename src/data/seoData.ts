@@ -63,7 +63,7 @@ export const StructuredData = {
     "url": SITE_URL,
     "logo": `${SITE_URL}/logo-valorum-social.png`,
     "image": `${SITE_URL}/logo-valorum-social.png`,
-    "telephone": "+55-11-94956-6290",
+    "telephone": "+55-11-95958-6722",
     "priceRange": "$$$$",
     "slogan": "Investimento não se improvisa",
     "areaServed": {
@@ -73,7 +73,7 @@ export const StructuredData = {
     "serviceType": ["Gestão de Investimentos", "Planejamento Patrimonial", "Consultoria Financeira Independente"],
     "contactPoint": {
       "@type": "ContactPoint",
-      "telephone": "+55-11-94956-6290",
+      "telephone": "+55-11-95958-6722",
       "contactType": "customer service",
       "availableLanguage": "Portuguese"
     },

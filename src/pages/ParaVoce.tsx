@@ -15,7 +15,7 @@ const ParaVoce = () => {
   const handleEbookPlanejamentoClick = () => {
     console.log("ParaVoce: Ebook Planejamento clicado");
     const message = encodeURIComponent("Olá, tenho interesse em receber informações sobre o ebook de planejamento financeiro");
-    const url = `https://wa.me/5511949566290?text=${message}`;
+    const url = `https://wa.me/5511959586722?text=${message}`;
     
     // Detecta se está em desenvolvimento
     const isDevelopment = window.location.hostname === 'localhost' || window.location.hostname.includes('lovable');
@@ -23,9 +23,9 @@ const ParaVoce = () => {
     if (isDevelopment) {
       // Em desenvolvimento, copia o link e mostra alerta
       navigator.clipboard.writeText(url).then(() => {
-        alert(`Link do WhatsApp copiado!\n\nNúmero: +55 11 94956-6290\nMensagem: "Olá, tenho interesse em receber informações sobre o ebook de planejamento financeiro"\n\nLink copiado para área de transferência.`);
+        alert(`Link do WhatsApp copiado!\n\nNúmero: +55 (11) 95958-6722\nMensagem: "Olá, tenho interesse em receber informações sobre o ebook de planejamento financeiro"\n\nLink copiado para área de transferência.`);
       }).catch(() => {
-        alert(`WhatsApp: +55 11 94956-6290\n\nMensagem: "Olá, tenho interesse em receber informações sobre o ebook de planejamento financeiro"`);
+        alert(`WhatsApp: +55 (11) 95958-6722\n\nMensagem: "Olá, tenho interesse em receber informações sobre o ebook de planejamento financeiro"`);
       });
     } else {
       // Em produção, abre normalmente
@@ -40,7 +40,7 @@ const ParaVoce = () => {
   const handleAgendarReuniaoClick = () => {
     console.log("ParaVoce: Agendar reunião clicado");
     const message = encodeURIComponent("Agendar uma reunião com um consultor");
-    const url = `https://wa.me/5511949566290?text=${message}`;
+    const url = `https://wa.me/5511959586722?text=${message}`;
     
     // Detecta se está em desenvolvimento
     const isDevelopment = window.location.hostname === 'localhost' || window.location.hostname.includes('lovable');
@@ -48,9 +48,9 @@ const ParaVoce = () => {
     if (isDevelopment) {
       // Em desenvolvimento, copia o link e mostra alerta
       navigator.clipboard.writeText(url).then(() => {
-        alert(`Link do WhatsApp copiado!\n\nNúmero: +55 11 94956-6290\nMensagem: "Agendar uma reunião com um consultor"\n\nLink copiado para área de transferência.`);
+        alert(`Link do WhatsApp copiado!\n\nNúmero: +55 (11) 95958-6722\nMensagem: "Agendar uma reunião com um consultor"\n\nLink copiado para área de transferência.`);
       }).catch(() => {
-        alert(`WhatsApp: +55 11 94956-6290\n\nMensagem: "Agendar uma reunião com um consultor"`);
+        alert(`WhatsApp: +55 (11) 95958-6722\n\nMensagem: "Agendar uma reunião com um consultor"`);
       });
     } else {
       // Em produção, abre normalmente

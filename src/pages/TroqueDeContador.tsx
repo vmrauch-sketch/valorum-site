@@ -39,7 +39,7 @@ const steps = [
 const TroqueDeContador = () => {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
-  const whatsappUrl = "https://wa.me/5511949566290?text=Ol%C3%A1%2C%20gostaria%20de%20migrar%20minha%20contabilidade%20para%20a%20Valorum";
+  const whatsappUrl = "https://wa.me/5511959586722?text=Ol%C3%A1%2C%20gostaria%20de%20migrar%20minha%20contabilidade%20para%20a%20Valorum";
 
   return (
     <>
