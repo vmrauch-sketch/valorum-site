@@ -43,8 +43,9 @@ const ValoromPatrimonio = () => {
       gradient: "from-blue-600 to-blue-800"
     },
     {
-      title: "Dinâmicos", 
+      title: "Dinâmicos e Milenares", 
       description: "Participações em negócios e ativos privados que trazem diversificação inteligente.",
+
       icon: Gem,
       gradient: "from-amber-500 to-orange-600"
     },
