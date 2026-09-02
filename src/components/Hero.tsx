@@ -32,7 +32,7 @@ const Hero = () => {
                 className="w-full h-full object-contain drop-shadow-lg"
               />
               {/* Slogan sobreposto à imagem */}
-              <div className="absolute bottom-4 md:bottom-6 left-0 right-0 text-center">
+              <div className="absolute bottom-6 md:bottom-8 left-0 right-0 text-center">
                 <div className="w-24 h-[1px] bg-gradient-to-r from-transparent via-gold-500 to-transparent mx-auto mb-3"></div>
                 <p className="text-xl md:text-2xl font-playfair font-semibold italic text-gold-600 drop-shadow-md leading-[1.1]">
                   <span className="block">Clareza para decidir,</span>
