@@ -8,12 +8,12 @@ const Hero = () => {
   const { elementRef, isVisible } = useScrollAnimation();
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-white pt-28 sm:pt-16">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-navy-50 pt-28 sm:pt-16">
       {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-20 left-20 w-32 h-32 border border-navy-600/20 rounded-full"></div>
-        <div className="absolute bottom-20 right-20 w-40 h-40 border border-navy-600/20 rounded-full"></div>
-        <div className="absolute top-1/2 left-1/4 w-24 h-24 border border-navy-600/20 rounded-full"></div>
+      <div className="absolute inset-0 opacity-20">
+        <div className="absolute top-20 left-20 w-32 h-32 border border-navy-300/30 rounded-full"></div>
+        <div className="absolute bottom-20 right-20 w-40 h-40 border border-navy-300/30 rounded-full"></div>
+        <div className="absolute top-1/2 left-1/4 w-24 h-24 border border-navy-300/30 rounded-full"></div>
       </div>
 
       <div ref={elementRef} className="container mx-auto px-6 text-center relative z-10">
