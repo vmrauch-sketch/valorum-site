@@ -34,8 +34,9 @@ const Hero = () => {
               {/* Slogan sobreposto à imagem */}
               <div className="absolute bottom-8 md:bottom-16 left-0 right-0 text-center">
                 <div className="w-24 h-[1px] bg-gradient-to-r from-transparent via-gold-500 to-transparent mx-auto mb-3"></div>
-                <p className="text-2xl md:text-3xl font-playfair font-semibold italic text-gold-600 drop-shadow-md">
-                  Seu patrimônio em evolução!
+                <p className="text-2xl md:text-3xl font-playfair font-semibold italic text-gold-600 drop-shadow-md leading-tight">
+                  <span className="block">Clareza para decidir,</span>
+                  <span className="block">segurança para crescer!</span>
                 </p>
               </div>
             </div>
