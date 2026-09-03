@@ -81,57 +81,76 @@ const TrabalheConosco = () => {
         <Navigation />
         
         <main className="pt-32 sm:pt-24">
-          {/* Hero com três caminhos — estilo home */}
+          {/* Hero com dois caminhos */}
           <section className="py-12 md:py-20">
             <div className="container mx-auto px-4 max-w-7xl">
               <div className="max-w-6xl mx-auto">
                 <div className={`text-center mb-16 transform transition-all duration-1000 ease-out ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'}`}>
-                  <p className="text-xl md:text-2xl font-playfair font-semibold italic text-gold-600 mb-6">
-                    <span className="block">Clareza para decidir,</span>
-                    <span className="block">segurança para crescer!</span>
-                  </p>
-
-                  <h1 className="text-4xl md:text-6xl font-playfair font-bold text-primary mb-4">
+                  <h1 className="text-4xl md:text-6xl font-playfair font-bold text-primary mb-6">
                     Faça parte da Valorum
                   </h1>
                   <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-12">
                     Escolha o caminho que combina com você e venha construir resultados reais.
                   </p>
 
-                  <div className="flex flex-wrap justify-center items-stretch gap-4 mb-10">
-                    {/* Botão Wealth Planner */}
-                    <button onClick={() => scrollTo(wealthRef)} className="group block">
-                      <div className="flex h-[96px] w-[240px] flex-col items-center justify-center rounded-xl border-2 border-corporate-400/30 bg-gradient-to-r from-corporate-500 to-corporate-600 px-5 text-center text-white shadow-lg transition-all duration-300 hover:-translate-y-1 hover:border-corporate-300/50 hover:from-corporate-600 hover:to-corporate-700 hover:shadow-xl cursor-pointer">
-                        <span className="block text-base font-bold leading-tight">Wealth Planner</span>
-                        <span className="mt-1 block text-xs font-medium opacity-95">Investimentos & Wealth Services</span>
+                  <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+                    {/* Card Wealth Planner */}
+                    <button
+                      onClick={() => scrollTo(wealthRef)}
+                      className="p-8 rounded-2xl border-2 border-corporate-500/30 bg-gradient-to-br from-corporate-50 to-white hover:border-corporate-500 hover:shadow-xl transition-all duration-300 text-left group"
+                    >
+                      <div className="w-14 h-14 bg-gradient-to-br from-corporate-500 to-corporate-600 rounded-xl flex items-center justify-center mb-6">
+                        <TrendingUp className="w-7 h-7 text-white" />
                       </div>
+                      <h2 className="text-2xl font-playfair font-bold text-primary mb-3">
+                        Wealth Planner
+                      </h2>
+                      <p className="text-muted-foreground">
+                        Assessoria financeira independente com visão 360°, transparência e foco no cliente.
+                      </p>
+                      <span className="inline-block mt-4 text-corporate-500 font-semibold group-hover:translate-x-1 transition-transform">
+                        Saiba mais →
+                      </span>
                     </button>
 
-                    {/* Botão Estratégias Patrimoniais e Holding */}
-                    <button onClick={() => scrollTo(holdingRef)} className="group block">
-                      <div className="flex h-[96px] w-[240px] flex-col items-center justify-center rounded-xl border-2 border-gold-400/30 bg-gradient-to-r from-gold-500 to-gold-600 px-5 text-center text-white shadow-lg transition-all duration-300 hover:-translate-y-1 hover:border-gold-300/50 hover:from-gold-600 hover:to-gold-700 hover:shadow-xl cursor-pointer">
-                        <span className="block whitespace-nowrap text-sm font-bold leading-tight">Estratégias Patrimoniais</span>
-                        <span className="mt-1 block text-xs font-medium opacity-95">e Holding</span>
+                    {/* Card Estratégias Patrimoniais e Holding */}
+                    <button
+                      onClick={() => scrollTo(holdingRef)}
+                      className="p-8 rounded-2xl border-2 border-gold-500/30 bg-gradient-to-br from-gold-50 to-white hover:border-gold-500 hover:shadow-xl transition-all duration-300 text-left group"
+                    >
+                      <div className="w-14 h-14 bg-gradient-to-br from-gold-500 to-gold-600 rounded-xl flex items-center justify-center mb-6">
+                        <Landmark className="w-7 h-7 text-white" />
                       </div>
+                      <h2 className="text-2xl font-playfair font-bold text-primary mb-3">
+                        Estratégias Patrimoniais e Holding
+                      </h2>
+                      <p className="text-muted-foreground">
+                        Modelo de assessoria financeira e patrimonial para o cliente final.
+                      </p>
+                      <span className="inline-block mt-4 text-gold-500 font-semibold group-hover:translate-x-1 transition-transform">
+                        Saiba mais →
+                      </span>
                     </button>
 
-                    {/* Botão Especialista BPO */}
-                    <button onClick={() => scrollTo(bpoRef)} className="group block">
-                      <div className="flex h-[96px] w-[240px] flex-col items-center justify-center rounded-xl border-2 border-navy-400/30 bg-gradient-to-r from-navy-600 to-navy-700 px-5 text-center text-white shadow-lg transition-all duration-300 hover:-translate-y-1 hover:border-navy-300/50 hover:from-navy-700 hover:to-navy-800 hover:shadow-xl cursor-pointer">
-                        <span className="block text-base font-bold leading-tight">Especialista BPO</span>
-                        <span className="mt-1 block text-xs font-medium opacity-95">Terceirização Financeira</span>
+                    {/* Card Especialista BPO */}
+                    <button
+                      onClick={() => scrollTo(bpoRef)}
+                      className="p-8 rounded-2xl border-2 border-blue-500/30 bg-gradient-to-br from-blue-50 to-white hover:border-blue-500 hover:shadow-xl transition-all duration-300 text-left group"
+                    >
+                      <div className="w-14 h-14 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mb-6">
+                        <BarChart3 className="w-7 h-7 text-white" />
                       </div>
+                      <h2 className="text-2xl font-playfair font-bold text-primary mb-3">
+                        Especialista BPO
+                      </h2>
+                      <p className="text-muted-foreground">
+                        Atenda empresas com metodologia comprovada em terceirização financeira.
+                      </p>
+                      <span className="inline-block mt-4 text-blue-500 font-semibold group-hover:translate-x-1 transition-transform">
+                        Saiba mais →
+                      </span>
                     </button>
                   </div>
-
-                  <p className="text-xl md:text-2xl text-navy-600 font-inter mb-4 block">
-                    Estratégia financeira, investimentos e gestão patrimonial para você{" "}
-                    <span className="whitespace-nowrap">e sua empresa.</span>
-                  </p>
-                  <p className="text-xl md:text-2xl text-navy-600 font-inter mb-6 block leading-relaxed">
-                    <span className="block">Clareza para decidir,</span>
-                    <span className="block">segurança para crescer!</span>
-                  </p>
                 </div>
               </div>
             </div>
