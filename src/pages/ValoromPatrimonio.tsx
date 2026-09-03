@@ -122,7 +122,7 @@ const ValoromPatrimonio = () => {
                 Além da Gestão dos seus investimentos, definimos e implementamos juntos o seu Plano de Construção de Patrimônio.
               </p>
 
-              <p className="text-base md:text-lg text-gray-200 leading-relaxed mb-8 max-w-3xl">
+              <p className="text-lg md:text-xl text-gray-300 leading-relaxed mb-8 max-w-3xl">
                 Um especialista patrimonial acompanha você de forma individual para implementar a metodologia O Quarto Caminho passo a passo. Assim garantimos a assertividade e velocidade de execução do plano estruturado para que o objetivo seja alcançado no período estipulado.
               </p>
 
