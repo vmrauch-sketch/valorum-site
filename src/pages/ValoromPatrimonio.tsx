@@ -27,30 +27,7 @@ const patrimonioNavItems = [
 
 const ValoromPatrimonio = () => {
   const { elementRef: heroRef, isVisible: heroVisible } = useScrollAnimation();
-  const { elementRef: triadeRef, isVisible: triadeVisible } = useScrollAnimation();
   const { elementRef: servicesRef, isVisible: servicesVisible } = useScrollAnimation();
-
-  const investmentAreas = [
-    {
-      title: "Físicos",
-      description: "Imóveis e propriedades\noferecem segurança e preservação de patrimônio.",
-      icon: Home,
-      gradient: "from-blue-600 to-blue-800"
-    },
-    {
-      title: "Dinâmicos e Milenares", 
-      description: "Participações em negócios e ativos privados que trazem diversificação inteligente.",
-
-      icon: Gem,
-      gradient: "from-amber-500 to-orange-600"
-    },
-    {
-      title: "Financeiros",
-      description: "Renda fixa, ações, FII, globais e commodities\ntrazem liquidez, dinamismo e crescimento.",
-      icon: LineChart,
-      gradient: "from-green-600 to-green-800"
-    }
-  ];
 
   const services = [
     {
