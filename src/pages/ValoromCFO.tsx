@@ -1,6 +1,7 @@
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
+import { WhatsAppIcon } from "@/components/WhatsAppIcon";
 import { SEOHead } from "@/components/SEOHead";
 import { SEOData, StructuredData } from "@/data/seoData";
 import { ServiceSubNav } from "@/components/ServiceSubNav";
@@ -181,8 +182,9 @@ const ValoromCFO = () => {
                 <a href="https://wa.me/5511959586722?text=Ol%C3%A1!%20Gostaria%20de%20saber%20como%20funciona%20sobre%20gest%C3%A3o%20financeira" target="_blank" rel="noopener noreferrer">
                   <Button 
                     size="lg"
-                    className="bg-gradient-to-r from-lime-400 to-lime-500 hover:from-lime-500 hover:to-lime-600 text-primary font-semibold px-8 py-6 text-lg"
+                    className="inline-flex items-center bg-gradient-to-r from-lime-400 to-lime-500 hover:from-lime-500 hover:to-lime-600 text-primary font-semibold px-8 py-6 text-lg"
                   >
+                    <WhatsAppIcon className="w-5 h-5 mr-3" />
                     Quero um Diagnóstico Gratuito
                   </Button>
                 </a>
@@ -334,8 +336,9 @@ const ValoromCFO = () => {
                 <Button 
                   size="lg"
                   variant="outline"
-                  className="border-lime-400 text-lime-400 hover:bg-lime-400 hover:text-primary font-semibold px-10 py-6 text-lg uppercase tracking-wider"
+                  className="inline-flex items-center border-lime-400 text-lime-400 hover:bg-lime-400 hover:text-primary font-semibold px-10 py-6 text-lg uppercase tracking-wider"
                 >
+                  <WhatsAppIcon className="w-5 h-5 mr-3" />
                   Solicitar Proposta Personalizada
                 </Button>
               </a>
@@ -445,8 +448,9 @@ const ValoromCFO = () => {
             <a href="https://wa.me/5511959586722?text=Ol%C3%A1!%20Gostaria%20de%20saber%20como%20funciona%20sobre%20gest%C3%A3o%20financeira" target="_blank" rel="noopener noreferrer">
               <Button 
                 size="lg" 
-                className="bg-gradient-to-r from-lime-400 to-lime-500 hover:from-lime-500 hover:to-lime-600 text-primary font-semibold px-8 py-6 text-lg"
+                className="inline-flex items-center bg-gradient-to-r from-lime-400 to-lime-500 hover:from-lime-500 hover:to-lime-600 text-primary font-semibold px-8 py-6 text-lg"
               >
+                <WhatsAppIcon className="w-5 h-5 mr-3" />
                 Agendar Minha Sessão Gratuita
               </Button>
             </a>
