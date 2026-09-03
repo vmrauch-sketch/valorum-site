@@ -123,7 +123,7 @@ const ValoromPatrimonio = () => {
               </p>
 
               <p className="text-lg md:text-xl text-gray-300 leading-relaxed mb-8 max-w-3xl">
-                Um especialista patrimonial acompanha você de forma individual para implementar a metodologia O Quarto Caminho passo a passo. Assim garantimos a assertividade e velocidade de execução do plano estruturado para que o objetivo seja alcançado no período estipulado.
+                Um especialista patrimonial acompanha você de forma individual para implementar nossa metodologia passo a passo. Assim garantimos a assertividade e velocidade de execução do plano estruturado para que o objetivo seja alcançado no período estipulado.
               </p>
 
               <a href="#pat-servicos">
