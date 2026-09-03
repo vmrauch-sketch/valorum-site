@@ -225,6 +225,55 @@ const TrabalheConosco = () => {
             </div>
           </section>
 
+          {/* Seção Estratégias Patrimoniais e Holding */}
+          <section ref={holdingRef} className="py-20 scroll-mt-24">
+            <div className="container mx-auto px-4 max-w-7xl">
+              <div className="max-w-6xl mx-auto">
+                <div className="bg-gradient-to-r from-gold-50 to-white p-8 md:p-12 rounded-xl border border-gold-200">
+                  <div className="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                      <p className="text-sm uppercase tracking-widest text-gold-600 font-semibold mb-4">Estratégias Patrimoniais e Holding</p>
+                      <h2 className="text-3xl md:text-4xl font-playfair font-bold text-primary leading-tight">
+                        Modelo de assessoria financeira e patrimonial para o cliente final.
+                      </h2>
+                      <p className="text-lg text-muted-foreground mt-6 font-medium">
+                        Soluções Financeiras e de Investimentos!
+                      </p>
+                    </div>
+
+                    <div className="space-y-6">
+                      {[
+                        { num: "01", title: "Investimentos & Wealth Services", desc: "Gestão profissional de investimentos com alocação estratégica e acompanhamento contínuo;" },
+                        { num: "02", title: "Consultoria Financeira", desc: "Planejamento completo para organizar receitas, despesas e objetivos de curto, médio e longo prazo;" },
+                        { num: "03", title: "Patrimonial", desc: "Estruturação, proteção e transmissão patrimonial com segurança jurídica e tributária;" },
+                        { num: "04", title: "Holding Familiar", desc: "Organização societária e sucessória para preservar e fazer crescer o patrimônio familiar." },
+                      ].map((item) => (
+                        <div key={item.num} className="flex items-start">
+                          <div className="flex-shrink-0 w-12 h-12 bg-gold-500 text-white rounded-full flex items-center justify-center font-bold text-xl mr-4">
+                            {item.num}
+                          </div>
+                          <div>
+                            <h3 className="text-xl font-bold text-primary mb-2">{item.title}</h3>
+                            <p className="text-muted-foreground">{item.desc}</p>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  <div className="text-center mt-12">
+                    <button 
+                      onClick={handleHoldingCandidaturaClick}
+                      className="bg-gold-500 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-gold-600 transition-colors shadow-lg hover:scale-105 transition-transform duration-200"
+                    >
+                      QUERO ATUAR COM ESTRATÉGIAS PATRIMONIAIS E HOLDING
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
           {/* Seção Especialista BPO */}
           <section ref={bpoRef} className="py-20 bg-primary scroll-mt-24">
             <div className="container mx-auto px-4 max-w-7xl">
