@@ -3,10 +3,10 @@ import { Footer } from "@/components/Footer";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import LeadContactForm from "@/components/LeadContactForm";
 import { SEOHead } from "@/components/SEOHead";
-import { seoData } from "@/data/seoData";
+import { SEOData } from "@/data/seoData";
 
 const Contato = () => {
-  const seo = seoData.contato;
+  const seo = SEOData.contato;
   return (
     <div className="min-h-screen bg-white font-inter">
       <SEOHead
