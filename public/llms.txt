@@ -7,7 +7,7 @@ A Valorum reúne duas frentes principais: a Valorum Investimentos & Wealth Servi
 ## Pages
 
 - [Home](/): Visão geral da Valorum, sub-marcas e proposta de valor.
-- [Valorum Investimentos & Wealth Services](/capital): Gestão de investimentos independente, carteira administrada e estratégias personalizadas.
+- [Valorum Investimentos & Wealth Services](/investimentos): Gestão de investimentos independente, carteira administrada e estratégias personalizadas.
 - [Valorum Patrimônio](/patrimonio): Planejamento patrimonial, sucessório e holding familiar.
 - [Estratégias Patrimoniais e Holding](/estrategias-patrimoniais): Holdings familiares e patrimoniais, planejamento sucessório, proteção de ativos, holding para imóveis e redução de tributos.
 - [Áreas de Especialização](/especializacoes): Estratégias avançadas e áreas de atuação.

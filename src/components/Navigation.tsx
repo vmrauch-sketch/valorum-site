@@ -8,7 +8,7 @@ export const Navigation = () => {
   const location = useLocation();
 
   // Páginas específicas de serviço — esconde botões de outras sub-marcas
-  const servicePages = ['/capital', '/bpo', '/patrimonio', '/cfo', '/contabil'];
+  const servicePages = ['/investimentos', '/bpo', '/patrimonio', '/cfo', '/contabil'];
   const isServicePage = servicePages.includes(location.pathname);
 
   const navItems = [
@@ -29,8 +29,8 @@ export const Navigation = () => {
             </Link>
             {!isServicePage && (
               <div className="hidden sm:flex items-center gap-1.5">
-                <Link to="/capital">
-                  <Button size="sm" className={`bg-gradient-to-r from-corporate-500 to-corporate-600 hover:from-corporate-600 hover:to-corporate-700 text-white text-xs px-2.5 py-1 h-7 ${isActive('/capital') ? 'ring-2 ring-corporate-300' : ''}`}>
+                <Link to="/investimentos">
+                  <Button size="sm" className={`bg-gradient-to-r from-corporate-500 to-corporate-600 hover:from-corporate-600 hover:to-corporate-700 text-white text-xs px-2.5 py-1 h-7 ${isActive('/investimentos') ? 'ring-2 ring-corporate-300' : ''}`}>
                     Investimentos & Wealth Services
                   </Button>
                 </Link>
@@ -96,8 +96,8 @@ export const Navigation = () => {
         {!isServicePage && (
           <div className="sm:hidden pb-3">
             <div className="flex flex-wrap items-center gap-2">
-              <Link to="/capital">
-                <Button size="sm" className={`bg-gradient-to-r from-corporate-500 to-corporate-600 hover:from-corporate-600 hover:to-corporate-700 text-white text-xs px-2.5 py-1 h-7 ${isActive('/capital') ? 'ring-2 ring-corporate-300' : ''}`}>
+              <Link to="/investimentos">
+                <Button size="sm" className={`bg-gradient-to-r from-corporate-500 to-corporate-600 hover:from-corporate-600 hover:to-corporate-700 text-white text-xs px-2.5 py-1 h-7 ${isActive('/investimentos') ? 'ring-2 ring-corporate-300' : ''}`}>
                   Investimentos & Wealth Services
                 </Button>
               </Link>
@@ -121,7 +121,7 @@ export const Navigation = () => {
             <div className="py-4 space-y-2">
               {!isServicePage && (
                 <div className="flex flex-wrap gap-2 pb-4 mb-2 border-b border-border/20">
-                <Link to="/capital" onClick={() => setIsOpen(false)} className="flex-1 min-w-[10rem]">
+                <Link to="/investimentos" onClick={() => setIsOpen(false)} className="flex-1 min-w-[10rem]">
                   <Button size="sm" className="w-full bg-gradient-to-r from-corporate-500 to-corporate-600 hover:from-corporate-600 hover:to-corporate-700 text-white">
                     Valorum Investimentos & Wealth Services
                   </Button>

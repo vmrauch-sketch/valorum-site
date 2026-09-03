@@ -51,7 +51,7 @@ const Hero = () => {
               
               {/* Sub-brand buttons */}
                <div className="flex flex-wrap justify-center items-stretch gap-4 mb-8 overflow-hidden">
-                <Link to="/capital" className="group block">
+                <Link to="/investimentos" className="group block">
                   <div className="flex h-[96px] w-[240px] flex-col items-center justify-center rounded-xl border-2 border-corporate-400/30 bg-gradient-to-r from-corporate-500 to-corporate-600 px-5 text-center text-white shadow-lg transition-all duration-300 hover:-translate-y-1 hover:border-corporate-300/50 hover:from-corporate-600 hover:to-corporate-700 hover:shadow-xl cursor-pointer">
                     <span className="block text-base font-bold leading-tight">Investimentos</span>
                     <span className="mt-1 block text-xs font-medium opacity-95">Investimentos & Wealth Services</span>
@@ -73,7 +73,7 @@ const Hero = () => {
               
               {/* Sub-brand descriptions */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8 text-left max-w-3xl mx-auto">
-                <Link to="/capital" className="p-4 rounded-lg bg-corporate-50 border-l-4 border-corporate-500 hover:shadow-md transition-all duration-300 group">
+                <Link to="/investimentos" className="p-4 rounded-lg bg-corporate-50 border-l-4 border-corporate-500 hover:shadow-md transition-all duration-300 group">
                   <h3 className="font-bold text-corporate-600 mb-0.5 text-base">Gestão de Investimentos</h3>
                   <span className="text-xs font-semibold text-corporate-400 uppercase tracking-wide block mb-2">Valorum Investimentos & Wealth Services</span>
                   <p className="text-sm text-gray-700 mb-3">Casa de investimentos independente com estratégia, transparência e foco na construção patrimonial.</p>
