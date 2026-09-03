@@ -102,7 +102,7 @@ const ValoromPatrimonio = () => {
                 <Button 
                   className="bg-gold-500 hover:bg-gold-600 text-white px-8 py-6 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
                 >
-                  Quero Conhecer
+                  Quero renda passiva vitalícia
                 </Button>
               </a>
             </div>
@@ -126,9 +126,9 @@ const ValoromPatrimonio = () => {
                 Um especialista patrimonial acompanha você de forma individual para implementar nossa metodologia passo a passo. Assim garantimos a assertividade e velocidade de execução do plano estruturado para que o objetivo seja alcançado no período estipulado.
               </p>
 
-              <a href="#pat-servicos">
+              <a href="#patrimonio-contato">
                 <Button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 uppercase tracking-wide">
-                  Conheça o Modelo
+                  Quero renda passiva vitalícia
                 </Button>
               </a>
             </div>
