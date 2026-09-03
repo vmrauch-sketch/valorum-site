@@ -9,6 +9,7 @@ interface SEOHeadProps {
   ogType?: string;
   author?: string;
   structuredData?: object;
+  noindex?: boolean;
 }
 
 const SEOHead = ({ 
