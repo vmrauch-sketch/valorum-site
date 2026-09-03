@@ -95,7 +95,7 @@ const EstrategiasPatrimoniais = () => {
                 proteção de ativos, planejamento sucessório e eficiência tributária.
               </p>
               <WhatsAppCTAButton
-                message="Olá! Vim do site da Valorum. Quero falar sobre Estratégias Patrimoniais e Holding."
+                message="Olá! Gostaria de mais informações sobre holding."
                 variant="green"
                 className="px-8 py-6 text-lg uppercase tracking-wide"
               >
@@ -152,8 +152,9 @@ const EstrategiasPatrimoniais = () => {
               })}
             </div>
             <div className="text-center mt-12">
+              <p className="text-gray-700 text-lg mb-5">Nossa equipe pode te orientar com precisão e confiança.</p>
               <WhatsAppCTAButton
-                message="Olá! Vim do site da Valorum. Quero falar sobre Estratégias Patrimoniais e Holding."
+                message="Olá! Gostaria de mais informações sobre holding."
                 variant="green"
                 className="px-8 py-4 text-base uppercase tracking-wide"
               >
@@ -184,8 +185,9 @@ const EstrategiasPatrimoniais = () => {
               ))}
             </div>
             <div className="text-center mt-12">
+              <p className="text-gray-700 text-lg mb-5">Nossa equipe pode te orientar com precisão e confiança.</p>
               <WhatsAppCTAButton
-                message="Olá! Vim do site da Valorum. Quero falar sobre Estratégias Patrimoniais e Holding."
+                message="Olá! Gostaria de mais informações sobre holding."
                 variant="green"
                 className="px-8 py-4 text-base uppercase tracking-wide"
               >
@@ -210,8 +212,9 @@ const EstrategiasPatrimoniais = () => {
               ))}
             </div>
             <div className="text-center mt-12">
+              <p className="text-gray-700 text-lg mb-5">Nossa equipe pode te orientar com precisão e confiança.</p>
               <WhatsAppCTAButton
-                message="Olá! Vim do site da Valorum. Quero falar sobre Estratégias Patrimoniais e Holding."
+                message="Olá! Gostaria de mais informações sobre holding."
                 variant="green"
                 className="px-8 py-4 text-base uppercase tracking-wide"
               >
@@ -238,7 +241,7 @@ const EstrategiasPatrimoniais = () => {
         </section>
 
         <Footer />
-        <WhatsAppButton message="Olá! Vim do site da Valorum. Quero falar sobre Estratégias Patrimoniais e Holding." />
+        <WhatsAppButton message="Olá! Gostaria de mais informações sobre holding." />
       </div>
     </>
   );
