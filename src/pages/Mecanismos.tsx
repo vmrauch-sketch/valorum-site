@@ -1,0 +1,190 @@
+import { Navigation } from "@/components/Navigation";
+import LeadContactForm from "@/components/LeadContactForm";
+import { Footer } from "@/components/Footer";
+import { WhatsAppButton } from "@/components/WhatsAppButton";
+import { SEOHead } from "@/components/SEOHead";
+import { Button } from "@/components/ui/button";
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import { Home, Gem, LineChart, Shield, ShieldCheck } from "lucide-react";
+
+const Mecanismos = () => {
+  const { elementRef: heroRef, isVisible: heroVisible } = useScrollAnimation();
+  const { elementRef: triadeRef, isVisible: triadeVisible } = useScrollAnimation();
+
+  const investmentAreas = [
+    {
+      title: "Físicos",
+      description: "Imóveis e propriedades\noferecem segurança e preservação de patrimônio.",
+      icon: Home,
+      gradient: "from-blue-600 to-blue-800"
+    },
+    {
+      title: "Dinâmicos e Milenares",
+      description: "Participações em negócios e ativos privados que trazem diversificação inteligente.",
+      icon: Gem,
+      gradient: "from-amber-500 to-orange-600"
+    },
+    {
+      title: "Financeiros",
+      description: "Renda fixa, ações, FII, globais e commodities\ntrazem liquidez, dinamismo e crescimento.",
+      icon: LineChart,
+      gradient: "from-green-600 to-green-800"
+    }
+  ];
+
+  return (
+    <>
+      <SEOHead
+        title="Nossos Mecanismos | Valorum"
+        description="Conheça os mecanismos de construção patrimonial da Valorum: ativos físicos, dinâmicos e milenares, e financeiros, unidos por diversificação e empilhamento de estratégias."
+        keywords="mecanismos patrimoniais, ativos físicos, ativos dinâmicos, ativos financeiros, diversificação, empilhamento de estratégias, Valorum"
+        canonical="https://valorum.vilsonrauch.com.br/mecanismos"
+      />
+
+      <div className="min-h-screen bg-white font-inter">
+        <Navigation />
+
+        {/* Hero Section */}
+        <section className="relative bg-gradient-to-br from-navy-600 via-navy-700 to-navy-800 pt-28 pb-20 md:py-32 overflow-hidden">
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-gold-500/20 via-transparent to-transparent"></div>
+          <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-navy-800/50 to-transparent"></div>
+
+          <div className="container mx-auto px-6 relative z-10">
+            <div
+              ref={heroRef}
+              className={`max-w-4xl mx-auto text-center transform transition-all duration-1000 ease-out ${heroVisible ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'}`}
+            >
+              <div className="inline-flex items-center gap-2 bg-gold-500/20 border border-gold-400/30 rounded-full px-4 py-2 mb-6">
+                <Shield className="w-4 h-4 text-gold-400" />
+                <span className="text-gold-300 text-sm font-medium">Valorum Patrimônio</span>
+              </div>
+
+              <h1 className="text-4xl md:text-6xl font-playfair font-bold text-white mb-6 leading-tight">
+                Nossos <span className="text-gold-400">Mecanismos</span>
+              </h1>
+
+              <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto leading-relaxed">
+                Três pilares que sustentam a construção e preservação do seu patrimônio.
+              </p>
+
+              <a href="#mecanismos-triade">
+                <Button className="bg-gold-500 hover:bg-gold-600 text-white px-8 py-6 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                  Conheça o Modelo
+                </Button>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        {/* Tríade Patrimonial */}
+        <section id="mecanismos-triade" className="py-20 bg-gray-50 scroll-mt-28">
+          <div className="container mx-auto px-6">
+            <div className="max-w-6xl mx-auto">
+              <div
+                ref={triadeRef}
+                className={`text-center mb-12 transform transition-all duration-1000 ease-out ${triadeVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}
+              >
+                <p className="text-xl md:text-2xl font-inter font-medium text-navy-500 mb-2 tracking-wide uppercase">
+                  Nossos mecanismos atuam na
+                </p>
+                <h2 className="text-4xl md:text-5xl font-playfair font-bold text-navy-600 mb-6">
+                  Tríade Patrimonial
+                </h2>
+                <p className="text-xl font-inter text-gray-700 max-w-3xl mx-auto leading-relaxed">
+                  A estratégia de construção e gestão patrimonial que se adapta ao seu jeito.
+                </p>
+              </div>
+
+              {/* Container com proteção visual */}
+              <div className="relative">
+                {/* Indicador de Proteção */}
+                <div className={`absolute -top-12 left-1/2 transform -translate-x-1/2 z-50 transition-all duration-1000 ease-out ${triadeVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
+                  <div className="bg-gradient-to-r from-navy-600 to-corporate-500 text-white px-12 py-4 rounded-full shadow-xl flex items-center gap-4 backdrop-blur-sm min-w-[400px] md:min-w-[500px]">
+                    <Shield size={22} className="text-gold-400" />
+                    <span className="font-inter font-semibold text-base tracking-wide flex-1 text-center">Diversificação e Empilhamento de Estratégias</span>
+                    <ShieldCheck size={22} className="text-gold-400" />
+                  </div>
+                </div>
+
+                {/* Container de proteção */}
+                <div className={`absolute inset-0 -m-6 rounded-3xl border-2 border-gold-400/30 bg-gradient-to-br from-gold-50/20 to-transparent transition-all duration-1000 ease-out ${triadeVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`} style={{ transitionDelay: '800ms' }}>
+                  <div className="absolute inset-0 rounded-3xl shadow-lg shadow-gold-400/10"></div>
+                  <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 w-1 h-6 bg-gradient-to-b from-gold-400 to-transparent rounded-full"></div>
+                </div>
+
+                <div className="grid md:grid-cols-3 gap-8 relative pt-8">
+                  {investmentAreas.map((area, index) => {
+                    const IconComponent = area.icon;
+                    return (
+                      <div
+                        key={index}
+                        className={`bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-1000 ease-out group transform ${triadeVisible ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'}`}
+                        style={{
+                          transitionDelay: triadeVisible ? `${index * 200}ms` : '0ms'
+                        }}
+                      >
+                        <div className="text-center">
+                          <div className={`w-20 h-20 bg-gradient-to-br ${area.gradient} rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg`}>
+                            <IconComponent size={32} className="text-white" />
+                          </div>
+
+                          <h3 className="text-xl md:text-2xl font-playfair font-bold text-navy-600 mb-3 leading-tight">
+                            {area.title}
+                          </h3>
+
+                          <p className="text-sm md:text-base font-inter text-gray-700 leading-relaxed whitespace-pre-line">
+                            {area.description}
+                          </p>
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Diversificação e Empilhamento */}
+        <section className="py-20 bg-navy-700 relative overflow-hidden">
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-navy-600/50 via-transparent to-transparent"></div>
+          <div className="container mx-auto px-6 relative z-10">
+            <div className="max-w-4xl mx-auto text-center">
+              <h2 className="text-3xl md:text-5xl font-playfair font-bold text-white mb-6 leading-tight">
+                Diversificação e <span className="text-gold-400">Empilhamento de Estratégias</span>
+              </h2>
+              <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
+                Combinamos diferentes classes de ativos e estratégias para reduzir riscos, aumentar previsibilidade e acelerar o crescimento do seu patrimônio ao longo do tempo.
+              </p>
+              <a href="#mecanismos-contato">
+                <Button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 uppercase tracking-wide">
+                  Quero Conhecer
+                </Button>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        {/* Formulário de Contato */}
+        <section id="mecanismos-contato" className="py-24 bg-[#0a1628] scroll-mt-28">
+          <div className="container mx-auto px-6 max-w-2xl">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-playfair font-bold text-white mb-4">
+                Solicite sua <span className="text-[#c9a962]">análise gratuita</span>
+              </h2>
+              <p className="text-gray-400 text-lg">
+                Preencha o formulário e nossa equipe entrará em contato para apresentar como nossos mecanismos podem acelerar seus resultados.
+              </p>
+            </div>
+            <LeadContactForm />
+          </div>
+        </section>
+
+        <Footer />
+        <WhatsAppButton message="Olá! Gostaria de saber mais sobre os Mecanismos da Valorum." />
+      </div>
+    </>
+  );
+};
+
+export default Mecanismos;
