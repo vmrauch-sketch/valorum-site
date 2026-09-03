@@ -9,6 +9,7 @@ interface SEOHeadProps {
   ogType?: string;
   author?: string;
   structuredData?: object;
+  noindex?: boolean;
 }
 
 const SEOHead = ({ 
@@ -19,7 +20,8 @@ const SEOHead = ({
   ogImage = "https://valorum.vilsonrauch.com.br/favicon.png",
   ogType = "website",
   author = "Valorum",
-  structuredData
+  structuredData,
+  noindex = false
 }: SEOHeadProps) => {
   useEffect(() => {
     // Update document title
@@ -42,6 +44,7 @@ const SEOHead = ({
     // Basic meta tags
     updateMetaTag('description', description);
     updateMetaTag('author', author);
+    updateMetaTag('robots', noindex ? 'noindex, nofollow' : 'index, follow');
     
     if (keywords) {
       updateMetaTag('keywords', keywords);

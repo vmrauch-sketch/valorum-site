@@ -2,10 +2,18 @@ import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import LeadContactForm from "@/components/LeadContactForm";
+import { SEOHead } from "@/components/SEOHead";
+import { SEOData } from "@/data/seoData";
 
 const Contato = () => {
+  const seo = SEOData.contato;
   return (
     <div className="min-h-screen bg-white font-inter">
+      <SEOHead
+        title={seo.title}
+        description={seo.description}
+        canonical="https://valorum.vilsonrauch.com.br/contato"
+      />
       <Navigation />
       <section className="pt-28 sm:pt-24 py-24 bg-[#0a1628] scroll-mt-28">
         <div className="container mx-auto px-6 max-w-2xl">

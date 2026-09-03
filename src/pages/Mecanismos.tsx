@@ -39,6 +39,7 @@ const Mecanismos = () => {
         description="Conheça os mecanismos de construção patrimonial da Valorum: ativos físicos, dinâmicos e milenares, e financeiros, unidos por diversificação e empilhamento de estratégias."
         keywords="mecanismos patrimoniais, ativos físicos, ativos dinâmicos, ativos financeiros, diversificação, empilhamento de estratégias, Valorum"
         canonical="https://valorum.vilsonrauch.com.br/mecanismos"
+        noindex
       />
 
       <div className="min-h-screen bg-white font-inter">
