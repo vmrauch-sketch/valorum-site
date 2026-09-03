@@ -1,7 +1,7 @@
 
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { Button } from "@/components/ui/button";
-import { Send } from "lucide-react";
+import { Send, TrendingUp, Landmark, Shield } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Hero = () => {
@@ -49,41 +49,33 @@ const Hero = () => {
                 Soluções Financeiras e de Investimentos!
               </span>
               
-              {/* Sub-brand buttons */}
-               <div className="flex flex-wrap justify-center items-stretch gap-4 mb-8 overflow-hidden">
-                <Link to="/investimentos" className="group block">
-                  <div className="flex h-[96px] w-[240px] flex-col items-center justify-center rounded-xl border-2 border-corporate-400/30 bg-gradient-to-r from-corporate-500 to-corporate-600 px-5 text-center text-white shadow-lg transition-all duration-300 hover:-translate-y-1 hover:border-corporate-300/50 hover:from-corporate-600 hover:to-corporate-700 hover:shadow-xl cursor-pointer">
-                    <span className="block text-base font-bold leading-tight">Investimentos</span>
-                    <span className="mt-1 block text-xs font-medium opacity-95">Investimentos & Wealth Services</span>
+              {/* Sub-brand cards — estilo Trabalhe Conosco */}
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8 text-left max-w-6xl mx-auto">
+                <Link to="/investimentos" className="p-8 rounded-2xl border-2 border-corporate-500/30 bg-gradient-to-br from-corporate-50 to-white hover:border-corporate-500 hover:shadow-xl transition-all duration-300 text-left group">
+                  <div className="w-14 h-14 bg-gradient-to-br from-corporate-500 to-corporate-600 rounded-xl flex items-center justify-center mb-6">
+                    <TrendingUp className="w-7 h-7 text-white" />
                   </div>
+                  <h3 className="text-2xl font-playfair font-bold text-primary mb-3">Investimentos</h3>
+                  <p className="text-muted-foreground mb-4">Casa de investimentos independente com estratégia, transparência e foco na construção patrimonial.</p>
+                  <span className="text-sm font-bold text-corporate-600 group-hover:underline">Conhecer solução →</span>
                 </Link>
-                <Link to="/patrimonio" className="group block">
-                  <div className="flex h-[96px] w-[240px] flex-col items-center justify-center rounded-xl border-2 border-gold-400/30 bg-gradient-to-r from-gold-500 to-gold-600 px-5 text-center text-white shadow-lg transition-all duration-300 hover:-translate-y-1 hover:border-gold-300/50 hover:from-gold-600 hover:to-gold-700 hover:shadow-xl cursor-pointer">
-                    <span className="block whitespace-nowrap text-sm font-bold leading-tight">Consultoria Financeira</span>
-                    <span className="mt-1 block text-xs font-medium opacity-95">Patrimonial</span>
+
+                <Link to="/patrimonio" className="p-8 rounded-2xl border-2 border-gold-500/30 bg-gradient-to-br from-gold-50 to-white hover:border-gold-500 hover:shadow-xl transition-all duration-300 text-left group">
+                  <div className="w-14 h-14 bg-gradient-to-br from-gold-500 to-gold-600 rounded-xl flex items-center justify-center mb-6">
+                    <Landmark className="w-7 h-7 text-white" />
                   </div>
+                  <h3 className="text-2xl font-playfair font-bold text-primary mb-3">Consultoria Financeira Patrimonial</h3>
+                  <p className="text-muted-foreground mb-4">Planejamento patrimonial e sucessório completo. Transformando patrimônio em fonte de liberdade.</p>
+                  <span className="text-sm font-bold text-gold-600 group-hover:underline">Conhecer solução →</span>
                 </Link>
-                <Link to="/estrategias-patrimoniais" className="group block">
-                  <div className="flex h-[96px] w-[240px] flex-col items-center justify-center rounded-xl border-2 border-navy-400/30 bg-gradient-to-r from-navy-600 to-navy-700 px-5 text-center text-white shadow-lg transition-all duration-300 hover:-translate-y-1 hover:border-navy-300/50 hover:from-navy-700 hover:to-navy-800 hover:shadow-xl cursor-pointer">
-                    <span className="block text-sm font-bold leading-tight">Estratégias Patrimoniais</span>
-                    <span className="mt-1 block text-xs font-medium opacity-95">e Holding</span>
+
+                <Link to="/estrategias-patrimoniais" className="p-8 rounded-2xl border-2 border-navy-500/30 bg-gradient-to-br from-navy-50 to-white hover:border-navy-500 hover:shadow-xl transition-all duration-300 text-left group">
+                  <div className="w-14 h-14 bg-gradient-to-br from-navy-600 to-navy-700 rounded-xl flex items-center justify-center mb-6">
+                    <Shield className="w-7 h-7 text-white" />
                   </div>
-                </Link>
-              </div>
-              
-              {/* Sub-brand descriptions */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8 text-left max-w-3xl mx-auto">
-                <Link to="/investimentos" className="p-4 rounded-lg bg-corporate-50 border-l-4 border-corporate-500 hover:shadow-md transition-all duration-300 group">
-                  <h3 className="font-bold text-corporate-600 mb-0.5 text-base">Investimentos</h3>
-                  <span className="text-xs font-semibold text-corporate-400 uppercase tracking-wide block mb-2">Valorum Investimentos & Wealth Services</span>
-                  <p className="text-sm text-gray-700 mb-3">Casa de investimentos independente com estratégia, transparência e foco na construção patrimonial.</p>
-                  <span className="text-xs font-bold text-corporate-600 group-hover:underline">Conhecer solução →</span>
-                </Link>
-                <Link to="/patrimonio" className="p-4 rounded-lg bg-gold-50 border-l-4 border-gold-500 hover:shadow-md transition-all duration-300 group">
-                   <h3 className="font-bold text-gold-600 mb-0.5 text-base">Consultoria Financeira Patrimonial</h3>
-                  <span className="text-xs font-semibold text-gold-400 uppercase tracking-wide block mb-2">Valorum Patrimônio</span>
-                  <p className="text-sm text-gray-700 mb-3">Planejamento patrimonial e sucessório completo. Transformando patrimônio em fonte de liberdade.</p>
-                  <span className="text-xs font-bold text-gold-600 group-hover:underline">Conhecer solução →</span>
+                  <h3 className="text-2xl font-playfair font-bold text-primary mb-3">Estratégias Patrimoniais e Holding</h3>
+                  <p className="text-muted-foreground mb-4">Estruturação, proteção e sucessão patrimonial com segurança jurídica e tributária.</p>
+                  <span className="text-sm font-bold text-navy-600 group-hover:underline">Conhecer solução →</span>
                 </Link>
               </div>
               
