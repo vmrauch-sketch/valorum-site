@@ -151,6 +151,15 @@ const EstrategiasPatrimoniais = () => {
                 );
               })}
             </div>
+            <div className="text-center mt-12">
+              <WhatsAppCTAButton
+                message="Olá! Vim do site da Valorum. Quero falar sobre Estratégias Patrimoniais e Holding."
+                variant="green"
+                className="px-8 py-4 text-base uppercase tracking-wide"
+              >
+                Fale com especialista
+              </WhatsAppCTAButton>
+            </div>
           </div>
         </section>
 
@@ -174,6 +183,15 @@ const EstrategiasPatrimoniais = () => {
                 </div>
               ))}
             </div>
+            <div className="text-center mt-12">
+              <WhatsAppCTAButton
+                message="Olá! Vim do site da Valorum. Quero falar sobre Estratégias Patrimoniais e Holding."
+                variant="green"
+                className="px-8 py-4 text-base uppercase tracking-wide"
+              >
+                Fale com especialista
+              </WhatsAppCTAButton>
+            </div>
           </div>
         </section>
 
@@ -190,6 +208,15 @@ const EstrategiasPatrimoniais = () => {
                   <p className="text-gray-700 leading-relaxed">{item.a}</p>
                 </article>
               ))}
+            </div>
+            <div className="text-center mt-12">
+              <WhatsAppCTAButton
+                message="Olá! Vim do site da Valorum. Quero falar sobre Estratégias Patrimoniais e Holding."
+                variant="green"
+                className="px-8 py-4 text-base uppercase tracking-wide"
+              >
+                Fale com especialista
+              </WhatsAppCTAButton>
             </div>
           </div>
         </section>
