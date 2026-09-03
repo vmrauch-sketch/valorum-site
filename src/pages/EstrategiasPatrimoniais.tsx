@@ -276,7 +276,7 @@ const EstrategiasPatrimoniais = () => {
           <div className="container mx-auto px-6 max-w-2xl">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-playfair font-bold text-white mb-4">
-                Vamos avaliar a <span className="text-[#c9a962]">viabilidade da sua holding</span>
+                Vamos avaliar a <span className="text-[#c9a962] whitespace-nowrap">viabilidade da sua holding</span>
               </h2>
               <p className="text-gray-400 text-lg mb-3">
                 Preencha o formulário e nossa equipe entrará em contato para entender o seu patrimônio e apresentar a
