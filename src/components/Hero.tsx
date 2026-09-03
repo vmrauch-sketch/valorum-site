@@ -88,7 +88,8 @@ const Hero = () => {
               </div>
               
               <span className="text-xl md:text-2xl text-navy-600 font-inter mb-4 block">
-                Estratégia financeira, investimentos e gestão patrimonial para você e sua empresa.
+                Estratégia financeira, investimentos e gestão patrimonial para você{" "}
+                <span className="whitespace-nowrap">e sua empresa.</span>
               </span>
               <span className="text-xl md:text-2xl text-navy-600 font-inter mb-6 block leading-relaxed">
                 <span className="block">Clareza para decidir,</span>
