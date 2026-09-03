@@ -4,11 +4,12 @@ import { Footer } from "@/components/Footer";
 import { SEOHead } from "@/components/SEOHead";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { Button } from "@/components/ui/button";
-import { TrendingUp, Users, BarChart3, Shield, ClipboardCheck, Target } from "lucide-react";
+import { TrendingUp, Users, BarChart3, Shield, ClipboardCheck, Target, Landmark } from "lucide-react";
 
 const TrabalheConosco = () => {
   const [isVisible, setIsVisible] = useState(false);
   const wealthRef = useRef<HTMLDivElement>(null);
+  const holdingRef = useRef<HTMLDivElement>(null);
   const bpoRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -21,6 +22,23 @@ const TrabalheConosco = () => {
 
   const handleCandidaturaClick = () => {
     const message = encodeURIComponent("Olá, tenho interesse em me tornar um Wealth Planner da Valorum");
+    const url = `https://wa.me/5511959586722?text=${message}`;
+    
+    const isDevelopment = window.location.hostname === 'localhost' || window.location.hostname.includes('lovable');
+    
+    if (isDevelopment) {
+      navigator.clipboard.writeText(url).then(() => {
+        alert(`Link do WhatsApp copiado!\n\nLink copiado para área de transferência.`);
+      }).catch(() => {
+        alert(`WhatsApp: 11 95958 6722`);
+      });
+    } else {
+      window.open(url, '_blank');
+    }
+  };
+
+  const handleHoldingCandidaturaClick = () => {
+    const message = encodeURIComponent("Olá, tenho interesse em me tornar um Especialista em Estratégias Patrimoniais e Holding da Valorum");
     const url = `https://wa.me/5511959586722?text=${message}`;
     
     const isDevelopment = window.location.hostname === 'localhost' || window.location.hostname.includes('lovable');
@@ -75,7 +93,7 @@ const TrabalheConosco = () => {
                     Escolha o caminho que combina com você e venha construir resultados reais.
                   </p>
 
-                  <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                  <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
                     {/* Card Wealth Planner */}
                     <button
                       onClick={() => scrollTo(wealthRef)}
@@ -91,6 +109,25 @@ const TrabalheConosco = () => {
                         Assessoria financeira independente com visão 360°, transparência e foco no cliente.
                       </p>
                       <span className="inline-block mt-4 text-corporate-500 font-semibold group-hover:translate-x-1 transition-transform">
+                        Saiba mais →
+                      </span>
+                    </button>
+
+                    {/* Card Estratégias Patrimoniais e Holding */}
+                    <button
+                      onClick={() => scrollTo(holdingRef)}
+                      className="p-8 rounded-2xl border-2 border-gold-500/30 bg-gradient-to-br from-gold-50 to-white hover:border-gold-500 hover:shadow-xl transition-all duration-300 text-left group"
+                    >
+                      <div className="w-14 h-14 bg-gradient-to-br from-gold-500 to-gold-600 rounded-xl flex items-center justify-center mb-6">
+                        <Landmark className="w-7 h-7 text-white" />
+                      </div>
+                      <h2 className="text-2xl font-playfair font-bold text-primary mb-3">
+                        Estratégias Patrimoniais e Holding
+                      </h2>
+                      <p className="text-muted-foreground">
+                        Modelo de assessoria financeira e patrimonial para o cliente final.
+                      </p>
+                      <span className="inline-block mt-4 text-gold-500 font-semibold group-hover:translate-x-1 transition-transform">
                         Saiba mais →
                       </span>
                     </button>
