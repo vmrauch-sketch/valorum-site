@@ -19,15 +19,6 @@ const especialidades = [
   { id: "estruturas-internacionais", title: "Estruturas Internacionais", description: "Organização de ativos no exterior integrada ao planejamento patrimonial e sucessório da família.", icon: Globe2 },
 ];
 
-const tiposHolding = [
-  { slug: "holding-patrimonial", label: "Holding Patrimonial" },
-  { slug: "holding-familiar-patrimonial", label: "Holding Familiar e Patrimonial" },
-  { slug: "holding-familiar-inventario", label: "Holding Familiar e Inventário" },
-  { slug: "planejamento-sucessorio", label: "Planejamento Sucessório" },
-  { slug: "protecao-patrimonial", label: "Proteção Patrimonial" },
-  { slug: "holding-imoveis", label: "Holding para Imóveis" },
-  { slug: "holding-reducao-tributos", label: "Holding para Redução de Tributos" },
-];
 
 const faq = [
   {
@@ -111,29 +102,8 @@ const EstrategiasPatrimoniais = () => {
           <div className="container mx-auto px-6 relative z-10">
             <div
               ref={heroRef}
-              className={`grid lg:grid-cols-12 gap-10 lg:gap-12 items-center transform transition-all duration-1000 ease-out ${heroVisible ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'}`}
+              className={`max-w-4xl mx-auto text-center transform transition-all duration-1000 ease-out ${heroVisible ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'}`}
             >
-              {/* Left: holding types */}
-              <div className="lg:col-span-4 order-2 lg:order-1">
-                <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-5 lg:p-6">
-                  <h2 className="text-lg font-playfair font-bold text-white mb-4">Tipos de Holding</h2>
-                  <nav className="space-y-2" aria-label="Tipos de holding">
-                    {tiposHolding.map((tipo) => (
-                      <a
-                        key={tipo.slug}
-                        href={`#${tipo.slug}`}
-                        className="flex items-center gap-3 px-4 py-2.5 rounded-lg text-sm font-medium text-white/90 bg-white/10 hover:bg-gold-500/20 hover:text-white transition-colors border border-white/10"
-                      >
-                        <span className="w-1.5 h-1.5 rounded-full bg-gold-400 shrink-0"></span>
-                        {tipo.label}
-                      </a>
-                    ))}
-                  </nav>
-                </div>
-              </div>
-
-              {/* Right: title and CTA */}
-              <div className="lg:col-span-8 order-1 lg:order-2 text-center lg:text-left">
                 <div className="inline-flex items-center gap-2 bg-gold-500/20 border border-gold-400/30 rounded-full px-4 py-2 mb-6">
                   <Shield className="w-4 h-4 text-gold-400" />
                   <span className="text-gold-300 text-sm font-medium">Valorum Patrimônio</span>
@@ -156,7 +126,6 @@ const EstrategiasPatrimoniais = () => {
                   Fale com especialista
                 </WhatsAppCTAButton>
               </div>
-            </div>
           </div>
         </section>
 
@@ -192,41 +161,20 @@ const EstrategiasPatrimoniais = () => {
                 Cada família tem uma estrutura diferente. Trabalhamos com as soluções abaixo, combinadas conforme o seu caso.
               </p>
             </div>
-            <div className="grid lg:grid-cols-12 gap-8 max-w-7xl mx-auto">
-              {/* Sidebar */}
-              <aside className="lg:col-span-4 xl:col-span-3">
-                <div className="bg-white rounded-2xl shadow-md p-5 lg:sticky lg:top-28">
-                  <h3 className="text-lg font-playfair font-bold text-navy-600 mb-4">Tipos de Holding</h3>
-                  <nav className="space-y-2" aria-label="Tipos de holding">
-                    {tiposHolding.map((tipo) => (
-                      <a
-                        key={tipo.slug}
-                        href={`#${tipo.slug}`}
-                        className="block w-full text-left px-4 py-3 rounded-lg text-sm font-semibold text-navy-600 bg-navy-50 hover:bg-navy-600 hover:text-white transition-colors"
-                      >
-                        {tipo.label}
-                      </a>
-                    ))}
-                  </nav>
-                </div>
-              </aside>
-
-              {/* Cards */}
-              <div className="lg:col-span-8 xl:col-span-9">
-                <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-6">
-                  {especialidades.map((item) => {
-                    const Icon = item.icon;
-                    return (
-                      <div id={item.id} key={item.id} className="scroll-mt-28 bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300">
-                        <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-navy-600 to-navy-800 flex items-center justify-center mb-5">
-                          <Icon size={26} className="text-gold-400" />
-                        </div>
-                        <h3 className="text-lg font-playfair font-bold text-navy-600 mb-2">{item.title}</h3>
-                        <p className="text-sm text-gray-700 leading-relaxed">{item.description}</p>
+            <div className="max-w-7xl mx-auto">
+              <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-6">
+                {especialidades.map((item) => {
+                  const Icon = item.icon;
+                  return (
+                    <div id={item.id} key={item.id} className="scroll-mt-28 bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300">
+                      <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-navy-600 to-navy-800 flex items-center justify-center mb-5">
+                        <Icon size={26} className="text-gold-400" />
                       </div>
-                    );
-                  })}
-                </div>
+                      <h3 className="text-lg font-playfair font-bold text-navy-600 mb-2">{item.title}</h3>
+                      <p className="text-sm text-gray-700 leading-relaxed">{item.description}</p>
+                    </div>
+                  );
+                })}
               </div>
             </div>
             <div className="text-center mt-12">
