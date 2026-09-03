@@ -89,6 +89,10 @@ const ValoromCapital = () => {
                 aos seus<br />
                 <span className="text-[#c9a962]">investimentos</span>
               </h1>
+
+              <p className="text-xl md:text-2xl font-light text-slate-200 max-w-2xl mb-6 leading-relaxed">
+                O modelo de gestão de patrimônio mais bem sucedido no mundo, agora disponível para você.
+              </p>
               
               <p className="text-2xl md:text-3xl font-playfair font-semibold italic text-[#c9a962] mb-8">
                 "Menos ruído. Mais estratégia."
