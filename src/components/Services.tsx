@@ -28,9 +28,9 @@ const Services = () => {
     if (isDevelopment) {
       // Em desenvolvimento, copia o link e mostra alerta
       navigator.clipboard.writeText(url).then(() => {
-        alert(`Link do WhatsApp copiado!\n\nNúmero: +55 (11) 95958-6722\nMensagem: "Olá, tenho interesse em receber informações sobre o ebook de FIDC"\n\nLink copiado para área de transferência.`);
+        alert(`Link do WhatsApp copiado!\n\nNúmero: 11 9 5958 6722\nMensagem: "Olá, tenho interesse em receber informações sobre o ebook de FIDC"\n\nLink copiado para área de transferência.`);
       }).catch(() => {
-        alert(`WhatsApp: +55 (11) 95958-6722\n\nMensagem: "Olá, tenho interesse em receber informações sobre o ebook de FIDC"`);
+        alert(`WhatsApp: 11 9 5958 6722\n\nMensagem: "Olá, tenho interesse em receber informações sobre o ebook de FIDC"`);
       });
     } else {
       // Em produção, abre normalmente
@@ -53,9 +53,9 @@ const Services = () => {
     if (isDevelopment) {
       // Em desenvolvimento, copia o link e mostra alerta
       navigator.clipboard.writeText(url).then(() => {
-        alert(`Link do WhatsApp copiado!\n\nNúmero: +55 (11) 95958-6722\nMensagem: "Olá, tenho interesse em receber informações sobre o ebook de recuperação tributária"\n\nLink copiado para área de transferência.`);
+        alert(`Link do WhatsApp copiado!\n\nNúmero: 11 9 5958 6722\nMensagem: "Olá, tenho interesse em receber informações sobre o ebook de recuperação tributária"\n\nLink copiado para área de transferência.`);
       }).catch(() => {
-        alert(`WhatsApp: +55 (11) 95958-6722\n\nMensagem: "Olá, tenho interesse em receber informações sobre o ebook de recuperação tributária"`);
+        alert(`WhatsApp: 11 9 5958 6722\n\nMensagem: "Olá, tenho interesse em receber informações sobre o ebook de recuperação tributária"`);
       });
     } else {
       // Em produção, abre normalmente
@@ -78,9 +78,9 @@ const Services = () => {
     if (isDevelopment) {
       // Em desenvolvimento, copia o link e mostra alerta
       navigator.clipboard.writeText(url).then(() => {
-        alert(`Link do WhatsApp copiado!\n\nNúmero: +55 (11) 95958-6722\nMensagem: "Olá, tenho interesse em receber informações sobre o ebook de planejamento financeiro"\n\nLink copiado para área de transferência.`);
+        alert(`Link do WhatsApp copiado!\n\nNúmero: 11 9 5958 6722\nMensagem: "Olá, tenho interesse em receber informações sobre o ebook de planejamento financeiro"\n\nLink copiado para área de transferência.`);
       }).catch(() => {
-        alert(`WhatsApp: +55 (11) 95958-6722\n\nMensagem: "Olá, tenho interesse em receber informações sobre o ebook de planejamento financeiro"`);
+        alert(`WhatsApp: 11 9 5958 6722\n\nMensagem: "Olá, tenho interesse em receber informações sobre o ebook de planejamento financeiro"`);
       });
     } else {
       // Em produção, abre normalmente
