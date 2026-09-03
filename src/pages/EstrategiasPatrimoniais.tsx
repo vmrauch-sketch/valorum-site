@@ -70,17 +70,36 @@ const EstrategiasPatrimoniais = () => {
         description="Proteja, organize e multiplique seu patrimônio com holding familiar, planejamento sucessório, proteção de ativos e eficiência tributária. Estruturas sob medida da Valorum."
         keywords="holding familiar, holding patrimonial, planejamento sucessório, proteção patrimonial, holding para imóveis, redução de tributos, estratégias patrimoniais, Valorum"
         canonical="https://valorum.vilsonrauch.com.br/estrategias-patrimoniais"
-        structuredData={{
-          "@context": "https://schema.org",
-          "@type": "Service",
-          name: "Estratégias Patrimoniais e Holding",
-          description:
-            "Estruturação de holdings familiares e patrimoniais, planejamento sucessório, proteção de ativos e eficiência tributária.",
-          url: "https://valorum.vilsonrauch.com.br/estrategias-patrimoniais",
-          provider: { "@type": "Organization", name: "Valorum", url: "https://valorum.vilsonrauch.com.br" },
-          serviceType: ["Holding Familiar", "Planejamento Sucessório", "Proteção Patrimonial", "Eficiência Tributária"],
-          areaServed: "BR",
-        }}
+        structuredData={[
+          {
+            "@context": "https://schema.org",
+            "@type": "Service",
+            name: "Estratégias Patrimoniais e Holding",
+            description:
+              "Estruturação de holdings familiares e patrimoniais, planejamento sucessório, proteção de ativos e eficiência tributária.",
+            url: "https://valorum.vilsonrauch.com.br/estrategias-patrimoniais",
+            provider: { "@type": "Organization", name: "Valorum", url: "https://valorum.vilsonrauch.com.br" },
+            serviceType: ["Holding Familiar", "Planejamento Sucessório", "Proteção Patrimonial", "Eficiência Tributária"],
+            areaServed: "BR",
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: faq.map((item) => ({
+              "@type": "Question",
+              name: item.q,
+              acceptedAnswer: { "@type": "Answer", text: item.a },
+            })),
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "Home", item: "https://valorum.vilsonrauch.com.br/" },
+              { "@type": "ListItem", position: 2, name: "Estratégias Patrimoniais e Holding", item: "https://valorum.vilsonrauch.com.br/estrategias-patrimoniais" },
+            ],
+          },
+        ]}
       />
 
       <div className="min-h-screen bg-white font-inter">
@@ -122,9 +141,12 @@ const EstrategiasPatrimoniais = () => {
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-playfair font-bold text-white mb-6 leading-tight">
                   Estratégias Patrimoniais e <span className="text-gold-400">Holding</span>
                 </h1>
-                <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto lg:mx-0 leading-relaxed mb-10">
+                <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto lg:mx-0 leading-relaxed mb-6">
                   Proteja, organize e multiplique seu patrimônio com estruturas de alta precisão: holdings familiares,
                   proteção de ativos, planejamento sucessório e eficiência tributária.
+                </p>
+                <p className="text-gold-300 text-base md:text-lg font-medium mb-8">
+                  Nossa equipe pode te orientar com precisão e confiança.
                 </p>
                 <WhatsAppCTAButton
                   message="Olá! Gostaria de mais informações sobre holding."
@@ -291,9 +313,12 @@ const EstrategiasPatrimoniais = () => {
               <h2 className="text-3xl md:text-4xl font-playfair font-bold text-white mb-4">
                 Vamos avaliar a <span className="text-[#c9a962]">viabilidade da sua holding</span>
               </h2>
-              <p className="text-gray-400 text-lg">
+              <p className="text-gray-400 text-lg mb-3">
                 Preencha o formulário e nossa equipe entrará em contato para entender o seu patrimônio e apresentar a
                 estrutura mais adequada.
+              </p>
+              <p className="text-gold-400 text-lg font-medium">
+                Nossa equipe pode te orientar com precisão e confiança.
               </p>
             </div>
             <LeadContactForm />
