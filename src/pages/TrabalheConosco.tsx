@@ -38,7 +38,7 @@ const TrabalheConosco = () => {
   };
 
   const handleHoldingCandidaturaClick = () => {
-    const message = encodeURIComponent("Olá, tenho interesse em me tornar um Especialista em Estratégias Patrimoniais e Holding da Valorum");
+    const message = encodeURIComponent("Olá, tenho interesse em me tornar um Especialista em Estruturas Patrimoniais e Holding da Valorum");
     const url = `https://wa.me/5511959586722?text=${message}`;
     
     const isDevelopment = window.location.hostname === 'localhost' || window.location.hostname.includes('lovable');
@@ -113,7 +113,7 @@ const TrabalheConosco = () => {
                       </span>
                     </button>
 
-                    {/* Card Estratégias Patrimoniais e Holding */}
+                    {/* Card Estruturas Patrimoniais e Holding */}
                     <button
                       onClick={() => scrollTo(holdingRef)}
                       className="p-8 rounded-2xl border-2 border-gold-500/30 bg-gradient-to-br from-gold-50 to-white hover:border-gold-500 hover:shadow-xl transition-all duration-300 text-left group"
@@ -122,7 +122,7 @@ const TrabalheConosco = () => {
                         <Landmark className="w-7 h-7 text-white" />
                       </div>
                       <h2 className="text-2xl font-playfair font-bold text-primary mb-3">
-                        Estratégias Patrimoniais e Holding
+                        Estruturas Patrimoniais e Holding
                       </h2>
                       <p className="text-muted-foreground">
                         Modelo de assessoria financeira e patrimonial para o cliente final.
@@ -225,14 +225,14 @@ const TrabalheConosco = () => {
             </div>
           </section>
 
-          {/* Seção Estratégias Patrimoniais e Holding */}
+          {/* Seção Estruturas Patrimoniais e Holding */}
           <section ref={holdingRef} className="py-20 scroll-mt-24">
             <div className="container mx-auto px-4 max-w-7xl">
               <div className="max-w-6xl mx-auto">
                 <div className="bg-gradient-to-r from-gold-50 to-white p-8 md:p-12 rounded-xl border border-gold-200">
                   <div className="grid md:grid-cols-2 gap-12 items-center">
                     <div>
-                      <p className="text-sm uppercase tracking-widest text-gold-600 font-semibold mb-4">Estratégias Patrimoniais e Holding</p>
+                      <p className="text-sm uppercase tracking-widest text-gold-600 font-semibold mb-4">Estruturas Patrimoniais e Holding</p>
                       <h2 className="text-3xl md:text-4xl font-playfair font-bold text-primary leading-tight">
                         Modelo de assessoria financeira e patrimonial para o cliente final.
                       </h2>
