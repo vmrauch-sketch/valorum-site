@@ -161,28 +161,8 @@ const EstrategiasPatrimoniais = () => {
                 Cada família tem uma estrutura diferente. Trabalhamos com as soluções abaixo, combinadas conforme o seu caso.
               </p>
             </div>
-            <div className="grid lg:grid-cols-12 gap-8 max-w-7xl mx-auto">
-              {/* Sidebar */}
-              <aside className="lg:col-span-4 xl:col-span-3">
-                <div className="bg-white rounded-2xl shadow-md p-5 lg:sticky lg:top-28">
-                  <h3 className="text-lg font-playfair font-bold text-navy-600 mb-4">Tipos de Holding</h3>
-                  <nav className="space-y-2" aria-label="Tipos de holding">
-                    {tiposHolding.map((tipo) => (
-                      <a
-                        key={tipo.slug}
-                        href={`#${tipo.slug}`}
-                        className="block w-full text-left px-4 py-3 rounded-lg text-sm font-semibold text-navy-600 bg-navy-50 hover:bg-navy-600 hover:text-white transition-colors"
-                      >
-                        {tipo.label}
-                      </a>
-                    ))}
-                  </nav>
-                </div>
-              </aside>
-
-              {/* Cards */}
-              <div className="lg:col-span-8 xl:col-span-9">
-                <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-6">
+            <div className="max-w-7xl mx-auto">
+              <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-6">
                   {especialidades.map((item) => {
                     const Icon = item.icon;
                     return (
