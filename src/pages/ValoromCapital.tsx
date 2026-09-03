@@ -5,7 +5,7 @@ import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { SEOHead } from "@/components/SEOHead";
 import { SEOData, StructuredData } from "@/data/seoData";
 import { ServiceSubNav } from "@/components/ServiceSubNav";
-import { TrendingUp, Users, Shield, Target, ChartLine, Briefcase, Building2, Award, Search, FileText, BarChart3 } from "lucide-react";
+import { TrendingUp, Users, Shield, Target, ChartLine, Briefcase, Building2, Award, Search, FileText, BarChart3, Handshake, Wallet } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
@@ -118,6 +118,35 @@ const ValoromCapital = () => {
           <div className="absolute bottom-10 left-1/2 -translate-x-1/2">
             <div className="w-5 h-9 border border-slate-500 rounded-full flex justify-center">
               <div className="w-1 h-2.5 bg-[#c9a962] rounded-full mt-2 animate-pulse" />
+            </div>
+          </div>
+        </section>
+
+        {/* Benefícios da Valorum */}
+        <section id="capital-beneficios" className="py-20 bg-[#0a1628] border-b border-[#c9a962]/20 scroll-mt-28">
+          <div className="container mx-auto px-6">
+            <div className="text-center mb-14">
+              <p className="text-[#c9a962] text-sm font-semibold tracking-widest uppercase mb-4">Por que a Valorum</p>
+              <h2 className="text-3xl md:text-4xl font-playfair font-bold text-white">
+                Benefícios da Valorum
+              </h2>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+              {[
+                { icon: ChartLine, title: "Consultoria Independente" },
+                { icon: Handshake, title: "Atendimento Exclusivo" },
+                { icon: Wallet, title: "Carteiras Personalizadas" },
+              ].map((benefit, index) => (
+                <div
+                  key={index}
+                  className="group p-8 rounded-lg bg-[#0f1d32] border border-[#c9a962]/40 hover:border-[#c9a962] hover:bg-[#132238] transition-all duration-300 text-center"
+                >
+                  <div className="flex justify-center mb-6">
+                    <benefit.icon className="w-12 h-12 text-[#c9a962]" strokeWidth={1.5} />
+                  </div>
+                  <h3 className="text-xl font-semibold text-white">{benefit.title}</h3>
+                </div>
+              ))}
             </div>
           </div>
         </section>
