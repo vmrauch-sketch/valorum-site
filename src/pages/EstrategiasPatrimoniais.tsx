@@ -126,7 +126,6 @@ const EstrategiasPatrimoniais = () => {
                   Fale com especialista
                 </WhatsAppCTAButton>
               </div>
-            </div>
           </div>
         </section>
 
