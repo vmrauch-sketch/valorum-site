@@ -121,9 +121,9 @@ const ValoromPatrimonio = () => {
               <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl leading-relaxed">
                 Além da Gestão dos seus investimentos, definimos e implementamos juntos o seu Plano de Construção de Patrimônio.
               </p>
-              <a href="#pat-triade">
+              <a href="#pat-servicos">
                 <Button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 uppercase tracking-wide">
-                  Conheça o Modelo
+                  Conheça os Serviços
                 </Button>
               </a>
             </div>
