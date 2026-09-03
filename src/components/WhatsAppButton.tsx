@@ -11,7 +11,7 @@ const WhatsAppButton = ({ message = "Olá! Vim do site da Valorum." }: WhatsAppB
       navigator.clipboard.writeText(url).then(() => {
         alert(`Link do WhatsApp copiado!\n\n${url}`);
       }).catch(() => {
-        alert(`WhatsApp: 11 9 5958 6722`);
+        alert(`WhatsApp: 11 95958 6722`);
       });
     } else {
       window.open(url, '_blank');
