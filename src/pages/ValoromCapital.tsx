@@ -5,7 +5,7 @@ import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { SEOHead } from "@/components/SEOHead";
 import { SEOData, StructuredData } from "@/data/seoData";
 import { ServiceSubNav } from "@/components/ServiceSubNav";
-import { TrendingUp, Users, Shield, Target, ChartLine, Briefcase, Building2, Award, Search, FileText, BarChart3 } from "lucide-react";
+import { TrendingUp, Users, Shield, Target, ChartLine, Briefcase, Building2, Award, Search, FileText, BarChart3, Handshake, Wallet } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
