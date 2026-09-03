@@ -138,14 +138,14 @@ export const StructuredData = {
     "@context": "https://schema.org",
     "@type": "Service",
     "name": "Valorum Patrimônio",
-    "description": "Planejamento patrimonial e sucessório completo. Tríade Patrimonial: proteger, crescer e transmitir seu patrimônio.",
+    "description": "Construa um patrimônio sólido gerador de renda passiva vitalícia. Planejamento patrimonial e sucessório completo com acompanhamento especializado.",
     "url": `${SITE_URL}/patrimonio`,
     "provider": {
       "@type": "Organization",
       "name": "Valorum",
       "url": SITE_URL
     },
-    "serviceType": ["Proteção Patrimonial", "Crescimento Patrimonial", "Planejamento Sucessório", "Holding Familiar"],
+    "serviceType": ["Construção Patrimonial", "Renda Passiva Vitalícia", "Proteção Patrimonial", "Crescimento Patrimonial", "Planejamento Sucessório", "Holding Familiar"],
     "areaServed": "BR"
   },
 
