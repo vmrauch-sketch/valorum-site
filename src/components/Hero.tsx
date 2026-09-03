@@ -56,7 +56,7 @@ const Hero = () => {
                     <TrendingUp className="w-7 h-7 text-white" />
                   </div>
                   <h3 className="text-2xl font-playfair font-bold text-primary mb-3">Investimentos</h3>
-                  <p className="text-muted-foreground mb-4">Casa de investimentos independente com estratégia, transparência e foco na construção patrimonial.</p>
+                  <p className="text-muted-foreground mb-4">Casa de investimentos independente com estratégia, transparência e implementação.</p>
                   <span className="text-sm font-bold text-corporate-600 group-hover:underline">Conhecer solução →</span>
                 </Link>
 
