@@ -19,6 +19,18 @@ const especialidades = [
   { id: "estruturas-internacionais", title: "Estruturas Internacionais", description: "Organização de ativos no exterior integrada ao planejamento patrimonial e sucessório da família.", icon: Globe2 },
 ];
 
+const tiposHolding = [
+  { label: "Holding Patrimonial", href: "#holding-patrimonial" },
+  { label: "Holding Familiar", href: "#holding-familiar-patrimonial" },
+  { label: "Holding e Inventário", href: "#holding-familiar-inventario" },
+  { label: "Planejamento Sucessório", href: "#planejamento-sucessorio" },
+  { label: "Proteção Patrimonial", href: "#protecao-patrimonial" },
+  { label: "Holding para Imóveis", href: "#holding-imoveis" },
+  { label: "Redução de Tributos", href: "#holding-reducao-tributos" },
+  { label: "Cláusulas de Proteção", href: "#clausulas-protecao" },
+  { label: "Estruturas Internacionais", href: "#estruturas-internacionais" },
+];
+
 
 const faq = [
   {
