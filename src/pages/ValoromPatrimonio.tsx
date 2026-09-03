@@ -22,7 +22,6 @@ import {
 } from "lucide-react";
 
 const patrimonioNavItems = [
-  { label: "Tríade", target: "pat-triade" },
   { label: "Serviços", target: "pat-servicos" },
 ];
 
