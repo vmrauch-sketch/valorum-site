@@ -1,6 +1,7 @@
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
+import { WhatsAppIcon } from "@/components/WhatsAppIcon";
 import { SEOHead } from "@/components/SEOHead";
 import { SEOData, StructuredData } from "@/data/seoData";
 import { 
@@ -152,8 +153,8 @@ const ProtocoloMaisRenda = () => {
                   onClick={handleProtocolClick}
                   className="inline-flex items-center bg-gold-500 hover:bg-gold-600 text-navy-800 px-8 py-4 rounded-lg font-semibold transition-colors text-lg"
                 >
+                  <WhatsAppIcon className="w-5 h-5 mr-3" />
                   Clique aqui para conhecer o protocolo
-                  <ArrowRight className="ml-2" size={20} />
                 </button>
               </div>
             </div>
@@ -265,8 +266,8 @@ const ProtocoloMaisRenda = () => {
                     onClick={handleConsultationClick}
                     className="inline-flex items-center bg-white text-corporate-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
                   >
+                    <WhatsAppIcon className="w-5 h-5 mr-3" />
                     Agendar Consulta
-                    <ArrowRight className="ml-2" size={20} />
                   </button>
                 </div>
               </div>
