@@ -1,4 +1,4 @@
-
+import { WhatsAppIcon } from "./WhatsAppIcon";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const SpecializedProtocol = () => {
@@ -48,8 +48,9 @@ const SpecializedProtocol = () => {
             </p>
             <button 
               onClick={handleProtocolClick}
-              className="bg-gold-500 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-gold-600 transition-all duration-300 shadow-lg transform hover:scale-105"
+              className="inline-flex items-center justify-center gap-3 bg-gold-500 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-gold-600 transition-all duration-300 shadow-lg transform hover:scale-105"
             >
+              <WhatsAppIcon className="w-5 h-5" />
               Clique aqui para conhecer o protocolo
             </button>
           </div>

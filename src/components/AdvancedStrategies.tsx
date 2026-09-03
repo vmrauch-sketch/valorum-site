@@ -1,4 +1,4 @@
-
+import { WhatsAppIcon } from "./WhatsAppIcon";
 import { 
   Building2, 
   TrendingUp, 
@@ -121,8 +121,9 @@ const AdvancedStrategies = () => {
                 </p>
                 <button
                   onClick={() => handleServiceClick(strategy.title)}
-                  className="text-navy-600 hover:text-corporate-600 text-xs font-medium underline underline-offset-2 hover:underline-offset-4 transition-all duration-300"
+                  className="inline-flex items-center gap-2 text-navy-600 hover:text-corporate-600 text-xs font-medium underline underline-offset-2 hover:underline-offset-4 transition-all duration-300"
                 >
+                  <WhatsAppIcon className="w-3.5 h-3.5" />
                   clique aqui
                 </button>
               </div>
