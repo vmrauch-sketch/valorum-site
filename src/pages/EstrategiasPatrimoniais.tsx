@@ -138,7 +138,7 @@ const EstrategiasPatrimoniais = () => {
         </section>
 
         {/* Especialidades */}
-        <section className="py-20 bg-navy-50">
+        <section id="hold-especialidades" className="py-20 bg-navy-50 scroll-mt-28">
           <div className="container mx-auto px-6">
             <div className="text-center mb-14 max-w-3xl mx-auto">
               <h2 className="text-3xl md:text-4xl font-playfair font-bold text-navy-600 mb-4">
@@ -148,19 +148,42 @@ const EstrategiasPatrimoniais = () => {
                 Cada família tem uma estrutura diferente. Trabalhamos com as soluções abaixo, combinadas conforme o seu caso.
               </p>
             </div>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-              {especialidades.map((item) => {
-                const Icon = item.icon;
-                return (
-                  <div key={item.title} className="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300">
-                    <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-navy-600 to-navy-800 flex items-center justify-center mb-5">
-                      <Icon size={26} className="text-gold-400" />
-                    </div>
-                    <h3 className="text-lg font-playfair font-bold text-navy-600 mb-2">{item.title}</h3>
-                    <p className="text-sm text-gray-700 leading-relaxed">{item.description}</p>
-                  </div>
-                );
-              })}
+            <div className="grid lg:grid-cols-12 gap-8 max-w-7xl mx-auto">
+              {/* Sidebar */}
+              <aside className="lg:col-span-4 xl:col-span-3">
+                <div className="bg-white rounded-2xl shadow-md p-5 lg:sticky lg:top-28">
+                  <h3 className="text-lg font-playfair font-bold text-navy-600 mb-4">Tipos de Holding</h3>
+                  <nav className="space-y-2" aria-label="Tipos de holding">
+                    {tiposHolding.map((tipo) => (
+                      <a
+                        key={tipo.slug}
+                        href={`#${tipo.slug}`}
+                        className="block w-full text-left px-4 py-3 rounded-lg text-sm font-semibold text-navy-600 bg-navy-50 hover:bg-navy-600 hover:text-white transition-colors"
+                      >
+                        {tipo.label}
+                      </a>
+                    ))}
+                  </nav>
+                </div>
+              </aside>
+
+              {/* Cards */}
+              <div className="lg:col-span-8 xl:col-span-9">
+                <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-6">
+                  {especialidades.map((item) => {
+                    const Icon = item.icon;
+                    return (
+                      <div id={item.id} key={item.id} className="scroll-mt-28 bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300">
+                        <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-navy-600 to-navy-800 flex items-center justify-center mb-5">
+                          <Icon size={26} className="text-gold-400" />
+                        </div>
+                        <h3 className="text-lg font-playfair font-bold text-navy-600 mb-2">{item.title}</h3>
+                        <p className="text-sm text-gray-700 leading-relaxed">{item.description}</p>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
             </div>
             <div className="text-center mt-12">
               <p className="text-gray-700 text-lg mb-5">Nossa equipe pode te orientar com precisão e confiança.</p>
