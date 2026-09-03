@@ -22,12 +22,28 @@ const especialidades = [
 
 const faq = [
   {
+    q: "Preciso ter um grande patrimônio?",
+    a: "Não. A Holding é indicada tanto para patrimônios menores quanto maiores. O importante é ter bens ou empresas que você queira proteger e organizar.",
+  },
+  {
+    q: "Posso perder o controle dos bens?",
+    a: "Não. A estrutura é feita para que você continue no controle, mas com mais segurança jurídica e proteção patrimonial.",
+  },
+  {
+    q: "Quanto tempo leva para estruturar uma Holding?",
+    a: "Até 150 dias.",
+  },
+  {
+    q: "Isso substitui testamento?",
+    a: "Não substitui, mas complementa. O testamento trata de disposições de última vontade, enquanto a Holding organiza e antecipa a sucessão de forma mais prática e econômica.",
+  },
+  {
     q: "O que é uma empresa holding?",
     a: "Holding é uma empresa criada para deter e administrar bens e participações societárias. Com a integralização dos bens no capital social, a titularidade passa da pessoa física para a pessoa jurídica, que assume a função de controle e gestão do patrimônio. A previsão legal está na Lei das Sociedades Anônimas (Lei 6.404/1976, art. 2º, §3º), que permite que a companhia participe de outras sociedades.",
   },
   {
-    q: "Como a holding familiar protege os bens?",
-    a: "Holding não é um tipo societário específico, e sim uma estratégia de proteção patrimonial, fiscal e sucessória. Pode ser constituída como sociedade limitada, sociedade anônima de capital fechado, sociedade simples, entre outras formas. Ao concentrar os bens na pessoa jurídica e aplicar cláusulas de proteção, reduz-se a exposição do patrimônio familiar a riscos externos.",
+    q: "Como a holding protege os bens?",
+    a: "Holding não é um tipo societário específico, e sim uma estratégia de proteção patrimonial, fiscal e sucessória. Pode ser constituída como sociedade limitada, sociedade anônima de capital fechado, sociedade simples, entre outras formas. Ao concentrar os bens na pessoa jurídica e aplicar cláusulas de proteção, reduz-se a exposição do patrimônio a riscos externos.",
   },
   {
     q: "Como a holding melhora a gestão do patrimônio?",
