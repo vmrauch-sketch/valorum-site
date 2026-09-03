@@ -133,16 +133,17 @@ const EstrategiasPatrimoniais = () => {
         <section className="py-20 bg-white">
           <div className="container mx-auto px-6 max-w-4xl text-center">
             <h2 className="text-3xl md:text-4xl font-playfair font-bold text-navy-600 mb-6">
-              Estruturas patrimoniais feitas com estudo, não com modelo pronto
+              Estruturas patrimoniais feitas com estudo,{" "}
+              <span className="whitespace-nowrap">não com modelo pronto</span>
             </h2>
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              A Valorum atua em todo o Brasil e conta com especialistas em holding familiar, estruturação empresarial,
+              A Valorum atua em todo o Brasil e conta com especialistas em holding, estruturação empresarial,
               tributário e planejamento sucessório. Isso permite realizar o estudo de viabilidade jurídico e econômico
               para a implantação da holding, visando a gestão do patrimônio, a sucessão, a proteção dos bens e a
               redução da carga tributária.
             </p>
             <p className="text-lg text-gray-700 leading-relaxed">
-              Por meio da holding familiar é possível preservar a sua vontade e proteger os bens conquistados, de forma
+              Por meio da holding é possível preservar a sua vontade e proteger os bens conquistados, de forma
               plenamente legal, inclusive após o seu falecimento. Na constituição da estrutura, o instituidor pode
               atrelar cláusulas que protegem o patrimônio da investida de terceiros e, conforme o caso, reduzir de forma
               expressiva a tributação incidente sobre renda e transmissão.
