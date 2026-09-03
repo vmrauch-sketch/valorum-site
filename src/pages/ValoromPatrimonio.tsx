@@ -92,7 +92,7 @@ const ValoromPatrimonio = () => {
               </div>
               
               <h1 className="text-4xl md:text-6xl font-playfair font-bold text-white mb-6 leading-tight">
-                Seu patrimônio merece uma <span className="text-gold-400">estratégia completa</span>
+                Construa um patrimônio sólido <span className="text-gold-400">gerador de renda passiva vitalícia</span>
               </h1>
               
 
