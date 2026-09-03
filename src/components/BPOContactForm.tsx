@@ -71,21 +71,10 @@ const BPOContactForm = () => {
       if (error) throw error;
 
       // Send email notification to atendimento.valorum@gmail.com
-      await supabase.functions.invoke("send-transactional-email", {
-        body: {
-          templateName: "bpo-contact-notification",
-          recipientEmail: "atendimento.valorum@gmail.com",
-          idempotencyKey: `bpo-contact-${id}`,
-          templateData: {
-            name: formData.name.trim(),
-            email: formData.email.trim(),
-            phone: formData.phone.trim() || undefined,
-            company: formData.company.trim() || undefined,
-            revenue_range: formData.revenue_range || undefined,
-            message: formData.message.trim() || undefined,
-          },
-        },
+      await supabase.functions.invoke("send-bpo-contact-notification", {
+        body: { submissionId: id },
       });
+
 
       setIsSubmitted(true);
       setTimeout(() => {

@@ -23,7 +23,6 @@ import TroqueDeContador from "./pages/TroqueDeContador";
 import ValoromBPO from "./pages/ValoromBPO";
 import Mecanismos from "./pages/Mecanismos";
 import EstrategiasPatrimoniais from "./pages/EstrategiasPatrimoniais";
-import Unsubscribe from "./pages/Unsubscribe";
 
 const queryClient = new QueryClient();
 
@@ -54,7 +53,6 @@ const App = () => (
           <Route path="/troque-de-contador" element={<TroqueDeContador />} />
           <Route path="/estrategias-patrimoniais" element={<EstrategiasPatrimoniais />} />
           <Route path="/mecanismos" element={<Mecanismos />} />
-          <Route path="/unsubscribe" element={<Unsubscribe />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
