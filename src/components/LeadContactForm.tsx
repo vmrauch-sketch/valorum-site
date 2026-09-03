@@ -55,18 +55,10 @@ const LeadContactForm = () => {
 
       if (error) throw error;
 
-      await supabase.functions.invoke("send-transactional-email", {
-        body: {
-          templateName: "lead-contact-notification",
-          recipientEmail: "atendimento.valorum@gmail.com",
-          idempotencyKey: `lead-contact-${id}`,
-          templateData: {
-            name: formData.name.trim(),
-            email: formData.email.trim(),
-            phone: formData.phone.trim() || undefined,
-          },
-        },
+      await supabase.functions.invoke("send-lead-contact-notification", {
+        body: { submissionId: id },
       });
+
 
       setIsSubmitted(true);
       setTimeout(() => {
