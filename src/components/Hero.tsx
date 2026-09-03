@@ -63,6 +63,12 @@ const Hero = () => {
                     <span className="mt-1 block text-xs font-medium opacity-95">Patrimonial</span>
                   </div>
                 </Link>
+                <Link to="/trabalhe-conosco" className="group block">
+                  <div className="flex h-[96px] w-[240px] flex-col items-center justify-center rounded-xl border-2 border-navy-400/30 bg-gradient-to-r from-navy-600 to-navy-700 px-5 text-center text-white shadow-lg transition-all duration-300 hover:-translate-y-1 hover:border-navy-300/50 hover:from-navy-700 hover:to-navy-800 hover:shadow-xl cursor-pointer">
+                    <span className="block text-sm font-bold leading-tight">Estratégias Patrimoniais</span>
+                    <span className="mt-1 block text-xs font-medium opacity-95">e Holding</span>
+                  </div>
+                </Link>
               </div>
               
               {/* Sub-brand descriptions */}

@@ -39,6 +39,11 @@ export const Navigation = () => {
                     Patrimônio
                   </Button>
                 </Link>
+                <Link to="/trabalhe-conosco">
+                  <Button size="sm" className={`bg-gradient-to-r from-navy-600 to-navy-700 hover:from-navy-700 hover:to-navy-800 text-white text-xs px-2.5 py-1 h-7 ${isActive('/trabalhe-conosco') ? 'ring-2 ring-navy-300' : ''}`}>
+                    Estratégias Patrimoniais e Holding
+                  </Button>
+                </Link>
               </div>
             )}
           </div>
@@ -101,6 +106,11 @@ export const Navigation = () => {
                   Patrimônio
                 </Button>
               </Link>
+              <Link to="/trabalhe-conosco">
+                <Button size="sm" className={`bg-gradient-to-r from-navy-600 to-navy-700 hover:from-navy-700 hover:to-navy-800 text-white text-xs px-2.5 py-1 h-7 ${isActive('/trabalhe-conosco') ? 'ring-2 ring-navy-300' : ''}`}>
+                  Estratégias Patrimoniais e Holding
+                </Button>
+              </Link>
             </div>
           </div>
         )}
@@ -119,6 +129,11 @@ export const Navigation = () => {
                 <Link to="/patrimonio" onClick={() => setIsOpen(false)} className="flex-1 min-w-[10rem]">
                   <Button size="sm" className="w-full bg-gradient-to-r from-gold-500 to-gold-600 hover:from-gold-600 hover:to-gold-700 text-white">
                     Valorum Patrimônio
+                  </Button>
+                </Link>
+                <Link to="/trabalhe-conosco" onClick={() => setIsOpen(false)} className="flex-1 min-w-[10rem]">
+                  <Button size="sm" className="w-full bg-gradient-to-r from-navy-600 to-navy-700 hover:from-navy-700 hover:to-navy-800 text-white">
+                    Estratégias Patrimoniais e Holding
                   </Button>
                 </Link>
                 </div>
