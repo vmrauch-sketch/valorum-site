@@ -5,7 +5,7 @@ import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { WhatsAppCTAButton } from "@/components/WhatsAppCTAButton";
 import { SEOHead } from "@/components/SEOHead";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import { Shield, Building2, Users, Landmark, Percent, ScrollText, FileCheck, Globe2, Scale } from "lucide-react";
+import { Shield, Building2, Users, Landmark, Percent, ScrollText, FileCheck, Globe2, Scale, Search, Target, LayoutTemplate, CheckCircle, TrendingUp } from "lucide-react";
 
 const especialidades = [
   { id: "holding-patrimonial", title: "Holding Patrimonial", description: "Estruturação de uma pessoa jurídica para concentrar, organizar e administrar os bens da família com governança clara.", icon: Building2 },
@@ -53,11 +53,11 @@ const faq = [
 ];
 
 const etapas = [
-  { n: "01", title: "Diagnóstico patrimonial", text: "Mapeamos bens, empresas, rendas, dívidas, perfil familiar e objetivos de longo prazo." },
-  { n: "02", title: "Estudo de viabilidade", text: "Simulação jurídica e econômica: custos de constituição, impacto tributário e comparação com o cenário atual." },
-  { n: "03", title: "Desenho da estrutura", text: "Definição do tipo societário, composição das quotas, cláusulas de proteção e regras de governança." },
-  { n: "04", title: "Implantação", text: "Constituição da empresa, integralização dos bens, registros e doação de quotas com reserva de usufruto quando aplicável." },
-  { n: "05", title: "Acompanhamento", text: "Gestão contínua da estrutura, contabilidade, revisões periódicas e integração com a estratégia de investimentos." },
+  { n: "01", title: "Diagnóstico patrimonial", subtitle: "Entender", text: "Mapeamos bens, empresas, rendas, dívidas, perfil familiar e objetivos de longo prazo.", icon: Search },
+  { n: "02", title: "Estudo de viabilidade", subtitle: "Definir", text: "Simulação jurídica e econômica: custos de constituição, impacto tributário e comparação com o cenário atual.", icon: Target },
+  { n: "03", title: "Desenho da estrutura", subtitle: "Estruturar", text: "Definição do tipo societário, composição das quotas, cláusulas de proteção e regras de governança.", icon: LayoutTemplate },
+  { n: "04", title: "Implantação", subtitle: "Implementar", text: "Constituição da empresa, integralização dos bens, registros e doação de quotas com reserva de usufruto quando aplicável.", icon: CheckCircle },
+  { n: "05", title: "Acompanhamento", subtitle: "Evoluir", text: "Gestão contínua da estrutura, contabilidade, revisões periódicas e integração com a estratégia de investimentos.", icon: TrendingUp },
 ];
 
 const EstrategiasPatrimoniais = () => {
@@ -92,26 +92,48 @@ const EstrategiasPatrimoniais = () => {
           <div className="container mx-auto px-6 relative z-10">
             <div
               ref={heroRef}
-              className={`max-w-4xl mx-auto text-center transform transition-all duration-1000 ease-out ${heroVisible ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'}`}
+              className={`grid lg:grid-cols-12 gap-10 lg:gap-12 items-center transform transition-all duration-1000 ease-out ${heroVisible ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'}`}
             >
-              <div className="inline-flex items-center gap-2 bg-gold-500/20 border border-gold-400/30 rounded-full px-4 py-2 mb-6">
-                <Shield className="w-4 h-4 text-gold-400" />
-                <span className="text-gold-300 text-sm font-medium">Valorum Patrimônio</span>
+              {/* Left: holding types */}
+              <div className="lg:col-span-4 order-2 lg:order-1">
+                <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-5 lg:p-6">
+                  <h2 className="text-lg font-playfair font-bold text-white mb-4">Tipos de Holding</h2>
+                  <nav className="space-y-2" aria-label="Tipos de holding">
+                    {tiposHolding.map((tipo) => (
+                      <a
+                        key={tipo.slug}
+                        href={`#${tipo.slug}`}
+                        className="flex items-center gap-3 px-4 py-2.5 rounded-lg text-sm font-medium text-white/90 bg-white/10 hover:bg-gold-500/20 hover:text-white transition-colors border border-white/10"
+                      >
+                        <span className="w-1.5 h-1.5 rounded-full bg-gold-400 shrink-0"></span>
+                        {tipo.label}
+                      </a>
+                    ))}
+                  </nav>
+                </div>
               </div>
-              <h1 className="text-4xl md:text-6xl font-playfair font-bold text-white mb-6 leading-tight">
-                Estratégias Patrimoniais e <span className="text-gold-400">Holding</span>
-              </h1>
-              <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed mb-10">
-                Proteja, organize e multiplique seu patrimônio com estruturas de alta precisão: holdings familiares,
-                proteção de ativos, planejamento sucessório e eficiência tributária.
-              </p>
-              <WhatsAppCTAButton
-                message="Olá! Gostaria de mais informações sobre holding."
-                variant="green"
-                className="px-8 py-6 text-lg uppercase tracking-wide"
-              >
-                Fale com especialista
-              </WhatsAppCTAButton>
+
+              {/* Right: title and CTA */}
+              <div className="lg:col-span-8 order-1 lg:order-2 text-center lg:text-left">
+                <div className="inline-flex items-center gap-2 bg-gold-500/20 border border-gold-400/30 rounded-full px-4 py-2 mb-6">
+                  <Shield className="w-4 h-4 text-gold-400" />
+                  <span className="text-gold-300 text-sm font-medium">Valorum Patrimônio</span>
+                </div>
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-playfair font-bold text-white mb-6 leading-tight">
+                  Estratégias Patrimoniais e <span className="text-gold-400">Holding</span>
+                </h1>
+                <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto lg:mx-0 leading-relaxed mb-10">
+                  Proteja, organize e multiplique seu patrimônio com estruturas de alta precisão: holdings familiares,
+                  proteção de ativos, planejamento sucessório e eficiência tributária.
+                </p>
+                <WhatsAppCTAButton
+                  message="Olá! Gostaria de mais informações sobre holding."
+                  variant="green"
+                  className="px-8 py-6 text-lg uppercase tracking-wide"
+                >
+                  Fale com especialista
+                </WhatsAppCTAButton>
+              </div>
             </div>
           </div>
         </section>
@@ -200,21 +222,27 @@ const EstrategiasPatrimoniais = () => {
 
         {/* Como funciona */}
         <section className="py-20 bg-white">
-          <div className="container mx-auto px-6 max-w-6xl">
+          <div className="container mx-auto px-6 max-w-7xl">
             <div className="text-center mb-14">
               <h2 className="text-3xl md:text-4xl font-playfair font-bold text-navy-600 mb-4">
                 Como estruturamos a sua holding
               </h2>
               <p className="text-lg text-gray-700">Um processo em cinco etapas, do diagnóstico ao acompanhamento contínuo.</p>
             </div>
-            <div className="grid md:grid-cols-5 gap-5">
-              {etapas.map((e) => (
-                <div key={e.n} className="bg-navy-50 rounded-xl p-6 text-center h-full flex flex-col">
-                  <span className="text-3xl font-playfair font-bold text-gold-500 block mb-3">{e.n}</span>
-                  <h3 className="text-lg font-bold text-navy-600 mb-2">{e.title}</h3>
-                  <p className="text-gray-700 leading-relaxed text-sm flex-grow">{e.text}</p>
-                </div>
-              ))}
+            <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-6">
+              {etapas.map((e) => {
+                const Icon = e.icon;
+                return (
+                  <div key={e.n} className="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 text-center h-full flex flex-col">
+                    <div className="w-16 h-16 rounded-full bg-gradient-to-br from-navy-600 to-navy-800 flex items-center justify-center mx-auto mb-5">
+                      <Icon size={28} className="text-gold-400" />
+                    </div>
+                    <h3 className="text-xl font-playfair font-bold text-navy-600 mb-2">{e.title}</h3>
+                    <p className="text-sm font-semibold text-gold-500 mb-3">{e.subtitle}</p>
+                    <p className="text-gray-700 leading-relaxed text-sm flex-grow">{e.text}</p>
+                  </div>
+                );
+              })}
             </div>
             <div className="text-center mt-12">
               <p className="text-gray-700 text-lg mb-5">Nossa equipe pode te orientar com precisão e confiança.</p>
