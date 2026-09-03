@@ -14,7 +14,7 @@ User-agent: *
 Allow: /
 
 # Important pages
-Allow: /capital
+Allow: /investimentos
 Allow: /patrimonio
 Allow: /vilson-rauch
 Allow: /contato
