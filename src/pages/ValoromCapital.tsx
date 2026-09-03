@@ -13,7 +13,6 @@ const capitalNavItems = [
   { label: "Ecossistema", target: "capital-stats" },
   { label: "Como Funciona", target: "capital-passos" },
   { label: "Sobre", target: "capital-sobre" },
-  { label: "Soluções", target: "capital-solucoes" },
   { label: "Diferenciais", target: "capital-diferenciais" },
 ];
 
