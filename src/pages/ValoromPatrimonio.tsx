@@ -26,7 +26,6 @@ const patrimonioNavItems = [
 
 const ValoromPatrimonio = () => {
   const { elementRef: heroRef, isVisible: heroVisible } = useScrollAnimation();
-  const { elementRef: triadeRef, isVisible: triadeVisible } = useScrollAnimation();
   const { elementRef: servicesRef, isVisible: servicesVisible } = useScrollAnimation();
 
   const investmentAreas = [
