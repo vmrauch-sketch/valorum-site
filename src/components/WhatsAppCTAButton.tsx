@@ -1,9 +1,11 @@
+import type { ReactNode } from "react";
+
 interface WhatsAppCTAButtonProps {
   message?: string;
   phone?: string;
   variant?: "green" | "gold" | "navy";
   className?: string;
-  children?: React.ReactNode;
+  children?: ReactNode;
 }
 
 const WhatsAppCTAButton = ({
