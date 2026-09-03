@@ -5,7 +5,7 @@ import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { WhatsAppCTAButton } from "@/components/WhatsAppCTAButton";
 import { SEOHead } from "@/components/SEOHead";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import { Shield, Building2, Users, Landmark, Percent, ScrollText, FileCheck, Globe2, Scale } from "lucide-react";
+import { Shield, Building2, Users, Landmark, Percent, ScrollText, FileCheck, Globe2, Scale, Search, Target, LayoutTemplate, CheckCircle, TrendingUp } from "lucide-react";
 
 const especialidades = [
   { id: "holding-patrimonial", title: "Holding Patrimonial", description: "Estruturação de uma pessoa jurídica para concentrar, organizar e administrar os bens da família com governança clara.", icon: Building2 },
@@ -53,11 +53,11 @@ const faq = [
 ];
 
 const etapas = [
-  { n: "01", title: "Diagnóstico patrimonial", text: "Mapeamos bens, empresas, rendas, dívidas, perfil familiar e objetivos de longo prazo." },
-  { n: "02", title: "Estudo de viabilidade", text: "Simulação jurídica e econômica: custos de constituição, impacto tributário e comparação com o cenário atual." },
-  { n: "03", title: "Desenho da estrutura", text: "Definição do tipo societário, composição das quotas, cláusulas de proteção e regras de governança." },
-  { n: "04", title: "Implantação", text: "Constituição da empresa, integralização dos bens, registros e doação de quotas com reserva de usufruto quando aplicável." },
-  { n: "05", title: "Acompanhamento", text: "Gestão contínua da estrutura, contabilidade, revisões periódicas e integração com a estratégia de investimentos." },
+  { n: "01", title: "Diagnóstico patrimonial", subtitle: "Entender", text: "Mapeamos bens, empresas, rendas, dívidas, perfil familiar e objetivos de longo prazo.", icon: Search },
+  { n: "02", title: "Estudo de viabilidade", subtitle: "Definir", text: "Simulação jurídica e econômica: custos de constituição, impacto tributário e comparação com o cenário atual.", icon: Target },
+  { n: "03", title: "Desenho da estrutura", subtitle: "Estruturar", text: "Definição do tipo societário, composição das quotas, cláusulas de proteção e regras de governança.", icon: LayoutTemplate },
+  { n: "04", title: "Implantação", subtitle: "Implementar", text: "Constituição da empresa, integralização dos bens, registros e doação de quotas com reserva de usufruto quando aplicável.", icon: CheckCircle },
+  { n: "05", title: "Acompanhamento", subtitle: "Evoluir", text: "Gestão contínua da estrutura, contabilidade, revisões periódicas e integração com a estratégia de investimentos.", icon: TrendingUp },
 ];
 
 const EstrategiasPatrimoniais = () => {
