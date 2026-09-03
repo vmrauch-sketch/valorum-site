@@ -4,11 +4,12 @@ import { Footer } from "@/components/Footer";
 import { SEOHead } from "@/components/SEOHead";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { Button } from "@/components/ui/button";
-import { TrendingUp, Users, BarChart3, Shield, ClipboardCheck, Target } from "lucide-react";
+import { TrendingUp, Users, BarChart3, Shield, ClipboardCheck, Target, Landmark } from "lucide-react";
 
 const TrabalheConosco = () => {
   const [isVisible, setIsVisible] = useState(false);
   const wealthRef = useRef<HTMLDivElement>(null);
+  const holdingRef = useRef<HTMLDivElement>(null);
   const bpoRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -21,6 +22,23 @@ const TrabalheConosco = () => {
 
   const handleCandidaturaClick = () => {
     const message = encodeURIComponent("Olá, tenho interesse em me tornar um Wealth Planner da Valorum");
+    const url = `https://wa.me/5511959586722?text=${message}`;
+    
+    const isDevelopment = window.location.hostname === 'localhost' || window.location.hostname.includes('lovable');
+    
+    if (isDevelopment) {
+      navigator.clipboard.writeText(url).then(() => {
+        alert(`Link do WhatsApp copiado!\n\nLink copiado para área de transferência.`);
+      }).catch(() => {
+        alert(`WhatsApp: 11 95958 6722`);
+      });
+    } else {
+      window.open(url, '_blank');
+    }
+  };
+
+  const handleHoldingCandidaturaClick = () => {
+    const message = encodeURIComponent("Olá, tenho interesse em me tornar um Especialista em Estratégias Patrimoniais e Holding da Valorum");
     const url = `https://wa.me/5511959586722?text=${message}`;
     
     const isDevelopment = window.location.hostname === 'localhost' || window.location.hostname.includes('lovable');
@@ -75,7 +93,7 @@ const TrabalheConosco = () => {
                     Escolha o caminho que combina com você e venha construir resultados reais.
                   </p>
 
-                  <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                  <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
                     {/* Card Wealth Planner */}
                     <button
                       onClick={() => scrollTo(wealthRef)}
@@ -91,6 +109,25 @@ const TrabalheConosco = () => {
                         Assessoria financeira independente com visão 360°, transparência e foco no cliente.
                       </p>
                       <span className="inline-block mt-4 text-corporate-500 font-semibold group-hover:translate-x-1 transition-transform">
+                        Saiba mais →
+                      </span>
+                    </button>
+
+                    {/* Card Estratégias Patrimoniais e Holding */}
+                    <button
+                      onClick={() => scrollTo(holdingRef)}
+                      className="p-8 rounded-2xl border-2 border-gold-500/30 bg-gradient-to-br from-gold-50 to-white hover:border-gold-500 hover:shadow-xl transition-all duration-300 text-left group"
+                    >
+                      <div className="w-14 h-14 bg-gradient-to-br from-gold-500 to-gold-600 rounded-xl flex items-center justify-center mb-6">
+                        <Landmark className="w-7 h-7 text-white" />
+                      </div>
+                      <h2 className="text-2xl font-playfair font-bold text-primary mb-3">
+                        Estratégias Patrimoniais e Holding
+                      </h2>
+                      <p className="text-muted-foreground">
+                        Modelo de assessoria financeira e patrimonial para o cliente final.
+                      </p>
+                      <span className="inline-block mt-4 text-gold-500 font-semibold group-hover:translate-x-1 transition-transform">
                         Saiba mais →
                       </span>
                     </button>
@@ -182,6 +219,55 @@ const TrabalheConosco = () => {
                         <p className="text-muted-foreground">{item.desc}</p>
                       </div>
                     ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* Seção Estratégias Patrimoniais e Holding */}
+          <section ref={holdingRef} className="py-20 scroll-mt-24">
+            <div className="container mx-auto px-4 max-w-7xl">
+              <div className="max-w-6xl mx-auto">
+                <div className="bg-gradient-to-r from-gold-50 to-white p-8 md:p-12 rounded-xl border border-gold-200">
+                  <div className="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                      <p className="text-sm uppercase tracking-widest text-gold-600 font-semibold mb-4">Estratégias Patrimoniais e Holding</p>
+                      <h2 className="text-3xl md:text-4xl font-playfair font-bold text-primary leading-tight">
+                        Modelo de assessoria financeira e patrimonial para o cliente final.
+                      </h2>
+                      <p className="text-lg text-muted-foreground mt-6 font-medium">
+                        Soluções Financeiras e de Investimentos!
+                      </p>
+                    </div>
+
+                    <div className="space-y-6">
+                      {[
+                        { num: "01", title: "Investimentos & Wealth Services", desc: "Gestão profissional de investimentos com alocação estratégica e acompanhamento contínuo;" },
+                        { num: "02", title: "Consultoria Financeira", desc: "Planejamento completo para organizar receitas, despesas e objetivos de curto, médio e longo prazo;" },
+                        { num: "03", title: "Patrimonial", desc: "Estruturação, proteção e transmissão patrimonial com segurança jurídica e tributária;" },
+                        { num: "04", title: "Holding Familiar", desc: "Organização societária e sucessória para preservar e fazer crescer o patrimônio familiar." },
+                      ].map((item) => (
+                        <div key={item.num} className="flex items-start">
+                          <div className="flex-shrink-0 w-12 h-12 bg-gold-500 text-white rounded-full flex items-center justify-center font-bold text-xl mr-4">
+                            {item.num}
+                          </div>
+                          <div>
+                            <h3 className="text-xl font-bold text-primary mb-2">{item.title}</h3>
+                            <p className="text-muted-foreground">{item.desc}</p>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  <div className="text-center mt-12">
+                    <button 
+                      onClick={handleHoldingCandidaturaClick}
+                      className="bg-gold-500 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-gold-600 transition-colors shadow-lg hover:scale-105 transition-transform duration-200"
+                    >
+                      QUERO ATUAR COM ESTRATÉGIAS PATRIMONIAIS E HOLDING
+                    </button>
                   </div>
                 </div>
               </div>
