@@ -128,7 +128,7 @@ const TrabalheConosco = () => {
                     <div>
                       <p className="text-sm uppercase tracking-widest text-corporate-500 font-semibold mb-4">Wealth Planner</p>
                       <h2 className="text-3xl md:text-4xl font-playfair font-bold text-primary leading-tight">
-                        O Wealth Planning é indiscutivelmente o melhor modelo de assessoria financeira para o cliente final.
+                        O Wealth Planning é indiscutivelmente o melhor modelo de assessoria financeira e patrimonial para o cliente final.
                       </h2>
                       <p className="text-lg text-muted-foreground mt-6 font-medium">
                         Pilares da nossa filosofia de atuação:
