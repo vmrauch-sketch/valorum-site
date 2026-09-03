@@ -79,24 +79,24 @@ const etapas = [
   { n: "05", title: "Acompanhamento", subtitle: "Evoluir", text: "Gestão contínua da estrutura, contabilidade, revisões periódicas e integração com a estratégia de investimentos.", icon: TrendingUp },
 ];
 
-const EstrategiasPatrimoniais = () => {
+const EstruturasPatrimoniais = () => {
   const { elementRef: heroRef, isVisible: heroVisible } = useScrollAnimation();
 
   return (
     <>
       <SEOHead
-        title="Estratégias Patrimoniais e Holding Familiar | Valorum"
+        title="Estruturas Patrimoniais e Holding Familiar | Valorum"
         description="Proteja, organize e multiplique seu patrimônio com holding familiar, planejamento sucessório, proteção de ativos e eficiência tributária. Estruturas sob medida da Valorum."
         keywords="holding familiar, holding patrimonial, planejamento sucessório, proteção patrimonial, holding para imóveis, redução de tributos, estratégias patrimoniais, Valorum"
-        canonical="https://valorum.vilsonrauch.com.br/estrategias-patrimoniais"
+        canonical="https://valorum.vilsonrauch.com.br/estruturas-patrimoniais"
         structuredData={[
           {
             "@context": "https://schema.org",
             "@type": "Service",
-            name: "Estratégias Patrimoniais e Holding",
+            name: "Estruturas Patrimoniais e Holding",
             description:
               "Estruturação de holdings familiares e patrimoniais, planejamento sucessório, proteção de ativos e eficiência tributária.",
-            url: "https://valorum.vilsonrauch.com.br/estrategias-patrimoniais",
+            url: "https://valorum.vilsonrauch.com.br/estruturas-patrimoniais",
             provider: { "@type": "Organization", name: "Valorum", url: "https://valorum.vilsonrauch.com.br" },
             serviceType: ["Holding Familiar", "Planejamento Sucessório", "Proteção Patrimonial", "Eficiência Tributária"],
             areaServed: "BR",
@@ -115,7 +115,7 @@ const EstrategiasPatrimoniais = () => {
             "@type": "BreadcrumbList",
             itemListElement: [
               { "@type": "ListItem", position: 1, name: "Home", item: "https://valorum.vilsonrauch.com.br/" },
-              { "@type": "ListItem", position: 2, name: "Estratégias Patrimoniais e Holding", item: "https://valorum.vilsonrauch.com.br/estrategias-patrimoniais" },
+              { "@type": "ListItem", position: 2, name: "Estruturas Patrimoniais e Holding", item: "https://valorum.vilsonrauch.com.br/estruturas-patrimoniais" },
             ],
           },
         ]}
@@ -160,7 +160,7 @@ const EstrategiasPatrimoniais = () => {
                   <span className="text-gold-300 text-sm font-medium">Valorum Patrimônio</span>
                 </div>
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-playfair font-bold text-white mb-6 leading-tight">
-                  Estratégias Patrimoniais e <span className="text-gold-400">Holding</span>
+                  Estruturas Patrimoniais e <span className="text-gold-400">Holding</span>
                 </h1>
                 <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed mb-6">
                   Proteja, organize e multiplique seu patrimônio com estruturas de alta precisão: holdings familiares,
@@ -333,4 +333,4 @@ const EstrategiasPatrimoniais = () => {
   );
 };
 
-export default EstrategiasPatrimoniais;
+export default EstruturasPatrimoniais;
