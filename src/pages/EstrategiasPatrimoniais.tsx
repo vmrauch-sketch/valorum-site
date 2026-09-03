@@ -141,9 +141,12 @@ const EstrategiasPatrimoniais = () => {
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-playfair font-bold text-white mb-6 leading-tight">
                   Estratégias Patrimoniais e <span className="text-gold-400">Holding</span>
                 </h1>
-                <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto lg:mx-0 leading-relaxed mb-10">
+                <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto lg:mx-0 leading-relaxed mb-6">
                   Proteja, organize e multiplique seu patrimônio com estruturas de alta precisão: holdings familiares,
                   proteção de ativos, planejamento sucessório e eficiência tributária.
+                </p>
+                <p className="text-gold-300 text-base md:text-lg font-medium mb-8">
+                  Nossa equipe pode te orientar com precisão e confiança.
                 </p>
                 <WhatsAppCTAButton
                   message="Olá! Gostaria de mais informações sobre holding."
