@@ -70,17 +70,36 @@ const EstrategiasPatrimoniais = () => {
         description="Proteja, organize e multiplique seu patrimônio com holding familiar, planejamento sucessório, proteção de ativos e eficiência tributária. Estruturas sob medida da Valorum."
         keywords="holding familiar, holding patrimonial, planejamento sucessório, proteção patrimonial, holding para imóveis, redução de tributos, estratégias patrimoniais, Valorum"
         canonical="https://valorum.vilsonrauch.com.br/estrategias-patrimoniais"
-        structuredData={{
-          "@context": "https://schema.org",
-          "@type": "Service",
-          name: "Estratégias Patrimoniais e Holding",
-          description:
-            "Estruturação de holdings familiares e patrimoniais, planejamento sucessório, proteção de ativos e eficiência tributária.",
-          url: "https://valorum.vilsonrauch.com.br/estrategias-patrimoniais",
-          provider: { "@type": "Organization", name: "Valorum", url: "https://valorum.vilsonrauch.com.br" },
-          serviceType: ["Holding Familiar", "Planejamento Sucessório", "Proteção Patrimonial", "Eficiência Tributária"],
-          areaServed: "BR",
-        }}
+        structuredData={[
+          {
+            "@context": "https://schema.org",
+            "@type": "Service",
+            name: "Estratégias Patrimoniais e Holding",
+            description:
+              "Estruturação de holdings familiares e patrimoniais, planejamento sucessório, proteção de ativos e eficiência tributária.",
+            url: "https://valorum.vilsonrauch.com.br/estrategias-patrimoniais",
+            provider: { "@type": "Organization", name: "Valorum", url: "https://valorum.vilsonrauch.com.br" },
+            serviceType: ["Holding Familiar", "Planejamento Sucessório", "Proteção Patrimonial", "Eficiência Tributária"],
+            areaServed: "BR",
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: faq.map((item) => ({
+              "@type": "Question",
+              name: item.q,
+              acceptedAnswer: { "@type": "Answer", text: item.a },
+            })),
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "Home", item: "https://valorum.vilsonrauch.com.br/" },
+              { "@type": "ListItem", position: 2, name: "Estratégias Patrimoniais e Holding", item: "https://valorum.vilsonrauch.com.br/estrategias-patrimoniais" },
+            ],
+          },
+        ]}
       />
 
       <div className="min-h-screen bg-white font-inter">

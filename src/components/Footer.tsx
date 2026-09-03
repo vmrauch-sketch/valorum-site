@@ -34,7 +34,7 @@ const Footer = ({ hidePartners = false }: { hidePartners?: boolean }) => {
             <div>
               <h3 className="text-2xl font-playfair font-bold mb-1">Valorum</h3>
               <p className="text-sm italic text-gold-400 mb-4 font-playfair">
-                Seu patrimônio, nossa obsessão!
+                Clareza para decidir, segurança para crescer!
               </p>
               <div className="flex flex-col space-y-2 text-sm text-white/60">
                 <span className="flex items-center">
