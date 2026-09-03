@@ -2,7 +2,7 @@
 const Contact = () => {
   const handleWhatsAppClick = () => {
     console.log("Contact: Botão clicado");
-    const message = encodeURIComponent("Olá gostaria de mais informações");
+    const message = encodeURIComponent("Olá! Vim do site da Valorum.");
     const url = `https://wa.me/5511959586722?text=${message}`;
     
     // Detecta se está em desenvolvimento
@@ -11,9 +11,9 @@ const Contact = () => {
     if (isDevelopment) {
       // Em desenvolvimento, copia o link e mostra alerta
       navigator.clipboard.writeText(url).then(() => {
-        alert(`Link do WhatsApp copiado!\n\nNúmero: 11 9 5958 6722\nMensagem: "Olá gostaria de mais informações"\n\nLink copiado para área de transferência.`);
+        alert(`Link do WhatsApp copiado!\n\nNúmero: 11 9 5958 6722\nMensagem: "Olá! Vim do site da Valorum."\n\nLink copiado para área de transferência.`);
       }).catch(() => {
-        alert(`WhatsApp: 11 9 5958 6722\n\nMensagem: "Olá gostaria de mais informações"`);
+        alert(`WhatsApp: 11 9 5958 6722\n\nMensagem: "Olá! Vim do site da Valorum."`);
       });
     } else {
       // Em produção, abre normalmente

@@ -2,7 +2,7 @@ interface WhatsAppButtonProps {
   message?: string;
 }
 
-const WhatsAppButton = ({ message = "Olá gostaria de mais informações" }: WhatsAppButtonProps) => {
+const WhatsAppButton = ({ message = "Olá! Vim do site da Valorum." }: WhatsAppButtonProps) => {
   const handleClick = () => {
     const url = `https://wa.me/5511959586722?text=${encodeURIComponent(message)}`;
     const isDevelopment = window.location.hostname === 'localhost' || window.location.hostname.includes('lovable');
