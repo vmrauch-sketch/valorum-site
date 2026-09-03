@@ -37,7 +37,7 @@ const ValoromPatrimonio = () => {
     },
     {
       icon: TrendingUp,
-      title: "Gestão de Investimentos",
+      title: "Investimentos",
       description: "Acompanhamento ativo e personalizado dos seus investimentos com foco em resultados de longo prazo."
     },
     {
