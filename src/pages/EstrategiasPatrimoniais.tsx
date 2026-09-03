@@ -222,21 +222,27 @@ const EstrategiasPatrimoniais = () => {
 
         {/* Como funciona */}
         <section className="py-20 bg-white">
-          <div className="container mx-auto px-6 max-w-6xl">
+          <div className="container mx-auto px-6 max-w-7xl">
             <div className="text-center mb-14">
               <h2 className="text-3xl md:text-4xl font-playfair font-bold text-navy-600 mb-4">
                 Como estruturamos a sua holding
               </h2>
               <p className="text-lg text-gray-700">Um processo em cinco etapas, do diagnóstico ao acompanhamento contínuo.</p>
             </div>
-            <div className="grid md:grid-cols-5 gap-5">
-              {etapas.map((e) => (
-                <div key={e.n} className="bg-navy-50 rounded-xl p-6 text-center h-full flex flex-col">
-                  <span className="text-3xl font-playfair font-bold text-gold-500 block mb-3">{e.n}</span>
-                  <h3 className="text-lg font-bold text-navy-600 mb-2">{e.title}</h3>
-                  <p className="text-gray-700 leading-relaxed text-sm flex-grow">{e.text}</p>
-                </div>
-              ))}
+            <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-6">
+              {etapas.map((e) => {
+                const Icon = e.icon;
+                return (
+                  <div key={e.n} className="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 text-center h-full flex flex-col">
+                    <div className="w-16 h-16 rounded-full bg-gradient-to-br from-navy-600 to-navy-800 flex items-center justify-center mx-auto mb-5">
+                      <Icon size={28} className="text-gold-400" />
+                    </div>
+                    <h3 className="text-xl font-playfair font-bold text-navy-600 mb-2">{e.title}</h3>
+                    <p className="text-sm font-semibold text-gold-500 mb-3">{e.subtitle}</p>
+                    <p className="text-gray-700 leading-relaxed text-sm flex-grow">{e.text}</p>
+                  </div>
+                );
+              })}
             </div>
             <div className="text-center mt-12">
               <p className="text-gray-700 text-lg mb-5">Nossa equipe pode te orientar com precisão e confiança.</p>
