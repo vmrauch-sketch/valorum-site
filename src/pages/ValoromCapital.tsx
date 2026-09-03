@@ -273,6 +273,10 @@ const ValoromCapital = () => {
                     <span className="text-[#c9a962] mt-0.5">✓</span>
                     <span>Foco total no cliente</span>
                   </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-[#c9a962] mt-0.5">✓</span>
+                    <span>Implementação de estratégias por time experiente e dedicado</span>
+                  </li>
                 </ul>
               </div>
               
