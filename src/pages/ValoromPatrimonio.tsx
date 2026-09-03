@@ -121,6 +121,14 @@ const ValoromPatrimonio = () => {
               <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl leading-relaxed">
                 Além da Gestão dos seus investimentos, definimos e implementamos juntos o seu Plano de Construção de Patrimônio.
               </p>
+
+              <h3 className="text-2xl md:text-3xl font-playfair font-bold text-white mb-4 leading-tight max-w-3xl">
+                CONSTRUA UM PATRIMÔNIO SÓLIDO GERADOR DE RENDA PASSIVA VITALÍCIA
+              </h3>
+              <p className="text-base md:text-lg text-gray-200 leading-relaxed mb-8 max-w-3xl">
+                Um especialista patrimonial acompanha você de forma individual para implementar a metodologia O Quarto Caminho passo a passo. Assim garantimos a assertividade e velocidade de execução do plano estruturado para que o objetivo seja alcançado no período estipulado.
+              </p>
+
               <a href="#pat-servicos">
                 <Button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 uppercase tracking-wide">
                   Conheça o Modelo
