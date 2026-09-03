@@ -130,8 +130,31 @@ const EstrategiasPatrimoniais = () => {
           <div className="container mx-auto px-6 relative z-10">
             <div
               ref={heroRef}
-              className={`max-w-4xl mx-auto text-center transform transition-all duration-1000 ease-out ${heroVisible ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'}`}
+              className={`grid lg:grid-cols-12 gap-8 lg:gap-12 items-center transform transition-all duration-1000 ease-out ${heroVisible ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'}`}
             >
+              {/* Tipos de Holding — esquerda */}
+              <div className="lg:col-span-3 order-2 lg:order-1">
+                <div className="lg:text-left text-center">
+                  <p className="text-gold-300 text-xs font-semibold uppercase tracking-wider mb-4 hidden lg:block">
+                    Tipos de Holding
+                  </p>
+                  <div className="flex lg:flex-col flex-wrap justify-center gap-2">
+                    {tiposHolding.map((tipo) => (
+                      <a
+                        key={tipo.href}
+                        href={tipo.href}
+                        className="inline-flex items-center gap-2 px-3 py-2 rounded-lg bg-white/10 border border-white/10 text-gold-200 text-sm hover:bg-gold-500/20 hover:border-gold-400/30 hover:text-white transition-all duration-200 lg:w-full"
+                      >
+                        <span className="w-1.5 h-1.5 rounded-full bg-gold-400 flex-shrink-0"></span>
+                        <span className="truncate">{tipo.label}</span>
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
+              {/* Conteúdo principal — direita */}
+              <div className="lg:col-span-9 order-1 lg:order-2 text-center">
                 <div className="inline-flex items-center gap-2 bg-gold-500/20 border border-gold-400/30 rounded-full px-4 py-2 mb-6">
                   <Shield className="w-4 h-4 text-gold-400" />
                   <span className="text-gold-300 text-sm font-medium">Valorum Patrimônio</span>
@@ -139,7 +162,7 @@ const EstrategiasPatrimoniais = () => {
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-playfair font-bold text-white mb-6 leading-tight">
                   Estratégias Patrimoniais e <span className="text-gold-400">Holding</span>
                 </h1>
-                <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto lg:mx-0 leading-relaxed mb-6">
+                <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed mb-6">
                   Proteja, organize e multiplique seu patrimônio com estruturas de alta precisão: holdings familiares,
                   proteção de ativos, planejamento sucessório e eficiência tributária.
                 </p>
@@ -154,6 +177,7 @@ const EstrategiasPatrimoniais = () => {
                   Fale com especialista
                 </WhatsAppCTAButton>
               </div>
+            </div>
           </div>
         </section>
 
