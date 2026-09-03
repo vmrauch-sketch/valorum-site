@@ -102,29 +102,8 @@ const EstrategiasPatrimoniais = () => {
           <div className="container mx-auto px-6 relative z-10">
             <div
               ref={heroRef}
-              className={`grid lg:grid-cols-12 gap-10 lg:gap-12 items-center transform transition-all duration-1000 ease-out ${heroVisible ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'}`}
+              className={`max-w-4xl mx-auto text-center transform transition-all duration-1000 ease-out ${heroVisible ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'}`}
             >
-              {/* Left: holding types */}
-              <div className="lg:col-span-4 order-2 lg:order-1">
-                <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-5 lg:p-6">
-                  <h2 className="text-lg font-playfair font-bold text-white mb-4">Tipos de Holding</h2>
-                  <nav className="space-y-2" aria-label="Tipos de holding">
-                    {tiposHolding.map((tipo) => (
-                      <a
-                        key={tipo.slug}
-                        href={`#${tipo.slug}`}
-                        className="flex items-center gap-3 px-4 py-2.5 rounded-lg text-sm font-medium text-white/90 bg-white/10 hover:bg-gold-500/20 hover:text-white transition-colors border border-white/10"
-                      >
-                        <span className="w-1.5 h-1.5 rounded-full bg-gold-400 shrink-0"></span>
-                        {tipo.label}
-                      </a>
-                    ))}
-                  </nav>
-                </div>
-              </div>
-
-              {/* Right: title and CTA */}
-              <div className="lg:col-span-8 order-1 lg:order-2 text-center lg:text-left">
                 <div className="inline-flex items-center gap-2 bg-gold-500/20 border border-gold-400/30 rounded-full px-4 py-2 mb-6">
                   <Shield className="w-4 h-4 text-gold-400" />
                   <span className="text-gold-300 text-sm font-medium">Valorum Patrimônio</span>
