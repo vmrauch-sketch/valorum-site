@@ -115,16 +115,13 @@ const ValoromPatrimonio = () => {
           <div className="container mx-auto px-6 relative z-10">
             <div className="max-w-4xl">
               <h2 className="text-4xl md:text-6xl font-playfair font-bold text-white mb-6 leading-tight">
-                Consultoria financeira especializada em{' '}
-                <span className="text-gold-400">construção patrimonial</span>
+                CONSTRUA UM PATRIMÔNIO SÓLIDO{' '}
+                <span className="text-gold-400">GERADOR DE RENDA PASSIVA VITALÍCIA</span>
               </h2>
               <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl leading-relaxed">
                 Além da Gestão dos seus investimentos, definimos e implementamos juntos o seu Plano de Construção de Patrimônio.
               </p>
 
-              <h3 className="text-2xl md:text-3xl font-playfair font-bold text-white mb-4 leading-tight max-w-3xl">
-                CONSTRUA UM PATRIMÔNIO SÓLIDO GERADOR DE RENDA PASSIVA VITALÍCIA
-              </h3>
               <p className="text-base md:text-lg text-gray-200 leading-relaxed mb-8 max-w-3xl">
                 Um especialista patrimonial acompanha você de forma individual para implementar a metodologia O Quarto Caminho passo a passo. Assim garantimos a assertividade e velocidade de execução do plano estruturado para que o objetivo seja alcançado no período estipulado.
               </p>
