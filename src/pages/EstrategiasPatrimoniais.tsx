@@ -37,7 +37,7 @@ const faq = [
   },
   {
     q: "Quando vale a pena estruturar uma holding?",
-    a: "Quando existe patrimônio imobiliário relevante, participação em empresas, renda de locações, risco empresarial, família com mais de um herdeiro ou desejo de organizar a sucessão em vida. O primeiro passo é sempre o estudo de viabilidade jurídica e econômica — nem toda estrutura se justifica.",
+    a: "Quando existe patrimônio imobiliário relevante, participação em empresas, renda de locações, risco empresarial, família com mais de um herdeiro ou desejo de organizar a sucessão em vida. O primeiro passo é sempre o estudo de viabilidade jurídica e econômica.",
   },
 ];
 
