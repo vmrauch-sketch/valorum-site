@@ -166,21 +166,19 @@ const EstrategiasPatrimoniais = () => {
 
         {/* Como funciona */}
         <section className="py-20 bg-white">
-          <div className="container mx-auto px-6 max-w-5xl">
+          <div className="container mx-auto px-6 max-w-6xl">
             <div className="text-center mb-14">
               <h2 className="text-3xl md:text-4xl font-playfair font-bold text-navy-600 mb-4">
                 Como estruturamos a sua holding
               </h2>
               <p className="text-lg text-gray-700">Um processo em cinco etapas, do diagnóstico ao acompanhamento contínuo.</p>
             </div>
-            <div className="space-y-5">
+            <div className="grid md:grid-cols-5 gap-5">
               {etapas.map((e) => (
-                <div key={e.n} className="flex gap-5 items-start bg-navy-50 rounded-xl p-6">
-                  <span className="text-2xl font-playfair font-bold text-gold-500 shrink-0">{e.n}</span>
-                  <div>
-                    <h3 className="text-lg font-bold text-navy-600 mb-1">{e.title}</h3>
-                    <p className="text-gray-700 leading-relaxed">{e.text}</p>
-                  </div>
+                <div key={e.n} className="bg-navy-50 rounded-xl p-6 text-center h-full flex flex-col">
+                  <span className="text-3xl font-playfair font-bold text-gold-500 block mb-3">{e.n}</span>
+                  <h3 className="text-lg font-bold text-navy-600 mb-2">{e.title}</h3>
+                  <p className="text-gray-700 leading-relaxed text-sm flex-grow">{e.text}</p>
                 </div>
               ))}
             </div>
