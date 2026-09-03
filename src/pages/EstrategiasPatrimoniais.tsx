@@ -5,17 +5,28 @@ import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { WhatsAppCTAButton } from "@/components/WhatsAppCTAButton";
 import { SEOHead } from "@/components/SEOHead";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import { Shield, Building2, Users, Landmark, Percent, ScrollText, FileCheck, Globe2 } from "lucide-react";
+import { Shield, Building2, Users, Landmark, Percent, ScrollText, FileCheck, Globe2, Scale } from "lucide-react";
 
 const especialidades = [
-  { title: "Holding Patrimonial", description: "Estruturação de uma pessoa jurídica para concentrar, organizar e administrar os bens da família com governança clara.", icon: Building2 },
-  { title: "Holding Familiar", description: "Organização do patrimônio familiar em vida, com regras definidas para administração, entrada de sócios e sucessão.", icon: Users },
-  { title: "Planejamento Sucessório", description: "Antecipação da sucessão com segurança jurídica, reduzindo custos, prazos e desgastes de um inventário.", icon: ScrollText },
-  { title: "Proteção Patrimonial", description: "Blindagem legal dos bens contra riscos empresariais, conflitos familiares e investidas de terceiros.", icon: Shield },
-  { title: "Holding para Imóveis", description: "Concentração dos imóveis na pessoa jurídica, otimizando a gestão de locações e a tributação da renda.", icon: Landmark },
-  { title: "Eficiência Tributária", description: "Estudo de viabilidade econômica e tributária para reduzir de forma legal a carga sobre renda, transmissão e ganhos.", icon: Percent },
-  { title: "Cláusulas de Proteção", description: "Incomunicabilidade, impenhorabilidade, inalienabilidade, reversão e usufruto aplicadas ao contrato social.", icon: FileCheck },
-  { title: "Estruturas Internacionais", description: "Organização de ativos no exterior integrada ao planejamento patrimonial e sucessório da família.", icon: Globe2 },
+  { id: "holding-patrimonial", title: "Holding Patrimonial", description: "Estruturação de uma pessoa jurídica para concentrar, organizar e administrar os bens da família com governança clara.", icon: Building2 },
+  { id: "holding-familiar-patrimonial", title: "Holding Familiar e Patrimonial", description: "Organização do patrimônio familiar em vida, com regras definidas para administração, entrada de sócios e sucessão.", icon: Users },
+  { id: "holding-familiar-inventario", title: "Holding Familiar e Inventário", description: "Estruturação da holding para organizar bens, simplificar o inventário e reduzir custos, prazos e desgastes sucessórios.", icon: Scale },
+  { id: "planejamento-sucessorio", title: "Planejamento Sucessório", description: "Antecipação da sucessão com segurança jurídica, reduzindo custos, prazos e desgastes de um inventário.", icon: ScrollText },
+  { id: "protecao-patrimonial", title: "Proteção Patrimonial", description: "Blindagem legal dos bens contra riscos empresariais, conflitos familiares e investidas de terceiros.", icon: Shield },
+  { id: "holding-imoveis", title: "Holding para Imóveis", description: "Concentração dos imóveis na pessoa jurídica, otimizando a gestão de locações e a tributação da renda.", icon: Landmark },
+  { id: "holding-reducao-tributos", title: "Holding para Redução de Tributos", description: "Estudo de viabilidade econômica e tributária para reduzir de forma legal a carga sobre renda, transmissão e ganhos.", icon: Percent },
+  { id: "clausulas-protecao", title: "Cláusulas de Proteção", description: "Incomunicabilidade, impenhorabilidade, inalienabilidade, reversão e usufruto aplicadas ao contrato social.", icon: FileCheck },
+  { id: "estruturas-internacionais", title: "Estruturas Internacionais", description: "Organização de ativos no exterior integrada ao planejamento patrimonial e sucessório da família.", icon: Globe2 },
+];
+
+const tiposHolding = [
+  { slug: "holding-patrimonial", label: "Holding Patrimonial" },
+  { slug: "holding-familiar-patrimonial", label: "Holding Familiar e Patrimonial" },
+  { slug: "holding-familiar-inventario", label: "Holding Familiar e Inventário" },
+  { slug: "planejamento-sucessorio", label: "Planejamento Sucessório" },
+  { slug: "protecao-patrimonial", label: "Proteção Patrimonial" },
+  { slug: "holding-imoveis", label: "Holding para Imóveis" },
+  { slug: "holding-reducao-tributos", label: "Holding para Redução de Tributos" },
 ];
 
 const faq = [
