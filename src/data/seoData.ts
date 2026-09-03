@@ -40,9 +40,9 @@ export const SEOData = {
   },
 
   valorumPatrimonio: {
-    title: "Valorum Patrimônio | Proteção, Crescimento e Sucessão Patrimonial",
-    description: "Planejamento patrimonial e sucessório completo. Tríade Patrimonial: proteger, crescer e transmitir. Transformando patrimônio em fonte de liberdade.",
-    keywords: "gestão patrimonial, proteção patrimonial, sucessão patrimonial, holding familiar, planejamento sucessório, investimentos imobiliários, crescimento patrimonial, legado familiar, Valorum Patrimônio, planejamento tributário, blindagem patrimonial",
+    title: "Valorum Patrimônio | Construa um Patrimônio Sólido Gerador de Renda Passiva",
+    description: "Construa um patrimônio sólido gerador de renda passiva vitalícia. Planejamento patrimonial completo com acompanhamento especializado da Valorum Patrimônio.",
+    keywords: "patrimônio sólido, renda passiva vitalícia, construção patrimonial, planejamento patrimonial, gestão patrimonial, proteção patrimonial, sucessão patrimonial, holding familiar, planejamento sucessório, crescimento patrimonial, legado familiar, Valorum Patrimônio, independência financeira, wealth planning",
   },
 
   contato: {
