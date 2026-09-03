@@ -163,19 +163,18 @@ const EstrategiasPatrimoniais = () => {
             </div>
             <div className="max-w-7xl mx-auto">
               <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-6">
-                  {especialidades.map((item) => {
-                    const Icon = item.icon;
-                    return (
-                      <div id={item.id} key={item.id} className="scroll-mt-28 bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300">
-                        <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-navy-600 to-navy-800 flex items-center justify-center mb-5">
-                          <Icon size={26} className="text-gold-400" />
-                        </div>
-                        <h3 className="text-lg font-playfair font-bold text-navy-600 mb-2">{item.title}</h3>
-                        <p className="text-sm text-gray-700 leading-relaxed">{item.description}</p>
+                {especialidades.map((item) => {
+                  const Icon = item.icon;
+                  return (
+                    <div id={item.id} key={item.id} className="scroll-mt-28 bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300">
+                      <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-navy-600 to-navy-800 flex items-center justify-center mb-5">
+                        <Icon size={26} className="text-gold-400" />
                       </div>
-                    );
-                  })}
-                </div>
+                      <h3 className="text-lg font-playfair font-bold text-navy-600 mb-2">{item.title}</h3>
+                      <p className="text-sm text-gray-700 leading-relaxed">{item.description}</p>
+                    </div>
+                  );
+                })}
               </div>
             </div>
             <div className="text-center mt-12">
