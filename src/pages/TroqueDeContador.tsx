@@ -1,9 +1,10 @@
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
+import { WhatsAppIcon } from "@/components/WhatsAppIcon";
 import { SEOHead } from "@/components/SEOHead";
 import { Button } from "@/components/ui/button";
-import { MessageCircle, ChevronDown } from "lucide-react";
+import { ChevronDown } from "lucide-react";
 import { useState } from "react";
 
 const faqItems = [
@@ -69,8 +70,8 @@ const TroqueDeContador = () => {
                 Venha para uma contabilidade especializada no seu negócio! Nossa equipe de especialistas está pronta para migrar a sua empresa de uma forma descomplicada e segura.
               </p>
               <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
-                <Button size="lg" className="bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white font-semibold px-8 py-6 text-lg">
-                  <MessageCircle className="mr-2" size={20} />
+                <Button size="lg" className="inline-flex items-center bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white font-semibold px-8 py-6 text-lg">
+                  <WhatsAppIcon className="w-5 h-5 mr-3" />
                   Falar com um Contador
                 </Button>
               </a>
@@ -104,8 +105,8 @@ const TroqueDeContador = () => {
 
             <div className="text-center">
               <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
-                <Button size="lg" className="bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white font-semibold px-8 py-6 text-lg">
-                  <MessageCircle className="mr-2" size={20} />
+                <Button size="lg" className="inline-flex items-center bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white font-semibold px-8 py-6 text-lg">
+                  <WhatsAppIcon className="w-5 h-5 mr-3" />
                   Falar com um Contador
                 </Button>
               </a>
@@ -155,8 +156,8 @@ const TroqueDeContador = () => {
 
               <div className="mt-10 text-center">
                 <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
-                  <Button size="lg" className="bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white font-semibold px-8 py-6 text-lg">
-                    <MessageCircle className="mr-2" size={20} />
+                  <Button size="lg" className="inline-flex items-center bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white font-semibold px-8 py-6 text-lg">
+                    <WhatsAppIcon className="w-5 h-5 mr-3" />
                     Falar com um Contador
                   </Button>
                 </a>
@@ -203,8 +204,8 @@ const TroqueDeContador = () => {
               A migração é gratuita e nossa equipe cuida de tudo. Fale com um contador e comece hoje.
             </p>
             <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
-              <Button size="lg" className="bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white font-semibold px-8 py-6 text-lg">
-                <MessageCircle className="mr-2" size={20} />
+              <Button size="lg" className="inline-flex items-center bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white font-semibold px-8 py-6 text-lg">
+                <WhatsAppIcon className="w-5 h-5 mr-3" />
                 Falar com um Contador
               </Button>
             </a>
