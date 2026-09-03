@@ -27,9 +27,9 @@ const AdvancedStrategies = () => {
     if (isDevelopment) {
       // Em desenvolvimento, copia o link e mostra alerta
       navigator.clipboard.writeText(url).then(() => {
-        alert(`Link do WhatsApp copiado!\n\nNúmero: +55 (11) 95958-6722\nMensagem: "Olá gostaria de mais informações sobre ${serviceTitle}"\n\nLink copiado para área de transferência.`);
+        alert(`Link do WhatsApp copiado!\n\nNúmero: 11 9 5958 6722\nMensagem: "Olá gostaria de mais informações sobre ${serviceTitle}"\n\nLink copiado para área de transferência.`);
       }).catch(() => {
-        alert(`WhatsApp: +55 (11) 95958-6722\n\nMensagem: "Olá gostaria de mais informações sobre ${serviceTitle}"`);
+        alert(`WhatsApp: 11 9 5958 6722\n\nMensagem: "Olá gostaria de mais informações sobre ${serviceTitle}"`);
       });
     } else {
       // Em produção, abre normalmente
