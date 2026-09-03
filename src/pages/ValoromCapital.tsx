@@ -240,39 +240,6 @@ const ValoromCapital = () => {
           </div>
         </section>
 
-        {/* Services Section */}
-        <section id="capital-solucoes" className="py-28 bg-slate-50 scroll-mt-28">
-          <div className="container mx-auto px-6">
-            <div className="text-center mb-20">
-              <div className="w-16 h-0.5 bg-gradient-to-r from-[#c9a962] to-[#d4b978] mx-auto mb-8" />
-              <h2 className="text-3xl md:text-4xl font-playfair font-bold text-[#0a1628] mb-5">
-                Nossas Soluções
-              </h2>
-              <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-                Oferecemos um ecossistema completo de soluções financeiras para você.
-              </p>
-            </div>
-            
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-              {services.map((service, index) => (
-                <div 
-                  key={index}
-                  className="group p-10 bg-white rounded-2xl hover:shadow-xl transition-all duration-500 border border-slate-100 hover:border-slate-200"
-                >
-                  <div className="w-14 h-14 bg-[#0a1628] rounded-xl flex items-center justify-center mb-7 group-hover:bg-[#c9a962] transition-colors duration-500">
-                    <service.icon className="w-7 h-7 text-white" />
-                  </div>
-                  <h3 className="text-xl font-playfair font-bold text-[#0a1628] mb-4">
-                    {service.title}
-                  </h3>
-                  <p className="text-slate-600 leading-relaxed">
-                    {service.description}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
 
         {/* Differentials Section */}
         <section id="capital-diferenciais" className="py-28 bg-[#0a1628] text-white scroll-mt-28">
