@@ -69,11 +69,11 @@ const Hero = () => {
                   <span className="text-sm font-bold text-gold-600 group-hover:underline">Conhecer solução →</span>
                 </Link>
 
-                <Link to="/estrategias-patrimoniais" className="p-8 rounded-2xl border-2 border-navy-500/30 bg-gradient-to-br from-navy-50 to-white hover:border-navy-500 hover:shadow-xl transition-all duration-300 text-left group">
+                <Link to="/estruturas-patrimoniais" className="p-8 rounded-2xl border-2 border-navy-500/30 bg-gradient-to-br from-navy-50 to-white hover:border-navy-500 hover:shadow-xl transition-all duration-300 text-left group">
                   <div className="w-14 h-14 bg-gradient-to-br from-navy-600 to-navy-700 rounded-xl flex items-center justify-center mb-6">
                     <Shield className="w-7 h-7 text-white" />
                   </div>
-                  <h3 className="text-2xl font-playfair font-bold text-primary mb-3">Estratégias Patrimoniais e Holding</h3>
+                  <h3 className="text-2xl font-playfair font-bold text-primary mb-3">Estruturas Patrimoniais e Holding</h3>
                   <p className="text-muted-foreground mb-4">Estruturação, proteção e sucessão patrimonial com segurança jurídica e tributária.</p>
                   <span className="text-sm font-bold text-navy-600 group-hover:underline">Conhecer solução →</span>
                 </Link>
