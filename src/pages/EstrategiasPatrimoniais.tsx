@@ -2,8 +2,8 @@ import { Navigation } from "@/components/Navigation";
 import LeadContactForm from "@/components/LeadContactForm";
 import { Footer } from "@/components/Footer";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
+import { WhatsAppCTAButton } from "@/components/WhatsAppCTAButton";
 import { SEOHead } from "@/components/SEOHead";
-import { Button } from "@/components/ui/button";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { Shield, Building2, Users, Landmark, Percent, ScrollText, FileCheck, Globe2 } from "lucide-react";
 
