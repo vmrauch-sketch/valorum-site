@@ -46,6 +46,14 @@ const Footer = ({ hidePartners = false }: { hidePartners?: boolean }) => {
                   <span className="w-2 h-2 bg-financial-500 rounded-full mr-2"></span>
                   Investimentos
                 </span>
+                <span className="flex items-center">
+                  <span className="w-2 h-2 bg-financial-500 rounded-full mr-2"></span>
+                  Patrimônio
+                </span>
+                <span className="flex items-center">
+                  <span className="w-2 h-2 bg-financial-500 rounded-full mr-2"></span>
+                  Holding
+                </span>
               </div>
             </div>
 
