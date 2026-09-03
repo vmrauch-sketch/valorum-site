@@ -2,7 +2,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { ScrollToTop } from "./components/ScrollToTop";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
@@ -44,7 +44,8 @@ const App = () => (
           <Route path="/para-seu-negocio" element={<ParaSeuNegocio />} />
           <Route path="/contato" element={<Contato />} />
           <Route path="/trabalhe-conosco" element={<TrabalheConosco />} />
-          <Route path="/capital" element={<ValoromCapital />} />
+          <Route path="/investimentos" element={<ValoromCapital />} />
+          <Route path="/capital" element={<Navigate to="/investimentos" replace />} />
           <Route path="/contabil" element={<ValoromContabil />} />
           <Route path="/patrimonio" element={<ValoromPatrimonio />} />
           <Route path="/cfo" element={<ValoromCFO />} />

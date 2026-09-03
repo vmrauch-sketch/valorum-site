@@ -53,7 +53,7 @@ const ValoromCapital = () => {
         title={SEOData.valorumCapital.title}
         description={SEOData.valorumCapital.description}
         keywords={SEOData.valorumCapital.keywords}
-        canonical="https://valorum.vilsonrauch.com.br/capital"
+        canonical="https://valorum.vilsonrauch.com.br/investimentos"
         structuredData={StructuredData.capitalService}
       />
       

@@ -124,7 +124,7 @@ export const StructuredData = {
     "@type": "FinancialService",
     "name": "Valorum Investimentos & Wealth Services",
     "description": "Casa de investimentos independente com estratégia, transparência e foco na construção patrimonial. Sem conflito de interesses.",
-    "url": `${SITE_URL}/capital`,
+    "url": `${SITE_URL}/investimentos`,
     "provider": {
       "@type": "Organization",
       "name": "Valorum",

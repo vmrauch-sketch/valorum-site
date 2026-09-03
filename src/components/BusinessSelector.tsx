@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils";
 export const BusinessSelector = () => {
   const location = useLocation();
   
-  const isCapital = location.pathname === "/capital";
+  const isCapital = location.pathname === "/investimentos";
   const isContabil = location.pathname === "/contabil";
   const isPatrimonio = location.pathname === "/patrimonio";
   
@@ -16,7 +16,7 @@ export const BusinessSelector = () => {
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-center h-10 gap-2">
           <Link
-            to="/capital"
+            to="/investimentos"
             className={cn(
               "px-3 py-1.5 rounded-full text-sm font-medium transition-all",
               isCapital 
