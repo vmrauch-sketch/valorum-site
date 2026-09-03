@@ -91,7 +91,8 @@ const Hero = () => {
                 Estratégia financeira, investimentos e gestão patrimonial para você e sua empresa.
               </span>
               <span className="text-xl md:text-2xl text-navy-600 font-inter mb-6 block leading-relaxed">
-                Clareza para decidir. Segurança para crescer.
+                <span className="block">Clareza para decidir,</span>
+                <span className="block">segurança para crescer!</span>
               </span>
             </span>
           </div>
