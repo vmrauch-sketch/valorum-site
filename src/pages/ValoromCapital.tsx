@@ -162,7 +162,7 @@ const ValoromCapital = () => {
             <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-14">
               {[
                 { icon: Search, num: "01", title: "Diagnóstico gratuito", desc: "Em uma reunião rápida, mapeamos seu perfil, seus objetivos e identificamos as melhores oportunidades." },
-                { icon: FileText, num: "02", title: "Estratégia personalizada", desc: "Montamos uma carteira sob medida, com total transparência sobre custos, riscos e expectativas." },
+                { icon: FileText, num: "02", title: "Estratégia personalizada", desc: "Desenhamos a sua estratégia de investimentos e definimos os investimentos 100% alinhados com seus objetivos e perfil. Você entende e aprova tudo desde o começo." },
                 { icon: BarChart3, num: "03", title: "Acompanhamento contínuo", desc: "Cuidamos da implementação da estratégia com independência total, enquanto você acompanha seus resultados com relatórios claros." },
               ].map((step, index) => (
                 <div
