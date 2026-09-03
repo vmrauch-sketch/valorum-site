@@ -2,8 +2,8 @@ import { Navigation } from "@/components/Navigation";
 import LeadContactForm from "@/components/LeadContactForm";
 import { Footer } from "@/components/Footer";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
+import { WhatsAppCTAButton } from "@/components/WhatsAppCTAButton";
 import { SEOHead } from "@/components/SEOHead";
-import { Button } from "@/components/ui/button";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { Shield, Building2, Users, Landmark, Percent, ScrollText, FileCheck, Globe2 } from "lucide-react";
 
@@ -94,11 +94,13 @@ const EstrategiasPatrimoniais = () => {
                 Proteja, organize e multiplique seu patrimônio com estruturas de alta precisão: holdings familiares,
                 proteção de ativos, planejamento sucessório e eficiência tributária.
               </p>
-              <a href="#hold-contato">
-                <Button className="bg-gold-500 hover:bg-gold-600 text-white px-8 py-6 text-lg font-semibold rounded-lg shadow-lg transition-all duration-300 uppercase tracking-wide">
-                  Falar com um especialista
-                </Button>
-              </a>
+              <WhatsAppCTAButton
+                message="Olá! Vim do site da Valorum. Quero falar sobre Estratégias Patrimoniais e Holding."
+                variant="green"
+                className="px-8 py-6 text-lg uppercase tracking-wide"
+              >
+                Fale com especialista
+              </WhatsAppCTAButton>
             </div>
           </div>
         </section>
@@ -149,6 +151,15 @@ const EstrategiasPatrimoniais = () => {
                 );
               })}
             </div>
+            <div className="text-center mt-12">
+              <WhatsAppCTAButton
+                message="Olá! Vim do site da Valorum. Quero falar sobre Estratégias Patrimoniais e Holding."
+                variant="green"
+                className="px-8 py-4 text-base uppercase tracking-wide"
+              >
+                Fale com especialista
+              </WhatsAppCTAButton>
+            </div>
           </div>
         </section>
 
@@ -172,6 +183,15 @@ const EstrategiasPatrimoniais = () => {
                 </div>
               ))}
             </div>
+            <div className="text-center mt-12">
+              <WhatsAppCTAButton
+                message="Olá! Vim do site da Valorum. Quero falar sobre Estratégias Patrimoniais e Holding."
+                variant="green"
+                className="px-8 py-4 text-base uppercase tracking-wide"
+              >
+                Fale com especialista
+              </WhatsAppCTAButton>
+            </div>
           </div>
         </section>
 
@@ -188,6 +208,15 @@ const EstrategiasPatrimoniais = () => {
                   <p className="text-gray-700 leading-relaxed">{item.a}</p>
                 </article>
               ))}
+            </div>
+            <div className="text-center mt-12">
+              <WhatsAppCTAButton
+                message="Olá! Vim do site da Valorum. Quero falar sobre Estratégias Patrimoniais e Holding."
+                variant="green"
+                className="px-8 py-4 text-base uppercase tracking-wide"
+              >
+                Fale com especialista
+              </WhatsAppCTAButton>
             </div>
           </div>
         </section>
