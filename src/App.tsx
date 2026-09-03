@@ -22,7 +22,7 @@ import AberturaEmpresa from "./pages/AberturaEmpresa";
 import TroqueDeContador from "./pages/TroqueDeContador";
 import ValoromBPO from "./pages/ValoromBPO";
 import Mecanismos from "./pages/Mecanismos";
-import EstrategiasPatrimoniais from "./pages/EstrategiasPatrimoniais";
+import EstruturasPatrimoniais from "./pages/EstruturasPatrimoniais";
 
 const queryClient = new QueryClient();
 
