@@ -23,28 +23,6 @@ const ValoromCapital = () => {
     { number: "+150 Mil", label: "Famílias atendidas em nossos", sublabel: "serviços de Atendimento Express" },
   ];
 
-  const services = [
-    {
-      icon: ChartLine,
-      title: "Investimentos",
-      description: "Análise completa do seu perfil e objetivos para construir uma estratégia personalizada de investimentos."
-    },
-    {
-      icon: Target,
-      title: "Gestão de Riscos",
-      description: "Identificação e mitigação de riscos financeiros para garantir a preservação do seu capital."
-    },
-    {
-      icon: Briefcase,
-      title: "Assessoria Empresarial",
-      description: "Soluções completas para empresas: Conta Digital PJ, Folha de Pagamento, financiamento solar, câmbio comercial, estruturação financeira e carteira de investimentos."
-    },
-    {
-      icon: Award,
-      title: "Family Office",
-      description: "Construção e gestão completa do patrimônio familiar."
-    }
-  ];
 
   return (
     <>
