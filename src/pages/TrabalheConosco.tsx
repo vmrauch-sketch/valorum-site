@@ -3,6 +3,7 @@ import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { SEOHead } from "@/components/SEOHead";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
+import { WhatsAppIcon } from "@/components/WhatsAppIcon";
 import { Button } from "@/components/ui/button";
 import { TrendingUp, Users, BarChart3, Shield, ClipboardCheck, Target, Landmark } from "lucide-react";
 
@@ -195,8 +196,9 @@ const TrabalheConosco = () => {
                   <div className="text-center mt-12">
                     <button 
                       onClick={handleCandidaturaClick}
-                      className="bg-corporate-500 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-corporate-600 transition-colors shadow-lg hover:scale-105 transition-transform duration-200"
+                      className="inline-flex items-center justify-center gap-3 bg-corporate-500 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-corporate-600 transition-colors shadow-lg hover:scale-105 transition-transform duration-200"
                     >
+                      <WhatsAppIcon className="w-5 h-5" />
                       QUERO ME TORNAR UM WEALTH PLANNER
                     </button>
                   </div>
@@ -264,8 +266,9 @@ const TrabalheConosco = () => {
                   <div className="text-center mt-12">
                     <button 
                       onClick={handleHoldingCandidaturaClick}
-                      className="bg-gold-500 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-gold-600 transition-colors shadow-lg hover:scale-105 transition-transform duration-200"
+                      className="inline-flex items-center justify-center gap-3 bg-gold-500 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-gold-600 transition-colors shadow-lg hover:scale-105 transition-transform duration-200"
                     >
+                      <WhatsAppIcon className="w-5 h-5" />
                       QUERO ATUAR COM ESTRATÉGIAS PATRIMONIAIS E HOLDING
                     </button>
                   </div>
@@ -315,8 +318,9 @@ const TrabalheConosco = () => {
                 <div className="text-center">
                   <button 
                     onClick={handleBpoCandidaturaClick}
-                    className="bg-gradient-to-r from-blue-400 to-blue-500 hover:from-blue-500 hover:to-blue-600 text-white px-10 py-4 rounded-lg font-bold text-lg shadow-lg hover:scale-105 transition-transform duration-200 uppercase tracking-wider"
+                    className="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-blue-400 to-blue-500 hover:from-blue-500 hover:to-blue-600 text-white px-10 py-4 rounded-lg font-bold text-lg shadow-lg hover:scale-105 transition-transform duration-200 uppercase tracking-wider"
                   >
+                    <WhatsAppIcon className="w-5 h-5" />
                     Quero ser Especialista BPO
                   </button>
                 </div>

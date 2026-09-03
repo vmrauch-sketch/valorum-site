@@ -1,6 +1,7 @@
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
+import { WhatsAppIcon } from "@/components/WhatsAppIcon";
 import { SEOHead } from "@/components/SEOHead";
 import { ServiceSubNav } from "@/components/ServiceSubNav";
 import { 
@@ -140,8 +141,9 @@ const ValoromBPO = () => {
                 <a href="https://wa.me/5511959586722?text=Ol%C3%A1!%20Gostaria%20de%20saber%20como%20funciona%20sobre%20terceirizar%20o%20financeiro" target="_blank" rel="noopener noreferrer">
                   <Button 
                     size="lg"
-                    className="bg-gradient-to-r from-blue-400 to-blue-500 hover:from-blue-500 hover:to-blue-600 text-white font-semibold px-8 py-6 text-lg"
+                    className="inline-flex items-center bg-gradient-to-r from-blue-400 to-blue-500 hover:from-blue-500 hover:to-blue-600 text-white font-semibold px-8 py-6 text-lg"
                   >
+                    <WhatsAppIcon className="w-5 h-5 mr-3" />
                     Quero um Diagnóstico Gratuito
                   </Button>
                 </a>
@@ -244,8 +246,9 @@ const ValoromBPO = () => {
               <a href="https://wa.me/5511959586722?text=Ol%C3%A1!%20Gostaria%20de%20saber%20como%20funciona%20sobre%20terceirizar%20o%20financeiro" target="_blank" rel="noopener noreferrer">
                 <Button 
                   size="lg"
-                  className="bg-gradient-to-r from-blue-400 to-blue-500 hover:from-blue-500 hover:to-blue-600 text-white font-semibold px-10 py-6 text-lg uppercase tracking-wider"
+                  className="inline-flex items-center bg-gradient-to-r from-blue-400 to-blue-500 hover:from-blue-500 hover:to-blue-600 text-white font-semibold px-10 py-6 text-lg uppercase tracking-wider"
                 >
+                  <WhatsAppIcon className="w-5 h-5 mr-3" />
                   Quero Esses Resultados Agora
                 </Button>
               </a>
@@ -298,8 +301,9 @@ const ValoromBPO = () => {
               <a href="https://wa.me/5511959586722?text=Ol%C3%A1!%20Gostaria%20de%20saber%20como%20funciona%20sobre%20terceirizar%20o%20financeiro" target="_blank" rel="noopener noreferrer">
                 <Button 
                   size="lg"
-                  className="bg-gradient-to-r from-blue-400 to-blue-500 hover:from-blue-500 hover:to-blue-600 text-white font-semibold px-10 py-6 text-lg uppercase tracking-wider"
+                  className="inline-flex items-center bg-gradient-to-r from-blue-400 to-blue-500 hover:from-blue-500 hover:to-blue-600 text-white font-semibold px-10 py-6 text-lg uppercase tracking-wider"
                 >
+                  <WhatsAppIcon className="w-5 h-5 mr-3" />
                   Quero Começar Agora
                 </Button>
               </a>
@@ -358,8 +362,9 @@ const ValoromBPO = () => {
             <a href="https://wa.me/5511959586722?text=Ol%C3%A1!%20Gostaria%20de%20saber%20como%20funciona%20sobre%20terceirizar%20o%20financeiro" target="_blank" rel="noopener noreferrer">
               <Button 
                 size="lg" 
-                className="bg-gradient-to-r from-blue-400 to-blue-500 hover:from-blue-500 hover:to-blue-600 text-white font-semibold px-10 py-6 text-lg uppercase tracking-wider"
+                className="inline-flex items-center bg-gradient-to-r from-blue-400 to-blue-500 hover:from-blue-500 hover:to-blue-600 text-white font-semibold px-10 py-6 text-lg uppercase tracking-wider"
               >
+                <WhatsAppIcon className="w-5 h-5 mr-3" />
                 Agendar Meu Diagnóstico
               </Button>
             </a>
@@ -439,8 +444,9 @@ const ValoromBPO = () => {
                 <Button 
                   size="lg"
                   variant="outline"
-                  className="border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-white font-semibold px-10 py-6 text-lg uppercase tracking-wider"
+                  className="inline-flex items-center border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-white font-semibold px-10 py-6 text-lg uppercase tracking-wider"
                 >
+                  <WhatsAppIcon className="w-5 h-5 mr-3" />
                   Solicitar Proposta Personalizada
                 </Button>
               </a>

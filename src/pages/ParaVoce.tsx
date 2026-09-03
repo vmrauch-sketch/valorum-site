@@ -1,6 +1,7 @@
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
+import { WhatsAppIcon } from "@/components/WhatsAppIcon";
 import { SEOHead } from "@/components/SEOHead";
 import { 
   User, 
@@ -100,8 +101,9 @@ const ParaVoce = () => {
                 <div className={`text-center my-12 transform transition-all duration-1000 ease-out delay-500 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'}`}>
                   <button
                     onClick={handleAgendarReuniaoClick}
-                    className="w-full max-w-2xl mx-auto px-8 py-4 bg-gold-500 text-white font-semibold text-lg rounded-lg hover:bg-gold-600 transition-colors duration-300 shadow-lg hover:shadow-xl"
+                    className="inline-flex items-center justify-center w-full max-w-2xl mx-auto px-8 py-4 bg-gold-500 text-white font-semibold text-lg rounded-lg hover:bg-gold-600 transition-colors duration-300 shadow-lg hover:shadow-xl"
                   >
+                    <WhatsAppIcon className="w-5 h-5 mr-3" />
                     Agendar uma reunião com um consultor
                   </button>
                 </div>
