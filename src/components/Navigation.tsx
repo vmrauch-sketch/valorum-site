@@ -131,6 +131,11 @@ export const Navigation = () => {
                     Valorum Patrimônio
                   </Button>
                 </Link>
+                <Link to="/trabalhe-conosco" onClick={() => setIsOpen(false)} className="flex-1 min-w-[10rem]">
+                  <Button size="sm" className="w-full bg-gradient-to-r from-navy-600 to-navy-700 hover:from-navy-700 hover:to-navy-800 text-white">
+                    Estratégias Patrimoniais e Holding
+                  </Button>
+                </Link>
                 </div>
               )}
               
