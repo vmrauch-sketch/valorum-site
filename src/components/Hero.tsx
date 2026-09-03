@@ -42,6 +42,28 @@ const Hero = () => {
             </div>
           </div>
 
+          {/* Service lines */}
+          <div className={`mx-auto mb-8 transform transition-all duration-1000 ease-out delay-600 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
+            <div className="inline-flex flex-col items-start gap-2 text-left">
+              <div className="flex items-center gap-3">
+                <span className="w-2.5 h-2.5 rounded-full bg-green-500 shrink-0"></span>
+                <span className="text-xl md:text-2xl font-inter text-navy-600">Financeiro</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <span className="w-2.5 h-2.5 rounded-full bg-green-500 shrink-0"></span>
+                <span className="text-xl md:text-2xl font-inter text-navy-600">Investimentos</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <span className="w-2.5 h-2.5 rounded-full bg-green-500 shrink-0"></span>
+                <span className="text-xl md:text-2xl font-inter text-navy-600">Patrimônio</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <span className="w-2.5 h-2.5 rounded-full bg-green-500 shrink-0"></span>
+                <span className="text-xl md:text-2xl font-inter text-navy-600">Holding</span>
+              </div>
+            </div>
+          </div>
+
           {/* Impact Phrase - Single Line */}
           <div className={`text-xl md:text-2xl font-inter mx-auto mb-8 text-navy-600 transform transition-all duration-1000 ease-out delay-600 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
             <span className="block text-center">
