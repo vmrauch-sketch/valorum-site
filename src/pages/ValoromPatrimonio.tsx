@@ -9,11 +9,7 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { ServiceSubNav } from "@/components/ServiceSubNav";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { 
-  Home, 
-  LineChart, 
-  Gem, 
   Shield, 
-  ShieldCheck,
   MessageCircle,
   Building2,
   TrendingUp,
