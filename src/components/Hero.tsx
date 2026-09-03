@@ -1,7 +1,7 @@
 
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { Button } from "@/components/ui/button";
-import { Send } from "lucide-react";
+import { Send, TrendingUp, Landmark, Shield } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Hero = () => {
