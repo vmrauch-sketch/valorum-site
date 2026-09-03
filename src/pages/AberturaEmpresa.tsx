@@ -1,10 +1,10 @@
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
+import { WhatsAppIcon } from "@/components/WhatsAppIcon";
 import { SEOHead } from "@/components/SEOHead";
 import { Button } from "@/components/ui/button";
 import { 
-  MessageCircle,
   FileText,
   Send,
   Settings,
@@ -80,9 +80,9 @@ const AberturaEmpresa = () => {
               <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
                 <Button
                   size="lg"
-                  className="bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white font-semibold px-8 py-6 text-lg"
+                  className="inline-flex items-center bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white font-semibold px-8 py-6 text-lg"
                 >
-                  <MessageCircle className="mr-2" size={20} />
+                  <WhatsAppIcon className="w-5 h-5 mr-3" />
                   Falar com um Contador
                 </Button>
               </a>
@@ -121,9 +121,9 @@ const AberturaEmpresa = () => {
               <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
                 <Button
                   size="lg"
-                  className="bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white font-semibold px-8 py-6 text-lg"
+                  className="inline-flex items-center bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white font-semibold px-8 py-6 text-lg"
                 >
-                  <MessageCircle className="mr-2" size={20} />
+                  <WhatsAppIcon className="w-5 h-5 mr-3" />
                   Falar com um Contador
                 </Button>
               </a>
@@ -173,11 +173,11 @@ const AberturaEmpresa = () => {
 
               <div className="mt-10 text-center">
                 <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
-                  <Button
+                  <Button 
                     size="lg"
-                    className="bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white font-semibold px-8 py-6 text-lg"
+                    className="inline-flex items-center bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white font-semibold px-8 py-6 text-lg"
                   >
-                    <MessageCircle className="mr-2" size={20} />
+                    <WhatsAppIcon className="w-5 h-5 mr-3" />
                     Falar com um Contador
                   </Button>
                 </a>
@@ -238,9 +238,9 @@ const AberturaEmpresa = () => {
             <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
               <Button
                 size="lg"
-                className="bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white font-semibold px-8 py-6 text-lg"
+                className="inline-flex items-center bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white font-semibold px-8 py-6 text-lg"
               >
-                <MessageCircle className="mr-2" size={20} />
+                <WhatsAppIcon className="w-5 h-5 mr-3" />
                 Falar com um Contador
               </Button>
             </a>
