@@ -64,7 +64,7 @@ const HoldingReformaPopup = () => {
           </p>
 
           <a
-            href="https://wa.me/5511959586722?text=Ol%C3%A1!%20J%C3%A1%20possuo%20holding%20e%20gostaria%20de%20entender%20os%20impactos%20da%20reforma%20tribut%C3%A1ria."
+            href="https://wa.me/5511959586722?text=Ol%C3%A1%21%20ja%20tenho%20holding%20quero%20uma%20an%C3%A1lise%20da%20minha%20situa%C3%A7%C3%A3o%21"
             target="_blank"
             rel="noopener noreferrer"
             onClick={handleWhatsAppClick}
