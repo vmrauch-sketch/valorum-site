@@ -43,9 +43,11 @@ const Index = () => {
 
         <Footer />
         <WhatsAppButton />
+        <InvestimentosPopup />
       </div>
     </>
   );
 };
 
 export default Index;
+
