@@ -5,6 +5,7 @@ import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { WhatsAppCTAButton } from "@/components/WhatsAppCTAButton";
 import { SEOHead } from "@/components/SEOHead";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Shield, Building2, Users, Landmark, Percent, ScrollText, FileCheck, Globe2, Scale, Search, Target, LayoutTemplate, CheckCircle, TrendingUp } from "lucide-react";
 
 const especialidades = [
@@ -286,14 +287,18 @@ const EstruturasPatrimoniais = () => {
             <h2 className="text-3xl md:text-4xl font-playfair font-bold text-navy-600 mb-10 text-center">
               Entenda a holding na prática
             </h2>
-            <div className="space-y-8">
+            <Accordion type="single" collapsible className="space-y-4">
               {faq.map((item) => (
-                <article key={item.q} className="bg-white rounded-xl p-7 shadow-sm">
-                  <h3 className="text-xl font-playfair font-bold text-navy-600 mb-3">{item.q}</h3>
-                  <p className="text-gray-700 leading-relaxed">{item.a}</p>
-                </article>
+                <AccordionItem key={item.q} value={item.q} className="bg-white rounded-xl px-6 shadow-sm border-none">
+                  <AccordionTrigger className="text-left text-lg font-playfair font-bold text-navy-600 hover:no-underline hover:text-navy-700 py-5">
+                    {item.q}
+                  </AccordionTrigger>
+                  <AccordionContent className="text-gray-700 leading-relaxed text-base pb-5">
+                    {item.a}
+                  </AccordionContent>
+                </AccordionItem>
               ))}
-            </div>
+            </Accordion>
             <div className="text-center mt-12">
               <p className="text-gray-700 text-lg mb-5">Nossa equipe pode te orientar com precisão e confiança.</p>
               <WhatsAppCTAButton
