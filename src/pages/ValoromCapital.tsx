@@ -8,6 +8,8 @@ import { ServiceSubNav } from "@/components/ServiceSubNav";
 import { TrendingUp, Users, Shield, Target, ChartLine, Briefcase, Building2, Award, Search, FileText, BarChart3, Handshake, Wallet } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import InvestimentosPopup from "@/components/InvestimentosPopup";
+
 
 const capitalNavItems = [
   { label: "Ecossistema", target: "capital-stats" },
@@ -343,9 +345,11 @@ const ValoromCapital = () => {
 
         <Footer />
         <WhatsAppButton message="Olá! Gostaria de saber como funciona sobre investimentos" />
+        <InvestimentosPopup />
       </div>
     </>
   );
 };
+
 
 export default ValoromCapital;

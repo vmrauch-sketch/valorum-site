@@ -7,6 +7,8 @@ import { HowWeWork } from "@/components/HowWeWork";
 import { SEOHead } from "@/components/SEOHead";
 import { SEOData, StructuredData } from "@/data/seoData";
 import LeadContactForm from "@/components/LeadContactForm";
+import InvestimentosPopup from "@/components/InvestimentosPopup";
+
 
 const Index = () => {
   return (
@@ -41,9 +43,11 @@ const Index = () => {
 
         <Footer />
         <WhatsAppButton />
+        <InvestimentosPopup />
       </div>
     </>
   );
 };
 
 export default Index;
+
