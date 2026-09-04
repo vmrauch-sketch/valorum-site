@@ -22,15 +22,24 @@ const Hero = () => {
           {/* Logo/Brand Image */}
           <div className={`mb-8 transform transition-all duration-1000 ease-out ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'}`}>
             <div className="relative w-96 h-96 md:w-[500px] md:h-[500px] lg:w-[600px] lg:h-[600px] mx-auto">
-              <img 
-                src="/lovable-uploads/aee87d30-fa30-44ea-bc48-89ef4d0f7e2c.png" 
-                alt="Valorum Logo" 
-                width={600}
-                height={600}
-                fetchPriority="high"
-                decoding="async"
-                className="w-full h-full object-contain drop-shadow-lg"
-              />
+              <picture>
+                <source
+                  srcSet="/lovable-uploads/aee87d30-fa30-44ea-bc48-89ef4d0f7e2c-400.webp 400w,
+                          /lovable-uploads/aee87d30-fa30-44ea-bc48-89ef4d0f7e2c-600.webp 600w,
+                          /lovable-uploads/aee87d30-fa30-44ea-bc48-89ef4d0f7e2c.webp 1024w"
+                  sizes="(max-width: 768px) 384px, (max-width: 1024px) 500px, 600px"
+                  type="image/webp"
+                />
+                <img 
+                  src="/lovable-uploads/aee87d30-fa30-44ea-bc48-89ef4d0f7e2c-600.webp" 
+                  alt="Valorum Logo" 
+                  width={600}
+                  height={600}
+                  fetchPriority="high"
+                  decoding="async"
+                  className="w-full h-full object-contain drop-shadow-lg"
+                />
+              </picture>
               {/* Slogan sobreposto à imagem */}
               <div className="absolute bottom-6 md:bottom-8 left-0 right-0 text-center">
                 <div className="w-24 h-[1px] bg-gradient-to-r from-transparent via-gold-500 to-transparent mx-auto mb-3"></div>
