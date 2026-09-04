@@ -4,6 +4,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { ScrollToTop } from "./components/ScrollToTop";
+import { ExternalRedirect } from "./components/ExternalRedirect";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import Manifesto from "./pages/Manifesto";
@@ -45,7 +46,7 @@ const App = () => (
           <Route path="/trabalhe-conosco" element={<TrabalheConosco />} />
           <Route path="/investimentos" element={<ValoromCapital />} />
           <Route path="/capital" element={<Navigate to="/investimentos" replace />} />
-          <Route path="/contabil" element={<ValoromContabil />} />
+          <Route path="/contabil" element={<ExternalRedirect url="https://norgiecontabil.com.br" />} />
           <Route path="/patrimonio" element={<ValoromPatrimonio />} />
           <Route path="/cfo" element={<ValoromCFO />} />
           <Route path="/bpo" element={<ValoromBPO />} />
