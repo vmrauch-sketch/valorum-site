@@ -1,29 +1,18 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { X } from "lucide-react";
 import { WhatsAppIcon } from "@/components/WhatsAppIcon";
 
-const INVESTIMENTOS_POPUP_KEY = "investimentos-popup-last-seen";
-
-const getToday = () => new Date().toISOString().split("T")[0];
-
 const InvestimentosPopup = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  useEffect(() => {
-    const lastSeen = localStorage.getItem(INVESTIMENTOS_POPUP_KEY);
-    if (lastSeen === getToday()) return;
-
-    setIsOpen(true);
-  }, []);
+  const [isOpen, setIsOpen] = useState(true);
 
   const handleClose = () => {
     setIsOpen(false);
-    localStorage.setItem(INVESTIMENTOS_POPUP_KEY, getToday());
   };
 
   const handleWhatsAppClick = () => {
-    localStorage.setItem(INVESTIMENTOS_POPUP_KEY, getToday());
+    setIsOpen(false);
   };
+
 
   if (!isOpen) return null;
 
