@@ -5,6 +5,7 @@ import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { WhatsAppCTAButton } from "@/components/WhatsAppCTAButton";
 import { SEOHead } from "@/components/SEOHead";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Shield, Building2, Users, Landmark, Percent, ScrollText, FileCheck, Globe2, Scale, Search, Target, LayoutTemplate, CheckCircle, TrendingUp } from "lucide-react";
 
 const especialidades = [
