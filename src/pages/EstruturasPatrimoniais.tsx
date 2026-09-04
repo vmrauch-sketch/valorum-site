@@ -3,6 +3,7 @@ import LeadContactForm from "@/components/LeadContactForm";
 import { Footer } from "@/components/Footer";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { WhatsAppCTAButton } from "@/components/WhatsAppCTAButton";
+import HoldingReformaPopup from "@/components/HoldingReformaPopup";
 import { SEOHead } from "@/components/SEOHead";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
