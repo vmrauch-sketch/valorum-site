@@ -2,15 +2,17 @@ import { useEffect, useState } from "react";
 import { X } from "lucide-react";
 import { WhatsAppIcon } from "@/components/WhatsAppIcon";
 
-const HOLDING_POPUP_SEEN_KEY = "holding-reforma-popup-seen";
+const HOLDING_POPUP_SEEN_KEY = "holding-reforma-popup-last-seen";
 const POPUP_DELAY_MS = 5000;
+
+const getToday = () => new Date().toISOString().split("T")[0];
 
 const HoldingReformaPopup = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
-    const alreadySeen = sessionStorage.getItem(HOLDING_POPUP_SEEN_KEY);
-    if (alreadySeen) return;
+    const lastSeen = localStorage.getItem(HOLDING_POPUP_SEEN_KEY);
+    if (lastSeen === getToday()) return;
 
     const timer = setTimeout(() => {
       setIsOpen(true);
@@ -21,12 +23,13 @@ const HoldingReformaPopup = () => {
 
   const handleClose = () => {
     setIsOpen(false);
-    sessionStorage.setItem(HOLDING_POPUP_SEEN_KEY, "true");
+    localStorage.setItem(HOLDING_POPUP_SEEN_KEY, getToday());
   };
 
   const handleWhatsAppClick = () => {
-    sessionStorage.setItem(HOLDING_POPUP_SEEN_KEY, "true");
+    localStorage.setItem(HOLDING_POPUP_SEEN_KEY, getToday());
   };
+
 
   if (!isOpen) return null;
 
