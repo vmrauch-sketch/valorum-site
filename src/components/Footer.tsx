@@ -81,21 +81,27 @@ const Footer = ({ hidePartners = false }: { hidePartners?: boolean }) => {
             {/* Contatos */}
             <div>
               <h4 className="text-lg font-semibold mb-4">Contatos</h4>
-              <div className="space-y-3 text-white/80">
-                <button
-                  onClick={() => handleWhatsAppClick('5511959586722', '11 95958 6722')}
-                  className="flex items-center hover:text-white transition-colors cursor-pointer text-sm"
-                >
-                  <WhatsAppIcon className="w-4 h-4 mr-2 text-financial-500" />
-                  11 95958 6722
-                </button>
-                <button
-                  onClick={() => handleWhatsAppClick('5548999652606', '48 99965 2606')}
-                  className="flex items-center hover:text-white transition-colors cursor-pointer text-sm"
-                >
-                  <WhatsAppIcon className="w-4 h-4 mr-2 text-financial-500" />
-                  48 99965 2606
-                </button>
+              <div className="space-y-4 text-white/80">
+                <div>
+                  <p className="text-xs text-white/50 mb-1">São Paulo - SP</p>
+                  <button
+                    onClick={() => handleWhatsAppClick('5511959586722', '11 95958 6722')}
+                    className="flex items-center hover:text-white transition-colors cursor-pointer text-sm"
+                  >
+                    <WhatsAppIcon className="w-4 h-4 mr-2 text-financial-500" />
+                    11 95958 6722
+                  </button>
+                </div>
+                <div>
+                  <p className="text-xs text-white/50 mb-1">Florianópolis - SC</p>
+                  <button
+                    onClick={() => handleWhatsAppClick('5548999652606', '48 99965 2606')}
+                    className="flex items-center hover:text-white transition-colors cursor-pointer text-sm"
+                  >
+                    <WhatsAppIcon className="w-4 h-4 mr-2 text-financial-500" />
+                    48 99965 2606
+                  </button>
+                </div>
               </div>
             </div>
 
