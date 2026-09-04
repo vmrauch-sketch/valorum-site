@@ -334,6 +334,7 @@ const EstruturasPatrimoniais = () => {
 
         <Footer />
         <WhatsAppButton message="Olá! Gostaria de mais informações sobre holding." />
+        <HoldingReformaPopup />
       </div>
     </>
   );
