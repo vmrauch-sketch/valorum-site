@@ -345,9 +345,11 @@ const ValoromCapital = () => {
 
         <Footer />
         <WhatsAppButton message="Olá! Gostaria de saber como funciona sobre investimentos" />
+        <InvestimentosPopup />
       </div>
     </>
   );
 };
+
 
 export default ValoromCapital;
