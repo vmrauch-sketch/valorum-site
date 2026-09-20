@@ -55,7 +55,7 @@ const Hero = () => {
           <div className={`text-xl md:text-2xl font-inter mx-auto mb-8 text-navy-600 transform transition-all duration-1000 ease-out delay-600 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
             <span className="block text-center">
               <span className="text-xl md:text-2xl text-navy-600 font-inter mb-2 block">
-                Soluções Financeiras e de Investimentos!
+                Soluções para Família, Patrimônio, Negócios e Investimentos!
               </span>
               
               {/* Sub-brand cards — estilo Trabalhe Conosco */}
